@@ -1,0 +1,26 @@
+{
+  "_about": "Pyaz aur tamatar ke bade bhav-uchhaal (spike) aur girawat (crash), news aur sarkari press release se. Har entry ke saath source link hai. Ye rozana ka bhav nahi hai — sirf bade events hain.",
+  "_lastVerified": "2026-11-20",
+  "onion": [
+    {"ym":"2010-12","type":"spike","value":88,"basis":"retail","place":"Delhi","note":"Barish se fasal kharab, ek hafte me ₹35 se ₹88/kg. Export band kiya gaya.","source":"https://en.wikipedia.org/wiki/2010_Indian_onion_crisis"},
+    {"ym":"2013-10","type":"spike","value":100,"basis":"retail","place":"North India (kuch shahar)","note":"Bhav ₹100/kg tak; sarkar ko import karna pada. All-India monthly avg ₹57/kg (Oct 2013).","source":"https://www.thequint.com/news/india/history-shows-why-no-politician-wants-to-mess-with-the-onion"},
+    {"ym":"2015-09","type":"spike","value":80,"basis":"retail","place":"Delhi","note":"June–Sept 2015 me bhav 125% badha.","source":"https://www.newsclick.in/node/22523"},
+    {"ym":"2017-11","type":"spike","value":29.5,"basis":"wholesale","place":"Lasalgaon","note":"2 saal ka sabse uncha wholesale bhav; 2 mahine me lagbhag dugna.","source":"https://www.business-standard.com/article/markets/onion-prices-hit-two-year-highs-on-reduced-supply-117110600856_1.html"},
+    {"ym":"2019-12","type":"spike","value":100,"basis":"retail","place":"All-India avg","note":"Aug me ₹27 se Dec me ₹100/kg (+253%). Nashik wholesale ₹11,000/quintal tak.","source":"https://www.newsclick.in/onion-prices-spiked-253-per-five-months"},
+    {"ym":"2020-10","type":"spike","value":100,"basis":"retail","place":"Kuch shahar","note":"Barish se kharif fasal kharab; 14 Sept 2020 ko export ban.","source":"https://www.freepressjournal.in/india/fpj-explains-onion-prices-hit-rs-100-per-kg-heres-the-reason-behind-its-sharp-rise"},
+    {"ym":"2023-11","type":"spike","value":80,"basis":"retail","place":"All-India peak","note":"July 2023 se bhav chadha, Nov me ₹80/kg. 8 Dec 2023 se export ban.","source":"https://pib.gov.in/PressReleasePage.aspx?PRID=1985229"},
+    {"ym":"2024-10","type":"spike","value":80,"basis":"retail","place":"Delhi","note":"Delhi me ₹80–120/kg (Oct 2024). Rabi stock khatam, kharif der se.","source":"https://www.dailypioneer.com/2024/state-editions/prices-of-staple-onions-and-tomatoes-likely-to-fall-ahead-of-festive-season.html"},
+    {"ym":"2025-11","type":"crash","value":11.5,"basis":"wholesale","place":"Lasalgaon","note":"Bhav gira: ₹1,150–1,350/quintal. Kisan ko lagat bhi nahi mili.","source":"https://www.freepressjournal.in/pune/nashik-onion-glut-and-export-ban-push-maharashtra-farmers-into-crisis"},
+    {"ym":"2026-09","type":"rise","value":42,"basis":"wholesale","place":"Lasalgaon","note":"Sept 2026: ₹36–48/kg wholesale.","source":"https://www.uniindia.com/west-india/asias-largest-onion-market-where-is-it-and-what-are-the-current-prices/187360"},
+    {"ym":"2026-11","type":"spike","value":55,"basis":"wholesale","place":"Lasalgaon","note":"17 Nov 2026: laal pyaz max ₹5,500/quintal. Nayi lehar abhi chal rahi hai.","source":"https://www.freepressjournal.in/pune/nashik-red-onion-prices-touch-5500-per-quintal-at-lasalgaon-apmc"}
+  ],
+  "tomato": [
+    {"ym":"2017-01","type":"crash","value":5,"basis":"farmgate","place":"Karnataka","note":"Pichhle 6–9 mahine kisan ko ₹5/kg se kam mila (news July 2017 me).","source":"https://www.business-standard.com/amp/article/economy-policy/tomato-prices-go-through-the-roof-117072600055_1.html"},
+    {"ym":"2017-07","type":"spike","value":100,"basis":"retail","place":"Delhi (Mumbai ₹150)","note":"Bhari barish se supply ruki.","source":"https://www.business-standard.com/article/pti-stories/tomato-prices-soar-to-rs-100-per-kg-in-delhi-ncr-on-low-supply-117072500502_1.html"},
+    {"ym":"2023-08","type":"spike","value":213,"basis":"retail","place":"Delhi","note":"3 Aug 2023: ₹213/kg — record. Jan 2023 me sirf ₹20 tha.","source":"https://www.newslaundry.com/amp/story/2024%2F08%2F19%2Fwhy-your-groceries-cost-9-more-this-july"},
+    {"ym":"2024-07","type":"rise","value":93,"basis":"retail","place":"Delhi","note":"20 July 2024: Delhi ₹93/kg, all-India avg ₹74.","source":"https://deccanherald.com/india/delhi/tomato-prices-soar-to-rs-100-per-kg-in-delhi-markets-as-rains-hit-supplies-3114152"},
+    {"ym":"2024-10","type":"spike","value":100,"basis":"retail","place":"Delhi","note":"Oct 2024: ₹100–130/kg Delhi me.","source":"https://www.dailypioneer.com/2024/state-editions/prices-of-staple-onions-and-tomatoes-likely-to-fall-ahead-of-festive-season.html"},
+    {"ym":"2025-07","type":"rise","value":85,"basis":"retail","place":"Kuch shahar","note":"July end tak ₹85/kg; all-India avg ₹52.","source":"https://www.newsonair.gov.in/tomato-price-surge-due-to-local-factors-not-supply-issue-govt"},
+    {"ym":"2026-06","type":"rise","value":43.7,"basis":"retail","place":"All-India avg","note":"June 2026: ₹43.7/kg, saal bhar me +24%.","source":"https://www.businesstoday.in/latest/economy/story/tomato-prices-surge-24-as-weather-hit-supplies-squeeze-markets-relief-unlikely-before-august-539128-2026-06-25"}
+  ]
+}
