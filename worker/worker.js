@@ -351,7 +351,7 @@ async function runResearch(b, env, emit) {
     const tasks = [];
     tasks.push((async () => {
       await step('wiki', 'run');
-      try { const mw = prob.toLowerCase().split(/\s+/).filter(x => x.length >= 4); const w = await rWiki(prob, mw) || await rWiki(`${prob} ${crop}`, mw); if (!w) return step('wiki', 'none');
+      try { const mw = [prob.toLowerCase().replace(/\s+/g, ' ').trim()]; const w = await rWiki(prob, mw) || await rWiki(`${prob} ${crop}`, mw); if (!w) return step('wiki', 'none');
         const first = w.text.split(/(?<=\.)\s+/).slice(0, 3).join(' ');
         await rEmitItems(env, emit, 'how', [{ field: 'how', value: first, quote: first }], { title: 'Wikipedia: ' + w.title, url: w.url, source_type: 'encyclopedia', retrieved_at: now });
         await step('wiki', 'ok'); } catch (e) { await step('wiki', 'fail'); }
