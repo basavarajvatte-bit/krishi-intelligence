@@ -1,6 +1,68 @@
 {
  "items": [
   {
+   "id": "a-c5bf50ea38f5",
+   "date": "2026-11-21",
+   "crops": [
+    "other"
+   ],
+   "type": "export",
+   "dir": "pos",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQUENDeGN2NUFLdEtYeGV4dnBndVlUeElselhKVEFYUnNnSjRKRWUwRml2amR2X3I2MklHckJNeC1OVFJOLVNQM2hsTG9WMnIxRmZDZDJwNzFBYjVYSjlRZ0dldUhLdV9oUk5uMGF2NlVXbWRvV2JHWGtxTTNVMDFkaHRHNEVsS2VpcGQxUzltSkpINGNkSldoeVlnN0NpVVZMWlVzOTc1WC04b0gwN3hmaDJRRExrSTJXcmp6TVhwSQ?oc=5",
+   "source_name": "Bold News",
+   "headline": "India's Agricultural Exports Surge as Basmati Rice, Frozen Potatoes and Corn Gain Global Markets - Bold News",
+   "hi": {
+    "title": "भारत के कृषि निर्यात में वृद्धि",
+    "what": "भारत के कृषि निर्यात में वृद्धि हुई है, जिसमें बासमती चावल, फ्रोजन आलू और मक्का की मांग वैश्विक बाजार में बढ़ी है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "भारतीय किसानों को बासमती चावल, फ्रोजन आलू और मक्का की कीमतें बढ़ सकती हैं क्योंकि वैश्विक बाजार में उनकी मांग बढ़ रही है।"
+   },
+   "mr": {
+    "title": "भारताच्या कृषी निर्यातीत वाढ",
+    "what": "भारताच्या कृषी निर्यातीत वाढ झाली आहे, ज्यामध्ये बासमती तांदूळ, फ्रोजन बटाटे आणि मका जागतिक बाजारपेठेत मोठ्या प्रमाणावर मागणी वाढली आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "भारतीय शेतकऱ्यांना बासमती तांदूळ, फ्रोजन बटाटे आणि मक्याच्या किमती वाढू शकतात कारण जागतिक बाजारपेठेत त्यांची मागणी वाढत आहे."
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T09:01:40.147Z"
+  },
+  {
+   "id": "a-2d04f9a2bc60",
+   "date": "2026-11-21",
+   "crops": [
+    "sugar"
+   ],
+   "type": "export",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "724,000",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPeDB2Z3h4WHRkMDVYRFlZb29sYlNDN3c4NmpTeWFHbW12LWhrbURlb1RyTTZOLWlTWEpEdXJuWDY3eG90bmJiZEtPeFZ6dDk5SE9qeXdjZzRXLTV0b25fSEdTZ2JTLWxuVVNpNXpfRU92OVB2TndpWHBjWjFNVkVCTC1MRDR3RmFicHdjdm9SRUFtTzlZaHhZ?oc=5",
+   "source_name": "Bloom Pakistan",
+   "headline": "Pakistan’s Sugar Export Quota Reaches 724,000 Tonnes in Four Months - Bloom Pakistan",
+   "hi": {
+    "title": "पाकिस्तान का चीनी निर्यात कोटा चार महीनों में 724,000 टन पर पहुंचा",
+    "what": "पाकिस्तान का चीनी निर्यात कोटा चार महीनों में 724,000 टन पर पहुंच गया है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "भारतीय किसानों के लिए चीनी का भाव गिरने की संभावना है क्योंकि पाकिस्तान के चीनी निर्यात से दुनिया में चीनी की अधिकता होगी।"
+   },
+   "mr": {
+    "title": "पाकिस्तानची साखर निर्यात कोटा चार महिन्यांत 724,000 टनवर पोहोचली",
+    "what": "पाकिस्तानची साखर निर्यात कोटा चार महिन्यांत 724,000 टनवर पोहोचली आहे.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "पाकिस्तानच्या साखर निर्यातमुळे जगभरात साखरेची अधिकता होईल, त्यामुळे भारतीय शेतकऱ्यांसाठी साखरेच्या भावात घट होण्याची शक्यता आहे."
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T09:01:04.778Z"
+  },
+  {
    "id": "a-0c6b9ab7e0d2",
    "date": "2026-11-21",
    "crops": [
@@ -30,6 +92,130 @@
    },
    "auto": true,
    "addedAt": "2026-11-21T08:50:22.686Z"
+  },
+  {
+   "id": "a-225d6ca58d4e",
+   "date": "2026-11-20",
+   "crops": [
+    "other"
+   ],
+   "type": "export",
+   "dir": "pos",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQbkMtN0NtU3hfRzRqLTRYV1h0N29aY3llWThSN1RUS01pUzJSMXBoTjExN0EyTHBEa3NDTEphNHFJVDktalU0dE5hRUdJQ3ByMEhQQ1dLV1JhOE1rQkd3cU9EZGRhME1QQkxpZEc0a0t6WW9reEtRbkkxOG04OHp5OFF5Q1B0UG1RN000MFJnSHVYR1VPY3RVOHJMY3NPdjdPVmtuWFVuQ05rcDdoVWJERXhxSklBUFB6Q2VPcg?oc=5",
+   "source_name": "DD India",
+   "headline": "India's Agricultural Exports Gain Momentum, Led by Basmati Rice, Processed Potatoes and Corn - DD India",
+   "hi": {
+    "title": "भारत के कृषि निर्यात में तेजी",
+    "what": "भारत के कृषि निर्यात में तेजी आई है, जिसमें बासमती चावल, प्रसंस्कृत आलू और मक्का शामिल हैं।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "भारतीय किसानों को अपनी फसलों के लिए बेहतर मूल्य मिल सकता है क्योंकि निर्यात में वृद्धि से घरेलू बाजार में मांग बढ़ सकती है।"
+   },
+   "mr": {
+    "title": "भारताच्या कृषी निर्यातीत वाढ",
+    "what": "भारताच्या कृषी निर्यातीत वाढ झाली आहे, ज्यामध्ये बासमती तांदूळ, प्रसंस्कृत बटाटे आणि मका यांचा समावेश आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "भारतीय शेतकऱ्यांना त्यांच्या पिकांसाठी चांगले मूल्य मिळू शकते कारण निर्यात वाढल्याने देशांतर्गत बाजारपेठेत मागणी वाढू शकते."
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T09:02:14.969Z"
+  },
+  {
+   "id": "a-43ab9749d4f3",
+   "date": "2026-11-20",
+   "crops": [
+    "rice"
+   ],
+   "type": "intl",
+   "dir": "pos",
+   "when": "short",
+   "conf": "medium",
+   "priority": "high",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOS3ZWSlBWTHpyR2tLZXRuc3dzYmlEaGtHUUdCU0UwSHluaHRfV3NvZUdkaWZVejF4TlN3S0FpQ1A2Y3ZCdE5YV0l2VWpnLVJ1SFRSZ1NoWW5UeE9xd0xQbUpFLVZ3R1Z5cVNBaDAtelp3UmpyT0pTTXc1cC1XcFNCWjZySDczbGdEMi0ybm9wTHV3ZFlDREZaaWxn?oc=5",
+   "source_name": "CMB News",
+   "headline": "Indian Rice Export Prices at 19-Month High on African Demand and Strong Rupee — CMB News - CMB News",
+   "hi": {
+    "title": "भारतीय चावल के निर्यात मूल्य 19 महीने के उच्चतम स्तर पर",
+    "what": "भारतीय चावल के निर्यात मूल्य 19 महीने के उच्चतम स्तर पर पहुंच गए हैं। इसका कारण अफ्रीकी मांग और मजबूत रुपया है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "चावल के किसानों को अच्छी कीमत मिलेगी क्योंकि निर्यात मूल्य बढ़ गया है"
+   },
+   "mr": {
+    "title": "भारतीय तांदूळ निर्यात किंमती १९ महिन्यांच्या उच्चतम स्तरावर",
+    "what": "भारतीय तांदूळ निर्यात किंमती १९ महिन्यांच्या उच्चतम स्तरावर पोहोचल्या आहेत. याचे कारण आफ्रिकेतील मागणी आणि मजबूत रुपया आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "तांदूळ उत्पादक शेतकऱ्यांना चांगली किंमत मिळेल कारण निर्यात किंमती वाढल्या आहेत"
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T09:01:59.709Z"
+  },
+  {
+   "id": "a-331291f57929",
+   "date": "2026-11-20",
+   "crops": [
+    "rice"
+   ],
+   "type": "export",
+   "dir": "pos",
+   "when": "short",
+   "conf": "medium",
+   "priority": "high",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQS21SWmV5U2M0ZEkzd013NlhDRUhsMEl1c0dwbERScWRqNTcwYmhzMnAxa2ZKS0RmcTBiR0V5RFVGNk1iLXdjOVBORWxaaDlBTUtUbHdnVkNhWlNmcTk0VTBkbUdFS3h2NXFrckpvS2VfZ2dENUh3ZzN4U3lKVkVzek5ZczhkdlZsVmNHbkJFUmxfaThDc3JES2tJWDNNcGRMQlFBVklRX2N3MWxJdDVCMzhVUjAwdzIxSElXWnZ0Wlh5S04yM3pXRkpwUTl3SlRnWTdMdFA5NkNHbDk3QmxGMUo4N1RxR0xqWm1wMG83LW1sSzU4WFlz0gH-AUFVX3lxTFBnZ2QwUmppTjdRN3FuamFaOXBMd1lMWGF2Q3ZHVGJzTjZrMjZmR1Z1SFhQa09LLUNveVJ2ekMzbzZCeVRGUks0eGJuODJsei0xWTB3RnZ1dmRVVWpWSzVBZGF6YnlUSEF1aDBISzB3eF9mWjFyOGhaZ1ZnenVXaFdmRlpYQVdadWN6cC1hVzJueXEwLVVuT1pWUERhUnVQOHUwLVZBM2N0Xzk5U05IMkVXU254cHZuYzM1OVB0NkJ5ajVzQVdYLTdPa3lFVHUyd3k5RW5YM2JlMUdfbV9lVHJtQ29PNzJreXdvZnItUE9ESDVJM0dvQjRKcTlKOUFR?oc=5",
+   "source_name": "BusinessLine",
+   "headline": "Indian rice export prices hit 19-month high on rupee gains, African demand - BusinessLine",
+   "hi": {
+    "title": "भारतीय चावल निर्यात मूल्य 19 महीने के उच्चतम स्तर पर",
+    "what": "भारतीय चावल निर्यात मूल्य 19 महीने के उच्चतम स्तर पर पहुंच गया है। इसका कारण रुपये की वृद्धि और अफ्रीकी मांग है।",
+    "why": "रुपये की वृद्धि और अफ्रीकी मांग के कारण",
+    "effect": "चावल किसानों को अच्छी कीमत मिलेगी क्योंकि निर्यात मूल्य बढ़ गया है"
+   },
+   "mr": {
+    "title": "भारतीय चावल निर्यात किंमत १९ महिन्यांच्या उच्चतम स्तरावर",
+    "what": "भारतीय चावल निर्यात किंमत १९ महिन्यांच्या उच्चतम स्तरावर पोहोचली आहे. याचे कारण रुपयाची वाढ आणि आफ्रिकेतील मागणी आहे.",
+    "why": "रुपयाची वाढ आणि आफ्रिकेतील मागणी मुळे",
+    "effect": "चावल शेतकऱ्यांना चांगली किंमत मिळेल कारण निर्यात किंमत वाढली आहे"
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T09:01:49.549Z"
+  },
+  {
+   "id": "a-a6b56cda3ffe",
+   "date": "2026-11-20",
+   "crops": [
+    "rice"
+   ],
+   "type": "export",
+   "dir": "pos",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMie0FVX3lxTE84YS1QWHRSV084U0FCakRva2o1Mzk4NUtIZWh1TmlNXzQtSjJ5TXdkQ19GOFhsREotaTltUU1kd1FQQ0NzcDI2QmVtTG5xbU9teVJpMnVLRDFveEJuTnp0Y1V5N0R4aTNRT1ZnR2JaWDM1Z1NManN3WmRjNA?oc=5",
+   "source_name": "Indian Rice Exporters Federation",
+   "headline": "Top Rice News: Export Prices Rise & Chennai Port Sets Record - Indian Rice Exporters Federation",
+   "hi": {
+    "title": "चावल की खबर: निर्यात मूल्य बढ़ा और चेन्नई बंदरगाह ने रिकॉर्ड बनाया",
+    "what": "चावल के निर्यात मूल्य में वृद्धि हुई है और चेन्नई बंदरगाह ने रिकॉर्ड बनाया है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "चावल के निर्यात मूल्य में वृद्धि से किसानों को फायदा होगा क्योंकि देश से चावल का निर्यात बढ़ रहा है।"
+   },
+   "mr": {
+    "title": "तांदूळाच्या बातम्या: निर्यात किंमत वाढली आणि चेन्नई बंदरगाहाने विक्रम प्रस्थापित केला",
+    "what": "तांदूळाच्या निर्यात किंमतीत वाढ झाली आहे आणि चेन्नई बंदरगाहाने विक्रम प्रस्थापित केला आहे.",
+    "why": "बातम्यात कारण नाही",
+    "effect": "तांदूळाच्या निर्यात किंमतीत वाढ झाल्याने शेतकऱ्यांना फायदा होईल कारण देशातून तांदूळाचा निर्यात वाढत आहे."
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T09:01:30.165Z"
   },
   {
    "id": "a-2db47c00a093",
@@ -249,6 +435,37 @@
    "addedAt": "2026-11-21T08:50:11.659Z"
   },
   {
+   "id": "a-a720c7e5d78b",
+   "date": "2026-11-19",
+   "crops": [
+    "rice"
+   ],
+   "type": "policy",
+   "dir": "neu",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNZlFoelNZc1dHM2NtQUZmZk1FQ1RWOGxialNUSmZUNUEtWHZGeV96Tmw3OTBib3pYT0U2THFEaUp6VGxiMVliQUlQRzMxQ245aDd6ZDVxV01CcmhVWlpYTVZKcEtmRm10RmxnOU1lV29ZblJIekdhOWpMOTFYdkVvSDlueWVmcUt0RmtsNTFOSU1tZXVvSWJwQXlmLWszcl9CQmlMS2tkbHhFS1RkYUYzT2xsUWZnN05Na25xNS15UDVEUFJnYnJveDZjZw?oc=5",
+   "source_name": "BigMint",
+   "headline": "India: Rice sector sees policy changes, procurement pressure and export diversification - BigMint",
+   "hi": {
+    "title": "भारत: चावल क्षेत्र में नीति परिवर्तन, क्रय दबाव और निर्यात विविधीकरण",
+    "what": "भारत में चावल क्षेत्र में नीति परिवर्तन हो रहे हैं और निर्यात विविधीकरण हो रहा है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "चावल के दाम पर कुछ खास असर नहीं पड़ेगा क्योंकि यह नीति परिवर्तन की शुरुआती चरण में है और इसके परिणाम आने में समय लगेगा।"
+   },
+   "mr": {
+    "title": "भारत: तांदूळ क्षेत्रात धोरणात्मक बदल, खरेदी दबाव आणि निर्यात वैविध्यीकरण",
+    "what": "भारतात तांदूळ क्षेत्रात धोरणात्मक बदल होत आहेत आणि निर्यात वैविध्यीकरण होत आहे.",
+    "why": "बातमीत कारण नाही सांगितले",
+    "effect": "तांदूळच्या भावावर खास परिणाम होणार नाही कारण ही धोरणात्मक बदलांची सुरुवातीची टप्पा आहे आणि त्याचे परिणाम येण्यास वेळ लागेल."
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T09:02:26.483Z"
+  },
+  {
    "id": "a-8eba422aac8a",
    "date": "2026-11-19",
    "crops": [
@@ -403,6 +620,37 @@
    },
    "auto": true,
    "addedAt": "2026-11-21T08:47:39.301Z"
+  },
+  {
+   "id": "a-3a46c3a8cba9",
+   "date": "2026-11-18",
+   "crops": [
+    "sugar"
+   ],
+   "type": "import",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "high",
+   "qty": "2.15 LMT",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPQ3JQNUozUUdNWWc2T1I2akRSSlVPZWxQRmdpeEFhRXRPcGJraE8tUzBoSmdqdzFkeEFaNDRhaW41dmlfTnVKOXRNMVN4R1ppWHBGel9yUWNZalpQbXA2SmVvOE9YRlU1Yzk0ZUxwMGg0SzU4X3pUSzVSN3dPSmRZQ3gyNElWcnlkRV9IUU9ScExXT2dOMHRreTZDYVYwSGtmWHBpag?oc=5",
+   "source_name": "ChiniMandi",
+   "headline": "DGFT opens fresh window for allocating 2.15 LMT raw sugar import under TRQ - ChiniMandi",
+   "hi": {
+    "title": "डीजीएफटी ने टीआरक्यू के तहत 2.15 एलएमटी कच्ची चीनी आयात के लिए नई खिड़की खोली",
+    "what": "डीजीएफटी ने टीआरक्यू के तहत 2.15 एलएमटी कच्ची चीनी आयात के लिए नई खिड़की खोली है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "इससे देश में चीनी की उपलब्धता बढ़ेगी, जिससे चीनी के दाम गिर सकते हैं।"
+   },
+   "mr": {
+    "title": "डीजीएफटीने टीआरक्यू अंतर्गत २.१५ एलएमटी कच्ची साखर आयातसाठी नवीन वाटप मार्ग खुला केला",
+    "what": "डीजीएफटीने टीआरक्यू अंतर्गत २.१५ एलएमटी कच्ची साखर आयातसाठी नवीन वाटप मार्ग खुला केला आहे.",
+    "why": "बातमीत कारण नाही सांगितले आहे",
+    "effect": "यामुळे देशात साखरेची उपलब्धता वाढेल, ज्यामुळे साखरेच्या भावात घट होऊ शकते."
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T09:00:40.782Z"
   },
   {
    "id": "a-92f1a534efec",
@@ -584,8 +832,16 @@
   "a-8d47d20fc467",
   "a-58dafc8138e8",
   "a-92f1a534efec",
-  "a-2db47c00a093"
+  "a-2db47c00a093",
+  "a-3a46c3a8cba9",
+  "a-2d04f9a2bc60",
+  "a-a6b56cda3ffe",
+  "a-c5bf50ea38f5",
+  "a-331291f57929",
+  "a-43ab9749d4f3",
+  "a-225d6ca58d4e",
+  "a-a720c7e5d78b"
  ],
- "updated": "2026-11-21T08:53:39.250Z",
+ "updated": "2026-11-21T09:02:30.492Z",
  "_about": "AI se apne aap bani cards. official=true sirf sarkari website wali khabar. Baaki ki sarkari pushti baaki."
 }
