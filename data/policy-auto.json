@@ -4,8 +4,7 @@
    "id": "a-78c16f64fb17",
    "date": "2026-11-19",
    "crops": [
-    "oilseed",
-    "sunflower"
+    "oilseed"
    ],
    "type": "import",
    "dir": "neg",
@@ -126,37 +125,6 @@
    "addedAt": "2026-11-21T08:48:48.648Z"
   },
   {
-   "id": "a-7a9c7429bf5d",
-   "date": "2026-11-18",
-   "crops": [
-    "onion"
-   ],
-   "type": "policy",
-   "dir": "pos",
-   "when": "medium",
-   "conf": "medium",
-   "priority": "normal",
-   "qty": null,
-   "official": false,
-   "source": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQNy16V25xT1B6YUE3eS01S09JNlJnTk9fWE1fZ1lqU0QtUzRodzF5eXBjc21xZk5ZeUpIMThSallVQi0xcFBCZlNQZUo4Ym84Z3hoSnBhTmlOZFBkLVBXN25iOFlCUE9GRmJPM2hrbkVRWVZwNVU2ZEIwMUwwbEdxMUVTMWZ4ZVV4UlkydUl3RkNzNUthcGtxYzB1ZmJwcHJ6ZDhnaDZFRjhnRHoxalJoVGtfV1NJREE5MUFkaEY2M2hDUW9LNTVJYmt6S0JJTGhia0xnSUVZamlqTXdnNmluWjBBNEk1U2J4Z09rWFpYMWlBZE9qTEl0U2ZOVjBqQ1VheVHSAYICQVVfeXFMUDctelducU9QemFBN3ktNUtPSTZSZ05PX1hNX2dZalNELVM0aHcxeXlwY3NtcWZOWXlKSDE4UmpZVUItMXBQQmZTUGVKOGJvOGd4aEpwYU5pTmRQZC1QVzduYjhZQlBPRkZiTzNoa25FUVlWcDVVNmRCMDFMMGxHcTFFUzFmeGVVeFJZMnVJd0ZDczVLYXBrcWMwdWZicHByemQ4Z2g2RUY4Z0R6MWpSaFRrX1dTSURBOTFBZGhGNjNoQ1FvSzU1SWJrektCSUxoYmtMZ0lFWWppak13ZzZpblowQTRJNVNieGdPa1haWDFpQWRPakxJdFNmTlYwakNVYXlR?oc=5",
-   "source_name": "The Economic Times",
-   "headline": "Onion farmers seek measures to ensure Rs 3,000 per quintal amid surplus production outlook - The Economic Times",
-   "hi": {
-    "title": "प्याज किसानों को 3000 रुपये प्रति क्विंटल की गारंटी देने के लिए उपायों की मांग",
-    "what": "प्याज किसानों ने अधिशेष उत्पादन के मद्देनज़र 3000 रुपये प्रति क्विंटल की गारंटी देने के लिए उपायों की मांग की है।",
-    "why": "ख़बर में कारण नहीं बताया गया",
-    "effect": "प्याज किसानों को अच्छी कीमत मिलने की संभावना है क्योंकि वे सरकार से समर्थन मूल्य की गारंटी की मांग कर रहे हैं।"
-   },
-   "mr": {
-    "title": "कांद्या शेतकऱ्यांनी ३००० रुपये प्रति क्विंटलची हमी देण्यासाठी उपाय योजण्याची मागणी केली आहे",
-    "what": "कांद्या शेतकऱ्यांनी अधिशेष उत्पादनाच्या पार्श्वभूमीवर ३००० रुपये प्रति क्विंटलची हमी देण्यासाठी उपाय योजण्याची मागणी केली आहे.",
-    "why": "बातमीत कारण नाही",
-    "effect": "कांद्या शेतकऱ्यांना चांगली किंमत मिळण्याची शक्यता आहे कारण ते सरकारकडून आधार मूल्याची हमी मागत आहेत."
-   },
-   "auto": true,
-   "addedAt": "2026-11-21T08:48:10.030Z"
-  },
-  {
    "id": "a-fad8fd2ca976",
    "date": "2026-11-18",
    "crops": [
@@ -193,7 +161,6 @@
   "a-81829a7f9b37",
   "a-fad8fd2ca976",
   "a-f926b1f903d2",
-  "a-7a9c7429bf5d",
   "a-b89cf5811847",
   "a-78c16f64fb17",
   "a-a80ce5d9f1b4",

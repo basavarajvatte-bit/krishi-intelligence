@@ -68,7 +68,8 @@ BAZAAR KE PAKKE NIYAM (dir inhi se tay karo, ulta kabhi nahi):
 4. Khane ka tel (palm/soybean/sunflower oil) sasta aayat = soybean/moongfali/sarso kisan ke liye "neg" (unki maang ghatti hai). Tel aayat duty badhna = un kisanon ke liye "pos".
 5. MSP badhna = neeche ka sahara => "pos" (par kharid har jagah nahi hoti, ye bhi likho). Kapas aayat chhoot = kapas kisan ke liye "neg".
 6. Duniya me kisi fasal ka bada utpadan (Brazil soybean record etc.) = duniya ka bhav neeche => Indian kisan ke liye "neg". Duniya me kami = "pos".
-7. Agar pakka na lage ya asar bahut chhota ho => "neu" aur conf "low".
+7. Kisanon/vyapariyon ki MAANG, virodh, ya mantri ka "vichar kar rahe hain" = abhi faisla NAHI hua => "neu", conf "low", aur effect me likho ki faisla hone par hi asar hoga.
+8. Agar pakka na lage ya asar bahut chhota ho => "neu" aur conf "low".
 Yaad rakho: "upbhokta ke liye sasta" ka matlab aksar "kisan ke liye kam bhav" hota hai.
 
 LIKHNE KE NIYAM:
@@ -128,7 +129,8 @@ function clean(a, item) {
   if (!a || a.relevant !== true || !a.hi?.title || !a.mr?.title) return null;
   const DEF = { type: 'policy', dir: 'neu', when: 'medium', conf: 'low' };
   for (const [k, ok] of Object.entries(VALID)) if (!ok.includes(a[k])) a[k] = DEF[k];
-  const crops = (Array.isArray(a.crops) ? a.crops : []).filter(c => /^[a-z]+$/.test(c)).slice(0, 5);
+  const KNOWN = ['onion', 'soybean', 'cotton', 'wheat', 'rice', 'tur', 'gram', 'sugar', 'maize', 'tomato', 'oilseed', 'other'];
+  const crops = [...new Set((Array.isArray(a.crops) ? a.crops : []).map(c => KNOWN.includes(c) ? c : (/sunflower|mustard|groundnut|palm|oil/.test(c) ? 'oilseed' : 'other')))].slice(0, 5);
   if (a.type === 'msp' && !/MSP|minimum support|procure|kharid/i.test(item.title + ' ' + item.summary)) a.type = 'policy';
   const official = OFFICIAL.some(d => item.srcHost === d || item.srcHost.endsWith('.' + d));
   // AI ka confidence: sirf khabar ho (sarkari nahi) to "high" nahi dikhate
