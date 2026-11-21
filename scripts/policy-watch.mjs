@@ -68,17 +68,33 @@ Sirf JSON do, is roop me:
 "mr":{"title":"","what":"","why":"","effect":""}}
 hi = Hindi (Devanagari), mr = Marathi (Devanagari). dir: pos = bhav badhne ki sambhavna, neg = girne ki, neu = khaas asar nahi.`;
 
+// Do AI address: pehla naya, doosra purana (backup). Dono GitHub ke free models.
+const ENDPOINTS = [
+  { url: 'https://models.github.ai/inference/chat/completions', model: MODEL },
+  { url: 'https://models.inference.ai.azure.com/chat/completions', model: MODEL.replace(/^openai\//, '') }
+];
+let EP = 0;
 async function analyse(item) {
-  const r = await fetch('https://models.github.ai/inference/chat/completions', {
-    method: 'POST', signal: AbortSignal.timeout(60000),
-    headers: { 'Authorization': `Bearer ${TOKEN}`, 'Content-Type': 'application/json' },
-    body: JSON.stringify({ model: MODEL, temperature: 0.2, response_format: { type: 'json_object' },
-      messages: [{ role: 'system', content: SYSTEM },
-        { role: 'user', content: `Source: ${item.srcName} (${item.srcHost})\nDate: ${item.date}\nTitle: ${item.title}\nText: ${item.summary}` }] })
-  });
-  if (!r.ok) throw new Error('AI HTTP ' + r.status + ' ' + (await r.text()).slice(0, 200));
-  const j = await r.json();
-  return JSON.parse(j.choices[0].message.content);
+  let last;
+  for (let k = EP; k < ENDPOINTS.length; k++) {
+    const ep = ENDPOINTS[k];
+    try {
+      const r = await fetch(ep.url, {
+        method: 'POST', signal: AbortSignal.timeout(60000),
+        headers: { 'Authorization': `Bearer ${TOKEN}`, 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify({ model: ep.model, temperature: 0.2, response_format: { type: 'json_object' },
+          messages: [{ role: 'system', content: SYSTEM },
+            { role: 'user', content: `Source: ${item.srcName} (${item.srcHost})\nDate: ${item.date}\nTitle: ${item.title}\nText: ${item.summary}` }] })
+      });
+      const text = await r.text();
+      let j; try { j = JSON.parse(text); } catch { throw new Error(`HTTP ${r.status} ${r.headers.get('content-type')} body: ${text.slice(0, 160)}`); }
+      if (!r.ok || !j.choices) throw new Error(`HTTP ${r.status} ${JSON.stringify(j).slice(0, 200)}`);
+      EP = k;
+      let c = j.choices[0].message.content.trim().replace(/^```(json)?/i, '').replace(/```$/, '');
+      return JSON.parse(c);
+    } catch (e) { last = e; console.error('  endpoint', k, 'fail:', e.message); }
+  }
+  throw last;
 }
 
 const VALID = { type: ['import', 'export', 'msp', 'policy', 'intl'], dir: ['pos', 'neg', 'neu'], when: ['short', 'medium', 'long'], conf: ['high', 'medium', 'low'] };
