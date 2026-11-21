@@ -1,0 +1,17 @@
+name: Research live test
+on:
+  workflow_dispatch:
+jobs:
+  t:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Product research (Actara / Thiamethoxam)
+        run: |
+          curl -sN -m 90 -X POST https://krishi-mandi.basavarajvatte.workers.dev/research -H 'Content-Type: application/json' \
+            -d '{"kind":"product","product":{"name":"Actara","company":"Syngenta","formulation":"WG","ais":[{"name":"Thiamethoxam","concentration":"25%"}],"crops":["onion"],"dosage":"0.5 g/L"}}' | tee p.txt | cut -c1-400
+          grep -q '"type":"done"' p.txt
+      - name: Disease research (purple blotch onion)
+        run: |
+          curl -sN -m 90 -X POST https://krishi-mandi.basavarajvatte.workers.dev/research -H 'Content-Type: application/json' \
+            -d '{"kind":"disease","disease":{"problem_en":"purple blotch","crop":"onion"}}' | tee d.txt | cut -c1-400
+          grep -q '"type":"done"' d.txt

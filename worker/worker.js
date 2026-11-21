@@ -80,6 +80,24 @@ export default {
       return out({ ok: true, model: M.name, ms: Date.now() - t0, fixed, data: v });
     }
 
+    // Website ke liye: scan ke baad online research (alag, background). Server-Sent Events se ek-ek hissa bhejta hai.
+    if (u.pathname === '/research') {
+      const CORS = { ...H, 'Access-Control-Allow-Methods': 'POST, OPTIONS', 'Access-Control-Allow-Headers': 'Content-Type' };
+      if (req.method === 'OPTIONS') return new Response(null, { headers: CORS });
+      if (req.method !== 'POST') return new Response(JSON.stringify({ ok: false }), { headers: CORS });
+      const ip = req.headers.get('cf-connecting-ip') || 'x';
+      if (env.VISION_RL) { try { const { success } = await env.VISION_RL.limit({ key: 'r:' + ip }); if (!success) return new Response('data: {"type":"error","code":"rate"}\n\ndata: {"type":"done"}\n\n', { headers: { ...CORS, 'Content-Type': 'text/event-stream' } }); } catch (e) {} }
+      let b; try { b = await req.json(); } catch (e) { return new Response(JSON.stringify({ ok: false }), { headers: CORS }); }
+      const { readable, writable } = new TransformStream(); const w = writable.getWriter(); const enc = new TextEncoder();
+      let open = true; const emit = async o => { if (!open) return; try { await w.write(enc.encode('data: ' + JSON.stringify(o) + '\n\n')); } catch (e) { open = false; } };
+      ctx.waitUntil((async () => {
+        try { await emit({ type: 'start', at: new Date().toISOString(), web: env.TAVILY_API_KEY ? 'key' : 'keyless' }); await runResearch(b, env, emit); }
+        catch (e) { await emit({ type: 'error', msg: String(e).slice(0, 200) }); }
+        await emit({ type: 'done' }); try { await w.close(); } catch (e) {}
+      })());
+      return new Response(readable, { headers: { ...CORS, 'Content-Type': 'text/event-stream; charset=utf-8', 'Cache-Control': 'no-cache' } });
+    }
+
     // GitHub robot ke liye: data.gov.in ke chune hue resource (filters ke saath). Chaabi se surakshit.
     if (u.pathname === '/res') {
       if (req.headers.get('x-key') !== env.DATA_GOV_KEY) return send({ ok: false, msg: 'mana hai' });
@@ -164,4 +182,182 @@ function validVision(task, d) {
     recommended_actions: arr(d.recommended_actions || d.cultural_steps_mr).map(str), approved_treatments: [], prevention: arr(d.prevention).map(str), additional_information_needed: arr(d.additional_information_needed || d.need_more).map(str) };
   if (!o.image_ok) return o;
   return (pc.length || o.detected_problem) ? o : null;
+}
+
+// ======================= ONLINE RESEARCH ENGINE =======================
+// Niyam: har baat ke saath asli source; LLM sirf source ke text se nikaalta hai aur "quote" deta hai —
+// quote source me shabdash: na mile to baat hata di jaati hai. Matra (dose) me farak ho to average nahi, "conflict" dikhate hain.
+const R_UA = { 'User-Agent': 'KrishiIntelligence/1.0 (https://basavarajvatte-bit.github.io/krishi-intelligence/; farmer info site)' };
+const R_OFFICIAL = ['ppqs.gov.in', 'cibrc.nic.in', 'icar.org.in', 'icar.gov.in', 'krishi.icar.gov.in', 'dogr.icar.gov.in', 'ncipm.icar.gov.in', 'nhb.gov.in', 'agriwelfare.gov.in', 'agricoop.nic.in', 'vikaspedia.in', 'agritech.tnau.ac.in', 'tnau.ac.in', 'mpkv.ac.in', 'vnmkv.ac.in', 'pdkv.ac.in', 'dbskkv.org', 'pau.edu', 'hau.ac.in', 'uasd.edu', 'iari.res.in', 'farmer.gov.in', 'krishi.maharashtra.gov.in'];
+const R_SHOPS = ['bighaat.com', 'agribegri.com', 'agrostar.in', 'dehaat.com', 'krishidukan.com', 'kisanshop.in', 'iffcobazar.in', 'amazon.in', 'flipkart.com', 'jiomart.com'];
+const R_BAN = ['alachlor','aldicarb','aldrin','benzene hexachloride','benomyl','calcium cyanide','carbaryl','chlorobenzilate','chlordane','chlorfenvinphos','copper acetoarsenite','diazinon','dibromochloropropane','dichlorvos','dicofol','dieldrin','dinocap','endosulfan','endrin','ethylmercury chloride','ethyl parathion','ethylene dibromide','fenarimol','fenthion','heptachlor','lindane','linuron','maleic hydrazide','menazon','methomyl','methyl parathion','metoxuron','nitrofen','pentachloronitrobenzene','pentachlorophenol','phenylmercury acetate','phorate','phosphamidon','sodium cyanide','sodium methanearsonate','tetradifon','thiometon','toxaphene','triazophos','tridemorph','trichloroacetic acid','trichlorfon','dalapon','ferbam','formothion','nickel chloride','paradichlorobenzene','simazine','sirmate','warfarin','ammonium sulphamate','azinphos','binapacryl','calcium arsenate','carbophenothion','chinomethionate','dicrotophos','fentin','lead arsenate','leptophos','mephosfolan','mevinphos','disulfoton','vamidothion'];
+const R_BAN_SRC = { title: 'CIB&RC/PPQS banned & restricted list (31.03.2024) — summary', url: 'https://en.wikipedia.org/wiki/List_of_banned_and_restricted_pesticides_in_India', source_type: 'government_list' };
+const rNorm = t => String(t || '').toLowerCase().replace(/[‘’“”]/g, "'").replace(/[^a-z0-9%./' ]+/g, ' ').replace(/\s+/g, ' ').trim();
+const rDigits = t => (String(t || '').match(/\d+(\.\d+)?/g) || []);
+const rHost = u => { try { return new URL(u).hostname.replace(/^www\./, ''); } catch (e) { return ''; } };
+const rIsOfficial = u => { const h = rHost(u); return R_OFFICIAL.some(d => h === d || h.endsWith('.' + d)) || /\.gov\.in$|\.nic\.in$/.test(h); };
+async function rFetchJson(url, opt = {}, ms = 9000) {
+  const c = new AbortController(); const t = setTimeout(() => c.abort(), ms);
+  try { const r = await fetch(url, { ...opt, signal: c.signal }); const txt = await r.text(); let j = null; try { j = JSON.parse(txt); } catch (e) {} return { status: r.status, j, txt }; }
+  finally { clearTimeout(t); }
+}
+async function rWiki(q) {
+  const s = await rFetchJson('https://en.wikipedia.org/w/rest.php/v1/search/title?limit=1&q=' + encodeURIComponent(q), { headers: R_UA });
+  const key = s.j && s.j.pages && s.j.pages[0] && s.j.pages[0].key; if (!key) return null;
+  const p = await rFetchJson('https://en.wikipedia.org/api/rest_v1/page/summary/' + encodeURIComponent(key), { headers: R_UA });
+  if (!p.j || !p.j.extract || p.j.type === 'disambiguation') return null;
+  return { title: p.j.title, text: p.j.extract, url: (p.j.content_urls && p.j.content_urls.desktop && p.j.content_urls.desktop.page) || ('https://en.wikipedia.org/wiki/' + key) };
+}
+async function rTavily(env, query, opts = {}) {
+  const h = { 'Content-Type': 'application/json' };
+  if (env.TAVILY_API_KEY) h.Authorization = 'Bearer ' + env.TAVILY_API_KEY; else h['X-Tavily-Access-Mode'] = 'keyless';
+  const body = { query, search_depth: 'basic', max_results: opts.max || 4, include_raw_content: opts.raw ? 'text' : false };
+  if (opts.domains) body.include_domains = opts.domains;
+  const r = await rFetchJson('https://api.tavily.com/search', { method: 'POST', headers: h, body: JSON.stringify(body) }, 15000);
+  if (r.status === 429 || r.status === 432 || r.status === 433) return { limit: true, results: [] };
+  if (!r.j || !Array.isArray(r.j.results)) return { error: (r.txt || '').slice(0, 120), results: [] };
+  return { results: r.j.results };
+}
+async function rLLM(env, sys, user, max = 700) {
+  const r = await env.AI.run('@cf/meta/llama-3.1-8b-instruct-fast', { messages: [{ role: 'system', content: sys }, { role: 'user', content: user }], max_tokens: max, temperature: 0 });
+  return jsonFrom(r && r.response);
+}
+// Source ke text se, kisi vishay (subject) par, sirf diye gaye fields nikalo; quote jaancho
+async function rExtract(env, text, subject, fields) {
+  const t = String(text || ''); if (t.length < 80) return [];
+  const low = t.toLowerCase(), key = String(subject).toLowerCase().split(/\s+/)[0];
+  let i = key ? low.indexOf(key) : 0; if (i < 0) i = 0;
+  const win = t.slice(Math.max(0, i - 1500), Math.max(0, i - 1500) + 9000);
+  const d = await rLLM(env, 'You extract facts from a source text. Use ONLY the text. For every item give "quote": an exact sentence or phrase copied character-for-character from the text (at least 6 words). Output ONE JSON object only.',
+    `SUBJECT: ${subject}\nFIELDS: ${fields.join(', ')}\nReturn {"items":[{"field":"<one of FIELDS>","value":"short English fact","quote":"exact copied text"}]} with only facts about the SUBJECT. If none: {"items":[]}.\nTEXT:\n${win}`, 900);
+  const nt = rNorm(win);
+  return ((d && d.items) || []).filter(x => x && fields.includes(x.field) && x.value && x.quote).filter(x => {
+    const q = rNorm(x.quote); if (q.split(' ').length < 5 || !nt.includes(q)) return false;          // quote source me hona chahiye
+    return rDigits(x.value).every(n => rDigits(x.quote).includes(n));                                 // value ke ank quote me hon
+  }).slice(0, 12);
+}
+async function rToMr(env, lines) {
+  if (!lines.length) return [];
+  const d = await rLLM(env, 'Translate each English line into simple, short Marathi (Devanagari) for farmers. Keep product names, chemical names, scientific names, numbers, %, units and registration numbers exactly unchanged. Output ONE JSON object only.',
+    'Return {"mr":["..."]} in the same order.\nLINES:\n' + lines.map((l, i) => `${i + 1}. ${l}`).join('\n'), 1200);
+  const mr = (d && d.mr) || [];
+  return lines.map((en, i) => { const m = String(mr[i] || ''); const ok = m && /[ऀ-ॿ]/.test(m) && rDigits(en).every(n => rDigits(m).includes(n)); return ok ? m : en; });
+}
+const R_FIELD_MR = { dosage: 'अधिकृत प्रमाण (dose)', crops: 'मंजूर / नमूद पिके', pests: 'किडी / रोग', phi: 'काढणीपूर्वी थांबायचे दिवस (PHI)', method: 'वापरण्याची पद्धत', timing: 'वापरण्याची वेळ', max_applications: 'जास्तीत जास्त फवारण्या', safety: 'सुरक्षा', first_aid: 'प्रथमोपचार', storage: 'साठवण', disposal: 'रिकामे डबे/उरलेले औषध', reentry: 'शेतात पुन्हा जाण्याआधी थांबा', symptoms: 'लक्षणे', cause: 'कारण', conditions: 'रोग वाढण्याचे हवामान/परिस्थिती', lifecycle: 'जीवनचक्र', prevention: 'प्रतिबंध', cultural: 'शेतीतील उपाय', biological: 'जैविक उपाय', crops_affected: 'कोणत्या पिकांवर', how: 'हे कसे काम करते / काय आहे' };
+async function rEmitItems(env, emit, id, items, source) {
+  if (!items.length) return 0;
+  const mr = await rToMr(env, items.map(x => x.value));
+  await emit({ type: 'section', id, items: items.map((x, i) => ({ field: x.field, label_mr: R_FIELD_MR[x.field] || x.field, text_mr: mr[i], text_en: x.value, quote: x.quote, verified: true, source })) });
+  return items.length;
+}
+async function runResearch(b, env, emit) {
+  const now = new Date().toISOString();
+  const step = (id, status, extra = {}) => emit({ type: 'step', id, status, ...extra });
+  if (b.kind === 'product') {
+    const P = b.product || {}, ai = (P.ais || []).map(a => String(a.name || '').trim()).filter(Boolean).slice(0, 2);
+    const conc = (P.ais || []).map(a => a.concentration).filter(Boolean).join(' + '), name = String(P.name || '').slice(0, 60), comp = String(P.company || '').slice(0, 60);
+    const subj = ai[0] || name; const dosages = [];
+    if (P.dosage) dosages.push({ value: String(P.dosage), source: { title: 'उत्पादनाचे लेबल (तुमचा फोटो)', url: '', source_type: 'label_photo', retrieved_at: now } });
+    const tasks = [];
+    // 1. CIB&RC banned/restricted
+    tasks.push((async () => {
+      await step('reg', 'run');
+      const hit = ai.filter(n => R_BAN.some(x => n.toLowerCase().includes(x)));
+      await emit({ type: 'section', id: 'reg', items: [{ field: 'regulatory', label_mr: 'सरकारी बंदी यादी तपासणी', text_mr: hit.length ? `🚫 ${hit.join(', ')} — भारतात बंदी / नोंदणी नाकारलेल्या यादीत.` : `${ai.join(', ') || name} — बंदी यादीत (31.03.2024 पर्यंत) सापडले नाही. नोंदणी CIR क्रमांकाने तपासा.`, verified: true, source: { ...R_BAN_SRC, retrieved_at: now } }] });
+      await step('reg', 'ok');
+    })());
+    // 2. Wikipedia: sakriya ghatak kya hai / kaise kaam karta hai
+    tasks.push((async () => {
+      await step('wiki', 'run');
+      try {
+        let n = 0;
+        for (const a of ai) { const w = await rWiki(a + ' pesticide'); if (!w) continue; const first = w.text.split(/(?<=\.)\s+/).slice(0, 3).join(' ');
+          n += await rEmitItems(env, emit, 'how', [{ field: 'how', value: first, quote: first }], { title: 'Wikipedia: ' + w.title, url: w.url, source_type: 'encyclopedia', retrieved_at: now }); }
+        await step('wiki', n ? 'ok' : 'none');
+      } catch (e) { await step('wiki', 'fail'); }
+    })());
+    // 3. Sarkari / vishwavidyalay ke page (Tavily) -> quote ke saath
+    tasks.push((async () => {
+      await step('official', 'run');
+      try {
+        const r = await rTavily(env, `${subj} ${conc} ${P.formulation || ''} ${(P.crops || [])[0] || ''} dosage recommendation`, { domains: R_OFFICIAL, raw: true, max: 3 });
+        if (r.limit) return step('official', 'limit');
+        let n = 0;
+        for (const x of r.results.slice(0, 3)) {
+          if (!rIsOfficial(x.url)) continue;
+          const items = await rExtract(env, x.raw_content || x.content, subj, ['dosage', 'crops', 'pests', 'phi', 'method', 'timing', 'max_applications', 'safety', 'first_aid', 'storage', 'disposal', 'reentry']);
+          const src = { title: x.title, url: x.url, source_type: 'official', retrieved_at: now };
+          items.filter(i => i.field === 'dosage').forEach(i => dosages.push({ value: i.value, source: src }));
+          n += await rEmitItems(env, emit, 'official', items, src);
+        }
+        await step('official', n ? 'ok' : 'none');
+      } catch (e) { await step('official', 'fail'); }
+    })());
+    // 4. Company ki website (Tavily)
+    tasks.push((async () => {
+      await step('maker', 'run');
+      try {
+        if (!name) return step('maker', 'none');
+        const r = await rTavily(env, `${name} ${comp} ${subj} label`, { raw: true, max: 4 });
+        if (r.limit) return step('maker', 'limit');
+        const tok = (comp || name).toLowerCase().split(/[^a-z]+/).filter(t => t.length >= 4 && !['limited', 'india', 'private', 'crop', 'science', 'sciences'].includes(t));
+        const mk = r.results.filter(x => tok.some(t => rHost(x.url).includes(t))).slice(0, 2);
+        let n = 0;
+        for (const x of mk) { const items = await rExtract(env, x.raw_content || x.content, name, ['dosage', 'crops', 'pests', 'phi', 'method', 'safety', 'first_aid', 'storage', 'disposal']);
+          const src = { title: x.title, url: x.url, source_type: 'manufacturer', retrieved_at: now };
+          items.filter(i => i.field === 'dosage').forEach(i => dosages.push({ value: i.value, source: src }));
+          n += await rEmitItems(env, emit, 'maker', items, src); }
+        await step('maker', n ? 'ok' : 'none');
+      } catch (e) { await step('maker', 'fail'); }
+    })());
+    // 5. Online kimat (snippet me ₹) + same ghatak wali listing (manjuri na jaanchi, isliye "unverified")
+    tasks.push((async () => {
+      await step('price', 'run');
+      try {
+        const r = await rTavily(env, `${name || subj} ${subj} ${conc} price`, { domains: R_SHOPS, max: 6 });
+        if (r.limit) return step('price', 'limit');
+        const items = [], unv = [];
+        for (const x of r.results) {
+          const txt = `${x.title} ${x.content}`, tl = txt.toLowerCase();
+          const m = txt.match(/(?:₹|rs\.?|inr)\s?([\d,]{2,7}(?:\.\d{1,2})?)/i), pk = txt.match(/(\d+(?:\.\d+)?)\s?(ml|ltr|litre|liter|l|gm|g|kg)\b/i);
+          const same = name && tl.includes(name.toLowerCase().split(' ')[0]);
+          if (m && (same || (subj && tl.includes(subj.toLowerCase())))) items.push({ seller: rHost(x.url), title: x.title.slice(0, 90), price: m[1], pack: pk ? pk[0] : '', url: x.url, kind: 'online_listing', checked_at: now, same_product: !!same });
+          else if (subj && tl.includes(subj.toLowerCase()) && !same) unv.push({ title: x.title.slice(0, 90), url: x.url });
+        }
+        await emit({ type: 'prices', items: items.slice(0, 6) });
+        if (unv.length) await emit({ type: 'unverified', id: 'alt', items: unv.slice(0, 5), note: 'same_ingredient_listing' });
+        await step('price', items.length ? 'ok' : 'none');
+      } catch (e) { await step('price', 'fail'); }
+    })());
+    await Promise.allSettled(tasks);
+    // Matra me farak? average nahi — conflict
+    const uniq = []; dosages.forEach(d => { const v = String(d.value).toLowerCase().replace(/millilit(re|er)s?/g, 'ml').replace(/kilograms?|kgs/g, 'kg').replace(/grams?|gms?/g, 'g').replace(/lit(re|er)s?|ltrs?/g, 'l').replace(/acres?/g, 'ac').replace(/hectares?/g, 'ha'); const k = rDigits(v).map(Number).join('/') + ' ' + (v.match(/\bml\b|\bkg\b|\bg\b|\bl\b|%|\bac\b|\bha\b/g) || []).join(''); if (!uniq.find(u => u.k === k)) uniq.push({ k, ...d }); });
+    if (uniq.length > 1) await emit({ type: 'conflict', field: 'dosage', items: uniq.map(u => ({ value: u.value, source: u.source })) });
+    return;
+  }
+  if (b.kind === 'disease') {
+    const D = b.disease || {}, prob = String(D.problem_en || '').slice(0, 80), crop = String(D.crop || '').slice(0, 30);
+    if (!prob) return step('wiki', 'none');
+    const tasks = [];
+    tasks.push((async () => {
+      await step('wiki', 'run');
+      try { const w = await rWiki(`${prob} ${crop}`) || await rWiki(prob); if (!w) return step('wiki', 'none');
+        const first = w.text.split(/(?<=\.)\s+/).slice(0, 3).join(' ');
+        await rEmitItems(env, emit, 'how', [{ field: 'how', value: first, quote: first }], { title: 'Wikipedia: ' + w.title, url: w.url, source_type: 'encyclopedia', retrieved_at: now });
+        await step('wiki', 'ok'); } catch (e) { await step('wiki', 'fail'); }
+    })());
+    tasks.push((async () => {
+      await step('official', 'run');
+      try {
+        const r = await rTavily(env, `${prob} ${crop} symptoms management`, { domains: R_OFFICIAL, raw: true, max: 3 });
+        if (r.limit) return step('official', 'limit');
+        let n = 0;
+        for (const x of r.results.slice(0, 3)) { if (!rIsOfficial(x.url)) continue;
+          const items = await rExtract(env, x.raw_content || x.content, prob, ['symptoms', 'cause', 'conditions', 'lifecycle', 'prevention', 'cultural', 'biological', 'crops_affected']);
+          n += await rEmitItems(env, emit, 'official', items, { title: x.title, url: x.url, source_type: 'official', retrieved_at: now }); }
+        await step('official', n ? 'ok' : 'none');
+      } catch (e) { await step('official', 'fail'); }
+    })());
+    await Promise.allSettled(tasks);
+  }
 }

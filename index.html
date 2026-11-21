@@ -361,7 +361,7 @@ function applyLang(){
   renderLive();renderCompare();renderHistory();renderWeather();renderAlerts();renderPolicy();renderKB();
 }
 $$('.langs button').forEach(b=>b.onclick=()=>{L=b.dataset.l;try{localStorage.setItem('lang',L)}catch(e){};applyLang()});
-function show(s){if(typeof SCAN_BUSY!=='undefined'&&SCAN_BUSY&&s!=='scan'&&s!=='doctor')SCAN_BUSY.abort();$$('section').forEach(x=>x.classList.toggle('on',x.id===s));$$('nav button').forEach(b=>b.classList.toggle('on',b.dataset.s===s));try{localStorage.setItem('tab',s)}catch(e){}}
+function show(s){if(typeof SCAN_BUSY!=='undefined'&&SCAN_BUSY&&s!=='scan'&&s!=='doctor')SCAN_BUSY.abort();if(typeof RES_CTRL!=='undefined'&&RES_CTRL&&s!=='scan'&&s!=='doctor')RES_CTRL.abort();$$('section').forEach(x=>x.classList.toggle('on',x.id===s));$$('nav button').forEach(b=>b.classList.toggle('on',b.dataset.s===s));try{localStorage.setItem('tab',s)}catch(e){}}
 $$('nav button').forEach(b=>b.onclick=()=>show(b.dataset.s));
 
 /* ---------- LIVE ---------- */
@@ -1320,7 +1320,7 @@ async function scRun(file,mode){
 function scShow(rec){const c=scCard(rec);let m='';
   if(SC_EXPECT){const ais=(rec.lab.active_ingredients||[]).map(a=>lc(a.name));const hit=SC_EXPECT.list.find(x=>ais.some(a=>a.includes(lc(x))));
     m=`<div class="rc" style="background:${hit?'var(--grn)':'var(--red)'};margin-bottom:8px">${hit?`✅ यात <b>${esc(hit)}</b> आहे — पीक डॉक्टरने सांगितलेल्या (ICAR सल्ला) घटकांपैकी एक.`:`❌ यात पीक डॉक्टरने सांगितलेले घटक (${esc(SC_EXPECT.list.join(', '))}) दिसले नाहीत.`}<br><span style="font-size:14px">लेबलवर तुमचे पीक (${esc(SC_EXPECT.crop)}) व ही कीड/रोग लिहिलेले आहे का तेही तपासा.</span></div>`}
-  document.getElementById('scOut').innerHTML=m+c.html;document.querySelector(`#scOut [data-speak]`).onclick=()=>speak(c.say);document.querySelector('#scOut [data-stop]').onclick=stopSpeak}
+  document.getElementById('scOut').innerHTML=m+c.html;document.querySelector(`#scOut [data-speak]`).onclick=()=>speak(c.say);document.querySelector('#scOut [data-stop]').onclick=stopSpeak;resProduct(rec)}
 function scRenderHist(){
   const el=document.getElementById('scHist');if(!el)return;const h=scHist();
   if(!h.length){el.innerHTML='<p class="muted">अजून काही स्कॅन केले नाही.</p>';return}
@@ -1385,6 +1385,7 @@ function drShow(rec){
   document.getElementById('drDone').onclick=()=>{const pr=prompt('कोणते उत्पादन/उपाय वापरला? (नाव लिहा)')||'';const h=drHist();const r=h.find(x=>x.id===rec.id);if(r){r.treat={date:new Date().toISOString().slice(0,10),product:pr.slice(0,80)};drSave(h);drRenderHist();drReminder();alert('नोंद झाली. 3 दिवसांनी पुन्हा फोटो काढण्याची आठवण इथे दिसेल.')}};
   const pb=document.getElementById('drProd');if(pb)pb.onclick=()=>{SC_EXPECT={list:kb.ai,crop:cropMr};show('scan');document.getElementById('scExpect').innerHTML=`<p class="note">🩺 पीक डॉक्टरच्या सल्ल्यातील घटक: <b>${esc(kb.ai.join(', '))}</b>. दुकानातील बाटलीचा लेबल स्कॅन करा — हा घटक आहे का ते आम्ही तपासू.</p>`;window.scrollTo(0,0)};
   const wb=document.getElementById('drWx');if(wb)wb.onclick=()=>{show('onion');ONTAB='wx';onTabs();window.scrollTo(0,0)};
+  resDisease(rec,top,low);
 }
 function drRenderHist(){
   const el=document.getElementById('drHist');if(!el)return;const h=drHist();
@@ -1499,6 +1500,56 @@ async function runScan({file,task,extra,outId,onResult,maxPx}){
   }finally{if(ov)ov.close();SCAN_BUSY=null}
 }
 // Worker ka saaf jawab -> purane card ke andar ke naam
+// ===== STAGE B: ONLINE RESEARCH (pehchaan turant dikhti hai; ye alag se, dheere-dheere jodta hai) =====
+const RES_URL=VIS_URL.replace(/\/vision$/,'/research');
+const RES_STEPS={reg:'सरकारी बंदी यादी तपासणी',wiki:'घटक / रोगाची माहिती (Wikipedia)',official:'सरकारी / कृषी विद्यापीठ स्रोत',maker:'कंपनीची वेबसाइट',price:'ऑनलाइन किंमत'};
+const RES_ST={run:'⏳ शोधत आहे…',ok:'✓ सापडले',none:'— पडताळलेली माहिती सापडली नाही',fail:'⚠️ स्रोत आत्ता उपलब्ध नाही',limit:'⚠️ मोफत शोधाची मर्यादा संपली (नंतर पुन्हा)'};
+const RES_TYPE={official:'🏛️ सरकारी/विद्यापीठ',manufacturer:'🏭 कंपनी',encyclopedia:'📘 विश्वकोश',government_list:'🏛️ सरकारी यादी',label_photo:'📷 लेबल'};
+const RES_MEM={};let RES_CTRL=null;
+function resKey(kind,o){return kind==='product'?['p',o.name,o.company,o.formulation,(o.ais||[]).map(a=>a.name+' '+(a.concentration||'')).join('+')].map(x=>lc(x||'').trim()).join('|'):['d',o.problem_en,o.crop].map(x=>lc(x||'').trim()).join('|')}
+function resGet(k){if(RES_MEM[k])return RES_MEM[k];try{const c=JSON.parse(localStorage.getItem('rescache')||'{}')[k];if(c&&Date.now()-c.t<7*864e5)return RES_MEM[k]=c}catch(e){}return null}
+function resPut(k,st){try{const c=JSON.parse(localStorage.getItem('rescache')||'{}');c[k]={...st,t:st.t||Date.now()};const ks=Object.keys(c).sort((a,b)=>c[b].t-c[a].t).slice(0,20);const o={};ks.forEach(x=>o[x]=c[x]);localStorage.setItem('rescache',JSON.stringify(o))}catch(e){}}
+function resSrc(s){if(!s)return'';const d=s.retrieved_at?new Date(s.retrieved_at).toLocaleDateString('en-GB'):'';return `<span class="muted" style="font-size:12px">— ${RES_TYPE[s.source_type]||'स्रोत'}: ${s.url?`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title||s.url)}</a>`:esc(s.title||'')}${d?' • '+d:''}</span>`}
+function resRender(el,st,kind,low){
+  const age=Date.now()-(st.t||Date.now()),old=age>864e5;
+  const steps=Object.entries(st.steps||{}).map(([id,v])=>`<div style="font-size:14px">${v==='ok'?'✓':v==='run'?'🔍':'•'} ${RES_STEPS[id]||id}: <span class="muted">${RES_ST[v]||v}</span></div>`).join('');
+  const secs=(st.items||[]).map(x=>`<li style="margin:6px 0"><b>${esc(x.label_mr)}:</b> ${esc(x.text_mr)} ${resSrc(x.source)}</li>`).join('');
+  const conf=st.conflict?`<div class="rc" style="background:var(--org);margin:8px 0">⚠️ <b>प्रमाण (dose) वेगवेगळ्या स्रोतांत वेगळे आहे</b> — आम्ही सरासरी काढत नाही. लेबल व कृषी अधिकाऱ्यांकडून खात्री करा:<ul>${st.conflict.map(c=>`<li>${esc(c.value)} ${resSrc(c.source)}</li>`).join('')}</ul></div>`:'';
+  const pr=(st.prices||[]).length?`<div style="margin-top:8px"><b>💰 ऑनलाइन दिसलेली किंमत</b> <span class="muted" style="font-size:13px">(आजची खात्रीशीर किंमत नाही; दुकानात तपासा)</span>${old?'<p class="note">⚠️ ही किंमत 1 दिवसापेक्षा जुनी आहे.</p>':''}<div class="scroll" style="max-height:none"><table><tr><th>विक्रेता</th><th>किंमत</th><th>पॅक</th><th>तपासले</th></tr>${st.prices.map(p=>`<tr><td><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.seller)}</a>${p.same_product?'':'<br><span class="muted" style="font-size:12px">समान घटक, वेगळे नाव?</span>'}</td><td>₹${esc(p.price)}</td><td>${esc(p.pack||'—')}</td><td>${new Date(p.checked_at).toLocaleDateString('en-GB')}</td></tr>`).join('')}</table></div><p class="muted" style="font-size:13px">प्रकार: ऑनलाइन लिस्टिंग (MRP / डीलर दर नाही). किंमत ÷ पॅक = प्रति लिटर/किलो.</p></div>`:'';
+  const unv=(st.unv||[]).length?`<details style="margin-top:8px"><summary>❔ समान घटक असलेली इतर उत्पादने (पडताळणी नाही)</summary><p class="note">तुमच्या पिकासाठी व किडीसाठी यांची मंजुरी आम्ही तपासलेली नाही — म्हणून "पर्याय" म्हणून सुचवत नाही.</p><ul>${st.unv.map(u=>`<li><a href="${esc(u.url)}" target="_blank" rel="noopener">${esc(u.title)}</a></li>`).join('')}</ul></details>`:'';
+  const miss=st.done&&!(st.items||[]).some(x=>x.field==='dosage')&&kind==='product'?'<p class="note">ℹ️ अधिकृत प्रमाण (dose) ऑनलाइन पडताळता आले नाही — फक्त लेबलवरचे प्रमाण वापरा.</p>':'';
+  el.innerHTML=`<div class="card" style="border-left:6px solid #2b6cb0;margin-top:8px"><b>🌐 ऑनलाइन संशोधन ${st.done?'— पूर्ण':'— चालू आहे'}</b> ${st.t&&st.done&&st.cached?`<span class="muted" style="font-size:12px">(जतन केलेले, ${new Date(st.t).toLocaleDateString('en-GB')})</span>`:''}
+   ${kind==='disease'&&low?'<p class="note">निदान खात्रीशीर नाही — खालील माहिती फक्त समजण्यासाठी; औषध ठरवू नका.</p>':''}
+   <div style="margin:6px 0">${steps}</div>${st.web==='keyless'?'<p class="muted" style="font-size:12px">वेब शोध: मोफत मर्यादित मोड</p>':''}${conf}${secs?`<ul style="padding-left:18px">${secs}</ul>`:''}${miss}${pr}${unv}
+   ${st.err?`<p class="note">⚠️ ${esc(st.err)}</p>`:''}
+   <div class="row">${st.done?`<button class="btn" data-rr style="margin:0;background:#fff;color:#2b6cb0;border:2px solid #2b6cb0">🔄 पुन्हा शोधा</button>`:`<button class="btn" data-rs style="margin:0;background:#fff;color:var(--red);border:2px solid var(--red)">⏹ संशोधन थांबवा</button>`}</div>
+   <p class="muted" style="font-size:12px">प्रत्येक माहिती स्रोताच्या मजकुरात शब्दशः तपासली जाते; न सापडलेली माहिती दाखवत नाही.</p></div>`;
+}
+async function research(el,kind,payload,low,force){
+  if(!el)return;const k=resKey(kind,payload);
+  const draw=st=>{resRender(el,st,kind,low);const s=el.querySelector('[data-rs]');if(s)s.onclick=()=>{RES_CTRL&&RES_CTRL.abort()};const r=el.querySelector('[data-rr]');if(r)r.onclick=()=>research(el,kind,payload,low,true)};
+  const c=!force&&resGet(k);if(c&&c.done){const st={...c,cached:true};if(Date.now()-c.t>864e5)st.prices=[];draw(st);return}
+  if(RES_CTRL)RES_CTRL.abort();const ctrl=new AbortController();RES_CTRL=ctrl;
+  const st={steps:{},items:[],prices:[],unv:[],t:Date.now()};draw(st);
+  try{
+    const r=await fetch(RES_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({kind,[kind]:payload}),signal:ctrl.signal});
+    if(!r.ok||!r.body)throw new Error('http');
+    const rd=r.body.getReader(),dec=new TextDecoder();let buf='';
+    for(;;){const {value,done}=await rd.read();if(done)break;buf+=dec.decode(value,{stream:true});let i;
+      while((i=buf.indexOf('\n\n'))>=0){const line=buf.slice(0,i).trim();buf=buf.slice(i+2);if(!line.startsWith('data:'))continue;let e;try{e=JSON.parse(line.slice(5))}catch(x){continue}
+        if(e.type==='start')st.web=e.web;else if(e.type==='step')st.steps[e.id]=e.status;else if(e.type==='section')st.items.push(...e.items);else if(e.type==='prices')st.prices=e.items;else if(e.type==='unverified')st.unv=e.items;else if(e.type==='conflict')st.conflict=e.items;
+        else if(e.type==='error')st.err=e.code==='rate'?'खूप जास्त विनंत्या. 1 मिनिटाने पुन्हा प्रयत्न करा.':'संशोधनात अडचण आली; वरची ओळख वापरता येईल.';else if(e.type==='done')st.done=true;
+        if(RES_CTRL===ctrl)draw(st)}}
+    st.done=true;Object.keys(st.steps).forEach(id=>{if(st.steps[id]==='run')st.steps[id]='fail'});if(!st.err)resPut(k,st);RES_MEM[k]=st;
+  }catch(e){if(e.name==='AbortError'){st.err='संशोधन थांबवले.';Object.keys(st.steps).forEach(id=>{if(st.steps[id]==='run')st.steps[id]='none'})}else st.err='इंटरनेट/सर्व्हर अडचण — संशोधन होऊ शकले नाही. वरची AI ओळख तशीच वापरता येईल.';st.done=true}
+  finally{if(RES_CTRL===ctrl){RES_CTRL=null;draw(st)}}
+}
+function resProduct(rec){const L=rec.lab||{};if(!L.product_name&&!(L.active_ingredients||[]).length)return;
+  const el=document.createElement('div');el.id='scRes';document.getElementById('scOut').appendChild(el);
+  research(el,'product',{name:L.product_name||'',company:L.company||'',formulation:L.formulation||'',ais:(L.active_ingredients||[]).filter(a=>a&&a.name).map(a=>({name:a.name,concentration:a.concentration||''})),crops:Array.isArray(L.crops_on_label)?L.crops_on_label:[],dosage:L.dose_on_label||''},false)}
+function resDisease(rec,top,low){if(!top||!top.name_en||rec.res?.image_ok===false)return;
+  const el=document.createElement('div');el.id='drRes';document.querySelector('#drOut .card').appendChild(el);
+  research(el,'disease',{problem_en:top.name_en,crop:{kothimbir:'coriander'}[rec.crop]||rec.crop},low)}
 function toLab(d){return {is_product:d.is_product,product_name:d.product_name,brand:d.brand,company:d.company,category:d.category,active_ingredients:(d.active_ingredients||[]).map(a=>({name:a.name,concentration:a.concentration||(d.active_ingredients.length===1?d.concentration:'')})),formulation:d.formulation,crops_on_label:d.approved_crops,targets_on_label:d.target_pests,dose_on_label:d.dosage,phi_on_label:d.phi,cir_reg_no:d.cir_reg_no,batch_no:d.batch_no,mfg_date:d.mfg_date,expiry_date:d.expiry_date,warning_triangle_color:d.warning_triangle_color,npk:d.npk,uses:d.uses,application_method:d.application_method,safety_printed:d.safety_precautions,read_conf:d.confidence}}
 function toRes(d){let cs=(d.possible_causes||[]).slice();if(!cs.length&&d.detected_problem)cs=[{name_mr:d.detected_problem,name_en:d.problem_en||d.detected_problem,type:d.problem_type,confidence:d.confidence}];
   return {image_ok:d.image_ok,crop_seen:d.crop_name,symptoms:d.visible_symptoms,causes:cs,severity_0_10:d.severity_0_10,need_more:d.additional_information_needed,cultural_steps_mr:[...(d.recommended_actions||[]),...(d.prevention||[])]}}

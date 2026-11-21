@@ -15,6 +15,7 @@ jobs:
     env:
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
       DATA_GOV_KEY: ${{ secrets.DATA_GOV_KEY }}
+      TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -28,3 +29,6 @@ jobs:
         run: npx -y wrangler@4 deploy
       - name: Chaabi Worker me daalo
         run: printf '%s' "$DATA_GOV_KEY" | npx -y wrangler@4 secret put DATA_GOV_KEY
+      - name: Tavily chaabi (agar GitHub secret me ho)
+        run: |
+          if [ -n "$TAVILY_API_KEY" ]; then printf '%s' "$TAVILY_API_KEY" | npx -y wrangler@4 secret put TAVILY_API_KEY; else echo 'Tavily chaabi nahi — keyless chalega'; fi
