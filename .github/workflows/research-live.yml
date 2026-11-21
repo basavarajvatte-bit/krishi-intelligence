@@ -10,7 +10,17 @@ jobs:
           curl -sN -m 90 -X POST https://krishi-mandi.basavarajvatte.workers.dev/research -H 'Content-Type: application/json' \
             -d '{"kind":"product","product":{"name":"Actara","company":"Syngenta","formulation":"WG","ais":[{"name":"Thiamethoxam","concentration":"25%"}],"crops":["onion"],"dosage":"0.5 g/L"}}' | tee p.txt | cut -c1-400
           grep -q '"type":"done"' p.txt
-          grep -o '"type":"prices".\{0,300\}' p.txt | head -1; grep -o '"searched_sites":[0-9]*,"extra_discovered":[0-9]*,"responded_sites":[0-9]*,"valid_sites":[0-9]*' p.txt || true
+          python3 - <<'PY'
+          import json
+          for line in open('p.txt', encoding='utf8'):
+              if line.startswith('data: {"type":"prices"'):
+                  d = json.loads(line[6:])
+                  print('SITES', d['searched_sites'], d['extra_discovered'], d['responded_sites'], d['valid_sites'])
+                  for l in d['best']: print('BEST', l['website'], l['price'], l['mrp'], (l['pack'] or {}).get('text'), l['delivery'], l['per_unit'], l['available'], l['price_source'], l['url'][:100], '|', l['title'][:70])
+                  for l in d['listings']: print('ALL', l['match'], l['website'][:20], l['price'], (l['pack'] or {}).get('text'), l['per_unit'], l['price_source'], l['url'][:90], '|', l['title'][:60])
+                  print('TAGS', d['tags'], d['saving'])
+          PY
+          true; grep -o '"searched_sites":[0-9]*,"extra_discovered":[0-9]*,"responded_sites":[0-9]*,"valid_sites":[0-9]*' p.txt || true
       - name: Disease research (purple blotch onion)
         run: |
           curl -sN -m 90 -X POST https://krishi-mandi.basavarajvatte.workers.dev/research -H 'Content-Type: application/json' \
