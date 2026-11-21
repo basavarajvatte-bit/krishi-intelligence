@@ -18,9 +18,9 @@ globalThis.fetch = async (url, opt = {}) => {
       ...(scenario === 'conflict' ? [{ title: 'TNAU onion', url: 'https://agritech.tnau.ac.in/onion', content: '', raw_content: OFFICIAL2_TXT }] : []),
       { title: 'Random blog', url: 'https://blog.example.com/x', content: '', raw_content: OFFICIAL2_TXT } ] });
     if (b.include_domains && b.include_domains.includes('bighaat.com')) return J({ results: [
-      { title: 'Actara Thiamethoxam 25% WG 100 gm', url: 'https://www.bighaat.com/actara', content: 'Price ₹ 450 for 100 gm pack' },
-      { title: 'Other brand Thiamethoxam 25 WG', url: 'https://agribegri.com/x', content: 'Thiamethoxam insecticide' } ] });
-    return J({ results: [{ title: 'Syngenta Actara', url: 'https://www.syngenta.co.in/actara', content: '', raw_content: 'Actara is a Syngenta product. Actara should be stored in a cool dry place away from food.' }] });
+      { title: 'Actara Thiamethoxam 25% WG 100 gm', url: 'https://www.bighaat.com/products/item-actara', content: 'Price ₹ 450 for 100 gm pack' },
+      { title: 'Other brand Thiamethoxam 25 WG', url: 'https://agribegri.com/products/other-brand-thiamethoxam', content: 'Thiamethoxam insecticide' } ] });
+    return J({ results: [{ title: 'Syngenta Actara', url: 'https://www.syngenta.co.in/products/item-actara', content: '', raw_content: 'Actara is a Syngenta product. Actara should be stored in a cool dry place away from food.' }] });
   }
   return J({}, 404);
 };

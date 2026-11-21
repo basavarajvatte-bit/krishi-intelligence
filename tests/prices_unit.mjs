@@ -25,47 +25,52 @@ const L1 = toListing(P, R('https://www.bighaat.com/products/actara', 'Actara Thi
 ok(L1.price === 450 && L1.mrp === 520 && L1.delivery === 0 && L1.total === 450 && L1.per_unit === 4500 && L1.seller_type === 'agri', 'listing: total, per kg ₹4500');
 ok(toListing(P, R('https://www.youtube.com/watch?v=1', 'Actara 25 WG review ₹450'), now) === null, 'YouTube dukan nahi');
 ok(toListing(P, R('not a url', 'Actara'), now) === null, 'galat URL hata');
-ok(sellerOf('https://www.syngenta.co.in/actara', 'Syngenta India').type === 'manufacturer', 'company site = manufacturer');
-const L2 = toListing(P, R('https://agribegri.com/actara', 'Actara 25 WG 250 g', 'Sold out'), now);
+ok(sellerOf('https://www.syngenta.co.in/products/item-actara', 'Syngenta India').type === 'manufacturer', 'company site = manufacturer');
+const L2 = toListing(P, R('https://agribegri.com/products/item-actara', 'Actara 25 WG 250 g', 'Sold out'), now);
 ok(L2.price === null || L2.available === false, 'out of stock pakda');
-const L3 = toListing(P, R('https://agribegri.com/p/x', 'Actara Thiamethoxam 25% WG 250 gm'), now, ) ; L3.price = null;
+const L3 = toListing(P, R('https://agribegri.com/products/item-p-x', 'Actara Thiamethoxam 25% WG 250 gm'), now, ) ; L3.price = null;
 ok(L3.price === null, 'kimat nahi mili -> null');
 // raw page: naam ke paas wali kimat
-const L4 = toListing(P, R('https://kisanshop.in/a', 'Actara Thiamethoxam 25% WG 250 gm', '', 'Other product Coragen ₹ 2100 ... Actara Thiamethoxam 25% WG 250 gm ₹ 980 Add to cart'), now);
+const L4 = toListing(P, R('https://kisanshop.in/products/item-a', 'Actara Thiamethoxam 25% WG 250 gm', '', 'Other product Coragen ₹ 2100 ... Actara Thiamethoxam 25% WG 250 gm ₹ 980 Add to cart'), now);
 ok(L4.price === 980 && L4.price_source === 'page_text', 'page text: naam ke paas wali kimat (₹980, Coragen ka ₹2100 nahi)');
+import { isProductPage } from '../worker/prices.js';
+ok(!isProductPage('https://www.amazon.in/thiamethoxam-25-wg/s?k=thiamethoxam') && !isProductPage('https://www.rythukart.com') && !isProductPage('https://www.kisanshop.in/technical/thiamethoxam-25-wg'), 'search / homepage / category page hata');
+ok(isProductPage('https://www.amazon.in/Syngenta-Actara/dp/B08X2NLGF8') && isProductPage('https://www.bighaat.com/products/actara-insecticide') && isProductPage('https://agribegri.com/products/syngenta-actara-insecticide.php') && isProductPage('https://www.indiamart.com/proddetail/actara-25-wg-123.html'), 'asli product page rakha');
+ok(toListing(P, R('https://tavily.com/knowledge/company/x', 'ACTARA'), now) === null && toListing(P, R('https://pricehistoryapp.com/product/actara-25-wg', 'Actara 25% WG ₹200'), now) === null, 'tavily / price-tracker dukan nahi');
+ok(!rank([toListing(P, R('https://agribegri.com/products/actara-x', 'Actara 25% WG', '₹ 129'), now)]).best.length, 'bina pack wali kimat top 4 me nahi');
 // dedupe
 const d = dedupe([L1, { ...L1 }, { ...L1, url: 'https://bighaat.com/products/actara/' }]);
 ok(d.length === 1, 'dohri listing hati');
 // ranking
 const mk = (url, title, content) => toListing(P, R(url, title, content), now);
 const list = dedupe([
-  mk('https://bighaat.com/a', 'Actara Thiamethoxam 25% WG 100 gm', '₹ 450 Free delivery'),          // 4500/kg
-  mk('https://agrostar.in/a', 'Actara Thiamethoxam 25% WG 250 gm', '₹ 1,000 Delivery charges ₹ 50'),  // 4000+200=4200/kg
-  mk('https://www.amazon.in/a', 'Syngenta Actara 25% WG 100g', '₹ 420'),                               // 4200/kg, marketplace
-  mk('https://cheap-unknown-shop.xyz/a', 'Actara 25% WG 100 gm', '₹ 199'),                             // anjaan -> top me nahi
-  mk('https://www.indiamart.com/a', 'Actara 25 WG 100 gm', '₹ 300'),                                    // b2b -> top me nahi
-  mk('https://dehaat.in/a', 'Actara Thiamethoxam 25% WG 100 gm', '₹ 470 Out of stock'),                // stock nahi
-  mk('https://gramophone.in/a', 'Actara 25 WG 100 gm', '₹ 480 Free delivery'),
-  mk('https://jiomart.com/a', 'Areva Thiamethoxam 25% WG 100 gm', '₹ 300'),                             // dusra brand
-  mk('https://kisanshop.in/b', 'Actara 25 WG 100 gm', '₹ 455'),
+  mk('https://bighaat.com/products/item-a', 'Actara Thiamethoxam 25% WG 100 gm', '₹ 450 Free delivery'),          // 4500/kg
+  mk('https://agrostar.in/products/item-a', 'Actara Thiamethoxam 25% WG 250 gm', '₹ 1,000 Delivery charges ₹ 50'),  // 4000+200=4200/kg
+  mk('https://www.amazon.in/Syngenta-Actara/dp/B0A1', 'Syngenta Actara 25% WG 100g', '₹ 420'),                               // 4200/kg, marketplace
+  mk('https://cheap-unknown-shop.xyz/products/item-a', 'Actara 25% WG 100 gm', '₹ 199'),                             // anjaan -> top me nahi
+  mk('https://www.indiamart.com/products/item-a', 'Actara 25 WG 100 gm', '₹ 300'),                                    // b2b -> top me nahi
+  mk('https://dehaat.in/products/item-a', 'Actara Thiamethoxam 25% WG 100 gm', '₹ 470 Out of stock'),                // stock nahi
+  mk('https://gramophone.in/products/item-a', 'Actara 25 WG 100 gm', '₹ 480 Free delivery'),
+  mk('https://jiomart.com/products/item-a', 'Areva Thiamethoxam 25% WG 100 gm', '₹ 300'),                             // dusra brand
+  mk('https://kisanshop.in/products/item-b', 'Actara 25 WG 100 gm', '₹ 455'),
 ]);
 const r = rank(list);
 ok(r.best.length === 4, 'best 4 bane');
 ok(!r.best.some(l => /unknown-shop|indiamart|dehaat|jiomart/.test(l.host)), 'anjaan / b2b / stock-khatam / dusra brand top 4 me nahi');
 ok(r.best[0].host === 'agrostar.in', 'sabse sasta (delivery jod kar, per kg) pehle: AgroStar ₹4200/kg ' + r.best.map(b => b.host + ':' + b.per_unit).join(','));
-ok(r.tags['https://cheap-unknown-shop.xyz/a']?.includes('cheapest_unverified'), 'sabse sasta par anjaan -> "cheapest_unverified" tag');
+ok(r.tags['https://cheap-unknown-shop.xyz/products/item-a']?.includes('cheapest_unverified'), 'sabse sasta par anjaan -> "cheapest_unverified" tag');
 ok(new Set(r.best.map(b => b.host)).size === r.best.length, 'ek site ek hi baar');
 ok(r.saving && r.saving.diff > 0, 'bachat ka hisaab');
 // poora search: 10+ sites, kam listing, connector fail
 let calls = [];
 const fake = async (q, o) => { calls.push(o.domains ? o.domains.length : 0); if (q.includes('buy online')) throw new Error('connector down'); return { results: [
-  R('https://bighaat.com/a', 'Actara Thiamethoxam 25% WG 100 gm', '₹ 450'), R('https://agrostar.in/a', 'Actara 25 WG 100 gm', '₹ 470'), R('https://bighaat.com/a', 'Actara Thiamethoxam 25% WG 100 gm', '₹ 450')] }; };
+  R('https://bighaat.com/products/item-a', 'Actara Thiamethoxam 25% WG 100 gm', '₹ 450'), R('https://agrostar.in/products/item-a', 'Actara 25 WG 100 gm', '₹ 470'), R('https://bighaat.com/products/item-a', 'Actara Thiamethoxam 25% WG 100 gm', '₹ 450')] }; };
 const out = await searchPrices(P, fake, now);
 ok(SELLERS.length >= 10 && out.searched_sites >= 10 && calls.some(n => n >= 10), `kam se kam 10 websites khoji (${out.searched_sites})`);
 ok(out.valid_sites === 2 && out.best.length === 2, 'sirf 2 mili to 2 hi dikhaye (10 banaye nahi)');
 ok(out.errors.length === 1, 'ek connector fail -> baaki chale, error darj');
 const lim = await searchPrices(P, async () => ({ limit: true, results: [] }), now);
 ok(lim.limit === true, 'free limit pakdi');
-const ing = await searchPrices({ name: '', ais: [{ name: 'Mancozeb', concentration: '75%' }], formulation: 'WP', ingredient_mode: true }, async () => ({ results: [R('https://bighaat.com/m', 'Dithane M-45 Mancozeb 75% WP 500 g', '₹ 320')] }), now);
+const ing = await searchPrices({ name: '', ais: [{ name: 'Mancozeb', concentration: '75%' }], formulation: 'WP', ingredient_mode: true }, async () => ({ results: [R('https://bighaat.com/products/item-m', 'Dithane M-45 Mancozeb 75% WP 500 g', '₹ 320')] }), now);
 ok(ing.best.length === 1, 'crop doctor: ghatak se utpaad');
 console.log(fail ? `\n${fail} FAIL` : '\nSAB PASS'); process.exit(fail ? 1 : 0);

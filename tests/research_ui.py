@@ -12,9 +12,9 @@ import subprocess
 PXJS = r'''import {searchPrices} from '__P__';
 const R=(url,title,content)=>({url,title,content});
 const out=await searchPrices({name:'Actara',company:'Syngenta',formulation:'WG',ais:[{name:'Thiamethoxam',concentration:'25%'}]},async(q,o)=>({results:[
-R('https://bighaat.com/a','Actara Thiamethoxam 25% WG 100 gm','MRP ₹ 520 ₹ 450 Free delivery'),R('https://agrostar.in/a','Actara Thiamethoxam 25% WG 250 gm','₹ 1,000 Delivery charges ₹ 50'),
-R('https://www.amazon.in/dp/X1','Syngenta Actara 25% WG 100g','₹ 420'),R('https://gramophone.in/a','Actara 25 WG 100 gm','₹ 480 Free delivery'),R('https://kisanshop.in/b','Actara 25 WG 100 gm','₹ 455'),
-R('https://cheap-unknown-shop.xyz/a','Actara 25% WG 100 gm','₹ 199'),R('https://jiomart.com/a','Areva Thiamethoxam 25% WG 100 gm','₹ 300')]}),'2026-11-21T10:00:00Z');
+R('https://bighaat.com/products/item-a','Actara Thiamethoxam 25% WG 100 gm','MRP ₹ 520 ₹ 450 Free delivery'),R('https://agrostar.in/products/item-a','Actara Thiamethoxam 25% WG 250 gm','₹ 1,000 Delivery charges ₹ 50'),
+R('https://www.amazon.in/products/item-dp-x1','Syngenta Actara 25% WG 100g','₹ 420'),R('https://gramophone.in/products/item-a','Actara 25 WG 100 gm','₹ 480 Free delivery'),R('https://kisanshop.in/products/item-b','Actara 25 WG 100 gm','₹ 455'),
+R('https://cheap-unknown-shop.xyz/products/item-a','Actara 25% WG 100 gm','₹ 199'),R('https://jiomart.com/products/item-a','Areva Thiamethoxam 25% WG 100 gm','₹ 300')]}),'2026-11-21T10:00:00Z');
 console.log(JSON.stringify(out));'''
 open('/tmp/px.mjs','w').write(PXJS.replace('__P__', ROOT + '/worker/prices.js'))
 PX = json.loads(subprocess.check_output(['node', '/tmp/px.mjs']))

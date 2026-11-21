@@ -27,7 +27,17 @@ export const SELLERS = [
 const REL = { manufacturer: 3, agri: 2, marketplace: 1, b2b: 0, unknown: 0 };
 const REL_MR = { manufacturer: 'कंपनीची स्वतःची दुकान', agri: 'ओळखीचा कृषी विक्रेता', marketplace: 'मार्केटप्लेस (आत वेगवेगळे विक्रेते)', b2b: 'डीलर कोटेशन (किरकोळ दर नाही)', unknown: 'अनोळखी वेबसाइट' };
 // Ye site kabhi dukan nahi (blog, news, video)
-const NOT_SHOP = /youtube\.com|wikipedia\.org|facebook\.com|instagram\.com|twitter\.com|x\.com|quora\.com|reddit\.com|\.gov\.in$|\.nic\.in$|icar|tnau|krishijagran|agrifarming|scribd|pinterest/;
+const NOT_SHOP = /youtube\.com|wikipedia\.org|facebook\.com|instagram\.com|twitter\.com|x\.com|quora\.com|reddit\.com|\.gov\.in$|\.nic\.in$|icar|tnau|krishijagran|agrifarming|scribd|pinterest|tavily\.com|pricehistory|pricebefore|smartprix|mysmartprice|buyhatke|keepa/;
+// Sirf asli product page (search / category / homepage nahi) — BUY NOW hamesha usi utpaad par jaaye
+export function isProductPage(url) {
+  let u; try { u = new URL(url); } catch (e) { return false; }
+  const p = u.pathname.replace(/\/+$/, '').toLowerCase();
+  if (!p || p === '/') return false;
+  if (/[?&](k|q|s|search|query|keyword)=/i.test(u.search)) return false;
+  if (/\/(dp|gp\/product|p|products?|proddetail|item)\//.test(p + '/')) return true;
+  if (/(^|\/)(s|search|category|categories|collections?|technical|brands?|tags?|shop|store|catalog)(\/|$)/.test(p)) return false;
+  return p.split('/').filter(Boolean).length >= 1 && /[a-z]-[a-z0-9]/.test(p);   // slug jaisa naam
+}
 
 export const host = u => { try { return new URL(u).hostname.replace(/^www\./, '').toLowerCase(); } catch (e) { return ''; } };
 export function sellerOf(url, company = '') {
@@ -103,7 +113,7 @@ export function classify(P, text) {
 export function toListing(P, r, now) {
   const txt = `${r.title || ''} ${r.content || ''}`, raw = String(r.raw_content || '');
   const sel = sellerOf(r.url, P.company);
-  if (!sel.host || NOT_SHOP.test(sel.host)) return null;
+  if (!sel.host || NOT_SHOP.test(sel.host) || !isProductPage(r.url)) return null;
   // raw page me utpaad ke naam ke paas ka hissa hi dekho (dusre utpaadon ki kimat na pakde)
   let near = ''; if (raw) { const key = lc(P.name).split(/\s+/)[0] || lc((P.ais || [])[0]?.name || '').split(/\s+/)[0]; const i = key ? lc(raw).indexOf(key) : -1; near = i >= 0 ? raw.slice(i, i + 1500) : ''; }
   let cls = classify(P, `${r.title || ''} ${(r.content || '').slice(0, 400)}`);
@@ -132,7 +142,7 @@ export function dedupe(list) {
 }
 // ---- Ranking (seedha code) ----
 // Kharidne layak: hubahu utpaad, kimat pata, stock khatam nahi, seller pehchana hua (unknown/b2b nahi)
-const buyable = l => l.match === 'exact' && l.price != null && l.available !== false && l.reliability >= 1;
+const buyable = l => l.match === 'exact' && l.price != null && l.per_unit != null && l.available !== false && l.reliability >= 1;
 const cost = l => (l.per_unit ?? l.price) + (l.delivery ?? 0) * (l.pack && l.pack.base ? 1000 / l.pack.base : 1);
 export function rank(list) {
   const exact = list.filter(l => l.match === 'exact' && l.price != null);
