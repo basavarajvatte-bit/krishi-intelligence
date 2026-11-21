@@ -53,6 +53,9 @@ th{background:var(--g2);font-size:14px;position:sticky;top:0}
 .ai{background:#f3f6ff;border:1px dashed #8aa2d8;border-radius:10px;padding:8px 10px;margin-top:8px}
 .chip{display:inline-block;padding:2px 9px;border-radius:99px;font-size:13px;font-weight:700;margin:2px 4px 2px 0;background:#eef2ef}
 #pMy label{display:flex;gap:6px;align-items:center;font-weight:600;margin:0}#pMy input{width:auto}
+.ontabs{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:0 0 12px}
+.ontabs button{padding:9px 2px;font-size:14px;font-weight:700;border-radius:10px;border:2px solid #b5651d;background:#fff;color:#8a4b12;min-height:44px}
+.ontabs button.on{background:#b5651d;color:#fff}
 .kbinfo{background:#f7faf8;border:1px solid var(--bd);border-radius:12px;padding:10px 12px;min-height:150px;margin-bottom:6px}
 .kbcv{touch-action:none;user-select:none;-webkit-user-select:none}.kbcv canvas{display:block;border-radius:10px}
 .ev{border-left:6px solid var(--bd);padding:8px 10px;margin:8px 0;background:#fff;border-radius:8px}
@@ -229,13 +232,14 @@ td input{padding:6px;font-size:16px;width:80px}
   <div class="note" data-t="on_help"></div>
   <div id="onMsg"></div>
   <div id="onBody" hidden>
-    <div class="tabs2" id="onScope"><button data-k="mh" data-t="kb_mh">महाराष्ट्र</button><button data-k="in" data-t="kb_in">पूरा भारत</button></div>
-    <div class="card" id="onReport"></div>
-    <div class="card"><h2 data-t="on_brief_h">🧅 आज की सलाह</h2><div id="onBrief"></div></div>
-    <div class="card"><h2 data-t="on_mandi_h">🏆 सबसे अच्छी मंडी (खर्च घटाकर)</h2><p data-t="on_mandi_t"></p><button class="btn" id="onMandiBtn" data-t="on_mandi_btn">मंडी तुलना खोलें</button></div>
-    <div class="card"><h2 data-t="on_pol_h">🏛️ प्याज़ के सरकारी फ़ैसले</h2><div id="onPol"></div></div>
-    <div class="card"><h2 data-t="kb_fc_h">🔮 आगे भाव का अंदाज़ा</h2><div id="onFc"></div></div>
-    <div class="card"><h2 data-t="kc_h">📈 भाव का ग्राफ़ — उँगली रखकर खिसकाएँ</h2>
+    <div class="ontabs" id="onTabs"></div>
+    <div class="tabs2" id="onScope" data-otab="today mandi"><button data-k="mh" data-t="kb_mh">महाराष्ट्र</button><button data-k="in" data-t="kb_in">पूरा भारत</button></div>
+    <div class="card" id="onReport" data-otab="today"></div>
+    <div class="card" data-otab="today"><h2 data-t="on_brief_h">🧅 आज की सलाह</h2><div id="onBrief"></div></div>
+    <div class="card" data-otab="mandi"><h2 data-t="on_mandi_h">🏆 सबसे अच्छी मंडी (खर्च घटाकर)</h2><p data-t="on_mandi_t"></p><button class="btn" id="onMandiBtn" data-t="on_mandi_btn">मंडी तुलना खोलें</button></div>
+    <div class="card" data-otab="pol today"><h2 data-t="on_pol_h">🏛️ प्याज़ के सरकारी फ़ैसले</h2><div id="onPol"></div></div>
+    <div class="card" data-otab="fc"><h2 data-t="kb_fc_h">🔮 आगे भाव का अंदाज़ा</h2><div id="onFc"></div></div>
+    <div class="card" data-otab="graph"><h2 data-t="kc_h">📈 भाव का ग्राफ़ — उँगली रखकर खिसकाएँ</h2>
       <label data-t="market">मंडी</label><select id="onMkt"></select>
       <div class="tabs2" id="onRange" style="margin:10px 0 6px"></div>
       <div class="tabs2" id="onUnit" style="margin:0 0 6px"></div>
@@ -247,11 +251,18 @@ td input{padding:6px;font-size:16px;width:80px}
       <div class="row" style="grid-template-columns:1fr 1fr 2fr"><button class="btn" id="onZout" style="margin:0;padding:10px">🔍−</button><button class="btn" id="onZin" style="margin:0;padding:10px">🔍+</button><div><input type="date" id="onGo" style="padding:9px" aria-label="date"></div></div>
       <p class="muted" style="margin:2px 0"><span data-t="kc_go"></span> <span id="onGoMsg"></span></p>
       <p class="muted" data-t="kc_gapnote"></p></div>
-    <div class="card"><h2 data-t="kb_mc_h">📅 एक ही महीना, अलग-अलग साल</h2><select id="onMon"></select><div id="onMonChart"></div></div>
-    <div class="card"><h2 data-t="kb_se_h">🌦️ किस महीने भाव ऊँचा, किस महीने कम</h2><div id="onSeason"></div></div>
-    <div class="card"><h2 data-t="kb_yr_h">📊 हर साल का सबसे ऊँचा और सबसे कम भाव</h2><div class="scroll" style="max-height:none"><table id="onYear"></table></div></div>
-    <div class="card"><h2 data-t="kb_today_h">🏪 आज की मंडियाँ</h2><p class="muted" id="onTInfo"></p><div class="scroll"><table id="onTable"></table></div></div>
-    <div class="card"><h2 data-t="kb_sd_h">⚖️ आवक (supply) और माँग</h2><div id="onSupply"></div></div>
+    <div class="card" data-otab="graph hist"><h2 data-t="kb_mc_h">📅 एक ही महीना, अलग-अलग साल</h2><select id="onMon"></select><div id="onMonChart"></div></div>
+    <div class="card" data-otab="hist"><h2 data-t="kb_se_h">🌦️ किस महीने भाव ऊँचा, किस महीने कम</h2><div id="onSeason"></div></div>
+    <div class="card" data-otab="hist"><h2 data-t="kb_yr_h">📊 हर साल का सबसे ऊँचा और सबसे कम भाव</h2><div class="scroll" style="max-height:none"><table id="onYear"></table></div></div>
+    <div class="card" data-otab="mandi today"><h2 data-t="kb_today_h">🏪 आज की मंडियाँ</h2><p class="muted" id="onTInfo"></p><div class="scroll"><table id="onTable"></table></div></div>
+    <div class="card" data-otab="today"><h2 data-t="kb_sd_h">⚖️ आवक (supply) और माँग</h2><div id="onSupply"></div></div>
+    <div class="card" id="onPlan" data-otab="plan"></div>
+    <div class="card" id="onMy" data-otab="plan"></div>
+    <div class="card" id="onSow" data-otab="sow"></div>
+    <div class="card" id="onCost" data-otab="cost"></div>
+    <div class="card" id="onStore" data-otab="store"></div>
+    <div class="card" id="onWx" data-otab="wx"></div>
+    <div class="card" id="onIntl" data-otab="intl"></div>
     <p class="note" data-t="kb_disc"></p>
   </div>
 </section>
@@ -922,8 +933,258 @@ function onExtra({F,lastD}){
 }
 const ON_DASH=makeDash({p:'on',dir:'data/onion',low:'k',crop:'onion',mainVar:'Red',vSeason:true,noSow:true,noHeat:true,extra:onExtra,hz:[['7',7],['15',15],['30',30],['60',60]],
   keys:{kb_wait:'on_wait',kb_unit_b:'on_unit_k',kc_bundle_note:'on_k_note',kb_bnote:'on_k_bnote',kb_bmk:'on_k_bmk',kb_why_t:'on_why_t',kb_fc_note:'on_fc_note',r_rain:'on_r_rain',kb_se_note:'on_se_note',kc_price:'on_price'}});
-function loadKB(){KB_DASH.load();ON_DASH.load()}
-function renderKB(){KB_DASH.render();ON_DASH.render()}
+
+/* ---------- ONION PHASE 2: planner, kab lagayein, kharcha, bhandaran, mausam-rog, duniya ---------- */
+// Kheti ki jaankari: ICAR-DOGR, NHB, ICAR (Indian Horticulture), ICAR-NCIPM, TNAU. Bhav ka pattern: hamare Agmarknet data (laal pyaz) se.
+const ONK={hi:{
+ acre:'एकड़',t_today:'📋 आज',t_graph:'📈 ग्राफ़',t_hist:'📊 10 साल',t_plan:'🌱 खेती प्लान',t_sow:'🗓️ कब लगाएँ',t_cost:'🧮 ख़र्च',t_fc:'🔮 अंदाज़ा',t_pol:'🏛️ सरकार',t_intl:'🌍 दुनिया',t_wx:'🌦️ मौसम-रोग',t_store:'🏚️ भंडारण',t_mandi:'🏆 मंडी',
+ src:'स्रोत',ex:'उदाहरण — अपने गाँव का असली ख़र्च डालें',
+ plan_h:'🌱 प्याज़ खेती प्लान (ICAR-DOGR / NHB के अनुसार)',plan_region:'इलाक़ा',season:'मौसम',nursery:'नर्सरी में बीज बोना',transplant:'रोपाई',harvest:'खुदाई (कटाई)',duration:'रोपाई से खुदाई तक',days:'दिन',seedling:'पौध की उम्र रोपाई पर',storage:'भंडारण',
+ r_mh:'महाराष्ट्र व गुजरात',r_south:'कर्नाटक, आंध्र, तमिलनाडु',r_north:'राजस्थान, हरियाणा, पंजाब, UP, बिहार',r_east:'पश्चिम बंगाल, ओडिशा',
+ s_ek:'अगेती खरीफ',s_k:'खरीफ',s_lk:'पछेती खरीफ (रांगडा)',s_r:'रबी (उन्हाळी)',
+ st_poor:'कम — जल्दी बेचना पड़ता है',st_mid:'कुछ महीने (किस्म पर)',st_good:'अच्छा — 4–6 महीने तक',
+ var_h:'🧅 ICAR-DOGR की किस्में',v_name:'किस्म',v_season:'मौसम',v_note:'ख़ास बात',
+ inp_h:'🧪 बीज, खाद, पानी',
+ inp_seed:'बीज: 8–10 किलो प्रति हेक्टेयर ≈ 3.2–4 किलो प्रति एकड़। नर्सरी का क्षेत्र मुख्य खेत का लगभग 1/25 (1 एकड़ के लिए ≈ 1.6 गुंठा)। बोने से पहले बीज को थायरम 2 ग्राम/किलो या ट्राइकोडर्मा 4 ग्राम/किलो से उपचारित करें (पौध गलन से बचाव)।',
+ inp_fert:'गोबर खाद: 25 टन/हेक्टेयर ≈ 10 टन/एकड़, रोपाई से 1 महीना पहले। रासायनिक खाद (N:P:K:S) 100:50:50:30 किलो/हेक्टेयर ≈ 40:20:20:12 किलो/एकड़ — आधा नाइट्रोजन और पूरा फ़ॉस्फ़ोरस-पोटाश रोपाई के समय, बाक़ी नाइट्रोजन दो बराबर हिस्सों में 30 और 45 दिन बाद। सल्फ़र 20–40 किलो/हेक्टेयर रोपाई से पहले। मिट्टी जाँच के हिसाब से मात्रा बदलें।',
+ inp_water:'प्याज़ में पानी भरना और ऊँचा पानी-स्तर नुक़सानदेह है — पानी निकलने का रास्ता रखें। हल्की और बार-बार सिंचाई (ड्रिप सबसे अच्छी)। खुदाई से 10–15 दिन पहले सिंचाई बंद करें। लगभग आधे पौधों की गर्दन गिरने पर खुदाई करें, फिर 7–10 दिन छाँव में सुखाएँ (curing)।',
+ my_h:'👨‍🌾 मेरा प्लान (मेरी जानकारी से)',my_village:'गाँव',my_dist:'ज़िला',my_region:'इलाक़ा',my_area:'ज़मीन (एकड़)',my_irr:'सिंचाई',irr_drip:'ड्रिप',irr_flood:'पाट/नाली',irr_rain:'सिर्फ़ बारिश',my_var:'किस्म',my_sow:'नर्सरी में बीज बोने की तारीख़',my_tp:'या रोपाई की तारीख़',my_go:'मेरा कैलेंडर बनाओ',my_saved:'आपकी जानकारी सिर्फ़ इसी फ़ोन में सेव है।',
+ cal_h:'📅 आपका कैलेंडर (अंदाज़ा)',c_fym:'गोबर खाद डालें',c_sow:'नर्सरी में बीज बोएँ',c_tp:'रोपाई + पहली खाद (आधा N, पूरा P-K, सल्फ़र)',c_n1:'दूसरी खाद (नाइट्रोजन का चौथाई)',c_n2:'तीसरी खाद (नाइट्रोजन का चौथाई)',c_thr:'थ्रिप्स और पत्तों के रोग पर नज़र (हर हफ़्ते)',c_stop:'सिंचाई बंद करें',c_hv:'खुदाई (अंदाज़ा)',c_cure:'छाँव में सुखाना (curing) पूरा',c_sell:'खुदाई के महीने में आम तौर पर भाव',c_seedkg:'आपको लगभग बीज चाहिए',c_fymt:'गोबर खाद लगभग',c_npk:'रासायनिक खाद लगभग (N:P:K:S)',c_rainfed:'⚠️ सिर्फ़ बारिश के भरोसे रबी प्याज़ बहुत जोखिम भरा है — सिंचाई का इंतज़ाम ज़रूर देखें।',c_notseason:'⚠️ ये तारीख़ "{s}" मौसम की सामान्य खिड़की से बाहर लगती है — स्थानीय कृषि अधिकारी से ज़रूर पूछें।',c_alert:'🔔 भाव अलर्ट लगाएँ',
+ sow_h:'🗓️ कब लगाएँ, कब नहीं (भाव के हिसाब से)',sow_today:'आज ({d}) अगर लगाते हैं:',sow_fit:'इस समय का मौसम',sow_hv:'खुदाई होगी लगभग',sow_idx:'उन महीनों में पिछले {y} साल का भाव, सालाना औसत से',sow_store:'भंडारण करके {m} में बेचें तो',sow_g:'🟢 अच्छा मौक़ा',sow_m:'🟡 ठीक-ठाक / अनिश्चित',sow_r:'🔴 ज़्यादा जोखिम',sow_g_t:'खुदाई के समय आम तौर पर भाव सालाना औसत से ऊपर रहता है।',sow_m_t:'खुदाई के समय भाव आम तौर पर औसत के आसपास रहता है।',sow_r_t:'खुदाई के समय बहुत माल आता है और भाव आम तौर पर औसत से काफ़ी नीचे रहता है।',sow_all:'हर मौसम की तुलना',sow_extra:'इस साल ध्यान रखें',sow_lastyr:'पिछले 12 महीने भाव 10 साल के औसत से {p}% ऊपर रहा — ऐसे साल के बाद अक्सर ज़्यादा बुवाई होती है और भाव गिरता है।',sow_lastlow:'पिछले 12 महीने भाव 10 साल के औसत से {p}% नीचे रहा — कई किसान बुवाई घटा सकते हैं।',sow_pol:'ताज़ा सरकारी/बाज़ार ख़बर',sow_note:'सिर्फ़ पुराने ऊँचे भाव देखकर फ़ैसला न करें। ये पुराने भाव के पैटर्न पर आधारित अंदाज़ा है; मौसम, बुवाई का क्षेत्र, निर्यात नीति से सब बदल सकता है।',
+ cost_h:'🧮 ख़र्च और मुनाफ़ा हिसाब (एकड़)',cost_area:'ज़मीन (एकड़)',cost_per:'ख़र्च प्रति एकड़ (₹)',k_seed:'बीज',k_nur:'नर्सरी',k_fym:'गोबर खाद',k_fert:'रासायनिक खाद',k_pest:'दवाई',k_lab:'मज़दूरी (रोपाई, निराई)',k_irr:'सिंचाई / बिजली',k_hv:'खुदाई',k_tr:'ढुलाई',k_st:'भंडारण',k_oth:'बाक़ी',y_h:'पैदावार (क्विंटल प्रति एकड़)',y_lo:'कम',y_av:'औसत',y_hi:'अच्छी',y_note:'भारत का औसत ≈ 16.4 टन/हेक्टेयर ≈ 66 क्विं/एकड़ (ICAR)। DOGR की सुधरी किस्में रबी में 30–41 टन/हेक्टेयर तक (≈ 120–165 क्विं/एकड़)।',price_h:'बेचने का भाव (₹/क्विंटल)',price_pick:'मंडी चुनें',price_man:'या अपना भाव लिखें',calc:'हिसाब लगाओ',
+ total_cost:'कुल ख़र्च',prod:'पैदावार',rev:'कुल बिक्री',profit:'मुनाफ़ा',loss:'नुक़सान',per_kg:'प्रति किलो लागत',
+ st_h:'🏚️ अभी बेचें या भंडारण करें?',st_qty:'माल (क्विंटल)',st_price:'आज का भाव (₹/क्विंटल)',st_months:'कितने महीने रखेंगे',st_cost:'भंडारण ख़र्च (₹ प्रति क्विंटल प्रति महीना)',st_loss:'हर महीने वज़न घटना + सड़न (%)',st_loss_note:'ICAR: आम हवादार चाळ में 4 महीने में 42–46% तक नुक़सान हो सकता है (≈ 10%/महीना)। अच्छी किस्म (भीमा किरण) व अच्छी चाळ में कम।',st_kind:'प्याज़ किस मौसम का है',st_rabi:'रबी (उन्हाळी)',st_kh:'खरीफ / पछेती खरीफ',
+ st_now:'आज बेचें तो हाथ में',st_after:'{m} महीने बाद बिकने लायक माल',st_extra:'भंडारण का अतिरिक्त ख़र्च',st_be:'फ़ायदे के लिए {m} महीने बाद कम से कम भाव चाहिए',st_hist:'पिछले {y} साल में आम तौर पर {a} से {b} तक भाव',st_exp:'उस हिसाब से अंदाज़ा भाव',st_yes:'🟢 पुराने पैटर्न के हिसाब से भंडारण फ़ायदेमंद हो सकता है।',st_no:'🔴 पुराने पैटर्न के हिसाब से भंडारण का फ़ायदा मुश्किल लगता है।',st_kh_warn:'⚠️ खरीफ प्याज़ ज़्यादा दिन नहीं टिकता (लगभग 1 महीना) — लंबा भंडारण न करें।',st_tips:'भंडारण से पहले: 7–10 दिन छाँव में सुखाएँ, मोटी गर्दन/कटे/रोगी प्याज़ अलग करें, नीचे से हवा वाली चाळ, ढेर बहुत ऊँचा नहीं।',
+ wx_h:'🌦️ मौसम और रोग का ख़तरा (अगले 7 दिन)',wx_place:'जगह',wx_change:'जगह बदलें (मेरा प्लान में ज़िला लिखें)',risk_hi:'ज़्यादा ख़तरा',risk_md:'मध्यम ख़तरा',risk_lo:'कम ख़तरा',d_pb:'बैंगनी धब्बा (Purple blotch) / स्टेमफिलियम झुलसा',d_dm:'मृदुरोमिल फफूँद (Downy mildew)',d_th:'थ्रिप्स (Thrips)',d_br:'प्याज़ सड़न (Basal rot)',
+ why_pb:'नमी ≥80% और 18–30°C वाले दिन: {n}',why_dm:'ठंडे (10–20°C) और बहुत नम दिन: {n}',why_th:'गरम (≥30°C) और सूखे दिन: {n}, 7 दिन बारिश {r} mm',why_br:'गरम मिट्टी और 7 दिन बारिश {r} mm',
+ sym:'पहचान',prev:'बचाव',treat:'दवा (ICAR/विश्वविद्यालय की सलाह)',
+ pb_sym:'पत्तों पर छोटे पानी जैसे धब्बे जो बाद में बैंगनी, बीच में गोल छल्ले वाले बन जाते हैं; स्टेमफिलियम में पीले-भूरे लंबे धब्बे।',pb_prev:'खेत साफ़ रखें, पुराने रोगी पौधे नष्ट करें, थ्रिप्स काबू में रखें (उनके घाव से रोग घुसता है), ज़्यादा पास-पास न लगाएँ।',pb_treat:'बचाव के लिए मैंकोज़ेब 75 WP 0.25% (2.5 ग्राम/लीटर)। रोग दिखे तो: कार्बेन्डाज़िम 12% + मैंकोज़ेब 63% 0.2% (2 ग्राम/लीटर) या हेक्साकोनाज़ोल 5 EC 0.1% (1 मिली/लीटर) या प्रोपिकोनाज़ोल 25 EC 0.1% या टेबुकोनाज़ोल 1.5 मिली/लीटर।',
+ dm_sym:'पत्तों पर हल्के पीले लंबे धब्बे, सुबह धब्बों पर भूरी-बैंगनी फफूँद।',dm_prev:'पत्ते लंबे समय गीले न रहें, शाम को ऊपर से पानी न दें, ठंड-कोहरे में निगरानी बढ़ाएँ।',dm_treat:'मेफ़ेनॉक्सम 3.3% + क्लोरोथैलोनिल 33.1% SC 0.1%, फिर मैंडीप्रोपामिड 23.4% SC 0.1% (TNAU की जाँची विधि)।',
+ th_sym:'पत्तों पर सफ़ेद-चाँदी जैसी धारियाँ/धब्बे, पत्ते सिरे से सूखते हैं; बीच की पत्तियों में छोटे पीले-भूरे कीड़े।',th_prev:'नीले चिपचिपे कार्ड (sticky traps) लगाएँ, खेत की मेड़ साफ़ रखें, भीमा शक्ति जैसी सहनशील किस्म।',th_treat:'ज़रूरत पर: फ़िप्रोनिल 5 SC 1 मिली/लीटर या प्रोफ़ेनोफ़ॉस 50 EC 0.1% (1 मिली/लीटर)। एक ही दवा बार-बार न दोहराएँ।',
+ br_sym:'जड़ें सड़ती हैं, पत्ते सिरे से पीले होकर सूखते हैं, प्याज़ का निचला भाग सड़ता है।',br_prev:'फ़सल-चक्र अपनाएँ, पानी जमा न होने दें, पौध/प्याज़ पर चोट न लगाएँ, बीज-पौध को ट्राइकोडर्मा से उपचारित करें।',br_treat:'मिट्टी के रोग के लिए दवा अपने कृषि अधिकारी/KVK से पूछकर ही डालें।',
+ wx_rain:'⚠️ भारी बारिश ({d}): खेत से पानी निकालें, खोदा हुआ प्याज़ ढककर रखें, दवा का छिड़काव टालें।',wx_frost:'⚠️ बहुत ठंड ({d}, {t}°C): नर्सरी ढकें।',
+ safety:'⚠️ दवा की मात्रा डिब्बे के लेबल और कृषि अधिकारी के अनुसार ही लें। दस्ताने और मास्क पहनें। बिना सलाह दवाएँ न मिलाएँ। खुदाई से पहले लेबल पर लिखा "प्रतीक्षा काल" मानें।',
+ intl_h:'🌍 दुनिया का प्याज़ बाज़ार',intl_t:'भारत दुनिया के बड़े प्याज़ निर्यातकों में है। बांग्लादेश, मलेशिया, UAE, श्रीलंका जैसे देश भारतीय प्याज़ ख़रीदते हैं; चीन, पाकिस्तान, मिस्र, नीदरलैंड, तुर्की जैसे देश बाज़ार में मुक़ाबला करते हैं।',intl_rules:'नियम: दूसरे देशों में फ़सल ख़राब हो या वो भारत से ज़्यादा ख़रीदें → भारत में भाव को सहारा (🟢)। दूसरे देश ज़्यादा सस्ता बेचें या बांग्लादेश जैसे ख़रीदार अपना आयात बंद करें → भारतीय निर्यात घटता है, भाव पर दबाव (🔴)।',intl_none:'अभी दुनिया की कोई ताज़ा प्याज़ ख़बर नहीं। हर 6 घंटे अपने आप जाँच होती है।',
+ note_src:'खेती की जानकारी: ICAR-DOGR, NHB, ICAR प्रकाशन। ये सामान्य सलाह है — अपने इलाक़े के लिए कृषि अधिकारी/KVK से मिलान करें।'},
+mr:{
+ acre:'एकर',t_today:'📋 आज',t_graph:'📈 आलेख',t_hist:'📊 10 वर्षे',t_plan:'🌱 लागवड प्लॅन',t_sow:'🗓️ कधी लावावे',t_cost:'🧮 खर्च',t_fc:'🔮 अंदाज',t_pol:'🏛️ सरकार',t_intl:'🌍 जग',t_wx:'🌦️ हवामान-रोग',t_store:'🏚️ साठवण',t_mandi:'🏆 बाजार',
+ src:'स्रोत',ex:'उदाहरण — तुमच्या गावचा खरा खर्च भरा',
+ plan_h:'🌱 कांदा लागवड प्लॅन (ICAR-DOGR / NHB नुसार)',plan_region:'भाग',season:'हंगाम',nursery:'रोपवाटिकेत बी पेरणी',transplant:'पुनर्लागवड',harvest:'काढणी',duration:'लागवडीपासून काढणीपर्यंत',days:'दिवस',seedling:'लागवडीवेळी रोपाचे वय',storage:'साठवण',
+ r_mh:'महाराष्ट्र व गुजरात',r_south:'कर्नाटक, आंध्र, तमिळनाडू',r_north:'राजस्थान, हरियाणा, पंजाब, UP, बिहार',r_east:'पश्चिम बंगाल, ओडिशा',
+ s_ek:'लवकर खरीप',s_k:'खरीप',s_lk:'लेट खरीप (रांगडा)',s_r:'रब्बी (उन्हाळी)',
+ st_poor:'कमी — लवकर विकावा लागतो',st_mid:'काही महिने (वाणानुसार)',st_good:'चांगली — 4–6 महिने',
+ var_h:'🧅 ICAR-DOGR चे वाण',v_name:'वाण',v_season:'हंगाम',v_note:'वैशिष्ट्य',
+ inp_h:'🧪 बी, खत, पाणी',
+ inp_seed:'बी: 8–10 किलो प्रति हेक्टर ≈ 3.2–4 किलो प्रति एकर. रोपवाटिकेचे क्षेत्र मुख्य शेताच्या साधारण 1/25 (1 एकरसाठी ≈ 1.6 गुंठे). पेरणीपूर्वी बियाण्याला थायरम 2 ग्रॅम/किलो किंवा ट्रायकोडर्मा 4 ग्रॅम/किलो लावा (रोपे कोलमडू नयेत).',
+ inp_fert:'शेणखत: 25 टन/हेक्टर ≈ 10 टन/एकर, लागवडीपूर्वी 1 महिना. रासायनिक खत (N:P:K:S) 100:50:50:30 किलो/हेक्टर ≈ 40:20:20:12 किलो/एकर — अर्धा नत्र व पूर्ण स्फुरद-पालाश लागवडीवेळी, उरलेले नत्र दोन समान भागांत 30 व 45 दिवसांनी. गंधक 20–40 किलो/हेक्टर लागवडीपूर्वी. माती परीक्षणानुसार बदला.',
+ inp_water:'कांद्यात पाणी साचणे व उंच पाणीपातळी हानिकारक — निचरा ठेवा. हलके व वारंवार पाणी (ठिबक सर्वोत्तम). काढणीपूर्वी 10–15 दिवस पाणी बंद करा. साधारण निम्म्या रोपांची माने पडली की काढणी करा, नंतर 7–10 दिवस सावलीत सुकवा (क्युरिंग).',
+ my_h:'👨‍🌾 माझा प्लॅन (माझ्या माहितीवरून)',my_village:'गाव',my_dist:'जिल्हा',my_region:'भाग',my_area:'जमीन (एकर)',my_irr:'पाणी',irr_drip:'ठिबक',irr_flood:'पाट',irr_rain:'फक्त पाऊस',my_var:'वाण',my_sow:'रोपवाटिकेत बी पेरण्याची तारीख',my_tp:'किंवा लागवडीची तारीख',my_go:'माझे कॅलेंडर बनवा',my_saved:'तुमची माहिती फक्त याच फोनमध्ये सेव्ह आहे.',
+ cal_h:'📅 तुमचे कॅलेंडर (अंदाज)',c_fym:'शेणखत टाका',c_sow:'रोपवाटिकेत बी पेरा',c_tp:'लागवड + पहिले खत (अर्धा N, पूर्ण P-K, गंधक)',c_n1:'दुसरे खत (नत्राचा चौथा भाग)',c_n2:'तिसरे खत (नत्राचा चौथा भाग)',c_thr:'फुलकिडे व पानांच्या रोगांवर लक्ष (दर आठवड्याला)',c_stop:'पाणी बंद करा',c_hv:'काढणी (अंदाज)',c_cure:'सावलीत सुकवणे (क्युरिंग) पूर्ण',c_sell:'काढणीच्या महिन्यात साधारण भाव',c_seedkg:'तुम्हाला साधारण बी लागेल',c_fymt:'शेणखत साधारण',c_npk:'रासायनिक खत साधारण (N:P:K:S)',c_rainfed:'⚠️ फक्त पावसावर रब्बी कांदा खूप धोकादायक — पाण्याची सोय नक्की पहा.',c_notseason:'⚠️ ही तारीख "{s}" हंगामाच्या नेहमीच्या वेळेबाहेर दिसते — स्थानिक कृषी अधिकाऱ्यांना नक्की विचारा.',c_alert:'🔔 भाव अलर्ट लावा',
+ sow_h:'🗓️ कधी लावावे, कधी नाही (भावानुसार)',sow_today:'आज ({d}) लावल्यास:',sow_fit:'या वेळचा हंगाम',sow_hv:'काढणी साधारण',sow_idx:'त्या महिन्यांत मागील {y} वर्षांचा भाव, वार्षिक सरासरीपेक्षा',sow_store:'साठवून {m} मध्ये विकल्यास',sow_g:'🟢 चांगली संधी',sow_m:'🟡 मध्यम / अनिश्चित',sow_r:'🔴 जास्त धोका',sow_g_t:'काढणीच्या वेळी साधारण भाव वार्षिक सरासरीपेक्षा वर असतो.',sow_m_t:'काढणीच्या वेळी भाव साधारण सरासरीच्या आसपास असतो.',sow_r_t:'काढणीच्या वेळी खूप माल येतो आणि भाव साधारण सरासरीपेक्षा बराच खाली असतो.',sow_all:'प्रत्येक हंगामाची तुलना',sow_extra:'या वर्षी लक्षात ठेवा',sow_lastyr:'मागील 12 महिने भाव 10 वर्षांच्या सरासरीपेक्षा {p}% वर राहिला — अशा वर्षानंतर बहुतेक वेळा जास्त लागवड होते आणि भाव पडतो.',sow_lastlow:'मागील 12 महिने भाव 10 वर्षांच्या सरासरीपेक्षा {p}% खाली राहिला — अनेक शेतकरी लागवड कमी करू शकतात.',sow_pol:'ताजी सरकारी/बाजार बातमी',sow_note:'फक्त जुने जास्त भाव पाहून निर्णय घेऊ नका. हा जुन्या भावांच्या नमुन्यावर आधारित अंदाज आहे; हवामान, लागवड क्षेत्र, निर्यात धोरणाने सगळे बदलू शकते.',
+ cost_h:'🧮 खर्च व नफा हिशोब (एकर)',cost_area:'जमीन (एकर)',cost_per:'खर्च प्रति एकर (₹)',k_seed:'बियाणे',k_nur:'रोपवाटिका',k_fym:'शेणखत',k_fert:'रासायनिक खत',k_pest:'औषध',k_lab:'मजुरी (लागवड, खुरपणी)',k_irr:'पाणी / वीज',k_hv:'काढणी',k_tr:'वाहतूक',k_st:'साठवण',k_oth:'इतर',y_h:'उत्पादन (क्विंटल प्रति एकर)',y_lo:'कमी',y_av:'सरासरी',y_hi:'चांगले',y_note:'भारताची सरासरी ≈ 16.4 टन/हेक्टर ≈ 66 क्विं/एकर (ICAR). DOGR चे सुधारित वाण रब्बीत 30–41 टन/हेक्टर पर्यंत (≈ 120–165 क्विं/एकर).',price_h:'विक्री भाव (₹/क्विंटल)',price_pick:'बाजार निवडा',price_man:'किंवा तुमचा भाव लिहा',calc:'हिशोब करा',
+ total_cost:'एकूण खर्च',prod:'उत्पादन',rev:'एकूण विक्री',profit:'नफा',loss:'तोटा',per_kg:'प्रति किलो खर्च',
+ st_h:'🏚️ आता विकावा की साठवावा?',st_qty:'माल (क्विंटल)',st_price:'आजचा भाव (₹/क्विंटल)',st_months:'किती महिने ठेवणार',st_cost:'साठवण खर्च (₹ प्रति क्विंटल प्रति महिना)',st_loss:'दर महिन्याला वजन घट + सड (%)',st_loss_note:'ICAR: साध्या हवेशीर चाळीत 4 महिन्यांत 42–46% पर्यंत नुकसान होऊ शकते (≈ 10%/महिना). चांगला वाण (भीमा किरण) व चांगल्या चाळीत कमी.',st_kind:'कांदा कोणत्या हंगामाचा',st_rabi:'रब्बी (उन्हाळी)',st_kh:'खरीप / लेट खरीप',
+ st_now:'आज विकल्यास हातात',st_after:'{m} महिन्यांनंतर विकण्याजोगा माल',st_extra:'साठवणुकीचा जादा खर्च',st_be:'फायद्यासाठी {m} महिन्यांनंतर किमान भाव हवा',st_hist:'मागील {y} वर्षांत साधारण {a} ते {b} पर्यंत भाव',st_exp:'त्यानुसार अंदाजे भाव',st_yes:'🟢 जुन्या नमुन्यानुसार साठवण फायदेशीर ठरू शकते.',st_no:'🔴 जुन्या नमुन्यानुसार साठवणुकीचा फायदा कठीण दिसतो.',st_kh_warn:'⚠️ खरीप कांदा जास्त दिवस टिकत नाही (साधारण 1 महिना) — जास्त काळ साठवू नका.',st_tips:'साठवणुकीपूर्वी: 7–10 दिवस सावलीत सुकवा, जाड मानेचे/कापलेले/रोगट कांदे वेगळे करा, खालून हवा असलेली चाळ, ढीग फार उंच नको.',
+ wx_h:'🌦️ हवामान व रोगाचा धोका (पुढील 7 दिवस)',wx_place:'ठिकाण',wx_change:'ठिकाण बदला (माझा प्लॅनमध्ये जिल्हा लिहा)',risk_hi:'जास्त धोका',risk_md:'मध्यम धोका',risk_lo:'कमी धोका',d_pb:'जांभळा करपा (Purple blotch) / स्टेमफिलियम करपा',d_dm:'केवडा (Downy mildew)',d_th:'फुलकिडे (Thrips)',d_br:'कांदा सड (Basal rot)',
+ why_pb:'आर्द्रता ≥80% व 18–30°C चे दिवस: {n}',why_dm:'थंड (10–20°C) व खूप दमट दिवस: {n}',why_th:'उष्ण (≥30°C) व कोरडे दिवस: {n}, 7 दिवसांत पाऊस {r} mm',why_br:'उष्ण माती व 7 दिवसांत पाऊस {r} mm',
+ sym:'लक्षणे',prev:'प्रतिबंध',treat:'औषध (ICAR/विद्यापीठाचा सल्ला)',
+ pb_sym:'पानांवर लहान पाणथळ ठिपके, नंतर जांभळे व मध्ये गोल वलये; स्टेमफिलियममध्ये पिवळे-तपकिरी लांब ठिपके.',pb_prev:'शेत स्वच्छ ठेवा, जुनी रोगट रोपे नष्ट करा, फुलकिडे नियंत्रणात ठेवा (त्यांच्या जखमेतून रोग शिरतो), फार दाट लावू नका.',pb_treat:'प्रतिबंधासाठी मॅन्कोझेब 75 WP 0.25% (2.5 ग्रॅम/लिटर). रोग दिसल्यास: कार्बेन्डाझिम 12% + मॅन्कोझेब 63% 0.2% (2 ग्रॅम/लिटर) किंवा हेक्साकोनाझोल 5 EC 0.1% (1 मिली/लिटर) किंवा प्रोपिकोनाझोल 25 EC 0.1% किंवा टेब्युकोनाझोल 1.5 मिली/लिटर.',
+ dm_sym:'पानांवर फिकट पिवळे लांब ठिपके, सकाळी ठिपक्यांवर तपकिरी-जांभळी बुरशी.',dm_prev:'पाने जास्त वेळ ओली राहू नयेत, संध्याकाळी वरून पाणी देऊ नका, थंडी-धुक्यात लक्ष वाढवा.',dm_treat:'मेफेनॉक्सम 3.3% + क्लोरोथॅलोनिल 33.1% SC 0.1%, नंतर मँडीप्रोपामिड 23.4% SC 0.1% (TNAU ची तपासलेली पद्धत).',
+ th_sym:'पानांवर पांढऱ्या-चंदेरी रेषा/ठिपके, पाने टोकाकडून सुकतात; मधल्या पानांत लहान पिवळसर-तपकिरी किडे.',th_prev:'निळे चिकट सापळे लावा, बांध स्वच्छ ठेवा, भीमा शक्तीसारखा सहनशील वाण.',th_treat:'गरजेनुसार: फिप्रोनिल 5 SC 1 मिली/लिटर किंवा प्रोफेनोफॉस 50 EC 0.1% (1 मिली/लिटर). एकच औषध पुन्हा पुन्हा वापरू नका.',
+ br_sym:'मुळे सडतात, पाने टोकाकडून पिवळी होऊन सुकतात, कांद्याचा खालचा भाग सडतो.',br_prev:'पीक फेरपालट करा, पाणी साचू देऊ नका, रोप/कांद्याला इजा होऊ देऊ नका, रोपांना ट्रायकोडर्मा लावा.',br_treat:'जमिनीतील रोगासाठी औषध कृषी अधिकारी/KVK ला विचारूनच वापरा.',
+ wx_rain:'⚠️ जोरदार पाऊस ({d}): शेतातून पाणी काढा, काढलेला कांदा झाकून ठेवा, फवारणी टाळा.',wx_frost:'⚠️ खूप थंडी ({d}, {t}°C): रोपवाटिका झाका.',
+ safety:'⚠️ औषधाचे प्रमाण डब्यावरील लेबल व कृषी अधिकाऱ्यांनुसारच घ्या. हातमोजे व मास्क वापरा. सल्ल्याशिवाय औषधे मिसळू नका. काढणीपूर्वी लेबलवरील "प्रतीक्षा कालावधी" पाळा.',
+ intl_h:'🌍 जागतिक कांदा बाजार',intl_t:'भारत जगातील मोठ्या कांदा निर्यातदारांपैकी आहे. बांगलादेश, मलेशिया, UAE, श्रीलंका सारखे देश भारतीय कांदा घेतात; चीन, पाकिस्तान, इजिप्त, नेदरलँड, तुर्की सारखे देश बाजारात स्पर्धा करतात.',intl_rules:'नियम: इतर देशांत पीक खराब झाले किंवा ते भारताकडून जास्त घेतात → भारतात भावाला आधार (🟢). इतर देश स्वस्त विकतात किंवा बांगलादेशसारखे खरेदीदार आयात बंद करतात → भारतीय निर्यात घटते, भावावर दबाव (🔴).',intl_none:'सध्या जगातील कोणतीही ताजी कांदा बातमी नाही. दर 6 तासांनी आपोआप तपासणी होते.',
+ note_src:'शेती माहिती: ICAR-DOGR, NHB, ICAR प्रकाशने. हा सर्वसाधारण सल्ला आहे — तुमच्या भागासाठी कृषी अधिकारी/KVK कडून खात्री करा.'}};
+const ok=(k,o)=>{let s=(ONK[L]||ONK.hi)[k]??ONK.hi[k]??k;if(o)s=s.replace(/\{(\w)\}/g,(a,b)=>o[b]);return s};
+// Maharashtra/Gujarat aur dusre ilaakon ka calendar (NHB + Vikaspedia/ICAR table). Mahine 0=Jan.
+const ON_CAL={mh:[{s:'s_ek',sow:[1,2],tp:[3,4],hv:[7,8],st:'st_poor',age:[35,40]},{s:'s_k',sow:[4,5],tp:[6,7],hv:[9,11],st:'st_poor',age:[35,40]},{s:'s_lk',sow:[7,8],tp:[9,10],hv:[0,2],st:'st_mid',age:[45,50]},{s:'s_r',sow:[9,10],tp:[11,0],hv:[3,4],st:'st_good',age:[45,50]}],
+ south:[{s:'s_ek',sow:[1,3],tp:[3,5],hv:[6,8],st:'st_poor',age:[35,40]},{s:'s_k',sow:[4,5],tp:[6,7],hv:[9,10],st:'st_poor',age:[35,40]},{s:'s_r',sow:[8,9],tp:[10,11],hv:[2,3],st:'st_good',age:[45,50]}],
+ north:[{s:'s_k',sow:[5,6],tp:[6,7],hv:[9,10],st:'st_poor',age:[35,40]},{s:'s_r',sow:[9,10],tp:[11,0],hv:[4,5],st:'st_good',age:[45,50]}],
+ east:[{s:'s_k',sow:[5,6],tp:[7,8],hv:null,st:'st_poor',age:[35,40]},{s:'s_lk',sow:[7,8],tp:[9,10],hv:null,st:'st_mid',age:[45,50]}]};
+// ICAR-DOGR kismein (din = ropai se khudai; sirf jahan source mila)
+const ON_VAR=[
+ {n:'Bhima Super',s:['s_k','s_lk'],d:[110,115],note:{hi:'लाल, गोल; खरीफ में 26–28 टन/हे., पछेती खरीफ में 40+ टन/हे.',mr:'लाल, गोल; खरीपात 26–28 टन/हे., लेट खरीपात 40+ टन/हे.'}},
+ {n:'Bhima Red',s:['s_k','s_lk','s_r'],d:null,note:{hi:'लाल; खरीफ और पछेती खरीफ के लिए',mr:'लाल; खरीप व लेट खरीपसाठी'}},
+ {n:'Bhima Dark Red',s:['s_k'],d:[95,100],note:{hi:'गहरा लाल, गोल; जल्दी तैयार',mr:'गडद लाल, गोल; लवकर तयार'}},
+ {n:'Bhima Raj',s:['s_k','s_lk','s_r'],d:[115,120],note:{hi:'गहरा लाल, अंडाकार; पछेती खरीफ/रबी',mr:'गडद लाल, अंडाकृती; लेट खरीप/रब्बी'}},
+ {n:'Bhima Shakti',s:['s_lk','s_r'],d:null,note:{hi:'लाल, गोल; थ्रिप्स सहनशील; रबी में 35.9 टन/हे.; अच्छा भंडारण',mr:'लाल, गोल; फुलकिडे सहनशील; रब्बीत 35.9 टन/हे.; चांगली साठवण'}},
+ {n:'Bhima Kiran',s:['s_r'],d:null,note:{hi:'हल्का लाल; रबी में 41.5 टन/हे. तक; 5 महीने तक भंडारण',mr:'फिकट लाल; रब्बीत 41.5 टन/हे. पर्यंत; 5 महिने साठवण'}},
+ {n:'Bhima Light Red',s:['s_r'],d:null,note:{hi:'हल्का लाल; रबी (कर्नाटक, तमिलनाडु)',mr:'फिकट लाल; रब्बी (कर्नाटक, तमिळनाडू)'}},
+ {n:'Bhima Shubhra',s:['s_k','s_lk'],d:[110,130],note:{hi:'सफ़ेद; खरीफ 110–115, पछेती खरीफ 120–130 दिन',mr:'पांढरा; खरीप 110–115, लेट खरीप 120–130 दिवस'}},
+ {n:'Bhima Shweta',s:['s_r','s_k'],d:null,note:{hi:'सफ़ेद; रबी',mr:'पांढरा; रब्बी'}}];
+const ON_SRC=[['ICAR — Onion & garlic varieties (Indian Horticulture)','https://epubs.icar.org.in/index.php/IndHort/article/view/87678'],['NHB — Onion sowing/transplanting time','https://nhb.gov.in/pdf/vegetable/onion/oni011.pdf'],['NHB — DOGR varieties','https://www.nhb.gov.in/pdf/vegetable/onion/oni013.pdf'],['Vikaspedia — Onion package of practices','https://en.vikaspedia.in/viewcontent/agriculture/crop-production/package-of-practices/vegetables-1/onion-allium-cepa?lgn=en'],['ICAR (Indian Horticulture) — seed rate, NPKS','https://epubs.icar.org.in/index.php/IndHort/article/download/103273/49189/472780'],['ICAR — onion storage losses','https://icar.org.in/en/node/4701'],['ICAR-NCIPM — onion IPM (thrips, Stemphylium)','https://journal.iahs.org.in/index.php/ijh/article/download/1654/1148'],['TNAU (Madras Agric. J.) — IPDM onion','https://masujournal.org/110/Article_16_D23_INDIRAGANDHI.pdf']];
+const srcList=()=>`<details class="muted" style="margin-top:8px"><summary>${ok('src')}</summary>${ON_SRC.map(([a,u])=>`<a href="${u}" target="_blank" rel="noopener">${esc(a)} ↗</a>`).join('<br>')}</details><p class="muted">${ok('note_src')}</p>`;
+const mspan=(a)=>a?(a[0]===a[1]?MON[L][a[0]]:`${MON[L][a[0]]}–${MON[L][a[1]]}`):'—';
+const inMon=(m,a)=>a&&(a[0]<=a[1]?m>=a[0]&&m<=a[1]:m>=a[0]||m<=a[1]);
+const monsOf=a=>{const r=[];for(let m=a[0];;m=(m+1)%12){r.push(m);if(m===a[1])break}return r};
+// ---- bhav ka mausam-pattern (laal pyaz, Maharashtra, hamara data) ----
+let ONIDX=null,ONRED=null;
+async function onSeason(){
+  if(ONIDX)return ONIDX;
+  try{const rows=(await (await fetch('data/onion/series/all.json?'+Date.now())).json()).rows.filter(r=>r[4]==='q'&&r[6]==='Red');ONRED=rows;
+    const bm={};rows.forEach(r=>{(bm[r[0].slice(0,7)]||=[]).push(r[3])});
+    const mm=Object.entries(bm).filter(([,v])=>v.length>=5).map(([ym,v])=>({y:+ym.slice(0,4),m:+ym.slice(5)-1,v:kmedG(v)}));
+    const byY={};mm.forEach(o=>(byY[o.y]||=[]).push(o));const idx=[...Array(12)].map(()=>[]);const ys=[];
+    for(const [y,a] of Object.entries(byY)){if(a.length<9)continue;ys.push(+y);const av=a.reduce((s,o)=>s+o.v,0)/a.length;a.forEach(o=>idx[o.m].push(o.v/av))}
+    const all=mm.filter(o=>ys.includes(o.y)).map(o=>o.v),avg10=all.reduce((a,b)=>a+b,0)/all.length;
+    const last=rows.at(-1)?.[0],from=last?addDaysG(last,-365):null,l12=rows.filter(r=>r[0]>from).map(r=>r[3]);
+    ONIDX={idx:idx.map(a=>a.length?a.reduce((x,y)=>x+y,0)/a.length:null),years:ys,avg10,l12:l12.length?l12.reduce((a,b)=>a+b,0)/l12.length:null,now:rows.at(-1)?.[3],last};
+  }catch(e){ONIDX={idx:Array(12).fill(null),years:[]}}
+  return ONIDX;
+}
+const kmedG=a=>{const s=[...a].sort((x,y)=>x-y),k=s.length>>1;return s.length%2?s[k]:(s[k-1]+s[k])/2};
+const addDaysG=(iso,n)=>{const d=new Date(iso+'T00:00:00Z');d.setUTCDate(d.getUTCDate()+n);return d.toISOString().slice(0,10)};
+const idxOf=(I,ms)=>{const v=ms.map(m=>I.idx[m]).filter(Boolean);return v.length?v.reduce((a,b)=>a+b,0)/v.length-1:null};
+const pctS=p=>p==null?'—':`${p>0?'+':''}${Math.round(p*100)}%`;
+const rate=p=>p==null?null:p>=0.10?'g':p<=-0.10?'r':'m';
+const rateBox=(r,txt)=>{const c={g:'var(--grn)',m:'#c9a227',r:'var(--red)'}[r]||'#999';return `<div class="rc" style="background:${c};margin:6px 0"><b>${ok('sow_'+r)}</b>${txt?`<br><span style="font-size:15px">${txt}</span>`:''}</div>`};
+// ---- profile (personal) ----
+let ONP={};try{ONP=JSON.parse(localStorage.getItem('onprof')||'{}')}catch(e){}
+const saveP=()=>{try{localStorage.setItem('onprof',JSON.stringify(ONP))}catch(e){}};
+const fmtD=iso=>{const d=new Date(iso+'T00:00:00Z');return `${d.getUTCDate()} ${MON[L][d.getUTCMonth()]} ${d.getUTCFullYear()}`};
+async function onRenderPlan(){
+  const el=document.getElementById('onPlan');if(!el)return;const lg=L==='mr'?'mr':'hi';
+  const reg=ONP.region||'mh';
+  const regSel=`<select id="onReg">${['mh','south','north','east'].map(r=>`<option value="${r}"${r===reg?' selected':''}>${ok('r_'+r)}</option>`).join('')}</select>`;
+  const cal=ON_CAL[reg];
+  el.innerHTML=`<h2>${ok('plan_h')}</h2><label>${ok('plan_region')}</label>${regSel}
+   <div class="scroll" style="max-height:none;margin-top:8px"><table><tr><th>${ok('season')}</th><th>${ok('nursery')}</th><th>${ok('transplant')}</th><th>${ok('harvest')}</th><th>${ok('storage')}</th></tr>${cal.map(c=>`<tr><td><b>${ok(c.s)}</b><br><span class="muted">${ok('seedling')}: ${c.age[0]}–${c.age[1]} ${ok('days')}</span></td><td>${mspan(c.sow)}</td><td>${mspan(c.tp)}</td><td>${mspan(c.hv)}</td><td class="muted" style="font-size:14px">${ok(c.st)}</td></tr>`).join('')}</table></div>
+   <h2 style="margin-top:14px">${ok('var_h')}</h2><div class="scroll" style="max-height:none"><table><tr><th>${ok('v_name')}</th><th>${ok('v_season')}</th><th>${ok('duration')}</th></tr>${ON_VAR.map(v=>`<tr><td><b>${v.n}</b><br><span class="muted" style="font-size:14px">${esc(v.note[lg])}</span></td><td style="font-size:14px">${v.s.map(ok).join(', ')}</td><td>${v.d?`${v.d[0]}–${v.d[1]} ${ok('days')}`:'—'}</td></tr>`).join('')}</table></div>
+   <h2 style="margin-top:14px">${ok('inp_h')}</h2><p>🌱 ${ok('inp_seed')}</p><p>🧪 ${ok('inp_fert')}</p><p>💧 ${ok('inp_water')}</p>${srcList()}`;
+  document.getElementById('onReg').onchange=e=>{ONP.region=e.target.value;saveP();onRenderPlan();onRenderMy();onRenderSow()};
+}
+function onRenderMy(){
+  const el=document.getElementById('onMy');if(!el)return;
+  const f=(id,lab,typ,val,extra='')=>`<div><label>${lab}</label><input id="${id}" type="${typ}" value="${esc(val??'')}" ${extra}></div>`;
+  el.innerHTML=`<h2>${ok('my_h')}</h2><div class="row">${f('opV',ok('my_village'),'text',ONP.village)}${f('opD',ok('my_dist'),'text',ONP.dist,'placeholder="Nashik"')}
+   <div><label>${ok('my_region')}</label><select id="opR">${['mh','south','north','east'].map(r=>`<option value="${r}"${r===(ONP.region||'mh')?' selected':''}>${ok('r_'+r)}</option>`).join('')}</select></div>
+   ${f('opA',ok('my_area'),'number',ONP.area,'inputmode="decimal" placeholder="1"')}
+   <div><label>${ok('my_irr')}</label><select id="opI">${['drip','flood','rain'].map(r=>`<option value="${r}"${r===(ONP.irr||'drip')?' selected':''}>${ok('irr_'+r)}</option>`).join('')}</select></div>
+   <div><label>${ok('my_var')}</label><select id="opVar">${ON_VAR.map(v=>`<option${v.n===(ONP.variety||'Bhima Kiran')?' selected':''}>${v.n}</option>`).join('')}</select></div>
+   ${f('opS',ok('my_sow'),'date',ONP.sow)}${f('opT',ok('my_tp'),'date',ONP.tp)}</div>
+   <button class="btn" id="opGo">${ok('my_go')}</button><p class="muted">${ok('my_saved')}</p><div id="opCal"></div>`;
+  document.getElementById('opGo').onclick=()=>{const g=id=>document.getElementById(id).value;
+    Object.assign(ONP,{village:g('opV'),dist:g('opD').trim(),region:g('opR'),area:parseFloat(g('opA'))||null,irr:g('opI'),variety:g('opVar'),sow:g('opS')||null,tp:g('opT')||null});ONP.geo=null;saveP();onRenderPlan();onCalendar();onRenderSow();onWeather(true)};
+  onCalendar();
+}
+async function onCalendar(){
+  const el=document.getElementById('opCal');if(!el||!(ONP.sow||ONP.tp))return;
+  const I=await onSeason();const reg=ONP.region||'mh',cal=ON_CAL[reg];
+  const v=ON_VAR.find(x=>x.n===ONP.variety)||ON_VAR[0];
+  let tp=ONP.tp,sow=ONP.sow;const tpm=d=>new Date(d+'T00:00:00Z').getUTCMonth();
+  const seasonOf=m=>cal.find(c=>inMon(m,c.tp))||cal.find(c=>inMon(m,c.sow));
+  if(!tp){const ss=cal.find(c=>inMon(tpm(sow),c.sow))||cal[0];tp=addDaysG(sow,Math.round((ss.age[0]+ss.age[1])/2))}
+  if(!sow){const ss=seasonOf(tpm(tp))||cal[0];sow=addDaysG(tp,-Math.round((ss.age[0]+ss.age[1])/2))}
+  const S=seasonOf(tpm(tp));const dur=v.d?Math.round((v.d[0]+v.d[1])/2):(S&&S.s==='s_r'?120:115);
+  const hv=addDaysG(tp,dur),A=ONP.area||1;
+  const rows=[[addDaysG(tp,-30),ok('c_fym')],[sow,ok('c_sow')],[tp,ok('c_tp')],[addDaysG(tp,30),ok('c_n1')],[addDaysG(tp,45),ok('c_n2')],[addDaysG(tp,20),ok('c_thr')],[addDaysG(hv,-15),ok('c_stop')+' (10–15 '+ok('days')+')'],[hv,ok('c_hv')],[addDaysG(hv,10),ok('c_cure')]].sort((a,b)=>a[0].localeCompare(b[0]));
+  const hm=tpm(hv),p=I.idx[hm]?I.idx[hm]-1:null;
+  el.innerHTML=`<h2>${ok('cal_h')}</h2>${ONP.village||ONP.dist?`<p class="muted">📍 ${esc([ONP.village,ONP.dist].filter(Boolean).join(', '))} • ${esc(v.n)} • ${A} ${ok('acre')}</p>`:''}
+   ${!S?`<p class="note">${ok('c_notseason',{s:'—'})}</p>`:''}${ONP.irr==='rain'&&S&&S.s==='s_r'?`<p class="note">${ok('c_rainfed')}</p>`:''}
+   <table>${rows.map(([d,t])=>`<tr><td style="white-space:nowrap"><b>${fmtD(d)}</b></td><td>${t}</td></tr>`).join('')}</table>
+   <p>🌱 ${ok('c_seedkg')}: <b>${(3.2*A).toFixed(1)}–${(4*A).toFixed(1)} kg</b> • ${ok('c_fymt')}: <b>${(10*A).toFixed(0)} t</b> • ${ok('c_npk')}: <b>${40*A}:${20*A}:${20*A}:${12*A} kg</b></p>
+   ${p!=null?`<p>📊 ${ok('c_sell')} (${MON[L][hm]}): <b>${pctS(p)}</b> ${ok('sow_idx',{y:I.years.length}).split(',').slice(-1)[0]}</p>${rateBox(rate(p))}`:''}
+   <button class="btn" id="opAlert" style="background:#fff;color:var(--g);border:2px solid var(--g)">${ok('c_alert')}</button>`;
+  document.getElementById('opAlert').onclick=()=>{show('alert');const s=document.getElementById('aCrop');if(s&&[...s.options].some(o=>o.value==='Onion')){s.value='Onion';loadAlertForm()}window.scrollTo(0,0)};
+}
+async function onRenderSow(){
+  const el=document.getElementById('onSow');if(!el)return;const I=await onSeason();
+  if(!I.years.length){el.innerHTML=`<h2>${ok('sow_h')}</h2><p class="muted">${t('kb_nodata')}</p>`;return}
+  const reg=ONP.region||'mh',cal=ON_CAL[reg].filter(c=>c.hv);const now=new Date(),m=now.getMonth();
+  const fit=cal.filter(c=>inMon(m,c.sow)||inMon(m,c.tp));
+  const card=c=>{const p=idxOf(I,monsOf(c.hv));const r=rate(p);let store='';
+    if(c.st==='st_good'){const sm=[5,6,7,8,9],ps=idxOf(I,sm);store=`<br>🏚️ ${ok('sow_store',{m:`${MON[L][5]}–${MON[L][9]}`})}: <b>${pctS(ps)}</b>`}
+    return `<div class="card" style="margin:6px 0"><b>${ok(c.s)}</b> — ${ok('nursery')}: ${mspan(c.sow)}, ${ok('transplant')}: ${mspan(c.tp)}<br>${ok('sow_hv')}: <b>${mspan(c.hv)}</b><br>${ok('sow_idx',{y:I.years.length})}: <b>${pctS(p)}</b>${store}${rateBox(r,ok('sow_'+r+'_t'))}</div>`};
+  const ex=[];if(I.l12&&I.avg10){const d=I.l12/I.avg10-1;if(d>0.3)ex.push(ok('sow_lastyr',{p:Math.round(d*100)}));if(d<-0.3)ex.push(ok('sow_lastlow',{p:Math.round(-d*100)}))}
+  const pol=(typeof POL!=='undefined'?POL:[]).filter(p=>p.crops.includes('onion')).slice(0,3).map(p=>`${esc((p[L==='mr'?'mr':'hi']||p.hi).title)} <b style="color:${{pos:'var(--grn)',neg:'var(--red)',neu:'#c9a227'}[p.dir]}">(${t('d_'+p.dir)})</b>`);
+  el.innerHTML=`<h2>${ok('sow_h')}</h2><p><b>${ok('sow_today',{d:fmtD(now.toISOString().slice(0,10))})}</b> ${ok('sow_fit')}: <b>${fit.map(c=>ok(c.s)).join(', ')||'—'}</b></p>${fit.map(card).join('')}
+   <h2 style="margin-top:12px">${ok('sow_extra')}</h2>${ex.map(x=>`<p class="note">${x}</p>`).join('')}${pol.length?`<p><b>${ok('sow_pol')}:</b><br>${pol.join('<br>')}</p>`:''}
+   <details><summary><b>${ok('sow_all')}</b></summary>${cal.map(card).join('')}</details><p class="ai muted">🤖 ${ok('sow_note')}</p>`;
+}
+// ---- kharcha calculator ----
+const ON_COSTK=['k_seed','k_nur','k_fym','k_fert','k_pest','k_lab','k_irr','k_hv','k_tr','k_st','k_oth'];
+const ON_COSTD={k_seed:8000,k_nur:3000,k_fym:10000,k_fert:9000,k_pest:8000,k_lab:25000,k_irr:6000,k_hv:10000,k_tr:5000,k_st:0,k_oth:3000};
+let ONC={};try{ONC=JSON.parse(localStorage.getItem('oncost')||'{}')}catch(e){}
+async function onMandiOpts(){try{const d=await (await fetch('data/onion/daily.json?'+Date.now())).json();const last=d.rows.reduce((a,r)=>r[0]>a?r[0]:a,'');
+  return d.rows.filter(r=>r[0]===last&&r[8]>=100).sort((a,b)=>b[8]-a[8]).map(r=>({l:`${r[3]} (${r[4]}) — ₹${r[8]}`,v:r[8]}))}catch(e){return []}}
+async function onRenderCost(){
+  const el=document.getElementById('onCost');if(!el)return;const opts=await onMandiOpts();
+  const v=k=>ONC[k]??ON_COSTD[k];
+  el.innerHTML=`<h2>${ok('cost_h')}</h2><label>${ok('cost_area')}</label><input id="ocA" type="number" inputmode="decimal" value="${ONC.area??ONP.area??1}">
+   <p class="muted" style="margin-bottom:0">${ok('cost_per')} — <b>${ok('ex')}</b></p><div class="row">${ON_COSTK.map(k=>`<div><label>${ok(k)}</label><input class="ocK" data-k="${k}" type="number" inputmode="decimal" value="${v(k)}"></div>`).join('')}</div>
+   <p class="muted" style="margin-bottom:0">${ok('y_h')}</p><div class="row"><div><label>${ok('y_lo')}</label><input id="ocY1" type="number" value="${ONC.y1??60}"></div><div><label>${ok('y_av')}</label><input id="ocY2" type="number" value="${ONC.y2??100}"></div><div><label>${ok('y_hi')}</label><input id="ocY3" type="number" value="${ONC.y3??140}"></div></div><p class="muted">${ok('y_note')}</p>
+   <label>${ok('price_h')} — ${ok('price_pick')}</label><select id="ocM"><option value="">—</option>${opts.map(o=>`<option value="${o.v}">${esc(o.l)}</option>`).join('')}</select>
+   <label>${ok('price_man')}</label><input id="ocP" type="number" inputmode="decimal" value="${ONC.price??''}" placeholder="2000">
+   <button class="btn" id="ocGo">${ok('calc')}</button><div id="ocOut" class="sc" style="margin-top:10px"></div>`;
+  document.getElementById('ocM').onchange=e=>{if(e.target.value)document.getElementById('ocP').value=e.target.value};
+  document.getElementById('ocGo').onclick=()=>{const n=id=>parseFloat(document.getElementById(id).value)||0;
+    ONC={area:n('ocA')||1,y1:n('ocY1'),y2:n('ocY2'),y3:n('ocY3'),price:n('ocP')};$$('.ocK').forEach(i=>ONC[i.dataset.k]=parseFloat(i.value)||0);try{localStorage.setItem('oncost',JSON.stringify(ONC))}catch(e){}
+    const A=ONC.area,cA=ON_COSTK.reduce((s,k)=>s+(ONC[k]||0),0),cost=cA*A,P=ONC.price;
+    if(!P){document.getElementById('ocOut').innerHTML=`<div class="note">${ok('price_h')}?</div>`;return}
+    document.getElementById('ocOut').innerHTML=[['y_lo',ONC.y1],['y_av',ONC.y2],['y_hi',ONC.y3]].map(([k,y])=>{const q=y*A,rev=q*P,pf=rev-cost;
+      return `<div class="card" style="margin:0"><b>${ok(k)}</b><p>${ok('prod')}: <b>${q.toLocaleString('en-IN')} क्विं.</b><br>${ok('total_cost')}: ${inr(cost)}<br>${ok('rev')}: ${inr(rev)}<br>${ok('per_kg')}: ₹${q?(cost/q/100).toFixed(1):'—'}</p><p class="big ${pf>=0?'up':'dn'}">${pf>=0?ok('profit'):ok('loss')}: ${inr(Math.abs(pf))}</p></div>`}).join('')};
+}
+// ---- bhandaran ----
+async function onRenderStore(){
+  const el=document.getElementById('onStore');if(!el)return;const I=await onSeason();
+  const now=I.now||'';el.innerHTML=`<h2>${ok('st_h')}</h2><div class="row"><div><label>${ok('st_qty')}</label><input id="osQ" type="number" value="100"></div><div><label>${ok('st_price')}</label><input id="osP" type="number" value="${now?Math.round(now):''}"></div>
+   <div><label>${ok('st_months')}</label><select id="osM">${[1,2,3,4,5,6].map(m=>`<option${m===3?' selected':''}>${m}</option>`).join('')}</select></div><div><label>${ok('st_cost')}</label><input id="osC" type="number" value="40"></div>
+   <div><label>${ok('st_loss')}</label><input id="osL" type="number" value="8"></div><div><label>${ok('st_kind')}</label><select id="osK"><option value="r">${ok('st_rabi')}</option><option value="k">${ok('st_kh')}</option></select></div></div>
+   <p class="muted">${ok('st_loss_note')} • ${ok('st_cost')}: <b>${ok('ex')}</b></p><button class="btn" id="osGo">${ok('calc')}</button><div id="osOut" style="margin-top:10px"></div><p class="note">${ok('st_tips')}</p>`;
+  document.getElementById('osGo').onclick=()=>{const n=id=>parseFloat(document.getElementById(id).value)||0;const Q=n('osQ'),P=n('osP'),M=n('osM'),C=n('osC'),Ls=n('osL')/100,K=document.getElementById('osK').value;
+    const sell=Q*Math.pow(1-Ls,M),extra=Q*C*M,be=sell?(Q*P+extra)/sell:0,cm=new Date().getMonth(),tm=(cm+M)%12;
+    const r=I.idx[cm]&&I.idx[tm]?I.idx[tm]/I.idx[cm]:null,exp=r?P*r:null;
+    document.getElementById('osOut').innerHTML=`${K==='k'&&M>1?`<p class="note">${ok('st_kh_warn')}</p>`:''}<table><tr><td>${ok('st_now')}</td><td><b>${inr(Q*P)}</b></td></tr><tr><td>${ok('st_after',{m:M})}</td><td><b>${sell.toFixed(1)} क्विं.</b></td></tr><tr><td>${ok('st_extra')}</td><td><b>${inr(extra)}</b></td></tr><tr><td>${ok('st_be',{m:M})}</td><td><b class="dn">${inr(be)}/क्विं.</b></td></tr>
+     ${r?`<tr><td>${ok('st_hist',{y:I.years.length,a:MON[L][cm],b:MON[L][tm]})}</td><td><b>${pctS(r-1)}</b></td></tr><tr><td>${ok('st_exp')}</td><td><b>${inr(exp)}/क्विं.</b></td></tr>`:''}</table>
+     ${r?(exp>be?`<div class="rc" style="background:var(--grn);margin-top:8px">${ok('st_yes')}</div>`:`<div class="rc" style="background:var(--red);margin-top:8px">${ok('st_no')}</div>`):''}<p class="ai muted">🤖 ${t('on_act_note')}</p>`};
+}
+// ---- mausam aur rog ----
+let ONWX=null;
+async function onWeather(force){
+  const el=document.getElementById('onWx');if(!el)return;
+  try{
+    if(!ONP.geo||force){const q=ONP.dist||'Nashik';const j=await (await fetch(`https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(q)}&count=5&language=en`)).json();const g=(j.results||[]).find(x=>x.country_code==='IN')||{name:'Nashik',latitude:20.0,longitude:73.79,admin1:'Maharashtra'};ONP.geo={n:`${g.name}, ${g.admin1||''}`,lat:g.latitude,lon:g.longitude};saveP()}
+    const G=ONP.geo;const j=await (await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${G.lat}&longitude=${G.lon}&daily=temperature_2m_max,temperature_2m_min,precipitation_sum&hourly=relative_humidity_2m&timezone=Asia%2FKolkata&forecast_days=7`)).json();
+    const d=j.daily,days=d.time.map((tt,i)=>{const hs=j.hourly.relative_humidity_2m.slice(i*24,i*24+24).filter(x=>x!=null);return {t:tt,mx:d.temperature_2m_max[i],mn:d.temperature_2m_min[i],r:d.precipitation_sum[i]||0,rh:hs.length?hs.reduce((a,b)=>a+b,0)/hs.length:null}});
+    ONWX={G,days};
+  }catch(e){ONWX=null}
+  onRenderWx();
+}
+function onRenderWx(){
+  const el=document.getElementById('onWx');if(!el)return;
+  if(!ONWX){el.innerHTML=`<h2>${ok('wx_h')}</h2><p class="note">${t('w_err')}</p>`;return}
+  const D=ONWX.days,rain=D.reduce((a,x)=>a+x.r,0),avgT=x=>(x.mx+x.mn)/2;
+  const npb=D.filter(x=>x.rh>=80&&avgT(x)>=18&&avgT(x)<=30).length,ndm=D.filter(x=>x.rh>=85&&avgT(x)>=10&&avgT(x)<=20).length,nth=D.filter(x=>x.mx>=30&&x.r<1).length,brw=D.filter(x=>x.mx>=28).length>=3&&rain>=40;
+  const lv=(n,h,m)=>n>=h?'hi':n>=m?'md':'lo';
+  const R=[['pb',lv(npb,3,1),ok('why_pb',{n:npb})],['dm',lv(ndm,3,1),ok('why_dm',{n:ndm})],['th',nth>=5&&rain<5?'hi':nth>=3?'md':'lo',ok('why_th',{n:nth,r:Math.round(rain)})],['br',brw?'md':'lo',ok('why_br',{r:Math.round(rain)})]];
+  const col={hi:'var(--red)',md:'var(--org)',lo:'var(--grn)'};const order={hi:0,md:1,lo:2};
+  const alerts=[];const hv=D.find(x=>x.r>=64.5);if(hv)alerts.push(ok('wx_rain',{d:dlabel(hv.t)}));const fr=D.find(x=>x.mn<=4);if(fr)alerts.push(ok('wx_frost',{d:dlabel(fr.t),t:Math.round(fr.mn)}));
+  el.innerHTML=`<h2>${ok('wx_h')}</h2><p class="muted">📍 ${esc(ONWX.G.n)} — ${ok('wx_change')}</p>${alerts.map(a=>`<p class="note">${a}</p>`).join('')}
+   <table><tr><th></th><th>${t('w_temp')}</th><th>${t('w_rain')}</th><th>${t('w_hum')}</th></tr>${D.map(x=>`<tr><td><b>${dlabel(x.t)}</b></td><td>${Math.round(x.mx)}°/${Math.round(x.mn)}°</td><td>${x.r>=0.5?x.r.toFixed(0)+' mm':'—'}</td><td>${x.rh!=null?Math.round(x.rh)+'%':'—'}</td></tr>`).join('')}</table>
+   ${R.sort((a,b)=>order[a[1]]-order[b[1]]).map(([k,l,why])=>`<details class="card" style="margin:8px 0;border-left:6px solid ${col[l]}"${l==='hi'?' open':''}><summary><b>${ok('d_'+k)}</b> — <b style="color:${col[l]}">${ok('risk_'+l)}</b><br><span class="muted" style="font-size:14px">${why}</span></summary>
+     <p><b>${ok('sym')}:</b> ${ok(k+'_sym')}</p><p><b>${ok('prev')}:</b> ${ok(k+'_prev')}</p><p><b>${ok('treat')}:</b> ${ok(k+'_treat')}</p></details>`).join('')}
+   <p class="note">${ok('safety')}</p><p class="ai muted">🤖 ${t('on_act_note')}</p>${srcList()}`;
+}
+// ---- duniya ----
+function onRenderIntl(){
+  const el=document.getElementById('onIntl');if(!el)return;const lg=L==='mr'?'mr':'hi';const dc={pos:'var(--grn)',neg:'var(--red)',neu:'#c9a227'};
+  const it=(typeof POL!=='undefined'?POL:[]).filter(p=>p.crops.includes('onion')&&p.type==='intl').slice(0,8);
+  el.innerHTML=`<h2>${ok('intl_h')}</h2><p>${ok('intl_t')}</p><p class="note">${ok('intl_rules')}</p>${it.length?it.map(p=>{const x=p[lg]||p.hi;return `<div class="ev" style="border-left-color:${dc[p.dir]}"><b>${esc(x.title)}</b><br><span class="muted">${esc(p.date)} • ${esc(p.source_name)}</span><br>${esc(x.effect)} <b style="color:${dc[p.dir]}">(${t('d_'+p.dir)})</b><br><a href="${esc(p.source)}" target="_blank" rel="noopener">${t('src')} ↗</a></div>`}).join(''):`<p class="muted">${ok('intl_none')}</p>`}`;
+}
+// ---- onion ke andar tab ----
+const ON_TABS=[['today','t_today'],['graph','t_graph'],['hist','t_hist'],['plan','t_plan'],['sow','t_sow'],['cost','t_cost'],['fc','t_fc'],['pol','t_pol'],['intl','t_intl'],['wx','t_wx'],['store','t_store'],['mandi','t_mandi']];
+let ONTAB='today';try{ONTAB=localStorage.getItem('ontab')||'today'}catch(e){}
+function onTabs(){
+  const bar=document.getElementById('onTabs');if(!bar)return;
+  bar.innerHTML=ON_TABS.map(([k,l])=>`<button data-ot="${k}" class="${k===ONTAB?'on':''}">${ok(l)}</button>`).join('');
+  bar.querySelectorAll('button').forEach(b=>b.onclick=()=>{ONTAB=b.dataset.ot;try{localStorage.setItem('ontab',ONTAB)}catch(e){};onTabs();bar.scrollIntoView({block:'start'});window.scrollBy(0,-170)});
+  document.querySelectorAll('#onion [data-otab]').forEach(c=>c.hidden=!c.dataset.otab.split(' ').includes(ONTAB));
+}
+async function onPhase2(){onTabs();await onSeason();onRenderPlan();onRenderMy();onRenderSow();onRenderCost();onRenderStore();onRenderIntl();if(ONWX)onRenderWx();else onWeather()}
+
+function loadKB(){KB_DASH.load();ON_DASH.load().then(()=>onPhase2())}
+function renderKB(){KB_DASH.render();ON_DASH.render();if(document.getElementById('onTabs')?.children.length)onPhase2()}
 
 /* ---------- PROFIT ---------- */
 $('#pGo').onclick=()=>{

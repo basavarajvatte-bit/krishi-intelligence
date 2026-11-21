@@ -23,7 +23,8 @@ const FEEDS = [
     'India pulses import tur OR chana OR urad OR yellow peas', 'India wheat stock limit OR wheat import OR OMSS',
     'India sugar export quota', 'India rice export', 'MSP cabinet kharif OR rabi', 'DGFT notification agriculture import',
     'India maize import OR ethanol maize', 'Brazil soybean crop OR Argentina soybean', 'China soybean import',
-    'USDA WASDE soybean OR cotton OR wheat', 'monsoon IMD forecast crop'].map(q => ({ url: gnews(q), name: 'Google News' }))
+    'USDA WASDE soybean OR cotton OR wheat', 'monsoon IMD forecast crop',
+    'Bangladesh onion import', 'Pakistan onion export', 'China onion export price', 'Egypt onion export', 'Netherlands onion export', 'NAFED onion buffer procurement'].map(q => ({ url: gnews(q), name: 'Google News' }))
 ];
 
 const CROP_WORDS = { onion: /onion|kanda|pyaz/i, soybean: /soy|edible oil|palm oil|sunflower oil|oilseed/i, cotton: /cotton|kapas/i,
