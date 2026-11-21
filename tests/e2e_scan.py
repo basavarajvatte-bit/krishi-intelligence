@@ -27,13 +27,15 @@ with sync_playwright() as p:
     pg.on('response', resp)
     pg.goto(SITE + '?t=' + str(time.time()), wait_until='networkidle'); pg.wait_for_timeout(2000)
     def run(sec, inp, out, path, wait=90):
-        pg.evaluate(f"show('{sec}')"); t0 = time.time()
+        print(f'\n--- {sec} {path}'); pg.evaluate(f"show('{sec}')"); t0 = time.time()
         pg.set_input_files(inp, path)
+        pg.wait_for_timeout(500)
         while time.time() - t0 < wait:
-            txt = pg.inner_text(out)
-            if txt and '⏳' not in txt and 'ANALYS' not in txt.upper() and 'स्कॅन होत' not in txt: break
+            if not pg.evaluate("typeof SCAN_BUSY!=='undefined' && !!SCAN_BUSY"): break
+            st = pg.evaluate("[0,1,2].map(i=>{const e=document.getElementById('ovS'+i);return e?e.querySelector('.st').textContent:''}).join(' / ')")
+            print(f'   {time.time()-t0:4.1f}s  {st}')
             pg.wait_for_timeout(1000)
-        print(f'\n=== {sec} {path} ({time.time()-t0:.1f}s)\n' + pg.inner_text(out)[:700].replace('\n', ' | '))
+        print(f'=== {sec} {path} ({time.time()-t0:.1f}s)\n' + pg.inner_text(out)[:600].replace('\n', ' | ') + '\n')
     run('scan', '#scUp', '#scOut', '/tmp/label_big.jpg')
     run('scan', '#scUp', '#scOut', '/tmp/label.png')
     run('scan', '#scUp', '#scOut', '/tmp/label.webp')

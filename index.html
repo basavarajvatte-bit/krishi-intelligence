@@ -56,6 +56,27 @@ th{background:var(--g2);font-size:14px;position:sticky;top:0}
 .ontabs{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:0 0 12px}
 .ontabs button{padding:9px 2px;font-size:14px;font-weight:700;border-radius:10px;border:2px solid #b5651d;background:#fff;color:#8a4b12;min-height:44px}
 .ontabs button.on{background:#b5651d;color:#fff}
+#scanOv{position:fixed;inset:0;z-index:100;background:#0d2216;display:flex;align-items:center;justify-content:center;padding:14px;color:#fff}
+#scanOv[hidden]{display:none}
+.ov-box{width:100%;max-width:440px;text-align:center}
+.ov-img{position:relative;width:100%;max-height:34vh;aspect-ratio:4/3;overflow:hidden;border-radius:16px;border:2px solid #4ade80;margin:0 auto}
+.ov-img img{width:100%;height:100%;object-fit:cover;filter:saturate(.8) brightness(.85)}
+.ov-line{position:absolute;left:0;right:0;height:4px;background:linear-gradient(90deg,transparent,#4ade80,transparent);box-shadow:0 0 18px 6px rgba(74,222,128,.7);animation:ovscan 2.2s ease-in-out infinite}
+.ov-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(74,222,128,.12) 1px,transparent 1px),linear-gradient(90deg,rgba(74,222,128,.12) 1px,transparent 1px);background-size:28px 28px}
+@keyframes ovscan{0%{top:0}50%{top:calc(100% - 4px)}100%{top:0}}
+.ov-ai{position:relative;width:96px;height:96px;margin:16px auto 6px}
+.ov-spin{position:absolute;inset:0;border-radius:50%;border:5px solid rgba(255,255,255,.15);border-top-color:#4ade80;border-right-color:#facc15;animation:ovspin 1s linear infinite}
+.ov-ring{position:absolute;inset:0;border-radius:50%;border:2px solid #4ade80;animation:ovring 2s ease-out infinite;opacity:0}
+.ov-ring.r2{animation-delay:1s}
+.ov-icon{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:40px;animation:ovpulse 1.2s ease-in-out infinite}
+@keyframes ovspin{to{transform:rotate(360deg)}}@keyframes ovring{0%{transform:scale(.8);opacity:.9}100%{transform:scale(1.7);opacity:0}}@keyframes ovpulse{50%{transform:scale(1.15)}}
+.ov-msg{font-size:19px;font-weight:700;min-height:2.6em;margin:6px 0}
+.ov-st{text-align:left;background:rgba(255,255,255,.08);border-radius:12px;padding:8px 10px;font-size:14px}
+.ov-st>div{display:flex;gap:6px;align-items:center;padding:5px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.ov-st .muted{color:#a7c4b2;font-size:12px;flex:1}.ov-st .st{font-weight:800;letter-spacing:.3px}
+.st-wait .st{color:#9ca3af}.st-run .st{color:#4ade80;animation:ovpulse 1s infinite}.st-slow .st{color:#facc15}.st-fail .st{color:#f87171}.st-win .st{color:#4ade80}.st-stop .st{color:#9ca3af}
+.ov-time{color:#a7c4b2;font-size:14px;margin:8px 0}.ov-cancel{background:transparent!important;border:2px solid #fff!important;margin-top:4px}
+@media (prefers-reduced-motion:reduce){.ov-line,.ov-spin,.ov-ring,.ov-icon{animation-duration:3s}}
 .kbinfo{background:#f7faf8;border:1px solid var(--bd);border-radius:12px;padding:10px 12px;min-height:150px;margin-bottom:6px}
 .kbcv{touch-action:none;user-select:none;-webkit-user-select:none}.kbcv canvas{display:block;border-radius:10px}
 .ev{border-left:6px solid var(--bd);padding:8px 10px;margin:8px 0;background:#fff;border-radius:8px}
@@ -340,7 +361,7 @@ function applyLang(){
   renderLive();renderCompare();renderHistory();renderWeather();renderAlerts();renderPolicy();renderKB();
 }
 $$('.langs button').forEach(b=>b.onclick=()=>{L=b.dataset.l;try{localStorage.setItem('lang',L)}catch(e){};applyLang()});
-function show(s){$$('section').forEach(x=>x.classList.toggle('on',x.id===s));$$('nav button').forEach(b=>b.classList.toggle('on',b.dataset.s===s));try{localStorage.setItem('tab',s)}catch(e){}}
+function show(s){if(typeof SCAN_BUSY!=='undefined'&&SCAN_BUSY&&s!=='scan'&&s!=='doctor')SCAN_BUSY.abort();$$('section').forEach(x=>x.classList.toggle('on',x.id===s));$$('nav button').forEach(b=>b.classList.toggle('on',b.dataset.s===s));try{localStorage.setItem('tab',s)}catch(e){}}
 $$('nav button').forEach(b=>b.onclick=()=>show(b.dataset.s));
 
 /* ---------- LIVE ---------- */
@@ -1237,9 +1258,6 @@ const scSave=h=>{try{localStorage.setItem('schist',JSON.stringify(h.slice(0,40))
 const drHist=()=>{try{return JSON.parse(localStorage.getItem('drhist')||'[]')}catch(e){return []}};
 const drSave=h=>{try{localStorage.setItem('drhist',JSON.stringify(h.slice(0,40)))}catch(e){try{localStorage.setItem('drhist',JSON.stringify(h.slice(0,10)))}catch(e2){}}};
 const jsonOut=c=>{c=String(c||'').replace(/\*\*/g,'').replace(/```(json)?/gi,'');const i=c.indexOf('{');if(i<0)throw new Error('AI ने उत्तर दिले नाही');let d=0,s=false,e=false;for(let k=i;k<c.length;k++){const ch=c[k];if(s){if(e)e=false;else if(ch==='\\')e=true;else if(ch==='"')s=false;continue}if(ch==='"')s=true;else if(ch==='{')d++;else if(ch==='}'&&--d===0){const t=c.slice(i,k+1);try{return JSON.parse(t)}catch(e){return JSON.parse(t.replace(/,\s*([\]}])/g,'$1'))}}}throw new Error('अपूर्ण उत्तर')};
-// photo chhoti karo (1024px, JPEG) taaki jaldi jaaye; thumbnail 160px history ke liye
-function imgPrep(file,max=1024,q=0.82){return new Promise((res,rej)=>{const u=URL.createObjectURL(file),im=new Image();im.onload=()=>{const sc=Math.min(1,max/Math.max(im.width,im.height)),c=document.createElement('canvas');c.width=Math.round(im.width*sc);c.height=Math.round(im.height*sc);c.getContext('2d').drawImage(im,0,0,c.width,c.height);const t=document.createElement('canvas'),ts=160/Math.max(im.width,im.height);t.width=Math.round(im.width*ts);t.height=Math.round(im.height*ts);t.getContext('2d').drawImage(im,0,0,t.width,t.height);URL.revokeObjectURL(u);res({data:c.toDataURL('image/jpeg',q),thumb:t.toDataURL('image/jpeg',0.6),img:im})};im.onerror=()=>rej(new Error('फोटो उघडता आला नाही'));im.src=u})}
-async function visCall(body){const r=await fetch(VIS_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});const j=await r.json();if(!j.ok)throw new Error(j.msg||'AI त्रुटी');return jsonOut(j.content)}
 async function barcodes(img){if(!('BarcodeDetector' in window))return null;try{const bd=new BarcodeDetector();const r=await bd.detect(img);return r.map(x=>({f:x.format,v:x.rawValue}))}catch(e){return null}}
 // Marathi aawaz (phone me Marathi voice na ho to Hindi)
 function speak(text){try{const ss=window.speechSynthesis;if(!ss){alert('या फोनवर आवाजाची सोय नाही.');return}ss.cancel();const vs=ss.getVoices();const v=vs.find(x=>/^mr/i.test(x.lang))||vs.find(x=>/^hi/i.test(x.lang));const parts=text.replace(/\s+/g,' ').match(/[^।.!?]{1,220}[।.!?]?/g)||[text];parts.forEach(p=>{const u=new SpeechSynthesisUtterance(p);u.lang=v?v.lang:'mr-IN';if(v)u.voice=v;u.rate=0.9;ss.speak(u)})}catch(e){}}
@@ -1267,15 +1285,17 @@ function scCard(rec){
    ${alerts.map(a=>`<p class="note" style="background:#fdecea;border-color:var(--red)">${a}</p>`).join('')}
    ${tri?`<p class="note">🔺 धोक्याचा त्रिकोण: <b>${tri[0]}</b> — ${tri[1]}</p>`:''}
    ${rec.codes?.length?`<p class="muted">🔲 कोड: ${rec.codes.map(c=>/^https?:\/\//.test(c.v)?`<a href="${esc(c.v)}" target="_blank" rel="noopener">${esc(c.v.slice(0,60))}</a>`:esc(c.v)).join(', ')}</p>`:''}
-   <div class="ai"><b>📖 लेबलवर वाचलेली माहिती (AI ने फोटोतून वाचली — लेबलशी एकदा जुळवून पहा)</b>
+   <div class="ai"><b>📖 लेबलवर वाचलेली माहिती (AI ने फोटोतून वाचली — लेबलशी एकदा जुळवून पहा)</b>${rec.model?`<br><span class="muted" style="font-size:13px">🤖 उत्तर: ${esc(rec.model)}${rec.ms?` • ${(rec.ms/1000).toFixed(1)} सेकंद`:''}${rec.cached?' • आधी स्कॅन केलेले (cache)':''}${L_.read_conf?` • लेबल वाचण्याची स्पष्टता: ${({high:'चांगली',medium:'मध्यम',low:'कमी'})[L_.read_conf]||esc(L_.read_conf)}`:''}</span>`:''}
    ${q(1,'या उत्पादनाचे नाव काय?',esc(nm))}
-   ${q(2,'हे कशासाठी वापरतात?',SC_USE[cat]||NA)}
+   ${q(2,'हे कशासाठी वापरतात?',(SC_USE[cat]||'')+(hasV(L_.uses)?`<br><span class="muted">लेबलवरून:</span> ${esc(listTxt(L_.uses))}`:'')||NA)}
    ${ais.length?`<div class="pq"><b>सक्रिय घटक (Active ingredient)</b>${ais.map(a=>`${esc(a.name||'')} <b>${esc(a.concentration||'')}</b>`).join('<br>')}${form?`<br><span class="muted">${esc(SC_FORM[form]||form)}</span>`:''}</div>`:''}
    ${L_.npk?`<div class="pq"><b>N:P:K</b>${esc(L_.npk)}</div>`:''}
    ${isChem?q(3,'कोणत्या किडी/रोग/तणांवर?',hasV(L_.targets_on_label)?esc(listTxt(L_.targets_on_label)):NA):''}
    ${q(isChem?4:3,'कोणत्या पिकांवर वापरता येते?',hasV(L_.crops_on_label)?esc(listTxt(L_.crops_on_label)):NA)}
    ${q(isChem?5:4,'अधिकृत प्रमाण (लेबलवर छापलेले)',hasV(L_.dose_on_label)?`<b>${esc(L_.dose_on_label)}</b><br><span class="muted">हे लेबलवरून वाचले आहे. आम्ही स्वतः प्रमाण सांगत नाही.</span>`:NA)}
    ${isChem?q(6,'काढणीपूर्वी किती दिवस आधी फवारणी थांबवावी (PHI)?',hasV(L_.phi_on_label)?esc(L_.phi_on_label):NA):''}
+   ${hasV(L_.application_method)?q(isChem?7:5,'वापरण्याची पद्धत (लेबलवरून)',esc(L_.application_method)):''}
+   ${hasV(L_.safety_printed)?`<div class="pq"><b>लेबलवरील सूचना</b>${esc(listTxt(L_.safety_printed))}</div>`:''}
    ${hasV(L_.cir_reg_no)?`<p class="muted">CIR नोंदणी: ${esc(L_.cir_reg_no)} • बॅच: ${esc(L_.batch_no||'—')} • उत्पादन: ${esc(L_.mfg_date||'—')} • मुदत: ${esc(L_.expiry_date||'—')}</p>`:''}</div>
    ${isChem?`<details class="card" style="margin-top:8px" open><summary><b>🦺 फवारणी सुरक्षा मार्गदर्शक</b></summary><ul>${SC_SAFE.map(x=>`<li>${x}</li>`).join('')}</ul><p class="muted">वापरण्याची वेळ: रोग/कीड दिसू लागताच किंवा लेबल/कृषी अधिकाऱ्यांच्या सल्ल्यानुसार. विनाकारण किंवा सतत तेच औषध फवारू नका — कीड प्रतिकारक बनते.</p></details>`:''}
    <div class="row" style="margin-top:8px"><button class="btn" data-speak="${rec.id}" style="margin:0">🔊 मराठीत ऐका</button><button class="btn" data-stop style="margin:0;background:#fff;color:var(--g);border:2px solid var(--g)">⏹ थांबवा</button></div></div>`;
@@ -1284,15 +1304,18 @@ function scCard(rec){
 }
 let SC_EXPECT=null; // peek doctor ne sujhaye ghatak (bottle tapasne ke liye)
 async function scRun(file,mode){
-  const out=document.getElementById('scOut');out.innerHTML='<p class="muted">⏳ फोटो तयार होत आहे...</p>';
-  try{const p=await imgPrep(file);const codes=await barcodes(p.img);
-    if(mode==='code'){out.innerHTML=codes===null?'<p class="note">या फोनवर/ब्राउझरमध्ये बारकोड वाचण्याची सोय नाही (Chrome Android मध्ये चालते). लेबलचा फोटो काढा — AI नाव वाचेल.</p>':codes.length?`<div class="card"><b>🔲 कोड सापडला:</b><br>${codes.map(c=>`${esc(c.f)}: ${/^https?:\/\//.test(c.v)?`<a href="${esc(c.v)}" target="_blank" rel="noopener">${esc(c.v)}</a>`:esc(c.v)}`).join('<br>')}<p class="muted">बारकोडवरून उत्पादनाची माहिती देणारा सरकारी डेटाबेस उपलब्ध नाही. QR मध्ये कंपनीची लिंक असल्यास ती उघडून बॅच तपासा. पूर्ण माहितीसाठी लेबलचा फोटो काढा.</p></div>`:'<p class="note">कोड सापडला नाही. कोड जवळून, सरळ व उजेडात काढा.</p>';return}
-    out.innerHTML='<p class="muted">⏳ AI लेबल वाचत आहे (10–30 सेकंद)...</p>';
-    const lab=await visCall({task:'label',image:p.data});
+  const out=document.getElementById('scOut');
+  if(mode==='code'){ // barcode/QR: phone me hi padha jaata hai, AI nahi
+    const bad=checkFile(file);if(bad){out.innerHTML=`<p class="note">⚠️ ${bad}</p>`;return}
+    let bm=null;try{bm=await createImageBitmap(file)}catch(e){out.innerHTML='<p class="note">⚠️ हा फोटो उघडता आला नाही. JPG, PNG किंवा WEBP फोटो निवडा.</p>';return}
+    const codes=await barcodes(bm);bm.close&&bm.close();
+    out.innerHTML=codes===null?'<p class="note">या फोनवर/ब्राउझरमध्ये बारकोड वाचण्याची सोय नाही (Chrome Android मध्ये चालते). लेबलचा फोटो काढा — AI नाव वाचेल.</p>':codes.length?`<div class="card"><b>🔲 कोड सापडला:</b><br>${codes.map(c=>`${esc(c.f)}: ${/^https?:\/\//.test(c.v)?`<a href="${esc(c.v)}" target="_blank" rel="noopener">${esc(c.v)}</a>`:esc(c.v)}`).join('<br>')}<p class="muted">बारकोडवरून उत्पादनाची माहिती देणारा सरकारी डेटाबेस उपलब्ध नाही. QR मध्ये कंपनीची लिंक असल्यास ती उघडून बॅच तपासा. पूर्ण माहितीसाठी लेबलचा फोटो काढा.</p></div>`:'<p class="note">कोड सापडला नाही. कोड जवळून, सरळ व उजेडात काढा.</p>';return}
+  await runScan({file,task:'label',extra:{},outId:'scOut',maxPx:1280,onResult:async(res,p)=>{
+    const lab=toLab(res.data);
     if(lab.is_product===false){out.innerHTML='<p class="note">हा कृषी उत्पादनाचा लेबल वाटत नाही. डब्याचा/पिशवीचा पुढचा भाग, नाव व घटक दिसेल असा जवळून फोटो काढा.</p>';return}
-    const rec={id:Date.now(),date:new Date().toISOString().slice(0,10),thumb:p.thumb,lab,codes:codes||[]};
-    const h=scHist();h.unshift(rec);scSave(h);scShow(rec);scRenderHist();
-  }catch(e){out.innerHTML=`<p class="note">${esc(e.message)}. इंटरनेट तपासा किंवा पुन्हा प्रयत्न करा.</p>`}
+    const codes=p.codeImg?await barcodes(p.codeImg):null;try{p.codeImg&&p.codeImg.close&&p.codeImg.close()}catch(e){}
+    const rec={id:Date.now(),date:new Date().toISOString().slice(0,10),thumb:p.thumb,lab,codes:codes||[],model:res.name,ms:res.ms,cached:!!res.cached};
+    const h=scHist();h.unshift(rec);scSave(h);scShow(rec);scRenderHist();out.scrollIntoView({block:'start'})}});
 }
 function scShow(rec){const c=scCard(rec);let m='';
   if(SC_EXPECT){const ais=(rec.lab.active_ingredients||[]).map(a=>lc(a.name));const hit=SC_EXPECT.list.find(x=>ais.some(a=>a.includes(lc(x))));
@@ -1327,12 +1350,10 @@ const DR_GEN=['रोगट पाने/झाडे काढून शेत�
 let DRFILE=null,DRPREV=null;
 async function drRun(){
   const out=document.getElementById('drOut');if(!DRFILE){out.innerHTML='<p class="note">आधी फोटो काढा किंवा निवडा.</p>';return}
-  const crop=document.getElementById('drCrop').value,part=document.getElementById('drPart').value;out.innerHTML='<p class="muted">⏳ AI फोटो तपासत आहे (10–30 सेकंद)...</p>';
-  try{const p=await imgPrep(DRFILE);const cropEn={kothimbir:'coriander leaves',chilli:'chilli'}[crop]||crop;
-    const res=await visCall({task:'crop',crop:cropEn,part,image:p.data});
-    const rec={id:Date.now(),date:new Date().toISOString().slice(0,10),crop,part,thumb:p.thumb,res,prev:DRPREV?.id||null};
-    const h=drHist();h.unshift(rec);drSave(h);DRPREV=null;drShow(rec);drRenderHist();
-  }catch(e){out.innerHTML=`<p class="note">${esc(e.message)}. इंटरनेट तपासा किंवा पुन्हा प्रयत्न करा.</p>`}
+  const crop=document.getElementById('drCrop').value,part=document.getElementById('drPart').value;const cropEn={kothimbir:'coriander leaves',chilli:'chilli'}[crop]||crop;
+  await runScan({file:DRFILE,task:'crop',extra:{crop:cropEn,part},outId:'drOut',maxPx:1024,onResult:(r,p)=>{
+    const rec={id:Date.now(),date:new Date().toISOString().slice(0,10),crop,part,thumb:p.thumb,res:toRes(r.data),prev:DRPREV?.id||null,model:r.name,ms:r.ms,cached:!!r.cached};
+    const h=drHist();h.unshift(rec);drSave(h);DRPREV=null;drShow(rec);drRenderHist();out.scrollIntoView({block:'start'})}});
 }
 function drShow(rec){
   const R=rec.res||{},cs=(Array.isArray(R.causes)?R.causes:[]).filter(c=>c&&c.name_en).map(c=>({...c,confidence:Math.min(70,Math.max(0,+c.confidence||0))})).sort((a,b)=>(b.confidence||0)-(a.confidence||0));const top=cs[0];
@@ -1345,7 +1366,7 @@ function drShow(rec){
   const sym=(R.symptoms||[]).slice(0,6);
   document.getElementById('drOut').innerHTML=`<div class="card"><div style="display:flex;gap:10px;align-items:center"><img src="${rec.thumb}" style="width:80px;height:80px;object-fit:cover;border-radius:10px"><div><b>पीक: ${esc(cropMr)}</b><br><span class="muted">${esc(rec.date)}</span></div></div>
    ${cmp}${R.image_ok===false?'<p class="note">⚠️ फोटो स्पष्ट नाही / झाड दिसत नाही. रोगट भाग जवळून, उजेडात, फोकसमध्ये काढा.</p>':''}
-   <div class="ai"><b>🤖 AI चा अंदाज — संभाव्य कारणे (पक्के निदान नाही)</b>${cs.length?cs.map(c=>`<div style="margin:8px 0"><b>${esc(c.name_mr||c.name_en)}</b> <span class="muted">(${esc(c.name_en)})</span> — ${DR_TYPE[c.type]||esc(c.type||'')}<div class="tr" style="background:#e3e8e5;border-radius:6px;height:14px;margin-top:4px"><div style="width:${Math.min(100,c.confidence||0)}%;height:14px;border-radius:6px;background:${(c.confidence||0)>=60?'var(--g)':'var(--org)'}"></div></div><span class="muted" style="font-size:13px">AI ची खात्री: ${c.confidence||0}% (कमाल 70% दाखवतो — AI नेहमी बरोबर नसतो)</span></div>`).join(''):'<p>कारण ओळखता आले नाही.</p>'}
+   <div class="ai"><b>🤖 AI चा अंदाज — संभाव्य कारणे (पक्के निदान नाही)</b>${rec.model?`<br><span class="muted" style="font-size:13px">उत्तर: ${esc(rec.model)}${rec.ms?` • ${(rec.ms/1000).toFixed(1)} सेकंद`:''}${rec.cached?' • cache':''}</span>`:''}${cs.length?cs.map(c=>`<div style="margin:8px 0"><b>${esc(c.name_mr||c.name_en)}</b> <span class="muted">(${esc(c.name_en)})</span> — ${DR_TYPE[c.type]||esc(c.type||'')}<div class="tr" style="background:#e3e8e5;border-radius:6px;height:14px;margin-top:4px"><div style="width:${Math.min(100,c.confidence||0)}%;height:14px;border-radius:6px;background:${(c.confidence||0)>=60?'var(--g)':'var(--org)'}"></div></div><span class="muted" style="font-size:13px">AI ची खात्री: ${c.confidence||0}% (कमाल 70% दाखवतो — AI नेहमी बरोबर नसतो)</span></div>`).join(''):'<p>कारण ओळखता आले नाही.</p>'}
     ${sym.length?`<p class="muted" style="font-size:14px">दिसलेली लक्षणे: ${esc(sym.join('; '))}</p>`:''}${R.severity_0_10!=null?`<p>तीव्रता: <b>${R.severity_0_10}/10</b></p>`:''}</div>
    ${low?`<p class="note">🔍 खात्री कमी आहे. आणखी फोटो पाठवा: ${esc((R.need_more||['पानाची दोन्ही बाजू जवळून','पूर्ण झाड','शेताचा भाग']).slice(0,3).join(', '))}. पोषण कमतरता व रोग सारखे दिसू शकतात — KVK कडून खात्री करा.</p>`:''}
    ${kb&&!conf&&rec.ok!==false?`<div class="card" style="border-left:6px solid var(--org);margin-top:8px"><b>❓ खात्री करा: ${M['d_'+kb.k]}</b><p>ICAR नुसार या रोग/किडीची लक्षणे: <b>${M[kb.k+'_sym']}</b></p><p>ही लक्षणे तुमच्या पिकावर खरोखर दिसतात का?</p><div class="row"><button class="btn" id="drYes" style="margin:0">✅ हो, अशीच दिसतात</button><button class="btn" id="drNo" style="margin:0;background:#fff;color:var(--red);border:2px solid var(--red)">❌ नाही / खात्री नाही</button></div></div>`:''}
@@ -1385,6 +1406,102 @@ function scanInit(){
   document.getElementById('drCam').onchange=pick;document.getElementById('drUp').onchange=pick;
   scRenderHist();drRenderHist();drReminder();try{speechSynthesis.getVoices()}catch(e){}
 }
+
+/* ---------- 3-MODEL RACE + SCAN ANIMATION ---------- */
+// Model 1 turant; 4 sec me sahi jawab nahi to Model 2; aur 4 sec baad Model 3. Pehla SAHI jawab jeetta hai, baaki request band.
+// Error, khaali ya galat jawab kabhi nahi jeetta (Worker bhi jaanchta hai, yahan bhi). Ek hi photo dobara = cache se turant.
+const RACE={stagger:4000,timeout:45000,models:['Llama 4 Scout','Mistral Small 3.1','Llama 3.2 Vision']};
+let SCAN_BUSY=null; // chal raha scan (dobara dabane se dusra scan nahi)
+const OK_TYPES=['image/jpeg','image/jpg','image/png','image/webp'];
+function checkFile(f){
+  if(!f)return 'फोटो निवडला नाही.';
+  if(f.size>30*1024*1024)return 'फोटो खूप मोठा आहे (30MB पेक्षा जास्त). कॅमेऱ्याने पुन्हा काढा.';
+  const ext=(f.name||'').split('.').pop().toLowerCase();
+  if(f.type&&!OK_TYPES.includes(f.type)&&!/^image\/(heic|heif)$/.test(f.type))return 'हा फाइल प्रकार चालत नाही. JPG, JPEG, PNG किंवा WEBP फोटो निवडा.';
+  if(!f.type&&!['jpg','jpeg','png','webp','heic','heif'].includes(ext))return 'हा फाइल प्रकार चालत नाही. JPG, JPEG, PNG किंवा WEBP फोटो निवडा.';
+  return null;
+}
+// Photo: decode -> chhota (label ke liye 1280px taaki akshar padhe jaayein, fasal 1024px) -> JPEG, 1.4MB se kam
+async function prepImage(file,max){
+  let src,w,h,close=()=>{};
+  try{const bm=await createImageBitmap(file,{imageOrientation:'from-image'});src=bm;w=bm.width;h=bm.height;close=()=>bm.close&&bm.close()}
+  catch(e){src=await new Promise((res,rej)=>{const u=URL.createObjectURL(file),im=new Image();im.onload=()=>{URL.revokeObjectURL(u);res(im)};im.onerror=()=>{URL.revokeObjectURL(u);rej(new Error('bad'))};im.src=u});w=src.naturalWidth;h=src.naturalHeight}
+  if(!w||!h)throw new Error('फोटो उघडता आला नाही. JPG, PNG किंवा WEBP फोटो निवडा.');
+  const draw=(m,q)=>{const sc=Math.min(1,m/Math.max(w,h)),c=document.createElement('canvas');c.width=Math.max(1,Math.round(w*sc));c.height=Math.max(1,Math.round(h*sc));const x=c.getContext('2d');x.fillStyle='#fff';x.fillRect(0,0,c.width,c.height);x.drawImage(src,0,0,c.width,c.height);const d=c.toDataURL('image/jpeg',q);c.width=c.height=0;return d};
+  let data=draw(max,0.82);for(const [m,q] of [[max,0.7],[1024,0.7],[800,0.65]]){if(data.length<=1400000)break;data=draw(m,q)}
+  const thumb=draw(160,0.6);let codeImg=null;try{codeImg=await createImageBitmap(file)}catch(e){}
+  close();return {data,thumb,codeImg};
+}
+async function sha(s){try{const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(s));return [...new Uint8Array(b)].slice(0,12).map(x=>x.toString(16).padStart(2,'0')).join('')}catch(e){return null}}
+const rcGet=k=>{try{return (JSON.parse(localStorage.getItem('viscache')||'{}'))[k]||null}catch(e){return null}};
+const rcPut=(k,v)=>{try{const c=JSON.parse(localStorage.getItem('viscache')||'{}');c[k]=v;const ks=Object.keys(c);while(ks.length>15)delete c[ks.shift()];localStorage.setItem('viscache',JSON.stringify(c))}catch(e){}};
+// Client-side jaanch (Worker ke baad bhi): khaali jawab nahi jeetega
+function validLocal(task,d){if(!d||typeof d!=='object')return false;if(task==='label')return d.is_product===false||!!(d.product_name||(d.active_ingredients||[]).length||d.npk);return d.image_ok===false||!!((d.possible_causes||[]).length||d.detected_problem)}
+function raceVision(body,{onStatus,signal}){
+  return new Promise((resolve,reject)=>{
+    const ctrls=[null,null,null],timers=[];let done=false,failed=0;const errs=[];
+    const finish=()=>{done=true;timers.forEach(clearTimeout);ctrls.forEach(c=>c&&c.abort())};
+    const start=i=>{
+      if(done||ctrls[i]||i>2)return;const c=new AbortController();ctrls[i]=c;onStatus(i,'run');
+      const to=setTimeout(()=>c.abort(),RACE.timeout);
+      fetch(VIS_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({...body,model:i+1}),signal:c.signal})
+        .then(r=>r.json()).then(j=>{clearTimeout(to);if(done)return;
+          if(!j.ok||!validLocal(body.task,j.data)){const e=new Error(j.msg||'invalid');e.code=j.code||'invalid';throw e}
+          finish();onStatus(i,'win');resolve({data:j.data,model:i+1,name:j.model||RACE.models[i],ms:j.ms})})
+        .catch(e=>{clearTimeout(to);if(done)return;errs[i]=e;failed++;onStatus(i,'fail',e.code);
+          const nx=ctrls.findIndex(x=>!x);if(nx>=0)start(nx);          // fail hua to agla turant
+          else if(failed>=3){finish();const q=errs.some(x=>x&&x.code==='quota'),rt=errs.some(x=>x&&x.code==='rate');const er=new Error(q?'quota':rt?'rate':(navigator.onLine===false?'offline':'all'));reject(er)}});
+    };
+    start(0);
+    timers.push(setTimeout(()=>{if(!done){onStatus(0,'slow');start(1)}},RACE.stagger));
+    timers.push(setTimeout(()=>{if(!done){onStatus(1,'slow');start(2)}},RACE.stagger*2));
+    if(signal)signal.addEventListener('abort',()=>{if(!done){finish();reject(new Error('cancel'))}});
+  });
+}
+// ---- animation overlay ----
+const OV_MSG={label:['तुमची प्रतिमा स्कॅन होत आहे...','AI लेबलवरील माहिती तपासत आहे...','योग्य माहिती शोधत आहे...','तुमच्यासाठी सर्वोत्तम माहिती तयार करत आहे...'],crop:['तुमची प्रतिमा स्कॅन होत आहे...','AI पिकाची माहिती तपासत आहे...','योग्य उपाय शोधत आहे...','तुमच्यासाठी सर्वोत्तम माहिती तयार करत आहे...']};
+const ST_TXT={wait:'WAITING...',run:'ANALYSING...',slow:'TAKING TOO LONG',fail:'FAILED',win:'✓ ANALYSIS COMPLETE',stop:'STOPPED'};
+function overlay(img,task,onCancel){
+  let el=document.getElementById('scanOv');if(!el){el=document.createElement('div');el.id='scanOv';document.body.appendChild(el)}
+  el.innerHTML=`<div class="ov-box"><div class="ov-img"><img src="${img}" alt=""><div class="ov-line"></div><div class="ov-grid"></div></div>
+   <div class="ov-ai"><div class="ov-ring r1"></div><div class="ov-ring r2"></div><div class="ov-spin"></div><div class="ov-icon">🤖</div></div>
+   <p class="ov-msg" id="ovMsg">${OV_MSG[task][0]}</p>
+   <div class="ov-st">${[0,1,2].map(i=>`<div id="ovS${i}" class="st-wait"><b>MODEL ${i+1}</b> <span class="muted">${RACE.models[i]}</span><span class="st">${ST_TXT.wait}</span></div>`).join('')}</div>
+   <p class="ov-time" id="ovTime">0 सेकंद</p><button class="btn ov-cancel" id="ovCancel">✕ रद्द करा</button></div>`;
+  el.hidden=false;document.body.style.overflow='hidden';
+  const t0=Date.now();let k=0;
+  const iv=setInterval(()=>{const s=Math.floor((Date.now()-t0)/1000);const tm=document.getElementById('ovTime');if(tm)tm.textContent=s+' सेकंद';if(s%3===0&&s){k=(k+1)%4;const m=document.getElementById('ovMsg');if(m)m.textContent=OV_MSG[task][k]}},1000);
+  document.getElementById('ovCancel').onclick=onCancel;
+  return {status:(i,st)=>{const r=document.getElementById('ovS'+i);if(!r)return;r.className='st-'+st;r.querySelector('.st').textContent=ST_TXT[st]||st;
+      if(st==='win'){[0,1,2].forEach(j=>{if(j!==i){const o=document.getElementById('ovS'+j);if(o&&/st-(run|slow|wait)/.test(o.className)){o.className='st-stop';o.querySelector('.st').textContent=ST_TXT.stop}}});const m=document.getElementById('ovMsg');if(m)m.textContent='✓ ANALYSIS COMPLETE'}},
+    close:()=>{clearInterval(iv);el.hidden=true;el.innerHTML='';document.body.style.overflow=''}};
+}
+const RACE_ERR={quota:'आजचा मोफत AI वापर संपला (रोजची मर्यादा). उद्या सकाळी 5:30 नंतर पुन्हा प्रयत्न करा. पैसे कधीही कापले जात नाहीत.',rate:'खूप लवकर-लवकर स्कॅन केले. 1 मिनिट थांबून पुन्हा प्रयत्न करा.',offline:'इंटरनेट बंद आहे. इंटरनेट सुरू करून पुन्हा प्रयत्न करा.',all:'तिन्ही AI मॉडेल्सकडून योग्य उत्तर मिळाले नाही. फोटो जवळून, उजेडात काढून पुन्हा प्रयत्न करा.',cancel:'स्कॅन रद्द केले.'};
+// Ek scan: jaanch -> photo taiyar -> cache -> race -> result. outId me result/error, retry button ke saath.
+async function runScan({file,task,extra,outId,onResult,maxPx}){
+  const out=document.getElementById(outId);
+  if(SCAN_BUSY){return} // dobara dabaya: pehla scan chal raha hai
+  const bad=checkFile(file);if(bad){out.innerHTML=`<p class="note">⚠️ ${bad}</p>`;return}
+  if(navigator.onLine===false){out.innerHTML=`<p class="note">📵 ${RACE_ERR.offline}</p>`;return}
+  const ctrl=new AbortController();SCAN_BUSY=ctrl;let ov=null;
+  try{
+    let p;try{p=await prepImage(file,maxPx)}catch(e){out.innerHTML=`<p class="note">⚠️ ${esc(e.message&&e.message!=='bad'?e.message:'हा फोटो उघडता आला नाही. JPG, JPEG, PNG किंवा WEBP फोटो निवडा.')}</p>`;return}
+    ov=overlay(p.data,task,()=>ctrl.abort());
+    const key=await sha(task+'|'+JSON.stringify(extra||{})+'|'+p.data);
+    let res=key&&rcGet(key);
+    if(res){ov.status(0,'win');await new Promise(r=>setTimeout(r,400));res.cached=true}
+    else{res=await raceVision({task,...extra,image:p.data},{onStatus:ov.status,signal:ctrl.signal});if(key)rcPut(key,res)}
+    ov.close();ov=null;onResult(res,p);
+  }catch(e){
+    const m=e.message||'all';
+    out.innerHTML=`<div class="note">⚠️ ${esc(RACE_ERR[m]||RACE_ERR.all)}</div>${m!=='cancel'?`<button class="btn" id="${outId}Retry">🔄 पुन्हा प्रयत्न करा</button>`:''}`;
+    const rb=document.getElementById(outId+'Retry');if(rb)rb.onclick=()=>runScan({file,task,extra,outId,onResult,maxPx});
+  }finally{if(ov)ov.close();SCAN_BUSY=null}
+}
+// Worker ka saaf jawab -> purane card ke andar ke naam
+function toLab(d){return {is_product:d.is_product,product_name:d.product_name,brand:d.brand,company:d.company,category:d.category,active_ingredients:(d.active_ingredients||[]).map(a=>({name:a.name,concentration:a.concentration||(d.active_ingredients.length===1?d.concentration:'')})),formulation:d.formulation,crops_on_label:d.approved_crops,targets_on_label:d.target_pests,dose_on_label:d.dosage,phi_on_label:d.phi,cir_reg_no:d.cir_reg_no,batch_no:d.batch_no,mfg_date:d.mfg_date,expiry_date:d.expiry_date,warning_triangle_color:d.warning_triangle_color,npk:d.npk,uses:d.uses,application_method:d.application_method,safety_printed:d.safety_precautions,read_conf:d.confidence}}
+function toRes(d){let cs=(d.possible_causes||[]).slice();if(!cs.length&&d.detected_problem)cs=[{name_mr:d.detected_problem,name_en:d.problem_en||d.detected_problem,type:d.problem_type,confidence:d.confidence}];
+  return {image_ok:d.image_ok,crop_seen:d.crop_name,symptoms:d.visible_symptoms,causes:cs,severity_0_10:d.severity_0_10,need_more:d.additional_information_needed,cultural_steps_mr:[...(d.recommended_actions||[]),...(d.prevention||[])]}}
 
 /* ---------- PROFIT ---------- */
 $('#pGo').onclick=()=>{
