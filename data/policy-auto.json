@@ -1,6 +1,37 @@
 {
  "items": [
   {
+   "id": "a-935da4a30882",
+   "date": "2026-11-21",
+   "crops": [
+    "sugar"
+   ],
+   "type": "intl",
+   "dir": "pos",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "29.5 Million Tonnes",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNWmExQVgzYmI0b1M5bjdiZXFUUFVNS1owSVdzR09nWmFMX29vNHg0RUZ1dnBPeVg4YklDVTdVcGF0bC1zSUV6d1lzRWdnaFNjWlJUM184b2dvVVVHZS1wODRnZGRWeFpPWVRqZDFOT1VVN2RfU24wZUphNnZWNUtjS0hVQ2lhbVhULVNHbUdsLWxONm1zVE9xclQ4cElFa1h2aWlMY3lHRC11TlFjb1VVTVV0OTVYVWl5blRCOXdMbnkxeFJ0TWNuWXdKaVVzSHNXN3lVRzRGVDdoOW84Q093VTFDS1LSAeoBQVVfeXFMTUx3SGpIWEJISERZZUtOdWhLWW44alJqdlN3YndxQ3c2UElySEJvWXJpMVlVWktlYUs2OEQ1UFB4Z2hwcnRJRm5qUndpSVlJblBzVFhDeUJFWU5ubTlVeXY2RzN6V09BdWEzVnlXdGV1MldMT1U1OFhrQzBITWRqc1ZaRklqRFIwd19oVGtRZ1dielY4eUJaNVdERjRvUVl5amVBVVBCU3ZhTmZYcE9pYTg0cU90M2QtSWpjb2pBMXVXTGMxUDZ1bm5SMXFUdkY4cEEwMXBwNXFWMlFnV2pDUzVaM0RvXzh1bVlB?oc=5",
+   "source_name": "RuralVoice",
+   "headline": "Global Sugar Production to Decline 5% in 2026-27, India Output Seen Falling to 29.5 Million Tonnes: USDA - RuralVoice",
+   "hi": {
+    "title": "वैश्विक चीनी उत्पादन 2026-27 में 5% घटेगा, भारत का उत्पादन 29.5 मिलियन टन पर आ सकता है: यूएसडीए",
+    "what": "वैश्विक चीनी उत्पादन 2026-27 में 5% घटेगा। भारत का चीनी उत्पादन 29.5 मिलियन टन पर आ सकता है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "चीनी का उत्पादन कम होने से इसकी कीमतें बढ़ सकती हैं क्योंकि देश में चीनी की कमी होगी"
+   },
+   "mr": {
+    "title": "जगातील साखर उत्पादन 2026-27 मध्ये 5% घटेल, भारताचे उत्पादन 29.5 दशलक्ष टनवर येईल: यूएसडीए",
+    "what": "जगातील साखर उत्पादन 2026-27 मध्ये 5% घटेल. भारताचे साखर उत्पादन 29.5 दशलक्ष टनवर येईल.",
+    "why": "बातमीत कारण नाही",
+    "effect": "साखरेचे उत्पादन कमी होण्यामुळे त्याच्या किमती वाढू शकतात कारण देशात साखरेची कमी असेल"
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T10:28:33.713Z"
+  },
+  {
    "id": "a-c5bf50ea38f5",
    "date": "2026-11-21",
    "crops": [
@@ -92,6 +123,68 @@
    },
    "auto": true,
    "addedAt": "2026-11-21T08:50:22.686Z"
+  },
+  {
+   "id": "a-6a06037dae39",
+   "date": "2026-11-20",
+   "crops": [
+    "other"
+   ],
+   "type": "export",
+   "dir": "pos",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "high",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNS3JkODJudW1XNk5sTkJjZ2V3OWsyd3RTdHVzd3JMdWlsOUpxUHRyVl94Q0lKV1p1b0ZsY3IwUzd6TkhCRXJRZFNPblhXZTFGTXpZMElhVGJreDdyU2tNeWdqbTFNQWl0YVdIZzBuMFBpbUdCUER5YmZuVlVKbmNUUzRYeVg1M3Z5Q1pvSXhzMFVtbVFVVXZVX0oyYnEzMU5QUkdrRTZUZUtIODRnc1QxTVoxdFh0N0hkUmc1UnBGc9IBvwFBVV95cUxNS3JkODJudW1XNk5sTkJjZ2V3OWsyd3RTdHVzd3JMdWlsOUpxUHRyVl94Q0lKV1p1b0ZsY3IwUzd6TkhCRXJRZFNPblhXZTFGTXpZMElhVGJreDdyU2tNeWdqbTFNQWl0YVdIZzBuMFBpbUdCUER5YmZuVlVKbmNUUzRYeVg1M3Z5Q1pvSXhzMFVtbVFVVXZVX0oyYnEzMU5QUkdrRTZUZUtIODRnc1QxTVoxdFh0N0hkUmc1UnBGcw?oc=5",
+   "source_name": "Content Media Solution",
+   "headline": "India’s Agri-Exports Surge: Basmati Rice Up 25%, Frozen Potatoes 21 pc, Corn 1,156 pc - Content Media Solution",
+   "hi": {
+    "title": "भारत के कृषि निर्यात में वृद्धि: बासमती चावल 25% बढ़ा, जमे हुए आलू 21%, मक्का 1156%",
+    "what": "भारत के कृषि निर्यात में वृद्धि हुई है, जिसमें बासमती चावल 25%, जमे हुए आलू 21% और मक्का 1156% की वृद्धि हुई है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "किसानों को बासमती चावल, जमे हुए आलू और मक्का के दाम बढ़ने की संभावना है, क्योंकि निर्यात में वृद्धि से देश में इन फसलों की मांग बढ़ेगी।"
+   },
+   "mr": {
+    "title": "भारताच्या कृषी निर्यातात वाढ: बासमती तांदूळ २५% वाढले, जमलेले बटाटे २१%, मका ११५६%",
+    "what": "भारताच्या कृषी निर्यातात वाढ झाली आहे, ज्यामध्ये बासमती तांदूळ २५%, जमलेले बटाटे २१% आणि मका ११५६% वाढले आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "शेतकऱ्यांना बासमती तांदूळ, जमलेले बटाटे आणि मक्याच्या किमती वाढण्याची शक्यता आहे, कारण निर्यात वाढल्याने देशात या पिकांची मागणी वाढेल।"
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T10:29:13.428Z"
+  },
+  {
+   "id": "a-504fdeb7e19b",
+   "date": "2026-11-20",
+   "crops": [
+    "rice"
+   ],
+   "type": "export",
+   "dir": "pos",
+   "when": "short",
+   "conf": "medium",
+   "priority": "high",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxONmlPWGtMSk9JQXJSLWJvNzZxUlZ2VnM3TkYzRTY0OW94M0NXeUFxU3VRcFdkM1F3a1dxMDE1dXVXLURhMlZwc3M0MGxnbW9uNHJxaGVBRDE2Yk1sZ0FOMzFid1AxSHBKYllDSHRiMW5jVXZuQVo0aGxqVDV1c3pnNkhXTW5sWjQ0YlZnekJDTlN5QWNCOVZUQ1o1N0RwWldBVVdqUVE2WTAweHloQ0w3cGVsYlFKSlkwVFNxaDZ3cmg3MGNFWVpySTB0S0FORVJCWGJGMW55bURHN00?oc=5",
+   "source_name": "Siliconindia",
+   "headline": "Indian Rice Export Prices Hit 19-Month High on Stronger Rupee and African Demand - Siliconindia",
+   "hi": {
+    "title": "भारतीय चावल निर्यात मूल्य 19 महीने के उच्चतम स्तर पर पहुंचा",
+    "what": "भारतीय चावल निर्यात मूल्य 19 महीने के उच्चतम स्तर पर पहुंच गया है। इसका कारण मजबूत रुपया और अफ्रीकी मांग है।",
+    "why": "मजबूत रुपया और अफ्रीकी मांग के कारण",
+    "effect": "चावल किसानों को अच्छी कीमत मिलेगी क्योंकि निर्यात मूल्य बढ़ गया है"
+   },
+   "mr": {
+    "title": "भारतीय चावल निर्यात किंमत १९ महिन्यांच्या उच्चतम स्तरावर पोहोचला",
+    "what": "भारतीय चावल निर्यात किंमत १९ महिन्यांच्या उच्चतम स्तरावर पोहोचला आहे. याचे कारण मजबूत रुपया आणि आफ्रिकेतील मागणी आहे.",
+    "why": "मजबूत रुपया आणि आफ्रिकेतील मागणी मुळे",
+    "effect": "चावल शेतकऱ्यांना चांगली किंमत मिळेल कारण निर्यात किंमत वाढली आहे"
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T10:29:02.281Z"
   },
   {
    "id": "a-225d6ca58d4e",
@@ -435,6 +528,68 @@
    "addedAt": "2026-11-21T08:50:11.659Z"
   },
   {
+   "id": "a-64c4f2be84f6",
+   "date": "2026-11-19",
+   "crops": [
+    "maize"
+   ],
+   "type": "policy",
+   "dir": "pos",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "50%",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPc1hDTXpqVG1XQW1WVmZSSUxidUNwN3l4V3ZPV2pSVHQ0emhtVjlVNF9zbDVRY2I4ckhtS0hUQUdVcmhjdi1wekR5QllYM0tNd1lWVnZGTUxMQ3ZZQTdKNDk4RjRHcmcyVW5ZVXUxOHBBY29oaTJjQ3hIZkExRFBweXV0RHpCTVdycXRXNlFkd2RRN0g5RF9z?oc=5",
+   "source_name": "Sahi",
+   "headline": "Sukhjit Starch Seeks Duty Waivers as Maize Prices Increase Over 50% - Sahi",
+   "hi": {
+    "title": "सुखजीत स्टार्च ने मक्का की कीमतों में 50% से अधिक वृद्धि के बीच शुल्क छूट की मांग की",
+    "what": "सुखजीत स्टार्च ने मक्का की कीमतों में 50% से अधिक वृद्धि के बीच शुल्क छूट की मांग की है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "अगर शुल्क छूट मिल जाती है, तो मक्का की कीमतें गिर सकती हैं क्योंकि आयात सस्ता हो जाएगा।"
+   },
+   "mr": {
+    "title": "सुखजीत स्टार्चने मक्याच्या किमती 50% पेक्षा जास्त वाढल्यामुळे सूट मागितली",
+    "what": "सुखजीत स्टार्चने मक्याच्या किमती 50% पेक्षा जास्त वाढल्यामुळे सूट मागितली आहे.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "जर सूट मिळाली तर मक्याच्या किमती कमी होऊ शकतात कारण आयात स्वस्त होईल"
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T10:29:32.159Z"
+  },
+  {
+   "id": "a-1142bd935c24",
+   "date": "2026-11-19",
+   "crops": [
+    "rice"
+   ],
+   "type": "intl",
+   "dir": "neg",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPemlfNDRUSXBHN2FFekJWdjVXeVhhX0g3bmJwc2RWQm5paVMtbUpPckoxTlpFQUVsb2lRZjM1UFBuR0lOSVo2a0FPcjVaTTdWZmJobGtXcFBJaS05Q2FRcXNWZnZXQ1JBM0lqNTNpMnBlSENnNWtaMDh4REZBNjdzZkY0Z2VXZw?oc=5",
+   "source_name": "CMB News",
+   "headline": "India’s Rice Glut and Its Impact on Thai & Vietnamese Rice Exports — CMB News - CMB News",
+   "hi": {
+    "title": "भारत में चावल की अधिकता और इसका थाई और वियतनामी चावल निर्यात पर प्रभाव",
+    "what": "भारत में चावल की अधिकता होने से थाई और वियतनामी चावल निर्यात पर प्रभाव पड़ सकता है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "भारत में चावल की अधिकता से चावल का भाव गिर सकता है, क्योंकि देश में चावल की अधिकता होने से निर्यातक देशों को अपने चावल की कीमतें कम करनी पड़ सकती हैं।"
+   },
+   "mr": {
+    "title": "भारतातील तांदूळाची अधिकता आणि त्याचा थाई आणि व्हिएतनामी तांदूळ निर्यातवर परिणाम",
+    "what": "भारतातील तांदूळाची अधिकता थाई आणि व्हिएतनामी तांदूळ निर्यातवर परिणाम करू शकते.",
+    "why": "बातमीत कारण नाही",
+    "effect": "भारतातील तांदूळाची अधिकता तांदूळाच्या भावात घट होऊ शकते, कारण देशात तांदूळाची अधिकता असल्याने निर्यातदार देशांना त्यांच्या तांदूळाच्या किमती कमी कराव्या लागतील."
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T10:28:44.968Z"
+  },
+  {
    "id": "a-a720c7e5d78b",
    "date": "2026-11-19",
    "crops": [
@@ -620,6 +775,68 @@
    },
    "auto": true,
    "addedAt": "2026-11-21T08:47:39.301Z"
+  },
+  {
+   "id": "a-3a8b1f899cdb",
+   "date": "2026-11-18",
+   "crops": [
+    "rice"
+   ],
+   "type": "policy",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPQnh5YXlJRU1TWkZqMkZkajhYSV9DMDJTTjdtSlU2U1ZkQVNfb2t0V1FlT3gxekhMNDJpTmpxMmIxSlo3RGZBdHNTejdYWlBadWdBUDlpNno0NnFvWGZwVXUyZ1BWLU05bk9xd21tQW1OVVFUOGY3SVRqMlA3RVdaRHlJeHhWWWxaN3NSek1XdjR4MklueTdNdFV2XzAxTms?oc=5",
+   "source_name": "Urban Acres",
+   "headline": "India’s Rice Surplus Puts Storage Under Pressure - Urban Acres",
+   "hi": {
+    "title": "भारत के चावल के अधिशेष ने भंडारण पर दबाव डाला",
+    "what": "भारत में चावल का अधिशेष होने से भंडारण पर दबाव बढ़ गया है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "चावल की अधिकता के कारण इसकी कीमतें गिर सकती हैं क्योंकि देश में माल ज्यादा होने से इसकी कीमतों पर दबाव पड़ता है।"
+   },
+   "mr": {
+    "title": "भारताच्या तांदूळ अधिशेषामुळे साठवणीवर दबाव",
+    "what": "भारतात तांदूळ अधिशेषामुळे साठवणीवर दबाव वाढला आहे.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "तांदूळाच्या अधिकतेमुळे त्याच्या किमती कमी होऊ शकतात कारण देशात माल जास्त असल्याने त्याच्या किमतींवर दबाव येतो."
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T10:29:22.922Z"
+  },
+  {
+   "id": "a-bf784384a8d4",
+   "date": "2026-11-18",
+   "crops": [
+    "onion"
+   ],
+   "type": "policy",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQeFZBWXhqT0RkN1JhMzBXT19fdmlrTGNjUzRwY1RuNmJYUFlUT2RQTnk0V0xQLXZfQVhEeHRuOXhkMEtHRzEtRS0zNFBfeVo5THpJcndVX2ZEaU9yRXpkZ1NmNEQwVklaU0NZWUZuQ0xPVEg3SmdyWEtqdXowcm11cWJ5WmtacS1xMkxaWlBPOTZITlZWQkVVVmx5d1JJRkQtOFMwbTJDZFZXbk1lSkk4Q1NhOE9sNXB5dDFCVzBkM2FCQ2ZrTkx6eWgxWjJPdHgzcm1Z0gHYAUFVX3lxTFBDZHFURWRvV1VWdHZTajl4T3FvZHFqaDdhbFBnbjJJdHhLcHgwa0RiT2xTZ0ZJeGZXVFhSbDVzVnVOenI3U3hWZ3VkX1RZWFdjVWEzeURiV2ZsV1ZJVlZONkRGMFFfTE1odndBelNXX2tLZjNxR1lmdlo1WGt1U0J3NTI2cl9DekdtcGgtUy1kNHRvaVRqR1M4RFplU3VDZTI0eUltMnk4Qm5mXy1EUFVuSWViVUY2SU1FamRBanRQYUZ6U24zNWRBUzdwa2Z0S3RfUTJLVEwwOQ?oc=5",
+   "source_name": "Telegraph India",
+   "headline": "With onion output likely to outstrip demand, Maharashtra farmers seek Rs 3,000 per quintal - Telegraph India",
+   "hi": {
+    "title": "महाराष्ट्र के किसानों ने प्याज के लिए 3000 रुपये प्रति क्विंटल की मांग की",
+    "what": "महाराष्ट्र के किसान प्याज के लिए 3000 रुपये प्रति क्विंटल की मांग कर रहे हैं क्योंकि उत्पादन मांग से अधिक होने की संभावना है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "प्याज की कीमतें गिर सकती हैं क्योंकि उत्पादन मांग से अधिक होने से बाजार में प्याज की अधिकता होगी।"
+   },
+   "mr": {
+    "title": "महाराष्ट्रातील शेतकऱ्यांनी कांद्यासाठी ३००० रुपये प्रति क्विंटलची मागणी केली",
+    "what": "महाराष्ट्रातील शेतकऱ्यांनी कांद्यासाठी ३००० रुपये प्रति क्विंटलची मागणी केली आहे कारण उत्पादन मागणीपेक्षा जास्त होण्याची शक्यता आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "कांद्याच्या किमती कमी होऊ शकतात कारण उत्पादन मागणीपेक्षा जास्त असल्याने बाजारात कांद्याची अधिकता होईल।"
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T10:28:23.445Z"
   },
   {
    "id": "a-3a46c3a8cba9",
@@ -840,8 +1057,16 @@
   "a-331291f57929",
   "a-43ab9749d4f3",
   "a-225d6ca58d4e",
-  "a-a720c7e5d78b"
+  "a-a720c7e5d78b",
+  "a-bf784384a8d4",
+  "a-935da4a30882",
+  "a-1142bd935c24",
+  "a-e7fb52ffafcb",
+  "a-504fdeb7e19b",
+  "a-6a06037dae39",
+  "a-3a8b1f899cdb",
+  "a-64c4f2be84f6"
  ],
- "updated": "2026-11-21T09:02:30.492Z",
+ "updated": "2026-11-21T10:29:36.167Z",
  "_about": "AI se apne aap bani cards. official=true sirf sarkari website wali khabar. Baaki ki sarkari pushti baaki."
 }
