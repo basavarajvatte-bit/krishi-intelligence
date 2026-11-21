@@ -1,5 +1,5 @@
 {
- "_about": "Pyaz aur tamatar ke bade bhav-uchhaal (spike) aur girawat (crash), news aur sarkari press release se. Har entry ke saath source link hai. Ye rozana ka bhav nahi hai — sirf bade events hain.",
+ "_about": "Pyaz aur tamatar ke bade bhav-uchhaal (spike) aur girawat (crash), news aur sarkari press release se. Har entry ke saath source link hai. Ye rozana ka bhav nahi hai — sirf bade events hain. Mandi/thok/kisan bhav ₹ prati quintal me, dukaan (retail) bhav ₹ prati kg me.",
  "_lastVerified": "2026-11-21",
  "onion": [
   {
@@ -21,6 +21,15 @@
    "source": "https://www.thequint.com/news/india/history-shows-why-no-politician-wants-to-mess-with-the-onion"
   },
   {
+   "ym": "2015-08",
+   "type": "spike",
+   "value": 5700,
+   "basis": "wholesale",
+   "place": "Lasalgaon",
+   "note": "22 Aug 2015: ₹5,700/quintal — us samay ka sabse ooncha.",
+   "source": "https://www.deccanherald.com/national/onion-bringing-tears-this-time-for-a-longer-period-773885.html"
+  },
+  {
    "ym": "2015-09",
    "type": "spike",
    "value": 80,
@@ -30,9 +39,18 @@
    "source": "https://www.newsclick.in/node/22523"
   },
   {
+   "ym": "2016-08",
+   "type": "crash",
+   "value": 100,
+   "basis": "wholesale",
+   "place": "Lasalgaon",
+   "note": "Boli sirf ₹100–600/quintal (₹1–6/kg). Ek kisan ne 13 quintal pyaz phenk diya.",
+   "source": "https://scroll.in/article/816070/scroll_in"
+  },
+  {
    "ym": "2017-11",
    "type": "spike",
-   "value": 29.5,
+   "value": 2950,
    "basis": "wholesale",
    "place": "Lasalgaon",
    "note": "2 saal ka sabse uncha wholesale bhav; 2 mahine me lagbhag dugna.",
@@ -48,6 +66,15 @@
    "source": "https://www.newsclick.in/onion-prices-spiked-253-per-five-months"
   },
   {
+   "ym": "2019-12",
+   "type": "spike",
+   "value": 11100,
+   "basis": "wholesale",
+   "place": "Lasalgaon",
+   "note": "17 Dec 2019: ₹111/kg = ₹11,100/quintal — record. Kalwan me bhi ₹11,000.",
+   "source": "https://gulfnews.com/world/asia/india/india-the-great-onion-crisis-of-2019-may-be-coming-to-an-end-1.68597699"
+  },
+  {
    "ym": "2020-10",
    "type": "spike",
    "value": 100,
@@ -55,6 +82,15 @@
    "place": "Kuch shahar",
    "note": "Barish se kharif fasal kharab; 14 Sept 2020 ko export ban.",
    "source": "https://www.freepressjournal.in/india/fpj-explains-onion-prices-hit-rs-100-per-kg-heres-the-reason-behind-its-sharp-rise"
+  },
+  {
+   "ym": "2023-02",
+   "type": "crash",
+   "value": 550,
+   "basis": "wholesale",
+   "place": "Lasalgaon",
+   "note": "Feb 2023 ke aakhir me ₹550/quintal. Kisan ki lagat ₹1,100–1,200.",
+   "source": "https://theprint.in/agriculture/what-option-do-we-have-other-than-suicide-onion-farmers-in-maharashtra-cry-for-help-amid-crashing-prices/1425311"
   },
   {
    "ym": "2023-11",
@@ -77,7 +113,7 @@
   {
    "ym": "2025-11",
    "type": "crash",
-   "value": 11.5,
+   "value": 1150,
    "basis": "wholesale",
    "place": "Lasalgaon",
    "note": "Bhav gira: ₹1,150–1,350/quintal. Kisan ko lagat bhi nahi mili.",
@@ -86,7 +122,7 @@
   {
    "ym": "2026-09",
    "type": "rise",
-   "value": 42,
+   "value": 4200,
    "basis": "wholesale",
    "place": "Lasalgaon",
    "note": "Sept 2026: ₹36–48/kg wholesale.",
@@ -95,7 +131,7 @@
   {
    "ym": "2026-11",
    "type": "spike",
-   "value": 55,
+   "value": 5500,
    "basis": "wholesale",
    "place": "Lasalgaon",
    "note": "17 Nov 2026: laal pyaz max ₹5,500/quintal. Nayi lehar abhi chal rahi hai.",
@@ -106,7 +142,7 @@
   {
    "ym": "2017-01",
    "type": "crash",
-   "value": 5,
+   "value": 500,
    "basis": "farmgate",
    "place": "Karnataka",
    "note": "Pichhle 6–9 mahine kisan ko ₹5/kg se kam mila (news July 2017 me).",
@@ -122,6 +158,15 @@
    "source": "https://www.business-standard.com/article/pti-stories/tomato-prices-soar-to-rs-100-per-kg-in-delhi-ncr-on-low-supply-117072500502_1.html"
   },
   {
+   "ym": "2018-05",
+   "type": "crash",
+   "value": 100,
+   "basis": "wholesale",
+   "place": "Uttar Pradesh",
+   "note": "Bampar fasal: kuch mandiyon me ₹1/kg se bhi kam.",
+   "source": "https://www.pressreader.com/india/business-standard/20180506/281552291487482"
+  },
+  {
    "ym": "2023-08",
    "type": "spike",
    "value": 213,
@@ -129,6 +174,24 @@
    "place": "Delhi",
    "note": "3 Aug 2023: ₹213/kg — record. Jan 2023 me sirf ₹20 tha.",
    "source": "https://www.newslaundry.com/amp/story/2024%2F08%2F19%2Fwhy-your-groceries-cost-9-more-this-july"
+  },
+  {
+   "ym": "2023-08",
+   "type": "spike",
+   "value": 18000,
+   "basis": "wholesale",
+   "place": "Kolar APMC",
+   "note": "1 Aug 2023: 15 kg peti ₹2,700 = ₹18,000/quintal — record.",
+   "source": "https://thefederal.com/category/states/south/karnataka/tomato-prices-surge-in-karnatakas-kolar-market-echoing-2023-crisis-128719"
+  },
+  {
+   "ym": "2023-09",
+   "type": "crash",
+   "value": 300,
+   "basis": "wholesale",
+   "place": "Pyapili (Nandyal, AP)",
+   "note": "Ek mahine me ₹18,000 se ₹300/quintal. Kisanon ne tamatar sadak par phenke.",
+   "source": "https://telanganatoday.com/andhra-farmers-dump-tomatoes-in-open-as-price-crashes-to-rs-3-a-kg"
   },
   {
    "ym": "2024-07",
@@ -158,6 +221,15 @@
    "source": "https://www.newsonair.gov.in/tomato-price-surge-due-to-local-factors-not-supply-issue-govt"
   },
   {
+   "ym": "2025-10",
+   "type": "crash",
+   "value": 100,
+   "basis": "wholesale",
+   "place": "Kurnool (AP)",
+   "note": "₹1/kg tak gira; kisanon ne virodh me tamatar sadak par phenke.",
+   "source": "https://www.lokmattimes.com/national/andhra-farmers-throw-tomatoes-on-roads-as-prices-crash/amp/"
+  },
+  {
    "ym": "2026-06",
    "type": "rise",
    "value": 43.7,
@@ -168,11 +240,8 @@
   }
  ],
  "_units": {
-  "onion": "kg",
-  "tomato": "kg",
-  "soybean": "q",
-  "cotton": "q",
-  "tur": "q"
+  "mandi": "q",
+  "retail": "kg"
  },
  "soybean": [
   {
