@@ -125,6 +125,130 @@
    "addedAt": "2026-11-21T08:50:22.686Z"
   },
   {
+   "id": "a-79b3fa0510c9",
+   "date": "2026-11-20",
+   "crops": [
+    "soybean"
+   ],
+   "type": "intl",
+   "dir": "pos",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNQ0xWbEViWmdoTlJyYldGX1V3MnNBVVUxZUkwQ1VOYUcwX0NFcnFQMFhrTE9jMW5jdUZpV3RJN09NQXJzNllWQzdXY04tNktWeVNXaU80dzZwdkJKNHZIcVBMTGdCZElMcUVial94MGw3cEh5cTVwSjN1ZGY1ZXJTMjROUm1QVlF5cTNRbTJMUVRRNk5KRXNWZ0RpQ3R5aTd4aFlOYmgzQQ?oc=5",
+   "source_name": "Business Recorder",
+   "headline": "Indonesia planning tighter soybean import controls, minister says - Business Recorder",
+   "hi": {
+    "title": "इंडोनेशिया सोयाबीन आयात पर नियंत्रण बढ़ाने की योजना बना रहा है",
+    "what": "इंडोनेशिया के मंत्री ने कहा है कि वे सोयाबीन आयात पर नियंत्रण बढ़ाने की योजना बना रहे हैं।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "इंडोनेशिया में सोयाबीन आयात पर नियंत्रण बढ़ने से भारतीय सोयाबीन किसानों को फायदा हो सकता है, क्योंकि आयात पर नियंत्रण से सोयाबीन की कीमतें बढ़ सकती हैं।"
+   },
+   "mr": {
+    "title": "इंडोनेशिया सोयाबीन आयातावर नियंत्रण कठोर करण्याची योजना करत आहे",
+    "what": "इंडोनेशियाच्या मंत्र्यांनी सांगितले आहे की ते सोयाबीन आयातावर नियंत्रण कठोर करण्याची योजना करत आहेत.",
+    "why": "बातमीत कारण नाही",
+    "effect": "इंडोनेशियामध्ये सोयाबीन आयातावर नियंत्रण कठोर होण्याने भारतीय सोयाबीन शेतकऱ्यांना फायदा होऊ शकतो, कारण आयातावर नियंत्रणामुळे सोयाबीनच्या किमती वाढू शकतात."
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T11:21:04.521Z"
+  },
+  {
+   "id": "a-0be5f873e94c",
+   "date": "2026-11-20",
+   "crops": [
+    "soybean"
+   ],
+   "type": "intl",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOT0NOMVVyUHpPZzJSVC1OMEl2NFVJV3o4bjh0R2twWGF2N3ZDV1lmQjJCOTZCSDNmS2tfcTBmb0dsRUNXNVBsZkNzZElLMnlUVm1yNDJyb2w0UWhFUjhQZ3c5c01YWFFXZjlHVUJCRWxNLWdqLWtNa2dPLVQxUXZ3alNvd2UxMGJ4Mll1VW0yek1fTXRObTc5ZVlKRnFnTFdHZ1E?oc=5",
+   "source_name": "News Dakota",
+   "headline": "China Delays Soybean Imports as Domestic Inventories Increase - News Dakota",
+   "hi": {
+    "title": "चीन ने सोयाबीन आयात में देरी की",
+    "what": "चीन ने सोयाबीन आयात में देरी की है क्योंकि उनके घरेलू स्टॉक में वृद्धि हुई है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "इसका सोयाबीन के दाम पर नकारात्मक प्रभाव पड़ेगा क्योंकि आयात में कमी से वैश्विक बाजार में सोयाबीन की अधिक मात्रा उपलब्ध होगी।"
+   },
+   "mr": {
+    "title": "चीनने सोयाबीन आयात विलंबित केले",
+    "what": "चीनने सोयाबीन आयात विलंबित केले आहे कारण त्यांच्या देशांतर्गत साठ्यात वाढ झाली आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "याचा सोयाबीनच्या भावावर नकारात्मक परिणाम होईल कारण आयात कमी होण्याने जागतिक बाजारात सोयाबीनचे प्रमाण वाढेल."
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T11:20:47.641Z"
+  },
+  {
+   "id": "a-0bf5e5b87c0e",
+   "date": "2026-11-20",
+   "crops": [
+    "soybean"
+   ],
+   "type": "intl",
+   "dir": "neg",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQMk94bGFwZ0VBaHF3T1FCZUFOZ2hQMGtVRnpqWFRpTEZBVFI4VmdNbFZodkJWNkhodzVsUkpGNmU1Q0FJWHlDYzhLYThPT241MkpXNzV3LVlwdEhIOERMQ0ZHZkpIVkJfWW45dXNPYXdLQTNGaUtFTVJkSW5VSHg2Rm9jcHl5UEROM0hOZVJ4ZktjbjV0RmNZUEZUQ2wyOVEtVlhXRGpIYkYybk4ydUFN?oc=5",
+   "source_name": "Hoosier Ag Today",
+   "headline": "China's Soybean Buying Spree Hits a Roadblock as Massive Inventories and Weak Demand Threaten US Export Outlook - Hoosier Ag Today",
+   "hi": {
+    "title": "चीन की सोयाबीन खरीदारी में रुकावट",
+    "what": "चीन की सोयाबीन खरीदारी में रुकावट आ गई है क्योंकि बड़े स्टॉक और कमजोर मांग अमेरिकी निर्यात के दृष्टिकोण को खतरे में डाल रहे हैं।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "भारतीय सोयाबीन किसानों के लिए भाव गिरने का दबाव हो सकता है क्योंकि दुनिया में सोयाबीन की मांग कम हो रही है।"
+   },
+   "mr": {
+    "title": "चीनच्या सोयाबीन खरेदी वेगामध्ये अडथळा",
+    "what": "चीनच्या सोयाबीन खरेदी वेगामध्ये अडथळा आला आहे कारण मोठ्या प्रमाणात साठा आणि कमजोर मागणी अमेरिकन निर्यात दृष्टीकोनाला धोका निर्माण करत आहे.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "भारतीय सोयाबीन शेतकऱ्यांसाठी भाव कमी होण्याचा दबाव असू शकतो कारण जगभरात सोयाबीनची मागणी कमी होत आहे।"
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T11:20:37.502Z"
+  },
+  {
+   "id": "a-15b1577a3078",
+   "date": "2026-11-20",
+   "crops": [
+    "soybean"
+   ],
+   "type": "intl",
+   "dir": "neg",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQUXNxUEdkUEw1Zk9jUnYyV2Jad3Jjb25JZ2tOTVFxVG55VUFFRkNKNmZOYnNVVzNtSlF5UEtlR3A2NENDN2IwNnp5NzM3OUVia2drQTh2VWlSM1FZUHpDXzlUUnd4YWhhdmd3dGx5MU50czBtRHV5WF9qOFdZaGFzNXZPRk5WUUJDaW5WUGtsTjZ0TmxDbjNualJyZ1UxSkZQbldNNS1EeVllYzN1UXNfM2FFMXZfUQ?oc=5",
+   "source_name": "УкрАгроКонсалт",
+   "headline": "Vietnam expands Argentine soybean meal imports and Brazilian soybean processing - УкрАгроКонсалт",
+   "hi": {
+    "title": "वियतनाम अर्जेंटीना से सोयाबीन मील का आयात बढ़ाता है और ब्राजील से सोयाबीन प्रसंस्करण करता है",
+    "what": "वियतनाम ने अर्जेंटीना से सोयाबीन मील का आयात बढ़ाया है और ब्राजील से सोयाबीन प्रसंस्करण किया है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "इसका भारतीय सोयाबीन किसानों पर नकारात्मक प्रभाव पड़ सकता है क्योंकि दुनिया में सोयाबीन की आपूर्ति बढ़ रही है।"
+   },
+   "mr": {
+    "title": "व्हिएतनाम अर्जेंटिना पासून सोयाबीन मील आयात वाढवतो आणि ब्राझील पासून सोयाबीन प्रक्रिया करतो",
+    "what": "व्हिएतनामने अर्जेंटिना पासून सोयाबीन मील आयात वाढवला आहे आणि ब्राझील पासून सोयाबीन प्रक्रिया केली आहे.",
+    "why": "बातम्यात कारण नाही",
+    "effect": "याचा भारतीय सोयाबीन शेतकर्‍यांवर नकारात्मक परिणाम होऊ शकतो कारण जगात सोयाबीनचा पुरवठा वाढत आहे."
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T11:20:06.823Z"
+  },
+  {
    "id": "a-6a06037dae39",
    "date": "2026-11-20",
    "crops": [
@@ -528,6 +652,99 @@
    "addedAt": "2026-11-21T08:50:11.659Z"
   },
   {
+   "id": "a-d9f00ac61e5f",
+   "date": "2026-11-19",
+   "crops": [
+    "maize"
+   ],
+   "type": "intl",
+   "dir": "pos",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNaEwwSEc5cjBWNERjZldQaHNxZEJiTXFPbnhUbFpfdVdSVE9pU3BrUjN2NWtJeG5hMk1Ub1RRMXNJdXM4bmFScEFmMkYwUVl0THhwX0RMX3ZCd0FmY1dGd3pXbVpLa05oTm9wR0dzUWF4cUZHenYzRzlGY0pHZzFwaU1QWTAtM25hM1dNaG9fbVE2a2l0djJVdE94RFRySGswU0FJ?oc=5",
+   "source_name": "AgUpdate",
+   "headline": "November WASDE report friendly to corn - AgUpdate",
+   "hi": {
+    "title": "नवंबर WASDE रिपोर्ट मक्का के लिए अनुकूल",
+    "what": "नवंबर WASDE रिपोर्ट मक्का के लिए अनुकूल है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "दुनिया में मक्का का उत्पादन बढ़ने से भारतीय किसानों को मक्का का भाव कम मिल सकता है क्योंकि दुनिया का भाव नीचे आ जाएगा।"
+   },
+   "mr": {
+    "title": "नोव्हेंबर WASDE अहवाल मक्याच्या पूरक",
+    "what": "नोव्हेंबर WASDE अहवाल मक्याच्या पूरक आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "जगातील मक्याच्या उत्पादनात वाढीमुळे भारतीय शेतकऱ्यांना मक्याच्या किमती कमी मिळू शकतात कारण जगाच्या किमती खाली येतील।"
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T11:21:22.023Z"
+  },
+  {
+   "id": "a-016fe4fbee03",
+   "date": "2026-11-19",
+   "crops": [
+    "soybean"
+   ],
+   "type": "intl",
+   "dir": "pos",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPdlJOQXdBckxoYWhXQ2loZXI0T0ZWREdvV2hzR29nRDA5RjdzMkVBSTlFN3JEbzIwLVBueHhuSzlVRHVocVExNm8zc3phd05UZHE1Ymlyb0Z4T3h6a2ozdTlFUHhfWC15cmhqLWd2d2dNNkZyTHlLVDAzdmhING9hSEdSVUNVMkZON21nMEZaYjViRFBJWTFiLUhVbXJwYTlENDkxYUVTUk9GNlo4?oc=5",
+   "source_name": "УкрАгроКонсалт",
+   "headline": "China delays soybean imports at ports amid excess stocks and weak demand - УкрАгроКонсалт",
+   "hi": {
+    "title": "चीन ने बंदरगाहों पर सोयाबीन आयात में देरी की",
+    "what": "चीन ने बंदरगाहों पर सोयाबीन आयात में देरी की है। इसका कारण अतिरिक्त स्टॉक और कमजोर मांग है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "भारतीय सोयाबीन किसानों के लिए इसका सकारात्मक प्रभाव हो सकता है, क्योंकि दुनिया में सोयाबीन की कमी होने से भाव बढ़ सकता है।"
+   },
+   "mr": {
+    "title": "चीनने बंदरगाहांवर सोयाबीन आयात विलंबित केले",
+    "what": "चीनने बंदरगाहांवर सोयाबीन आयात विलंबित केले आहे. याचे कारण अतिरिक्त स्टॉक आणि कमजोर मागणी आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "भारतीय सोयाबीन शेतकऱ्यांसाठी ह्याचा सकारात्मक परिणाम होऊ शकतो, कारण जगात सोयाबीनची कमी होण्याने भाव वाढू शकतो."
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T11:20:27.543Z"
+  },
+  {
+   "id": "a-926626e36dda",
+   "date": "2026-11-19",
+   "crops": [
+    "soybean"
+   ],
+   "type": "intl",
+   "dir": "neg",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNZmxtQmRERFV1anM5bEVqaEFONmt6anBxWTR5VEkyVTRtZk40dnhlMW5La21jNjhqVU1pVDlWclhoR3RLMEVmR1BPelZES0NEWm5WVW9rN1licm1DaVE2cExxVjNiNzduWVhqRkp3QXhRcldUZHMwYWNOdHJBLUhJRTA4UVUxYW44N0FQM0Z3VWdaSG5oMnhRNzlfSENITzA?oc=5",
+   "source_name": "Oklahoma Farm Report",
+   "headline": "Bigger Crop, Thinner Wallets: Brazil’s Soybean Paradox - Oklahoma Farm Report",
+   "hi": {
+    "title": "ब्राज़ील में बड़ी फसल, पतली जेबें: सोयाबीन का विरोधाभास",
+    "what": "ब्राज़ील में सोयाबीन की फसल बड़ी हो रही है, लेकिन किसानों की जेबें पतली हो रही हैं।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "ब्राज़ील में सोयाबीन की बड़ी फसल के कारण दुनिया में सोयाबीन की कीमतें कम हो सकती हैं, जिससे भारतीय किसानों को नुकसान हो सकता है।"
+   },
+   "mr": {
+    "title": "ब्राझिलमध्ये मोठी पीक, पातळ बटुए: सोयाबीनची विरोधाभास",
+    "what": "ब्राझिलमध्ये सोयाबीनची पीक मोठी होत आहे, पण शेतकऱ्यांचे बटुए पातळ होत आहेत.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "ब्राझिलमध्ये सोयाबीनच्या मोठ्या पिकामुळे जगभरात सोयाबीनच्या किमती कमी होऊ शकतात, ज्यामुळे भारतीय शेतकऱ्यांना नुकसान होऊ शकते."
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T11:19:54.630Z"
+  },
+  {
    "id": "a-64c4f2be84f6",
    "date": "2026-11-19",
    "crops": [
@@ -775,6 +992,37 @@
    },
    "auto": true,
    "addedAt": "2026-11-21T08:47:39.301Z"
+  },
+  {
+   "id": "a-7f610566d948",
+   "date": "2026-11-18",
+   "crops": [
+    "maize"
+   ],
+   "type": "intl",
+   "dir": "neg",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQU2pxUk9RTzNScUhoWXlNd2U5bm13VTctSmlaWjFVOVluVWlfUTVvOGJseG9ORkhmR3dGVjk3czQtUWRaeVU2bXhPa1J5N2xxSGMxYl9ZOHNCazJoekdqbUNaRmlIMDA4TEZIQjRQVUhmRnVsZHlmN0VTMEhaLWNpZEVHZ0c2UzVycjJaV0VWM2Q4c3NHcmVNYUNIS1V0Rk9BWnhJc1NIbVRWVElPejFTZk13d296Zw?oc=5",
+   "source_name": "AgroLatam",
+   "headline": "Brazil's Corn Boom Faces a New Challenge, Opening Opportunities for U.S. Exporters - AgroLatam",
+   "hi": {
+    "title": "ब्राजील के मक्का उत्पादन में नई चुनौती",
+    "what": "ब्राजील में मक्का उत्पादन में नई चुनौती आई है, जिससे अमेरिकी निर्यातकों के लिए अवसर खुल गए हैं।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "भारतीय किसानों के लिए मक्का का भाव गिर सकता है, क्योंकि दुनिया में मक्का की अधिक आपूर्ति होगी"
+   },
+   "mr": {
+    "title": "ब्राझीलच्या मक्याच्या उत्पादनाला नवीन आव्हान",
+    "what": "ब्राझीलमध्ये मक्याच्या उत्पादनाला नवीन आव्हान आले आहे, ज्यामुळे अमेरिकन निर्यातदारांसाठी अवसर निर्माण झाले आहेत.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "भारतीय शेतकऱ्यांसाठी मक्याची किंमत कमी होऊ शकते, कारण जगात मक्याची अधिक पुरवठा होईल"
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T11:20:16.457Z"
   },
   {
    "id": "a-3a8b1f899cdb",
@@ -1065,8 +1313,16 @@
   "a-504fdeb7e19b",
   "a-6a06037dae39",
   "a-3a8b1f899cdb",
-  "a-64c4f2be84f6"
+  "a-64c4f2be84f6",
+  "a-926626e36dda",
+  "a-15b1577a3078",
+  "a-7f610566d948",
+  "a-016fe4fbee03",
+  "a-0bf5e5b87c0e",
+  "a-0be5f873e94c",
+  "a-79b3fa0510c9",
+  "a-d9f00ac61e5f"
  ],
- "updated": "2026-11-21T10:29:36.167Z",
+ "updated": "2026-11-21T11:21:26.034Z",
  "_about": "AI se apne aap bani cards. official=true sirf sarkari website wali khabar. Baaki ki sarkari pushti baaki."
 }
