@@ -5,13 +5,12 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { execFileSync } from 'node:child_process';
 
-const KEY = process.env.DATA_GOV_KEY;
+const WORKER = process.env.WORKER_URL || 'https://krishi-mandi.basavarajvatte.workers.dev';
 const RESOURCE = '9ef84268-d588-465a-a308-a864a43d0070';
 const DATA = path.resolve('data');
 const DAILY = path.join(DATA, 'daily');
 const LIMIT = 1000, MAX = 30000;
 
-if (!KEY) { console.error('DATA_GOV_KEY secret nahi mila'); process.exit(1); }
 
 const num = v => { const n = Number(v); return Number.isFinite(n) ? n : null; };
 const toISO = d => { const m = /^(\d{2})\/(\d{2})\/(\d{4})$/.exec(d || ''); return m ? `${m[3]}-${m[2]}-${m[1]}` : null; };
@@ -30,7 +29,7 @@ async function page(offset) {
       if (r.ok) return await r.json();
       console.error('HTTP', r.status);
     } catch (e) { console.error('fetch error', e.message, e.cause?.code || '', e.cause?.message || ''); }
-    try { return viaCurl(url); } catch (e) { console.error('curl error', String(e.stderr || e.message).replace(KEY, '***')); }
+    try { return viaCurl(url); } catch (e) { console.error('curl error', String(e.stderr || e.message)); }
     await new Promise(s => setTimeout(s, 3000 * (i + 1)));
   }
   throw new Error('API se data nahi mila');
@@ -79,3 +78,20 @@ fs.writeFileSync(path.join(DATA, 'latest.json'), JSON.stringify({
 }));
 fs.writeFileSync(path.join(DATA, 'days.json'), JSON.stringify(fs.readdirSync(DAILY).filter(f => f.endsWith('.json')).map(f => f.replace('.json', '')).sort()));
 console.log('latest.json ready');
+
+// Fasal-wise itihaas: har mandi ka roz ka aam bhav (purani tareekh kabhi nahi badalti)
+const HIST = path.join(DATA, 'hist');
+fs.mkdirSync(HIST, { recursive: true });
+const slug = c => String(c).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+const byCrop = {};
+rows.forEach(r => { (byCrop[r[3]] ||= []).push(r); });
+for (const [crop, rs] of Object.entries(byCrop)) {
+  const f = path.join(HIST, slug(crop) + '.json');
+  const h = fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8')) : { commodity: crop, source: 'data.gov.in / Agmarknet', days: {} };
+  if (h.days[date]) continue;
+  const day = {};
+  rs.forEach(r => { day[[r[0], r[1], r[2], r[4]].join('|')] = r[7]; });
+  h.days[date] = day;
+  fs.writeFileSync(f, JSON.stringify(h));
+}
+console.log('Itihaas update:', Object.keys(byCrop).length, 'fasalein');

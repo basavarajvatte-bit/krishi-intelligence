@@ -10,6 +10,18 @@ export default {
     const info = { colo: req.cf && req.cf.colo, country: req.cf && req.cf.country };
     if (!env.DATA_GOV_KEY) return send({ ok: false, msg: 'DATA_GOV_KEY secret nahi mila', info });
 
+    // GitHub robot ke liye: poora data page-by-page
+    if (u.pathname === '/raw') {
+      const off = Math.max(0, parseInt(u.searchParams.get('offset') || '0', 10) || 0);
+      const lim = Math.min(1000, Math.max(1, parseInt(u.searchParams.get('limit') || '1000', 10) || 1000));
+      const api = `https://api.data.gov.in/resource/${RES}?api-key=${encodeURIComponent(env.DATA_GOV_KEY)}&format=json&limit=${lim}&offset=${off}`;
+      try {
+        const r = await fetch(api, { headers: { 'User-Agent': 'Mozilla/5.0 krishi-intelligence' } });
+        const j = await r.json();
+        return send({ ok: true, total: j.total, records: j.records || [] });
+      } catch (e) { return send({ ok: false, msg: String(e) }); }
+    }
+
     const crop = u.searchParams.get('crop') || 'Onion';
     // 30 minute cache: sab farmers ke liye ek hi baar sarkari site se puchho
     const cache = caches.default;

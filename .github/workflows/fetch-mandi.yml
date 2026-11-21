@@ -1,8 +1,13 @@
 name: Rozana mandi bhav
 
 on:
-  # data.gov.in GitHub (America) ke computers ko rokta hai, isliye abhi sirf haath se chalega.
+  schedule:
+    - cron: '17 9 * * *'    # 2:47 PM IST
+    - cron: '17 14 * * *'   # 7:47 PM IST
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['scripts/**']
 
 permissions:
   contents: write
@@ -16,8 +21,6 @@ jobs:
         with:
           node-version: 20
       - name: Bhav laao
-        env:
-          DATA_GOV_KEY: ${{ secrets.DATA_GOV_KEY }}
         run: node scripts/fetch-mandi.mjs
       - name: Save karo
         run: |
@@ -25,4 +28,5 @@ jobs:
           git config user.email "krishi-bot@users.noreply.github.com"
           git add data
           git diff --cached --quiet || git commit -m "Mandi bhav update $(date -u +%F)"
+          git pull --rebase -q origin main || true
           git push

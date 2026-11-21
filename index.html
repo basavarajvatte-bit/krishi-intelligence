@@ -167,7 +167,7 @@ function show(s){$$('section').forEach(x=>x.classList.toggle('on',x.id===s));$$(
 $$('nav button').forEach(b=>b.onclick=()=>show(b.dataset.s));
 
 /* ---------- LIVE ---------- */
-const CFG=window.KRISHI_CONFIG||{},KEY=String(CFG.DATA_GOV_KEY||'').trim(),HASKEY=KEY.length>20&&!/PASTE/i.test(KEY);
+const CFG=window.KRISHI_CONFIG||{},WORKER=String(CFG.WORKER_URL||'').replace(/\/$/,''),HASKEY=!!WORKER;
 const RES='9ef84268-d588-465a-a308-a864a43d0070',SRC_URL='https://www.data.gov.in/resource/current-daily-price-various-commodities-various-markets-mandi';
 // [Agmarknet naam, हिंदी, मराठी]
 const CROPS=[["Onion","प्याज़","कांदा"],["Tomato","टमाटर","टोमॅटो"],["Potato","आलू","बटाटा"],["Soyabean","सोयाबीन","सोयाबीन"],["Cotton","कपास","कापूस"],["Wheat","गेहूँ","गहू"],["Paddy(Dhan)(Common)","धान","भात"],["Rice","चावल","तांदूळ"],["Maize","मक्का","मका"],["Jowar(Sorghum)","ज्वार","ज्वारी"],["Bajra(Pearl Millet/Cumbu)","बाजरा","बाजरी"],["Ragi (Finger Millet)","रागी","नाचणी"],["Barley (Jau)","जौ","जव"],["Arhar (Tur/Red Gram)(Whole)","तूर/अरहर","तूर"],["Bengal Gram(Gram)(Whole)","चना","हरभरा"],["Green Gram (Moong)(Whole)","मूंग","मूग"],["Black Gram (Urd Beans)(Whole)","उड़द","उडीद"],["Lentil (Masur)(Whole)","मसूर","मसूर"],["Groundnut","मूंगफली","भुईमूग"],["Mustard","सरसों","मोहरी"],["Sunflower","सूरजमुखी","सूर्यफूल"],["Sesamum(Sesame,Gingelly,Til)","तिल","तीळ"],["Jute","जूट","ताग"],["Cauliflower","फूलगोभी","फ्लॉवर"],["Cabbage","पत्तागोभी","कोबी"],["Brinjal","बैंगन","वांगी"],["Bhindi(Ladies Finger)","भिंडी","भेंडी"],["Green Chilli","हरी मिर्च","हिरवी मिरची"],["Garlic","लहसुन","लसूण"],["Ginger(Green)","अदरक","आले"],["Peas Wet","हरी मटर","हिरवा वाटाणा"],["Mango","आम","आंबा"],["Banana","केला","केळी"],["Grapes","अंगूर","द्राक्षे"],["Pomegranate","अनार","डाळिंब"],["Orange","संतरा","संत्री"],["Apple","सेब","सफरचंद"],["Water Melon","तरबूज","कलिंगड"],["Papaya","पपीता","पपई"],["Guava","अमरूद","पेरू"]];
@@ -178,13 +178,15 @@ function opts(sel,list,keepAll,cur,label){sel.innerHTML=(keepAll?`<option value=
 const uniq=a=>[...new Set(a)].filter(Boolean).sort();
 const toISO=d=>{const m=/^(\d{2})\/(\d{2})\/(\d{4})$/.exec(d||'');return m?`${m[3]}-${m[2]}-${m[1]}`:(d||null)};
 const g=(r,k)=>r[k]??r[k[0].toUpperCase()+k.slice(1)]??r[k.replace(/(^|_)(\w)/g,(a,b,c)=>b+c.toUpperCase())];
+const slug=c=>String(c).toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
 async function apiFetch(crop){
-  for(const f of ['commodity','commodity.keyword']){
-    const u=`https://api.data.gov.in/resource/${RES}?api-key=${encodeURIComponent(KEY)}&format=json&limit=2000&filters[${f}]=${encodeURIComponent(crop)}`;
-    const j=await (await fetch(u)).json();const rec=j.records||[];
-    if(rec.length)return rec.map(r=>[g(r,'state'),g(r,'district'),g(r,'market'),g(r,'commodity'),g(r,'variety'),+g(r,'min_price')||null,+g(r,'max_price')||null,+g(r,'modal_price')||null,toISO(g(r,'arrival_date')),null]).filter(r=>r[7]);
-  }
-  return [];
+  const j=await (await fetch(`${WORKER}/?crop=${encodeURIComponent(crop)}`)).json();
+  if(!j.ok)throw new Error(j.msg||'worker');
+  const rows=(j.records||[]).map(r=>[g(r,'state'),g(r,'district'),g(r,'market'),g(r,'commodity'),g(r,'variety'),+g(r,'min_price')||null,+g(r,'max_price')||null,+g(r,'modal_price')||null,toISO(g(r,'arrival_date')),null]).filter(r=>r[7]);
+  // kal se farak: GitHub par jama itihaas se
+  try{const h=await (await fetch('data/hist/'+slug(crop)+'.json?'+Date.now())).json();const ds=Object.keys(h.days).sort();
+    rows.forEach(r=>{const prev=ds.filter(d=>d<r[8]).at(-1);if(prev){const v=h.days[prev][[r[0],r[1],r[2],r[4]].join('|')];if(v)r[9]=v}})}catch(e){}
+  return rows;
 }
 async function getRows(crop){
   if(MODE==='file')return LIVE.rows.filter(r=>r[C.commodity]===crop);
@@ -193,8 +195,8 @@ async function getRows(crop){
   return CACHE[crop];
 }
 async function loadLive(){
-  try{LIVE=await (await fetch('data/latest.json?'+Date.now())).json()}catch(e){LIVE={}}
-  MODE=LIVE.status==='ok'&&LIVE.rows?.length?'file':(HASKEY?'api':'none');
+  if(!HASKEY){try{LIVE=await (await fetch('data/latest.json?'+Date.now())).json()}catch(e){LIVE={}}}else LIVE={};
+  MODE=HASKEY?'api':(LIVE.status==='ok'&&LIVE.rows?.length?'file':'none');
   const crops=MODE==='file'?uniq(LIVE.rows.map(r=>r[C.commodity])):CROPS.map(c=>c[0]);
   const def=crops.includes('Onion')?'Onion':crops[0];
   opts($('#fCrop'),crops,false,def,cropName);opts($('#cCrop'),crops,false,def,cropName);

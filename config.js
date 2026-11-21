@@ -1,5 +1,4 @@
-// Yahan data.gov.in ki chaabi (API key) hai.
-// Badalni ho to sirf neeche quotes (" ") ke andar wali chaabi badlein.
+// Website mandi bhav is Worker se laati hai. Chaabi yahan nahi, Cloudflare ke andar chhupi hai.
 window.KRISHI_CONFIG = {
-  DATA_GOV_KEY: "579b464db66ec23bdd00000146678d0fab4b44c17032bfce6f671ccb"
+  WORKER_URL: "https://krishi-mandi.basavarajvatte.workers.dev"
 };
