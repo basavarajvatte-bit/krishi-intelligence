@@ -53,7 +53,7 @@ export default {
       let r;
       try { r = await run(); }
       catch (e) {
-        if (/agree/i.test(String(e))) { try { await env.AI.run(MODEL, { prompt: 'agree' }); r = await run(); } catch (e2) { return out({ ok: false, msg: String(e2).slice(0, 200) }); } }
+        if (/agree/i.test(String(e))) { try { await env.AI.run(MODEL, { prompt: 'agree' }); } catch (e1) { /* 5016 = sahmati ho gayi */ } try { r = await run(); } catch (e2) { return out({ ok: false, msg: String(e2).slice(0, 200) }); } }
         else return out({ ok: false, msg: String(e).slice(0, 200) });
       }
       ctx.waitUntil(Promise.all([put('ip:' + ip + day, ni + 1), put('all:' + day, ng + 1)]));
