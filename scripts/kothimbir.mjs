@@ -41,27 +41,29 @@ function toRow(r) {
   if (String(r.Commodity) !== NAME || String(r.Commodity_Code) !== CODE) return null;   // dhaniya beej yahan kabhi nahi
   const date = iso(r.Arrival_Date), modal = num(r.Modal_Price);
   if (!date || !modal) return null;
-  return [date, r.State, r.District, r.Market, r.Variety, r.Grade, num(r.Min_Price), num(r.Max_Price), modal];
+  const tr = v => String(v ?? '').trim();
+  return [date, tr(r.State), tr(r.District), tr(r.Market), tr(r.Variety), tr(r.Grade), num(r.Min_Price), num(r.Max_Price), modal];
 }
 const key = r => [r[0], r[3], r[4], r[5]].join('|');
 const load = (f, def) => fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8')) : def;
 const COLS = ['date', 'state', 'district', 'market', 'variety', 'grade', 'min', 'max', 'modal'];
 
-// Unit pehchaan: Agmarknet me sab "₹/क्विंटल" likha hota hai, par kuch mandi (jaise Pune) asal me ek jodi ka bhav bharti hain.
-// Mandi ka beech wala (median) aam bhav ₹100 se kam ho to us mandi ko "जुडी (gaddi)" maana jaata hai. Ye andaza hai, isliye website par bataya jaata hai.
-function units(rows) {
-  const by = {}; rows.forEach(r => (by[r[3]] ||= []).push(r[8]));
-  const u = {}; for (const [m, v] of Object.entries(by)) u[m] = median(v) < 100 ? 'b' : 'q'; return u;
+// Unit pehchaan: Agmarknet me sab "₹/क्विंटल" likha hota hai, par kuch mandi (jaise Pune) asal me ek jodi (gaddi) ka bhav bharti hain.
+// Har record alag dekha jaata hai: aam bhav ₹100 se kam = "जुडी", warna "क्विंटल". (Kothimbir ₹1/kg se neeche lagbhag kabhi nahi bikti.)
+// Ye andaza hai, isliye website par bataya jaata hai. Asli number kabhi badla nahi jaata.
+const unitOfRow = r => r[8] < 100 ? 'b' : 'q';
+function units(rows) {  // mandi ki sabse nayi unit (dropdown ke liye)
+  const u = {}; [...rows].sort((a, b) => a[0].localeCompare(b[0])).forEach(r => { u[r[3]] = unitOfRow(r); }); return u;
 }
 function monthly(rows, unitMap) {
   const g = {};
   for (const r of rows) {
-    const k = r[3] + '|' + r[0].slice(0, 7);
-    const o = g[k] ||= { m: r[3], d: r[2], ym: r[0].slice(0, 7), days: new Set(), mod: [], lo: Infinity, hi: 0 };
+    const u = unitOfRow(r), k = r[3] + '|' + r[0].slice(0, 7) + '|' + u;
+    const o = g[k] ||= { m: r[3], d: r[2], ym: r[0].slice(0, 7), u, days: new Set(), mod: [], lo: Infinity, hi: 0 };
     o.days.add(r[0]); o.mod.push(r[8]); o.lo = Math.min(o.lo, r[6] ?? r[8]); o.hi = Math.max(o.hi, r[7] ?? r[8]);
   }
   return Object.values(g).map(o => ({ m: o.m, d: o.d, ym: o.ym, n: o.days.size, avg: Math.round(o.mod.reduce((a, b) => a + b, 0) / o.mod.length),
-    med: Math.round(median(o.mod)), lo: o.lo === Infinity ? null : o.lo, hi: o.hi || null, u: unitMap[o.m] || 'q' }))
+    med: Math.round(median(o.mod) * 10) / 10, lo: o.lo === Infinity ? null : o.lo, hi: o.hi || null, u: o.u }))
     .sort((a, b) => a.ym.localeCompare(b.ym) || a.m.localeCompare(b.m));
 }
 
