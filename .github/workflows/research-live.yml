@@ -19,6 +19,14 @@ jobs:
                   for l in d['best']: print('BEST', l['website'], l['price'], l['mrp'], (l['pack'] or {}).get('text'), l['delivery'], l['per_unit'], l['available'], l['price_source'], l['url'][:100], '|', l['title'][:70])
                   for l in d['listings']: print('ALL', l['match'], l['website'][:20], l['price'], (l['pack'] or {}).get('text'), l['per_unit'], l['price_source'], l['url'][:90], '|', l['title'][:60])
                   print('TAGS', d['tags'], d['saving'])
+                  import urllib.request
+                  for l in d['best']:
+                      try:
+                          rq = urllib.request.Request(l['url'], headers={'User-Agent': 'Mozilla/5.0 (Linux; Android 12) Chrome/120 Mobile'})
+                          with urllib.request.urlopen(rq, timeout=20) as resp:
+                              body = resp.read(300000).decode('utf8', 'ignore').lower()
+                              print('LINK', resp.status, resp.geturl()[:90], 'naam-page-par:', 'actara' in body)
+                      except Exception as e: print('LINK ERR', l['url'][:90], str(e)[:80])
           PY
           true; grep -o '"searched_sites":[0-9]*,"extra_discovered":[0-9]*,"responded_sites":[0-9]*,"valid_sites":[0-9]*' p.txt || true
       - name: Disease research (purple blotch onion)
