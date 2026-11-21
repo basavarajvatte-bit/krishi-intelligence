@@ -1,0 +1,40 @@
+name: Kothimbir bhav
+
+on:
+  schedule:
+    - cron: '41 4 * * *'    # 10:11 AM IST
+    - cron: '41 13 * * *'   # 7:11 PM IST
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['scripts/kothimbir.mjs', '.github/workflows/kothimbir.yml']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: kothimbir
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Bhav laao (pehli baar 10 saal ka itihaas bhi)
+        env:
+          DATA_GOV_KEY: ${{ secrets.DATA_GOV_KEY }}
+        run: |
+          if [ ! -f data/kothimbir/monthly.json ]; then node scripts/kothimbir.mjs --backfill; else node scripts/kothimbir.mjs; fi
+      - name: Save karo
+        run: |
+          git config user.name "krishi-bot"
+          git config user.email "krishi-bot@users.noreply.github.com"
+          git add data/kothimbir
+          git diff --cached --quiet || git commit -m "Kothimbir bhav update $(date -u +%F)"
+          git pull --rebase -q origin main || true
+          git push
