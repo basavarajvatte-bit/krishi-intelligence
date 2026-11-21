@@ -69,6 +69,41 @@ function monthly(rows, unitMap) {
     .sort((a, b) => a.ym.localeCompare(b.ym) || a.m.localeCompare(b.m));
 }
 
+// ---- Roz ki series (chart ke liye): har mandi ki alag file + "sabhi mandiyon ka beech wala bhav" ----
+// Mandi-din: kai variety ho to modal = beech wala, min = sabse kam, max = sabse zyada. Unit har din alag (q/b).
+// File row: [date, min, max, modal, unit, varieties]. Koi din chhoota ho to khaali hi rehta hai (bharte nahi).
+const S_DIR = path.join(DIR, 'series');
+const slugM = m => m.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+function mandiDays(rows) {
+  const g = {};
+  for (const r of rows) { const u = unitOfRow(r), k = r[0] + '|' + u; const o = g[k] ||= { d: r[0], u, mod: [], lo: [], hi: [] }; o.mod.push(r[8]); o.lo.push(r[6] ?? r[8]); o.hi.push(r[7] ?? r[8]); }
+  return Object.values(g).map(o => [o.d, Math.min(...o.lo), Math.max(...o.hi), Math.round(median(o.mod) * 10) / 10, o.u, o.mod.length]).sort((a, b) => a[0].localeCompare(b[0]));
+}
+function allDays(rows) {   // sirf quintal wali mandi; har din: mandiyon ke modal ka beech wala, min/max ka beech wala, kitni mandi
+  const md = {}; for (const r of rows) { if (unitOfRow(r) !== 'q') continue; ((md[r[0]] ||= {})[r[3]] ||= []).push(r); }
+  return Object.entries(md).map(([d, ms]) => { const per = Object.values(ms).map(rs => [Math.min(...rs.map(r => r[6] ?? r[8])), Math.max(...rs.map(r => r[7] ?? r[8])), median(rs.map(r => r[8]))]);
+    return [d, Math.round(median(per.map(p => p[0]))), Math.round(median(per.map(p => p[1]))), Math.round(median(per.map(p => p[2]))), 'q', per.length]; }).sort((a, b) => a[0].localeCompare(b[0]));
+}
+function writeSeries(rows, replaceAll) {
+  fs.mkdirSync(S_DIR, { recursive: true });
+  const idxF = path.join(S_DIR, 'index.json'), idx = replaceAll ? {} : load(idxF, {});
+  const by = {}; rows.forEach(r => (by[r[3]] ||= []).push(r));
+  const put = (file, fresh, meta) => {
+    const f = path.join(S_DIR, file), old = replaceAll ? [] : (load(f, { rows: [] }).rows || []);
+    const dates = new Set(fresh.map(x => x[0] + x[4]));
+    const merged = [...old.filter(x => !dates.has(x[0] + x[4])), ...fresh].sort((a, b) => a[0].localeCompare(b[0]));
+    fs.writeFileSync(f, JSON.stringify({ cols: ['date', 'min', 'max', 'modal', 'unit', 'n'], ...meta, rows: merged }));
+    return merged;
+  };
+  for (const [m, rs] of Object.entries(by)) {
+    const mer = put(slugM(m) + '.json', mandiDays(rs), { market: m, district: rs[0][2] });
+    idx[m] = { f: slugM(m) + '.json', d: rs[0][2], from: mer[0][0], to: mer.at(-1)[0], days: mer.length, u: mer.at(-1)[4] };
+  }
+  const allM = put('all.json', allDays(rows), { market: 'ALL', note: 'Maharashtra: quintal wali mandiyon ka beech wala bhav' });
+  idx.__all = { f: 'all.json', from: allM[0]?.[0], to: allM.at(-1)?.[0], days: allM.length, u: 'q' };
+  fs.writeFileSync(idxF, JSON.stringify(idx));
+}
+
 let daily = load(F_DAILY, { cols: COLS, rows: [] });
 let month = load(F_MONTH, { items: [] });
 let india = load(F_IN, { cols: COLS, rows: [] });
@@ -90,6 +125,7 @@ if (process.argv.includes('--backfill')) {
   month = { source: 'data.gov.in / Agmarknet — Variety-wise Daily Market Prices (Coriander(Leaves), code 43)', state: 'Maharashtra', since: rows[0]?.[0], units: um, items: monthly(rows, um) };
   const cut = new Date(Date.now() - DAILY_KEEP * 864e5).toISOString().slice(0, 10);
   daily = { cols: COLS, rows: rows.filter(r => r[0] >= cut) };
+  writeSeries(rows, true);
   console.log('Maharashtra itihaas:', rows.length, 'record,', Object.keys(um).length, 'mandi, mahine', month.items.length);
 }
 
@@ -114,6 +150,9 @@ const merge = (store, add, keep, onlyMH) => {
   return { cols: COLS, rows: [...m.values()].filter(r => r[0] >= cut).sort((a, b) => a[0].localeCompare(b[0]) || a[3].localeCompare(b[3])) };
 };
 daily = merge(daily, recent.values(), DAILY_KEEP, true);
+// series: pichhle 10 din ke Maharashtra record jodo (all.json ke liye un dino ki sabhi mandi daily.json se)
+{ const days = new Set([...recent.values()].filter(r => r[1] === 'Maharashtra').map(r => r[0]));
+  if (days.size) writeSeries(daily.rows.filter(r => days.has(r[0])), false); }
 india = merge(india, recent.values(), INDIA_KEEP, false);
 
 // Mahine ka hisaab: daily me jo mahine poore hain unhe dobara banao (purane mahine waise hi rahte hain)
