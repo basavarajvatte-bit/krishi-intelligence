@@ -1,26 +1,291 @@
 {
-  "_about": "Pyaz aur tamatar ke bade bhav-uchhaal (spike) aur girawat (crash), news aur sarkari press release se. Har entry ke saath source link hai. Ye rozana ka bhav nahi hai — sirf bade events hain.",
-  "_lastVerified": "2026-11-20",
-  "onion": [
-    {"ym":"2010-12","type":"spike","value":88,"basis":"retail","place":"Delhi","note":"Barish se fasal kharab, ek hafte me ₹35 se ₹88/kg. Export band kiya gaya.","source":"https://en.wikipedia.org/wiki/2010_Indian_onion_crisis"},
-    {"ym":"2013-10","type":"spike","value":100,"basis":"retail","place":"North India (kuch shahar)","note":"Bhav ₹100/kg tak; sarkar ko import karna pada. All-India monthly avg ₹57/kg (Oct 2013).","source":"https://www.thequint.com/news/india/history-shows-why-no-politician-wants-to-mess-with-the-onion"},
-    {"ym":"2015-09","type":"spike","value":80,"basis":"retail","place":"Delhi","note":"June–Sept 2015 me bhav 125% badha.","source":"https://www.newsclick.in/node/22523"},
-    {"ym":"2017-11","type":"spike","value":29.5,"basis":"wholesale","place":"Lasalgaon","note":"2 saal ka sabse uncha wholesale bhav; 2 mahine me lagbhag dugna.","source":"https://www.business-standard.com/article/markets/onion-prices-hit-two-year-highs-on-reduced-supply-117110600856_1.html"},
-    {"ym":"2019-12","type":"spike","value":100,"basis":"retail","place":"All-India avg","note":"Aug me ₹27 se Dec me ₹100/kg (+253%). Nashik wholesale ₹11,000/quintal tak.","source":"https://www.newsclick.in/onion-prices-spiked-253-per-five-months"},
-    {"ym":"2020-10","type":"spike","value":100,"basis":"retail","place":"Kuch shahar","note":"Barish se kharif fasal kharab; 14 Sept 2020 ko export ban.","source":"https://www.freepressjournal.in/india/fpj-explains-onion-prices-hit-rs-100-per-kg-heres-the-reason-behind-its-sharp-rise"},
-    {"ym":"2023-11","type":"spike","value":80,"basis":"retail","place":"All-India peak","note":"July 2023 se bhav chadha, Nov me ₹80/kg. 8 Dec 2023 se export ban.","source":"https://pib.gov.in/PressReleasePage.aspx?PRID=1985229"},
-    {"ym":"2024-10","type":"spike","value":80,"basis":"retail","place":"Delhi","note":"Delhi me ₹80–120/kg (Oct 2024). Rabi stock khatam, kharif der se.","source":"https://www.dailypioneer.com/2024/state-editions/prices-of-staple-onions-and-tomatoes-likely-to-fall-ahead-of-festive-season.html"},
-    {"ym":"2025-11","type":"crash","value":11.5,"basis":"wholesale","place":"Lasalgaon","note":"Bhav gira: ₹1,150–1,350/quintal. Kisan ko lagat bhi nahi mili.","source":"https://www.freepressjournal.in/pune/nashik-onion-glut-and-export-ban-push-maharashtra-farmers-into-crisis"},
-    {"ym":"2026-09","type":"rise","value":42,"basis":"wholesale","place":"Lasalgaon","note":"Sept 2026: ₹36–48/kg wholesale.","source":"https://www.uniindia.com/west-india/asias-largest-onion-market-where-is-it-and-what-are-the-current-prices/187360"},
-    {"ym":"2026-11","type":"spike","value":55,"basis":"wholesale","place":"Lasalgaon","note":"17 Nov 2026: laal pyaz max ₹5,500/quintal. Nayi lehar abhi chal rahi hai.","source":"https://www.freepressjournal.in/pune/nashik-red-onion-prices-touch-5500-per-quintal-at-lasalgaon-apmc"}
-  ],
-  "tomato": [
-    {"ym":"2017-01","type":"crash","value":5,"basis":"farmgate","place":"Karnataka","note":"Pichhle 6–9 mahine kisan ko ₹5/kg se kam mila (news July 2017 me).","source":"https://www.business-standard.com/amp/article/economy-policy/tomato-prices-go-through-the-roof-117072600055_1.html"},
-    {"ym":"2017-07","type":"spike","value":100,"basis":"retail","place":"Delhi (Mumbai ₹150)","note":"Bhari barish se supply ruki.","source":"https://www.business-standard.com/article/pti-stories/tomato-prices-soar-to-rs-100-per-kg-in-delhi-ncr-on-low-supply-117072500502_1.html"},
-    {"ym":"2023-08","type":"spike","value":213,"basis":"retail","place":"Delhi","note":"3 Aug 2023: ₹213/kg — record. Jan 2023 me sirf ₹20 tha.","source":"https://www.newslaundry.com/amp/story/2024%2F08%2F19%2Fwhy-your-groceries-cost-9-more-this-july"},
-    {"ym":"2024-07","type":"rise","value":93,"basis":"retail","place":"Delhi","note":"20 July 2024: Delhi ₹93/kg, all-India avg ₹74.","source":"https://deccanherald.com/india/delhi/tomato-prices-soar-to-rs-100-per-kg-in-delhi-markets-as-rains-hit-supplies-3114152"},
-    {"ym":"2024-10","type":"spike","value":100,"basis":"retail","place":"Delhi","note":"Oct 2024: ₹100–130/kg Delhi me.","source":"https://www.dailypioneer.com/2024/state-editions/prices-of-staple-onions-and-tomatoes-likely-to-fall-ahead-of-festive-season.html"},
-    {"ym":"2025-07","type":"rise","value":85,"basis":"retail","place":"Kuch shahar","note":"July end tak ₹85/kg; all-India avg ₹52.","source":"https://www.newsonair.gov.in/tomato-price-surge-due-to-local-factors-not-supply-issue-govt"},
-    {"ym":"2026-06","type":"rise","value":43.7,"basis":"retail","place":"All-India avg","note":"June 2026: ₹43.7/kg, saal bhar me +24%.","source":"https://www.businesstoday.in/latest/economy/story/tomato-prices-surge-24-as-weather-hit-supplies-squeeze-markets-relief-unlikely-before-august-539128-2026-06-25"}
-  ]
+ "_about": "Pyaz aur tamatar ke bade bhav-uchhaal (spike) aur girawat (crash), news aur sarkari press release se. Har entry ke saath source link hai. Ye rozana ka bhav nahi hai — sirf bade events hain.",
+ "_lastVerified": "2026-11-21",
+ "onion": [
+  {
+   "ym": "2010-12",
+   "type": "spike",
+   "value": 88,
+   "basis": "retail",
+   "place": "Delhi",
+   "note": "Barish se fasal kharab, ek hafte me ₹35 se ₹88/kg. Export band kiya gaya.",
+   "source": "https://en.wikipedia.org/wiki/2010_Indian_onion_crisis"
+  },
+  {
+   "ym": "2013-10",
+   "type": "spike",
+   "value": 100,
+   "basis": "retail",
+   "place": "North India (kuch shahar)",
+   "note": "Bhav ₹100/kg tak; sarkar ko import karna pada. All-India monthly avg ₹57/kg (Oct 2013).",
+   "source": "https://www.thequint.com/news/india/history-shows-why-no-politician-wants-to-mess-with-the-onion"
+  },
+  {
+   "ym": "2015-09",
+   "type": "spike",
+   "value": 80,
+   "basis": "retail",
+   "place": "Delhi",
+   "note": "June–Sept 2015 me bhav 125% badha.",
+   "source": "https://www.newsclick.in/node/22523"
+  },
+  {
+   "ym": "2017-11",
+   "type": "spike",
+   "value": 29.5,
+   "basis": "wholesale",
+   "place": "Lasalgaon",
+   "note": "2 saal ka sabse uncha wholesale bhav; 2 mahine me lagbhag dugna.",
+   "source": "https://www.business-standard.com/article/markets/onion-prices-hit-two-year-highs-on-reduced-supply-117110600856_1.html"
+  },
+  {
+   "ym": "2019-12",
+   "type": "spike",
+   "value": 100,
+   "basis": "retail",
+   "place": "All-India avg",
+   "note": "Aug me ₹27 se Dec me ₹100/kg (+253%). Nashik wholesale ₹11,000/quintal tak.",
+   "source": "https://www.newsclick.in/onion-prices-spiked-253-per-five-months"
+  },
+  {
+   "ym": "2020-10",
+   "type": "spike",
+   "value": 100,
+   "basis": "retail",
+   "place": "Kuch shahar",
+   "note": "Barish se kharif fasal kharab; 14 Sept 2020 ko export ban.",
+   "source": "https://www.freepressjournal.in/india/fpj-explains-onion-prices-hit-rs-100-per-kg-heres-the-reason-behind-its-sharp-rise"
+  },
+  {
+   "ym": "2023-11",
+   "type": "spike",
+   "value": 80,
+   "basis": "retail",
+   "place": "All-India peak",
+   "note": "July 2023 se bhav chadha, Nov me ₹80/kg. 8 Dec 2023 se export ban.",
+   "source": "https://pib.gov.in/PressReleasePage.aspx?PRID=1985229"
+  },
+  {
+   "ym": "2024-10",
+   "type": "spike",
+   "value": 80,
+   "basis": "retail",
+   "place": "Delhi",
+   "note": "Delhi me ₹80–120/kg (Oct 2024). Rabi stock khatam, kharif der se.",
+   "source": "https://www.dailypioneer.com/2024/state-editions/prices-of-staple-onions-and-tomatoes-likely-to-fall-ahead-of-festive-season.html"
+  },
+  {
+   "ym": "2025-11",
+   "type": "crash",
+   "value": 11.5,
+   "basis": "wholesale",
+   "place": "Lasalgaon",
+   "note": "Bhav gira: ₹1,150–1,350/quintal. Kisan ko lagat bhi nahi mili.",
+   "source": "https://www.freepressjournal.in/pune/nashik-onion-glut-and-export-ban-push-maharashtra-farmers-into-crisis"
+  },
+  {
+   "ym": "2026-09",
+   "type": "rise",
+   "value": 42,
+   "basis": "wholesale",
+   "place": "Lasalgaon",
+   "note": "Sept 2026: ₹36–48/kg wholesale.",
+   "source": "https://www.uniindia.com/west-india/asias-largest-onion-market-where-is-it-and-what-are-the-current-prices/187360"
+  },
+  {
+   "ym": "2026-11",
+   "type": "spike",
+   "value": 55,
+   "basis": "wholesale",
+   "place": "Lasalgaon",
+   "note": "17 Nov 2026: laal pyaz max ₹5,500/quintal. Nayi lehar abhi chal rahi hai.",
+   "source": "https://www.freepressjournal.in/pune/nashik-red-onion-prices-touch-5500-per-quintal-at-lasalgaon-apmc"
+  }
+ ],
+ "tomato": [
+  {
+   "ym": "2017-01",
+   "type": "crash",
+   "value": 5,
+   "basis": "farmgate",
+   "place": "Karnataka",
+   "note": "Pichhle 6–9 mahine kisan ko ₹5/kg se kam mila (news July 2017 me).",
+   "source": "https://www.business-standard.com/amp/article/economy-policy/tomato-prices-go-through-the-roof-117072600055_1.html"
+  },
+  {
+   "ym": "2017-07",
+   "type": "spike",
+   "value": 100,
+   "basis": "retail",
+   "place": "Delhi (Mumbai ₹150)",
+   "note": "Bhari barish se supply ruki.",
+   "source": "https://www.business-standard.com/article/pti-stories/tomato-prices-soar-to-rs-100-per-kg-in-delhi-ncr-on-low-supply-117072500502_1.html"
+  },
+  {
+   "ym": "2023-08",
+   "type": "spike",
+   "value": 213,
+   "basis": "retail",
+   "place": "Delhi",
+   "note": "3 Aug 2023: ₹213/kg — record. Jan 2023 me sirf ₹20 tha.",
+   "source": "https://www.newslaundry.com/amp/story/2024%2F08%2F19%2Fwhy-your-groceries-cost-9-more-this-july"
+  },
+  {
+   "ym": "2024-07",
+   "type": "rise",
+   "value": 93,
+   "basis": "retail",
+   "place": "Delhi",
+   "note": "20 July 2024: Delhi ₹93/kg, all-India avg ₹74.",
+   "source": "https://deccanherald.com/india/delhi/tomato-prices-soar-to-rs-100-per-kg-in-delhi-markets-as-rains-hit-supplies-3114152"
+  },
+  {
+   "ym": "2024-10",
+   "type": "spike",
+   "value": 100,
+   "basis": "retail",
+   "place": "Delhi",
+   "note": "Oct 2024: ₹100–130/kg Delhi me.",
+   "source": "https://www.dailypioneer.com/2024/state-editions/prices-of-staple-onions-and-tomatoes-likely-to-fall-ahead-of-festive-season.html"
+  },
+  {
+   "ym": "2025-07",
+   "type": "rise",
+   "value": 85,
+   "basis": "retail",
+   "place": "Kuch shahar",
+   "note": "July end tak ₹85/kg; all-India avg ₹52.",
+   "source": "https://www.newsonair.gov.in/tomato-price-surge-due-to-local-factors-not-supply-issue-govt"
+  },
+  {
+   "ym": "2026-06",
+   "type": "rise",
+   "value": 43.7,
+   "basis": "retail",
+   "place": "All-India avg",
+   "note": "June 2026: ₹43.7/kg, saal bhar me +24%.",
+   "source": "https://www.businesstoday.in/latest/economy/story/tomato-prices-surge-24-as-weather-hit-supplies-squeeze-markets-relief-unlikely-before-august-539128-2026-06-25"
+  }
+ ],
+ "_units": {
+  "onion": "kg",
+  "tomato": "kg",
+  "soybean": "q",
+  "cotton": "q",
+  "tur": "q"
+ },
+ "soybean": [
+  {
+   "ym": "2021-08",
+   "type": "spike",
+   "value": 10000,
+   "basis": "wholesale",
+   "place": "Indore",
+   "note": "3 Aug 2021 ko ₹10,000/quintal — record. MSP sirf ₹3,950 tha. Kam fasal aur poultry ki maang.",
+   "source": "https://eximguru.com/export-import-news/import-news/soyabean-prices-crash-by-50-111422.aspx"
+  },
+  {
+   "ym": "2021-09",
+   "type": "crash",
+   "value": 4500,
+   "basis": "wholesale",
+   "place": "Indore",
+   "note": "Ek mahine me 49% gira: ₹8,800 se ₹4,500 (27 Sept 2021). Nayi fasal aur stock bechne se.",
+   "source": "https://eximguru.com/export-import-news/import-news/soyabean-prices-crash-by-50-111422.aspx"
+  },
+  {
+   "ym": "2024-11",
+   "type": "crash",
+   "value": 4200,
+   "basis": "wholesale",
+   "place": "Latur",
+   "note": "₹4,200 — MSP ₹4,892 se 14% kam.",
+   "source": "https://business-standard.com/politics/between-falling-crop-prices-and-electoral-landslide-how-mahayuti-prevailed-124112400436_1.html"
+  },
+  {
+   "ym": "2025-09",
+   "type": "crash",
+   "value": 4617,
+   "basis": "wholesale",
+   "place": "All-India avg",
+   "note": "Sept 2025 avg ₹4,617; MSP ₹5,328 se kam. Sasta aayaati tel ek kaaran.",
+   "source": "https://www.global-agriculture.com/india-region/soybean-prices-slide-below-msp-despite-lower-acreage-in-kharif-2025/"
+  }
+ ],
+ "cotton": [
+  {
+   "ym": "2021-11",
+   "type": "rise",
+   "value": 9250,
+   "basis": "wholesale",
+   "place": "Telangana (Parkal)",
+   "note": "Kapas pichhle saal se 70%+ upar.",
+   "source": "https://krishijagran.com/agriculture-world/good-prices-quality-and-disease-free-crop-made-this-years-diwali-special-for-cotton-farmers/?amp=1"
+  },
+  {
+   "ym": "2022-01",
+   "type": "spike",
+   "value": 10200,
+   "basis": "wholesale",
+   "place": "Hinganghat (Wardha)",
+   "note": "Pehli baar ₹10,000 paar. MSP ₹6,025.",
+   "source": "https://www.thehitavada.com/Encyc/2022/1/5/Cotton-surpasses-historic-Rs-10-000-quintal-mark-in-Vid.html"
+  },
+  {
+   "ym": "2022-05",
+   "type": "spike",
+   "value": 13405,
+   "basis": "wholesale",
+   "place": "Rajkot",
+   "note": "Record ₹13,405; saal bhar pehle ₹7,000. 2021 me barish se fasal kam.",
+   "source": "https://www.lokmattimes.com/business/cotton-price-on-record-high-as-textile-industry-seeks-ban-on-cotton-export-a473"
+  },
+  {
+   "ym": "2024-11",
+   "type": "crash",
+   "value": 7100,
+   "basis": "wholesale",
+   "place": "Maharashtra",
+   "note": "₹7,000–7,200, MSP se kam.",
+   "source": "https://www.businesstoday.in/amp/india/story/maharashtra-assembly-election-2024-will-agrarian-distress-and-farmer-discontent-impact-fortunes-of-mahayuti-453525-2024-11-13"
+  }
+ ],
+ "tur": [
+  {
+   "ym": "2015-12",
+   "type": "spike",
+   "value": 10000,
+   "basis": "wholesale",
+   "place": "Maharashtra",
+   "note": "Do saal sookhe se kam fasal. Mandi ₹10,000/quintal tak; dukaan me tur dal ₹200/kg.",
+   "source": "https://nagpurtoday.in/?p=164298"
+  },
+  {
+   "ym": "2017-02",
+   "type": "crash",
+   "value": 3700,
+   "basis": "wholesale",
+   "place": "Latur, Parbhani",
+   "note": "Record buvai ke baad bhav ₹3,700 — MSP ₹5,050 se kam.",
+   "source": "https://nagpurtoday.in/?p=164298"
+  },
+  {
+   "ym": "2024-02",
+   "type": "rise",
+   "value": 10128,
+   "basis": "wholesale",
+   "place": "Latur",
+   "note": "Feb 2024 avg ₹10,128 (Feb 2023: ₹7,703).",
+   "source": "https://msamb.com/smart/Weekly_07022025_eng.pdf"
+  },
+  {
+   "ym": "2024-05",
+   "type": "spike",
+   "value": 12750,
+   "basis": "wholesale",
+   "place": "Kalaburagi",
+   "note": "₹12,750/quintal, MSP ₹7,000. Baad me duty-free import se bhav gira.",
+   "source": "https://www.deccanherald.com/amp/story/india%2Fkarnataka%2Fsteep-price-fall-leaves-tur-farmers-in-the-lurch-3628551"
+  }
+ ]
 }
