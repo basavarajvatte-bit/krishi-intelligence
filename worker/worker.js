@@ -1,4 +1,5 @@
 import { searchPrices } from './prices.js';
+import { multiSearch, available } from './search.js';
 // Krishi Intelligence — mandi bhav laane wala program (Cloudflare Worker)
 // Chaabi Worker ke "secret" DATA_GOV_KEY me rehti hai, website me nahi.
 const RES = '9ef84268-d588-465a-a308-a864a43d0070';
@@ -92,7 +93,7 @@ export default {
       const { readable, writable } = new TransformStream(); const w = writable.getWriter(); const enc = new TextEncoder();
       let open = true; const emit = async o => { if (!open) return; try { await w.write(enc.encode('data: ' + JSON.stringify(o) + '\n\n')); } catch (e) { open = false; } };
       ctx.waitUntil((async () => {
-        try { await emit({ type: 'start', at: new Date().toISOString(), web: env.TAVILY_API_KEY ? 'key' : 'keyless' }); await runResearch(b, env, emit); }
+        try { await emit({ type: 'start', at: new Date().toISOString(), web: available(env).map(p => p.id).join(',') }); await runResearch(b, env, emit); }
         catch (e) { await emit({ type: 'error', msg: String(e).slice(0, 200) }); }
         await emit({ type: 'done' }); try { await w.close(); } catch (e) {}
       })());
@@ -209,16 +210,8 @@ async function rWiki(q, must) {
   if (must && !must.some(w => w.split(' ').some(x => x.length >= 4 && p.j.title.toLowerCase().includes(x)))) return null;   // page ka naam hi milna chahiye
   return { title: p.j.title, text: p.j.extract, url: (p.j.content_urls && p.j.content_urls.desktop && p.j.content_urls.desktop.page) || ('https://en.wikipedia.org/wiki/' + key) };
 }
-async function rTavily(env, query, opts = {}) {
-  const h = { 'Content-Type': 'application/json' };
-  if (env.TAVILY_API_KEY) h.Authorization = 'Bearer ' + env.TAVILY_API_KEY; else h['X-Tavily-Access-Mode'] = 'keyless';
-  const body = { query, search_depth: 'basic', max_results: Math.min(20, opts.max || 4), include_raw_content: opts.raw ? 'text' : false, include_favicon: true };
-  if (opts.domains) body.include_domains = opts.domains;
-  const r = await rFetchJson('https://api.tavily.com/search', { method: 'POST', headers: h, body: JSON.stringify(body) }, 15000);
-  if (r.status === 429 || r.status === 432 || r.status === 433) return { limit: true, results: [] };
-  if (!r.j || !Array.isArray(r.j.results)) return { error: (r.txt || '').slice(0, 120), results: [] };
-  return { results: r.j.results };
-}
+// Web search: kai free providers, baari-baari (worker/search.js)
+async function rTavily(env, query, opts = {}) { return multiSearch(env, query, opts); }
 async function rLLM(env, sys, user, max = 700) {
   const r = await env.AI.run('@cf/meta/llama-3.1-8b-instruct-fast', { messages: [{ role: 'system', content: sys }, { role: 'user', content: user }], max_tokens: max, temperature: 0 });
   return jsonFrom(r && r.response);

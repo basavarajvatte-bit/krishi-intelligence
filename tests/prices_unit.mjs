@@ -57,7 +57,10 @@ const list = dedupe([
 const r = rank(list);
 ok(r.best.length === 4, 'best 4 bane');
 ok(!r.best.some(l => /unknown-shop|indiamart|dehaat|jiomart/.test(l.host)), 'anjaan / b2b / stock-khatam / dusra brand top 4 me nahi');
-ok(r.best[0].host === 'agrostar.in', 'sabse sasta (delivery jod kar, per kg) pehle: AgroStar ₹4200/kg ' + r.best.map(b => b.host + ':' + b.per_unit).join(','));
+ok(r.best.map(b => b.host).join(',') === 'amazon.in,bighaat.com,kisanshop.in,gramophone.in', 'same pack (100 g) me kul kimat se kram: ' + r.best.map(b => b.host + ':' + (b.total ?? b.price)).join(','));
+ok(/^100/.test(r.main_pack) && r.tags[r.best[0].url].includes('cheapest_best'), '🏆 sabse sasta = pehla');
+const r2 = rank(list.filter(l => !/amazon|kisanshop|gramophone/.test(l.host)));
+ok(r2.best.length === 2 && r2.best[1].other_pack && r2.best[1].host === 'agrostar.in', 'kam mile to dusra pack baad me ("वेगळा पॅक" nishan)');
 ok(r.tags['https://cheap-unknown-shop.xyz/products/item-a']?.includes('cheapest_unverified'), 'sabse sasta par anjaan -> "cheapest_unverified" tag');
 ok(new Set(r.best.map(b => b.host)).size === r.best.length, 'ek site ek hi baar');
 ok(r.saving && r.saving.diff > 0, 'bachat ka hisaab');

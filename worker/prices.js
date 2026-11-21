@@ -144,22 +144,28 @@ export function dedupe(list) {
 // Kharidne layak: hubahu utpaad, kimat pata, stock khatam nahi, seller pehchana hua (unknown/b2b nahi)
 const buyable = l => l.match === 'exact' && l.price != null && l.per_unit != null && l.available !== false && l.reliability >= 1;
 const cost = l => (l.per_unit ?? l.price) + (l.delivery ?? 0) * (l.pack && l.pack.base ? 1000 / l.pack.base : 1);
-export function rank(list) {
+// Kul dena (TOTAL) = kimat + delivery (delivery pata na ho to sirf kimat; UI me "डिलिव्हरी वेबसाइटवर" likhte hain)
+export const payable = l => l.total ?? l.price;
+export function rank(list, wantPack = null) {
   const exact = list.filter(l => l.match === 'exact' && l.price != null);
-  const ok = list.filter(buyable).sort((a, b) => (a.per_unit == null) - (b.per_unit == null) || cost(a) - cost(b) || b.reliability - a.reliability || (a.delivery == null) - (b.delivery == null));
-  // ek website se ek hi option top 4 me
-  const best = []; for (const l of ok) { if (!best.find(b => b.host === l.host)) best.push(l); if (best.length === 4) break; }
-  const cheapest = exact.slice().sort((a, b) => (a.per_unit == null) - (b.per_unit == null) || cost(a) - cost(b))[0] || null;
+  const ok = list.filter(buyable);
+  // Tulna ka pack: label ka pack (pata ho) warna sabse zyada dikhne wala pack (barabar ho to chhota)
+  const cnt = {}; ok.forEach(l => { cnt[l.pack.base] = (cnt[l.pack.base] || 0) + 1; });
+  const main = wantPack && cnt[wantPack] ? wantPack : +(Object.keys(cnt).sort((a, b) => cnt[b] - cnt[a] || a - b)[0] || 0);
+  const same = ok.filter(l => l.pack.base === main).sort((a, b) => payable(a) - payable(b) || b.reliability - a.reliability || (a.delivery == null) - (b.delivery == null));
+  const other = ok.filter(l => l.pack.base !== main).sort((a, b) => cost(a) - cost(b));
+  const best = []; for (const l of [...same, ...other.map(l => ({ ...l, other_pack: true }))]) { if (!best.find(b => b.host === l.host)) best.push(l); if (best.length === 4) break; }
+  const cheapest = exact.filter(l => l.pack && l.pack.base === main).sort((a, b) => payable(a) - payable(b))[0] || null;
   const verified = ok.filter(l => l.reliability >= 2)[0] || null;
   const fastest = ok.filter(l => l.eta).sort((a, b) => a.eta.min - b.eta.min)[0] || null;
   const tags = {};
-  if (best[0]) tags[best[0].url] = ['best_value'];
-  if (cheapest) (tags[cheapest.url] ||= []).push(buyable(cheapest) ? 'cheapest' : 'cheapest_unverified');
+  if (best[0] && !best[0].other_pack) tags[best[0].url] = ['cheapest_best'];
+  if (cheapest && !buyable(cheapest)) (tags[cheapest.url] ||= []).push('cheapest_unverified');
   if (verified) (tags[verified.url] ||= []).push('best_verified');
   if (fastest) (tags[fastest.url] ||= []).push('fastest');
-  const pu = ok.map(l => l.per_unit).filter(x => x != null);
-  const saving = pu.length >= 2 ? { min: Math.min(...pu), max: Math.max(...pu), diff: Math.max(...pu) - Math.min(...pu) } : null;
-  return { best, tags, saving };
+  const pt = same.map(payable);
+  const saving = pt.length >= 2 ? { min: Math.min(...pt), max: Math.max(...pt), diff: Math.max(...pt) - Math.min(...pt), pack: same[0].pack.text } : null;
+  return { best, tags, saving, main_pack: main ? (same[0] || ok[0]).pack.text : null };
 }
 
 // ---- Poora price search (Tavily search API se; sirf permitted search, koi scraping/CAPTCHA bypass nahi) ----
@@ -178,12 +184,12 @@ export async function searchPrices(P, search, now = new Date().toISOString()) {
   const all = []; const responded = new Set();
   res.forEach(r => (r.results || []).forEach(x => { const h = host(x.url); if (h) responded.add(h); const l = toListing(P, x, now); if (l) all.push(l); }));
   const listings = dedupe(all).filter(l => l.match !== 'unrelated');
-  const { best, tags, saving } = rank(listings);
+  const { best, tags, saving, main_pack } = rank(listings, P.pack_base || null);
   const exactSites = new Set(listings.filter(l => l.match === 'exact').map(l => l.host));
   return {
     searched_sites: SELLERS.length, extra_discovered: [...responded].filter(h => !SELLERS.some(s => h === s.domain || h.endsWith('.' + s.domain))).length,
     responded_sites: responded.size, valid_sites: exactSites.size, queries: queries.length,
     listings: listings.sort((a, b) => (a.match !== 'exact') - (b.match !== 'exact') || (a.per_unit ?? 1e9) - (b.per_unit ?? 1e9)).slice(0, 40),
-    best, tags, saving, limit, errors: res.filter(r => r.error).map(r => String(r.error).slice(0, 80)), checked_at: now,
+    best, tags, saving, main_pack, limit, errors: res.filter(r => r.error).map(r => String(r.error).slice(0, 80)), checked_at: now,
   };
 }

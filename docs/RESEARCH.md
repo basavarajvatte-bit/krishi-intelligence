@@ -24,11 +24,22 @@
 - Kimat "search-engine me dikhi" hoti hai, live checkout price nahi — UI me tareekh/samay ke saath likha hai.
 - History aur alert: browser `localStorage` (`prhist`, `pralert`) — sirf sach me dekhi kimaten.
 
+## Search providers (worker/search.js)
+Kram: Tavily (`TAVILY_API_KEY`) → Serper.dev (`SERPER_API_KEY`, Google, 2,500 free ek baar) → Exa (`EXA_API_KEY`) → Tavily keyless.
+Har provider: 15s timeout, error par 1 dobara (700ms ruk kar), limit (401/402/403/429/432/433) par 10 min chhod kar agla.
+Sab free; chaabi na ho to wo provider chhod diya jaata hai. Paid fallback nahi.
+
+## Saral scanner screen (index.html: scShow / cheapHTML / useHTML)
+Naam – company, prakar → 🛒 sabse sasti kimat (🏆 + 3 aur, BUY NOW) → "सर्व किंमती पहा" (table, filter, itihaas, alert) → 🌱 kis kaam ka, pik, kide, padhat.
+Ranking: sabse zyada dikhne wale pack me kul dena (kimat + delivery) se; kam hon to dusre pack (₹/litre-kilo ke saath) baad me.
+Live search fail ho to pichhli sahi kimat (7 din tak, tareekh ke saath); kuch na ho to "सध्या ऑनलाइन किंमत उपलब्ध नाही."
+Research log (Wikipedia, ban-list, model naam) chhupa rehta hai; banned ghatak ho to sirf ek laal line.
+
 ## Keys / cost
 - `TAVILY_API_KEY` (optional, free 1,000 credits/month, no card) → GitHub secret → deploy workflow Worker secret me daalta hai.
   Na ho to Tavily keyless mode (bahut kam limit).
 - Workers AI free 10,000 neurons/day, hard stop — koi paid fallback nahi.
 
 ## Tests
-`node tests/research_unit.mjs`, `node tests/prices_unit.mjs`, `python3 tests/research_ui.py`,
+`node tests/research_unit.mjs`, `node tests/prices_unit.mjs`, `node tests/search_unit.mjs`, `python3 tests/research_ui.py`,
 live: Actions → "Research live test".

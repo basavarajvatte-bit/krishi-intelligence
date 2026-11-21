@@ -1319,10 +1319,18 @@ async function scRun(file,mode){
     const rec={id:Date.now(),date:new Date().toISOString().slice(0,10),thumb:p.thumb,lab,codes:codes||[],model:res.name,ms:res.ms,cached:!!res.cached};
     const h=scHist();h.unshift(rec);scSave(h);scShow(rec);scRenderHist();out.scrollIntoView({block:'start'})}});
 }
-function scShow(rec){const c=scCard(rec);let m='';
-  if(SC_EXPECT){const ais=(rec.lab.active_ingredients||[]).map(a=>lc(a.name));const hit=SC_EXPECT.list.find(x=>ais.some(a=>a.includes(lc(x))));
-    m=`<div class="rc" style="background:${hit?'var(--grn)':'var(--red)'};margin-bottom:8px">${hit?`✅ यात <b>${esc(hit)}</b> आहे — पीक डॉक्टरने सांगितलेल्या (ICAR सल्ला) घटकांपैकी एक.`:`❌ यात पीक डॉक्टरने सांगितलेले घटक (${esc(SC_EXPECT.list.join(', '))}) दिसले नाहीत.`}<br><span style="font-size:14px">लेबलवर तुमचे पीक (${esc(SC_EXPECT.crop)}) व ही कीड/रोग लिहिलेले आहे का तेही तपासा.</span></div>`}
-  document.getElementById('scOut').innerHTML=m+c.html;document.querySelector(`#scOut [data-speak]`).onclick=()=>speak(c.say);document.querySelector('#scOut [data-stop]').onclick=stopSpeak;resProduct(rec)}
+function scShow(rec){const L=rec.lab||{};let m='';
+  if(SC_EXPECT){const ais=(L.active_ingredients||[]).map(a=>lc(a.name));const hit=SC_EXPECT.list.find(x=>ais.some(a=>a.includes(lc(x))));
+    m=`<div class="rc" style="background:${hit?'var(--grn)':'var(--red)'};margin-bottom:8px">${hit?`✅ यात <b>${esc(hit)}</b> आहे — पीक डॉक्टरने सांगितलेल्या घटकांपैकी एक.`:`❌ यात पीक डॉक्टरने सांगितलेले घटक (${esc(SC_EXPECT.list.join(', '))}) दिसले नाहीत.`}</div>`}
+  if(L.is_product===false||(!L.product_name&&!(L.active_ingredients||[]).length)){document.getElementById('scOut').innerHTML=m+'<div class="card"><b>हे कृषी उत्पादनाचे लेबल वाटत नाही.</b><br>बाटली/पिशवीच्या पुढच्या बाजूचा, नाव स्पष्ट दिसणारा फोटो काढा.</div>';return}
+  const ais=(L.active_ingredients||[]).map(a=>a.name).filter(Boolean),ban=ais.filter(a=>SC_BAN.some(b=>lc(a).includes(b)));
+  const nm=L.product_name||ais.join(' + ');
+  document.getElementById('scOut').innerHTML=m+`<div class="card" style="padding:14px">
+    <div style="text-align:center"><div style="font-size:24px;font-weight:800;line-height:1.2">${esc(nm)}${L.company?` – ${esc(L.company)}`:''}</div>
+    <div class="muted" style="font-size:16px;margin-top:2px">${esc(SC_CAT[L.category]||SC_CAT.unknown||'')}</div></div>
+    ${ban.length?`<div class="rc" style="background:var(--red);margin-top:8px">🚫 ${esc(ban.join(', '))} — भारतात बंदी असलेला घटक. वापरू नका.</div>`:''}
+    <div id="scBest"></div><div id="scUse"></div></div><div id="scRes" style="display:none"></div>`;
+  resProduct(rec)}
 function scRenderHist(){watchRender();
   const el=document.getElementById('scHist');if(!el)return;const h=scHist();
   if(!h.length){el.innerHTML='<p class="muted">अजून काही स्कॅन केले नाही.</p>';return}
@@ -1546,6 +1554,36 @@ async function research(el,kind,payload,low,force){
   }catch(e){if(e.name==='AbortError'){st.err='संशोधन थांबवले.';Object.keys(st.steps).forEach(id=>{if(st.steps[id]==='run')st.steps[id]='none'})}else st.err='इंटरनेट/सर्व्हर अडचण — संशोधन होऊ शकले नाही. वरची AI ओळख तशीच वापरता येईल.';st.done=true}
   finally{if(RES_CTRL===ctrl){RES_CTRL=null;draw(st)}}
 }
+// ===== SARAL SCANNER RESULT: sasti kimat + kis kaam ka =====
+const payable=l=>l.total??l.price;
+function cheapHTML(st,key,payload){const px=st.px;let h='<div style="margin-top:12px;border-top:1px solid #e3ece6;padding-top:10px"><h3 style="margin:0 0 6px">🛒 या उत्पादनाची सर्वात स्वस्त किंमत</h3>';
+  const lastGood=!px||!px.best.length?prLast(key):null;
+  if(!px&&!st.done)return h+`<p>${SPIN} किंमती शोधत आहोत…</p></div>`;
+  let P=px&&px.best.length?px:lastGood;
+  if(!P)return h+'<p style="font-size:17px">सध्या ऑनलाइन किंमत उपलब्ध नाही.</p></div>';
+  const old=P!==px;const b=P.best,top=b[0];const del=l=>l.delivery===0?'मोफत डिलिव्हरी':l.delivery!=null?`डिलिव्हरी ${rs(l.delivery)}`:'डिलिव्हरी वेबसाइटवर';
+  const buy=(l,big)=>`<a class="btn" href="${esc(l.url)}" target="_blank" rel="noopener nofollow" style="${big?'display:block;text-align:center;font-size:19px;margin-top:8px':'width:auto;margin:0;padding:6px 12px;font-size:15px'}">BUY NOW ↗</a>`;
+  if(old)h+=`<p class="muted" style="font-size:13px;margin:0 0 6px">${new Date(P.checked_at).toLocaleDateString('en-GB')} रोजी दिसलेली किंमत (आत्ताची मिळाली नाही)</p>`;
+  h+=`<div style="border:3px solid var(--g);border-radius:12px;padding:10px;background:#f3faf5"><div style="font-weight:700;color:var(--g)">🏆 सर्वात स्वस्त पर्याय</div>
+    <div style="font-size:17px;margin-top:2px"><b>${esc(top.website)}</b></div><div style="font-size:32px;font-weight:800;line-height:1.1">${rs(payable(top))}</div>
+    <div style="font-size:16px">${esc(top.pack?.text||'')} • ${del(top)}${top.total!=null&&top.delivery>0?` <span class="muted">(${rs(top.price)} + ${rs(top.delivery)})</span>`:''}</div>${buy(top,true)}</div>`;
+  if(b.length>1)h+=`<div style="margin-top:10px"><b>इतर ${b.length-1} सर्वोत्तम पर्याय</b>${b.slice(1).map(l=>`<div style="display:flex;justify-content:space-between;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid #eef3f0"><div><b>${esc(l.website)}</b> — ${rs(payable(l))}<br><span class="muted" style="font-size:13px">${esc(l.pack?.text||'')}${l.other_pack?` (वेगळा पॅक, ${rs(l.per_unit)}/${l.unit_label})`:''} • ${del(l)}</span></div>${buy(l)}</div>`).join('')}</div>`;
+  if(px&&px.listings?.length)h+=`<button class="btn" data-pall style="background:#fff;color:var(--g);border:2px solid var(--g);margin-top:10px">सर्व किंमती पहा</button><div data-ptab>${PF.open?allTable(px)+histHTML(key)+alertHTML(key,px):''}</div>`;
+  return h+'</div>'}
+function prLast(key){try{const o=JSON.parse(localStorage.getItem('prlast')||'{}')[key];return o&&Date.now()-o.t<7*864e5?o.px:null}catch(e){return null}}
+function prLastPut(key,px){if(!px.best.length)return;try{const o=JSON.parse(localStorage.getItem('prlast')||'{}');o[key]={t:Date.now(),px:{best:px.best,checked_at:px.checked_at}};const ks=Object.keys(o).sort((a,b)=>o[b].t-o[a].t).slice(0,30);const n={};ks.forEach(k=>n[k]=o[k]);localStorage.setItem('prlast',JSON.stringify(n))}catch(e){}}
+function useHTML(st,L){const on=f=>(st.items||[]).filter(x=>x.field===f&&x.source&&x.source.source_type==='official');const src=x=>x.source?.url?` <a href="${esc(x.source.url)}" target="_blank" rel="noopener" style="font-size:12px">स्रोत</a>`:'';
+  const pests=listTxt(L.targets_on_label),crops=listTxt(L.crops_on_label);const op=on('pests')[0],oc=on('crops')[0];
+  const cat=SC_CAT[L.category];const lu=listTxt(L.uses);let why=hasV(lu)?String(lu).slice(0,170):(SC_USE[L.category]||'');
+  let h=`<div style="margin-top:14px;border-top:1px solid #e3ece6;padding-top:10px"><h3 style="margin:0 0 4px">🌱 हे कशासाठी वापरतात?</h3><p style="margin:0;font-size:16px">${cat?`हे ${esc(cat)} आहे. `:''}${esc(why)}</p>`;
+  if(hasV(crops)||oc)h+=`<p style="margin:8px 0 0"><b>🌾 कोणत्या पिकासाठी?</b><br>${hasV(crops)?esc(crops):esc(oc.text_mr)+src(oc)}</p>`;
+  if(hasV(pests)||op)h+=`<p style="margin:8px 0 0"><b>🐛 कोणत्या किडीसाठी / रोगासाठी?</b><br>${hasV(pests)?esc(pests):esc(op.text_mr)+src(op)}</p>`;
+  const dose=hasV(L.dose_on_label)?esc(L.dose_on_label)+' (लेबलवरून)':(!st.conflict&&on('dosage')[0])?esc(on('dosage')[0].text_mr)+src(on('dosage')[0]):'';
+  const meth=hasV(L.application_method)?esc(L.application_method):on('method')[0]?esc(on('method')[0].text_mr)+src(on('method')[0]):'';
+  const tim=on('timing')[0];
+  if(dose||meth||tim)h+=`<p style="margin:8px 0 0"><b>💧 वापरण्याची पद्धत</b><br>${[meth,dose?'प्रमाण: '+dose:'',tim?esc(tim.text_mr)+src(tim):''].filter(Boolean).join('<br>')}</p>`;
+  if(st.conflict&&!hasV(L.dose_on_label))h+='<p style="margin:6px 0 0;font-size:14px">प्रमाण: वेगवेगळ्या स्रोतांत वेगळे — लेबलवरचे प्रमाण वापरा.</p>';
+  return h+'<p class="muted" style="margin:10px 0 0;font-size:13px">⚠️ फवारताना हातमोजे-मास्क वापरा; लहान मुलांपासून दूर ठेवा.</p></div>'}
 // ===== FIELD-LEVEL STATUS + PRICE INTELLIGENCE (best 4, sab kimat, itihaas, alert) =====
 const FLD=[['name','उत्पादनाचे नाव','L'],['ai','सक्रिय घटक','L'],['conc','घटकाचे प्रमाण (%)','L'],['form','फॉर्म्युलेशन','L'],['reg','नोंदणी (CIR)','L'],['pests','किडी / रोग','official'],['crops','मंजूर पिके','official'],['dosage','अधिकृत प्रमाण (dose)','official'],['method','वापरण्याची पद्धत','official'],['timing','वापरण्याची वेळ','official'],['phi','काढणीपूर्वी थांबा (PHI)','official'],['reentry','शेतात पुन्हा जाण्याआधी थांबा','official'],['safety','सुरक्षा','official'],['storage','साठवण','maker'],['first_aid','प्रथमोपचार','maker'],['price','ऑनलाइन किंमत','price']];
 const SPIN='<span class="spin"></span>';
@@ -1612,11 +1650,12 @@ function watchRender(){const el=document.getElementById('scWatch');if(!el)return
   el.innerHTML=ks.length?`<h3 style="margin:10px 0 4px">🔔 माझी निगराणी (किंमत अलर्ट)</h3>${ks.map(k=>`<div class="ev"><b>${esc(A[k].name)}</b> — लक्ष्य ${rs(A[k].target)}${A[k].hit?` • ✅ ${rs(A[k].hitPrice)} <a href="${esc(A[k].hitUrl)}" target="_blank" rel="noopener nofollow">खरेदी ↗</a>`:''}<br><button class="btn" data-wchk="${esc(k)}" style="width:auto;margin:4px 0;padding:4px 10px;font-size:13px">किंमत पुन्हा तपासा</button><div data-wout="${esc(k)}"></div></div>`).join('')}`:'';
   el.querySelectorAll('[data-wchk]').forEach(b=>b.onclick=()=>{const k=b.dataset.wchk,a=prAlerts()[k];const o=el.querySelector(`[data-wout="${CSS.escape(k)}"]`);if(a&&o)research(o,a.payload.name?'product':'prices',a.payload,false,true)})}
 function resExtras(st,kind,payload,key){
-  if(kind==='product'){const b=document.getElementById('scBest'),f=document.getElementById('scFields');const L=window.SC_CUR||{};
-    if(f)f.innerHTML=fieldsHTML(st,L);if(b){b.innerHTML=priceHTML(st,kind,key,payload);bindPrice(b,st,kind,key,payload)}}
+  if(kind==='product'){const b=document.getElementById('scBest'),u=document.getElementById('scUse');const L=window.SC_CUR||{};
+    if(st.px&&!st.cached)prLastPut(key,st.px);
+    if(u)u.innerHTML=useHTML(st,L);if(b){b.innerHTML=cheapHTML(st,key,payload);bindPrice(b,st,kind,key,payload)}}
   if(kind==='prices'){const b=document.querySelector('[data-pbox]');if(b){b.innerHTML=priceHTML(st,kind,key,payload);bindPrice(b,st,kind,key,payload)}}
 }
-function bindPrice(b,st,kind,key,payload){const px=st.px;if(!px)return;const redo=()=>{b.innerHTML=priceHTML(st,kind,key,payload);bindPrice(b,st,kind,key,payload)};
+function bindPrice(b,st,kind,key,payload){const px=st.px;if(!px)return;const redo=()=>{b.innerHTML=kind==='product'?cheapHTML(st,key,payload):priceHTML(st,kind,key,payload);bindPrice(b,st,kind,key,payload)};
   const pa=b.querySelector('[data-pall]');if(pa)pa.onclick=()=>{PF.open=!PF.open;redo()};
   b.querySelectorAll('[data-pf]').forEach(i=>i.onchange=()=>{const k=i.dataset.pf;PF[k]=i.type==='checkbox'?i.checked:i.value;redo()});
   b.querySelectorAll('[data-prr]').forEach(x=>x.onclick=()=>{PR_RANGE=+x.dataset.prr;redo()});
@@ -1624,10 +1663,7 @@ function bindPrice(b,st,kind,key,payload){const px=st.px;if(!px)return;const red
   const ax=b.querySelector('[data-palx]');if(ax)ax.onclick=()=>{const A=prAlerts();delete A[key];localStorage.setItem('pralert',JSON.stringify(A));redo();watchRender()};
 }
 function resProduct(rec){const L=rec.lab||{};if(!L.product_name&&!(L.active_ingredients||[]).length)return;
-  window.SC_CUR=L;const out=document.getElementById('scOut'),card=out.querySelector('.card');
-  const top=document.createElement('div');top.id='scBest';const fl=document.createElement('div');fl.id='scFields';
-  if(card){const h=card.firstElementChild;h.after(top);top.after(fl)}else{out.prepend(fl);out.prepend(top)}
-  const el=document.createElement('div');el.id='scRes';out.appendChild(el);
+  window.SC_CUR=L;const el=document.getElementById('scRes');
   research(el,'product',{name:L.product_name||'',company:L.company||'',formulation:L.formulation||'',ais:(L.active_ingredients||[]).filter(a=>a&&a.name).map(a=>({name:a.name,concentration:a.concentration||''})),crops:Array.isArray(L.crops_on_label)?L.crops_on_label:[],dosage:L.dose_on_label||''},false)}
 function resDisease(rec,top,low){if(!top||!top.name_en||rec.res?.image_ok===false)return;
   const el=document.createElement('div');el.id='drRes';document.querySelector('#drOut .card').appendChild(el);
