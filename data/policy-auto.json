@@ -745,6 +745,68 @@
    "addedAt": "2026-11-21T08:50:11.659Z"
   },
   {
+   "id": "a-1f5ee4693449",
+   "date": "2026-11-19",
+   "crops": [
+    "maize"
+   ],
+   "type": "intl",
+   "dir": "neg",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPU3lXdWtCSC1NZEtIQWs5WklwcmlqYTFUWm50ZnQzTkMta0JHS25Qc0dhMDh2Q1hwdmJtTUp2N28zdF83VExIZWU0MVVuTHZPckxMUUhtVGM3MHpjUzlkQUwyY3RBM0ptcG9IeEtWd2x3M2lxV0MxbkhwZlZMc01Xc0NEODd0SV9KMGRrV2tLMzY?oc=5",
+   "source_name": "CMB News",
+   "headline": "Corn Market: CBOT Low, Slow Ukraine Harvest, Firm EU Prices — CMB News - CMB News",
+   "hi": {
+    "title": "मक्का बाजार: CBOT निम्न, यूक्रेन में धीमी कटाई, यूरोपीय संघ में मजबूत कीमतें",
+    "what": "यूक्रेन में मक्का की कटाई धीमी है, जिससे मक्का की कीमतें प्रभावित हो रही हैं।",
+    "why": "यूक्रेन में धीमी कटाई और यूरोपीय संघ में मजबूत कीमतें के कारण मक्का की कीमतें प्रभावित हो रही हैं।",
+    "effect": "मक्का की कीमतें गिर सकती हैं क्योंकि दुनिया में मक्का की अधिक उपलब्धता है।"
+   },
+   "mr": {
+    "title": "मक्का बाजार: सीबीओटी कम, युक्रेनमध्ये हळू पीक, युरोपीयन युनियनमध्ये मजबूत किंमती",
+    "what": "युक्रेनमध्ये मक्का पीक हळू आहे, ज्यामुळे मक्का किंमती प्रभावित होत आहे.",
+    "why": "युक्रेनमध्ये हळू पीक आणि युरोपीयन युनियनमध्ये मजबूत किंमती मुळे मक्का किंमती प्रभावित होत आहे.",
+    "effect": "मक्का किंमती कमी होऊ शकते कारण जगभरात मक्का ची अधिक उपलब्धता आहे."
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T12:15:00.689Z"
+  },
+  {
+   "id": "a-87e3e39aa3d3",
+   "date": "2026-11-19",
+   "crops": [
+    "maize"
+   ],
+   "type": "policy",
+   "dir": "pos",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPZmpBQzh0QkxGZm9SQkRzRnNLV01XVXU3dk16ZnVFZ2I0ekVVaGRrOFl6bjhMaG1rYl9lN1o4Z0lIYW91ZVBHOHhfOUxWN0xKbGtwQnBURG9HMU1lc1VSeGRuYUJ6QUJ4UHdHcEJHaXg1ZlNGaUE3ZUxQaGNZdmlrZU9mNVE4V0RqalhuWlFwdm9NMjF1aE5TcWhGazZoR21CaFlBVkU3SnFkaWpLRm1JR3JwRWQtYnZpdTJR?oc=5",
+   "source_name": "ChiniMandi",
+   "headline": "Poultry feed prices surge in Kerala amid concerns over maize use for E20 ethanol production - ChiniMandi",
+   "hi": {
+    "title": "केरल में पोल्ट्री फीड की कीमतें बढ़ीं",
+    "what": "केरल में पोल्ट्री फीड की कीमतें बढ़ गई हैं क्योंकि ई20 इथेनॉल उत्पादन के लिए मक्का के उपयोग को लेकर चिंताएं हैं",
+    "why": "ई20 इथेनॉल उत्पादन के लिए मक्का के उपयोग को लेकर चिंताएं",
+    "effect": "मक्का की कीमतें बढ़ने की संभावना है क्योंकि इसका उपयोग ई20 इथेनॉल उत्पादन में किया जा रहा है"
+   },
+   "mr": {
+    "title": "केरळमध्ये पोल्ट्री फीडच्या किमती वाढल्या",
+    "what": "केरळमध्ये पोल्ट्री फीडच्या किमती वाढल्या आहेत कारण ई२० इथेनॉल उत्पादनासाठी मक्याचा वापर करण्याबद्दल चिंता आहे",
+    "why": "ई२० इथेनॉल उत्पादनासाठी मक्याचा वापर करण्याबद्दल चिंता",
+    "effect": "मक्याच्या किमती वाढण्याची शक्यता आहे कारण त्याचा वापर ई२० इथेनॉल उत्पादनासाठी केला जात आहे"
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T12:14:40.249Z"
+  },
+  {
    "id": "a-b23fe94c254d",
    "date": "2026-11-19",
    "crops": [
@@ -1580,8 +1642,12 @@
   "a-07519a545c17",
   "a-b23fe94c254d",
   "a-9cc8b70b2450",
-  "a-3848de739d07"
+  "a-3848de739d07",
+  "a-87e3e39aa3d3",
+  "a-180add80589d",
+  "a-1f5ee4693449",
+  "a-268b357136cd"
  ],
- "updated": "2026-11-21T12:09:43.498Z",
+ "updated": "2026-11-21T12:15:15.456Z",
  "_about": "AI se apne aap bani cards. official=true sirf sarkari website wali khabar. Baaki ki sarkari pushti baaki."
 }
