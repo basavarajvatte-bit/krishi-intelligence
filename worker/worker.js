@@ -22,6 +22,45 @@ export default {
       } catch (e) { return send({ ok: false, msg: String(e) }); }
     }
 
+    // Website ke liye: photo padhna (dawa ka label / fasal ki photo). Free Cloudflare AI (Llama 3.2 Vision).
+    // Sawal (prompt) yahin Worker me tay hai, isliye ise koi aur kaam ke liye use nahi kar sakta. Roz ki seema bhi hai.
+    if (u.pathname === '/vision') {
+      const CORS = { ...H, 'Access-Control-Allow-Methods': 'POST, OPTIONS', 'Access-Control-Allow-Headers': 'Content-Type' };
+      const out = o => new Response(JSON.stringify(o), { headers: CORS });
+      if (req.method === 'OPTIONS') return new Response(null, { headers: CORS });
+      if (req.method !== 'POST') return out({ ok: false, msg: 'POST chahiye' });
+      if (!env.AI) return out({ ok: false, msg: 'AI binding nahi mili' });
+      const ip = req.headers.get('cf-connecting-ip') || 'x', day = new Date(Date.now() + 19800000).toISOString().slice(0, 10);
+      const ck = k => new Request('https://limit.krishi/' + encodeURIComponent(k));
+      const get = async k => { const r = await caches.default.match(ck(k)); return r ? +(await r.text()) || 0 : 0; };
+      const put = (k, v) => caches.default.put(ck(k), new Response(String(v), { headers: { 'Cache-Control': 'public, max-age=90000' } }));
+      const ni = await get('ip:' + ip + day), ng = await get('all:' + day);
+      if (ni >= 25 || ng >= 200) return out({ ok: false, limit: true, msg: 'Aaj ki seema poori ho gayi. Kal phir koshish karein.' });
+      let b; try { b = await req.json(); } catch (e) { return out({ ok: false, msg: 'JSON nahi' }); }
+      const img = String(b.image || '');
+      if (!/^data:image\/(jpeg|png|webp);base64,/.test(img) || img.length > 1600000) return out({ ok: false, msg: 'Photo theek nahi (JPEG, 1.5MB se kam)' });
+      const clean = s => String(s || '').replace(/[^\p{L}\p{N} ()\-,./]/gu, '').slice(0, 60);
+      let sys, user;
+      if (b.task === 'label') {
+        sys = 'You read labels of Indian agricultural products (pesticides, fertilizers, bio-products, seeds). Report ONLY what is clearly visible on the label. Never guess, never add knowledge from memory. Use null for anything not readable. Reply with ONE JSON object only.';
+        user = 'Read this product label. JSON keys: is_product (true/false), product_name, brand, company, category (one of insecticide, fungicide, herbicide, fertilizer, organic, bio, pgr, seed, other, unknown), active_ingredients (list of {name, concentration} exactly as printed), formulation (e.g. EC, SC, WP, WG, SL, GR, SP, as printed), crops_on_label (list), targets_on_label (list of pests/diseases/weeds printed), dose_on_label (verbatim text or null), phi_on_label (waiting period text or null), cir_reg_no, batch_no, mfg_date, expiry_date, warning_triangle_color (red, yellow, blue, green or null), npk (for fertilizer, as printed or null), other_text (list of up to 5 other important printed lines).';
+      } else if (b.task === 'crop') {
+        sys = 'You are a careful plant-health assistant for Indian farmers. Describe only what is visible. Give possible causes with honest confidence. Clearly separate nutrient deficiency, water/heat stress and infection; if unsure, say so with low confidence. NEVER name pesticides, chemicals or doses. Reply with ONE JSON object only.';
+        user = `Farmer says crop: ${clean(b.crop) || 'unknown'}, plant part: ${clean(b.part) || 'unknown'}. Look at the photo. JSON keys: image_ok (false if blurry, too far, or not a plant), crop_seen, symptoms (list of short visible symptoms in English), causes (up to 3, each {name_en, name_mr (Marathi), type: fungal|bacterial|viral|insect|mite|nutrient|water|heat|healthy|other, confidence: 0-100, why: short English reason}), severity_0_10 (0 healthy, 10 very severe), need_more (list of extra photos that would help, English), cultural_steps_mr (up to 4 simple non-chemical steps in Marathi).`;
+      } else return out({ ok: false, msg: 'task galat' });
+      const MODEL = '@cf/meta/llama-3.2-11b-vision-instruct';
+      const run = () => env.AI.run(MODEL, { messages: [{ role: 'system', content: sys }, { role: 'user', content: user }], image: img, max_tokens: 900, temperature: 0.1 });
+      let r;
+      try { r = await run(); }
+      catch (e) {
+        if (/agree/i.test(String(e))) { try { await env.AI.run(MODEL, { prompt: 'agree' }); r = await run(); } catch (e2) { return out({ ok: false, msg: String(e2).slice(0, 200) }); } }
+        else return out({ ok: false, msg: String(e).slice(0, 200) });
+      }
+      ctx.waitUntil(Promise.all([put('ip:' + ip + day, ni + 1), put('all:' + day, ng + 1)]));
+      const c = r && r.response;
+      return out({ ok: true, content: typeof c === 'string' ? c : JSON.stringify(c), left: 25 - ni - 1 });
+    }
+
     // GitHub robot ke liye: data.gov.in ke chune hue resource (filters ke saath). Chaabi se surakshit.
     if (u.pathname === '/res') {
       if (req.headers.get('x-key') !== env.DATA_GOV_KEY) return send({ ok: false, msg: 'mana hai' });

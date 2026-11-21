@@ -1,0 +1,12 @@
+name: Vision test (ek baar)
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ['Worker deploy']
+    types: [completed]
+jobs:
+  t:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install pillow -q && python scripts/vision-test.py
