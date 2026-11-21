@@ -1,6 +1,162 @@
 {
  "items": [
   {
+   "id": "a-0c6b9ab7e0d2",
+   "date": "2026-12-31",
+   "crops": [
+    "cotton"
+   ],
+   "type": "import",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPM1NkblZaQUVlT0tnVENzRjhXdDNjd3FQblNZV3p2OS1WQmxBVzVwR1NxYWVJSVBGZGwyNWFDT0tjbzJVQm5WeG9hRk9FaG1sa2U4a1VfOVQ3MGRNUWZDNU5TRm5kVUFrSDkxT2R4eHlXMW5LVDd6QTBhbEtxZFBTUHBVa2RiNWFoVWtheFBaOTQ1WGg1RjVPWC1YblJweGc?oc=5",
+   "source_name": "DD News",
+   "headline": "Centre Extends Customs Duty Exemption on Cotton Imports Till December 31 - DD News",
+   "hi": {
+    "title": "केंद्र ने कपास आयात पर कस्टम ड्यूटी छूट 31 दिसंबर तक बढ़ाई",
+    "what": "केंद्र सरकार ने कपास आयात पर कस्टम ड्यूटी छूट को 31 दिसंबर तक बढ़ा दिया है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "कपास के दाम गिरने की संभावना है क्योंकि आयात पर कस्टम ड्यूटी छूट से देश में कपास की आपूर्ति बढ़ेगी।"
+   },
+   "mr": {
+    "title": "केंद्र सरकारने कापूस आयातवरील सीमा शुल्क सूट ३१ डिसेंबरपर्यंत वाढवले",
+    "what": "केंद्र सरकारने कापूस आयातवरील सीमा शुल्क सूट ३१ डिसेंबरपर्यंत वाढवले आहे.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "कापूसच्या भावात घट होण्याची शक्यता आहे कारण आयातवरील सीमा शुल्क सूटमुळे देशात कापूसचा पुरवठा वाढेल."
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T08:50:22.686Z"
+  },
+  {
+   "id": "a-422914875316",
+   "date": "2026-11-20",
+   "crops": [
+    "wheat"
+   ],
+   "type": "policy",
+   "dir": "pos",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "high",
+   "qty": "26 years",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOa2o1UU9tRU9zcmFpc1RtTjRCS3k5X1d3YWFfWFh5SnMxNDRJS0RjOXVLU2VfdUp5cGhUb2RRQnJ6RjlYc0Q5U3FJZjdlYzZ5bGJzeW9IdFZVaTJyNjFqT3IwSGc4SlZSYmJkcmZMMFBsUTZWd0lnR25qUlA1TGZnc0U4OVl2ZVFhNUJGY1JfdU1xbWdZNlVNMmhPYkt3cmdONm1rYm5yWUxIR3ZwWmZ5a01wVGQ1VXpGYmVKMjZ3?oc=5",
+   "source_name": "Reuters",
+   "headline": "India's wheat area set for biggest drop in 26 years as farmers switch crops - Reuters",
+   "hi": {
+    "title": "भारत में गेहूं का क्षेत्रफल 26 साल में सबसे बड़ी गिरावट की ओर",
+    "what": "भारत में गेहूं का क्षेत्रफल 26 साल में सबसे बड़ी गिरावट की ओर है क्योंकि किसान अन्य फसलों की ओर रुख कर रहे हैं।",
+    "why": "किसान अन्य फसलों की ओर रुख कर रहे हैं",
+    "effect": "गेहूं का दाम बढ़ सकता है क्योंकि देश में गेहूं की कमी होगी"
+   },
+   "mr": {
+    "title": "भारतात गहू उत्पादनाचे क्षेत्र २६ वर्षांत सर्वात मोठे घट",
+    "what": "भारतात गहू उत्पादनाचे क्षेत्र २६ वर्षांत सर्वात मोठे घट होणार आहे कारण शेतकरी इतर पिकांकडे वळत आहेत",
+    "why": "शेतकरी इतर पिकांकडे वळत आहेत",
+    "effect": "गहू ची किंमत वाढू शकते कारण देशात गहू ची कमी होईल"
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T08:50:53.665Z"
+  },
+  {
+   "id": "a-86169eab5b11",
+   "date": "2026-11-20",
+   "crops": [
+    "rice"
+   ],
+   "type": "export",
+   "dir": "pos",
+   "when": "short",
+   "conf": "medium",
+   "priority": "high",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQWHJMYWdEc0gxNmI4NW54SDVtbm52T2pZODhCT2FsYmNudU5PQ3N4YkVnY3JxcjNsUG9pX2ZIOW13UXNOZlEtbWktOHlnN2c0bi0zb0JMZXR6bVZiU2VhU1dnLUgtQV9JSEZiT2JDQ1FXSlhzZkNDeVQ5MWt6Wlh5N1FvWWU?oc=5",
+   "source_name": "Wisevoter",
+   "headline": "Indian Rice Export Prices Hit 19-Month High - Wisevoter",
+   "hi": {
+    "title": "भारतीय चावल के निर्यात मूल्य 19 महीने के उच्चतम स्तर पर",
+    "what": "भारतीय चावल के निर्यात मूल्य 19 महीने के उच्चतम स्तर पर पहुंच गए हैं।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "चावल के किसानों को इसका फायदा हो सकता है क्योंकि निर्यात मूल्य बढ़ने से उनकी आय बढ़ सकती है।"
+   },
+   "mr": {
+    "title": "भारतीय तांदूळ निर्यात किंमती १९ महिन्यांच्या उच्चतम स्तरावर",
+    "what": "भारतीय तांदूळ निर्यात किंमती १९ महिन्यांच्या उच्चतम स्तरावर पोहोचल्या आहेत.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "तांदूळ उत्पादक शेतकऱ्यांना याचा फायदा होऊ शकतो कारण निर्यात किंमती वाढल्यामुळे त्यांची उत्पन्न वाढू शकते."
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T08:50:11.659Z"
+  },
+  {
+   "id": "a-8eba422aac8a",
+   "date": "2026-11-19",
+   "crops": [
+    "tur"
+   ],
+   "type": "policy",
+   "dir": "pos",
+   "when": "short",
+   "conf": "medium",
+   "priority": "high",
+   "qty": "10 lakh tonnes",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOVHRTUmI2VVlINUo1dENvOGRrNzhZakNWTENvcTNvbC1YNzMyc0Q1WVVyXzd0T0drR3dYYkdrMjFDX0ZvR2FiNnhpY0taSmt1MlJzdWJVTGNIRDRTVHRpYklUOHBPUEc5ZmFGWE5sbkZtS1IxN2hON2stYmIyMGFOYUpqOXVYUjZGZmFJbi1MMTM1aVdRUUZodDJaRGZPLTFab2lKeU1NclJVaFNtUTFhTUp6TWxMX05PaUxETkgzeUpvOFA2U2hwbWpTMGNtOXVsTGRxV1RKdjRzU0Rpd011bmc3SlF5VFVCeG5CWjdiNnpydFJ4QTNXenF2b9IBgAJBVV95cUxQNlJnYUxQTUJGRUxpOWVua25rUHJ3RDBaUEVFZzY2aF9ZVUtBV2tXZ2l2eTR5cldVLUUxSGRnUE4zcWt4MVFoV0VEdEQ4X3lvRTZySVlGQjJaeVB4UVFQb2dYODVWcWJpS1RaWjBheTdpSW1yNUVQb211RzFuMThzNGI5TkotRW4xOUtld1BkN1RRVjhFUUllaFdkRXU5M0oxZTE5TVdaU0VSSk5SbS1SOWF1MTU5UG9sN043c2o1RkhtSlNHZFBrNTdyY1FLQmRwanktR05TVFVYNlpZbDVVM0t2UkxGcnZiTzJsNmlySmRhcHl6Yk5PZ0VjbVQwYlN5?oc=5",
+   "source_name": "The Economic Times",
+   "headline": "High pulse rate: Nearly 10 lakh tonnes of tur in buffer stocks, yet prices keep rising. Why? - The Economic Times",
+   "hi": {
+    "title": "तूर की कीमतें बढ़ रही हैं",
+    "what": "देश में तूर का 10 लाख टन बफर स्टॉक होने के बावजूद कीमतें बढ़ रही हैं",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "तूर की कीमतें बढ़ रही हैं क्योंकि बफर स्टॉक के बावजूद मांग अधिक हो सकती है"
+   },
+   "mr": {
+    "title": "तूरच्या किमती वाढत आहेत",
+    "what": "देशात तूरचा 10 लाख टन बफर स्टॉक असला तरी किमती वाढत आहेत",
+    "why": "बातमीत कारण नाही सांगितले",
+    "effect": "तूरच्या किमती वाढत आहेत कारण बफर स्टॉक असूनही मागणी जास्त असू शकते"
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T08:50:43.580Z"
+  },
+  {
+   "id": "a-566601603971",
+   "date": "2026-11-19",
+   "crops": [
+    "soybean",
+    "oilseed"
+   ],
+   "type": "intl",
+   "dir": "pos",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQMmVubS1xMEkyMmlHWHFfMC1laHNHaFFaMUw0aUZ1cW9weFVHOWNBa1BVOFNDZEstNUUyNEZlTnBSSE9DYWctSWp5QmNFUXlpbzhRbU1mdDdaVFhvekdmdjVfcS1FYS1wU0pRbnpmVFR1UHRvdXRDTFNiOE1hQ2tBMTFiS1JManRpRnpjQi1uVlJNaDd6VHNXcVVjUy1SSFRjcjMzWnl2WEh0WmJYWXhjRkxjREU?oc=5",
+   "source_name": "УкрАгроКонсалт",
+   "headline": "Soybean oil strengthens its position in India as sunflower oil imports decline - УкрАгроКонсалт",
+   "hi": {
+    "title": "भारत में सोयाबीन तेल की स्थिति मजबूत होती है क्योंकि सूरजमुखी तेल के आयात में कमी आती है",
+    "what": "सूरजमुखी तेल के आयात में कमी के कारण सोयाबीन तेल की स्थिति भारत में मजबूत हो रही है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "सोयाबीन तेल की कीमतें बढ़ सकती हैं क्योंकि इसकी मांग बढ़ रही है और सूरजमुखी तेल के आयात में कमी आ रही है।"
+   },
+   "mr": {
+    "title": "भारतात सोयाबीन तेलाची स्थिती बळकट होत आहे कारण सूर्यफूल तेल आयात कमी होत आहे",
+    "what": "सूर्यफूल तेल आयात कमी होत असल्याने सोयाबीन तेलाची स्थिती भारतात बळकट होत आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "सोयाबीन तेलाच्या किमती वाढू शकतात कारण त्याची मागणी वाढत आहे आणि सूर्यफूल तेल आयात कमी होत आहे."
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T08:50:00.705Z"
+  },
+  {
    "id": "a-78c16f64fb17",
    "date": "2026-11-19",
    "crops": [
@@ -154,6 +310,37 @@
    },
    "auto": true,
    "addedAt": "2026-11-21T08:47:49.575Z"
+  },
+  {
+   "id": "a-bdbe1efca5f1",
+   "date": "2026-11-01",
+   "crops": [
+    "other"
+   ],
+   "type": "import",
+   "dir": "neg",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "59%",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNY1NPSXg1d2ZOOS1oYjBvcTNMa1o5QXFlQUVaMVZyblZFNzJfV2I1TzU4UzhCZmY0ZHd1RU0xZE9ZT0FaT3VRQ1ExN3ZNVVBFa0lob0FMblUwbEZ4RUhucHV3U2R5MTFia1JEekVRbE5LREJHemJENWRRNEx3Q2N1a2d4UldYZWF1bU5UMVAwY3pzNS1FWHNlQng3cU1wb3FDVUlXbVNDaUhpX2RvNzRjMkRVQUIwUmJfZzgyc3dXbTBHa2d2eTFobzdBN1JGQdIB0wFBVV95cUxQd1ZBMS1ESFVJSGpoRXR0NUJfTFVfRmRyc2NWTV9vWThDeGdKa3FaLU1sMVZ2WE5FZlhRNi1aeENPNzB0akRoeUMyYjB4aTk1M0VCSEV6eElRUVU3a2pfMFFjczZvRmE5eU0xYUZ5eTNIZlM4MTVFUFF0dFVFVXBpNlg3WWFEaTItcHFCa2tLZkZyOE9ha0N5RmgwcGhpUlpNSWZZZVVXQnZtdHNNUjl6S3h5Z3QxV3dMRDc2bnVQOHRWbXprV2RuektDbGh1d01JN0t3?oc=5",
+   "source_name": "The Economic Times",
+   "headline": "India's pulses imports surge 59% in first half of FY27 - The Economic Times",
+   "hi": {
+    "title": "भारत में दालों का आयात 59% बढ़ा",
+    "what": "भारत में दालों का आयात पहले छह महीने में 59% बढ़ गया है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "दालों के आयात में वृद्धि से दालों के दाम गिरने की संभावना है क्योंकि बाजार में दालों की अधिकता होगी।"
+   },
+   "mr": {
+    "title": "भारतातील डाळींचा आयात ५९% वाढला",
+    "what": "भारतातील डाळींचा आयात पहिल्या सहा महिन्यात ५९% वाढला आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "डाळींच्या आयातातील वाढीमुळे डाळींच्या भावात घट होण्याची शक्यता आहे कारण बाजारात डाळींची अधिकता होईल।"
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T08:50:32.340Z"
   }
  ],
  "seen": [
@@ -164,8 +351,16 @@
   "a-b89cf5811847",
   "a-78c16f64fb17",
   "a-a80ce5d9f1b4",
-  "a-2c14bc8ca6ea"
+  "a-2c14bc8ca6ea",
+  "a-fdaf4c578af3",
+  "a-566601603971",
+  "a-86169eab5b11",
+  "a-0c6b9ab7e0d2",
+  "a-bdbe1efca5f1",
+  "a-8eba422aac8a",
+  "a-422914875316",
+  "a-c9b354a9b54c"
  ],
- "updated": "2026-11-21T08:48:52.658Z",
+ "updated": "2026-11-21T08:51:11.747Z",
  "_about": "AI se apne aap bani cards. official=true sirf sarkari website wali khabar. Baaki ki sarkari pushti baaki."
 }
