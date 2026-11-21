@@ -1,8 +1,204 @@
 {
- "items": [],
- "seen": [
-  "a-26cc03d5c896"
+ "items": [
+  {
+   "id": "a-78c16f64fb17",
+   "date": "2026-11-19",
+   "crops": [
+    "oilseed",
+    "sunflower"
+   ],
+   "type": "import",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQWl9idU96VC1JY19OdmxsOGVKNjlsLXNBbVVQNHBRNzJJcExRNkhOcmVTSWdVTXV5LUFCaEI0OW9nU0c4V3Mwbnk3RHZzTlQ3X0VIVExheWRGV3hPQzZqeGFDSWRBa0R6Znp2MTJoRV84RU10SVBkVnZrVmljYmx1NkdSYU5aUEF1SzRSMm13enJxZWd3bklEZnFzN21NbVpiaWk2NEdZVXM?oc=5",
+   "source_name": "CMB News",
+   "headline": "India sunflower oil imports surge as prices stay premium — CMB News - CMB News",
+   "hi": {
+    "title": "भारत में सूरजमुखी तेल का आयात बढ़ा",
+    "what": "भारत में सूरजमुखी तेल का आयात बढ़ गया है क्योंकि इसकी कीमतें अभी भी प्रीमियम पर हैं।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "सूरजमुखी तेल के आयात में वृद्धि से सूरजमुखी किसानों को कम भाव मिल सकता है क्योंकि देश में तेल की अधिकता होगी"
+   },
+   "mr": {
+    "title": "भारतात सूर्यफूल तेल आयात वाढला",
+    "what": "भारतात सूर्यफूल तेल आयात वाढला आहे कारण की त्याच्या किमती अजूनही प्रीमियम वर आहेत.",
+    "why": "बातमीत कारण नाही सांगितले",
+    "effect": "सूर्यफूल तेल आयातात वाढ होण्यामुळे सूर्यफूल शेतकऱ्यांना कमी भाव मिळू शकतो कारण देशात तेलाची अधिकता होईल"
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T08:48:28.971Z"
+  },
+  {
+   "id": "a-f926b1f903d2",
+   "date": "2026-11-19",
+   "crops": [
+    "onion"
+   ],
+   "type": "policy",
+   "dir": "neg",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "288.96 Lakh Tonnes",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOZFFnRVc2Q1JFVXdOMlB1bk1sc0tfdl9NNXNab1drNThhYTBlTHJlVDZ4a3RZS3BMSFZCcExpR01pTUpSUlV6dERxQWZGX0JyVDNVRnRLdVpvUGZfckdjYkNIQXM3NWlIbUtjR2lCS2dJZkV6MXcxVmtwU0FUMDBmalZWWVFpU3BoZmFteVZwdzM1R0xGUTdFSHBDdU9tX1FoYzJnaklUbEM4RmxRV3fSAbMBQVVfeXFMTnhhalpTV1VvV2ZpOFY0NVg5SXRVRHpwQmxMS2R4aEZuNjZXRkgzeHFQendzbHdFWE5jSFBKMVpGOTZsOWxqektmcjFvOFBOcmN1QlpzWXFVQWdMd1BpVEQ3ZUVqQ2FkZmtfd1RNR0d1bjN0OWc3ZlIwS0ptX0JSeVctQ09HQ3dadTFkd0k5M0Z3VlhjOFk0ZXNZWG5SenVURzkxS092ajIxRDRIbEt0cjhaODA?oc=5",
+   "source_name": "Free Press Journal",
+   "headline": "Nashik: India’s Onion Production Estimated At 288.96 Lakh Tonnes In 2025-26 - Free Press Journal",
+   "hi": {
+    "title": "नासिक: 2025-26 में भारत का प्याज उत्पादन 288.96 लाख टन अनुमानित",
+    "what": "भारत का प्याज उत्पादन 2025-26 में 288.96 लाख टन अनुमानित है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "प्याज का उत्पादन बढ़ने से इसकी कीमतें गिर सकती हैं क्योंकि बाजार में प्याज की अधिकता होगी।"
+   },
+   "mr": {
+    "title": "नाशिक: २०२५-२६ मध्ये भारताचे कांद्याचे उत्पादन २८८.९६ लाख मेट्रिक टन असल्याचा अंदाज",
+    "what": "२०२५-२६ मध्ये भारताचे कांद्याचे उत्पादन २८८.९६ लाख मेट्रिक टन असल्याचा अंदाज आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "कांद्याचे उत्पादन वाढल्याने त्याच्या किमती कमी होऊ शकतात कारण बाजारात कांद्याची अधिकता असेल।"
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T08:47:59.382Z"
+  },
+  {
+   "id": "a-81829a7f9b37",
+   "date": "2026-11-19",
+   "crops": [
+    "onion"
+   ],
+   "type": "policy",
+   "dir": "pos",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "6%",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbmxXYzBpOXNGbmFyN09LZDdCWFl1ODFVRXc0TFpjZFFFSV93X3lvTEF4YXBya3N5cmJLRjBlVnQ2MklxMUZabDMxekM3X2Q1N0JoeEhhd1hjbVJxQ0t0QjhFWHBmMW53ZkUyaFljWXFtUmlKY2dGazBfYVhKanNTYUw1NmhEYzIxZXpnZ21kOTNvREtsQkE3cG5jUThGdVFPVXFkNy1CT0Y3Nm95UjdrMg?oc=5",
+   "source_name": "УкрАгроКонсалт",
+   "headline": "India’s onion production to decline by 6% but export potential remains strong - УкрАгроКонсалт",
+   "hi": {
+    "title": "भारत में प्याज का उत्पादन 6% घटेगा, लेकिन निर्यात की संभावना मजबूत है",
+    "what": "भारत में प्याज का उत्पादन 6% घटेगा। निर्यात की संभावना मजबूत है",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "प्याज का भाव बढ़ सकता है क्योंकि देश में प्याज की कमी होगी"
+   },
+   "mr": {
+    "title": "भारतात प्याज उत्पादन ६% घटेल, पण निर्यातीची शक्यता मजबूत आहे",
+    "what": "भारतात प्याज उत्पादन ६% घटेल. निर्यातीची शक्यता मजबूत आहे",
+    "why": "बातमीत कारण नाही",
+    "effect": "प्याजची किंमत वाढू शकते कारण देशात प्याजची कमी होईल"
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T08:47:39.301Z"
+  },
+  {
+   "id": "a-2c14bc8ca6ea",
+   "date": "2026-11-18",
+   "crops": [
+    "soybean"
+   ],
+   "type": "export",
+   "dir": "neg",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "28.5%",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSzlOdFl0Y1NFNFhZVTliYjFEbGRtMHNuaFpRaFJiN0x6THJkcF85OERoQUpvQmtnYzJHS2RzX0NkaHVTZ2xhTk5iMTRzdy1XV3ZHclhRWU9Pd2VYeGlHeVZSRXdkemlDdDNmLUNEZmJjZXd3RXNwVTRYUks2aXJvbXRqOXU3dXpwUkh3MXlpVUdjQXRJbVdkQnYxbFBtVW5pcmtLemZQM2RTTTg?oc=5",
+   "source_name": "Milling Middle East & Africa",
+   "headline": "India’s oilmeal exports fall 28.5% as soybean meal loses global price competitiveness - Milling Middle East & Africa",
+   "hi": {
+    "title": "भारत के तेलबीज निर्यात में 28.5% की गिरावट",
+    "what": "भारत के तेलबीज निर्यात में 28.5% की गिरावट हुई है। यह गिरावट इसलिए हुई है क्योंकि सोयाबीन का तेल विश्व स्तर पर अपनी कीमत प्रतिस्पर्धा खो रहा है।",
+    "why": "सोयाबीन का तेल विश्व स्तर पर अपनी कीमत प्रतिस्पर्धा खो रहा है।",
+    "effect": "इसलिए सोयाबीन किसानों को कम भाव मिलेगा क्योंकि निर्यात में गिरावट से देश में तेलबीज की मात्रा बढ़ जाएगी।"
+   },
+   "mr": {
+    "title": "भारताच्या तेलबियाणे निर्यातीत २८.५% ची घट",
+    "what": "भारताच्या तेलबियाणे निर्यातीत २८.५% ची घट झाली आहे. ही घट झाली आहे कारण सोयाबीन तेल जागतिक स्तरावर किंमत प्रतिस्पर्धा गमावत आहे.",
+    "why": "सोयाबीन तेल जागतिक स्तरावर किंमत प्रतिस्पर्धा गमावत आहे.",
+    "effect": "म्हणून सोयाबीन शेतकऱ्यांना कमी भाव मिळेल कारण निर्यातीत घट झाल्याने देशात तेलबियाणे ची मात्रा वाढेल."
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T08:48:48.648Z"
+  },
+  {
+   "id": "a-7a9c7429bf5d",
+   "date": "2026-11-18",
+   "crops": [
+    "onion"
+   ],
+   "type": "policy",
+   "dir": "pos",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQNy16V25xT1B6YUE3eS01S09JNlJnTk9fWE1fZ1lqU0QtUzRodzF5eXBjc21xZk5ZeUpIMThSallVQi0xcFBCZlNQZUo4Ym84Z3hoSnBhTmlOZFBkLVBXN25iOFlCUE9GRmJPM2hrbkVRWVZwNVU2ZEIwMUwwbEdxMUVTMWZ4ZVV4UlkydUl3RkNzNUthcGtxYzB1ZmJwcHJ6ZDhnaDZFRjhnRHoxalJoVGtfV1NJREE5MUFkaEY2M2hDUW9LNTVJYmt6S0JJTGhia0xnSUVZamlqTXdnNmluWjBBNEk1U2J4Z09rWFpYMWlBZE9qTEl0U2ZOVjBqQ1VheVHSAYICQVVfeXFMUDctelducU9QemFBN3ktNUtPSTZSZ05PX1hNX2dZalNELVM0aHcxeXlwY3NtcWZOWXlKSDE4UmpZVUItMXBQQmZTUGVKOGJvOGd4aEpwYU5pTmRQZC1QVzduYjhZQlBPRkZiTzNoa25FUVlWcDVVNmRCMDFMMGxHcTFFUzFmeGVVeFJZMnVJd0ZDczVLYXBrcWMwdWZicHByemQ4Z2g2RUY4Z0R6MWpSaFRrX1dTSURBOTFBZGhGNjNoQ1FvSzU1SWJrektCSUxoYmtMZ0lFWWppak13ZzZpblowQTRJNVNieGdPa1haWDFpQWRPakxJdFNmTlYwakNVYXlR?oc=5",
+   "source_name": "The Economic Times",
+   "headline": "Onion farmers seek measures to ensure Rs 3,000 per quintal amid surplus production outlook - The Economic Times",
+   "hi": {
+    "title": "प्याज किसानों को 3000 रुपये प्रति क्विंटल की गारंटी देने के लिए उपायों की मांग",
+    "what": "प्याज किसानों ने अधिशेष उत्पादन के मद्देनज़र 3000 रुपये प्रति क्विंटल की गारंटी देने के लिए उपायों की मांग की है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "प्याज किसानों को अच्छी कीमत मिलने की संभावना है क्योंकि वे सरकार से समर्थन मूल्य की गारंटी की मांग कर रहे हैं।"
+   },
+   "mr": {
+    "title": "कांद्या शेतकऱ्यांनी ३००० रुपये प्रति क्विंटलची हमी देण्यासाठी उपाय योजण्याची मागणी केली आहे",
+    "what": "कांद्या शेतकऱ्यांनी अधिशेष उत्पादनाच्या पार्श्वभूमीवर ३००० रुपये प्रति क्विंटलची हमी देण्यासाठी उपाय योजण्याची मागणी केली आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "कांद्या शेतकऱ्यांना चांगली किंमत मिळण्याची शक्यता आहे कारण ते सरकारकडून आधार मूल्याची हमी मागत आहेत."
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T08:48:10.030Z"
+  },
+  {
+   "id": "a-fad8fd2ca976",
+   "date": "2026-11-18",
+   "crops": [
+    "onion"
+   ],
+   "type": "export",
+   "dir": "neg",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "quadrupled",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPQ1M3R1B0NXl6QlY1cFVKb05FUW1EUDRsM09HS0hTQnNVMFpIOVR2NTVodXN3TkZjOUY4cUdZbWRMT0dQWEJwRUlDaGVJaHZFNXFYQ1ZJamU4QjhxTnpUb0p4eUhuY2VoTExmbUFOcEhQMWU2ek4wR1N3ckdhMWxGb1o1bmhOUEtsM1BJVGhWVld6MWR6OU55NEVzU29DMUh3VE9YdUlmcTZLNnplaEFwdtIBqgFBVV95cUxOVnBIZUVoVlpRRjlYVTFweFhHUGZHLWxfbU80eWdJbUMtMDF6RTFVVmRkaFZxZFp4a2daelZVR0l6RWZjX1JvWWRyTUhWTzhaYWRGQjV6VXdsOXkySVctWEh6RW9Pd091UEdnUnYybmdFelNsOWdIOEFEMTJQaGt0REY2N2hzM1M5RHJZMnhMR1NOOXB6b0dsTy10SThEWG1vbGdsbDkwRkhKZw?oc=5",
+   "source_name": "The New Voice of Ukraine",
+   "headline": "Ukraine quadruples onion exports to EU, overtaking Turkey and India - The New Voice of Ukraine",
+   "hi": {
+    "title": "यूक्रेन ने यूरोपीय संघ में प्याज का निर्यात चार गुना बढ़ाया",
+    "what": "यूक्रेन ने यूरोपीय संघ में प्याज का निर्यात चार गुना बढ़ा दिया है, जिससे वह तुर्की और भारत से आगे निकल गया है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "भारतीय प्याज किसानों के लिए प्याज का भाव गिरने की संभावना है क्योंकि यूरोपीय संघ में प्याज की आपूर्ति बढ़ गई है।"
+   },
+   "mr": {
+    "title": "युक्रेनने युरोपीय संघात प्याज निर्यात चौपट केले",
+    "what": "युक्रेनने युरोपीय संघात प्याज निर्यात चौपट केले आहे, ज्यामुळे ते तुर्कस्तान आणि भारतापेक्षा पुढे गेले आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "युरोपीय संघात प्याजाचा पुरवठा वाढल्यामुळे भारतीय प्याज शेतकऱ्यांसाठी प्याजाची किंमत कमी होण्याची शक्यता आहे."
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T08:47:49.575Z"
+  }
  ],
- "updated": "2026-11-21T08:43:58.359Z",
+ "seen": [
+  "a-26cc03d5c896",
+  "a-81829a7f9b37",
+  "a-fad8fd2ca976",
+  "a-f926b1f903d2",
+  "a-7a9c7429bf5d",
+  "a-b89cf5811847",
+  "a-78c16f64fb17",
+  "a-a80ce5d9f1b4",
+  "a-2c14bc8ca6ea"
+ ],
+ "updated": "2026-11-21T08:48:52.658Z",
  "_about": "AI se apne aap bani cards. official=true sirf sarkari website wali khabar. Baaki ki sarkari pushti baaki."
 }
