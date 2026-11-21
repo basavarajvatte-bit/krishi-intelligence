@@ -4,6 +4,9 @@ on:
   schedule:
     - cron: '23 */6 * * *'   # har 6 ghante
   workflow_dispatch:
+  workflow_run:
+    workflows: ['Worker deploy']
+    types: [completed]
   push:
     branches: [main]
     paths: ['scripts/policy-watch.mjs', '.github/workflows/policy-watch.yml']
@@ -27,6 +30,7 @@ jobs:
       - name: Khabar padho aur samjhao
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DATA_GOV_KEY: ${{ secrets.DATA_GOV_KEY }}
         run: node scripts/policy-watch.mjs
       - name: Save karo
         run: |

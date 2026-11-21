@@ -22,6 +22,18 @@ export default {
       } catch (e) { return send({ ok: false, msg: String(e) }); }
     }
 
+    // GitHub robot ke liye: free Cloudflare AI se khabar samjhao. Chaabi (DATA_GOV_KEY) se hi chalta hai, taaki koi aur free quota na khaaye.
+    if (u.pathname === '/ai') {
+      if (req.method !== 'POST' || req.headers.get('x-key') !== env.DATA_GOV_KEY) return send({ ok: false, msg: 'mana hai' });
+      if (!env.AI) return send({ ok: false, msg: 'AI binding nahi mili' });
+      try {
+        const b = await req.json();
+        const out = await env.AI.run(b.model || '@cf/meta/llama-3.3-70b-instruct-fp8-fast', { messages: b.messages, max_tokens: 1500, temperature: 0.2 });
+        const r = out && out.response;
+        return send({ ok: true, content: typeof r === 'string' ? r : JSON.stringify(r) });
+      } catch (e) { return send({ ok: false, msg: String(e) }); }
+    }
+
     const crop = u.searchParams.get('crop') || 'Onion';
     // 30 minute cache: sab farmers ke liye ek hi baar sarkari site se puchho
     const cache = caches.default;

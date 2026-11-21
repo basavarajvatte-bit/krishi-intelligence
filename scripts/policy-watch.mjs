@@ -68,31 +68,32 @@ Sirf JSON do, is roop me:
 "mr":{"title":"","what":"","why":"","effect":""}}
 hi = Hindi (Devanagari), mr = Marathi (Devanagari). dir: pos = bhav badhne ki sambhavna, neg = girne ki, neu = khaas asar nahi.`;
 
-// Do AI address: pehla naya, doosra purana (backup). Dono GitHub ke free models.
-const ENDPOINTS = [
-  { url: 'https://models.github.ai/inference/chat/completions', model: MODEL },
-  { url: 'https://models.inference.ai.azure.com/chat/completions', model: MODEL.replace(/^openai\//, '') }
+// Do AI raaste: (1) GitHub Models — agar account par chalu ho, (2) apna Cloudflare Worker + free Workers AI.
+const WORKER = (process.env.WORKER_URL || 'https://krishi-mandi.basavarajvatte.workers.dev').replace(/\/$/, '');
+const WKEY = process.env.DATA_GOV_KEY;
+const jsonFrom = c => { c = String(c).trim().replace(/^```(json)?/i, '').replace(/```$/, ''); const i = c.indexOf('{'), k = c.lastIndexOf('}'); return JSON.parse(i >= 0 ? c.slice(i, k + 1) : c); };
+const ROUTES = [
+  { name: 'github-models', ok: () => !!TOKEN, call: async msgs => {
+    const r = await fetch('https://models.github.ai/inference/chat/completions', { method: 'POST', signal: AbortSignal.timeout(60000),
+      headers: { 'Authorization': `Bearer ${TOKEN}`, 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({ model: MODEL, temperature: 0.2, response_format: { type: 'json_object' }, messages: msgs }) });
+    const text = await r.text(); let j; try { j = JSON.parse(text); } catch { throw new Error(`HTTP ${r.status} body: ${text.slice(0, 80)}`); }
+    if (!j.choices) throw new Error(`HTTP ${r.status} ${text.slice(0, 160)}`);
+    return j.choices[0].message.content; } },
+  { name: 'cloudflare-ai', ok: () => !!WKEY, call: async msgs => {
+    const r = await fetch(WORKER + '/ai', { method: 'POST', signal: AbortSignal.timeout(90000),
+      headers: { 'Content-Type': 'application/json', 'x-key': WKEY }, body: JSON.stringify({ messages: msgs }) });
+    const j = await r.json(); if (!j.ok) throw new Error(j.msg); return j.content; } }
 ];
-let EP = 0;
+let RT = 0;
 async function analyse(item) {
-  let last;
-  for (let k = EP; k < ENDPOINTS.length; k++) {
-    const ep = ENDPOINTS[k];
-    try {
-      const r = await fetch(ep.url, {
-        method: 'POST', signal: AbortSignal.timeout(60000),
-        headers: { 'Authorization': `Bearer ${TOKEN}`, 'Content-Type': 'application/json', 'Accept': 'application/json' },
-        body: JSON.stringify({ model: ep.model, temperature: 0.2, response_format: { type: 'json_object' },
-          messages: [{ role: 'system', content: SYSTEM },
-            { role: 'user', content: `Source: ${item.srcName} (${item.srcHost})\nDate: ${item.date}\nTitle: ${item.title}\nText: ${item.summary}` }] })
-      });
-      const text = await r.text();
-      let j; try { j = JSON.parse(text); } catch { throw new Error(`HTTP ${r.status} ${r.headers.get('content-type')} body: ${text.slice(0, 160)}`); }
-      if (!r.ok || !j.choices) throw new Error(`HTTP ${r.status} ${JSON.stringify(j).slice(0, 200)}`);
-      EP = k;
-      let c = j.choices[0].message.content.trim().replace(/^```(json)?/i, '').replace(/```$/, '');
-      return JSON.parse(c);
-    } catch (e) { last = e; console.error('  endpoint', k, 'fail:', e.message); }
+  const msgs = [{ role: 'system', content: SYSTEM },
+    { role: 'user', content: `Source: ${item.srcName} (${item.srcHost})\nDate: ${item.date}\nTitle: ${item.title}\nText: ${item.summary}` }];
+  let last = new Error('koi AI raasta nahi');
+  for (let k = RT; k < ROUTES.length; k++) {
+    if (!ROUTES[k].ok()) continue;
+    try { const a = jsonFrom(await ROUTES[k].call(msgs)); if (k !== RT) console.log('  AI raasta:', ROUTES[k].name); RT = k; return a; }
+    catch (e) { last = e; console.error('  ', ROUTES[k].name, 'fail:', e.message.slice(0, 160)); }
   }
   throw last;
 }
@@ -141,7 +142,7 @@ for (const it of raw) {
 fresh.sort((a, b) => OFFICIAL.some(d => b.srcHost.endsWith(d)) - OFFICIAL.some(d => a.srcHost.endsWith(d)));
 console.log('kul', raw.length, '| kaam ki nayi', fresh.length);
 
-if (!TOKEN && !DRY) { console.error('GITHUB_TOKEN nahi mila — AI ke bina kuch publish nahi karenge.'); process.exit(0); }
+if (!TOKEN && !WKEY && !DRY) { console.error('Koi AI raasta nahi — AI ke bina kuch publish nahi karenge.'); process.exit(0); }
 let added = 0;
 for (const it of fresh.slice(0, MAX_NEW)) {
   const id = 'a-' + sha(norm(it.title));
