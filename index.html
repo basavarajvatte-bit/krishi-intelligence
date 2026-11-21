@@ -15,9 +15,8 @@ header p{margin:2px 0 0;opacity:.9;font-size:15px}
 .langs{margin-top:10px;display:flex;gap:8px}
 .langs button{flex:1;padding:8px;border-radius:10px;border:2px solid #fff;background:transparent;color:#fff;font-size:16px;font-weight:600}
 .langs button.on{background:#fff;color:var(--g)}
-nav{display:flex;gap:8px;padding:10px 12px;position:sticky;top:0;background:var(--bg);z-index:5;border-bottom:1px solid var(--bd);overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
-nav::-webkit-scrollbar{display:none}
-nav button{flex:0 0 auto;padding:12px 14px;font-size:17px;font-weight:700;border-radius:14px;border:2px solid var(--g);background:#fff;color:var(--g);white-space:nowrap}
+nav{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:10px 12px;position:sticky;top:0;background:var(--bg);z-index:5;border-bottom:1px solid var(--bd)}
+nav button{padding:10px 4px;font-size:15px;font-weight:700;line-height:1.25;border-radius:12px;border:2px solid var(--g);background:#fff;color:var(--g);min-height:52px}
 nav button.on{background:var(--g);color:#fff}
 main{max-width:980px;margin:0 auto;padding:12px}
 section{display:none}section.on{display:block}
@@ -262,7 +261,7 @@ function applyLang(){
   renderLive();renderCompare();renderHistory();renderWeather();renderAlerts();renderPolicy();renderKB();
 }
 $$('.langs button').forEach(b=>b.onclick=()=>{L=b.dataset.l;try{localStorage.setItem('lang',L)}catch(e){};applyLang()});
-function show(s){$$('section').forEach(x=>x.classList.toggle('on',x.id===s));$$('nav button').forEach(b=>b.classList.toggle('on',b.dataset.s===s));try{const nb=document.querySelector(`nav button[data-s="${s}"]`);nb&&nb.scrollIntoView({inline:'center',block:'nearest'})}catch(e){};try{localStorage.setItem('tab',s)}catch(e){}}
+function show(s){$$('section').forEach(x=>x.classList.toggle('on',x.id===s));$$('nav button').forEach(b=>b.classList.toggle('on',b.dataset.s===s));try{localStorage.setItem('tab',s)}catch(e){}}
 $$('nav button').forEach(b=>b.onclick=()=>show(b.dataset.s));
 
 /* ---------- LIVE ---------- */
