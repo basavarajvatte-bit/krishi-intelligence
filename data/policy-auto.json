@@ -32,6 +32,161 @@
    "addedAt": "2026-11-21T08:50:22.686Z"
   },
   {
+   "id": "a-2db47c00a093",
+   "date": "2026-11-20",
+   "crops": [
+    "sugar"
+   ],
+   "type": "import",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "high",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQaFptT3ZhQ3VVb20zbUcxTks0LUMtTTRtRHYzclc4N1FEdWdUR1BvVXhja0VBdV9tUkJNYWdWTy1tS0R5blRGNm9LRWlUUXVMMGgtOHRoUnBYWUotYWxMeHc2VHpOcWxNSWVqTDRtQVotTmlnTXU4ZFpIaUxxc1B5b3hkeG8wc05pRjJiWno2RUNFekNYS2g5ZzNuOA?oc=5",
+   "source_name": "Food Business Middle East & Africa",
+   "headline": "India opens fresh applications for duty-free raw sugar imports - Food Business Middle East & Africa",
+   "hi": {
+    "title": "भारत ने शुल्क-मुक्त कच्ची चीनी आयात के लिए ताजा आवेदन खोले",
+    "what": "भारत ने शुल्क-मुक्त कच्ची चीनी आयात के लिए ताजा आवेदन खोले हैं। इससे देश में चीनी की आपूर्ति बढ़ सकती है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "इससे चीनी का भाव गिर सकता है क्योंकि देश में चीनी की आपूर्ति बढ़ जाएगी।"
+   },
+   "mr": {
+    "title": "भारताने शुल्कविहीन कच्ची साखर आयातासाठी नवीन अर्ज खोले",
+    "what": "भारताने शुल्कविहीन कच्ची साखर आयातासाठी नवीन अर्ज खोले आहेत. यामुळे देशात साखरेचा पुरवठा वाढू शकतो.",
+    "why": "बातमीत कारण नाही",
+    "effect": "यामुळे साखरेची किंमत कमी होऊ शकते कारण देशात साखरेचा पुरवठा वाढेल."
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T08:53:35.240Z"
+  },
+  {
+   "id": "a-58dafc8138e8",
+   "date": "2026-11-20",
+   "crops": [
+    "sugar"
+   ],
+   "type": "import",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "high",
+   "qty": "2.15 lakh tonnes",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNNU1wRm5zUFFQbzl4dVVfdG5ScmhUc2pKLUoxQTRCNWxtQURRNmswaFU1dmVvZnNKUEYwdjNzQXhTTGxES3M0aTNycy1TajhrWVMtbndUVGloUzJQb2NTV3hoNnNJLVZ1RWl1WjRpc3NIT0VmTGRxVXZFS2JJanBPb1RIeHoybHdOY0dqUW1LR3hfMTA0VnVqWnRmS3ZqanRDZ2NFVXB0MkRTeU4yYzZ4ZElIVWk1bW9feEppbWdVcWdZU010?oc=5",
+   "source_name": "India Shipping News",
+   "headline": "India invites fresh applications for duty-free import of 2.15 lakh tonnes of raw sugar - India Shipping News",
+   "hi": {
+    "title": "भारत ने 2.15 लाख टन कच्ची चीनी के शुल्क-मुक्त आयात के लिए ताजा आवेदन आमंत्रित किए",
+    "what": "भारत ने 2.15 लाख टन कच्ची चीनी के शुल्क-मुक्त आयात के लिए ताजा आवेदन आमंत्रित किए हैं।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "इसके कारण देश में चीनी की अधिक आपूर्ति होगी, जिससे चीनी के दाम गिर सकते हैं।"
+   },
+   "mr": {
+    "title": "भारताने २.१५ लाख टन कच्च्या साखरेच्या शुल्कविरहित आयातीसाठी नवीन अर्ज मागवले आहेत",
+    "what": "भारताने २.१५ लाख टन कच्च्या साखरेच्या शुल्कविरहित आयातीसाठी नवीन अर्ज मागवले आहेत.",
+    "why": "बातमीत कारण नाही",
+    "effect": "यामुळे देशात साखरेचा पुरवठा वाढेल, ज्यामुळे साखरेच्या भावात घट होऊ शकते."
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T08:53:13.879Z"
+  },
+  {
+   "id": "a-6be085c2408f",
+   "date": "2026-11-20",
+   "crops": [
+    "sugar"
+   ],
+   "type": "policy",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "2.15 Lakh MT",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZE9jbkl3d3g1Z1NXNUlqWmVrV0tnRkJteTN5ZEE3dWdfaURoc1BNMTZITDNfWGNlLVJMdXVYZDAwZk5jTnIzemtyZWZyX2hIeXR3dlVtTU1TdGFqalNNMXpHaGFGSlFoTDNXX01YZHc4dVIxdDVzZ2VyUnZCRElHRXV4cVVPS01KWC1FejNnSHZNMkxjZzRWajNfTmE1QTZEd1libnpBZUdLa0FINmJ0UkZ0bWFWeG9TcVo4?oc=5",
+   "source_name": "AgroSpectrum India",
+   "headline": "Sugar mills get fresh opportunity to access 2.15 Lakh MT import quota - AgroSpectrum India",
+   "hi": {
+    "title": "चीनी मिलों को 2.15 लाख मीट्रिक टन आयात कोटा तक पहुंचने का ताजा अवसर मिला",
+    "what": "चीनी मिलों को 2.15 लाख मीट्रिक टन आयात कोटा तक पहुंचने का अवसर मिला है। यह आयात कोटा ताजा है और चीनी मिलों को इसका लाभ उठाने का मौका मिला है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "चीनी की आयात बढ़ने से देश में चीनी की उपलब्धता बढ़ेगी और इसके दाम गिर सकते हैं।"
+   },
+   "mr": {
+    "title": "साखर कारखान्यांना २.१५ लाख मेट्रिक टन आयात कोटा गाठण्याची नवीन संधी मिळाली",
+    "what": "साखर कारखान्यांना २.१५ लाख मेट्रिक टन आयात कोटा गाठण्याची नवीन संधी मिळाली आहे. ही आयात कोटा नवीन आहे आणि साखर कारखान्यांना त्याचा लाभ घेण्याची संधी मिळाली आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "साखरच्या आयातीत वाढ होण्याने देशात साखरची उपलब्धता वाढेल आणि त्याच्या किमती कमी होऊ शकतात."
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T08:52:55.650Z"
+  },
+  {
+   "id": "a-ebeffcfe71a0",
+   "date": "2026-11-20",
+   "crops": [
+    "sugar"
+   ],
+   "type": "import",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "215,044 tonnes",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPd0YxNjI2ZmdaZmJ4ZUlmMGhJVWRRTzJTQ1dEU1RydlZCMW04UENzNlpqLWtWXzVCVU5VbzlYVVVZVDJtRlRtMVlkV19Yci12bEp5MWcyNU5WNUNwZ2hQaGxlTWdCblM4eVVpS18zak9UdHNTbDhyOXhTcjRCblZoeVU0cHdyMEUzN2lUMldMX3F2YmZ2Q2owVE50YjBuZ0xmbzBOSFFrNERKcGM3b0tyVmQ0WUUwQU9aQ0pSdzN3?oc=5",
+   "source_name": "Maritime Gateway",
+   "headline": "India reopens duty-free raw sugar quota for 215,044 tonnes; applications close 27 November - Maritime Gateway",
+   "hi": {
+    "title": "भारत ने 2,15,044 टन के लिए शुल्क-मुक्त कच्ची चीनी कोटा फिर से खोला; 27 नवंबर को आवेदन बंद",
+    "what": "भारत ने 2,15,044 टन के लिए शुल्क-मुक्त कच्ची चीनी कोटा फिर से खोला है। आवेदन 27 नवंबर को बंद होंगे।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "इससे देश में चीनी की उपलब्धता बढ़ेगी, जिससे चीनी के दाम गिर सकते हैं।"
+   },
+   "mr": {
+    "title": "भारताने २,१५,०४४ टनसाठी शुल्कविहीन कच्ची साखर कोटा पुन्हा उघडले; २७ नोव्हेंबरला अर्ज बंद",
+    "what": "भारताने २,१५,०४४ टनसाठी शुल्कविहीन कच्ची साखर कोटा पुन्हा उघडले आहे. अर्ज २७ नोव्हेंबरला बंद होतील.",
+    "why": "बातमीत कारण नाही",
+    "effect": "यामुळे देशात साखरेची उपलब्धता वाढेल, ज्यामुळे साखरेच्या भावात घट होऊ शकते."
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T08:52:44.438Z"
+  },
+  {
+   "id": "a-c9dc9dbd0f70",
+   "date": "2026-11-20",
+   "crops": [
+    "sugar"
+   ],
+   "type": "policy",
+   "dir": "neg",
+   "when": "short",
+   "conf": "high",
+   "priority": "high",
+   "qty": "20%",
+   "official": true,
+   "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQSV9RQXlMN3JHX1ZxTHJEMXRNVDVfNmZtdm16THhWMFNHZmdCY0lVWFlvQ2cwRGE1V0N4aTdZRHZFVUhRMWlTa0RySjk5SVVVZVNfTk9jLTlad0drb25heWdIcS1kTjhyWlMyVEwtOGNLQ0oyLVAwUjZMUXVpbHpWYlN1Y0lLNEZsTHNjZGtDeVV6OUpxakZ0WjV4dWNjc2puYi00MlNkWXAzNDFjcm1qUXZB?oc=5",
+   "source_name": "DD News",
+   "headline": "Sugar prices fall 20% as Centre tightens supply monitoring, introduces fortnightly quota - DD News",
+   "hi": {
+    "title": "केंद्र की सख्ती से चीनी की कीमतें 20% गिरीं",
+    "what": "केंद्र सरकार ने चीनी की आपूर्ति पर नजर रखने के लिए सख्ती बढ़ा दी है और पाक्षिक कोटा प्रणाली शुरू की है। इसके परिणामस्वरूप चीनी की कीमतें 20% गिर गई हैं।",
+    "why": "केंद्र सरकार ने चीनी की आपूर्ति पर नजर रखने के लिए सख्ती बढ़ा दी है और पाक्षिक कोटा प्रणाली शुरू की है।",
+    "effect": "चीनी की कीमतें गिरने से किसानों को नुकसान हो सकता है, क्योंकि इसका मतलब है कि उनकी फसल की कीमत कम हो गई है।"
+   },
+   "mr": {
+    "title": "केंद्राच्या सख्तीने साखरेच्या किमती २०% खाली आल्या",
+    "what": "केंद्र सरकारने साखरेच्या पुरवठ्यावर नियंत्रण करण्यासाठी सख्ती वाढवली आहे आणि पाक्षिक कोटा प्रणाली सुरू केली आहे. यामुळे साखरेच्या किमती २०% खाली आल्या आहेत.",
+    "why": "केंद्र सरकारने साखरेच्या पुरवठ्यावर नियंत्रण करण्यासाठी सख्ती वाढवली आहे आणि पाक्षिक कोटा प्रणाली सुरू केली आहे.",
+    "effect": "साखरेच्या किमती खाली येण्यामुळे शेतकऱ्यांना नुकसान होऊ शकते, कारण त्याचा अर्थ असा आहे की त्यांच्या पिकाची कीमत कमी झाली आहे."
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T08:52:17.199Z"
+  },
+  {
    "id": "a-422914875316",
    "date": "2026-11-20",
    "crops": [
@@ -250,6 +405,68 @@
    "addedAt": "2026-11-21T08:47:39.301Z"
   },
   {
+   "id": "a-92f1a534efec",
+   "date": "2026-11-18",
+   "crops": [
+    "sugar"
+   ],
+   "type": "intl",
+   "dir": "pos",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQd2NTQUR5cVNpTjcxbEpyeV9sRlFLRHlRNTRyMHViZkdIcnRFLTRVZFJmZmg4b3JCT0ZxR2RoQVN5UFFEbUZtZ0xuU04tM2VnYmhkc3BiX1NBTXFueVluYmt0MGxkd0FBM3VNYk1CY0dHV0hYSGw4aEdacTBjTFdVM2xNSHlqcnoxbmlwN1pjSFRCLVI2WUdPdHJVcw?oc=5",
+   "source_name": "CMB News",
+   "headline": "Pakistan sugar export approval and crushing delays – market impact - CMB News",
+   "hi": {
+    "title": "पाकिस्तान में चीनी निर्यात की मंजूरी और पीसने में देरी - बाजार पर प्रभाव",
+    "what": "पाकिस्तान में चीनी निर्यात की मंजूरी मिली है और पीसने में देरी हो रही है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "इसका बाजार पर सकारात्मक प्रभाव पड़ सकता है क्योंकि पाकिस्तान से चीनी निर्यात में देरी से दुनिया में चीनी की कमी हो सकती है और इसके परिणामस्वरूप कीमतें बढ़ सकती हैं।"
+   },
+   "mr": {
+    "title": "पाकिस्तानात चीनी निर्यात मान्यता आणि देरी - बाजार वर परिणाम",
+    "what": "पाकिस्तानात चीनी निर्यात मान्यता मिळाली आहे आणि देरी होत आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "याचा बाजार वर सकारात्मक परिणाम होऊ शकतो कारण पाकिस्तानातून चीनी निर्यातीत देरी झाल्याने जगात चीनी ची कमी होऊ शकते आणि त्यामुळे किंमती वाढू शकतात."
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T08:53:24.094Z"
+  },
+  {
+   "id": "a-8d47d20fc467",
+   "date": "2026-11-18",
+   "crops": [
+    "sugar"
+   ],
+   "type": "import",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "2.15 lakh tonnes",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNZmN2QTljdHVfZ0IxSG5xUk51LXI3S05vSFZsVW9PYVpqZXFMTjh0VmcyNUROTHNoaGE5OGNBbVhJUnRwNjZWaXFDX0thOVZDT0JiWTJfbWlpRlFnX0dtVDhYRUl6Y2JDVGlHTHo5YmNyaXdNY0ZlX3hXdklqR3VTREZaemVCTzVkNC1NNkkwbTRIa2M1RmNrYlU0aEM0VVdNa1JWUzgzRXNiNEg1N1NlUjVKQ0JHalhkSjBHQVg1bXVsWTBCVWs5ZHFHLVdLbVd4LTU2MzloTDc2WkpUVXRuWTRxODE3SFnSAewBQVVfeXFMT1k1SG9LRHlKcDdaZkQtYXJSd0JVYTRZeGJlU0UtMzFtWmJBMU0tQW5kMHIxVzNUaUZ2bTR6TVFVVEIwQTVGRU1LeFdEaTlJUGpQU1kxVVZGdGtxMlhCMmdSdXd4ZG1PR19MNWNsVWFQd1FhZ0ZMRDBoZ1RYcnBGNkdoUGhaTHNDeEJTOWlhRi1TaWxqYzBEWG5mdjYtSXdnTklhSHltS1VPVkd0eTFGNk5jTHpBVUlwM2NINl9sTzN5YkE1WE9RX0ZzNTdqODlRN1hfWk9WWDRXRFZjeGpRdEtVNFFiRFE1TzhBLU0?oc=5",
+   "source_name": "The Economic Times",
+   "headline": "Govt opens fresh window for 2.15 lakh tonnes of unallocated sugar import quota - The Economic Times",
+   "hi": {
+    "title": "सरकार ने 2.15 लाख टन चीनी आयात कोटा के लिए ताजा खिड़की खोली",
+    "what": "सरकार ने 2.15 लाख टन चीनी आयात कोटा के लिए ताजा खिड़की खोली है। यह कोटा पहले अलॉट नहीं किया गया था।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "चीनी की आयात बढ़ने से देश में चीनी की कीमतें गिर सकती हैं।"
+   },
+   "mr": {
+    "title": "शासनाने २.१५ लाख टन साखर आयात कोट्यासाठी नवीन वाट पहिली",
+    "what": "शासनाने २.१५ लाख टन साखर आयात कोट्यासाठी नवीन वाट पहिली आहे.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "साखर आयात वाढल्याने देशातील साखरच्या किमती कमी होऊ शकतात."
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T08:53:04.527Z"
+  },
+  {
    "id": "a-2c14bc8ca6ea",
    "date": "2026-11-18",
    "crops": [
@@ -359,8 +576,16 @@
   "a-bdbe1efca5f1",
   "a-8eba422aac8a",
   "a-422914875316",
-  "a-c9b354a9b54c"
+  "a-c9b354a9b54c",
+  "a-c9dc9dbd0f70",
+  "a-7a9c7429bf5d",
+  "a-ebeffcfe71a0",
+  "a-6be085c2408f",
+  "a-8d47d20fc467",
+  "a-58dafc8138e8",
+  "a-92f1a534efec",
+  "a-2db47c00a093"
  ],
- "updated": "2026-11-21T08:51:11.747Z",
+ "updated": "2026-11-21T08:53:39.250Z",
  "_about": "AI se apne aap bani cards. official=true sirf sarkari website wali khabar. Baaki ki sarkari pushti baaki."
 }
