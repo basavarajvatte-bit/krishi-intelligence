@@ -1,6 +1,37 @@
 {
  "items": [
   {
+   "id": "a-3848de739d07",
+   "date": "2026-11-21",
+   "crops": [
+    "onion"
+   ],
+   "type": "intl",
+   "dir": "neg",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNTzV2Y0JybF85bW51eGxCUFgyRGVOamVFb2hKZnpodzFyWVktcjlTWnhTaHlTbk1MQ08tWWc5UnUtdVJ5SldxVnJtbUo0YVZ5b1FmeklfaWpka3dDQ2lnNnNMeGJCREJwT1FhU3ZzUXdyRTQ1emdmNVB3T3NuMFFMcTg4blktZ3NaLWRLMW1ka29ya19VT3F5endERl96WkVua3l1bTZaSzU4MUNXR01HZUZaWXJvZ3VQemc?oc=5",
+   "source_name": "New Age BD",
+   "headline": "Bangladesh now self-sustainable in onion production, no imports needed - New Age BD",
+   "hi": {
+    "title": "बांग्लादेश में अब प्याज उत्पादन में आत्मनिर्भरता",
+    "what": "बांग्लादेश में प्याज का उत्पादन अब आत्मनिर्भर हो गया है, जिससे आयात की जरूरत नहीं है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "भारतीय किसानों के लिए प्याज का भाव गिर सकता है, क्योंकि बांग्लादेश अब आयात नहीं करेगा।"
+   },
+   "mr": {
+    "title": "बांग्लादेश प्याज उत्पादनात आत्मनिर्भर झाले",
+    "what": "बांग्लादेशमध्ये प्याज उत्पादन आता स्वावलंबी झाले आहे, ज्यामुळे आयातीची गरज नाही.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "भारतीय शेतकऱ्यांसाठी प्याजची किंमत कमी होऊ शकते, कारण बांग्लादेश आता आयात करणार नाही."
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T12:09:39.488Z"
+  },
+  {
    "id": "a-751b36d2669d",
    "date": "2026-11-21",
    "crops": [
@@ -154,6 +185,37 @@
    },
    "auto": true,
    "addedAt": "2026-11-21T08:50:22.686Z"
+  },
+  {
+   "id": "a-9cc8b70b2450",
+   "date": "2026-11-20",
+   "crops": [
+    "soybean"
+   ],
+   "type": "intl",
+   "dir": "pos",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "23%",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPSkFpTWZrXy11ZjFjQlJ4YkZoclRjVW8yZVdMRFZWNUxxZFJQNThKWGpEVzE5d2NFNm04SWZ1SV8tZm9NcDFSY1ZsWVYwLU5fZmVkZWxyMFJhbTNyV0NidjBaR3d5Q3F2clMzXzREX3pUZUctdEFVLXZIb0xpM2tHNA?oc=5",
+   "source_name": "The China-Global South Project",
+   "headline": "China’s October Soybean Imports Fall 23% as Brazil Shipments Decline - The China-Global South Project",
+   "hi": {
+    "title": "चीन के अक्टूबर में सोयाबीन आयात में 23% की गिरावट",
+    "what": "चीन के अक्टूबर में सोयाबीन आयात में 23% की गिरावट हुई है। यह गिरावट ब्राजील से होने वाली खेप में कमी के कारण हुई है।",
+    "why": "ब्राजील से होने वाली सोयाबीन की खेप में कमी के कारण चीन के सोयाबीन आयात में गिरावट आई है।",
+    "effect": "चीन में सोयाबीन आयात में गिरावट से भारतीय सोयाबीन किसानों को फायदा हो सकता है, क्योंकि दुनिया में सोयाबीन की कमी होने से इसकी कीमतें बढ़ सकती हैं।"
+   },
+   "mr": {
+    "title": "चीनच्या ऑक्टोबरमध्ये सोयाबीन आयात २३% ने घटले",
+    "what": "चीनच्या ऑक्टोबरमध्ये सोयाबीन आयात २३% ने घटले आहे. ब्राझीलमधून होणारी खेप कमी झाल्याने ही घट होण्याचे कारण आहे.",
+    "why": "ब्राझीलमधून होणारी सोयाबीनची खेप कमी झाल्याने चीनच्या सोयाबीन आयातमध्ये घट झाली आहे.",
+    "effect": "चीनमध्ये सोयाबीन आयातमध्ये घट होण्याने भारतीय सोयाबीन शेतकऱ्यांना फायदा होऊ शकतो, कारण जगभरात सोयाबीनच्या कमतरतेमुळे त्याच्या किमती वाढू शकतात."
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T12:09:30.477Z"
   },
   {
    "id": "a-79b3fa0510c9",
@@ -1516,8 +1578,10 @@
   "a-94827356cde3",
   "a-0abac81fd4d2",
   "a-07519a545c17",
-  "a-b23fe94c254d"
+  "a-b23fe94c254d",
+  "a-9cc8b70b2450",
+  "a-3848de739d07"
  ],
- "updated": "2026-11-21T11:39:14.033Z",
+ "updated": "2026-11-21T12:09:43.498Z",
  "_about": "AI se apne aap bani cards. official=true sirf sarkari website wali khabar. Baaki ki sarkari pushti baaki."
 }
