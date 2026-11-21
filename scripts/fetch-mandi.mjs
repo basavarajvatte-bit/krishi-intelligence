@@ -3,6 +3,7 @@
 // Purani tareekh ki file kabhi overwrite nahi hoti.
 import fs from 'node:fs';
 import path from 'node:path';
+import { execFileSync } from 'node:child_process';
 
 const KEY = process.env.DATA_GOV_KEY;
 const RESOURCE = '9ef84268-d588-465a-a308-a864a43d0070';
@@ -15,14 +16,21 @@ if (!KEY) { console.error('DATA_GOV_KEY secret nahi mila'); process.exit(1); }
 const num = v => { const n = Number(v); return Number.isFinite(n) ? n : null; };
 const toISO = d => { const m = /^(\d{2})\/(\d{2})\/(\d{4})$/.exec(d || ''); return m ? `${m[3]}-${m[2]}-${m[1]}` : null; };
 
+// Node fetch fail ho to curl se koshish (curl system certificates use karta hai)
+function viaCurl(url) {
+  const out = execFileSync('curl', ['-sS', '--fail', '--max-time', '60', '-A', 'Mozilla/5.0 krishi-intelligence', url], { maxBuffer: 64 * 1024 * 1024 });
+  return JSON.parse(out.toString());
+}
+
 async function page(offset) {
   const url = `https://api.data.gov.in/resource/${RESOURCE}?api-key=${KEY}&format=json&limit=${LIMIT}&offset=${offset}`;
   for (let i = 0; i < 3; i++) {
     try {
-      const r = await fetch(url);
+      const r = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0 krishi-intelligence' } });
       if (r.ok) return await r.json();
       console.error('HTTP', r.status);
-    } catch (e) { console.error('fetch error', e.message); }
+    } catch (e) { console.error('fetch error', e.message, e.cause?.code || '', e.cause?.message || ''); }
+    try { return viaCurl(url); } catch (e) { console.error('curl error', String(e.stderr || e.message).replace(KEY, '***')); }
     await new Promise(s => setTimeout(s, 3000 * (i + 1)));
   }
   throw new Error('API se data nahi mila');
