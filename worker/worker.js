@@ -1,3 +1,4 @@
+import { searchPrices } from './prices.js';
 // Krishi Intelligence — mandi bhav laane wala program (Cloudflare Worker)
 // Chaabi Worker ke "secret" DATA_GOV_KEY me rehti hai, website me nahi.
 const RES = '9ef84268-d588-465a-a308-a864a43d0070';
@@ -189,7 +190,6 @@ function validVision(task, d) {
 // quote source me shabdash: na mile to baat hata di jaati hai. Matra (dose) me farak ho to average nahi, "conflict" dikhate hain.
 const R_UA = { 'User-Agent': 'KrishiIntelligence/1.0 (https://basavarajvatte-bit.github.io/krishi-intelligence/; farmer info site)' };
 const R_OFFICIAL = ['ppqs.gov.in', 'cibrc.nic.in', 'icar.org.in', 'icar.gov.in', 'krishi.icar.gov.in', 'dogr.icar.gov.in', 'ncipm.icar.gov.in', 'nhb.gov.in', 'agriwelfare.gov.in', 'agricoop.nic.in', 'vikaspedia.in', 'agritech.tnau.ac.in', 'tnau.ac.in', 'mpkv.ac.in', 'vnmkv.ac.in', 'pdkv.ac.in', 'dbskkv.org', 'pau.edu', 'hau.ac.in', 'uasd.edu', 'iari.res.in', 'farmer.gov.in', 'krishi.maharashtra.gov.in'];
-const R_SHOPS = ['bighaat.com', 'agribegri.com', 'agrostar.in', 'dehaat.com', 'krishidukan.com', 'kisanshop.in', 'iffcobazar.in', 'amazon.in', 'flipkart.com', 'jiomart.com'];
 const R_BAN = ['alachlor','aldicarb','aldrin','benzene hexachloride','benomyl','calcium cyanide','carbaryl','chlorobenzilate','chlordane','chlorfenvinphos','copper acetoarsenite','diazinon','dibromochloropropane','dichlorvos','dicofol','dieldrin','dinocap','endosulfan','endrin','ethylmercury chloride','ethyl parathion','ethylene dibromide','fenarimol','fenthion','heptachlor','lindane','linuron','maleic hydrazide','menazon','methomyl','methyl parathion','metoxuron','nitrofen','pentachloronitrobenzene','pentachlorophenol','phenylmercury acetate','phorate','phosphamidon','sodium cyanide','sodium methanearsonate','tetradifon','thiometon','toxaphene','triazophos','tridemorph','trichloroacetic acid','trichlorfon','dalapon','ferbam','formothion','nickel chloride','paradichlorobenzene','simazine','sirmate','warfarin','ammonium sulphamate','azinphos','binapacryl','calcium arsenate','carbophenothion','chinomethionate','dicrotophos','fentin','lead arsenate','leptophos','mephosfolan','mevinphos','disulfoton','vamidothion'];
 const R_BAN_SRC = { title: 'CIB&RC/PPQS banned & restricted list (31.03.2024) — summary', url: 'https://en.wikipedia.org/wiki/List_of_banned_and_restricted_pesticides_in_India', source_type: 'government_list' };
 const rNorm = t => String(t || '').toLowerCase().replace(/[‘’“”]/g, "'").replace(/[^a-z0-9%./' ]+/g, ' ').replace(/\s+/g, ' ').trim();
@@ -212,7 +212,7 @@ async function rWiki(q, must) {
 async function rTavily(env, query, opts = {}) {
   const h = { 'Content-Type': 'application/json' };
   if (env.TAVILY_API_KEY) h.Authorization = 'Bearer ' + env.TAVILY_API_KEY; else h['X-Tavily-Access-Mode'] = 'keyless';
-  const body = { query, search_depth: 'basic', max_results: opts.max || 4, include_raw_content: opts.raw ? 'text' : false };
+  const body = { query, search_depth: 'basic', max_results: Math.min(20, opts.max || 4), include_raw_content: opts.raw ? 'text' : false, include_favicon: true };
   if (opts.domains) body.include_domains = opts.domains;
   const r = await rFetchJson('https://api.tavily.com/search', { method: 'POST', headers: h, body: JSON.stringify(body) }, 15000);
   if (r.status === 429 || r.status === 432 || r.status === 433) return { limit: true, results: [] };
@@ -300,6 +300,14 @@ async function runResearch(b, env, emit) {
           items.filter(i => i.field === 'dosage').forEach(i => dosages.push({ value: i.value, source: src }));
           n += await rEmitItems(env, emit, 'official', items, src);
         }
+        if (!n && ai.length) {   // dusra tareeka: sirf ghatak + pik ke naam se
+          const r2 = await rTavily(env, `${ai.join(' ')} ${(P.crops || []).slice(0, 2).join(' ')} recommended dose insecticide fungicide`, { domains: R_OFFICIAL, raw: true, max: 3 });
+          for (const x of (r2.results || []).slice(0, 3)) { if (!rIsOfficial(x.url)) continue;
+            const items = await rExtract(env, x.raw_content || x.content, subj, ['dosage', 'crops', 'pests', 'phi', 'method', 'timing', 'max_applications', 'safety', 'first_aid', 'storage', 'disposal', 'reentry']);
+            const src = { title: x.title, url: x.url, source_type: 'official', retrieved_at: now };
+            items.filter(i => i.field === 'dosage').forEach(i => dosages.push({ value: i.value, source: src }));
+            n += await rEmitItems(env, emit, 'official', items, src); }
+        }
         await step('official', n ? 'ok' : 'none', { dbg: DBG.official });
       } catch (e) { await step('official', 'fail', { dbg: String(e).slice(0, 120) }); }
     })());
@@ -320,29 +328,32 @@ async function runResearch(b, env, emit) {
         await step('maker', n ? 'ok' : 'none');
       } catch (e) { await step('maker', 'fail'); }
     })());
-    // 5. Online kimat (snippet me ₹) + same ghatak wali listing (manjuri na jaanchi, isliye "unverified")
+    // 5. Online kimat: kai websites (prices.js) — seedha code se milan, hisaab aur ranking
     tasks.push((async () => {
       await step('price', 'run');
       try {
-        const r = await rTavily(env, `${name || subj} ${subj} ${conc} price`, { domains: R_SHOPS, max: 6 });
-        if (r.limit) return step('price', 'limit');
-        const items = [], unv = [];
-        for (const x of r.results) {
-          const txt = `${x.title} ${x.content}`, tl = txt.toLowerCase();
-          const m = txt.match(/(?:₹|rs\.?|inr)\s?([\d,]{2,7}(?:\.\d{1,2})?)/i), pk = txt.match(/(\d+(?:\.\d+)?)\s?(ml|ltr|litre|liter|l|gm|g|kg)\b/i);
-          const same = name && tl.includes(name.toLowerCase().split(' ')[0]);
-          if (m && (same || (subj && tl.includes(subj.toLowerCase())))) items.push({ seller: rHost(x.url), title: x.title.slice(0, 90), price: m[1], pack: pk ? pk[0] : '', url: x.url, kind: 'online_listing', checked_at: now, same_product: !!same });
-          else if (subj && tl.includes(subj.toLowerCase()) && !same) unv.push({ title: x.title.slice(0, 90), url: x.url });
-        }
-        await emit({ type: 'prices', items: items.slice(0, 6) });
-        if (unv.length) await emit({ type: 'unverified', id: 'alt', items: unv.slice(0, 5), note: 'same_ingredient_listing' });
-        await step('price', items.length ? 'ok' : 'none');
-      } catch (e) { await step('price', 'fail'); }
+        const out = await searchPrices({ name, company: comp, formulation: P.formulation || '', ais: P.ais || [] }, (q, o) => rTavily(env, q, o), now);
+        if (out.limit) return step('price', 'limit');
+        await emit({ type: 'prices', ...out });
+        const alt = out.listings.filter(l => l.match === 'same_ai').slice(0, 6).map(l => ({ title: l.title, url: l.url }));
+        if (alt.length) await emit({ type: 'unverified', id: 'alt', items: alt, note: 'same_ingredient_listing' });
+        await step('price', out.valid_sites ? 'ok' : 'none', { dbg: { responded: out.responded_sites, listings: out.listings.length, errors: out.errors } });
+      } catch (e) { await step('price', 'fail', { dbg: String(e).slice(0, 120) }); }
     })());
     await Promise.allSettled(tasks);
     // Matra me farak? average nahi — conflict
     const uniq = []; dosages.forEach(d => { const v = String(d.value).toLowerCase().replace(/millilit(re|er)s?/g, 'ml').replace(/kilograms?|kgs/g, 'kg').replace(/grams?|gms?/g, 'g').replace(/lit(re|er)s?|ltrs?/g, 'l').replace(/acres?/g, 'ac').replace(/hectares?/g, 'ha'); const k = rDigits(v).map(Number).join('/') + ' ' + (v.match(/\bml\b|\bkg\b|\bg\b|\bl\b|%|\bac\b|\bha\b/g) || []).join(''); if (!uniq.find(u => u.k === k)) uniq.push({ k, ...d }); });
     if (uniq.length > 1) await emit({ type: 'conflict', field: 'dosage', items: uniq.map(u => ({ value: u.value, source: u.source })) });
+    return;
+  }
+  if (b.kind === 'prices') {
+    const P = b.product || {};
+    await step('price', 'run');
+    try {
+      const out = await searchPrices({ name: String(P.name || '').slice(0, 60), company: '', formulation: P.formulation || '', ais: (P.ais || []).slice(0, 2), ingredient_mode: !P.name }, (q, o) => rTavily(env, q, o), now);
+      if (out.limit) return step('price', 'limit');
+      await emit({ type: 'prices', ...out }); await step('price', out.valid_sites ? 'ok' : 'none');
+    } catch (e) { await step('price', 'fail'); }
     return;
   }
   if (b.kind === 'disease') {

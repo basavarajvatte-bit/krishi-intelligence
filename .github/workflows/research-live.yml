@@ -10,6 +10,7 @@ jobs:
           curl -sN -m 90 -X POST https://krishi-mandi.basavarajvatte.workers.dev/research -H 'Content-Type: application/json' \
             -d '{"kind":"product","product":{"name":"Actara","company":"Syngenta","formulation":"WG","ais":[{"name":"Thiamethoxam","concentration":"25%"}],"crops":["onion"],"dosage":"0.5 g/L"}}' | tee p.txt | cut -c1-400
           grep -q '"type":"done"' p.txt
+          grep -o '"type":"prices".\{0,300\}' p.txt | head -1; grep -o '"searched_sites":[0-9]*,"extra_discovered":[0-9]*,"responded_sites":[0-9]*,"valid_sites":[0-9]*' p.txt || true
       - name: Disease research (purple blotch onion)
         run: |
           curl -sN -m 90 -X POST https://krishi-mandi.basavarajvatte.workers.dev/research -H 'Content-Type: application/json' \

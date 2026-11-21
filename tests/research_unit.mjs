@@ -56,7 +56,7 @@ for (const sc of ['normal', 'conflict', 'limit', 'down']) {
   ok(sec.every(x => x.source && (x.source.url !== undefined)), 'har baat ke saath source');
   if (sc === 'normal') { ok(sec.some(x => x.field === 'dosage' && x.source.url.includes('icar')), 'official dose quote ke saath');
     ok(sec.some(x => x.field === 'storage' && x.source.source_type === 'manufacturer'), 'company page');
-    const pr = ev.find(e => e.type === 'prices'); ok(pr && pr.items[0].price === '450' && pr.items[0].kind === 'online_listing', 'kimat ₹450 online_listing');
+    const pr = ev.find(e => e.type === 'prices'); ok(pr && pr.best[0] && pr.best[0].price === 450 && pr.searched_sites >= 10, 'price engine: ₹450, 10+ sites');
     ok(ev.some(e => e.type === 'unverified'), 'dusra brand = unverified (alternative nahi)');
     ok(!ev.some(e => e.type === 'conflict'), 'label 0.5 = ICAR 0.5 -> conflict nahi');
     ok(sec.some(x => x.text_mr.startsWith('मराठी')), 'Marathi anuvad'); }
