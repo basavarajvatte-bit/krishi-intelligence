@@ -683,6 +683,37 @@
    "addedAt": "2026-11-21T08:50:11.659Z"
   },
   {
+   "id": "a-b23fe94c254d",
+   "date": "2026-11-19",
+   "crops": [
+    "onion"
+   ],
+   "type": "export",
+   "dir": "neg",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "4.3 times",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNb0hzQUtpZ1k1VFVILXJwS19Ecm1weS03UXV3MHpCNzYtaDdwWmx0SHpQbGJKaDZzMTc5SU9xd1M5M3htVF8yeTNCUXBEU0VuUlA4RWNJM3VNT2JRX3Zhd2NyWWNraTFGUksydVlHX2l0R0ZfVVNTSkxtaGUzYTdfeA?oc=5",
+   "source_name": "Комерсант Український",
+   "headline": "Ukraine has increased its onion exports to the EU by 4.3 times - Комерсант Український",
+   "hi": {
+    "title": "यूक्रेन ने यूरोपीय संघ में प्याज का निर्यात 4.3 गुना बढ़ाया",
+    "what": "यूक्रेन ने यूरोपीय संघ में प्याज का निर्यात 4.3 गुना बढ़ा दिया है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "यूरोपीय संघ में प्याज की अधिक आपूर्ति के कारण भाव गिर सकता है"
+   },
+   "mr": {
+    "title": "युक्रेनने युरोपीय संघात प्याज निर्यात ४.३ पटीने वाढवला",
+    "what": "युक्रेनने युरोपीय संघात प्याज निर्यात ४.३ पटीने वाढवला आहे.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "युरोपीय संघात प्याजचा पुरवठा वाढल्याने किंमत कमी होऊ शकते"
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T11:39:10.024Z"
+  },
+  {
    "id": "a-07519a545c17",
    "date": "2026-11-19",
    "crops": [
@@ -1484,8 +1515,9 @@
   "a-cbffd9681829",
   "a-94827356cde3",
   "a-0abac81fd4d2",
-  "a-07519a545c17"
+  "a-07519a545c17",
+  "a-b23fe94c254d"
  ],
- "updated": "2026-11-21T11:25:09.333Z",
+ "updated": "2026-11-21T11:39:14.033Z",
  "_about": "AI se apne aap bani cards. official=true sirf sarkari website wali khabar. Baaki ki sarkari pushti baaki."
 }
