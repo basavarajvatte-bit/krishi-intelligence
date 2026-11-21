@@ -262,7 +262,7 @@ async function rEmitItems(env, emit, id, items, source) {
 async function runResearch(b, env, emit) {
   const DBG = {};
   const now = new Date().toISOString();
-  const step = (id, status, extra = {}) => emit({ type: 'step', id, status, ...extra });
+  const step = (id, status, extra = {}) => emit({ type: 'step', id, status: (status === 'fail' && /4006|3036|neurons/.test(JSON.stringify(extra))) ? 'quota' : status, ...extra });
   if (b.kind === 'product') {
     const P = b.product || {}, ai = (P.ais || []).map(a => String(a.name || '').trim()).filter(Boolean).slice(0, 2);
     const conc = (P.ais || []).map(a => a.concentration).filter(Boolean).join(' + '), name = String(P.name || '').slice(0, 60), comp = String(P.company || '').slice(0, 60);

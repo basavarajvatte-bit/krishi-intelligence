@@ -1503,7 +1503,7 @@ async function runScan({file,task,extra,outId,onResult,maxPx}){
 // ===== STAGE B: ONLINE RESEARCH (pehchaan turant dikhti hai; ye alag se, dheere-dheere jodta hai) =====
 const RES_URL=VIS_URL.replace(/\/vision$/,'/research');
 const RES_STEPS={reg:'सरकारी बंदी यादी तपासणी',wiki:'घटक / रोगाची माहिती (Wikipedia)',official:'सरकारी / कृषी विद्यापीठ स्रोत',maker:'कंपनीची वेबसाइट',price:'ऑनलाइन किंमत'};
-const RES_ST={run:'⏳ शोधत आहे…',ok:'✓ सापडले',none:'— पडताळलेली माहिती सापडली नाही',fail:'⚠️ स्रोत आत्ता उपलब्ध नाही',limit:'⚠️ मोफत शोधाची मर्यादा संपली (नंतर पुन्हा)'};
+const RES_ST={run:'⏳ शोधत आहे…',ok:'✓ सापडले',none:'— पडताळलेली माहिती सापडली नाही',fail:'⚠️ स्रोत आत्ता उपलब्ध नाही',limit:'⚠️ मोफत शोधाची मर्यादा संपली (नंतर पुन्हा)',quota:'⚠️ आजची मोफत AI मर्यादा संपली (उद्या सकाळी पुन्हा)'};
 const RES_TYPE={official:'🏛️ सरकारी/विद्यापीठ',manufacturer:'🏭 कंपनी',encyclopedia:'📘 विश्वकोश',government_list:'🏛️ सरकारी यादी',label_photo:'📷 लेबल'};
 const RES_MEM={};let RES_CTRL=null;
 function resKey(kind,o){return kind==='product'?['p',o.name,o.company,o.formulation,(o.ais||[]).map(a=>a.name+' '+(a.concentration||'')).join('+')].map(x=>lc(x||'').trim()).join('|'):['d',o.problem_en,o.crop].map(x=>lc(x||'').trim()).join('|')}
