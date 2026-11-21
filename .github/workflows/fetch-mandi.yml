@@ -1,13 +1,8 @@
 name: Rozana mandi bhav
 
 on:
-  schedule:
-    - cron: '17 7 * * *'    # 12:47 PM IST
-    - cron: '17 13 * * *'   # 6:47 PM IST
+  # data.gov.in GitHub (America) ke computers ko rokta hai, isliye abhi sirf haath se chalega.
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths: ['scripts/**', '.github/workflows/**']
 
 permissions:
   contents: write
