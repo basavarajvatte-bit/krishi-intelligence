@@ -7,7 +7,8 @@ globalThis.fetch = async (url, opt = {}) => {
   url = String(url);
   const J = (o, st = 200) => new Response(JSON.stringify(o), { status: st });
   if (scenario === 'down') throw new Error('network down');
-  if (url.includes('/search/')) return J({ pages: [{ key: 'Thiamethoxam' }] });
+  if (url.includes('/search/')) return J({ pages: [{ key: /purple/i.test(decodeURIComponent(url)) ? 'Purple_blotch' : 'Thiamethoxam' }] });
+  if (url.includes('summary/Purple_blotch')) return J({ title: 'Purple blotch', extract: 'Purple blotch is a fungal disease of onion caused by Alternaria porri. It forms purple lesions on leaves.', content_urls: { desktop: { page: 'https://en.wikipedia.org/wiki/Purple_blotch' } } });
   if (url.includes('page/summary')) return J({ title: 'Thiamethoxam', extract: 'Thiamethoxam is a systemic insecticide in the class of neonicotinoids. It acts on the nervous system of insects. It is used on many crops.', content_urls: { desktop: { page: 'https://en.wikipedia.org/wiki/Thiamethoxam' } } });
   if (url.includes('tavily')) {
     if (scenario === 'limit') return J({ detail: 'limit' }, 432);
@@ -24,15 +25,15 @@ globalThis.fetch = async (url, opt = {}) => {
   return J({}, 404);
 };
 // nakli AI: field nikaalne ke liye text se seedha jawab
-const AI = { run: async (m, { messages }) => {
-  const u = messages[1].content;
-  if (u.startsWith('Return {"mr"')) { const lines = u.split('\n').filter(l => /^\d+\. /.test(l)).map(l => 'मराठी: ' + l.replace(/^\d+\. /, '')); return { response: JSON.stringify({ mr: lines }) }; }
-  const items = [];
-  if (u.includes('0.5 g per litre')) items.push({ field: 'dosage', value: '0.5 g per litre', quote: 'Apply Thiamethoxam 25 WG at 0.5 g per litre of water at 15 days interval' },
-    { field: 'phi', value: '7 days before harvest', quote: 'Do not spray within 7 days before harvest' },
-    { field: 'dosage', value: '2 g per litre', quote: 'Apply Thiamethoxam at 2 g per litre always' });          // nakli quote -> hatna chahiye
-  if (u.includes('1.0 g per litre')) items.push({ field: 'dosage', value: '1.0 g per litre', quote: 'Thiamethoxam 25 WG can be used at 1.0 g per litre of water' });
-  if (u.includes('Actara should be stored')) items.push({ field: 'storage', value: 'store in cool dry place', quote: 'Actara should be stored in a cool dry place away from food' });
+const AI = { run: async (m, inp) => {
+  if (m === '@cf/meta/m2m100-1.2b') return { translated_text: 'मराठी: ' + inp.text };
+  const u = inp.messages[1].content; const S = {}; u.split('\n').forEach(l => { const r = l.match(/^\[(\d+)\] (.*)$/); if (r) S[r[1]] = r[2]; });
+  const find = t => Object.keys(S).find(k => S[k].includes(t)); const items = [];
+  const a = find('0.5 g per litre'); if (a) items.push({ field: 'dosage', value: '0.5 g per litre', s: +a }, { field: 'dosage', value: '2 g per litre', s: +a });   // dusra jhootha -> hatna chahiye
+  const ph = find('7 days before harvest'); if (ph) items.push({ field: 'phi', value: '7 days before harvest', s: +ph });
+  const b = find('1.0 g per litre'); if (b) items.push({ field: 'dosage', value: '1.0 g per litre', s: +b });
+  const c = find('should be stored'); if (c) items.push({ field: 'storage', value: 'store in cool dry place', s: +c });
+  items.push({ field: 'dosage', value: '9 ml', s: 999 });                                                                     // na hone wala vakya
   return { response: 'Here: ' + JSON.stringify({ items }) };
 } };
 async function run(body) {
@@ -50,7 +51,7 @@ for (const sc of ['normal', 'conflict', 'limit', 'down']) {
   console.log(`--- ${sc}`, JSON.stringify(steps));
   ok(ev[0].type === 'start' && ev.at(-1).type === 'done', 'start…done');
   ok(sec.some(x => x.field === 'regulatory'), 'CIB&RC check hamesha');
-  ok(!sec.some(x => /2 g per litre/.test(x.text_en || '')), 'nakli quote wali dose nahi');
+  ok(!sec.some(x => /^2 g|9 ml/.test(x.text_en || '')), 'jhoothi / bina vakya wali dose nahi');
   ok(!sec.some(x => (x.source?.url || '').includes('blog.example')), 'gair-sarkari site official me nahi');
   ok(sec.every(x => x.source && (x.source.url !== undefined)), 'har baat ke saath source');
   if (sc === 'normal') { ok(sec.some(x => x.field === 'dosage' && x.source.url.includes('icar')), 'official dose quote ke saath');
@@ -65,6 +66,7 @@ for (const sc of ['normal', 'conflict', 'limit', 'down']) {
 }
 scenario = 'normal';
 const ev = await run({ kind: 'disease', disease: { problem_en: 'purple blotch', crop: 'onion' } });
-ok(ev.some(e => e.type === 'section' && e.id === 'how'), 'rog: Wikipedia');
+ok(ev.some(e => e.type === 'section' && e.id === 'how' && e.items[0].source.url.includes('Purple')), 'rog: sahi Wikipedia page');
+scenario='normal';
 ok(!ev.some(e => e.type === 'section' && e.items.some(i => i.field === 'dosage')), 'rog: koi dawa/dose nahi');
 console.log(fail ? `\n${fail} FAIL` : '\nSAB PASS'); process.exit(fail ? 1 : 0);

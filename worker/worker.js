@@ -201,11 +201,12 @@ async function rFetchJson(url, opt = {}, ms = 9000) {
   try { const r = await fetch(url, { ...opt, signal: c.signal }); const txt = await r.text(); let j = null; try { j = JSON.parse(txt); } catch (e) {} return { status: r.status, j, txt }; }
   finally { clearTimeout(t); }
 }
-async function rWiki(q) {
+async function rWiki(q, must) {
   const s = await rFetchJson('https://en.wikipedia.org/w/rest.php/v1/search/page?limit=1&q=' + encodeURIComponent(q), { headers: R_UA });
   const key = s.j && s.j.pages && s.j.pages[0] && s.j.pages[0].key; if (!key) return null;
   const p = await rFetchJson('https://en.wikipedia.org/api/rest_v1/page/summary/' + encodeURIComponent(key), { headers: R_UA });
   if (!p.j || !p.j.extract || p.j.type === 'disambiguation') return null;
+  if (must && !must.every(w => (p.j.title + ' ' + p.j.extract).toLowerCase().includes(w))) return null;
   return { title: p.j.title, text: p.j.extract, url: (p.j.content_urls && p.j.content_urls.desktop && p.j.content_urls.desktop.page) || ('https://en.wikipedia.org/wiki/' + key) };
 }
 async function rTavily(env, query, opts = {}) {
@@ -223,25 +224,33 @@ async function rLLM(env, sys, user, max = 700) {
   return jsonFrom(r && r.response);
 }
 // Source ke text se, kisi vishay (subject) par, sirf diye gaye fields nikalo; quote jaancho
+// Source ke text ko vakya (sentence) me todo, number do; LLM sirf vakya-number batata hai -> quote hamesha asli shabd
 async function rExtract(env, text, subject, fields) {
-  const t = String(text || ''); if (t.length < 80) return [];
-  const low = t.toLowerCase(), key = String(subject).toLowerCase().split(/\s+/)[0];
-  let i = key ? low.indexOf(key) : 0; if (i < 0) i = 0;
-  const win = t.slice(Math.max(0, i - 1500), Math.max(0, i - 1500) + 9000);
-  const d = await rLLM(env, 'You extract facts from a source text. Use ONLY the text. For every item give "quote": an exact sentence or phrase copied character-for-character from the text (at least 6 words). Output ONE JSON object only.',
-    `SUBJECT: ${subject}\nFIELDS: ${fields.join(', ')}\nReturn {"items":[{"field":"<one of FIELDS>","value":"short English fact","quote":"exact copied text"}]} with only facts about the SUBJECT. If none: {"items":[]}.\nTEXT:\n${win}`, 900);
-  const nt = rNorm(win);
-  return ((d && d.items) || []).filter(x => x && fields.includes(x.field) && x.value && x.quote).filter(x => {
-    const q = rNorm(x.quote); if (q.split(' ').length < 5 || !nt.includes(q)) return false;          // quote source me hona chahiye
-    return rDigits(x.value).every(n => rDigits(x.quote).includes(n));                                 // value ke ank quote me hon
-  }).slice(0, 12);
+  const t = String(text || '').replace(/\s+/g, ' '); if (t.length < 80) return [];
+  const sents = t.split(/(?<=[.;!?])\s+|\s+\|\s+|\s•\s/).map(x => x.trim()).filter(x => x.length >= 25 && x.length <= 400);
+  const keys = String(subject).toLowerCase().split(/[\s,]+/).filter(w => w.length >= 4);
+  const hits = []; sents.forEach((x, i) => { if (keys.some(k => x.toLowerCase().includes(k))) for (let d = -2; d <= 3; d++) if (sents[i + d] && !hits.includes(i + d)) hits.push(i + d); });
+  const pick = hits.sort((a, b) => a - b).slice(0, 70); if (!pick.length) return [];
+  const d = await rLLM(env, 'You read numbered sentences from a source and pick facts. Use ONLY these sentences. Output ONE JSON object only.',
+    `SUBJECT: ${subject}\nFIELDS: ${fields.join(', ')}\nReturn {"items":[{"field":"<one of FIELDS>","value":"short English fact","s":<sentence number>}]} — only facts clearly about the SUBJECT, each supported by that single sentence. If none: {"items":[]}.\nSENTENCES:\n${pick.map(k => `[${k}] ${sents[k]}`).join('\n')}`, 900);
+  const out = [];
+  for (const x of ((d && d.items) || [])) {
+    if (!x || !fields.includes(x.field) || !x.value || !pick.includes(+x.s)) continue;
+    const q = sents[+x.s];
+    if (!rDigits(x.value).every(n => rDigits(q).includes(n))) continue;                    // value ke ank vakya me hone chahiye
+    if (x.field === 'dosage' && !rDigits(q).length) continue;
+    out.push({ field: x.field, value: String(x.value).slice(0, 220), quote: q });
+  }
+  return out.slice(0, 12);
 }
 async function rToMr(env, lines) {
-  if (!lines.length) return [];
-  const d = await rLLM(env, 'Translate each English line into simple, short Marathi (Devanagari) for farmers. Keep product names, chemical names, scientific names, numbers, %, units and registration numbers exactly unchanged. Output ONE JSON object only.',
-    'Return {"mr":["..."]} in the same order.\nLINES:\n' + lines.map((l, i) => `${i + 1}. ${l}`).join('\n'), 1200);
-  const mr = (d && d.mr) || [];
-  return lines.map((en, i) => { const m = String(mr[i] || ''); const ok = m && /[ऀ-ॿ]/.test(m) && rDigits(en).every(n => rDigits(m).includes(n)); return ok ? m : en; });
+  return Promise.all(lines.map(async en => {
+    try {
+      const r = await env.AI.run('@cf/meta/m2m100-1.2b', { text: en, source_lang: 'english', target_lang: 'marathi' });
+      const m = String((r && r.translated_text) || '');
+      return m && /[ऀ-ॿ]/.test(m) && rDigits(en).every(n => rDigits(m).includes(n)) ? m : en;   // ank badle to English hi
+    } catch (e) { return en; }
+  }));
 }
 const R_FIELD_MR = { dosage: 'अधिकृत प्रमाण (dose)', crops: 'मंजूर / नमूद पिके', pests: 'किडी / रोग', phi: 'काढणीपूर्वी थांबायचे दिवस (PHI)', method: 'वापरण्याची पद्धत', timing: 'वापरण्याची वेळ', max_applications: 'जास्तीत जास्त फवारण्या', safety: 'सुरक्षा', first_aid: 'प्रथमोपचार', storage: 'साठवण', disposal: 'रिकामे डबे/उरलेले औषध', reentry: 'शेतात पुन्हा जाण्याआधी थांबा', symptoms: 'लक्षणे', cause: 'कारण', conditions: 'रोग वाढण्याचे हवामान/परिस्थिती', lifecycle: 'जीवनचक्र', prevention: 'प्रतिबंध', cultural: 'शेतीतील उपाय', biological: 'जैविक उपाय', crops_affected: 'कोणत्या पिकांवर', how: 'हे कसे काम करते / काय आहे' };
 async function rEmitItems(env, emit, id, items, source) {
@@ -272,7 +281,7 @@ async function runResearch(b, env, emit) {
       await step('wiki', 'run');
       try {
         let n = 0;
-        for (const a of ai) { const w = await rWiki(a); if (!w) continue; const first = w.text.split(/(?<=\.)\s+/).slice(0, 3).join(' ');
+        for (const a of ai) { const w = await rWiki(a, [a.toLowerCase().split(/\s+/)[0]]); if (!w) continue; const first = w.text.split(/(?<=\.)\s+/).slice(0, 3).join(' ');
           n += await rEmitItems(env, emit, 'how', [{ field: 'how', value: first, quote: first }], { title: 'Wikipedia: ' + w.title, url: w.url, source_type: 'encyclopedia', retrieved_at: now }); }
         await step('wiki', n ? 'ok' : 'none');
       } catch (e) { await step('wiki', 'fail'); }
@@ -342,7 +351,7 @@ async function runResearch(b, env, emit) {
     const tasks = [];
     tasks.push((async () => {
       await step('wiki', 'run');
-      try { const w = await rWiki(`${prob} ${crop}`) || await rWiki(prob); if (!w) return step('wiki', 'none');
+      try { const mw = prob.toLowerCase().split(/\s+/).filter(x => x.length >= 4); const w = await rWiki(prob, mw) || await rWiki(`${prob} ${crop}`, mw); if (!w) return step('wiki', 'none');
         const first = w.text.split(/(?<=\.)\s+/).slice(0, 3).join(' ');
         await rEmitItems(env, emit, 'how', [{ field: 'how', value: first, quote: first }], { title: 'Wikipedia: ' + w.title, url: w.url, source_type: 'encyclopedia', retrieved_at: now });
         await step('wiki', 'ok'); } catch (e) { await step('wiki', 'fail'); }
