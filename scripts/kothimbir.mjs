@@ -42,7 +42,9 @@ function toRow(r) {
   const date = iso(r.Arrival_Date), modal = num(r.Modal_Price);
   if (!date || !modal) return null;
   const tr = v => String(v ?? '').trim();
-  return [date, tr(r.State), tr(r.District), tr(r.Market), tr(r.Variety), tr(r.Grade), num(r.Min_Price), num(r.Max_Price), modal];
+  // ek hi mandi ke alag naam jodo: "APMC Pune" / "Pune APMC" -> "Pune"
+  const mk = tr(r.Market).replace(/^APMC\s+/i, '').replace(/\s+APMC$/i, '').trim();
+  return [date, tr(r.State), tr(r.District), mk, tr(r.Variety), tr(r.Grade), num(r.Min_Price), num(r.Max_Price), modal];
 }
 const key = r => [r[0], r[3], r[4], r[5]].join('|');
 const load = (f, def) => fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8')) : def;
