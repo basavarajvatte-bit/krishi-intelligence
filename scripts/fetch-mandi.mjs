@@ -1,5 +1,5 @@
 // Rozana mandi bhav: data.gov.in (Agmarknet) se laata hai.
-// GitHub Action chalata hai. Key GitHub "Secret" DATA_GOV_KEY me rehti hai.
+// GitHub Action chalata hai. Data Cloudflare Worker ke zariye aata hai (chaabi Worker me chhupi hai).
 // Purani tareekh ki file kabhi overwrite nahi hoti.
 import fs from 'node:fs';
 import path from 'node:path';
@@ -22,7 +22,7 @@ function viaCurl(url) {
 }
 
 async function page(offset) {
-  const url = `https://api.data.gov.in/resource/${RESOURCE}?api-key=${KEY}&format=json&limit=${LIMIT}&offset=${offset}`;
+  const url = `${WORKER}/raw?limit=${LIMIT}&offset=${offset}`;
   for (let i = 0; i < 3; i++) {
     try {
       const r = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0 krishi-intelligence' } });
