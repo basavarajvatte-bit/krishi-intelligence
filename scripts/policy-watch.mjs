@@ -55,23 +55,48 @@ async function get(url) {
 }
 
 const SYSTEM = `Tum Indian kisanon ke liye kheti-bazaar salahkar ho. Tumhe ek khabar ka title aur chhota hissa milega.
-Niyam:
-- Sirf diye gaye text ke facts use karo. Koi number, date, matra (quantity) ya desh khud se mat banao. Text me nahi hai to null rakho.
-- Agar khabar kheti ki fasal ke bhav se judi sarkari niti, import/export, MSP, stock, ya duniya ke fasal/mausam ki nahi hai, to {"relevant":false} do.
-- Bahut aasaan bhasha: 10 saal ka bachcha samjhe. Mushkil shabd (jaise "tariff") ho to saath me matlab likho.
-- "effect" aur "dir" tumhara andaza hai, pakki baat nahi. Confidence imaandari se do.
-Sirf JSON do, is roop me:
+
+KAB "relevant":true:
+- Sirf tab jab khabar me koi PAKKA EVENT ho: sarkari faisla (import/export ban, duty, MEP, MSP, kharid, stock limit, buffer bikri, subsidy),
+  sarkari/official aankda (utpadan anuman, aayat-niryat aankda), ya duniya ka bada event (bade desh ka faisla, sookha/baadh, fasal report).
+- Opinion, "kya hoga?" wale sawal-lekh, company/share bazaar, videsh ki local mandi report (jaise Detroit), market research report = {"relevant":false}.
+
+BAZAAR KE PAKKE NIYAM (dir inhi se tay karo, ulta kabhi nahi):
+1. Desh me maal zyada (zyada utpadan, zyada aayat, aayat duty kam, aayat chhoot, buffer stock bechna, stock limit) => is fasal ka bhav GIRNE ka dabav => "neg".
+2. Desh me maal kam (kam utpadan, sookha/baadh se nuksan, niryat khulna/badhna, niryat duty hatna, aayat duty badhna, sarkari kharid) => bhav BADHNE ki sambhavna => "pos".
+3. Niryat par ban/duty/MEP lagna => desh me maal rukta hai => kisan ka bhav GIRTA hai => "neg".
+4. Khane ka tel (palm/soybean/sunflower oil) sasta aayat = soybean/moongfali/sarso kisan ke liye "neg" (unki maang ghatti hai). Tel aayat duty badhna = un kisanon ke liye "pos".
+5. MSP badhna = neeche ka sahara => "pos" (par kharid har jagah nahi hoti, ye bhi likho). Kapas aayat chhoot = kapas kisan ke liye "neg".
+6. Duniya me kisi fasal ka bada utpadan (Brazil soybean record etc.) = duniya ka bhav neeche => Indian kisan ke liye "neg". Duniya me kami = "pos".
+7. Agar pakka na lage ya asar bahut chhota ho => "neu" aur conf "low".
+Yaad rakho: "upbhokta ke liye sasta" ka matlab aksar "kisan ke liye kam bhav" hota hai.
+
+LIKHNE KE NIYAM:
+- Sirf diye gaye text ke facts. Koi number, date, matra ya desh khud se mat banao. Text me nahi to null.
+- Bahut aasaan bhasha: 10 saal ka bachcha samjhe. Angrezi shabd (tariff, duty) ka sahi Hindi matlab do: tariff/duty = "टैक्स / शुल्क".
+- "effect" me pehle seedha bolo: bhav badhega/girega/khaas asar nahi, phir ek line me kyun (upar ka niyam).
+- type: import | export | msp (sirf MSP/sarkari kharid) | policy (baaki sarkari niti, aankde) | intl (videsh ki khabar).
+Sirf JSON do (ek hi object, uske baad kuch nahi):
 {"relevant":true,"crops":["onion|soybean|cotton|wheat|rice|tur|gram|sugar|maize|tomato|oilseed|other"],
-"type":"import|export|msp|policy|intl","dir":"pos|neg|neu","when":"short|medium|long","conf":"high|medium|low","priority":"high|normal",
+"type":"","dir":"pos|neg|neu","when":"short|medium|long","conf":"high|medium|low","priority":"high|normal",
 "qty":"text me di gayi matra ya null","date":"YYYY-MM-DD ya null",
-"hi":{"title":"","what":"Kya hua (2 line)","why":"Sarkar/desh ne aisa kyun kiya (agar text me nahi to 'खबर में कारण नहीं बताया गया')","effect":"Kisan ke bhav par kya asar (andaza, wajah ke saath)"},
+"hi":{"title":"","what":"Kya hua (2 line)","why":"Kyun (text me nahi to 'ख़बर में कारण नहीं बताया गया')","effect":""},
 "mr":{"title":"","what":"","why":"","effect":""}}
-hi = Hindi (Devanagari), mr = Marathi (Devanagari). dir: pos = bhav badhne ki sambhavna, neg = girne ki, neu = khaas asar nahi.`;
+hi = Hindi (Devanagari), mr = Marathi (Devanagari).`;
 
 // Do AI raaste: (1) GitHub Models — agar account par chalu ho, (2) apna Cloudflare Worker + free Workers AI.
 const WORKER = (process.env.WORKER_URL || 'https://krishi-mandi.basavarajvatte.workers.dev').replace(/\/$/, '');
 const WKEY = process.env.DATA_GOV_KEY;
-const jsonFrom = c => { c = String(c).trim().replace(/^```(json)?/i, '').replace(/```$/, ''); const i = c.indexOf('{'), k = c.lastIndexOf('}'); return JSON.parse(i >= 0 ? c.slice(i, k + 1) : c); };
+function jsonFrom(c) {
+  c = String(c); const i = c.indexOf('{'); if (i < 0) throw new Error('JSON nahi mila');
+  let dep = 0, str = false, esc = false;
+  for (let k = i; k < c.length; k++) {
+    const ch = c[k];
+    if (str) { if (esc) esc = false; else if (ch === '\\') esc = true; else if (ch === '"') str = false; continue; }
+    if (ch === '"') str = true; else if (ch === '{') dep++; else if (ch === '}' && --dep === 0) return JSON.parse(c.slice(i, k + 1));
+  }
+  throw new Error('JSON adhoora');
+}
 const ROUTES = [
   { name: 'github-models', ok: () => !!TOKEN, call: async msgs => {
     const r = await fetch('https://models.github.ai/inference/chat/completions', { method: 'POST', signal: AbortSignal.timeout(60000),
@@ -104,6 +129,7 @@ function clean(a, item) {
   const DEF = { type: 'policy', dir: 'neu', when: 'medium', conf: 'low' };
   for (const [k, ok] of Object.entries(VALID)) if (!ok.includes(a[k])) a[k] = DEF[k];
   const crops = (Array.isArray(a.crops) ? a.crops : []).filter(c => /^[a-z]+$/.test(c)).slice(0, 5);
+  if (a.type === 'msp' && !/MSP|minimum support|procure|kharid/i.test(item.title + ' ' + item.summary)) a.type = 'policy';
   const official = OFFICIAL.some(d => item.srcHost === d || item.srcHost.endsWith('.' + d));
   // AI ka confidence: sirf khabar ho (sarkari nahi) to "high" nahi dikhate
   const conf = !official && a.conf === 'high' ? 'medium' : a.conf;
