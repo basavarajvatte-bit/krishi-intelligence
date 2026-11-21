@@ -22,6 +22,24 @@ export default {
       } catch (e) { return send({ ok: false, msg: String(e) }); }
     }
 
+    // GitHub robot ke liye: data.gov.in ke chune hue resource (filters ke saath). Chaabi se surakshit.
+    if (u.pathname === '/res') {
+      if (req.headers.get('x-key') !== env.DATA_GOV_KEY) return send({ ok: false, msg: 'mana hai' });
+      const ALLOW = ['9ef84268-d588-465a-a308-a864a43d0070', '35985678-0d79-46b4-9ed6-6f13308a1d24'];
+      const id = u.searchParams.get('id');
+      if (!ALLOW.includes(id)) return send({ ok: false, msg: 'resource allow nahi' });
+      const q = new URLSearchParams();
+      for (const [k, v] of u.searchParams) if (k.startsWith('filters[') || k === 'offset' || k === 'limit' || k.startsWith('sort[')) q.append(k, v);
+      if (!q.has('limit')) q.set('limit', '1000');
+      const api = `https://api.data.gov.in/resource/${id}?api-key=${encodeURIComponent(env.DATA_GOV_KEY)}&format=json&${q}`;
+      try {
+        const r = await fetch(api, { headers: { 'User-Agent': 'Mozilla/5.0 krishi-intelligence' } });
+        const text = await r.text();
+        try { const j = JSON.parse(text); return send({ ok: true, total: j.total, count: (j.records || []).length, field: j.field, records: j.records || [] }); }
+        catch (e) { return send({ ok: false, status: r.status, sample: text.slice(0, 300) }); }
+      } catch (e) { return send({ ok: false, msg: String(e) }); }
+    }
+
     // GitHub robot ke liye: free Cloudflare AI se khabar samjhao. Chaabi (DATA_GOV_KEY) se hi chalta hai, taaki koi aur free quota na khaaye.
     if (u.pathname === '/ai') {
       if (req.method !== 'POST' || req.headers.get('x-key') !== env.DATA_GOV_KEY) return send({ ok: false, msg: 'mana hai' });
