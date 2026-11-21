@@ -4,6 +4,7 @@ on:
   schedule:
     - cron: '47 4 * * *'    # 10:17 AM IST
     - cron: '47 13 * * *'   # 7:17 PM IST
+    - cron: '29 * * * *'    # har ghante — sirf jab tak itihaas na aa jaaye
   workflow_dispatch:
   push:
     branches: [main]
@@ -29,6 +30,7 @@ jobs:
         env:
           DATA_GOV_KEY: ${{ secrets.DATA_GOV_KEY }}
         run: |
+          if [ "${{ github.event.schedule }}" = '29 * * * *' ] && [ -f data/onion/series/index.json ]; then echo 'Itihaas pehle se hai'; exit 0; fi
           if [ ! -f data/onion/series/index.json ] || [ ! -f data/onion/monthly.json ]; then node scripts/commodity.mjs onion --backfill; else node scripts/commodity.mjs onion; fi
       - name: Save karo
         run: |
