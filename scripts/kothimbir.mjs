@@ -26,13 +26,13 @@ const median = a => { if (!a.length) return null; const s = [...a].sort((x, y) =
 async function page(params) {
   const u = new URL(W + '/res'); u.searchParams.set('id', RES);
   for (const [k, v] of Object.entries(params)) u.searchParams.set(k, v);
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < 8; i++) {
     try {
       const j = await (await fetch(u, { headers: { 'x-key': KEY }, signal: AbortSignal.timeout(60000) })).json();
       if (j.ok) return j;
       console.error('worker:', j.msg || j.status, (j.sample || '').slice(0, 120));
     } catch (e) { console.error('fetch:', e.message); }
-    await sleep(3000 * (i + 1));
+    await sleep(Math.min(60000, 5000 * 2 ** i));   // sarkari site band ho to ruk kar phir koshish
   }
   throw new Error('data.gov.in se data nahi mila');
 }
