@@ -1,6 +1,37 @@
 {
  "items": [
   {
+   "id": "a-751b36d2669d",
+   "date": "2026-11-21",
+   "crops": [
+    "onion"
+   ],
+   "type": "intl",
+   "dir": "neg",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE50NFVXTWtKN2lnN0t0Z3V4SHNEa2trUkZiWFhNYkZfLXVFZUdKWjZ0a2xUXy1yWVdJX2hDUWVpYVY5ZmZKMlB6cHlnS1ZYdUJoZWZjVlJNR0hIZw?oc=5",
+   "source_name": "Bangladesh Sangbad Sangstha (BSS)",
+   "headline": "Bangladesh now self-reliant in onion production, no imports needed - Bangladesh Sangbad Sangstha (BSS)",
+   "hi": {
+    "title": "बांग्लादेश में अब प्याज का उत्पादन स्व-निर्भर है, आयात की जरूरत नहीं",
+    "what": "बांग्लादेश में प्याज का उत्पादन स्व-निर्भर हो गया है, इसलिए आयात की जरूरत नहीं है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "भारतीय किसानों के लिए प्याज का भाव गिरने का दबाव हो सकता है, क्योंकि बांग्लादेश अब आयात नहीं करेगा"
+   },
+   "mr": {
+    "title": "बांग्लादेश प्याज उत्पादनात स्वावलंबी झाले आहे, आयातीची गरज नाही",
+    "what": "बांग्लादेश प्याज उत्पादनात स्वावलंबी झाले आहे, म्हणून आयातीची गरज नाही.",
+    "why": "बातमीत कारण नाही",
+    "effect": "भारतीय शेतकऱ्यांसाठी प्याजच्या भावात घट होण्याचा दबाव असू शकतो, कारण बांग्लादेश आता आयात करणार नाही"
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T11:24:19.750Z"
+  },
+  {
    "id": "a-935da4a30882",
    "date": "2026-11-21",
    "crops": [
@@ -652,6 +683,101 @@
    "addedAt": "2026-11-21T08:50:11.659Z"
   },
   {
+   "id": "a-07519a545c17",
+   "date": "2026-11-19",
+   "crops": [
+    "onion"
+   ],
+   "type": "msp",
+   "dir": "pos",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "₹1,580",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOdV9zWVcxdmthMGxFZXBDQlZrc2F4M2RtQllrLXg1QmR1UW05VGhIY3FqNGhKYll3eHBNUzRpVGhYNklPNjJvMldOV1M2YlJDMUc1TW1VLUNHTGRhbVQxdXBUS2lpMHNiRUEwel92UXlKVDJ4V2Rab2s4QUg4UUxYTWR0cHhWSmpKUmMzdXBmOWNpUQ?oc=5",
+   "source_name": "GK Today",
+   "headline": "Centre Sets Nashik Rabi Onion Procurement Price at ₹1,580 - GK Today",
+   "hi": {
+    "title": "केंद्र ने नासिक रबी प्याज की खरीद मूल्य ₹1,580 निर्धारित की",
+    "what": "केंद्र सरकार ने नासिक रबी प्याज की खरीद मूल्य ₹1,580 निर्धारित की है। यह निर्णय प्याज किसानों के लिए लाभकारी हो सकता है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "प्याज किसानों को अच्छा मूल्य मिलने की संभावना है, जिससे उनकी आय बढ़ सकती है।"
+   },
+   "mr": {
+    "title": "केंद्र सरकारने नाशिक रबी कांद्याची खरीद दर १,५८० रुपये ठरवली",
+    "what": "केंद्र सरकारने नाशिक रबी कांद्याची खरीद दर १,५८० रुपये ठरवली आहे. हा निर्णय कांद्या शेतकऱ्यांसाठी फायदेशीर ठरू शकतो.",
+    "why": "बातमीत कारण नाही",
+    "effect": "कांद्या शेतकऱ्यांना चांगला भाव मिळण्याची शक्यता आहे, ज्यामुळे त्यांची उत्पन्न वाढू शकते."
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T11:25:05.325Z"
+  },
+  {
+   "id": "a-94827356cde3",
+   "date": "2026-11-19",
+   "crops": [
+    "tomato"
+   ],
+   "type": "intl",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNX3FQU09PSzRFYTRNNmxxRWVkVDU5Vk45TThHX2NjcWZQdmQ1bmZreHpCaWlmY2hJSWk4MU13czJza1RDZnRocTQwRlJHblJXaHUzelBBMjExTFAxajhzZ2UtRGNTSDhnajhfX1JRMU01ZVh2ckVPZHZ6eWd1UUFzREF0U2tFTzZGVmowdmhuOUZyLWZ3cUFHdVpNR29RMWgxQWp4ajdrR2p3d0VBekp5ZUVyd3RhaHpfMVJvd0N5SXQ4dw?oc=5",
+   "source_name": "FreshPlaza",
+   "headline": "Iranian tomato export suspension threatens winter supplies in Tajikistan - FreshPlaza",
+   "hi": {
+    "title": "इरानी टमाटर निर्यात निलंबन से ताजिकिस्तान में सर्दियों की आपूर्ति खतरे में",
+    "what": "इरान ने टमाटर निर्यात पर रोक लगा दी है, जिससे ताजिकिस्तान में सर्दियों की आपूर्ति खतरे में पड़ गई है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "इरान से टमाटर की आपूर्ति कम होने से ताजिकिस्तान में टमाटर की कीमतें बढ़ सकती हैं।"
+   },
+   "mr": {
+    "title": "इराणच्या टोमॅटो निर्यात विलंबाने ताजिकिस्तानच्या शीतकालीन पुरवठ्यांना धोका",
+    "what": "इराणने टोमॅटो निर्यात वर रोक लागू केली आहे, ज्यामुळे ताजिकिस्तानच्या शीतकालीन पुरवठ्यांना धोका निर्माण झाला आहे.",
+    "why": "बातमीमध्ये कारण नमूद केलेले नाही",
+    "effect": "इराणकडून टोमॅटो पुरवठा कमी होण्याने ताजिकिस्तानात टोमॅटो च्या किमती वाढू शकतात."
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T11:24:40.362Z"
+  },
+  {
+   "id": "a-cbffd9681829",
+   "date": "2026-11-19",
+   "crops": [
+    "tomato",
+    "other",
+    "onion"
+   ],
+   "type": "export",
+   "dir": "pos",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNRTB6Ry1GUjlubExyS2lBM3VvUUdOalZNb0pGYm9hYnNndDg2VXV3aUlkdktGRjcxNFhjczFKR0JaRV9YemgydHVFc2JqakFGX1c0TkZSUUl3d1l5dUFoTjYxY1pXdHo5OWs2ZlBjYlI0OHFaT0VwOTlmaG16UGNCVVBYd25EVlZGd3BUa0ttemIybURjb2YwX0lmanM2dXc5VkxSSFU5dnBqZ0VMZTZJ?oc=5",
+   "source_name": "Азия-Плюс",
+   "headline": "Iran bans tomato, potato and onion exports: What does this mean for Tajikistan? - Азия-Плюс",
+   "hi": {
+    "title": "इरान ने टमाटर, आलू और प्याज के निर्यात पर प्रतिबंध लगाया",
+    "what": "इरान ने टमाटर, आलू और प्याज के निर्यात पर प्रतिबंध लगाया है। यह फैसला ताजिकिस्तान के लिए क्या मतलब रखता है?",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "इरान से इन सब्जियों का निर्यात कम होने से ताजिकिस्तान में इनकी कीमतें बढ़ सकती हैं क्योंकि इरान की आपूर्ति कम हो जाएगी।"
+   },
+   "mr": {
+    "title": "इरानने टोमॅटो, बटाट्या आणि कांद्याच्या निर्यातवर बंदी आणली",
+    "what": "इरानने टोमॅटो, बटाट्या आणि कांद्याच्या निर्यातवर बंदी आणली आहे. हा निर्णय ताजिकिस्तानसाठी काय अर्थ आहे?",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "इराणकडून या भाज्यांचा निर्यात कमी होण्यामुळे ताजिकिस्तानात त्यांच्या किमती वाढू शकतात कारण इराणचा पुरवठा कमी होईल।"
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T11:24:29.946Z"
+  },
+  {
    "id": "a-d9f00ac61e5f",
    "date": "2026-11-19",
    "crops": [
@@ -994,6 +1120,37 @@
    "addedAt": "2026-11-21T08:47:39.301Z"
   },
   {
+   "id": "a-0abac81fd4d2",
+   "date": "2026-11-18",
+   "crops": [
+    "onion"
+   ],
+   "type": "intl",
+   "dir": "neg",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "fourfold",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQVW5SNzk2Tmx1WEZJSGRvZzV6NGkwTWlBOUZGWFJnejZwT3VTdXo5TU1tRlg5WFkwTzZQSzdHWTYzRnZDbnJENUZoWkxNb3BDeS02YUdUWVRkMVU4dE0zNlptSTNjc0lycV9CYmZBVW9aTFh0RFM5cUk2UWVUMnQxVnZXOUg0UVVLUXZGaFVR?oc=5",
+   "source_name": "UA.NEWS",
+   "headline": "Ukraine has increased its onion exports to the EU more than fourfold - UA.NEWS",
+   "hi": {
+    "title": "यूक्रेन ने यूरोपीय संघ में अपने प्याज निर्यात में चार गुना से अधिक वृद्धि की",
+    "what": "यूक्रेन ने यूरोपीय संघ में अपने प्याज निर्यात में चार गुना से अधिक वृद्धि की है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "भारतीय प्याज किसानों के लिए प्याज की कीमतें गिर सकती हैं क्योंकि यूरोपीय संघ में प्याज की आपूर्ति बढ़ रही है।"
+   },
+   "mr": {
+    "title": "युक्रेनने युरोपीय संघात प्याज निर्यात चारपटीने वाढवले",
+    "what": "युक्रेनने युरोपीय संघात प्याज निर्यात चारपटीने वाढवले आहे.",
+    "why": "बातमीत कारण नाही सांगितले",
+    "effect": "युरोपीय संघात प्याजाचा पुरवठा वाढत असल्याने भारतीय प्याज शेतकऱ्यांसाठी प्याजाच्या किमती कमी होऊ शकतात."
+   },
+   "auto": true,
+   "addedAt": "2026-11-21T11:24:54.727Z"
+  },
+  {
    "id": "a-7f610566d948",
    "date": "2026-11-18",
    "crops": [
@@ -1321,8 +1478,14 @@
   "a-0bf5e5b87c0e",
   "a-0be5f873e94c",
   "a-79b3fa0510c9",
-  "a-d9f00ac61e5f"
+  "a-d9f00ac61e5f",
+  "a-ccd82b51f334",
+  "a-751b36d2669d",
+  "a-cbffd9681829",
+  "a-94827356cde3",
+  "a-0abac81fd4d2",
+  "a-07519a545c17"
  ],
- "updated": "2026-11-21T11:21:26.034Z",
+ "updated": "2026-11-21T11:25:09.333Z",
  "_about": "AI se apne aap bani cards. official=true sirf sarkari website wali khabar. Baaki ki sarkari pushti baaki."
 }
