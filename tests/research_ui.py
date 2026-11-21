@@ -63,6 +63,7 @@ with sync_playwright() as p:
     vis = pg.evaluate("document.getElementById('scOut').innerText")
     ok(not [w for w in bad if w in vis], 'faltu jaankari nahi dikhti: ' + ','.join(w for w in bad if w in vis))
     ok(pg.locator('#scOut #scRes').is_hidden(), 'research log chhupa hai')
+    hl = pg.inner_text('#scHist'); ok('₹420' in hl and 'कीटकनाशक' in hl and 'मावा' in hl, 'purani scan list me kimat + upyog')
     pg.click('#scBest [data-pall]'); ok(pg.locator('#scBest [data-ptab] table tr').count() >= 6, 'सर्व किंमती पहा -> table')
     pg.check('#scBest [data-pf=free]'); ok('agrostar' not in pg.inner_text('#scBest [data-ptab] table').lower(), 'filter chalta hai'); pg.uncheck('#scBest [data-pf=free]')
     # 3. sab provider limit -> pichhli sahi kimat (tareekh ke saath)

@@ -1331,11 +1331,16 @@ function scShow(rec){const L=rec.lab||{};let m='';
     ${ban.length?`<div class="rc" style="background:var(--red);margin-top:8px">🚫 ${esc(ban.join(', '))} — भारतात बंदी असलेला घटक. वापरू नका.</div>`:''}
     <div id="scBest"></div><div id="scUse"></div></div><div id="scRes" style="display:none"></div>`;
   resProduct(rec)}
+// Purani scan list: har product ki sabse sasti kimat + kis kaam ka (ek line)
+function scKey(L){return resKey('product',{name:L.product_name||'',company:L.company||'',formulation:L.formulation||'',ais:(L.active_ingredients||[]).filter(a=>a&&a.name).map(a=>({name:a.name,concentration:a.concentration||''}))})}
+function scHistLine(r){const L=r.lab||{};const px=prLast(scKey(L));const b=px&&px.best&&px.best[0];
+  const pests=listTxt(L.targets_on_label);const use=(SC_CAT[L.category]||'')+(hasV(pests)?' — '+String(pests).slice(0,50):'');
+  return `<span style="font-size:14px">🛒 ${b?`<b>${rs(b.total??b.price)}</b> ${esc(b.pack?.text||'')} (${esc(b.website)})`:'<span class="muted">किंमत: उघडून पहा</span>'}</span><br><span style="font-size:14px">🌱 ${esc(use||'—')}</span>`}
 function scRenderHist(){watchRender();
   const el=document.getElementById('scHist');if(!el)return;const h=scHist();
   if(!h.length){el.innerHTML='<p class="muted">अजून काही स्कॅन केले नाही.</p>';return}
   const g={};h.forEach(r=>{const c=SC_CAT[r.lab?.category]?r.lab.category:'unknown';(g[c]||=[]).push(r)});
-  el.innerHTML=Object.entries(g).map(([c,rs])=>`<h3 style="margin:10px 0 4px">${SC_CAT[c]} (${rs.length})</h3>${rs.map(r=>`<label class="ev" style="display:flex;gap:8px;align-items:center;margin:4px 0"><input type="checkbox" class="scCmp" value="${r.id}" style="width:auto"><img src="${r.thumb||''}" style="width:44px;height:44px;object-fit:cover;border-radius:8px"><span style="flex:1"><b>${esc(r.lab?.product_name||'—')}</b><br><span class="muted">${esc(r.date)} • ${esc((r.lab?.active_ingredients||[]).map(a=>a.name).join(', '))}</span></span><button class="btn" data-open="${r.id}" style="width:auto;margin:0;padding:6px 10px;font-size:14px">उघडा</button></label>`).join('')}`).join('')+
+  el.innerHTML=Object.entries(g).map(([c,rs])=>`<h3 style="margin:10px 0 4px">${SC_CAT[c]} (${rs.length})</h3>${rs.map(r=>`<label class="ev" style="display:flex;gap:8px;align-items:center;margin:4px 0"><input type="checkbox" class="scCmp" value="${r.id}" style="width:auto"><img src="${r.thumb||''}" style="width:44px;height:44px;object-fit:cover;border-radius:8px"><span style="flex:1"><b>${esc(r.lab?.product_name||'—')}${r.lab?.company?' – '+esc(r.lab.company):''}</b><br>${scHistLine(r)}<br><span class="muted" style="font-size:12px">${esc(r.date)}</span></span><button class="btn" data-open="${r.id}" style="width:auto;margin:0;padding:6px 10px;font-size:14px">उघडा</button></label>`).join('')}`).join('')+
    `<button class="btn" id="scCmpBtn">⚖️ निवडलेल्या 2–3 उत्पादनांची तुलना</button><button class="btn" id="scClr" style="background:#fff;color:var(--red);border:2px solid var(--red)">इतिहास पुसा</button>`;
   el.querySelectorAll('[data-open]').forEach(b=>b.onclick=e=>{e.preventDefault();const r=scHist().find(x=>x.id===+b.dataset.open);if(r){scShow(r);document.getElementById('scOut').scrollIntoView({block:'start'})}});
   document.getElementById('scCmpBtn').onclick=scCompare;document.getElementById('scClr').onclick=()=>{if(confirm('सर्व इतिहास पुसायचा?')){scSave([]);scRenderHist()}};
@@ -1651,7 +1656,7 @@ function watchRender(){const el=document.getElementById('scWatch');if(!el)return
   el.querySelectorAll('[data-wchk]').forEach(b=>b.onclick=()=>{const k=b.dataset.wchk,a=prAlerts()[k];const o=el.querySelector(`[data-wout="${CSS.escape(k)}"]`);if(a&&o)research(o,a.payload.name?'product':'prices',a.payload,false,true)})}
 function resExtras(st,kind,payload,key){
   if(kind==='product'){const b=document.getElementById('scBest'),u=document.getElementById('scUse');const L=window.SC_CUR||{};
-    if(st.px&&!st.cached)prLastPut(key,st.px);
+    if(st.px&&!st.cached&&st.px.best.length&&!st._h){st._h=1;prLastPut(key,st.px);try{scRenderHist()}catch(e){}}
     if(u)u.innerHTML=useHTML(st,L);if(b){b.innerHTML=cheapHTML(st,key,payload);bindPrice(b,st,kind,key,payload)}}
   if(kind==='prices'){const b=document.querySelector('[data-pbox]');if(b){b.innerHTML=priceHTML(st,kind,key,payload);bindPrice(b,st,kind,key,payload)}}
 }
