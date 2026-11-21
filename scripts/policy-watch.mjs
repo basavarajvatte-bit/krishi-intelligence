@@ -13,7 +13,7 @@ const DRY = process.argv.includes('--dry');          // bina internet ke test: s
 const KEEP = 150;
 
 // Sarkari website = "सरकारी पुष्टि". Baaki sab = "ख़बर, सरकारी पुष्टि बाकी".
-const OFFICIAL = ['pib.gov.in', 'dgft.gov.in', 'newsonair.gov.in', 'cbic.gov.in', 'agriwelfare.gov.in', 'consumeraffairs.nic.in',
+const OFFICIAL = ['pib.gov.in', 'dgft.gov.in', 'newsonair.gov.in', 'ddnews.gov.in', 'cbic.gov.in', 'agriwelfare.gov.in', 'consumeraffairs.nic.in',
   'dfpd.gov.in', 'fci.gov.in', 'apeda.gov.in', 'egazette.gov.in', 'commerce.gov.in', 'agmarknet.gov.in', 'fao.org', 'usda.gov'];
 
 const gnews = q => `https://news.google.com/rss/search?q=${encodeURIComponent(q + ' when:3d')}&hl=en-IN&gl=IN&ceid=IN:en`;
@@ -80,7 +80,7 @@ LIKHNE KE NIYAM:
 Sirf JSON do (ek hi object, uske baad kuch nahi):
 {"relevant":true,"crops":["onion|soybean|cotton|wheat|rice|tur|gram|sugar|maize|tomato|oilseed|other"],
 "type":"","dir":"pos|neg|neu","when":"short|medium|long","conf":"high|medium|low","priority":"high|normal",
-"qty":"text me di gayi matra ya null","date":"YYYY-MM-DD ya null",
+"qty":"text me di gayi matra ya null",
 "hi":{"title":"","what":"Kya hua (2 line)","why":"Kyun (text me nahi to 'ख़बर में कारण नहीं बताया गया')","effect":""},
 "mr":{"title":"","what":"","why":"","effect":""}}
 hi = Hindi (Devanagari), mr = Marathi (Devanagari).`;
@@ -135,7 +135,7 @@ function clean(a, item) {
   const official = OFFICIAL.some(d => item.srcHost === d || item.srcHost.endsWith('.' + d));
   // AI ka confidence: sirf khabar ho (sarkari nahi) to "high" nahi dikhate
   const conf = !official && a.conf === 'high' ? 'medium' : a.conf;
-  const pd = new Date(item.date); const date = /^\d{4}-\d{2}-\d{2}$/.test(a.date || '') ? a.date : (isNaN(pd) ? new Date().toISOString().slice(0, 10) : pd.toISOString().slice(0, 10));
+  const pd = new Date(item.date); const date = isNaN(pd) ? new Date().toISOString().slice(0, 10) : pd.toISOString().slice(0, 10); // khabar chhapne ka din (AI ki tareekh nahi)
   const pick = o => ({ title: String(o.title).slice(0, 160), what: String(o.what || '').slice(0, 500), why: String(o.why || '').slice(0, 400), effect: String(o.effect || '').slice(0, 500) });
   return { id: 'a-' + sha(norm(item.title)), date, crops: crops.length ? crops : ['other'], type: a.type, dir: a.dir, when: a.when, conf,
     priority: a.priority === 'high' ? 'high' : 'normal', qty: a.qty && a.qty !== 'null' ? String(a.qty).slice(0, 120) : null,

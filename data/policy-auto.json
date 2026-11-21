@@ -2,7 +2,7 @@
  "items": [
   {
    "id": "a-0c6b9ab7e0d2",
-   "date": "2026-12-31",
+   "date": "2026-11-21",
    "crops": [
     "cotton"
    ],
@@ -12,7 +12,7 @@
    "conf": "medium",
    "priority": "normal",
    "qty": null,
-   "official": false,
+   "official": true,
    "source": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPM1NkblZaQUVlT0tnVENzRjhXdDNjd3FQblNZV3p2OS1WQmxBVzVwR1NxYWVJSVBGZGwyNWFDT0tjbzJVQm5WeG9hRk9FaG1sa2U4a1VfOVQ3MGRNUWZDNU5TRm5kVUFrSDkxT2R4eHlXMW5LVDd6QTBhbEtxZFBTUHBVa2RiNWFoVWtheFBaOTQ1WGg1RjVPWC1YblJweGc?oc=5",
    "source_name": "DD News",
    "headline": "Centre Extends Customs Duty Exemption on Cotton Imports Till December 31 - DD News",
