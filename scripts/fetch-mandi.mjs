@@ -9,7 +9,6 @@ const WORKER = process.env.WORKER_URL || 'https://krishi-mandi.basavarajvatte.wo
 const RESOURCE = '9ef84268-d588-465a-a308-a864a43d0070';
 const DATA = path.resolve('data');
 const DAILY = path.join(DATA, 'daily');
-const LIMIT = 1000, MAX = 30000;
 
 
 const num = v => { const n = Number(v); return Number.isFinite(n) ? n : null; };
@@ -21,30 +20,32 @@ function viaCurl(url) {
   return JSON.parse(out.toString());
 }
 
-async function page(offset) {
-  const url = `${WORKER}/raw?limit=${LIMIT}&offset=${offset}`;
+const CROPS = ["Onion","Tomato","Potato","Soyabean","Cotton","Wheat","Paddy(Dhan)(Common)","Rice","Maize","Jowar(Sorghum)","Bajra(Pearl Millet/Cumbu)","Ragi (Finger Millet)","Barley (Jau)","Arhar (Tur/Red Gram)(Whole)","Bengal Gram(Gram)(Whole)","Green Gram (Moong)(Whole)","Black Gram (Urd Beans)(Whole)","Lentil (Masur)(Whole)","Groundnut","Mustard","Sunflower","Sesamum(Sesame,Gingelly,Til)","Jute","Cauliflower","Cabbage","Brinjal","Bhindi(Ladies Finger)","Green Chilli","Garlic","Ginger(Green)","Peas Wet","Mango","Banana","Grapes","Pomegranate","Orange","Apple","Water Melon","Papaya","Guava"];
+
+async function cropRecords(crop) {
+  const url = `${WORKER}/?crop=${encodeURIComponent(crop)}&nocache=1`;
   for (let i = 0; i < 3; i++) {
     try {
-      const r = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0 krishi-intelligence' } });
-      if (r.ok) return await r.json();
-      console.error('HTTP', r.status);
-    } catch (e) { console.error('fetch error', e.message, e.cause?.code || '', e.cause?.message || ''); }
-    try { return viaCurl(url); } catch (e) { console.error('curl error', String(e.stderr || e.message)); }
+      const r = await fetch(url);
+      const j = await r.json();
+      if (j.ok) return j.records || [];
+      console.error(crop, 'worker msg:', j.msg);
+    } catch (e) { console.error(crop, 'fetch error', e.message); }
+    try { const j = viaCurl(url); if (j.ok) return j.records || []; } catch (e) { console.error(crop, 'curl error', String(e.stderr || e.message)); }
     await new Promise(s => setTimeout(s, 3000 * (i + 1)));
   }
-  throw new Error('API se data nahi mila');
+  return [];
 }
 
 const rows = [];
-for (let off = 0; off < MAX; off += LIMIT) {
-  const j = await page(off);
-  const rec = j.records || [];
+for (const crop of CROPS) {
+  const rec = await cropRecords(crop);
   for (const r of rec) {
     const modal = num(r.modal_price);
-    if (!modal) continue; // khaali / galat record chhod do
+    if (!modal) continue;
     rows.push([r.state, r.district, r.market, r.commodity, r.variety, num(r.min_price), num(r.max_price), modal, toISO(r.arrival_date)]);
   }
-  if (rec.length < LIMIT || off + LIMIT >= Number(j.total || 0)) break;
+  console.log(crop, rec.length);
 }
 if (!rows.length) { console.error('Koi record nahi'); process.exit(1); }
 
