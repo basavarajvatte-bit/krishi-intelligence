@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mandi API test</title>
+<style>
+body{font-family:system-ui,sans-serif;font-size:20px;padding:16px;max-width:640px;margin:auto}
+input,button{width:100%;font-size:20px;padding:14px;margin:8px 0;border-radius:10px;border:1.5px solid #ccc}
+button{background:#1f6f3f;color:#fff;border:0;font-weight:700}
+#out{white-space:pre-wrap;background:#f3f6f4;padding:12px;border-radius:10px;margin-top:12px}
+</style>
+</head>
+<body>
+<h2>Mandi API test</h2>
+<p>Apni data.gov.in chaabi yahan paste karein. Ye sirf aapke iPad me rahegi, kahin bheji nahi jaati.</p>
+<input id="k" type="password" placeholder="Chaabi yahan paste karein" autocomplete="off">
+<button id="go">Test karo</button>
+<div id="out">Abhi test nahi hua.</div>
+<script>
+document.getElementById('go').onclick = async () => {
+  const out = document.getElementById('out');
+  const key = document.getElementById('k').value.trim();
+  if (!key) { out.textContent = 'Pehle chaabi paste karein.'; return; }
+  out.textContent = 'Check ho raha hai...';
+  const url = 'https://api.data.gov.in/resource/9ef84268-d588-465a-a308-a864a43d0070?api-key=' + encodeURIComponent(key) + '&format=json&limit=3';
+  try {
+    const r = await fetch(url);
+    const j = await r.json();
+    if (j.records && j.records.length) {
+      const x = j.records[0];
+      out.textContent = '✅ CHAL GAYA\nKul records: ' + j.total + '\nUdaharan: ' + x.commodity + ', ' + x.market + ' — ₹' + x.modal_price + ' (' + x.arrival_date + ')';
+    } else {
+      out.textContent = '⚠️ Jawab aaya par data nahi\nHTTP ' + r.status + '\n' + JSON.stringify(j).slice(0, 200);
+    }
+  } catch (e) {
+    out.textContent = '❌ NAHI CHALA\n' + e.message;
+  }
+};
+</script>
+</body>
+</html>
