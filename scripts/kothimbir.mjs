@@ -108,7 +108,7 @@ let daily = load(F_DAILY, { cols: COLS, rows: [] });
 let month = load(F_MONTH, { items: [] });
 let india = load(F_IN, { cols: COLS, rows: [] });
 
-if (process.argv.includes('--backfill')) {
+if (process.argv.includes('--backfill')) try {
   // Maharashtra: nayi tareekh se purani ki taraf, page-by-page, jab tak SINCE se purana na aa jaaye
   const all = new Map(); let off = 0, total = null, oldest = '9999';
   while (true) {
@@ -127,7 +127,7 @@ if (process.argv.includes('--backfill')) {
   daily = { cols: COLS, rows: rows.filter(r => r[0] >= cut) };
   writeSeries(rows, true);
   console.log('Maharashtra itihaas:', rows.length, 'record,', Object.keys(um).length, 'mandi, mahine', month.items.length);
-}
+} catch (e) { console.error('Itihaas abhi nahi mila (sarkari site band?). Purana data waise hi rakha, agli baar phir koshish:', e.message); }
 
 // Roz ka update: pichhle 10 din, poora Bharat (har din ~200–250 mandi)
 const recent = new Map();
