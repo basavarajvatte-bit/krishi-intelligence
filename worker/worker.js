@@ -202,7 +202,7 @@ async function rFetchJson(url, opt = {}, ms = 9000) {
   finally { clearTimeout(t); }
 }
 async function rWiki(q) {
-  const s = await rFetchJson('https://en.wikipedia.org/w/rest.php/v1/search/title?limit=1&q=' + encodeURIComponent(q), { headers: R_UA });
+  const s = await rFetchJson('https://en.wikipedia.org/w/rest.php/v1/search/page?limit=1&q=' + encodeURIComponent(q), { headers: R_UA });
   const key = s.j && s.j.pages && s.j.pages[0] && s.j.pages[0].key; if (!key) return null;
   const p = await rFetchJson('https://en.wikipedia.org/api/rest_v1/page/summary/' + encodeURIComponent(key), { headers: R_UA });
   if (!p.j || !p.j.extract || p.j.type === 'disambiguation') return null;
@@ -251,6 +251,7 @@ async function rEmitItems(env, emit, id, items, source) {
   return items.length;
 }
 async function runResearch(b, env, emit) {
+  const DBG = {};
   const now = new Date().toISOString();
   const step = (id, status, extra = {}) => emit({ type: 'step', id, status, ...extra });
   if (b.kind === 'product') {
@@ -271,7 +272,7 @@ async function runResearch(b, env, emit) {
       await step('wiki', 'run');
       try {
         let n = 0;
-        for (const a of ai) { const w = await rWiki(a + ' pesticide'); if (!w) continue; const first = w.text.split(/(?<=\.)\s+/).slice(0, 3).join(' ');
+        for (const a of ai) { const w = await rWiki(a); if (!w) continue; const first = w.text.split(/(?<=\.)\s+/).slice(0, 3).join(' ');
           n += await rEmitItems(env, emit, 'how', [{ field: 'how', value: first, quote: first }], { title: 'Wikipedia: ' + w.title, url: w.url, source_type: 'encyclopedia', retrieved_at: now }); }
         await step('wiki', n ? 'ok' : 'none');
       } catch (e) { await step('wiki', 'fail'); }
@@ -282,7 +283,7 @@ async function runResearch(b, env, emit) {
       try {
         const r = await rTavily(env, `${subj} ${conc} ${P.formulation || ''} ${(P.crops || [])[0] || ''} dosage recommendation`, { domains: R_OFFICIAL, raw: true, max: 3 });
         if (r.limit) return step('official', 'limit');
-        let n = 0;
+        let n = 0; DBG.official = { got: r.results.length, err: r.error || '', urls: r.results.map(x => rHost(x.url) + ':' + String(x.raw_content || x.content || '').length) };
         for (const x of r.results.slice(0, 3)) {
           if (!rIsOfficial(x.url)) continue;
           const items = await rExtract(env, x.raw_content || x.content, subj, ['dosage', 'crops', 'pests', 'phi', 'method', 'timing', 'max_applications', 'safety', 'first_aid', 'storage', 'disposal', 'reentry']);
@@ -290,8 +291,8 @@ async function runResearch(b, env, emit) {
           items.filter(i => i.field === 'dosage').forEach(i => dosages.push({ value: i.value, source: src }));
           n += await rEmitItems(env, emit, 'official', items, src);
         }
-        await step('official', n ? 'ok' : 'none');
-      } catch (e) { await step('official', 'fail'); }
+        await step('official', n ? 'ok' : 'none', { dbg: DBG.official });
+      } catch (e) { await step('official', 'fail', { dbg: String(e).slice(0, 120) }); }
     })());
     // 4. Company ki website (Tavily)
     tasks.push((async () => {

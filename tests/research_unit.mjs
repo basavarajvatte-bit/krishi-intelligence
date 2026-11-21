@@ -7,7 +7,7 @@ globalThis.fetch = async (url, opt = {}) => {
   url = String(url);
   const J = (o, st = 200) => new Response(JSON.stringify(o), { status: st });
   if (scenario === 'down') throw new Error('network down');
-  if (url.includes('search/title')) return J({ pages: [{ key: 'Thiamethoxam' }] });
+  if (url.includes('/search/')) return J({ pages: [{ key: 'Thiamethoxam' }] });
   if (url.includes('page/summary')) return J({ title: 'Thiamethoxam', extract: 'Thiamethoxam is a systemic insecticide in the class of neonicotinoids. It acts on the nervous system of insects. It is used on many crops.', content_urls: { desktop: { page: 'https://en.wikipedia.org/wiki/Thiamethoxam' } } });
   if (url.includes('tavily')) {
     if (scenario === 'limit') return J({ detail: 'limit' }, 432);
