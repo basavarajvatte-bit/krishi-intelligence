@@ -5,3 +5,9 @@ workers_dev = true
 
 [ai]
 binding = "AI"
+
+# Ek phone se 1 minute me 15 scan tak (free, quota bachane ke liye)
+[[ratelimits]]
+name = "VISION_RL"
+namespace_id = "1001"
+simple = { limit = 15, period = 60 }

@@ -1,0 +1,12 @@
+name: Model jaanch
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ['Worker deploy']
+    types: [completed]
+jobs:
+  p:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install -q pillow && python tests/probe_models.py
