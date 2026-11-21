@@ -206,7 +206,7 @@ async function rWiki(q, must) {
   const key = s.j && s.j.pages && s.j.pages[0] && s.j.pages[0].key; if (!key) return null;
   const p = await rFetchJson('https://en.wikipedia.org/api/rest_v1/page/summary/' + encodeURIComponent(key), { headers: R_UA });
   if (!p.j || !p.j.extract || p.j.type === 'disambiguation') return null;
-  if (must && !must.every(w => (p.j.title + ' ' + p.j.extract).toLowerCase().includes(w))) return null;
+  if (must && !must.some(w => w.split(' ').some(x => x.length >= 4 && p.j.title.toLowerCase().includes(x)))) return null;   // page ka naam hi milna chahiye
   return { title: p.j.title, text: p.j.extract, url: (p.j.content_urls && p.j.content_urls.desktop && p.j.content_urls.desktop.page) || ('https://en.wikipedia.org/wiki/' + key) };
 }
 async function rTavily(env, query, opts = {}) {
