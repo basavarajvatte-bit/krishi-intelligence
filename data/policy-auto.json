@@ -1,6 +1,193 @@
 {
  "items": [
   {
+   "id": "a-192014c99e23",
+   "date": "2026-11-22",
+   "crops": [
+    "wheat"
+   ],
+   "type": "policy",
+   "dir": "pos",
+   "when": "short",
+   "conf": "medium",
+   "priority": "high",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPVjRhMkJMN1FkRDdJeTFmbElVWjJHZE0wYmxBdTFoUGl6ZGMtMDNqRGo4NU11bFE0VlN4ZHR4bzBzQlcxS0VDcm02OFkwa2l3Y09HQmMtV0VlVV80R0pTVmFxUGlZcGZWNnBoOUU3aFJ1WDZtOGJkWUJiMmhfWVN2bU1adVdjakg4Ym5kZNIBkgFBVV95cUxORzJncjNXRXR6WkJNbFVBR3VkQ2tZdFNHZEF1ZEVMSGFKTUk2R3liaDVINVNpQThaZG8tamd4aHBKMEpMRElMNC1ncGtUWGswVFQxakdDMGlSUWNWRU1XUmZtX0FXNVZRT2N0UTF3Ukp6NVVIbWtuU0ZxYU1iVFFQMFo5LWV2dE1HN0xLNEV2clRaUQ?oc=5",
+   "source_name": "ProPakistani",
+   "headline": "Govt Launches New Anti-Wheat Crisis Measures - ProPakistani",
+   "hi": {
+    "title": "सरकार ने गेहूं संकट के लिए नए उपाय शुरू किए",
+    "what": "पाकिस्तान सरकार ने गेहूं संकट के लिए नए उपाय शुरू किए हैं।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "गेहूं की कीमतें बढ़ सकती हैं क्योंकि सरकार ने गेहूं संकट के लिए नए उपाय शुरू किए हैं।"
+   },
+   "mr": {
+    "title": "सरकारने गव्हाच्या संकटावर नियंत्रण म्हणून नवे उपाय सुरू केले",
+    "what": "पाकिस्तान सरकारने गव्हाच्या संकटावर नियंत्रण म्हणून नवे उपाय सुरू केले आहेत.",
+    "why": "बातमीत कारण नाही",
+    "effect": "गव्हाची किंमत वाढू शकते कारण सरकारने गव्हाच्या संकटावर नियंत्रण म्हणून नवे उपाय सुरू केले आहेत."
+   },
+   "auto": true,
+   "addedAt": "2026-11-22T13:24:28.933Z"
+  },
+  {
+   "id": "a-acead9fe63be",
+   "date": "2026-11-22",
+   "crops": [
+    "wheat"
+   ],
+   "type": "import",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "high",
+   "qty": "800,000-ton",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPRnlwRWx5VlVFSk85Nm96TDJhWC1jZnRobXRlREZpelhBUnE3enBMOHU0azZzbEZTZENHM0tCVkx3MlB5LVAxNWNHcy03TmNpX0czaW5MUlRfQjloZy1OT1YzZ0NpYTl2YXRRbXJ4ZnhTckJvOExtaDlyNzZqN01sWUF5aGY2U3ltZ1hLQUh3NUxzNk9fZ0lzNVJ3?oc=5",
+   "source_name": "Bol News",
+   "headline": "Pakistan plans to import 800,000-ton wheat to stabilize prices - Bol News",
+   "hi": {
+    "title": "पाकिस्तान ८००,००० टन गेहूं आयात करने की योजना बना रहा है",
+    "what": "पाकिस्तान गेहूं की कीमतों को स्थिर करने के लिए ८००,००० टन गेहूं आयात करने की योजना बना रहा है।",
+    "why": "कीमतों को स्थिर करने के लिए",
+    "effect": "भारतीय किसानों के लिए गेहूं की कीमतें गिर सकती हैं क्योंकि पाकिस्तान की आयात से दुनिया में गेहूं की उपलब्धता बढ़ जाएगी।"
+   },
+   "mr": {
+    "title": "पाकिस्तानने ८००,००० टन गव्हाचा आयात करण्याची योजना केली आहे",
+    "what": "पाकिस्तानने गव्हाच्या किमती स्थिर करण्यासाठी ८००,००० टन गव्हाचा आयात करण्याची योजना केली आहे.",
+    "why": "किमती स्थिर करण्यासाठी",
+    "effect": "भारतीय शेतकऱ्यांसाठी गव्हाच्या किमती कमी होऊ शकतात कारण पाकिस्तानच्या आयातमुळे जगभरात गव्हाची उपलब्धता वाढेल।"
+   },
+   "auto": true,
+   "addedAt": "2026-11-22T13:24:06.674Z"
+  },
+  {
+   "id": "a-bacfab73ef8d",
+   "date": "2026-11-21",
+   "crops": [
+    "sugar"
+   ],
+   "type": "export",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "416,000",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPYW50c3otRWpnZ1dySlpHNk8wOUgyNnBVeGR0LXM3YXpCbHN4WHM5cFdiQkxCQkl4bWZaWkllV2dSVDhBR3MyQS1fYWdwOG5DcFVwd1ZXWHBhZmxWUE16UDhxcjFYZXdXV3ZvdVdnWDhOVjZERU1ZazIyZEFIUVJ4cl9CbWRSTk5sa0E?oc=5",
+   "source_name": "The Daily CPEC",
+   "headline": "Pakistan Approves Another 416,000 Tonnes of Sugar Exports - The Daily CPEC",
+   "hi": {
+    "title": "पाकिस्तान ने 416,000 टन चीनी निर्यात को मंजूरी दी",
+    "what": "पाकिस्तान ने 416,000 टन चीनी निर्यात को मंजूरी दी है। यह निर्णय पाकिस्तान के चीनी उद्योग के लिए एक महत्वपूर्ण विकास है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "चीनी की कीमतें गिर सकती हैं क्योंकि पाकिस्तान की चीनी निर्यात बढ़ने से दुनिया में चीनी की आपूर्ति बढ़ेगी।"
+   },
+   "mr": {
+    "title": "पाकिस्तानने ४१६,००० टन साखर निर्यातला मान्यता दिली",
+    "what": "पाकिस्तानने ४१६,००० टन साखर निर्यातला मान्यता दिली आहे. हा निर्णय पाकिस्तानच्या साखर उद्योगासाठी एक महत्त्वाचा विकास आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "साखरच्या किमती कमी होऊ शकतात कारण पाकिस्तानच्या साखर निर्यात वाढल्याने जगभरात साखरचा पुरवठा वाढेल."
+   },
+   "auto": true,
+   "addedAt": "2026-11-22T13:24:58.011Z"
+  },
+  {
+   "id": "a-ddf511c40b5c",
+   "date": "2026-11-21",
+   "crops": [
+    "wheat"
+   ],
+   "type": "intl",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOS055NVh6Wlg1OXhVU2hzZzBwbDl4VjZaSU9XZjVNZDkzbzBUeVNHd0JkcW1nYlpBY21YNEJyeWJkOHozN0xuWjhUTzZfczJKM1VHOWt3RktOM01KcTZXejYzeHB5VFBEV3pfWDVzU2E3bHNTWEtKQVduY0NuNE1jM1lnT1VnakEtUGtHN3FSdXR4WXZRdEZEWk9CZmbSAVZBVV95cUxPYnMyMDVIZFlsdHZOQjF4ZTR5TGtYRm1nVW0xdTI1TEJ6b3N1aXBKMmYxc3FiRmdNZmJhNzZCeXBKaXVqNS03SHJaYmZtTGtpTWRyRDBqUQ?oc=5",
+   "source_name": "Business Recorder",
+   "headline": "EU wheat pauses after four-week high as exports assessed - Business Recorder",
+   "hi": {
+    "title": "EU में गेहूं की कीमतें चार हफ्ते के उच्चतम स्तर पर रुक गईं",
+    "what": "EU में गेहूं की कीमतें चार हफ्ते के उच्चतम स्तर पर रुक गईं क्योंकि निर्यात का आकलन किया जा रहा है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "यूरोपीय संघ में गेहूं की कीमतें गिर सकती हैं क्योंकि निर्यात की मांग कम होने से देश में गेहूं की अधिकता हो सकती है।"
+   },
+   "mr": {
+    "title": "युए में गव्हाच्या किमती चार आठवड्यांच्या उच्चतम स्तरावर थांबल्या",
+    "what": "युए में गव्हाच्या किमती चार आठवड्यांच्या उच्चतम स्तरावर थांबल्या कारण निर्यातीचा आढावा घेतला जात आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "युरोपीयन संघातील गव्हाच्या किमती कमी होऊ शकतात कारण निर्यातीची मागणी कमी होण्याने देशात गव्हाचे प्रमाण वाढू शकते."
+   },
+   "auto": true,
+   "addedAt": "2026-11-22T13:24:39.854Z"
+  },
+  {
+   "id": "a-a736d87b2a2d",
+   "date": "2026-11-21",
+   "crops": [
+    "wheat"
+   ],
+   "type": "policy",
+   "dir": "neg",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9waGJ2V2dOaDlUVkhDNkpUa0N2akcyVGl4ekgwMDdxTTJPQ2NZcEZZZzJRRHgyT2ZOdnJoYk53a1duRDlDbDljWVRfX1RtODNB0gFWQVVfeXFMUFp3c3ZvcDlKMWIwc2JDUnJCdW9QczBuMk5Fb3RyN21WVnpMbDR5RWZwODdHTW1ZOGRUQXEwaWVLdWd1Sl9NTGlrVFBzTFdzX0FZUzBYYlE?oc=5",
+   "source_name": "Business Recorder",
+   "headline": "Import of more wheat recommended - Business Recorder",
+   "hi": {
+    "title": "व्हीट के और आयात की सिफारिश की गई",
+    "what": "व्हीट के और आयात की सिफारिश की गई है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "व्हीट के दाम गिर सकते हैं क्योंकि देश में व्हीट की अधिक आपूर्ति होगी"
+   },
+   "mr": {
+    "title": "गव्हाचा अधिक आयात करण्याची शिफारस करण्यात आली आहे",
+    "what": "गव्हाचा अधिक आयात करण्याची शिफारस करण्यात आली आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "गव्हाच्या भावात घट होऊ शकते कारण देशात गव्हाची अधिक पुरवठा होईल"
+   },
+   "auto": true,
+   "addedAt": "2026-11-22T13:24:20.427Z"
+  },
+  {
+   "id": "a-f0448e37c23f",
+   "date": "2026-11-21",
+   "crops": [
+    "wheat",
+    "sugar"
+   ],
+   "type": "export",
+   "dir": "neg",
+   "when": "short",
+   "conf": "high",
+   "priority": "high",
+   "qty": null,
+   "official": true,
+   "source": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPRm5SOUlsSENuVjdRSG5aYnBpVEdJa0hQbnZSVW9HTk94TUJhZHNZeFVVcU1DX1k2aExQQlVIRG42V0xmdUgyRVdpb19uOVlXaDhBSW11ZWxtcklMMU5WMHc4bHlXOE1IRGllSWZrT3RfcEM2SmxneEZwcklsRjR2Tk01UzhnQ21NazZrMlBLLXR2MEk?oc=5",
+   "source_name": "DD News",
+   "headline": "Centre approves wheat exports, allows additional sugar shipments - DD News",
+   "hi": {
+    "title": "केंद्र ने गेहूं निर्यात को मंजूरी दी, चीनी की अतिरिक्त खेप की अनुमति दी",
+    "what": "केंद्र सरकार ने गेहूं के निर्यात को मंजूरी दी है और चीनी की अतिरिक्त खेप की अनुमति दी है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "गेहूं के दाम गिरने की संभावना है क्योंकि निर्यात से देश में गेहूं की मात्रा कम होगी"
+   },
+   "mr": {
+    "title": "केंद्राने गव्हाच्या निर्यातला मान्यता दिली, साखरेच्या अतिरिक्त खेपची परवानगी दिली",
+    "what": "केंद्र सरकारने गव्हाच्या निर्यातला मान्यता दिली आहे आणि साखरेच्या अतिरिक्त खेपची परवानगी दिली आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "गव्हाच्या किमती कमी होण्याची शक्यता आहे कारण निर्यातमुळे देशात गव्हाचे प्रमाण कमी होईल"
+   },
+   "auto": true,
+   "addedAt": "2026-11-22T13:23:37.723Z"
+  },
+  {
    "id": "a-3848de739d07",
    "date": "2026-11-21",
    "crops": [
@@ -1646,8 +1833,16 @@
   "a-87e3e39aa3d3",
   "a-180add80589d",
   "a-1f5ee4693449",
-  "a-268b357136cd"
+  "a-268b357136cd",
+  "a-f0448e37c23f",
+  "a-f05e79b3aae6",
+  "a-acead9fe63be",
+  "a-a736d87b2a2d",
+  "a-192014c99e23",
+  "a-ddf511c40b5c",
+  "a-3e352ef213ce",
+  "a-bacfab73ef8d"
  ],
- "updated": "2026-11-22T07:38:23.406Z",
+ "updated": "2026-11-22T13:25:02.020Z",
  "_about": "AI se apne aap bani cards. official=true sirf sarkari website wali khabar. Baaki ki sarkari pushti baaki."
 }
