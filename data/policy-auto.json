@@ -1,6 +1,161 @@
 {
  "items": [
   {
+   "id": "a-f1c6211fb586",
+   "date": "2026-11-22",
+   "crops": [
+    "rice"
+   ],
+   "type": "export",
+   "dir": "pos",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNeVphWkZQbUFFeWlnTElEcThSVm56QmoxVnBaUFhpVTVMM204WHQ2em5sZkVqMjdiRlloYU9rc1VmTlFOR0J3LVFJbnRGZFdWLXdzY1pZOGJ5RlZheDVERm45UjdZajVFdkEzZlFodmMyTEtCWGFqZzNHT19DaEJkTjNvOFplUmxJLUFnODBrZUtoWFnSAZoBQVVfeXFMUGwxSm9xUnplVF8wOXc4dUZrZ0pvQ0tpd05CNXRtRUJCbG1jLVhPZTV2d25WQmdUYy1GM2Q5MGphT3AxVVBYcHM4ZHl5Z2ZyMzhWVGdLTVpBVWxoZFpjSG5udFBaWDZBUkJLdEV6c0hXSzRVNldHR1YtU2RkUTd1UVJzdUhlVGxYSWNrODVYdlpWOTFPNlo2eWd5Zw?oc=5",
+   "source_name": "The Financial Express",
+   "headline": "Govt mulls curbs on rice exports - The Financial Express",
+   "hi": {
+    "title": "सरकार चावल निर्यात पर प्रतिबंध लगाने पर विचार कर रही है",
+    "what": "सरकार चावल निर्यात पर प्रतिबंध लगाने पर विचार कर रही है। यह फैसला अभी तक नहीं हुआ है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "अगर प्रतिबंध लगाया जाता है, तो चावल का भाव बढ़ने की संभावना है क्योंकि देश में चावल की मात्रा कम हो जाएगी।"
+   },
+   "mr": {
+    "title": "सरकार चावल निर्यात वर प्रतिबंध लागू करण्याबद्दल विचार करीत आहे",
+    "what": "सरकार चावल निर्यात वर प्रतिबंध लागू करण्याबद्दल विचार करीत आहे. हा निर्णय अद्याप घेतलेला नाही.",
+    "why": "बातमीमध्ये कारण नमूद केलेले नाही",
+    "effect": "जेव्हा प्रतिबंध लागू केले जातील, तेव्हा चावलाची किंमत वाढण्याची शक्यता आहे कारण देशात चावलाची प्रमाणात कमी होईल।"
+   },
+   "auto": true,
+   "addedAt": "2026-11-22T19:16:40.551Z"
+  },
+  {
+   "id": "a-3c126e8cdf8e",
+   "date": "2026-11-22",
+   "crops": [
+    "other"
+   ],
+   "type": "export",
+   "dir": "pos",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "high",
+   "qty": "25.4 percent, 12 fold",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOa3lPOF8zTll0cnk4YXIzR1ZTX3Y1by1CendvQkNSckI1T2JnVmJxWElqSHVobmYxekdvc2ZvYUUxYnUtUFRMbW5CWl9tdGQzZWdJc3plMVZwWktCZThsYV9EdzdhSWNsdkJqcm5rMXR0TGFQMjNycGxfdWhKczBlMVprUzNNWWxuMlV1YThDdjVadjg2TFV5cEJEWXB5NDhCN255V0RhZjRpenNHanltU0R2enZGVVByM05mc1B4czBPZmE5LXhFRW5TLVFWLVotZUFGenR2NWxhc0nSAeABQVVfeXFMTjRmb1BqdHVPRk1uc0ZCb1RHNEZlX3QzWkVlazZZdnJxYnJ5TkVXUkxFdnlnekk2QXpwZEVrSm5uMktyM2ZPSG93aUN3VW9ZSXM2b2NsczM0Z0FSY251OWc3UW1kZVlDNlp2eU9uSk5uVDYtNW9uNE5GUHV4MkFjdFphckNtR05aeU82c2M3d0Qzb0ZYb1ozanE2ZHIzWWpXZEdtSENMX0lqM2hvS2hyMkRQZTEyTEJxOVV0R19MR1JzMFRyNlpYd0QwOGZaR1JjNE9MN3dkV0ItT3JDdmYwOE0?oc=5",
+   "source_name": "Organiser",
+   "headline": "India agricultural exports surge in FY27: Basmati rice up 25.4 percent, corn exports jump 12 fold - Organiser",
+   "hi": {
+    "title": "भारत के कृषि निर्यात में वृद्धि",
+    "what": "भारत के कृषि निर्यात में वृद्धि हुई है, जिसमें बासमती चावल के निर्यात में 25.4 प्रतिशत और मक्का के निर्यात में 12 गुना वृद्धि हुई है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "किसानों को बासमती चावल और मक्का के दाम बढ़ सकते हैं क्योंकि निर्यात में वृद्धि से घरेलू बाजार में इनकी मांग बढ़ सकती है।"
+   },
+   "mr": {
+    "title": "भारताच्या कृषी निर्यातात वाढ",
+    "what": "भारताच्या कृषी निर्यातात वाढ झाली आहे, ज्यामध्ये बासमती तांदूळ निर्यात 25.4 टक्क्यांनी व मक्याच्या निर्यातात 12 पटीने वाढ झाली आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "शेतकऱ्यांना बासमती तांदूळ आणि मक्याच्या भावात वाढ होऊ शकते कारण निर्यात वाढल्याने घरगुती बाजारपेठेत त्यांची मागणी वाढू शकते."
+   },
+   "auto": true,
+   "addedAt": "2026-11-22T19:16:29.979Z"
+  },
+  {
+   "id": "a-590660a4a79c",
+   "date": "2026-11-22",
+   "crops": [
+    "rice"
+   ],
+   "type": "policy",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "high",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNZXZPb0J3WFBya2c1MFVTWDFsWE1uXzQwUGl3YzlaZHRiS1d4bFlFTzM5eGY3NkMwNUdSUHQzSGVraVlMQVU3a1hCQnQzQjh6b19fQVkxcXdsbDRNN2Q5d1NMNzh1eDJ3R09VdUpJY2dzYjhEM1FuU2FSNVlMdXhVYTc0Rk5IaXlTaW4ybnlBZmItbFY0WTdLdUkxdXVxVlhvZXB0cDN3ZzVTZFRibHNJaTI1SkZDVXpWLUtZN29QREtkYjQ3TDVlQUJXMjEtbndBbmVqWjVTZmR3SWNFbkNvRtIB5wFBVV95cUxNU1RlZnpmYWg5SzdpZ0lQMHRMOFA1TFE1WDZvUlI4ZW1nNVhIVWpNeTBucXFjM2MxT1hkdEtsXzVBbzBHVXhrZHZLUElJQ1lqczlVTTl5QTZ2M0JYcHM1a096N1NXQjlNSF9OMkJFRDhJR0EteVYwWG5kUDhPb1h6dFZINFZHR0VYNjF2NzhDX21yTjZyaTB3Vk9JSU5HUEVIUFBlTzZKUkU4czJJdHZiSVpTY2pGMkFfRGYtNmN6am40eEJUeGJuRGlScVZMQXdoVnNoVk1LSFRQcmRsbGJXNVBud1k5VjQ?oc=5",
+   "source_name": "BusinessLine",
+   "headline": "India weighs curbs on non-Basmati rice exports to cool domestic prices - BusinessLine",
+   "hi": {
+    "title": "भारत चावल के निर्यात पर प्रतिबंध लगाने पर विचार कर रहा है",
+    "what": "भारत चावल के निर्यात पर प्रतिबंध लगाने पर विचार कर रहा है ताकि घरेलू कीमतों को नियंत्रित किया जा सके।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "चावल की कीमतें गिर सकती हैं क्योंकि देश में चावल की अधिक मात्रा होगी"
+   },
+   "mr": {
+    "title": "भारतात नॉन-बासमती तांदूळ निर्यातवर निर्बंध लागू करण्याचा विचार केला जात आहे",
+    "what": "भारतात नॉन-बासमती तांदूळ निर्यातवर निर्बंध लागू करण्याचा विचार केला जात आहे जेणेकरून देशातील किंमतींवर नियंत्रण ठेवता येईल.",
+    "why": "बातमीत कारण नाही",
+    "effect": "तांदूळाच्या किमती कमी होऊ शकतात कारण देशात तांदूळाचे प्रमाण जास्त असेल"
+   },
+   "auto": true,
+   "addedAt": "2026-11-22T19:16:07.640Z"
+  },
+  {
+   "id": "a-78f3bc77385f",
+   "date": "2026-11-22",
+   "crops": [
+    "cotton"
+   ],
+   "type": "policy",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNVVJSNWppcHdrbGVwZ3l6X0JrZmdXb2liWkRrNmRnV3d5SzY1Tk8yczJSR193aDVMUl9lZDhzOUVQS2NZRWRwQkd5VFpscjBxWGVtcnYwTzhacElaVTlzMkxldTdILUxGOVJUSG4xRnAxZjA2QnhCZXZHVkZ0VFY5ZzFMNU1zX0dtRXBZM2Q5RW9xcVFZd05zQU1EVzVvTGd2alVhUVNYeXFpb010Ujg3RHFQdm9hbWZ5NUFFU2hHWXg4SWRLTkR0clp30gHOAUFVX3lxTE5iaDJRTS0xOXVkRXJJMnZrMjRRcUV0d292UXBCVG4zUEdQYzdqbFVady1vN01QOWpZZF9EbUtid20tazlDTEY4b0pTVDJEWVA2ejZ2WlptS1ljQlpnS1hfdHRVaHZkS3c5SS1zMlEzMWRld3lPenNZdzhUZEhxaUg3dE1IQXRmSHRSY0x6TUNBbzBFWUFZNDhLWnBvYzdhMWs0Z09JMkF1R0hvSzFhWmZYUmVLZmFqdFU5dTZvalAzRkJqMmRZWWgzM0RQWkFn?oc=5",
+   "source_name": "The Tribune",
+   "headline": "Cotton import allowances are in place until December, says Union Minister Giriraj Singh - The Tribune",
+   "hi": {
+    "title": "कपास आयात की अनुमति दिसंबर तक",
+    "what": "केंद्रीय मंत्री गिरिराज सिंह ने कहा कि कपास आयात की अनुमति दिसंबर तक जारी रहेगी।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "कपास आयात की अनुमति से देश में कपास की उपलब्धता बढ़ेगी, जिससे किसानों को कम दाम मिल सकते हैं।"
+   },
+   "mr": {
+    "title": "कापूस आयात परवानगी डिसेंबरपर्यंत राहील",
+    "what": "",
+    "why": "",
+    "effect": ""
+   },
+   "auto": true,
+   "addedAt": "2026-11-22T19:15:57.417Z"
+  },
+  {
+   "id": "a-bdd9901f29bd",
+   "date": "2026-11-22",
+   "crops": [
+    "soybean"
+   ],
+   "type": "policy",
+   "dir": "neg",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOWWR5UF9wSjVsV1U5TFo1QnItX2VRTzhCZnJ1RnhMZVF2WHZjXzRtQ08wMGV0V296cG1HZGFyTUVELXFOVENXbUpmeHJzM2tuUlVYWDlHMWZGZnR3akRXZjN5OVNxcURPbkp6blJpRF9zWnl2T2U3YmtOTjJBMlpsSTZ5WFk4Y2xNR1V4eFZzOXN0dXcwVzlGM0dJbW5kVkkzSTFDakpjT2J0NUZLUVctM1dpRkRHMnRDV0pheHNOTFhoeUc3VVE?oc=5",
+   "source_name": "AgroLatam",
+   "headline": "Indonesia Plans New Soybean Import Controls as U.S. Exporters Face Greater Trade Uncertainty - AgroLatam",
+   "hi": {
+    "title": "इंडोनेशिया में नए सोयाबीन आयात नियंत्रण की योजना",
+    "what": "इंडोनेशिया सोयाबीन आयात पर नए नियंत्रण लागू करने की योजना बना रहा है। अमेरिकी निर्यातकों को अधिक व्यापार अनिश्चितता का सामना करना पड़ रहा है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "इंडोनेशिया में सोयाबीन आयात पर नियंत्रण बढ़ने से भाव गिर सकता है, क्योंकि आयात कम हो सकती है।"
+   },
+   "mr": {
+    "title": "इंडोनेशियामध्ये नवीन सोयाबीन आयात नियंत्रणाची योजना",
+    "what": "इंडोनेशिया सोयाबीन आयात वर नवीन नियंत्रण लागू करण्याची योजना बनवत आहे. अमेरिकन निर्यातदारांना अधिक व्यापार अनिश्चिततेचा सामना करावा लागत आहे.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "इंडोनेशियामध्ये सोयाबीन आयात वर नियंत्रण वाढल्याने किंमत कमी होऊ शकते, कारण आयात कमी होऊ शकते."
+   },
+   "auto": true,
+   "addedAt": "2026-11-22T19:15:38.035Z"
+  },
+  {
    "id": "a-192014c99e23",
    "date": "2026-11-22",
    "crops": [
@@ -372,6 +527,37 @@
    },
    "auto": true,
    "addedAt": "2026-11-21T08:50:22.686Z"
+  },
+  {
+   "id": "a-1355f70f093b",
+   "date": "2026-11-20",
+   "crops": [
+    "rice"
+   ],
+   "type": "intl",
+   "dir": "pos",
+   "when": "short",
+   "conf": "medium",
+   "priority": "high",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPOWlObEwyclpSdW1xaGpHMnk1cDVlTWVBNVNNTVQ2WlA2SXBQcW9WNTJNMG90VVY0Z0VSamptSkZ0ekRNdWVINmdBZnF3dkdhM1BNN1d0RGx2T2dadHg3dE5zc1V4TlBpbV8yb2RGZWZvUWdRMzNwdUk0NGFoc0ZVQ1Z3VndEQThZUlBJYmdRWEhxMWtucmJ5VHAyYURjOU5tYlk2MmRIZ3BQOVBRSHdoZ3gzbjhQQWtDYWlUQ01LcjhtdVIz?oc=5",
+   "source_name": "Bangkok Post",
+   "headline": "India rice rates hit 19-month peak, Thai prices highest in nearly two years - Bangkok Post",
+   "hi": {
+    "title": "भारतीय चावल की कीमतें 19 महीने के उच्चतम स्तर पर",
+    "what": "भारतीय चावल की कीमतें 19 महीने के उच्चतम स्तर पर पहुंच गई हैं। थाई चावल की कीमतें लगभग दो साल में सबसे अधिक हैं।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "चावल की कीमतें बढ़ने से किसानों को फायदा होगा क्योंकि देश में चावल की मांग अधिक है और इसकी कीमतें बढ़ रही हैं।"
+   },
+   "mr": {
+    "title": "भारतीय तांदूळाच्या दरांनी १९ महिन्यांचा उच्चांक गाठला",
+    "what": "भारतीय तांदूळाच्या दरांनी १९ महिन्यांचा उच्चांक गाठला आहे. थायलंडमधील तांदूळाच्या दरांनी सुमारे दोन वर्षांनी सर्वोच्च स्तर गाठला आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "तांदूळाच्या दरांच्या वाढीमुळे शेतकऱ्यांना फायदा होईल कारण देशात तांदूळाची मागणी जास्त आहे आणि त्याच्या दरांमध्ये वाढ होत आहे."
+   },
+   "auto": true,
+   "addedAt": "2026-11-22T19:16:19.575Z"
   },
   {
    "id": "a-9cc8b70b2450",
@@ -1841,8 +2027,16 @@
   "a-192014c99e23",
   "a-ddf511c40b5c",
   "a-3e352ef213ce",
-  "a-bacfab73ef8d"
+  "a-bacfab73ef8d",
+  "a-3d0c64c3cd8b",
+  "a-bdd9901f29bd",
+  "a-09bbcddd5936",
+  "a-78f3bc77385f",
+  "a-590660a4a79c",
+  "a-1355f70f093b",
+  "a-3c126e8cdf8e",
+  "a-f1c6211fb586"
  ],
- "updated": "2026-11-22T13:25:02.020Z",
+ "updated": "2026-11-22T19:16:44.561Z",
  "_about": "AI se apne aap bani cards. official=true sirf sarkari website wali khabar. Baaki ki sarkari pushti baaki."
 }
