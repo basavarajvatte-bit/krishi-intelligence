@@ -1,6 +1,161 @@
 {
  "items": [
   {
+   "id": "a-cd273e7151e1",
+   "date": "2026-11-23",
+   "crops": [
+    "rice"
+   ],
+   "type": "export",
+   "dir": "pos",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNRnd0NW11NmREZHdKU2pSNjUtQTJZTi15NnRIQ3JIdlBfQkxsbmFaR1FKamFvLXFRUjZWSHNqekY4d1dzMGl4em1mMXlOY0VjQ2VPaG1jOVhhdTNfZkwyMzkxeDI2WDBKOEUxclJ4ZnJVV2xFaWpuRFM1T2M1WXFuSmVpUlMtZjV0RDN0SkdSa1FvRkYzWXE3MGhNWkQ5YUIxMDdF?oc=5",
+   "source_name": "Magzter",
+   "headline": "Centre mulls curbs on rice exports - Magzter",
+   "hi": {
+    "title": "केंद्र चावल निर्यात पर प्रतिबंध लगाने पर विचार कर रहा है",
+    "what": "केंद्र सरकार चावल निर्यात पर प्रतिबंध लगाने पर विचार कर रही है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "चावल के दाम बढ़ सकते हैं क्योंकि देश में चावल की मात्रा कम हो जाएगी और मांग पूरी करने के लिए कम चावल होगा।"
+   },
+   "mr": {
+    "title": "केंद्र चावल निर्यात वर प्रतिबंध लागू करण्याबद्दल विचार करीत आहे",
+    "what": "केंद्र सरकार चावल निर्यात वर प्रतिबंध लागू करण्याबद्दल विचार करीत आहे.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "चावलाच्या किमती वाढू शकतात कारण देशात चावलाची प्रमाण कमी होईल आणि मागणी पूर्ण करण्यासाठी कमी चावल असेल।"
+   },
+   "auto": true,
+   "addedAt": "2026-11-23T19:27:06.923Z"
+  },
+  {
+   "id": "a-26c7ce7199a7",
+   "date": "2026-11-23",
+   "crops": [
+    "rice"
+   ],
+   "type": "export",
+   "dir": "pos",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "20%",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOU21Hc2dEMHUybDFUTkoyTXFGOW5JaWFRclptcl8wSGZMZHZndGNqN0R6a09FWWpreUFpRURhMW9RZU9yVUlnaDU4SU5fRDE4NURZdnhwTmhZNmU5OEZ4ejdhcG9hRXh3OEdINmQ3VmxlN2ZhWnA1bTJ4SFk3RkNFNkM0VlRDN2tyS2E3RldneTVTeWtTRTVpOENMXzVoLWNzWWYyQXBMVkllLWV2ZHJEX0JDeE91bk02c1FiRlB3T044WWxCbmpUZDBHV0dNNVBObGtidHBnR1B5U2ZnZVdZVEhOX0Npb3pJcno2OUJQVnNGV1FFNU1TTHFwblVKbzTSAYQCQVVfeXFMTzV0VTRsTklfWl92ZzFtMGpwRzZHeEtBdDRsRHJxTmt4NzlnaXdycnI1cFJ3ckc1YUNxNlRwTXN0Q0hGSk5kOFk4YmE4cXNWb0pJWE95aHNnOE9aMEdobzJfalJENXdaRkJrR3ZKZjBVcDl5THVTdi1aSWxVdWxCaVBIWHQ1MEVyaUFhWjdtYWhaNGVDSHIyMnJJdHlxTUg3WEJfNkhOZDI4Sk5IcGg5dmpUbV8wWXVKUVRxSTBjZHNhMUtxVDU2S01PZzlfUmg1RWRSbENPVmJVbTFSemJSakMtM2JVeHo5NDU5MkpUUGJXdk44dUtDOVBzMGJrdTFJYnNpZEU?oc=5",
+   "source_name": "The Times of India",
+   "headline": "India weighs 20% export duty on select rice varieties to boost domestic supply: Report - The Times of India",
+   "hi": {
+    "title": "भारत चुनिंदा चावल किस्मों पर 20% निर्यात शुल्क लगाने पर विचार कर रहा है",
+    "what": "भारत चुनिंदा चावल किस्मों पर 20% निर्यात शुल्क लगाने पर विचार कर रहा है। यह घरेलू आपूर्ति को बढ़ावा देने के लिए किया जा रहा है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "चावल की घरेलू आपूर्ति बढ़ेगी और इसका दाम गिरने की संभावना है, लेकिन निर्यात शुल्क लगने से किसानों को फायदा होगा क्योंकि घरेलू बाजार में चावल की कीमतें बढ़ सकती हैं।"
+   },
+   "mr": {
+    "title": "भारत निवडक तांदूळ प्रकारांवर २०% निर्यात कर आकारणी करण्याबद्दल विचार करीत आहे",
+    "what": "भारत निवडक तांदूळ प्रकारांवर २०% निर्यात कर आकारणी करण्याबद्दल विचार करीत आहे. हे घरगुती पुरवठा वाढविण्यासाठी केले जात आहे.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "तांदूळचा घरगुती पुरवठा वाढेल आणि त्याची किंमत कमी होण्याची शक्यता आहे, परंतु निर्यात कर आकारण्यामुळे शेतकऱ्यांना फायदा होईल कारण घरगुती बाजारपेठेत तांदूळच्या किंमती वाढू शकतात."
+   },
+   "auto": true,
+   "addedAt": "2026-11-23T19:26:45.635Z"
+  },
+  {
+   "id": "a-939ac87ad057",
+   "date": "2026-11-23",
+   "crops": [
+    "rice"
+   ],
+   "type": "export",
+   "dir": "pos",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "30%",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNR2tiN29xWlZfMHUzVHB4dEt4RmgtME95Q2EyLUtkU2prb2hERFR2ajN1eE8tck5peldqRHRYdmFlQ0xIc0t3b21qS3BEV3l3b2dHYmZTb1pzemtVbTN2WDhKeUFoM2x1ZkVUMDRHZWxUQ3R0YVZrM3dlNEdmemhaT1NCcjdnVV9xMFd4dzNvel9iWDEzdFdBNmRUQmJBWU8tejNidjZWX3UyX3c3eFlV?oc=5",
+   "source_name": "УкрАгроКонсалт",
+   "headline": "India considers raising rice export duty to 30% amid rising domestic prices - УкрАгроКонсалт",
+   "hi": {
+    "title": "भारत चावल निर्यात शुल्क 30% तक बढ़ाने पर विचार कर रहा है",
+    "what": "भारत चावल निर्यात शुल्क 30% तक बढ़ाने पर विचार कर रहा है। घरेलू कीमतें बढ़ रही हैं",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "चावल की घरेलू कीमतें बढ़ रही हैं, इसलिए निर्यात शुल्क बढ़ाने से घरेलू बाजार में चावल की उपलब्धता बढ़ेगी और कीमतें कम हो सकती हैं"
+   },
+   "mr": {
+    "title": "भारत चावल निर्यात कर 30% पर्यंत वाढवण्याबद्दल विचार करीत आहे",
+    "what": "भारत चावल निर्यात कर 30% पर्यंत वाढवण्याबद्दल विचार करीत आहे. देशांतर्गत किंमती वाढत आहेत",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "चावलाच्या देशांतर्गत किंमती वाढत आहेत, म्हणून निर्यात कर वाढवल्याने देशांतर्गत बाजारपेठेत चावलाची उपलब्धता वाढेल आणि किंमती कमी होऊ शकतात"
+   },
+   "auto": true,
+   "addedAt": "2026-11-23T19:26:33.791Z"
+  },
+  {
+   "id": "a-69bc0af4cd61",
+   "date": "2026-11-23",
+   "crops": [
+    "rice"
+   ],
+   "type": "policy",
+   "dir": "pos",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOdVFVRlVtNzZDZlUtUU9oVnh5SG92VFJ1b1ZzZWtPeXpfXzV2R1p6SE1CY2lOc1ZtdEhLX2xwOXNCbnN6MmxsR0Zoa3AzQXVrZ3NhUE5pbzhFY1lrVFg2ay1jWmdXZmRiNzJ6a2YtTWpyZTJvOG5qWEFqeUZrcEpYc282MS1MUDBoVjVuSW1IaEZZMjFwaXRtQjBEZWdnc2l4YzgxcEJYLTdwZFBjMGRYcGpybkpsZw?oc=5",
+   "source_name": "Reuters",
+   "headline": "India considers rice export duties as domestic prices rise, sources say - Reuters",
+   "hi": {
+    "title": "भारत चावल निर्यात शुल्क पर विचार कर रहा है क्योंकि घरेलू कीमतें बढ़ रही हैं",
+    "what": "भारत चावल निर्यात शुल्क पर विचार कर रहा है। घरेलू कीमतें बढ़ रही हैं",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "चावल की कीमतें बढ़ सकती हैं क्योंकि निर्यात शुल्क लगने से देश में चावल की उपलब्धता कम हो सकती है"
+   },
+   "mr": {
+    "title": "भारतात चावल निर्यात करांवर विचार केला जात आहे कारण देशांतर्गत किंमती वाढत आहेत",
+    "what": "भारतात चावल निर्यात करांवर विचार केला जात आहे. देशांतर्गत किंमती वाढत आहेत",
+    "why": "बातमीत कारण नाही सांगितले",
+    "effect": "चावलाच्या किंमती वाढू शकतात कारण निर्यात कर लागल्याने देशात चावलाची उपलब्धता कमी होऊ शकते"
+   },
+   "auto": true,
+   "addedAt": "2026-11-23T19:26:16.343Z"
+  },
+  {
+   "id": "a-320f333854a2",
+   "date": "2026-11-23",
+   "crops": [
+    "wheat"
+   ],
+   "type": "import",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "high",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQa3V3ZVE2eWZTa3JROUwtMUdHRnJpR25rVG5RS1F4T2ZzbG5iMkZxMWtDSFRvQlViMnNKSjk1eXhEV0E2aEVuUzgwODJrSTFYek9aczg3QUhwSDRhVms4cjAzRTE4T1ZTejB1OEU5cHNqZ2lVMGpfNFBMY0x6c3ByU0Z3MDJlSldLRWRURk9VTQ?oc=5",
+   "source_name": "ARYnews.tv",
+   "headline": "Pakistan moves to import additional wheat to stabilise flour prices - ARYnews.tv",
+   "hi": {
+    "title": "पाकिस्तान ने गेहूं की कीमतें स्थिर करने के लिए अतिरिक्त गेहूं आयात करने का फैसला किया",
+    "what": "पाकिस्तान ने अपने देश में गेहूं की कीमतें स्थिर करने के लिए अतिरिक्त गेहूं आयात करने का फैसला किया है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "इसका भारतीय किसानों पर नकारात्मक प्रभाव पड़ेगा क्योंकि आयात से देश में गेहूं की अधिकता होगी और कीमतें गिरेंगी।"
+   },
+   "mr": {
+    "title": "पाकिस्तानने गव्हाच्या किमती स्थिर करण्यासाठी अधिक गव्हाच आयात करण्याचा निर्णय घेतला",
+    "what": "पाकिस्तानने त्यांच्या देशात गव्हाच्या किमती स्थिर करण्यासाठी अधिक गव्हाच आयात करण्याचा निर्णय घेतला आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "याचा भारतीय शेतकऱ्यांवर नकारात्मक परिणाम होईल कारण आयातमुळे देशात गव्हाचे प्रमाण वाढेल आणि किमती खाली येतील"
+   },
+   "auto": true,
+   "addedAt": "2026-11-23T19:26:05.251Z"
+  },
+  {
    "id": "a-01427c498854",
    "date": "2026-11-23",
    "crops": [
@@ -278,6 +433,37 @@
    },
    "auto": true,
    "addedAt": "2026-11-23T07:59:50.443Z"
+  },
+  {
+   "id": "a-477f10e5a2d5",
+   "date": "2026-11-22",
+   "crops": [
+    "rice"
+   ],
+   "type": "export",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "20%",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOTHBQckNNUTFJaUlfZDF3c1RvUmI0SFpoQ0d1UUMzc3NiaWRYcVJlOExzeHNfOFNXOXJsRmpzN2NFWnVZRDhaaUgxb1JUd1JlVDhhcGZqSk5BMi1xRXczaDBKbERGRk5ZSWstZHJGaG9fSFlMOGx6QTVacHBORllIRXBxWVpXVDk3M1UzNVpfSzVZd3ZRVnZFb1NRTDRvelZVYzV6R0c5Q3NOUQ?oc=5",
+   "source_name": "scanx.trade",
+   "headline": "India considers 20% export duty on rice to boost local supplies - scanx.trade",
+   "hi": {
+    "title": "भारत चावल पर 20% निर्यात शुल्क लगाने पर विचार कर रहा है",
+    "what": "भारत चावल पर 20% निर्यात शुल्क लगाने पर विचार कर रहा है ताकि स्थानीय आपूर्ति बढ़ाई जा सके।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "चावल का निर्यात शुल्क बढ़ने से किसानों को कम भाव मिलेगा क्योंकि निर्यात पर बन लगने से देश में चावल की अधिक मात्रा रह जाएगी और इसकी कीमतें गिरेंगी।"
+   },
+   "mr": {
+    "title": "भारत चावलावर २०% निर्यात कर आकारणी करण्याबद्दल विचार करीत आहे",
+    "what": "भारत चावलावर २०% निर्यात कर आकारणी करण्याबद्दल विचार करीत आहे जेणेकरून स्थानिक पुरवठा वाढवला जाईल.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "चावलावर निर्यात कर वाढल्याने शेतकऱ्यांना कमी भाव मिळेल कारण निर्यातवर बंदी येत असल्याने देशात चावलाचे प्रमाण वाढेल आणि त्याच्या किंमती खाली येतील."
+   },
+   "auto": true,
+   "addedAt": "2026-11-23T19:27:18.819Z"
   },
   {
    "id": "a-390ea3c7e5b0",
@@ -714,6 +900,37 @@
    },
    "auto": true,
    "addedAt": "2026-11-22T13:24:06.674Z"
+  },
+  {
+   "id": "a-c11954b62027",
+   "date": "2026-11-21",
+   "crops": [
+    "maize"
+   ],
+   "type": "export",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNZXdYVHdUdGJVNVRSVjJGN2JaTWticFNfNVJxbjZscTJ5SGhpazNySE5uLWtDUXRMMGdaNkJnR21jUmdfYVMzYWhnY0R0a3lwb29HaUJ3QmpTbmgzdlJkbzNYQ0hsMlhnbF9ET25ybEZyWklmWTdQUkNUcy11Vlhma0Jac0JubGl4cEFyYms0ZjNRZ1pkQV9aVURENDZ0YmZPMkhqdGQyTQ?oc=5",
+   "source_name": "NDTV",
+   "headline": "India's Corn Exports to Vietnam: Export Boom, Earnings Fall - NDTV",
+   "hi": {
+    "title": "भारत के मक्का निर्यात में वृद्धि",
+    "what": "भारत के मक्का निर्यात में वृद्धि हुई है, लेकिन आय में गिरावट आई है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "भारतीय किसानों को मक्का का दाम गिरने की संभावना है क्योंकि निर्यात में वृद्धि के बावजूद आय में गिरावट आई है।"
+   },
+   "mr": {
+    "title": "भारताच्या मक्याच्या निर्यातीत वाढ",
+    "what": "भारताच्या मक्याच्या निर्यातीत वाढ झाली आहे, परंतु उत्पन्नात घट झाली आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "भारतीय शेतकऱ्यांना मक्याची किंमत कमी होण्याची शक्यता आहे कारण निर्यातीत वाढ झाली आहे तरीही उत्पन्नात घट झाली आहे."
+   },
+   "auto": true,
+   "addedAt": "2026-11-23T19:27:28.342Z"
   },
   {
    "id": "a-8f14c73044bf",
@@ -2650,8 +2867,16 @@
   "a-942cfeb8dc56",
   "a-7032f9f42c94",
   "a-6662af89be26",
-  "a-01427c498854"
+  "a-01427c498854",
+  "a-320f333854a2",
+  "a-69bc0af4cd61",
+  "a-939ac87ad057",
+  "a-26c7ce7199a7",
+  "a-accf0b7c494f",
+  "a-cd273e7151e1",
+  "a-477f10e5a2d5",
+  "a-c11954b62027"
  ],
- "updated": "2026-11-23T13:48:21.005Z",
+ "updated": "2026-11-23T19:27:32.350Z",
  "_about": "AI se apne aap bani cards. official=true sirf sarkari website wali khabar. Baaki ki sarkari pushti baaki."
 }
