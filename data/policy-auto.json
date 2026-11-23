@@ -1,6 +1,130 @@
 {
  "items": [
   {
+   "id": "a-64e89569ecb0",
+   "date": "2026-11-23",
+   "crops": [
+    "rice"
+   ],
+   "type": "export",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "0.35m tonnes",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1VQnFVWmdISDFYSTNuNkg5WFppeFJUMTRrSURhNElDYmxyTlFUdlpnVUxEQzdZUmZXQnpvZ3BfSEJHME82enpXXw?oc=5",
+   "source_name": "Dawn",
+   "headline": "Rice exports up by 0.35m tonnes in four months - Dawn",
+   "hi": {
+    "title": "चार महीनों में चावल निर्यात में 0.35 मिलियन टन की वृद्धि",
+    "what": "पाकिस्तान में चार महीनों में चावल निर्यात में 0.35 मिलियन टन की वृद्धि हुई है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "चावल का निर्यात बढ़ने से देश में चावल की कमी हो सकती है, जिससे किसानों को चावल का भाव बढ़ सकता है।"
+   },
+   "mr": {
+    "title": "चार महिन्यांत तांदूळ निर्यात ०.३५ मिलियन टनने वाढले",
+    "what": "पाकिस्तानमध्ये चार महिन्यांत तांदूळ निर्यात ०.३५ मिलियन टनने वाढले आहे.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "तांदूळ निर्यात वाढल्याने देशात तांदूळची कमी होऊ शकते, ज्यामुळे शेतकऱ्यांना तांदूळचा भाव वाढू शकतो."
+   },
+   "auto": true,
+   "addedAt": "2026-11-23T08:00:26.785Z"
+  },
+  {
+   "id": "a-2921e762bde8",
+   "date": "2026-11-23",
+   "crops": [
+    "rice"
+   ],
+   "type": "policy",
+   "dir": "pos",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPVHI0STZQaTlKODJVOERCdllYZFVIMmVQNGdjRzdhNXJZRmRkLU80LWl6VEhxUHlybU5ETEJPVGxjQzFkRERyUTNFSEphNzktTmVTZEZHMFp2YUlac1h5TnUxY2N2NDZheExqejU5cmE3RlV5TG81dndOaldYWWJiQlNMdWhGWUdhMDlfb2NQTE9UOGQ3anEycG82dUtGVkU?oc=5",
+   "source_name": "CMB News",
+   "headline": "Indian Fine Rice Market Firm on Tight Paddy and Export Demand — CMB News - CMB News",
+   "hi": {
+    "title": "भारतीय फाइन राइस बाजार में तेजी",
+    "what": "भारतीय फाइन राइस बाजार में तेजी है क्योंकि पैडी की कमी और निर्यात मांग है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "चावल का भाव बढ़ेगा क्योंकि पैडी की कमी और निर्यात मांग से बाजार में तेजी आती है।"
+   },
+   "mr": {
+    "title": "भारतीय फाइन तांदूळ बाजारात चढउतार",
+    "what": "भारतीय फाइन तांदूळ बाजारात चढउतार आहे कारण पाडी कमी आहे आणि निर्यात मागणी आहे.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "तांदूळची किंमत वाढेल कारण पाडी कमी आणि निर्यात मागणीमुळे बाजारात चढउतार येतो."
+   },
+   "auto": true,
+   "addedAt": "2026-11-23T08:00:09.171Z"
+  },
+  {
+   "id": "a-4e40f911a015",
+   "date": "2026-11-23",
+   "crops": [
+    "wheat"
+   ],
+   "type": "import",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "high",
+   "qty": "800,000 tonnes",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNMk9RZUhNdVdEdy1BZURjN1BkSU5QR1pzdjZSM3pLS1V0aUViazZEVkFIMXM1QXNselF3b2NsUUNPckI3S0o4cUR1NjRuaHRvS2JVeTZWX3NtMnh4a0xwSGlPay1jb1ZEWWppclRBSjJ4dVZZbGdGRGI3OWh3aEROZU9CZHlKVF9kcFl3UWhnVlBKbmV2WGUzT3ZDSG5Rb3VYQVYwTVBn?oc=5",
+   "source_name": "Investify",
+   "headline": "Pakistan issues third wheat import tender for 800,000 tonnes - Investify",
+   "hi": {
+    "title": "पाकिस्तान ने 800,000 टन गेहूं के आयात के लिए तीसरा टेंडर जारी किया",
+    "what": "पाकिस्तान ने 800,000 टन गेहूं के आयात के लिए तीसरा टेंडर जारी किया है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "भारतीय किसानों के लिए गेहूं का भाव गिरने का दबाव हो सकता है क्योंकि पाकिस्तान की आयात से दुनिया में गेहूं की आपूर्ति बढ़ेगी।"
+   },
+   "mr": {
+    "title": "पाकिस्तानने ८००,००० टन गव्हाच्या आयातीसाठी तिसरी टेंडर जारी केली",
+    "what": "पाकिस्तानने ८००,००० टन गव्हाच्या आयातीसाठी तिसरी टेंडर जारी केली आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "भारतीय शेतकऱ्यांसाठी गव्हाच्या भावात घट होण्याचा दबाव असू शकतो कारण पाकिस्तानच्या आयातीमुळे जगभरात गव्हाचा पुरवठा वाढेल."
+   },
+   "auto": true,
+   "addedAt": "2026-11-23T07:59:50.443Z"
+  },
+  {
+   "id": "a-c129fffc718c",
+   "date": "2026-11-22",
+   "crops": [
+    "wheat"
+   ],
+   "type": "import",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQVUlNa1NraGVRS1dIeU1SVE9FNnY0aUZtRlpzRzlaZ1pfejQ5QkNlREI5bDhIdGZpNVQ5dVNxbllvM3ozckdiSG5uVU12TWF5NzF4X1V3N2xERmtjRDJFZ0UzbUpIRGVreGNpZnlybVpEZUZQeE9CR3Z1UlZldXNQN1EzaFBFYW1v0gGOAUFVX3lxTFBqSGhRLThDVW5xZWl0RmFfMkZzWVk0NnhHcmNpR0pCM0dHdWVWajNKU21PTFVuN0VNTXJkSHJOdWRJMTFRQTBoWkQ1b1Y5elZyNUc1TDFMNFZjcWxZc0lodVl6SW1VRWhhZnBZWElYOHRodWJERDZFVG4zU0RuWWV0elFVSnotTG9MdTUybGc?oc=5",
+   "source_name": "ProPakistani",
+   "headline": "Ex-Finance Minister Reveals Govt’s Wheat Import Plan - ProPakistani",
+   "hi": {
+    "title": "पूर्व वित्त मंत्री ने सरकार की गेहूं आयात योजना का खुलासा किया",
+    "what": "पूर्व वित्त मंत्री ने बताया कि सरकार गेहूं आयात करने की योजना बना रही है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "गेहूं की आयात से देश में गेहूं की अधिकता हो सकती है, जिससे किसानों को गेहूं का दाम कम मिल सकता है।"
+   },
+   "mr": {
+    "title": "माजी अर्थमंत्र्यांनी सरकारच्या गव्हाच्या आयात योजनेचे खुलासा केले",
+    "what": "माजी अर्थमंत्र्यांनी सांगितले की सरकार गव्हाच्या आयातीची योजना तयार करण्याचा विचार करत आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "गव्हाच्या आयातीमुळे देशात गव्हाची अधिकता होऊ शकते, ज्यामुळे शेतकऱ्यांना गव्हाचे भाव कमी मिळू शकतात."
+   },
+   "auto": true,
+   "addedAt": "2026-11-23T08:00:00.131Z"
+  },
+  {
    "id": "a-ff4c8fa8bfb3",
    "date": "2026-11-22",
    "crops": [
@@ -371,6 +495,37 @@
    },
    "auto": true,
    "addedAt": "2026-11-22T13:24:06.674Z"
+  },
+  {
+   "id": "a-8f14c73044bf",
+   "date": "2026-11-21",
+   "crops": [
+    "other"
+   ],
+   "type": "export",
+   "dir": "pos",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOYjFnNUNUNkNLZlQ5dTBuX3E3a3ZxVWZHdkc5N1V1WV9FUEt4NFYzUW5XazZJSW1mWno3RGtJSWRWUXVaNzZ6cFh6MzU1b2tpUnVTcU5DOGJ3ZmVLMEVEbjdzNzRneXlfT1Q0ZmhmeGRRbE1SVDM2WWszbXN6VXgyWXY2RUFmSDdjNVl0OTBlck16RExWdmw2ZlJ5Y09jU3M5Rjl2bnF4UVRKUF9ma2JhNmxHcC1aZVlOVllKa0hHRWpSUQ?oc=5",
+   "source_name": "Jharkhand State News",
+   "headline": "Basmati rice exports increased across West Asian markets and the U.S. - Jharkhand State News",
+   "hi": {
+    "title": "बासमती चावल का निर्यात बढ़ा",
+    "what": "पश्चिम एशियाई बाजारों और अमेरिका में बासमती चावल का निर्यात बढ़ा है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "भाव बढ़ने की संभावना है क्योंकि देश से बासमती चावल का निर्यात बढ़ा है।"
+   },
+   "mr": {
+    "title": "बासमती तांदूळ निर्यात वाढला",
+    "what": "पश्चिम एशियाई बाजार आणि अमेरिकेत बासमती तांदूळ निर्यात वाढला आहे.",
+    "why": "बातमीत कारण नाही सांगितले",
+    "effect": "किंमत वाढण्याची शक्यता आहे कारण देशातून बासमती तांदूळ निर्यात वाढला आहे."
+   },
+   "auto": true,
+   "addedAt": "2026-11-23T08:00:38.651Z"
   },
   {
    "id": "a-afa88c9a4b73",
@@ -2260,8 +2415,16 @@
   "a-c9d4e8e5056c",
   "a-4f314b542a8c",
   "a-ff4c8fa8bfb3",
-  "a-afa88c9a4b73"
+  "a-afa88c9a4b73",
+  "a-b676365fffc4",
+  "a-447317856060",
+  "a-e3ff909e9051",
+  "a-4e40f911a015",
+  "a-c129fffc718c",
+  "a-2921e762bde8",
+  "a-64e89569ecb0",
+  "a-8f14c73044bf"
  ],
- "updated": "2026-11-23T01:45:11.747Z",
+ "updated": "2026-11-23T08:00:42.660Z",
  "_about": "AI se apne aap bani cards. official=true sirf sarkari website wali khabar. Baaki ki sarkari pushti baaki."
 }
