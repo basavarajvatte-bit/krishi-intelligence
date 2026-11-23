@@ -1,6 +1,192 @@
 {
  "items": [
   {
+   "id": "a-01427c498854",
+   "date": "2026-11-23",
+   "crops": [
+    "rice"
+   ],
+   "type": "policy",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPUXZJMHJiVlBZSkRTVzBtSG1HblRneDN6aFRaU3MzMXdVUkhSRXlLY2Vjc3ZLWW4yMVNyMUxlRHI2OFc4VzZrcEFfS1lFNzFtemR2My1UeGNRVnE3MXU4Z3ZUemN2a2t2YnRTZmJCZWxmQ0cxN2N1aE5pVk4yOGNVVldvc3BsMm5Wd0RSSjBIbFhxTVJ5T2FEM0tvQnR1OS13SlRsdzZuOFpjVG5x?oc=5",
+   "source_name": "CMB News",
+   "headline": "Andhra Pradesh rice stock limits steady FOB prices — CMB News - CMB News",
+   "hi": {
+    "title": "आंध्र प्रदेश में चावल की स्टॉक सीमा स्थिर है",
+    "what": "आंध्र प्रदेश में चावल की स्टॉक सीमा स्थिर होने से चावल की कीमतें स्थिर हो गई हैं",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "चावल की कीमतें स्थिर होने से किसानों को नुकसान हो सकता है क्योंकि देश में चावल की अधिकता है"
+   },
+   "mr": {
+    "title": "आंध्र प्रदेशात चावल साठ्याची मर्यादा स्थिर आहे",
+    "what": "आंध्र प्रदेशात चावल साठ्याची मर्यादा स्थिर असल्याने चावलाच्या किमती स्थिर झाल्या आहेत",
+    "why": "बातमीत कारण नाही",
+    "effect": "चावलाच्या किमती स्थिर असल्याने शेतकऱ्यांना नुकसान होऊ शकते कारण देशात चावलाची अधिकता आहे"
+   },
+   "auto": true,
+   "addedAt": "2026-11-23T13:48:16.998Z"
+  },
+  {
+   "id": "a-6662af89be26",
+   "date": "2026-11-23",
+   "crops": [
+    "rice"
+   ],
+   "type": "policy",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQN2NLMFNfQVR1WXNQd3J6WThfdzVHMnRlQklqNmx5cXo2ZG5DelprSW9BdXlxWm15bzVoRElqLTZ1cTkyVk1IUGF6dk5CenFSaHp0a09YNmRRY3hBSzl1NlFSMkhYZjZoemFrRmV2RFlYWUVOaVA4dXR0UmNvdXR1OHhkTHFrX0FBLUJZV0hRSUpYcnlNWU9hd2hUYmRoa2c?oc=5",
+   "source_name": "BigMint",
+   "headline": "India weighs export duty and MEP on non-basmati rice - BigMint",
+   "hi": {
+    "title": "भारत नॉन-बासमती चावल पर निर्यात शुल्क और एमईपी पर विचार कर रहा है",
+    "what": "भारत नॉन-बासमती चावल के निर्यात पर शुल्क और न्यूनतम निर्यात मूल्य (एमईपी) लगाने पर विचार कर रहा है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "इसका नॉन-बासमती चावल के किसानों के लिए नकारात्मक प्रभाव पड़ सकता है, क्योंकि निर्यात शुल्क और एमईपी से चावल का निर्यात कम हो सकता है और घरेलू बाजार में इसकी कीमतें गिर सकती हैं।"
+   },
+   "mr": {
+    "title": "भारत नॉन-बासमती तांदूळावर निर्यात कर आणि एमईपी वर विचार करीत आहे",
+    "what": "भारत नॉन-बासमती तांदूळाच्या निर्यातीवर कर आणि किमान निर्यात मूल्य (एमईपी) लादण्याबद्दल विचार करीत आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "याचा नॉन-बासमती तांदूळ उत्पादक शेतकऱ्यांवर नकारात्मक परिणाम होऊ शकतो, कारण निर्यात कर आणि एमईपी मुळे तांदूळ निर्यात कमी होऊ शकते आणि देशांतर्गत बाजारात त्याच्या किमती कमी होऊ शकतात."
+   },
+   "auto": true,
+   "addedAt": "2026-11-23T13:48:07.985Z"
+  },
+  {
+   "id": "a-7032f9f42c94",
+   "date": "2026-11-23",
+   "crops": [
+    "wheat"
+   ],
+   "type": "import",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "high",
+   "qty": "800,000 tonnes",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQZGFlSjVwb2VFVWpJbm5BZHgwLXZZektDZTlvWFhFUFExcXVIOWdVd3ExNzdqdHFOUnFLY1VhZE5HTEh1LUtTVWdfS3N6MVZQU21MVmh1WFpSZkp0ZVRMZDVNeUNBem5hR2ZydHh1c0RSS3NjeXlsTTNydER5cWhzWWg4MUdIZjNNSTlzT3FNMVpDMXM?oc=5",
+   "source_name": "Daily Times",
+   "headline": "Pakistan invites bids to import 800,000 tonnes of wheat - Daily Times",
+   "hi": {
+    "title": "पाकिस्तान ८ लाख टन गेहूं के आयात के लिए बोली आमंत्रित करता है",
+    "what": "पाकिस्तान ने ८ लाख टन गेहूं के आयात के लिए बोली आमंत्रित की है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "भारतीय किसानों के लिए गेहूं का भाव गिरने का दबाव हो सकता है क्योंकि पाकिस्तान के आयात से दुनिया में गेहूं की आपूर्ति बढ़ेगी।"
+   },
+   "mr": {
+    "title": "पाकिस्तान ८ लाख टन गहू आयात करण्यासाठी बोली आमंत्रित करतो",
+    "what": "पाकिस्तानने ८ लाख टन गहू आयात करण्यासाठी बोली आमंत्रित केली आहे.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "भारतीय शेतकऱ्यांसाठी गहू च्या भावात घट होण्याचा दबाव असू शकतो कारण पाकिस्तानच्या आयातमुळे जगभरातील गहू पुरवठा वाढेल."
+   },
+   "auto": true,
+   "addedAt": "2026-11-23T13:47:52.971Z"
+  },
+  {
+   "id": "a-942cfeb8dc56",
+   "date": "2026-11-23",
+   "crops": [
+    "cotton"
+   ],
+   "type": "policy",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "31st December",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNRmhnUG5JbWhlczNCQXRXSGFlVmVUd3Z4TjhKV1puX3BMS2daclExYzVpRVpCcmw2U0FLeFJSeHVjcWZLRHJCZHo2QmxBX18yMWZsejF6amljMlJZRk9OUGUyTUo4NDhqeUtKdjRIakJNTHNpcktVc2VDb3RyV3VZT3FqN01VbzJpNm5wZXkxa1VyUTlORm1WVHRvdnBYcHRZeTVZS2dGeDZzZlVsb2UtTE1wcEI5NndndDRmMw?oc=5",
+   "source_name": "Apparel Resources",
+   "headline": "India extends cotton import duty exemption until 31st December - Apparel Resources",
+   "hi": {
+    "title": "भारत ने 31 दिसंबर तक कॉटन आयात पर शुल्क छूट बढ़ा दी",
+    "what": "भारत ने 31 दिसंबर तक कॉटन आयात पर शुल्क छूट बढ़ा दी है। यह निर्णय कॉटन आयातकों के लिए लाभकारी हो सकता है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "कॉटन की आयात बढ़ने से इसकी कीमतें गिर सकती हैं क्योंकि देश में कॉटन की अधिक उपलब्धता होगी"
+   },
+   "mr": {
+    "title": "भारताने ३१ डिसेंबरपर्यंत कापड आयातवर करात्मक छूट वाढवली",
+    "what": "भारताने ३१ डिसेंबरपर्यंत कापड आयातवर करात्मक छूट वाढवली आहे. हा निर्णय कापड आयातदारांसाठी फायदेशीर ठरू शकतो.",
+    "why": "बातमीमध्ये कारण नमूद केलेले नाही",
+    "effect": "कापड आयात वाढल्याने त्याच्या किमती कमी होऊ शकतात कारण देशात कापडाची अधिक उपलब्धता असेल"
+   },
+   "auto": true,
+   "addedAt": "2026-11-23T13:47:40.274Z"
+  },
+  {
+   "id": "a-415d07974260",
+   "date": "2026-11-23",
+   "crops": [
+    "soybean"
+   ],
+   "type": "import",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "7%",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOZnRrOTZzNFpabnRtSFcwWldyOXJBU1VNQmk1UTNjaWRvVTFPdURseDFnX3FFaGJxYm5FcFR6UjZMTEZZYVZlc1hoTHZod1hxNE9mcmliN1lEY014Y0NJVldfckFpQXNQRmp6aGZGUnRxVlNLMlpacmVrRUZGbHVOTlBzSmx3MC1iQlZEbDhaUzNaY2FqY3MwOE9UYw?oc=5",
+   "source_name": "УкрАгроКонсалт",
+   "headline": "India’s soybean oil imports rise 7% in October to record high - УкрАгроКонсалт",
+   "hi": {
+    "title": "भारत में सोयाबीन तेल का आयात अक्टूबर में 7% बढ़कर रिकॉर्ड उच्च स्तर पर पहुंच गया",
+    "what": "भारत में सोयाबीन तेल का आयात अक्टूबर में 7% बढ़कर रिकॉर्ड उच्च स्तर पर पहुंच गया है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "सोयाबीन तेल के आयात में वृद्धि से सोयाबीन किसानों को कम भाव मिल सकता है क्योंकि आयातित तेल सस्ता होता है।"
+   },
+   "mr": {
+    "title": "भारतात सोयाबीन तेल आयात ऑक्टोबरमध्ये ७% ने वाढून विक्रमी उच्चांक गाठला",
+    "what": "भारतात सोयाबीन तेल आयात ऑक्टोबरमध्ये ७% ने वाढून विक्रमी उच्चांक गाठला आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "सोयाबीन तेल आयात वाढल्यामुळे सोयाबीन शेतकऱ्यांना कमी भाव मिळू शकतो कारण आयातित तेल स्वस्त असते."
+   },
+   "auto": true,
+   "addedAt": "2026-11-23T13:47:29.685Z"
+  },
+  {
+   "id": "a-142d8c255904",
+   "date": "2026-11-23",
+   "crops": [
+    "sugar"
+   ],
+   "type": "export",
+   "dir": "pos",
+   "when": "medium",
+   "conf": "high",
+   "priority": "high",
+   "qty": "until September 2026",
+   "official": true,
+   "source": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQN0hDSEY1Ml9mQ3NPb2c1eDNrWEN0cVEtTzNhUU50b0xPZEdjeUdZU2kzWUUyVzJSYmZKQ2Jfc0k2Ml9lUEs4NHgyYno1UnFudC1wR3p2UmlwN2dEOGZkYkdXY0o3TGRHb0xBTjZ0a01zR2lobGxDbFc5bi1aeENVZklJby1BdlhGaHF1QUZmU1NQcmUteXVkUA?oc=5",
+   "source_name": "DD News",
+   "headline": "India bans sugar exports with immediate effect until September 2026 - DD News",
+   "hi": {
+    "title": "भारत ने चीनी निर्यात पर तत्काल प्रभाव से प्रतिबंध लगाया",
+    "what": "भारत ने चीनी निर्यात पर तत्काल प्रभाव से प्रतिबंध लगा दिया है, जो सितंबर 2026 तक लागू रहेगा।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "चीनी की कीमतें बढ़ सकती हैं क्योंकि देश में चीनी की उपलब्धता बढ़ जाएगी"
+   },
+   "mr": {
+    "title": "भारताने साखर निर्यातवर तात्काळ परिणाम सितंबर 2026 पर्यंत बंदी आणली",
+    "what": "भारताने साखर निर्यातवर तात्काळ परिणाम सितंबर 2026 पर्यंत बंदी आणली आहे.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "साखरच्या किमती वाढू शकतात कारण देशात साखरची उपलब्धता वाढेल"
+   },
+   "auto": true,
+   "addedAt": "2026-11-23T13:46:52.029Z"
+  },
+  {
    "id": "a-64e89569ecb0",
    "date": "2026-11-23",
    "crops": [
@@ -92,6 +278,39 @@
    },
    "auto": true,
    "addedAt": "2026-11-23T07:59:50.443Z"
+  },
+  {
+   "id": "a-390ea3c7e5b0",
+   "date": "2026-11-22",
+   "crops": [
+    "tomato",
+    "other",
+    "onion"
+   ],
+   "type": "export",
+   "dir": "pos",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOTVpXQXR6eHQtRjZqNkE0U3gzOEg4MFJWekRUZFFjQ2hDN0VjY3BVaWVralZCX2RJMkMtcm9rWUdrbjlFcnZNVmhja0w0a2pxNFdNaUVTNUltczQ5WmprNi1VbnlodjBqdXl4Q09PdTQ2cmR4RGVoVm9FQkEyOEZSOTU0OEF3Vm5LeVA5Tk9xd0ZCMlV5bjhnSFl4eWI?oc=5",
+   "source_name": "Apa.az",
+   "headline": "Iran bans tomato, potato and onion exports amid soaring food prices - Apa.az",
+   "hi": {
+    "title": "इरान ने टमाटर, आलू और प्याज के निर्यात पर प्रतिबंध लगाया",
+    "what": "इरान ने टमाटर, आलू और प्याज के निर्यात पर प्रतिबंध लगा दिया है। यह फैसला बढ़ती खाद्य कीमतों के बीच लिया गया है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "इरान से इन फसलों का निर्यात कम होने से भारत में इनकी कीमतें बढ़ सकती हैं क्योंकि देश में कम माल होगा।"
+   },
+   "mr": {
+    "title": "इरानने टोमॅटो, बटाट्या आणि कांद्याच्या निर्यातवर निर्बंध लादले",
+    "what": "इरानने टोमॅटो, बटाट्या आणि कांद्याच्या निर्यातवर निर्बंध लादले आहेत. हा निर्णय वाढत्या अन्न किमतींमध्ये घेतला गेला आहे.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "इरानच्या निर्यात कमी होण्यामुळे भारतात या पिकांच्या किमती वाढू शकतात कारण देशात कमी माल असेल।"
+   },
+   "auto": true,
+   "addedAt": "2026-11-23T13:47:19.171Z"
   },
   {
    "id": "a-c129fffc718c",
@@ -2423,8 +2642,16 @@
   "a-c129fffc718c",
   "a-2921e762bde8",
   "a-64e89569ecb0",
-  "a-8f14c73044bf"
+  "a-8f14c73044bf",
+  "a-142d8c255904",
+  "a-f8e9dc531cb3",
+  "a-390ea3c7e5b0",
+  "a-415d07974260",
+  "a-942cfeb8dc56",
+  "a-7032f9f42c94",
+  "a-6662af89be26",
+  "a-01427c498854"
  ],
- "updated": "2026-11-23T08:00:42.660Z",
+ "updated": "2026-11-23T13:48:21.005Z",
  "_about": "AI se apne aap bani cards. official=true sirf sarkari website wali khabar. Baaki ki sarkari pushti baaki."
 }
