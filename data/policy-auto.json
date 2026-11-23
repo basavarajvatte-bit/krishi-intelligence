@@ -1,6 +1,161 @@
 {
  "items": [
   {
+   "id": "a-ff4c8fa8bfb3",
+   "date": "2026-11-22",
+   "crops": [
+    "rice"
+   ],
+   "type": "policy",
+   "dir": "pos",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQeF8taUVzcFVVLV96cGtJSUVmMUktUkhZTGN0dm1PUVZQNE9kYlhvTU45eGR5Q1h1WklBaHpsSzdRN2JvaEplQ0dPOVQ3bkJkdnNLaC10dkZ4YUVWYUtyNjhMMDNYMUhVTFA0a3BMRERKV3pXQ3VyQkY2Yk4tN0dRVEFLM2NTc1F0?oc=5",
+   "source_name": "JournalArta",
+   "headline": "India weighs export curbs on non-Basmati rice - JournalArta",
+   "hi": {
+    "title": "भारत नॉन-बासमती चावल पर निर्यात प्रतिबंध पर विचार कर रहा है",
+    "what": "भारत नॉन-बासमती चावल के निर्यात पर प्रतिबंध लगाने पर विचार कर रहा है। यह फैसला देश में चावल की उपलब्धता और कीमतों को नियंत्रित करने के लिए किया जा सकता है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "निर्यात प्रतिबंध लगने से देश में चावल की उपलब्धता बढ़ सकती है, जिससे कीमतें नियंत्रित हो सकती हैं और किसानों को फायदा हो सकता है।"
+   },
+   "mr": {
+    "title": "भारत नॉन-बासमती तांदूळवर निर्यात नियंत्रण विचार करत आहे",
+    "what": "भारत नॉन-बासमती तांदूळच्या निर्यातवर नियंत्रण आणण्याबाबत विचार करत आहे. हा निर्णय देशात तांदूळाच्या उपलब्धता आणि किमती नियंत्रित करण्यासाठी घेतला जाऊ शकतो.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "निर्यात नियंत्रण लागू झाल्यास देशात तांदूळाच्या उपलब्धता वाढू शकते, ज्यामुळे किमती नियंत्रित होऊ शकतात आणि शेतकऱ्यांना फायदा होऊ शकतो."
+   },
+   "auto": true,
+   "addedAt": "2026-11-23T01:44:58.180Z"
+  },
+  {
+   "id": "a-4f314b542a8c",
+   "date": "2026-11-22",
+   "crops": [
+    "rice"
+   ],
+   "type": "policy",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBPcjMwaXBZbVhoTkRzMnJnSVhwTEtFQ0ZTQkpyTmJGRU1ETlRIUWVaYnF3dFBnR3hXX3NiZ3k0UUZIWVdtSXpaVUstemF6QWxEY3o3VnJ1RzVfNDlEdVVJaHRDRnJMTUR5eUNSdnprcjJfTXo2TEFB?oc=5",
+   "source_name": "Daijiworld",
+   "headline": "India weighs rice export duty to curb prices - Daijiworld",
+   "hi": {
+    "title": "भारत चावल निर्यात शुल्क लगाने पर विचार कर रहा है",
+    "what": "भारत चावल की कीमतों को नियंत्रित करने के लिए निर्यात शुल्क लगाने पर विचार कर रहा है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "चावल की कीमतें गिर सकती हैं क्योंकि निर्यात शुल्क लगने से देश में चावल की मात्रा बढ़ जाएगी।"
+   },
+   "mr": {
+    "title": "भारत चावल निर्यात कर आकारणी करण्याचा विचार करत आहे",
+    "what": "भारत चावलाच्या किमती नियंत्रित करण्यासाठी निर्यात कर आकारणी करण्याचा विचार करत आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "चावलाच्या किमती कमी होऊ शकतात कारण निर्यात कर आकारणीमुळे देशात चावलाचे प्रमाण वाढेल।"
+   },
+   "auto": true,
+   "addedAt": "2026-11-23T01:44:46.074Z"
+  },
+  {
+   "id": "a-c9d4e8e5056c",
+   "date": "2026-11-22",
+   "crops": [
+    "rice"
+   ],
+   "type": "policy",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMikAFBVV95cUxON0oyMk5iQ2lnck1XcENFVjE3aU9pbDRfTndjMkVnMFd6VzV6Ym9ScWZBRkZ2aXI3am03Vl9SR1QxM192N3VQclAxMjFHeTBwb1lLcFRJclZPdmRCZDd4dW9iQ0NyMHdNbUFqZUVhcTNEN3lGN00zQTFTdC1PZWdPeExMeG9yZUdHQmZxR25WNzg?oc=5",
+   "source_name": "CMB News",
+   "headline": "India mulls non-basmati rice export duty and MEP to cool prices — CMB News - CMB News",
+   "hi": {
+    "title": "भारत नॉन-बासमती चावल पर निर्यात शुल्क और एमईपी लगाने पर विचार कर रहा है",
+    "what": "भारत सरकार नॉन-बासमती चावल पर निर्यात शुल्क और न्यूनतम निर्यात मूल्य (एमईपी) लगाने पर विचार कर रही है। इसका उद्देश्य चावल की कीमतों को नियंत्रित करना है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "निर्यात शुल्क और एमईपी लगाने से चावल की कीमतें गिर सकती हैं क्योंकि इससे निर्यात कम होगा और घरेलू बाजार में चावल की अधिक मात्रा उपलब्ध होगी।"
+   },
+   "mr": {
+    "title": "भारत नॉन-बासमती तांदूळवर निर्यात कर आणि एमईपी लागू करण्याबद्दल विचार करीत आहे",
+    "what": "भारत सरकार नॉन-बासमती तांदूळवर निर्यात कर आणि किमान निर्यात मूल्य (एमईपी) लागू करण्याबद्दल विचार करीत आहे. याचा उद्देश तांदूळाच्या किमती नियंत्रित करणे आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "निर्यात कर आणि एमईपी लागू केल्याने तांदूळाच्या किमती कमी होऊ शकतात कारण यामुळे निर्यात कमी होईल आणि देशांतर्गत बाजारपेठेत अधिक तांदूळ उपलब्ध होईल।"
+   },
+   "auto": true,
+   "addedAt": "2026-11-23T01:44:36.866Z"
+  },
+  {
+   "id": "a-541b0154c840",
+   "date": "2026-11-22",
+   "crops": [
+    "wheat"
+   ],
+   "type": "import",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "high",
+   "qty": "0.8MT",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNc1BnY203SkpLaXVOSG9IRVZ1WkhsWXFpVVlTZ2tLQlVDOEFubklLSkxtYUZJTkJvU0ptVy1xb0NfNmtFZ2JJN2FuR1RDQ0RFQmdjZDRwLXBJZllBSy1nZ205cFU4Qk9kQ1UwejdmU09OU3BsWFlacUZWU3ZLaGlWTkdR0gFWQVVfeXFMT1lrMWVpejE5NHE2RmdNdkgyY3dxNlBzMzFKeGxzTFh1Z0xKWV9rS2tMR2laVUNIUFBJb2tHVVMyV1RDMXRvVG5ma0J2YjFWdkZ6dzYyeEE?oc=5",
+   "source_name": "Business Recorder",
+   "headline": "TCP tenders for 0.8MT of wheat import - Business Recorder",
+   "hi": {
+    "title": "TCP 0.8 मिलियन टन गेहूं के आयात के लिए टेंडर जारी करता है",
+    "what": "पाकिस्तान के ट्रेडिंग कॉर्पोरेशन (TCP) ने 0.8 मिलियन टन गेहूं के आयात के लिए टेंडर जारी किया है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "देश में गेहूं की अधिक आपूर्ति होने से कीमतें गिर सकती हैं"
+   },
+   "mr": {
+    "title": "टीसीपी ८ लाख मेट्रिक टन गव्हाच्या आयातीसाठी टेंडर जारी करतो",
+    "what": "पाकिस्तानच्या ट्रेडिंग कॉर्पोरेशनने (टीसीपी) ८ लाख मेट्रिक टन गव्हाच्या आयातीसाठी टेंडर जारी केला आहे.",
+    "why": "बातमीमध्ये कारण नमूद केलेले नाही",
+    "effect": "देशात गव्हाची अधिक पुरवठा होण्याने किंमती कमी होऊ शकतात"
+   },
+   "auto": true,
+   "addedAt": "2026-11-23T01:44:25.210Z"
+  },
+  {
+   "id": "a-54bef5564dc7",
+   "date": "2026-11-22",
+   "crops": [
+    "cotton"
+   ],
+   "type": "policy",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "till Dec",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPZThKZVA0X2ZNcFhaM2w5YWgyMDlxZ0xxc2lmQmR0bXRJd0Y2T0liOG96bmEyQzE5VjRUQ1B6Y2VOc1JVSXVfeW1OaTRsRk9tVTh3MlJHWTk2YUpHWUFZMjhkSXpCY2tXeWVuS0dZMjUtaUlocEFFYWExSnB6X2RXT0FrSlR1WmhQSzRzX3pDRzhHNFlCc2fSAZYBQVVfeXFMT2U4SmVQNF9mTXBYWjNsOWFoMjA5cWdMcXNpZkJkdG10SXdGNk9JYjhvem5hMkMxOVY0VENQemNlTnNSVUl1X3ltTmk0bEZPbVU4dzJSR1k5NmFKR1lBWTI4ZEl6QmNrV3llbktHWTI1LWlJaHBBRWFhMUpwel9kV09Ba0pUdVpoUEs0c196Q0c4RzRZQnNn?oc=5",
+   "source_name": "MillenniumPost",
+   "headline": "Govt extends cotton import relief till Dec - MillenniumPost",
+   "hi": {
+    "title": "सरकार ने दिसंबर तक कपास आयात राहत बढ़ाई",
+    "what": "सरकार ने कपास आयात राहत को दिसंबर तक बढ़ा दिया है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "कपास आयात राहत बढ़ाने से देश में कपास की उपलब्धता बढ़ेगी, जिससे किसानों को कम दाम मिल सकते हैं।"
+   },
+   "mr": {
+    "title": "शासनाने डिसेंबरपर्यंत कापूस आयात राहत वाढवली",
+    "what": "शासनाने कापूस आयात राहत डिसेंबरपर्यंत वाढवली आहे.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "कापूस आयात राहत वाढल्यामुळे देशात कापूसची उपलब्धता वाढेल, ज्यामुळे शेतकऱ्यांना कमी दर मिळू शकतो."
+   },
+   "auto": true,
+   "addedAt": "2026-11-23T01:44:14.035Z"
+  },
+  {
    "id": "a-f1c6211fb586",
    "date": "2026-11-22",
    "crops": [
@@ -216,6 +371,37 @@
    },
    "auto": true,
    "addedAt": "2026-11-22T13:24:06.674Z"
+  },
+  {
+   "id": "a-afa88c9a4b73",
+   "date": "2026-11-21",
+   "crops": [
+    "maize"
+   ],
+   "type": "export",
+   "dir": "pos",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "341 times",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNZWJXck5ZbVp1TFNVclJ3TmlYbUFBS0VMOXl5SFpqOUU4eWxaMmhUeFdNOElFVDRpOG50RWRNNy1wS0hYamhkYnJjU1poMEl1dVFFaEtzdnZ3NUw4ME5LcnJ5X0VsQ3lCelhNcFl2STd3UlVidUp5VGtmMEJIQ2FuMi04Xzd0RVpDdWptYTdqUlI2R28weTRSOGtrNXFfdExXRzRBSFFyNEZxX2VnWTBrMXJkX3diMUXSAb8BQVVfeXFMTXZMOGhOQWozc000dEc1VFdEa2FtcVN6dVY5dVNLNFJJb1hTYVRmQnVDNHVmUTZhSVpkSm5ZOE9kN1hDVkc5V0lDWjN3STF5WUMwalZjX3FyOF9fNnYyYWNZYl9YQjZZZkgwREZKaXl0UDFFOGZsbl9PNVBuT2FfSDVsVldRWG5hYWpXandzMkFyS2RCZDlXZHlReUlvcHQzbW5aX0hxTUtMRkdnWU4tZkV1UE5nbVY4QmhIMnhzLUE?oc=5",
+   "source_name": "NDTV",
+   "headline": "India's Maize Exports To Vietnam Surge 341 Times On Record Domestic Supplies - NDTV",
+   "hi": {
+    "title": "भारत का मक्का निर्यात वियतनाम में 341 गुना बढ़ा",
+    "what": "भारत का मक्का निर्यात वियतनाम में 341 गुना बढ़ गया है। यह रिकॉर्ड घरेलू आपूर्ति के कारण हुआ है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "मक्का किसानों को इसका फायदा होगा क्योंकि निर्यात बढ़ने से मक्का का भाव बढ़ेगा"
+   },
+   "mr": {
+    "title": "भारताच्या मक्याच्या निर्यातीत ३४१ पटीने वाढ",
+    "what": "भारताच्या मक्याच्या निर्यातीत व्हिएतनाममध्ये ३४१ पटीने वाढ झाली आहे. हे रेकॉर्ड घरगुती पुरवठ्यामुळे झाले आहे.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "मक्याच्या शेतकऱ्यांना याचा फायदा होईल कारण निर्यात वाढल्यामुळे मक्याच्या किमती वाढतील"
+   },
+   "auto": true,
+   "addedAt": "2026-11-23T01:45:07.737Z"
   },
   {
    "id": "a-bacfab73ef8d",
@@ -527,6 +713,37 @@
    },
    "auto": true,
    "addedAt": "2026-11-21T08:50:22.686Z"
+  },
+  {
+   "id": "a-44d3d37bcd10",
+   "date": "2026-11-20",
+   "crops": [
+    "soybean"
+   ],
+   "type": "export",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFAybEVQWEtsVGJTNGlHYlFzWC0wRUNNb0cwWGVzN1RHUmpFaVIzVjBJekV1cjJxVklzNUV6UzZnWmk4NW5CdVBYVGE1V0lnZGx6S2V2Yk9hR2U3VmRSS01v?oc=5",
+   "source_name": "Farm Progress",
+   "headline": "USDA Exports: Spain buys soymeal - Farm Progress",
+   "hi": {
+    "title": "USDA निर्यात: स्पेन ने सोयामील खरीदा",
+    "what": "स्पेन ने सोयामील खरीदा है। यह खरीद अमेरिकी कृषि विभाग (USDA) द्वारा घोषित की गई है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "सोयाबीन का निर्यात बढ़ने से भारतीय किसानों को कम भाव मिल सकता है क्योंकि दुनिया में सोयाबीन की मांग बढ़ रही है।"
+   },
+   "mr": {
+    "title": "यूएसडीए निर्यात: स्पेनने सोयाबीनचे खाद्य तेल खरेदी केले",
+    "what": "स्पेनने सोयाबीनचे खाद्य तेल खरेदी केले आहे. ही खरेदी अमेरिकन कृषि विभागाने (यूएसडीए) जाहीर केली आहे.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "सोयाबीनच्या निर्यातीत वाढ होण्याने भारतीय शेतकऱ्यांना कमी भाव मिळू शकतो कारण जगभरात सोयाबीनची मागणी वाढत आहे."
+   },
+   "auto": true,
+   "addedAt": "2026-11-23T01:44:04.329Z"
   },
   {
    "id": "a-1355f70f093b",
@@ -2035,8 +2252,16 @@
   "a-590660a4a79c",
   "a-1355f70f093b",
   "a-3c126e8cdf8e",
-  "a-f1c6211fb586"
+  "a-f1c6211fb586",
+  "a-cb70ae9e4da8",
+  "a-44d3d37bcd10",
+  "a-54bef5564dc7",
+  "a-541b0154c840",
+  "a-c9d4e8e5056c",
+  "a-4f314b542a8c",
+  "a-ff4c8fa8bfb3",
+  "a-afa88c9a4b73"
  ],
- "updated": "2026-11-22T19:16:44.561Z",
+ "updated": "2026-11-23T01:45:11.747Z",
  "_about": "AI se apne aap bani cards. official=true sirf sarkari website wali khabar. Baaki ki sarkari pushti baaki."
 }
