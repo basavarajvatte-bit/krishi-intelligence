@@ -1,6 +1,162 @@
 {
  "items": [
   {
+   "id": "a-fa27c57c9f56",
+   "date": "2026-11-24",
+   "crops": [
+    "rice"
+   ],
+   "type": "export",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "high",
+   "qty": "30%",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMingFBVV95cUxPX2xqU25hbnFZVXFuMzBoUGhzRUdxMmk3dFdHaldWRnNQM3hMeUxUVXFRREN6cVVYQl9KVUZJVVZmWkpLZkV4QkNuZDFKQlQ1TExFTXlzOGNLX0c3ZDRDb3ZNWnBJTm9sYll4Uy1QSU1SSnNYSXEwcTVaMEloQTVNZXFQYlg3b0RuTlp2OEJZUzF5aFU4bVZscEVmd0FwZw?oc=5",
+   "source_name": "Agniban",
+   "headline": "Curbing Rising Rice Prices: Plans Underway to Impose Up to 30% Export Duty! - Agniban",
+   "hi": {
+    "title": "चावल की बढ़ती कीमतों पर लगाम: 30% तक का निर्यात शुल्क लगाने की योजना!",
+    "what": "सरकार चावल की बढ़ती कीमतों को नियंत्रित करने के लिए 30% तक का निर्यात शुल्क लगाने की योजना बना रही है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "चावल की कीमतें गिर सकती हैं क्योंकि निर्यात शुल्क लगने से देश में चावल की आपूर्ति बढ़ जाएगी।"
+   },
+   "mr": {
+    "title": "तांदूळाच्या वाढत्या किमतींवर नियंत्रण: ३०% पर्यंत निर्यात कर आकारणीची योजना!",
+    "what": "सरकार तांदूळाच्या वाढत्या किमतींवर नियंत्रण मिळवण्यासाठी ३०% पर्यंत निर्यात कर आकारणीची योजना बनवत आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "तांदूळाच्या किमती कमी होऊ शकतात कारण निर्यात कर आकारणीमुळे देशात तांदूळाचा पुरवठा वाढेल."
+   },
+   "auto": true,
+   "addedAt": "2026-11-24T07:47:47.682Z"
+  },
+  {
+   "id": "a-f24b51bbc0ab",
+   "date": "2026-11-24",
+   "crops": [
+    "sugar"
+   ],
+   "type": "export",
+   "dir": "neg",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "8606",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOdTFBNHdsaG1aZzUzVi1tRkVUR3FxZ2E1bU94ZjFvem1wQ2Y2WndTckJmYzhtYUN3REZnc3pGeGpzcHVXZE9YU1VVODFGLWd4bkJMY1ZRN0FLazZzV2RmcmhMbVNRRGZLWVptTHVXQm9icV83eVpMTWV4Z1VLYXNiTzhBYnl4ajBJRllnLXpMZ0lyb3ozOC1tbUZLUHFxRVgteThfMlhn?oc=5",
+   "source_name": "ChiniMandi",
+   "headline": "India allocates 8,606 tonnes raw sugar export quota to US under TRQ for 2027 - ChiniMandi",
+   "hi": {
+    "title": "भारत ने 2027 के लिए अमेरिका को TRQ के तहत 8,606 टन कच्ची चीनी निर्यात कोटा आवंटित किया",
+    "what": "भारत ने अमेरिका को 2027 के लिए 8,606 टन कच्ची चीनी निर्यात कोटा आवंटित किया है। यह टैरिफ रेट कोटा (TRQ) के तहत है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "इससे चीनी का निर्यात बढ़ेगा, जिससे देश में चीनी की कमी हो सकती है और इसका दाम बढ़ सकता है, लेकिन निर्यात कोटा सीमित होने से इसका बहुत ज्यादा असर नहीं होगा।"
+   },
+   "mr": {
+    "title": "भारताने २०२७ साठी अमेरिकेला TRQ अंतर्गत ८,६०६ टन कच्ची साखर निर्यात कोटा वाटला",
+    "what": "भारताने अमेरिकेला २०२७ साठी ८,६०६ टन कच्ची साखर निर्यात कोटा वाटला आहे. हे टॅरिफ रेट कोटा (TRQ) अंतर्गत आहे.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "यामुळे साखरेचा निर्यात वाढेल, ज्यामुळे देशात साखरेची कमी होऊ शकते आणि त्याची किंमत वाढू शकते, परंतु निर्यात कोटा मर्यादित असल्याने त्याचा खूप जास्त परिणाम होणार नाही."
+   },
+   "auto": true,
+   "addedAt": "2026-11-24T07:47:37.247Z"
+  },
+  {
+   "id": "a-b737c76aaba1",
+   "date": "2026-11-24",
+   "crops": [
+    "oilseed",
+    "other"
+   ],
+   "type": "intl",
+   "dir": "pos",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOZXlSYkJxMXpFYUZaWXhSLVNEQnZWWWVwbEFjc2MxTTQ0amotRDA2SnhpblRmWUFFbmxiQk9DX3NMUEJRWG45UnBvZC16QkJ5TUtFVm9wU19mM29VQjdGWVNwUmdCYXVObzc3ZDJYVHNPRDB2RWlIWWlJbWw5YmFISkZsRE9WQXlqMWg5bHcxUnVQR0VFNzBFT0pkaGtWNTdmUUhEZjJoRlBFVXEtdmhPaVV5T1YyZ2RWV2xmVUppN19GQ2h5X196cWo2aw?oc=5",
+   "source_name": "IndexBox",
+   "headline": "Palm Oil Supply Outlook 2027: Indonesia Output Drop, B50 Biodiesel, Tighter Exports - News and Statistics - IndexBox",
+   "hi": {
+    "title": "नारियल तेल की आपूर्ति के पूर्वानुमान 2027: इंडोनेशिया में उत्पादन में गिरावट, बी50 बायोडीजल, निर्यात में कमी",
+    "what": "इंडोनेशिया में नारियल तेल का उत्पादन कम होने की उम्मीद है, जिससे निर्यात में कमी आ सकती है।",
+    "why": "इंडोनेशिया में बी50 बायोडीजल की मांग बढ़ने से नारियल तेल का उपयोग बढ़ सकता है।",
+    "effect": "भारतीय किसानों के लिए नारियल तेल की कीमतें बढ़ सकती हैं क्योंकि इंडोनेशिया से निर्यात कम होने से दुनिया में नारियल तेल की आपूर्ति कम हो सकती है।"
+   },
+   "mr": {
+    "title": "नारियल तेल पुरवठा पूर्वानुमान 2027: इंडोनेशियामध्ये उत्पादन कमी, बी50 बायोडीजल, निर्यात कमी",
+    "what": "इंडोनेशियामध्ये नारियल तेल उत्पादन कमी होण्याची शक्यता आहे, ज्यामुळे निर्यात कमी होऊ शकते.",
+    "why": "इंडोनेशियामध्ये बी50 बायोडीजलची मागणी वाढल्याने नारियल तेल वापर वाढू शकतो.",
+    "effect": "भारतीय शेतकऱ्यांसाठी नारियल तेल किंमती वाढू शकतात कारण इंडोनेशियाकडून निर्यात कमी होण्याने जगभरातील नारियल तेल पुरवठा कमी होऊ शकतो."
+   },
+   "auto": true,
+   "addedAt": "2026-11-24T07:47:24.293Z"
+  },
+  {
+   "id": "a-e7526373405d",
+   "date": "2026-11-23",
+   "crops": [
+    "other"
+   ],
+   "type": "intl",
+   "dir": "neu",
+   "when": "short",
+   "conf": "low",
+   "priority": "normal",
+   "qty": "6%",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPQ3RmQTZPdnNnMk5LN2htVHNIakd0VzBVQ09SSUR4RmhVbWlnN0FrTUlJYnZQTk1FTnRPQmpoSEZEZUFBYVRFZ29LNXNBZjZEX0tRelUwdDkySlRNQUx6VlpoWDA3d2RDUWRYc0YxTW5VT3FEa21fbk1WMTdhOFQ1S3BOS0lxN3FBbkFhQURoRkg4dlZ5eHYxRHd3a2lOaUxHYkVv?oc=5",
+   "source_name": "DTN Progressive Farmer",
+   "headline": "USDA Crop Progress: 6% of Corn Left to Harvest; Winter Wheat Condition Up as of Nov. 22 - DTN Progressive Farmer",
+   "hi": {
+    "title": "USDA फसल प्रगति: 6% मक्का काटने के लिए बाकी; सर्दियों के गेहूं की स्थिति में सुधार",
+    "what": "USDA की रिपोर्ट के अनुसार, 6% मक्का काटने के लिए बाकी है। सर्दियों के गेहूं की स्थिति में सुधार हुआ है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "इस रिपोर्ट का मक्का और गेहूं की कीमतों पर कोई खास असर नहीं पड़ेगा क्योंकि यह जानकारी पहले से ही बाजार में शामिल हो चुकी है।"
+   },
+   "mr": {
+    "title": "यूएसडीए क्रॉप प्रग्रेस: ६% कोर्न शिल्लक आहे; विंटर व्हीट कंडीशन वाढली",
+    "what": "",
+    "why": "",
+    "effect": ""
+   },
+   "auto": true,
+   "addedAt": "2026-11-24T07:48:26.934Z"
+  },
+  {
+   "id": "a-661b78ec3e37",
+   "date": "2026-11-23",
+   "crops": [
+    "soybean"
+   ],
+   "type": "intl",
+   "dir": "pos",
+   "when": "long",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFAweEdfX2VLQzFvSnhoaUhQbXNfRlJ1b3VnOFB2cC1PMHVnbkp6WWZlam1XT2tNVzVpUlEyQnJicWRCR1l3YzBsNUF4aFBmWnAwdVU5cmhVWkM1Ulk4SWlEYkM0RDMxdw?oc=5",
+   "source_name": "Guangdong News",
+   "headline": "New soybean variety could lessen import reliance - Guangdong News",
+   "hi": {
+    "title": "नई सोयाबीन किस्म से आयात पर निर्भरता कम हो सकती है",
+    "what": "चीन के गुआंग्डोंग प्रांत में एक नई सोयाबीन किस्म विकसित की गई है। यह किस्म आयात पर निर्भरता कम कर सकती है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "भारतीय सोयाबीन किसानों के लिए दुनिया में सोयाबीन की अधिक घरेलू उत्पादन से भाव गिरने का दबाव हो सकता है"
+   },
+   "mr": {
+    "title": "नवीन सोयाबीन प्रजाती आयातवर अवलंबित्वा कम करू शकते",
+    "what": "चीनच्या ग्वांगडोंग प्रांतात नवीन सोयाबीन प्रजाती विकसित केली आहे. ही प्रजाती आयातवर अवलंबित्वा कम करू शकते.",
+    "why": "बातमीत कारण नाही सांगितले",
+    "effect": "जगात सोयाबीनच्या अधिक घरगुती उत्पादनामुळे भारतीय सोयाबीन शेतकऱ्यांसाठी भाव खाली येण्याचा दबाव असू शकतो"
+   },
+   "auto": true,
+   "addedAt": "2026-11-24T07:48:17.965Z"
+  },
+  {
    "id": "a-e26ca3533204",
    "date": "2026-11-23",
    "crops": [
@@ -619,6 +775,38 @@
    },
    "auto": true,
    "addedAt": "2026-11-23T07:59:50.443Z"
+  },
+  {
+   "id": "a-d21485518540",
+   "date": "2026-11-22",
+   "crops": [
+    "maize",
+    "oilseed"
+   ],
+   "type": "policy",
+   "dir": "pos",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPTzc2Nm1HdzNyRFNabHpzNjJpS0tNblNubW9NeXhxeUNHQnJMODdFMFlMaXdDVUZUYXQ1UWZmX3FMaFZRSkxaNFBud3MyTy1rNEV4bzJzcjBtVXlUUExwV1NGejdVNUl0dzRaRmtIZG9qNE5BOVRHUkFwNkE5YlRpNU9tUjM0UnZhRVpJZE5NaU5qLU43Wk5mMVNlQjQyYVUyR0tEdzJDbW9uZHM?oc=5",
+   "source_name": "Munsif News 24x7",
+   "headline": "Telangana Proposes National Mission on High-Oil Maize to Reduce Edible Oil Imports - Munsif News 24x7",
+   "hi": {
+    "title": "तेलंगाना ने खाद्य तेल आयात कम करने के लिए उच्च-तेल मक्का पर राष्ट्रीय मिशन का प्रस्ताव दिया",
+    "what": "तेलंगाना सरकार ने खाद्य तेल आयात कम करने के लिए उच्च-तेल मक्का पर राष्ट्रीय मिशन का प्रस्ताव दिया है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "इसका मक्का किसानों के लिए सकारात्मक प्रभाव पड़ सकता है, क्योंकि इससे मक्का की मांग बढ़ सकती है और आयात कम हो सकती है।"
+   },
+   "mr": {
+    "title": "तेलंगणाने खाद्य तेल आयात कम करण्यासाठी उच्च-तेल मका वर राष्ट्रीय मिशनचा प्रस्ताव दिला",
+    "what": "तेलंगणा सरकारने खाद्य तेल आयात कम करण्यासाठी उच्च-तेल मका वर राष्ट्रीय मिशनचा प्रस्ताव दिला आहे.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "याचा मका शेतकऱ्यांसाठी सकारात्मक परिणाम होऊ शकतो, कारण यामुळे मक्याची मागणी वाढू शकते आणि आयात कमी होऊ शकते."
+   },
+   "auto": true,
+   "addedAt": "2026-11-24T07:47:57.582Z"
   },
   {
    "id": "a-fab54cdb6db7",
@@ -3100,8 +3288,16 @@
   "a-75431038acc7",
   "a-5916f58f32c8",
   "a-0c63a783ac50",
-  "a-e26ca3533204"
+  "a-e26ca3533204",
+  "a-b7b501a55859",
+  "a-b737c76aaba1",
+  "a-f24b51bbc0ab",
+  "a-fa27c57c9f56",
+  "a-d21485518540",
+  "a-0c09b4a2f502",
+  "a-661b78ec3e37",
+  "a-e7526373405d"
  ],
- "updated": "2026-11-24T01:43:49.205Z",
+ "updated": "2026-11-24T07:48:30.943Z",
  "_about": "AI se apne aap bani cards. official=true sirf sarkari website wali khabar. Baaki ki sarkari pushti baaki."
 }
