@@ -1,6 +1,192 @@
 {
  "items": [
   {
+   "id": "a-e26ca3533204",
+   "date": "2026-11-23",
+   "crops": [
+    "sugar"
+   ],
+   "type": "import",
+   "dir": "neg",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "3.5 million tonnes",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQbXl6WmpWX2RUWktTWlBhUkV0akhoY3Q5bGRUUHk2M0JwREp6TzZEOWlyaXFvR3VFdTM5dWZHbEpBT2VSOUFCeEpKd1BoS21UVTlaTVNuaUFGM1BQbElUMEY1UHdaa1k4Z0c1Z1BXTzBvMks3RHNONzFuMTQtaThteU5RdUo3TVdzdGd5NkxHaF94NlVMNjN5anIydHpWODVDTC1mTkpkQW1peUdBck5lWmVhVU9TVU82RDRlUnZIRGlna1RVTW5TLVRJNmtYOFZoWWhCN3k0dnp1ZzFzRnppOF9EbzhZdw?oc=5",
+   "source_name": "ANI News",
+   "headline": "India may need up to 3.5 million tonnes of sugar imports as production falls below consumption: Report - ANI News",
+   "hi": {
+    "title": "भारत को 3.5 मिलियन टन चीनी आयात की आवश्यकता हो सकती है",
+    "what": "भारत में चीनी का उत्पादन खपत से कम हो गया है, जिसके कारण 3.5 मिलियन टन चीनी आयात की आवश्यकता हो सकती है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "चीनी का आयात बढ़ने से देश में चीनी की कीमतें गिर सकती हैं क्योंकि बाजार में चीनी की अधिकता होगी।"
+   },
+   "mr": {
+    "title": "भारताला ३.५ मिलियन टन साखर आयात करणे आवश्यक असू शकते",
+    "what": "भारतात साखरचे उत्पादन वापरापेक्षा कमी झाले आहे, त्यामुळे ३.५ मिलियन टन साखर आयात करणे आवश्यक असू शकते.",
+    "why": "बातमीत कारण नाही",
+    "effect": "साखरच्या आयातमुळे देशात साखरच्या किमती कमी होऊ शकतात कारण बाजारात साखरची अधिकता असेल।"
+   },
+   "auto": true,
+   "addedAt": "2026-11-24T01:43:45.197Z"
+  },
+  {
+   "id": "a-5916f58f32c8",
+   "date": "2026-11-23",
+   "crops": [
+    "rice"
+   ],
+   "type": "intl",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "1.35 million tonnes",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5Hdm1od3hHNnZBVTZuSHNwSWxTanF3cGc0Wi0wUTczUmFYbkNCa0lPT3doTkwxN3MxdjNzazNVTEpUNDVMWHB5WWVmdjRqLTVtNDFYUk11ZnA1a3FWdjFEU29RQkZZaElEUmRqU2c3akJ3cVpjMi13N3hqTm9iem8?oc=5",
+   "source_name": "WE News English",
+   "headline": "Pakistan Rice Exports Rise 1.35 Million Tonnes In Four Months - WE News English",
+   "hi": {
+    "title": "पाकिस्तान के चावल निर्यात में 4 महीनों में 1.35 मिलियन टन की वृद्धि",
+    "what": "पाकिस्तान के चावल निर्यात में 4 महीनों में 1.35 मिलियन टन की वृद्धि हुई है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "भारतीय किसानों के लिए चावल का भाव गिरने का दबाव हो सकता है क्योंकि दुनिया में चावल की अधिक आपूर्ति हो रही है।"
+   },
+   "mr": {
+    "title": "पाकिस्तानच्या भात निर्यातात ४ महिन्यांत १.३५ मिलियन टन वाढ",
+    "what": "पाकिस्तानच्या भात निर्यातात ४ महिन्यांत १.३५ मिलियन टन वाढ झाली आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "जगात भाताचा पुरवठा वाढल्यामुळे भारतीय शेतकऱ्यांसाठी भाताच्या भावात घट होण्याची शक्यता आहे."
+   },
+   "auto": true,
+   "addedAt": "2026-11-24T01:43:23.495Z"
+  },
+  {
+   "id": "a-75431038acc7",
+   "date": "2026-11-23",
+   "crops": [
+    "rice"
+   ],
+   "type": "intl",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNYW5sNlU2OUJNQVA5SWFnWm1ubmt2MGVJU3dvd2d2TG1mRGFBc0tyQlVzS3c3ZVRjSlRaVXdsN01DUG55SDNDaGJtaFdRN2pCN08wWkhkdGJnR1hPTVFZQ1NyZ3dxaXd6QmZ2bWNhUHBGanBkazdyNlgzM0RIdUd4TUFzOFg1QTlQRXgwTlNVbw?oc=5",
+   "source_name": "CMB News",
+   "headline": "Indonesia rice reserves ease near-term import pressure — CMB News - CMB News",
+   "hi": {
+    "title": "इंडोनेशिया में चावल भंडार से निकट भविष्य में आयात दबाव कम हुआ",
+    "what": "इंडोनेशिया में चावल भंडार से निकट भविष्य में आयात दबाव कम हुआ है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "भारतीय किसानों के लिए चावल का भाव गिर सकता है क्योंकि इंडोनेशिया के पास चावल का भंडार होने से आयात दबाव कम हुआ है।"
+   },
+   "mr": {
+    "title": "इंडोनेशियामध्ये तांदूळ साठा नजीकच्या काळात आयात दबाव कमी केला",
+    "what": "इंडोनेशियामध्ये तांदूळ साठा नजीकच्या काळात आयात दबाव कमी केला आहे.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "भारतीय शेतकऱ्यांसाठी तांदूळची किंमत कमी होऊ शकते कारण इंडोनेशियाकडे तांदूळ साठा असल्याने आयात दबाव कमी झाला आहे."
+   },
+   "auto": true,
+   "addedAt": "2026-11-24T01:43:14.568Z"
+  },
+  {
+   "id": "a-184e6fcb82e4",
+   "date": "2026-11-23",
+   "crops": [
+    "rice"
+   ],
+   "type": "policy",
+   "dir": "pos",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNQnJhblg1X3AzYXZ0anFEYXQ0SEdPOUduNjJiYTZLT2Vxc092a2s2clhmYktPZzVYRzdIX1l1QkhrQXU2WHdYX29QQXhPRzc2ek5ycVYxVWRIbTByaG9Wb3gxd0NIWkFYdG9FWUx2d3p4NjFEWDhjdTVxYnZGNk1xQnF4Ynl3N2lhbXNobzhCOXNUSVRDRHR0U2JmRjhsSjMxckdTRllvVUw0aC000gGsAUFVX3lxTE1CcmFuWDVfcDNhdnRqcURhdDRIR085R242MmJhNktPZXFzT3ZrazZyWGZiS09nNVhHN0hfWXVCSGtBdTZYd1hfb1BBeE9HNzZ6TnJxVjFVZEhtMHJob1ZveDF3Q0haQVh0b0VZTHZ3eng2MURYOGN1NXFidkY2TXFCcXhieXc3aWFtc2hvOEI5c1RJVENEdHRTYmZGOGxKMzFyR1NGWW9VTDRoLTQ?oc=5",
+   "source_name": "CNBC TV18",
+   "headline": "India is considering imposing export duties on certain rice varieties to improve their domestic supplies and m - CNBC TV18",
+   "hi": {
+    "title": "भारत चावल की घरेलू आपूर्ति में सुधार के लिए कुछ चावल किस्मों पर निर्यात शुल्क लगाने पर विचार कर रहा है",
+    "what": "भारत कुछ चावल किस्मों पर निर्यात शुल्क लगाने पर विचार कर रहा है। इसका उद्देश्य घरेलू आपूर्ति में सुधार करना है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "चावल की घरेलू आपूर्ति में सुधार होने से किसानों को बेहतर मूल्य मिल सकता है क्योंकि देश में चावल की कमी होगी"
+   },
+   "mr": {
+    "title": "भारत चावलाच्या देशांतर्गत पुरवठ्यात सुधारणा करण्यासाठी काही चावल प्रजातींवर निर्यात कर आकारण्याचा विचार करत आहे",
+    "what": "भारत काही चावल प्रजातींवर निर्यात कर आकारण्याचा विचार करत आहे. याचा उद्देश देशांतर्गत पुरवठ्यात सुधारणा करणे आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "चावलाच्या देशांतर्गत पुरवठ्यात सुधारणा होण्याने शेतकऱ्यांना चांगले मूल्य मिळू शकते कारण देशात चावलाची कमी होईल"
+   },
+   "auto": true,
+   "addedAt": "2026-11-24T01:43:04.686Z"
+  },
+  {
+   "id": "a-ab361427d156",
+   "date": "2026-11-23",
+   "crops": [
+    "wheat"
+   ],
+   "type": "import",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "high",
+   "qty": "800,000 metric tons",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQVVgxUzZMVTFpSF9hZXdPSm1DMi03QmgzTVZDR1doSU1qU2VUU3FONU82QVNRQl9lWW96V3B6UVdJMXc2TlgwN0ppOV95ekR5bE16d19wVmEwUFVjTGJZVVJLZkNBZGJzamVXQS1UMThnTHpyN1ZzVDhXbDlNZ2VMSVIwa1lSNVY3OFptOGxUeGJ2QXgydDJCdXdZR2dGWGNWV0lQZll1Y3BDQXVTaHfSAVZBVV95cUxPbjR5QkpzaTNuMmltQTUxXzJZbEFWOURwNk5pVVQ2c3VRNUVJTnAzbWJUcmlNakFGdU1aQ3NIQ1RSZ0JPMC1FQmpFOHlGRlpiSlBERHR3QQ?oc=5",
+   "source_name": "Dunya News",
+   "headline": "Pakistan issues third International tender to import 800,000 metric tons of wheat - Dunya News",
+   "hi": {
+    "title": "पाकिस्तान ने 8 लाख मीट्रिक टन गेहूं के आयात के लिए तीसरा अंतरराष्ट्रीय टेंडर जारी किया",
+    "what": "पाकिस्तान ने 8 लाख मीट्रिक टन गेहूं के आयात के लिए तीसरा अंतरराष्ट्रीय टेंडर जारी किया है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "भारतीय किसानों के लिए गेहूं का भाव गिरने की संभावना है क्योंकि पाकिस्तान के आयात से दुनिया में गेहूं की आपूर्ति बढ़ेगी।"
+   },
+   "mr": {
+    "title": "पाकिस्तानने ८ लाख मेट्रिक टन गव्हाच्या आयातीसाठी तिसरी आंतरराष्ट्रीय तांत्रिक निविदा जारी केली",
+    "what": "पाकिस्तानने ८ लाख मेट्रिक टन गव्हाच्या आयातीसाठी तिसरी आंतरराष्ट्रीय तांत्रिक निविदा जारी केली आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "भारतीय शेतकऱ्यांसाठी गव्हाची किंमत कमी होण्याची शक्यता आहे कारण पाकिस्तानच्या आयातमुळे जगभरात गव्हाचा पुरवठा वाढेल."
+   },
+   "auto": true,
+   "addedAt": "2026-11-24T01:42:53.772Z"
+  },
+  {
+   "id": "a-6f6e2ca4aaa4",
+   "date": "2026-11-23",
+   "crops": [
+    "soybean"
+   ],
+   "type": "intl",
+   "dir": "neg",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPR19MYmxBSW1rVGFPbGZTOVcxVTFvNlBOR2VzbzU4Nm1ka0YyVXBjUVRlLTBrTXNHd3ByblJsb3NPQzJNVGpNQ3RrdU5qd2pVWFRBN0hoRUdjRDJ1SWVpVkFqSTlra1BQY09uYy1pUWZwNkVuOWZoQVhCRlRvQnlwZmVxZw?oc=5",
+   "source_name": "RFD-TV",
+   "headline": "China’s Soybean Slowdown Raises Concerns For U.S. Exports - RFD-TV",
+   "hi": {
+    "title": "चीन की सोयाबीन मांग में कमी से अमेरिकी निर्यात पर चिंता",
+    "what": "चीन की सोयाबीन मांग में कमी के कारण अमेरिकी निर्यात पर चिंता बढ़ रही है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "इसका अमेरिकी सोयाबीन किसानों के लिए भाव कम होने का दबाव हो सकता है, जो भारतीय सोयाबीन किसानों के लिए भी नकारात्मक हो सकता है।"
+   },
+   "mr": {
+    "title": "चीनच्या सोयाबीन मागणीतील घट कमी अमेरिकन निर्यातसाठी चिंता निर्माण करते",
+    "what": "चीनच्या सोयाबीन मागणीतील घट कमी अमेरिकन निर्यातसाठी चिंता निर्माण करते आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "याचा अमेरिकन सोयाबीन शेतकऱ्यांसाठी किंमत कमी होण्याचा दबाव होऊ शकतो, जे भारतीय सोयाबीन शेतकऱ्यांसाठी देखील नकारात्मक असू शकते."
+   },
+   "auto": true,
+   "addedAt": "2026-11-24T01:42:42.696Z"
+  },
+  {
    "id": "a-cd273e7151e1",
    "date": "2026-11-23",
    "crops": [
@@ -433,6 +619,37 @@
    },
    "auto": true,
    "addedAt": "2026-11-23T07:59:50.443Z"
+  },
+  {
+   "id": "a-fab54cdb6db7",
+   "date": "2026-11-22",
+   "crops": [
+    "soybean"
+   ],
+   "type": "intl",
+   "dir": "neg",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOaVU0ZHAyRzBZcVBQenhrdmtfS21nMlhwSnJPRWd4dTI4SlByUE5oTjVZVTV0WGZZaFpUNUV1MkZndnpCOHBVS0NCaUlmUWVweWx1eGpxMnB1RlkzQlRnY3AwcDBEay1nQWY4YVM2aURzYnZocUgtU3R3RHZYcmVvLVdIY1pKaEFrMXFLczFmU09FQ3QzNWpHb2xSTHpLQlgx?oc=5",
+   "source_name": "CMB News",
+   "headline": "Indonesia Soybean Import Controls from 2027 – Market Impact — CMB News - CMB News",
+   "hi": {
+    "title": "इंडोनेशिया में 2027 से सोयाबीन आयात नियंत्रण - बाजार प्रभाव",
+    "what": "इंडोनेशिया ने 2027 से सोयाबीन आयात पर नियंत्रण लगाने का फैसला किया है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "इसका भारतीय सोयाबीन किसानों पर नकारात्मक प्रभाव पड़ सकता है, क्योंकि आयात नियंत्रण से दुनिया में सोयाबीन की कीमतें बढ़ सकती हैं और भारतीय सोयाबीन की मांग कम हो सकती है।"
+   },
+   "mr": {
+    "title": "इंडोनेशियामध्ये 2027 पासून सोयाबीन आयात नियंत्रण - बाजार प्रभाव",
+    "what": "इंडोनेशियाने 2027 पासून सोयाबीन आयातवर नियंत्रण आणण्याचा निर्णय घेतला आहे.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "याचा भारतीय सोयाबीन शेतकऱ्यांवर नकारात्मक परिणाम होऊ शकतो, कारण आयात नियंत्रणामुळे जगभरातील सोयाबीनच्या किमती वाढू शकतात आणि भारतीय सोयाबीनची मागणी कमी होऊ शकते."
+   },
+   "auto": true,
+   "addedAt": "2026-11-24T01:42:31.739Z"
   },
   {
    "id": "a-477f10e5a2d5",
@@ -2875,8 +3092,16 @@
   "a-accf0b7c494f",
   "a-cd273e7151e1",
   "a-477f10e5a2d5",
-  "a-c11954b62027"
+  "a-c11954b62027",
+  "a-fab54cdb6db7",
+  "a-6f6e2ca4aaa4",
+  "a-ab361427d156",
+  "a-184e6fcb82e4",
+  "a-75431038acc7",
+  "a-5916f58f32c8",
+  "a-0c63a783ac50",
+  "a-e26ca3533204"
  ],
- "updated": "2026-11-23T19:27:32.350Z",
+ "updated": "2026-11-24T01:43:49.205Z",
  "_about": "AI se apne aap bani cards. official=true sirf sarkari website wali khabar. Baaki ki sarkari pushti baaki."
 }
