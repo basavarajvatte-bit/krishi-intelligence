@@ -1,6 +1,131 @@
 {
  "items": [
   {
+   "id": "a-2c677c413026",
+   "date": "2026-11-24",
+   "crops": [
+    "rice"
+   ],
+   "type": "export",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "high",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNUU9VVElCeFhEWWh2XzBQUHhUamh4cXlScUV1VWFIWnl1RGx0WTMxNjluOFNuQWQzUjNBYUE1bV8zMVlnMUw3ZVREZEtnREtBTnMwMG9yREozS0s5OHlFb25NOGhvTkVQRGNGTXJzY0FheVlpNUVRalVlX3ItYmpaNm9sa0ZpeGxsR2l0amk3NklWek83T3F3MEZIYTJVNlpCN1gyeGJNYUQyT2dwWFo0NUtZNXd6ZUt0ZENKS0tBaEpnNHM?oc=5",
+   "source_name": "Kalkine India",
+   "headline": "India Rice Export Duties and Domestic Price Pressures - Kalkine India",
+   "hi": {
+    "title": "भारत में चावल निर्यात शुल्क और घरेलू मूल्य दबाव",
+    "what": "भारत में चावल निर्यात शुल्क और घरेलू मूल्य दबाव की खबर है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "चावल के निर्यात शुल्क के कारण घरेलू बाजार में चावल की कीमतें गिर सकती हैं।"
+   },
+   "mr": {
+    "title": "भारतात चावल निर्यात कर आणि देशांतर्गत किंमतीचे दाब",
+    "what": "भारतात चावल निर्यात कर आणि देशांतर्गत किंमतीचे दाब याबाबतची बातमी आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "चावल निर्यात करामुळे देशांतर्गत बाजारात चावलाच्या किंमती कमी होऊ शकतात."
+   },
+   "auto": true,
+   "addedAt": "2026-11-24T13:42:42.245Z"
+  },
+  {
+   "id": "a-8cc6ea157570",
+   "date": "2026-11-24",
+   "crops": [
+    "sugar"
+   ],
+   "type": "export",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "8,606 MTRV",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNN2V5Vm9IVGpzei1NVTZOTEY5NnNMamIxTDZHNnJkMjdpTE02N3FMM1NJeTIxSGo3cGpkTWxVcHVnczNTcHlGMkRYVkY3MDBLM2ZUR2ZKUmpKV3Njc21jcXdZSWdQMC1mZmstOHhtenVHSjdoMnllVlBqcjRaNk5BMXVtUU9uY0JZUDNHdlQxN2JjbUMyVDcxLURFcnJqc1JVeUhvQVRfM2Z2ODE0d3B2amdkWDFPYUtqNUViUkhLdWM0NHNiRTdPNngtUlJMZXNyMWY2ZE5R?oc=5",
+   "source_name": "A2Z Taxcorp LLP",
+   "headline": "DGFT Allocates 8,606 MTRV of Raw Cane Sugar for Export to USA Under Tariff Rate Quota Scheme for US Fiscal Year 2027 - A2Z Taxcorp LLP",
+   "hi": {
+    "title": "डीजीएफटी ने अमेरिका को निर्यात के लिए टैरिफ दर कोटा योजना के तहत 8,606 एमटीआरवी कच्ची गन्ना चीनी आवंटित की",
+    "what": "डीजीएफटी ने अमेरिका को निर्यात के लिए 8,606 एमटीआरवी कच्ची गन्ना चीनी आवंटित की है। यह आवंटन अमेरिकी वित्त वर्ष 2027 के लिए टैरिफ दर कोटा योजना के तहत किया गया है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "इसका मतलब है कि देश से चीनी का निर्यात बढ़ेगा, जिससे देश में चीनी की उपलब्धता कम होगी और इसका दाम गिर सकता है।"
+   },
+   "mr": {
+    "title": "डीजीएफटीने अमेरिकेला निर्यात करण्यासाठी टॅरिफ दर कोटा योजनेंतर्गत ८,६०६ एमटीआरवी कच्ची गन्ना साखर वाटप केले",
+    "what": "डीजीएफटीने अमेरिकेला निर्यात करण्यासाठी ८,६०६ एमटीआरवी कच्ची गन्ना साखर वाटप केले आहे. ही वाटप अमेरिकन आर्थिक वर्ष २०२७ साठी टॅरिफ दर कोटा योजनेंतर्गत केले आहे.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "याचा अर्थ असा की देशातून साखरेचा निर्यात वाढेल, ज्यामुळे देशात साखरेची उपलब्धता कमी होईल आणि त्याची किंमत कमी होऊ शकते."
+   },
+   "auto": true,
+   "addedAt": "2026-11-24T13:42:33.046Z"
+  },
+  {
+   "id": "a-a319daf86e25",
+   "date": "2026-11-24",
+   "crops": [
+    "sugar"
+   ],
+   "type": "export",
+   "dir": "pos",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNTTdacjJaREdLSmEwSkt2dFByYnRGd2NncGl6Mkx1dXc3Zy1jdzNxbGhzWnRxb29DOHBNM1FsYmVzUDdLSnpaNXZOazdFMXEtYWVEaHhETktDaDJMbWUxVDZhdHBiVnk3cC1OZ250cTU5aEdzS1ZWQTJJcVYwX1RydGxudVBMZlU4RTVkMzJLZHhlZlND?oc=5",
+   "source_name": "CMB News",
+   "headline": "Sugar Price India, 24 Nov 2026: Export Quota to US TRQ — CMB News - CMB News",
+   "hi": {
+    "title": "चीनी की कीमतें बढ़ सकती हैं",
+    "what": "भारत को अमेरिका के लिए चीनी निर्यात कोटा मिला है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "चीनी की कीमतें बढ़ सकती हैं क्योंकि निर्यात कोटा मिलने से चीनी की मांग बढ़ेगी और घरेलू बाजार में चीनी की कमी हो सकती है।"
+   },
+   "mr": {
+    "title": "साखरेच्या किमती वाढू शकतात",
+    "what": "भारताला अमेरिकेसाठी साखरेचा निर्यात कोटा मिळाला आहे.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "साखरेच्या किमती वाढू शकतात कारण निर्यात कोटा मिळण्यामुळे साखरेची मागणी वाढेल आणि देशांतर्गत बाजारपेठेत साखरेच्या कमतरतेची शक्यता आहे."
+   },
+   "auto": true,
+   "addedAt": "2026-11-24T13:42:20.371Z"
+  },
+  {
+   "id": "a-fc37357c5156",
+   "date": "2026-11-24",
+   "crops": [
+    "oilseed",
+    "other"
+   ],
+   "type": "policy",
+   "dir": "neg",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "high",
+   "qty": "2 lakh crore",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNVE9hbm1tVXZmcFlfU3hpWDVJS3NqQkpPZWg4dGxrVzRyeWZJLXd4VUNldDVaUllabUJ1M2p0SEd1UEFMTExIdVo5eGNmdi13bS1MVWFFbmlEVUhtWExVNzV0T0NVdkpSdkhIZEtETjl3MzViR3hNM2pCbnh4VkxhOVA0T1RrVnZVcncyMTA3Y2dtbHBfSHdZc01IbFJDTWI2WUNveXB3YllNdFl2ZWI2aHMtamFFOVBnUmVGcVRKdEpSVTA2dFJ6TA?oc=5",
+   "source_name": "AgroSpectrum India",
+   "headline": "India's edible oil vulnerability deepens as import costs surge to Rs 2 lakh crore - AgroSpectrum India",
+   "hi": {
+    "title": "भारत की खाद्य तेल की कमजोरी गहराती जा रही है क्योंकि आयात लागत 2 लाख करोड़ रुपये तक पहुंच गई है",
+    "what": "भारत की खाद्य तेल की आयात लागत 2 लाख करोड़ रुपये तक पहुंच गई है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "खाद्य तेल की आयात लागत बढ़ने से तेल उत्पादक किसानों को नुकसान हो सकता है, क्योंकि आयातित तेल सस्ता होने से उनकी फसल की मांग कम हो सकती है।"
+   },
+   "mr": {
+    "title": "भारताची खाद्य तेल संवेदनशीलता वाढत आहे कारण आयात खर्च २ लाख कोटी रुपयांपर्यंत वाढला आहे",
+    "what": "भारताची खाद्य तेल आयात खर्च २ लाख कोटी रुपयांपर्यंत वाढला आहे.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "खाद्य तेल आयात खर्च वाढल्याने तेल उत्पादक शेतकऱ्यांना नुकसान होऊ शकते, कारण आयातित तेल स्वस्त असल्याने त्यांच्या पिकाची मागणी कमी होऊ शकते."
+   },
+   "auto": true,
+   "addedAt": "2026-11-24T13:42:00.898Z"
+  },
+  {
    "id": "a-fa27c57c9f56",
    "date": "2026-11-24",
    "crops": [
@@ -93,6 +218,37 @@
    },
    "auto": true,
    "addedAt": "2026-11-24T07:47:24.293Z"
+  },
+  {
+   "id": "a-3e7a9610d1eb",
+   "date": "2026-11-23",
+   "crops": [
+    "onion"
+   ],
+   "type": "intl",
+   "dir": "neg",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1lTE11dmhCN3B2ZTFuUFpxN2NQSjlaZGd3VjVzQjNPMjRMbHRFNXNGQVlWd3JHMTg5c0ZVa3FMZGt2LUQyNlpLNjZTWExTZEU3SzlCM2Fn?oc=5",
+   "source_name": "RTV News",
+   "headline": "Bangladesh Achieves Onion Self-Sufficiency, No Need for Imports: DAE - RTV News",
+   "hi": {
+    "title": "बांग्लादेश में प्याज की आत्मनिर्भरता हासिल, आयात की जरूरत नहीं",
+    "what": "बांग्लादेश ने प्याज की आत्मनिर्भरता हासिल कर ली है, जिससे आयात की जरूरत नहीं रह गई है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "भारतीय किसानों के लिए प्याज का भाव गिरने की संभावना है, क्योंकि बांग्लादेश अब प्याज का आयात नहीं करेगा।"
+   },
+   "mr": {
+    "title": "बांग्लादेश प्याजात आत्मनिर्भर झाले, आयातीची गरज नाही",
+    "what": "बांग्लादेशने प्याजात आत्मनिर्भरता मिळवली आहे, ज्यामुळे आयातीची गरज राहिली नाही.",
+    "why": "बातमीत कारण नाही",
+    "effect": "भारतीय शेतकऱ्यांसाठी प्याजाची किंमत कमी होण्याची शक्यता आहे, कारण बांग्लादेश आता प्याज आयात करणार नाही."
+   },
+   "auto": true,
+   "addedAt": "2026-11-24T13:42:53.572Z"
   },
   {
    "id": "a-e7526373405d",
@@ -775,6 +931,37 @@
    },
    "auto": true,
    "addedAt": "2026-11-23T07:59:50.443Z"
+  },
+  {
+   "id": "a-dadda7237df8",
+   "date": "2026-11-22",
+   "crops": [
+    "onion"
+   ],
+   "type": "policy",
+   "dir": "neg",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBIR2JKNjN2aGwtSkdpMThFdGozdml6NXBwTWJCSWdZeVhjZ3E0dGVGR0t6WEQ2Y3lvdFFSaUh4TUFjbzc2VTM1TF9pTU1vSWJRUS1HYWpwSldFTE0xa2JaMQ?oc=5",
+   "source_name": "en.bd-pratidin.com",
+   "headline": "Bangladesh achieves self-reliance in onion production, no imports needed - en.bd-pratidin.com",
+   "hi": {
+    "title": "बांग्लादेश में प्याज उत्पादन में आत्मनिर्भरता हासिल, आयात की जरूरत नहीं",
+    "what": "बांग्लादेश ने प्याज उत्पादन में आत्मनिर्भरता हासिल कर ली है, जिससे आयात की जरूरत नहीं रह गई है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "भारतीय किसानों के लिए प्याज का भाव गिरने का दबाव हो सकता है, क्योंकि बांग्लादेश अब आयात नहीं करेगा और देश में प्याज की अधिकता हो सकती है।"
+   },
+   "mr": {
+    "title": "बांग्लादेश प्याज उत्पादनात स्वावलंबी झाले, आयातीची गरज नाही",
+    "what": "बांग्लादेशने प्याज उत्पादनात स्वावलंबी झाले आहे, ज्यामुळे आयातीची गरज राहिली नाही.",
+    "why": "बातमीत कारण नाही",
+    "effect": "भारतीय शेतकऱ्यांसाठी प्याजच्या भावात घट होण्याचा दबाव असू शकतो, कारण बांग्लादेश आता आयात करणार नाही आणि देशात प्याजची अधिकता होऊ शकते."
+   },
+   "auto": true,
+   "addedAt": "2026-11-24T13:43:04.936Z"
   },
   {
    "id": "a-d21485518540",
@@ -3296,8 +3483,15 @@
   "a-d21485518540",
   "a-0c09b4a2f502",
   "a-661b78ec3e37",
-  "a-e7526373405d"
+  "a-e7526373405d",
+  "a-fc37357c5156",
+  "a-9d1307e4893c",
+  "a-a319daf86e25",
+  "a-8cc6ea157570",
+  "a-2c677c413026",
+  "a-3e7a9610d1eb",
+  "a-dadda7237df8"
  ],
- "updated": "2026-11-24T07:48:30.943Z",
+ "updated": "2026-11-24T13:43:08.944Z",
  "_about": "AI se apne aap bani cards. official=true sirf sarkari website wali khabar. Baaki ki sarkari pushti baaki."
 }
