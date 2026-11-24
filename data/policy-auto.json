@@ -1,6 +1,255 @@
 {
  "items": [
   {
+   "id": "a-2640dfdf7429",
+   "date": "2026-11-24",
+   "crops": [
+    "soybean",
+    "other"
+   ],
+   "type": "intl",
+   "dir": "neg",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMijgJBVV95cUxNQTFQZGowWXBHY1VQNXFtX0syazlYUHZCRDRFYUhVZ3FtUl9CaUJyVjB6ZnI4YXZHOVNrRWd1V0JuSm1YNHNFY1FqR1ZlbGMyQW8tdlRHaWdqd1lGVmRwM3VrdmV3NUFnN0p5MUhSZjA2R2ZqNUszd1pIRTJNTHlIaXhtd1pSRnd2QlRwbnEzYUNLc2hXWWlvNXR4b2lFYmE0WTNKdmtLb2Z2aWpWdHV3RjNmSlJpLXVsN2xiaGJKQlZjeFZxMnVZZnVaR1dIM0prSDlDU0ZOZU1FckhIcnJCb3lXSDhBbTJEUVQ3d2ZSaWVmTUtyUGEyT1Nxc3ByRndZRFNQTG1hdHBBTUJyN3c?oc=5",
+   "source_name": "Fastmarkets",
+   "headline": "China’s October soybean imports ease seasonally as state-bought US cargoes stay slow to arrive; corn climbs to year’s high with Brazil back on top - Fastmarkets",
+   "hi": {
+    "title": "चीन के अक्टूबर में सोयाबीन आयात में मौसमी गिरावट",
+    "what": "चीन के अक्टूबर में सोयाबीन आयात में मौसमी गिरावट आई है। राज्य द्वारा खरीदे गए अमेरिकी माल धीरे-धीरे आ रहे हैं।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "भारतीय सोयाबीन किसानों के लिए दुनिया में सोयाबीन की अधिक आपूर्ति के कारण भाव गिरने का दबाव हो सकता है"
+   },
+   "mr": {
+    "title": "चीनच्या ऑक्टोबरमध्ये सोयाबीन आयात मौसमी घटले",
+    "what": "चीनच्या ऑक्टोबरमध्ये सोयाबीन आयात मौसमी घटले आहेत. राज्याने खरेदी केलेले अमेरिकन माल धीरे-धीरे येत आहे.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "जगात सोयाबीनच्या पुरवठ्यात वाढ झाल्यामुळे भारतीय सोयाबीन शेतकऱ्यांसाठी भाव कमी होण्याचा दबाव असू शकतो"
+   },
+   "auto": true,
+   "addedAt": "2026-11-24T19:27:14.425Z"
+  },
+  {
+   "id": "a-bd92f16eed99",
+   "date": "2026-11-24",
+   "crops": [
+    "other"
+   ],
+   "type": "export",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "20%",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNYlF2TTdUd1RVYmtubUN6NkZhMGhEbTRjel9iMmNLUGRpUHZORXBwWkhEU0NZQ25KbEx5eEplYnVlbTJkSElCTkh6LUhOR2hSdVBQVXdha191NUxac2R6VDJ3VHdMWHNIWmI3NW4zS0J3M1BKQkF1bXJwanZDTGUzXzAzQjRDRG5sTDItQlhoY3cwbzJDQ0V5aXlyQnllcHZ6aHE0RkZjd0J2RWxjbWxSTUhhU0tnTGhOZTUtMUpMQUpOYnJRVWJ0NnRFNXMxT05pTzctTXlPNV_SAd4BQVVfeXFMTjR1bTJXTEFqdlpHYTFPa1EzWTBXNFRUVVIxOE1MUGpVU2JtaDVnUHZrcE5SaGJhcGdEbHdhVURqQWFaVWQzSHEtb05lSUlBNk1CZXgtWEtHd2dRR3JRdjdhNzRHR2dkWTFaZS1xUVdNR0ZOaUJhUVp5MHd1SXVoUFNmeGpOdmN3REh6TEpfcFI2NzFIOXpOdFgxbU9wLW9la1ljcDV2d1F1aGEzd08tUUVaQzh4SUlKSDJreVplSGZhMWtkeXNCYko4R1paRGNpcnQtY2pBY0N6ZGhFRGJn?oc=5",
+   "source_name": "The Economic Times",
+   "headline": "Egg prices decline 20% as bird flu in Tamil Nadu stalls exports - The Economic Times",
+   "hi": {
+    "title": "अंडे की कीमतें 20% गिरीं",
+    "what": "तमिलनाडु में बर्ड फ्लू के कारण निर्यात रुकने से अंडे की कीमतें 20% गिर गईं।",
+    "why": "तमिलनाडु में बर्ड फ्लू के फैलने से निर्यात पर रोक लग गई है।",
+    "effect": "अंडे की कीमतें गिरने से किसानों को नुकसान होगा क्योंकि देश में अंडों की आपूर्ति बढ़ जाएगी।"
+   },
+   "mr": {
+    "title": "अंड्याच्या किमती २०% खाली",
+    "what": "तमिलनाडूमध्ये बर्ड फ्लूमुळे निर्यात थांबल्याने अंड्याच्या किमती २०% खाली आल्या आहेत.",
+    "why": "तमिलनाडूमध्ये बर्ड फ्लूचा प्रादुर्भाव झाल्याने निर्यातवर निर्बंध आले आहेत.",
+    "effect": "अंड्याच्या किमती खाली येण्याने शेतकऱ्यांना नुकसान होईल कारण देशात अंड्यांची पुरवठा वाढेल।"
+   },
+   "auto": true,
+   "addedAt": "2026-11-24T19:27:03.517Z"
+  },
+  {
+   "id": "a-00f0057bc8f7",
+   "date": "2026-11-24",
+   "crops": [
+    "rice"
+   ],
+   "type": "export",
+   "dir": "neg",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "8.84 million tons",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPemNVYWJoclpQSkNoeEVONnZGVEU1YTk0T2RSYVZ4VkVRSkhvRkstM09kRkU2Qm5TdXptWklzMlAzdkk4TEY1d3dJcDk1cmR6R0hNeWhBYV9kVkRwTzFQN1d1Si1aeHhYejhkQm9nNzZuSUxzYXBkYjFjajJ4czA2bGZ5U3Q1LXVIbndJUVBjNVNjWlZxSEhzUTlRM1FhN0ZBU1lTUEVtSQ?oc=5",
+   "source_name": "NewsBytes",
+   "headline": "India non-Basmati rice exports up 6.7% to 8.84 million tons - NewsBytes",
+   "hi": {
+    "title": "भारत के गैर-बासमती चावल निर्यात में 6.7% की वृद्धि",
+    "what": "भारत के गैर-बासमती चावल निर्यात में 6.7% की वृद्धि हुई है, जो 8.84 मिलियन टन हो गया है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "देश में चावल की मात्रा कम होने से इसका दाम बढ़ने की संभावना है, लेकिन निर्यात बढ़ने से किसानों को कम दाम मिल सकता है।"
+   },
+   "mr": {
+    "title": "भारताच्या नॉन-बासमती तांदूळ निर्यातीत ६.७% वाढ",
+    "what": "भारताच्या नॉन-बासमती तांदूळ निर्यातीत ६.७% वाढ झाली आहे, जी ८.८४ दशलक्ष टन झाली आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "देशात तांदूळाचे प्रमाण कमी होण्याने त्याची किंमत वाढण्याची शक्यता आहे, परंतु निर्यात वाढल्याने शेतकऱ्यांना कमी दर मिळू शकतो."
+   },
+   "auto": true,
+   "addedAt": "2026-11-24T19:26:53.801Z"
+  },
+  {
+   "id": "a-2b8439d25b76",
+   "date": "2026-11-24",
+   "crops": [
+    "rice"
+   ],
+   "type": "export",
+   "dir": "pos",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "6.7%",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQZmV1RlZ4ekd0andlSW1hN2JLLWVtV3JhRjF0TTBXRFlNME5IUndyZ3VPaWJQLUpsSDhhSmE5SEo2aGRWTTZhVXNZcHRZVTRyNWZtVW1zQnp0ZXM3N2FVZllkVmZLNjVIRFR5dGVvcmRLbzVnOC1Cd19JZXhmMGI3ejJvUERzaVpDUmtmVjlaRWJyT2E3ME4zeVhkX1YtYkdGOW1xbWs0SjVwTGNOc1gzVW9qOUpPNm9ZeDBwTWZUTGMxQUMzZ3JpUWJNcGlIc3hGWnc?oc=5",
+   "source_name": "BusinessLine",
+   "headline": "India’s non-basmati rice export surges 6.7% in April-October - BusinessLine",
+   "hi": {
+    "title": "भारत का गैर-बासमती चावल निर्यात में अप्रैल- अक्टूबर में 6.7% की वृद्धि",
+    "what": "भारत का गैर-बासमती चावल निर्यात में अप्रैल- अक्टूबर में 6.7% की वृद्धि हुई है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "चावल का निर्यात बढ़ने से किसानों को बेहतर मूल्य मिल सकता है क्योंकि देश से अधिक चावल बाहर जा रहा है।"
+   },
+   "mr": {
+    "title": "भारताच्या नॉन-बासमती तांदूळ निर्यातीत एप्रिल-ऑक्टोबरमध्ये ६.७% वाढ",
+    "what": "भारताच्या नॉन-बासमती तांदूळ निर्यातीत एप्रिल-ऑक्टोबरमध्ये ६.७% वाढ झाली आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "तांदूळ निर्यात वाढल्याने शेतकऱ्यांना चांगले मूल्य मिळू शकते कारण देशातून अधिक तांदूळ बाहेर जात आहे."
+   },
+   "auto": true,
+   "addedAt": "2026-11-24T19:26:42.811Z"
+  },
+  {
+   "id": "a-addc59cfc792",
+   "date": "2026-11-24",
+   "crops": [
+    "sugar"
+   ],
+   "type": "export",
+   "dir": "neg",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "8,606 MTRV",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPYjVzUkk3MmpPRmdRcnI1dEpLM1pHUE80ZzVvMHYzTmNpXzc1anFFZ3RKSmE3MkhnWklxUVQtdVd5WnZVX1BFb2xuTUZraFR1Z0R5eG9sRFNlcGNDeHVMcDVtQVh4am5EVVRWeWNfeEVWdFB6VjVYSGVCNGtRZ1hkRmdPRk1fbHdUR25jeFJwRnVpaEw0ckVFV1pnaC0?oc=5",
+   "source_name": "TaxGuru",
+   "headline": "DGFT Allocates 8,606 MTRV Raw Cane Sugar Export Quota to USA for FY 2027 - TaxGuru",
+   "hi": {
+    "title": "DGFT ने अमेरिका को FY 2027 के लिए 8,606 MTRV कच्ची गन्ना चीनी निर्यात कोटा आवंटित किया",
+    "what": "DGFT ने अमेरिका को FY 2027 के लिए 8,606 MTRV कच्ची गन्ना चीनी निर्यात कोटा आवंटित किया है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "इसका मतलब है कि देश से चीनी की निर्यात बढ़ेगी, जिससे देश में चीनी की कमी हो सकती है और इसका दाम बढ़ सकता है, लेकिन निर्यात कोटा आवंटन से चीनी किसानों को नुकसान हो सकता है क्योंकि देश में चीनी की अधिक मात्रा निर्यात होगी।"
+   },
+   "mr": {
+    "title": "DGFT ने अमेरिकेला FY 2027 साठी 8,606 MTRV कच्ची गन्ना साखर निर्यात कोटा वाटला",
+    "what": "DGFT ने अमेरिकेला FY 2027 साठी 8,606 MTRV कच्ची गन्ना साखर निर्यात कोटा वाटला आहे.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "याचा अर्थ असा आहे की देशातून साखरचा निर्यात वाढेल, ज्यामुळे देशात साखरची कमी होऊ शकते आणि त्याची किंमत वाढू शकते, परंतु निर्यात कोटा वाटपामुळे साखर उत्पादक शेतकऱ्यांना नुकसान होऊ शकते कारण देशातील साखरची अधिक प्रमाणात निर्यात होईल।"
+   },
+   "auto": true,
+   "addedAt": "2026-11-24T19:26:32.160Z"
+  },
+  {
+   "id": "a-2f5386f74fd1",
+   "date": "2026-11-24",
+   "crops": [
+    "wheat"
+   ],
+   "type": "import",
+   "dir": "pos",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "800,000 tonnes",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOUXhGOFlzMHJSNXFtNVVyc2VqLXR0N0pfZXhiWXlrN3poQXBhU09uRC1OVXktQU9Lb01wXy1UUVplSDB5eHBUc2dXak1KZWVfZTI0SjM1a2dqZG5rbDkwaGVTMjNzcHdkYmNsc193NUNTaWZvUkp5YTl1MERqVGdDZVpwWGNkVG9FZENLZ3BlZWRXMS1RS0c2cjQ2TG1Dc2lIeFRqb1B3TVlXZjBNUGxMUGJHNE1CUzF0V1E?oc=5",
+   "source_name": "www.thesamaja.com",
+   "headline": "Pakistan invites bids to import 800,000 tonnes of wheat amid supply concerns - www.thesamaja.com",
+   "hi": {
+    "title": "पाकिस्तान ने 8 लाख टन गेहूं के आयात के लिए बोली आमंत्रित की",
+    "what": "पाकिस्तान ने गेहूं की आपूर्ति की चिंताओं के बीच 8 लाख टन गेहूं के आयात के लिए बोली आमंत्रित की है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "पाकिस्तान में गेहूं की मांग बढ़ने से भारतीय किसानों को गेहूं का भाव बढ़ सकता है क्योंकि देश में माल कम होने से भाव बढ़ने की संभावना होती है।"
+   },
+   "mr": {
+    "title": "पाकिस्तानने ८ लाख टन गहू आयातासाठी बोली निमंत्रित केली",
+    "what": "पाकिस्तानने गहू पुरवठ्याबद्दलच्या चिंतांमध्ये ८ लाख टन गहू आयातासाठी बोली निमंत्रित केली आहे.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "पाकिस्तानमध्ये गहू मागणी वाढल्याने भारतीय शेतकऱ्यांना गहू चा भाव वाढू शकतो कारण देशात माल कमी असल्याने भाव वाढण्याची शक्यता असते."
+   },
+   "auto": true,
+   "addedAt": "2026-11-24T19:26:16.592Z"
+  },
+  {
+   "id": "a-b46b72ce75b0",
+   "date": "2026-11-24",
+   "crops": [
+    "wheat"
+   ],
+   "type": "export",
+   "dir": "pos",
+   "when": "short",
+   "conf": "medium",
+   "priority": "high",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOSTJaYTZlOTR0bFN4RUR3LWVCeDJFd0Jxb0R3ZUtiSFFmYklfVnQzVVFEcmVDNzBGeWZpNmtUM1VBcWJfNTlzRVlDVkIzODc3LWFuQjJVbXhBUmVtbVVLQ2NTLVpTM0hMRzhGYlVycmF0WXNHVll1VzE2X29WVlduaG9ockFCU0RnekllS3BsU0hWaTJVM1NMMkxNSzBwS1d3WGlpOXZXMWY0UFRLRXdiU3A5M3d3bzZ0T2RBRTNKVGtxaFpPT0Zrem9Sa2k1TWdZaWJfVHRpZWVGbU1T0gHcAUFVX3lxTE5JMlphNmU5NHRsU3hFRHctZUJ4MkV3QnFvRHdlS2JIUWZiSV9WdDNVUURyZUM3MEZ5Zmk2a1QzVUFxYl81OXNFWUNWQjM4NzctYW5CMlVteEFSZW1tVUtDY1MtWlMzSExHOEZiVXJyYXRZc0dWWXVXMTZfb1ZWV25ob2hyQUJTRGd6SWVLcGxTSFZpMlUzU0wyTE1LMHBLV3dYaWk5dlcxZjRQVEtFd2JTcDkzd3dvNnRPZEFFM0pUa3FoWk9PRmt6b1JraTVNZ1lpYl9UdGllZUZtTVM?oc=5",
+   "source_name": "Livemint",
+   "headline": "India weighs wheat export curbs amid concerns over lower production - Livemint",
+   "hi": {
+    "title": "भारत निर्यात पर नियंत्रण लगाने पर विचार कर रहा है",
+    "what": "भारत में गेहूं का उत्पादन कम होने की चिंता के बीच निर्यात पर नियंत्रण लगाने पर विचार किया जा रहा है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "गेहूं का भाव बढ़ने की संभावना है क्योंकि निर्यात पर नियंत्रण से देश में गेहूं की उपलब्धता कम हो जाएगी।"
+   },
+   "mr": {
+    "title": "भारत निर्यातवर नियंत्रण आणण्याबद्दल विचार करत आहे",
+    "what": "भारतात गव्हाचे उत्पादन कमी होण्याच्या चिंतेच्या पार्श्वभूमीवर निर्यातवर नियंत्रण आणण्याबद्दल विचार केला जात आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "गव्हाची किंमत वाढण्याची शक्यता आहे कारण निर्यातवर नियंत्रणामुळे देशात गव्हाची उपलब्धता कमी होईल।"
+   },
+   "auto": true,
+   "addedAt": "2026-11-24T19:26:05.400Z"
+  },
+  {
+   "id": "a-6ae44a54118a",
+   "date": "2026-11-24",
+   "crops": [
+    "rice"
+   ],
+   "type": "intl",
+   "dir": "pos",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "high",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNUzZnb1lTRjZnR2t3ME10azdFdDROVXo0N2F5dWhBbWVkbU9MVTQzMDZlZXFMdHFUaGZPRkJmYWtvOVlJcTlCUEYtZmt0SzVtWXpqVGRBdEM2Y01XNG44amVQNjc1Q1pUQnhxV1FicVlwdFY2VFFadHNaTER0QzlpMmdZYkFVUERwYXhETGhBdTRpS3h3ejl2aU5pemFBR1N4UUhRSl9oUHI1bG51SEJjeElXaGFUTmdzbnpzWkRQWlV1Zw?oc=5",
+   "source_name": "AgroSpectrum India",
+   "headline": "Global rice production set to decline for first time in 11 years: IGC Report - AgroSpectrum India",
+   "hi": {
+    "title": "वैश्विक चावल उत्पादन 11 वर्षों में पहली बार घटेगा : आईजीसी रिपोर्ट",
+    "what": "वैश्विक चावल उत्पादन 11 वर्षों में पहली बार घटेगा। आईजीसी रिपोर्ट के अनुसार यह गिरावट होगी।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "चावल का उत्पादन कम होने से इसकी कीमतें बढ़ सकती हैं क्योंकि दुनिया में चावल की कमी होगी।"
+   },
+   "mr": {
+    "title": "जगातील तांदूळ उत्पादन ११ वर्षांनंतर पहिल्यांदा घटणार : आयसीजी अहवाल",
+    "what": "जगातील तांदूळ उत्पादन ११ वर्षांनंतर पहिल्यांदा घटणार आहे. आयसीजी अहवालानुसार ही घट होणार आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "तांदूळ उत्पादन कमी होण्यामुळे त्याच्या किमती वाढू शकतात कारण जगात तांदूळ कमी होईल।"
+   },
+   "auto": true,
+   "addedAt": "2026-11-24T19:25:50.795Z"
+  },
+  {
    "id": "a-2c677c413026",
    "date": "2026-11-24",
    "crops": [
@@ -3490,8 +3739,16 @@
   "a-8cc6ea157570",
   "a-2c677c413026",
   "a-3e7a9610d1eb",
-  "a-dadda7237df8"
+  "a-dadda7237df8",
+  "a-6ae44a54118a",
+  "a-b46b72ce75b0",
+  "a-2f5386f74fd1",
+  "a-addc59cfc792",
+  "a-2b8439d25b76",
+  "a-00f0057bc8f7",
+  "a-bd92f16eed99",
+  "a-2640dfdf7429"
  ],
- "updated": "2026-11-24T13:43:08.944Z",
+ "updated": "2026-11-24T19:27:18.434Z",
  "_about": "AI se apne aap bani cards. official=true sirf sarkari website wali khabar. Baaki ki sarkari pushti baaki."
 }
