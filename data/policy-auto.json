@@ -1,6 +1,37 @@
 {
  "items": [
   {
+   "id": "a-4c550bb0dc81",
+   "date": "2026-11-24",
+   "crops": [
+    "rice"
+   ],
+   "type": "export",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "high",
+   "qty": "20%",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBPRXhlbGY1d0tqM3ZTN25WRmRuX1pPTHQzSjJsUTFUQnllRnlZT3pOZWlpenJUUGRldUNSS1Jkb1h3RFQ5ZmZvR1hBaFFfOWVLYWVKdm51OHJja3ozWEdkUWFPVklxMllYWmln?oc=5",
+   "source_name": "Times Bull",
+   "headline": "Rice Price – Will Rice Get Cheaper? 20% Export Duty - Times Bull",
+   "hi": {
+    "title": "चावल की कीमतें - क्या चावल सस्ता होगा? 20% निर्यात शुल्क",
+    "what": "सरकार ने चावल के निर्यात पर 20% शुल्क लगाया है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "चावल की कीमतें गिर सकती हैं क्योंकि निर्यात पर शुल्क लगने से देश में चावल की मात्रा बढ़ जाएगी।"
+   },
+   "mr": {
+    "title": "तांदूळाच्या किमती - तांदूळ स्वस्त होईल का? २०% निर्यात कर",
+    "what": "सरकारने तांदूळाच्या निर्यातवर २०% कर लावला आहे.",
+    "why": "बातमीत कारण नाही सांगितले",
+    "effect": "तांदूळाच्या किमती कमी होऊ शकतात कारण निर्यातवर कर लागल्याने देशात तांदूळाचे प्रमाण वाढेल."
+   },
+   "auto": true,
+   "addedAt": "2026-11-25T01:46:36.861Z"
+  },
+  {
    "id": "a-2640dfdf7429",
    "date": "2026-11-24",
    "crops": [
@@ -3747,8 +3778,10 @@
   "a-2b8439d25b76",
   "a-00f0057bc8f7",
   "a-bd92f16eed99",
-  "a-2640dfdf7429"
+  "a-2640dfdf7429",
+  "a-3f59c4b48c96",
+  "a-4c550bb0dc81"
  ],
- "updated": "2026-11-24T19:27:18.434Z",
+ "updated": "2026-11-25T01:46:40.871Z",
  "_about": "AI se apne aap bani cards. official=true sirf sarkari website wali khabar. Baaki ki sarkari pushti baaki."
 }
