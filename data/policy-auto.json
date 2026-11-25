@@ -1,6 +1,192 @@
 {
  "items": [
   {
+   "id": "a-3e3328338faf",
+   "date": "2026-11-25",
+   "crops": [
+    "rice"
+   ],
+   "type": "policy",
+   "dir": "pos",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOTS1yYU42azE2T3dHVTgxOE1hMzlWOE03VWFVQmVoTVIyOEhkZjFFWVRDT1Bzc3lJVWpsMmlSR25vLVpuSEE2dkdZSU9nMWZNRUJkSFlYUFFFVlBmd2pSSGNXRGJ6b0I5YldJUi1TWXZQeVpjQ3BuMmFGOWRfbXc4SC1OUFpsdzdacHhWWmI1dFVtREkxZElzQkdIOA?oc=5",
+   "source_name": "Unique Times Magazine",
+   "headline": "India Considers Rice Export Duties as Domestic Prices Continue to Rise - Unique Times Magazine",
+   "hi": {
+    "title": "भारत चावल निर्यात शुल्क पर विचार कर रहा है क्योंकि घरेलू कीमतें बढ़ रही हैं",
+    "what": "भारत चावल की घरेलू कीमतें बढ़ने के कारण निर्यात शुल्क लगाने पर विचार कर रहा है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "चावल की कीमतें बढ़ सकती हैं क्योंकि निर्यात शुल्क लगने से चावल का निर्यात कम हो सकता है और घरेलू बाजार में चावल की उपलब्धता बढ़ सकती है।"
+   },
+   "mr": {
+    "title": "भारत चावल निर्यात कर आकारणी करण्याचा विचार करत आहे कारण देशांतर्गत किंमती वाढत आहेत",
+    "what": "भारत चावलाच्या देशांतर्गत किंमती वाढत असल्याने निर्यात कर आकारणी करण्याचा विचार करत आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "चावलाच्या किंमती वाढू शकतात कारण निर्यात कर आकारण्यामुळे चावलाचा निर्यात कमी होऊ शकतो आणि देशांतर्गत बाजारपेठेत चावलाचा पुरवठा वाढू शकतो."
+   },
+   "auto": true,
+   "addedAt": "2026-11-25T07:52:10.206Z"
+  },
+  {
+   "id": "a-61f05f0810ed",
+   "date": "2026-11-25",
+   "crops": [
+    "rice"
+   ],
+   "type": "export",
+   "dir": "neg",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "6.7%",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPcTdSTG05c0tuaVloQmptU0ZxQk1EWTQ2SHRvVmFELUxBamNReFBSLUFjLW9FZUxwdTJYS1RUR2ZwTmdpVzRXaWpuOU9sNE01djU2RFNERHNCTjJrdV8yaWFVM1JqbTZ1YXE5OFpUS1BjVlZKZDdrTUdOR2tkRHQ1WVlYLXJIZFZwWjExR2J3d2w1WEpySWtDSWMxa1J1TmxFZHduM09sUmk1dFdWYXh6bUdBbw?oc=5",
+   "source_name": "Investing.com India",
+   "headline": "India’s Non-Basmati Rice Exports Rise 6.7% During April-October By Kedia Advisory - Investing.com India",
+   "hi": {
+    "title": "भारत के गैर-बासमती चावल के निर्यात में अप्रैल- अक्टूबर के दौरान 6.7% की वृद्धि",
+    "what": "भारत के गैर-बासमती चावल के निर्यात में अप्रैल- अक्टूबर के दौरान 6.7% की वृद्धि हुई है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "चावल के दाम गिरने की संभावना है क्योंकि देश से अधिक चावल का निर्यात हो रहा है।"
+   },
+   "mr": {
+    "title": "भारताच्या नॉन-बासमती तांदूळ निर्यातीत एप्रिल-ऑक्टोबर दरम्यान ६.७% वाढ",
+    "what": "भारताच्या नॉन-बासमती तांदूळ निर्यातीत एप्रिल-ऑक्टोबर दरम्यान ६.७% वाढ झाली आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "तांदूळाच्या भावात घट होण्याची शक्यता आहे कारण देशातून अधिक तांदूळ निर्यात होत आहे."
+   },
+   "auto": true,
+   "addedAt": "2026-11-25T07:51:56.315Z"
+  },
+  {
+   "id": "a-35abaf388473",
+   "date": "2026-11-25",
+   "crops": [
+    "sugar"
+   ],
+   "type": "export",
+   "dir": "pos",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "8606",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxONHJ0NWVpYkxzZWVQbkhLQnk5TDFmZTlIQ09JT180ajhucnM0VkNVcEpCcTUyLUVoMmhWYlVTZ2xZOWxQUGNkTFd6bWpkLVFGV2ZjemJxMS1uWXItNEdKQVdmZHFfWkhjT1dfUzN0dEdoNk9LU0xQQ21UZEdNRDh3VE5fc2RXVFVDWExEQmhfcjVLM3JpS3RkLXNEUEt3SlBWZUhSdGh4RXRTNnNhOGNWaGhqeVJGWEpDYXFDUXpwMU0yM1R6ZG56V1M2TDBmVVVDT1lIa9IB2gFBVV95cUxOckh2MWFoUk1KTk1OQTJtWVFtNm90SWJUOGk2cHcyQlRvLUJtTk11NEdPVzhlTm9xejNXWjY0YlJwajhqbS1MSWNfUEV0VVBrTGo4TVhiWlVZNEFVNFZVSmZfYjAxZmtiekpQMXAycEhTekdqbWdEZkZNdEE0N3hoRkV6bzZxamNESl9KakdjTy1WR3hwN3FDWm5aeklqdnkxcUwtLUVuVWhCam1LVWFYdUVSYWJXS0w4SkdpWDlKWkI4T1IyTWhkLWdRZVBGVHZjQzhFbWlzR2JCQQ?oc=5",
+   "source_name": "Free Press Journal",
+   "headline": "India Opens New Sugar Export Avenue, 8,606 Tonnes Earmarked For US Under Preferential Tariff Scheme - Free Press Journal",
+   "hi": {
+    "title": "भारत ने अमेरिका के लिए चीनी निर्यात का नया मार्ग खोला",
+    "what": "भारत ने अमेरिका के लिए ८६०६ टन चीनी निर्यात के लिए प्राथमिकता वाले टैरिफ योजना के तहत आवंटन किया है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "चीनी किसानों को इसका फायदा हो सकता है क्योंकि निर्यात बढ़ने से चीनी की कीमतें बढ़ सकती हैं।"
+   },
+   "mr": {
+    "title": "भारताने अमेरिकेसाठी साखर निर्यातचा नवा मार्ग उघडला",
+    "what": "भारताने अमेरिकेसाठी ८६०६ टन साखर निर्यातीसाठी प्राधान्य टॅरिफ योजनेअंतर्गत वाटप केले आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "साखर उत्पादक शेतकऱ्यांना याचा फायदा होऊ शकतो कारण निर्यात वाढल्याने साखरच्या किमती वाढू शकतात."
+   },
+   "auto": true,
+   "addedAt": "2026-11-25T07:51:44.442Z"
+  },
+  {
+   "id": "a-fba91d27d046",
+   "date": "2026-11-25",
+   "crops": [
+    "sugar"
+   ],
+   "type": "export",
+   "dir": "neg",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "8606",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOdjMtTHBwNUo5NnhJR3QxdmtaaUxKdzdGMDJRbGFwbGVuZXJ2TmtXZ01VTVBZXzJqWUZ6LWpNSHZXYmF5WDhBLVQwTEFsZ3A3dUh0UmxpenZ0Y2NWckh4UDRpRlNGenpmd3lacDY3RFJFUW8wRzh2SUF3QnFPLS1Wa2dUT2JOTXVtMTN0X1FfbkRDN0dYMWdMSWFJbHRZSEU?oc=5",
+   "source_name": "Maritime Gateway",
+   "headline": "India Allocates 8,606 Tonnes Raw Sugar Export Quota to US for 2027 - Maritime Gateway",
+   "hi": {
+    "title": "भारत ने 2027 के लिए अमेरिका को 8,606 टन कच्ची चीनी निर्यात कोटा आवंटित किया",
+    "what": "भारत ने अमेरिका को 8,606 टन कच्ची चीनी निर्यात कोटा आवंटित किया है। यह कोटा 2027 के लिए है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "इससे चीनी का निर्यात बढ़ेगा और देश में चीनी की कमी हो सकती है, जिससे किसानों को चीनी का दाम गिर सकता है"
+   },
+   "mr": {
+    "title": "भारताने २०२७ साठी अमेरिकेला ८,६०६ टन कच्ची साखर निर्यात कोटा वाटला",
+    "what": "भारताने अमेरिकेला ८,६०६ टन कच्ची साखर निर्यात कोटा वाटला आहे. हा कोटा २०२७ साठी आहे.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "यामुळे साखरेचा निर्यात वाढेल आणि देशात साखरेची कमी होऊ शकते, ज्यामुळे शेतकऱ्यांना साखरेचा भाव खाली येऊ शकतो"
+   },
+   "auto": true,
+   "addedAt": "2026-11-25T07:51:34.922Z"
+  },
+  {
+   "id": "a-d3f0bf2e9052",
+   "date": "2026-11-25",
+   "crops": [
+    "wheat"
+   ],
+   "type": "import",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "high",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9UelNXbF9qZnNvellYaU9YNFEyTm5LNThEdTlqd3NyV212elFfbENwZV8tMkVVLS1PVzA3YUpacnUtc1dkNlhwQ0VXV3pSMUpYcWZWNDAyZHhwTU1YLVI4UldIOTkzUnU0V2xBb0FPYWpnNVFiNXdSLdIBgAFBVV95cUxOb2kxcjlaU0dRQW5XZjNNc05mbGUxN1JqeUVGTjA5RERhS2ZBQkhETmUtODVXLUtSUGtzcmlMUlFja1lhSWRMUm1EaFVHSkVTQkJFTDhoMVZzV0I2c3otV2VqdDNMWFRFNnpwSGhEWVBHZjBRdUdUZ01GbE50cmQ0Rw?oc=5",
+   "source_name": "The Express Tribune",
+   "headline": "Bids invited for wheat imports - The Express Tribune",
+   "hi": {
+    "title": "गेहूं के आयात के लिए बोलियां आमंत्रित",
+    "what": "पाकिस्तान में गेहूं की कमी के कारण आयात के लिए बोलियां आमंत्रित की गई हैं।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "गेहूं के आयात से देश में गेहूं की उपलब्धता बढ़ेगी, जिससे कीमतें गिर सकती हैं।"
+   },
+   "mr": {
+    "title": "गव्हाच्या आयातीसाठी बोली मागविण्यात आल्या आहेत",
+    "what": "पाकिस्तानमध्ये गव्हाच्या कमतरतेमुळे आयातीसाठी बोली मागविण्यात आल्या आहेत.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "गव्हाच्या आयातीमुळे देशात गव्हाची उपलब्धता वाढेल, ज्यामुळे किंमती कमी होऊ शकतात."
+   },
+   "auto": true,
+   "addedAt": "2026-11-25T07:51:21.137Z"
+  },
+  {
+   "id": "a-4e9b0315d231",
+   "date": "2026-11-24",
+   "crops": [
+    "wheat"
+   ],
+   "type": "import",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "high",
+   "qty": "300,000 tonnes",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPbzlfMDNkVjEtQ1Y2UEh0VDZYNFFoQ0pVZHpQYkVsTVp4U2F0N2YzYWFBazlRS3RYemJkQ2QwRlpmVWFTeXRUMTg2Wi0xM0hJUUZ3dm5RU2hIaURxWERIZlBodUl0c0lJRjFHV0hibk9Eb3FDYjJSN0I5emxqUWFfQ0pSbHloYWtuZHBpRkZ3cTNRWTQ2SHBueExZdDdqbzJBYzhqTm50RXF6MDctYTRSc3h3?oc=5",
+   "source_name": "Yeni Safak English",
+   "headline": "Pakistan approves import of 300,000 tonnes of wheat to meet flour shortage - Yeni Safak English",
+   "hi": {
+    "title": "पाकिस्तान ने गेहूं की कमी को पूरा करने के लिए 300,000 टन गेहूं के आयात को मंजूरी दी",
+    "what": "पाकिस्तान ने गेहूं की कमी को पूरा करने के लिए 300,000 टन गेहूं के आयात को मंजूरी दी है।",
+    "why": "पाकिस्तान में आटे की कमी को पूरा करने के लिए",
+    "effect": "भारतीय किसानों के लिए गेहूं का भाव गिरने की संभावना है क्योंकि पाकिस्तान के आयात से दुनिया में गेहूं की आपूर्ति बढ़ेगी"
+   },
+   "mr": {
+    "title": "पाकिस्तानने गव्हाच्या कमतरतेचे निवारण करण्यासाठी 300,000 टन गव्हाच्या आयातला मान्यता दिली",
+    "what": "पाकिस्तानने गव्हाच्या कमतरतेचे निवारण करण्यासाठी 300,000 टन गव्हाच्या आयातला मान्यता दिली आहे.",
+    "why": "पाकिस्तानमध्ये लोणच्या कमतरतेचे निवारण करण्यासाठी",
+    "effect": "भारतीय शेतकऱ्यांसाठी गव्हाच्या भावात घट होण्याची शक्यता आहे कारण पाकिस्तानच्या आयातमुळे जगभरात गव्हाच्या पुरवठ्यात वाढ होईल"
+   },
+   "auto": true,
+   "addedAt": "2026-11-25T07:51:10.243Z"
+  },
+  {
    "id": "a-4c550bb0dc81",
    "date": "2026-11-24",
    "crops": [
@@ -3780,8 +3966,16 @@
   "a-bd92f16eed99",
   "a-2640dfdf7429",
   "a-3f59c4b48c96",
-  "a-4c550bb0dc81"
+  "a-4c550bb0dc81",
+  "a-4e9b0315d231",
+  "a-d3f0bf2e9052",
+  "a-fba91d27d046",
+  "a-35abaf388473",
+  "a-61f05f0810ed",
+  "a-3e3328338faf",
+  "a-773ecf7f2b7e",
+  "a-fba58df92ce3"
  ],
- "updated": "2026-11-25T01:46:40.871Z",
+ "updated": "2026-11-25T07:52:34.145Z",
  "_about": "AI se apne aap bani cards. official=true sirf sarkari website wali khabar. Baaki ki sarkari pushti baaki."
 }
