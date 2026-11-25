@@ -1,6 +1,194 @@
 {
  "items": [
   {
+   "id": "a-5d32a0e01214",
+   "date": "2026-11-25",
+   "crops": [
+    "sugar"
+   ],
+   "type": "export",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "8606 tonnes",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQSWc2M0lWMW1DbVFsa3JCelkzcGxqT0RDWEdDQU51Y1liQldhRS1rTjF6ckpKRGY1UGNJMk9yZ29iaWRNOXY2c1ZVSzVBVDhQc1I2WTBDYmhOc2NTUVJ1RnJZWE4yWEV6bmc3STNCR0FuUTZxUk1nVnZWSERzbjJHd2JiYzEyWGRmWlk1dlJXRTRsOVpiUFZYTk15azhGdHNpcEdrTzJpTUpJTUdlVnl4S09lblpXQjFxMGdmU0JvVEtIY2paeDN5eHFFcEppcE5NSUp0VExJY2FyOVI5RFNfYmFsZEVZTGJPRV8zTHJKSjVFSHhwY1k2SnlyYnYzMm96ZGQ2UFZIWdIBhwJBVV95cUxQSWc2M0lWMW1DbVFsa3JCelkzcGxqT0RDWEdDQU51Y1liQldhRS1rTjF6ckpKRGY1UGNJMk9yZ29iaWRNOXY2c1ZVSzVBVDhQc1I2WTBDYmhOc2NTUVJ1RnJZWE4yWEV6bmc3STNCR0FuUTZxUk1nVnZWSERzbjJHd2JiYzEyWGRmWlk1dlJXRTRsOVpiUFZYTk15azhGdHNpcEdrTzJpTUpJTUdlVnl4S09lblpXQjFxMGdmU0JvVEtIY2paeDN5eHFFcEppcE5NSUp0VExJY2FyOVI5RFNfYmFsZEVZTGJPRV8zTHJKSjVFSHhwY1k2SnlyYnYzMm96ZGQ2UFZIWQ?oc=5",
+   "source_name": "The Economic Times",
+   "headline": "India allocates 8,606 tonnes of raw cane sugar for export to US under Tariff Rate Quota scheme - The Economic Times",
+   "hi": {
+    "title": "भारत ने अमेरिका को टैरिफ रेट कोटा योजना के तहत 8,606 टन कच्ची गन्ना चीनी के निर्यात के लिए आवंटित की",
+    "what": "भारत ने अमेरिका को टैरिफ रेट कोटा योजना के तहत 8,606 टन कच्ची गन्ना चीनी के निर्यात के लिए आवंटित की है। यह निर्यात टैरिफ रेट कोटा योजना के तहत किया जाएगा।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "चीनी का निर्यात बढ़ने से देश में चीनी की उपलब्धता कम हो सकती है, जिससे चीनी के दाम बढ़ सकते हैं, लेकिन निर्यात से चीनी उत्पादकों को फायदा हो सकता है।"
+   },
+   "mr": {
+    "title": "भारताने टॅरिफ रेट कोटा योजनेंतर्गत ८,६०६ टन कच्ची गन्ना चीनी अमेरिकेला निर्यात करण्यासाठी वाटप केले",
+    "what": "भारताने टॅरिफ रेट कोटा योजनेंतर्गत ८,६०६ टन कच्ची गन्ना चीनी अमेरिकेला निर्यात करण्यासाठी वाटप केले आहे. ही निर्यात टॅरिफ रेट कोटा योजनेंतर्गत केली जाईल.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "चीनीचा निर्यात वाढल्याने देशात चीनीची उपलब्धता कमी होऊ शकते, ज्यामुळे चीनीच्या दर वाढू शकतात, परंतु निर्यातीमुळे चीनी उत्पादकांना फायदा होऊ शकतो."
+   },
+   "auto": true,
+   "addedAt": "2026-11-25T13:48:37.124Z"
+  },
+  {
+   "id": "a-87953ffab27a",
+   "date": "2026-11-25",
+   "crops": [
+    "sugar"
+   ],
+   "type": "export",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOcTZ4dnkzUldFV0JsVlJNNExReFVKMFptUG1KWmlOeWNRNmI4NGtaX3dzU2VaZnNFUXBsZWc5QTBjd3p0LW5aYmtRWTVMRnBmRENleWNmWHlTeUZOMlc2Y1VYSnNtaFVBbU9hdENoS1JxS0kyRlVZYXBwUG5wV1lzOFhOVnlobXlTLVk2X2RxeFpSMkp5QjNUWThGMkJQakFTa016ZThZTU9UUdIBrwFBVV95cUxPci1vdHdNMXk5bm1EZkgzLVZleEJvSHRhSEFCM21BaDRycEhnLV84MDZvYkZiU1NKZWdkMTNGM2dNNHdLbHF1d1BscDNtTUQtazdoYUs2Zm50MzEtN1drTlhCSnJPWFNfYWZYS3dXb2lGZWw0R05JQjNtMEtGYzJ0SFlPRkFYVzVnQkFRRXBYamlxQXJPQ29sOW1ybDc5ZWNXUUJsZEVhOTJONW16UXBz?oc=5",
+   "source_name": "Rediff MoneyWiz",
+   "headline": "India Allocates Raw Cane Sugar for US Export Under TRQ - Rediff MoneyWiz",
+   "hi": {
+    "title": "भारत ने अमेरिका को टीआरक्यू के तहत कच्ची गन्ना चीनी का आवंटन किया",
+    "what": "भारत ने अमेरिका को टीआरक्यू के तहत कच्ची गन्ना चीनी का आवंटन किया है। इसका मतलब है कि भारत से अमेरिका को कच्ची गन्ना चीनी का निर्यात किया जाएगा।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "इसका भारतीय किसानों के लिए नकारात्मक प्रभाव पड़ सकता है क्योंकि देश से चीनी का निर्यात होने से देश में चीनी की कमी हो सकती है, लेकिन यहाँ पर निर्यात होने से देश में चीनी की अधिकता कम होगी और किसानों को चीनी का दाम गिर सकता है"
+   },
+   "mr": {
+    "title": "भारताने टीआरक्यू अंतर्गत अमेरिकेसाठी कच्ची गन्ना साखर निर्यातीसाठी नियुक्ती केली",
+    "what": "भारताने टीआरक्यू अंतर्गत अमेरिकेसाठी कच्ची गन्ना साखर निर्यातीसाठी नियुक्ती केली आहे. याचा अर्थ भारतातून अमेरिकेसाठी कच्ची गन्ना साखर निर्यात केली जाईल.",
+    "why": "बातमीत कारण नाही सांगितले",
+    "effect": "याचा भारतीय शेतकऱ्यांवर नकारात्मक परिणाम होऊ शकतो कारण देशातून साखर निर्यात होण्याने देशात साखरेची कमी होऊ शकते, पण इथे निर्यात होण्याने देशात साखरेची अधिकता कमी होईल आणि शेतकऱ्यांना साखरेचा भाव खाली येऊ शकतो"
+   },
+   "auto": true,
+   "addedAt": "2026-11-25T13:48:20.921Z"
+  },
+  {
+   "id": "a-def59b146993",
+   "date": "2026-11-25",
+   "crops": [
+    "sugar"
+   ],
+   "type": "import",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "8606 tonnes",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPMVhDQUQwd250YWZObkhjX3dyckdzbmJkVkthdi12cXVUX3FseWZ0SFBHbkJWekNtVXdvTHczZ3FoM3MzNklxQWk2c3d1VUFsaXdmQ3BHbjBRWTRHdzlVd3ZldEJZVFgyeEVaS3ZhOFJUSmQ1M0xEQ19ZcE1TSkZsQXZoQzlsaDBRRzVKVjBWN0ZQQWlpVkROaDZqU0sxWXlDSG10ek1pSk1NZ19EWnJsQ0Y5U3c5QjJ2emNoZWE0clhLTExFa1I5cnJiSUlDUWVsMDRUWURRTdIB3AFBVV95cUxORkxuNmRoajg0ZVlBUEUtYlM2MlBpX0tDdjQyQ3VrY1VzaVZSRlM4NW9UR2t1RkdBWkRYSk56YjRtTGpBYU1sdzRLWkh4QXV6MkJLSVZVSjMxWWNrUDd6UVdQd0x5ay0wbzNEeHBNNWxScmpXb0VlcGN6SUJXdWpUcGhqWGNQOU5WS3VaYWFhR2JGZHdBV2pVSUNobURsRlJOVnZvSlRHYzJha2FLdE1KaF95OW04UGdLUFR1TVJrM19CWGZYYTJ5NnRfd2FZenJUdV9hU0s4ZlJtOTY0?oc=5",
+   "source_name": "RuralVoice",
+   "headline": "India Extends Duty-Free Raw Sugar Import Deadline to March 2027, Allocates 8,606 Tonnes for US Exports - RuralVoice",
+   "hi": {
+    "title": "भारत ने मार्च 2027 तक शुल्क-मुक्त कच्ची चीनी आयात की समयसीमा बढ़ाई, अमेरिकी निर्यात के लिए 8,606 टन आवंटित किया",
+    "what": "भारत ने मार्च 2027 तक शुल्क-मुक्त कच्ची चीनी आयात की समयसीमा बढ़ा दी है। अमेरिकी निर्यात के लिए 8,606 टन आवंटित किया गया है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "देश में चीनी की अधिक आयात होने से चीनी के दाम गिर सकते हैं क्योंकि बाजार में चीनी की अधिक उपलब्धता होगी"
+   },
+   "mr": {
+    "title": "भारताने मार्च 2027 पर्यंत शुल्कविहीन कच्ची साखर आयात मुदतवाढ केली, अमेरिकेसाठी 8,606 टन निर्यात नियुक्त केले",
+    "what": "भारताने मार्च 2027 पर्यंत शुल्कविहीन कच्ची साखर आयात मुदतवाढ केली आहे. अमेरिकेसाठी 8,606 टन निर्यात नियुक्त केले आहे.",
+    "why": "बातमीत कारण नाही सांगितले",
+    "effect": "देशात साखरेची अधिक आयात होण्याने साखरेच्या भावात घट होऊ शकते कारण बाजारात साखरेची अधिक उपलब्धता होईल"
+   },
+   "auto": true,
+   "addedAt": "2026-11-25T13:48:06.564Z"
+  },
+  {
+   "id": "a-4ed77348a93a",
+   "date": "2026-11-25",
+   "crops": [
+    "oilseed",
+    "other"
+   ],
+   "type": "import",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "13 %",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOYkpsNUZ0ZzBtT3BqQlA1TU93NG5CWnVIeHVkNTFwTk9sSWhoaW1vc1hRODVaYWI0UDB4MWFnMGZZRWxudFl6R1Fzc0c2ZHVobnFVYVV4cUZicWV1c2JmUlNvN3VpelBnMDNCZnhLcXJENkd6N0ZaUGFZbFgyRmYxdjBtOGF5emdmNWl5Uk1qQVRBcnBQMk1IUThwRXBlWUFlcDJqN1N4bFdYamFzMzF2NWRXd1hSZWhw?oc=5",
+   "source_name": "AgroSpectrum India",
+   "headline": "India’s vegetable oil imports surge 13 % as palm oil demand accelerates - AgroSpectrum India",
+   "hi": {
+    "title": "भारत में वनस्पति तेल का आयात 13% बढ़ा",
+    "what": "भारत में वनस्पति तेल का आयात 13% बढ़ा है क्योंकि पाम ऑयल की मांग तेज हो रही है।",
+    "why": "पाम ऑयल की मांग बढ़ने से",
+    "effect": "इससे तेल उत्पादक किसानों को नुकसान हो सकता है क्योंकि आयात बढ़ने से उनकी फसल की कीमतें गिर सकती हैं।"
+   },
+   "mr": {
+    "title": "भारतात वनस्पती तेल आयात १३% वाढले",
+    "what": "भारतात वनस्पती तेल आयात १३% वाढले आहे कारण पाम ऑयलची मागणी वाढत आहे.",
+    "why": "पाम ऑयलची मागणी वाढण्यामुळे",
+    "effect": "यामुळे तेल उत्पादक शेतकऱ्यांना नुकसान होऊ शकते कारण आयात वाढल्याने त्यांच्या पिकाच्या किमती खाली येऊ शकतात."
+   },
+   "auto": true,
+   "addedAt": "2026-11-25T13:47:52.028Z"
+  },
+  {
+   "id": "a-432e7c9e68d1",
+   "date": "2026-11-25",
+   "crops": [
+    "soybean",
+    "oilseed"
+   ],
+   "type": "intl",
+   "dir": "neg",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPNDlMWTB4WXNXeUY2QTBpVlNrU3o2Q3BwRE1oMXFIQmFKTUVhSV9ZcThKbmlhRU4zV005RUMzVWpJbzRFRWxXa2l2T3VNbVJFaHhIMzdrb3lfTmRsMksxb093c1piVVVxU1l5N0NPbVp3MXBGOWYxLV9MUVFoMkQtT3pkQWFLeDU4OGJIeEp6NnZ5Q05NU19uTEI2d1NpZHBlbnM1dXlVZ2VfQ1plVE5wUGFNREF3UQ?oc=5",
+   "source_name": "Bloomberg",
+   "headline": "China’s Surprise Soyoil Export Boom Cools as India Turns to Palm - Bloomberg",
+   "hi": {
+    "title": "चीन का सोया तेल निर्यात में आश्चर्यजनक वृद्धि ठंडी पड़ी, भारत ने पाम तेल की ओर रुख किया",
+    "what": "चीन का सोया तेल निर्यात में आश्चर्यजनक वृद्धि ठंडी पड़ गई है क्योंकि भारत पाम तेल की ओर रुख कर रहा है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "भारत में सोया तेल की मांग कम होने से सोयाबीन किसानों के लिए भाव गिरने की संभावना है क्योंकि पाम तेल सस्ता है।"
+   },
+   "mr": {
+    "title": "चीनच्या सोयाबीन तेल निर्यातातील आश्चर्यकारक वाढ थंडावली, भारत पाम तेलाकडे वळला",
+    "what": "चीनच्या सोयाबीन तेल निर्यातातील आश्चर्यकारक वाढ थंडावली आहे कारण भारत पाम तेलाकडे वळला आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "भारतात सोयाबीन तेलाची मागणी कमी होण्यामुळे सोयाबीन शेतकऱ्यांसाठी भाव कमी होण्याची शक्यता आहे कारण पाम तेल स्वस्त आहे."
+   },
+   "auto": true,
+   "addedAt": "2026-11-25T13:47:29.773Z"
+  },
+  {
+   "id": "a-a2fc22d41de0",
+   "date": "2026-11-25",
+   "crops": [
+    "onion"
+   ],
+   "type": "intl",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "15%",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNNVBWcE5mczM0YWs0b01nNG9Za1hFSDVUZW0ydmRnczRqQXljZS1pZENoOU1CdWVhaERULXo1cWlLNHNOZkRyZ3NzcTZnejhLRUM5czN2M3FaMHF0ekVkc2xZWWVGTjVwc2xJbEYyc1k4Rno3XzBRaU1IOWhQUlhKck5TcXQzdVB5VEpMam9MM0ZYTkJsbmZZbmpMMnY2N0xHb3lBUVVrc0pONk95YU9WNzBrLVdXWW5GS2JjbTdKaw?oc=5",
+   "source_name": "FreshPlaza",
+   "headline": "Dutch onion exports hit weekly record despite 15% harvest decline - FreshPlaza",
+   "hi": {
+    "title": "डच प्याज निर्यात में साप्ताहिक रिकॉर्ड",
+    "what": "डच प्याज निर्यात में साप्ताहिक रिकॉर्ड बना है,尽管 प्याज की फसल में 15% की गिरावट आई है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "प्याज की कीमतें गिर सकती हैं क्योंकि डच प्याज निर्यात में वृद्धि से दुनिया में प्याज की आपूर्ति बढ़ जाएगी।"
+   },
+   "mr": {
+    "title": "डच कांद्याच्या निर्यातीत आठवड्याचा विक्रम",
+    "what": "डच कांद्याच्या निर्यातीत आठवड्याचा विक्रम झाला आहे, जरी कांद्याच्या पीकात 15% ची घट झाली आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "कांद्याच्या किमती कमी होऊ शकतात कारण डच कांद्याच्या निर्यातीत वाढ झाल्याने जगभरात कांद्याचा पुरवठा वाढेल."
+   },
+   "auto": true,
+   "addedAt": "2026-11-25T13:46:58.439Z"
+  },
+  {
    "id": "a-3e3328338faf",
    "date": "2026-11-25",
    "crops": [
@@ -3974,8 +4162,16 @@
   "a-61f05f0810ed",
   "a-3e3328338faf",
   "a-773ecf7f2b7e",
-  "a-fba58df92ce3"
+  "a-fba58df92ce3",
+  "a-a2fc22d41de0",
+  "a-b27d1c457ccf",
+  "a-432e7c9e68d1",
+  "a-14b8118e4242",
+  "a-4ed77348a93a",
+  "a-def59b146993",
+  "a-87953ffab27a",
+  "a-5d32a0e01214"
  ],
- "updated": "2026-11-25T07:52:34.145Z",
+ "updated": "2026-11-25T13:48:41.132Z",
  "_about": "AI se apne aap bani cards. official=true sirf sarkari website wali khabar. Baaki ki sarkari pushti baaki."
 }
