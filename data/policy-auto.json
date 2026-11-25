@@ -1,6 +1,192 @@
 {
  "items": [
   {
+   "id": "a-85996808f4a4",
+   "date": "2026-11-25",
+   "crops": [
+    "rice"
+   ],
+   "type": "policy",
+   "dir": "neu",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQTnp2aV91cTJ3Vm1iUGtjdlV1NGg2dG03TV9nby1PVzhUeGFhWDJQQURjYTA2RC1zN2hXQ3dHNk00V2ZJZmV3WlJMYVdENUxmai01c3VBNzUyU2tDQ1JNaDRsdkFpeVc4TXZYWGplWUZNVFAtZ1VtMnVyZU56RkU2VUlkNWNvMlRLTmtmU2sxQWFRMFhaQWFHdUVqS0RsTUxpWkM2Y2hwVkdmVV9xX3F5dURPaV9jc0MxUXBrblpLd245d2t5SS1B0gHXAUFVX3lxTE9EV2ZpTFVxYXhsRWItTjdWSHQ5MGlEdFRyVTBCSmVPcTFjcm5ZWjBCYm9VOGN1VlJKTUE4NXlDVHpZN2x5bWxxM0lmMHVGRFBadUJaeXVfSmM5Vlk5ckNMTVFjekJTTDYxYmpwaDQ4NnJWbzBoU1p3ZklBR3ZRS2xCcV9qWjFnZGtmMHpGWE5nLXlfd1BiM2NkWEc1NHhKOXlYS3lqX0x2VE10eTNxc0gzeGdlblBjT0JyaGFtNXZnOGNVN3NYUklyMXBjRzFsNjZpQUg0S2xN?oc=5",
+   "source_name": "The Tribune",
+   "headline": "No immediate curbs on non-basmati rice exports, but rising prices keep policy risks alive: IREF - The Tribune",
+   "hi": {
+    "title": "नॉन-बासमती चावल निर्यात पर तत्काल प्रतिबंध नहीं, लेकिन बढ़ती कीमतें नीति जोखिम को जीवित रखती हैं",
+    "what": "नॉन-बासमती चावल के निर्यात पर तत्काल प्रतिबंध नहीं लगाए गए हैं लेकिन बढ़ती कीमतें नीति जोखिम को जीवित रखती हैं",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "चावल की कीमतें बढ़ सकती हैं क्योंकि निर्यात पर प्रतिबंध नहीं लगाए गए हैं"
+   },
+   "mr": {
+    "title": "नॉन-बासमती तांदूळ निर्यातवर तात्काळ निर्बंध नाहीत, पण वाढत्या किमती नीति धोक्यांना जिवंत ठेवतात",
+    "what": "नॉन-बासमती तांदूळ निर्यातवर तात्काळ निर्बंध नाहीत, पण वाढत्या किमती नीति धोक्यांना जिवंत ठेवतात",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "तांदूळाच्या किमती वाढू शकतात कारण निर्यातवर निर्बंध नाहीत"
+   },
+   "auto": true,
+   "addedAt": "2026-11-25T19:23:15.265Z"
+  },
+  {
+   "id": "a-84758f251a06",
+   "date": "2026-11-25",
+   "crops": [
+    "rice"
+   ],
+   "type": "export",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQaFlyUExPazJwZ1BFVHQ2dEFpdGZkZG1fSDUzVllZU1ljZTdYY2Z4LUh6cGZJRmdkb3R5RkhmT1F6czF1UmtxbGE1dUpXcDktQUtMeTN6WDNoc2xmTTJ3dktjYU9OMktobVRXWGhEeExtX1VQMFpKSVA4aXRpV1B2MG16ampJUzdvQVVGSUVlUkxwMHZ0SXlyaWZvaUk1blNnakhoYXFlY29vYmdkQnFESHZLOC1nQ3NzaE1zanhpX1E5NkhqcU9HZEQ4WVliZkRJeS1BN21IRdIB3AFBVV95cUxPcngtTEpSeWZVVUlhVU1oTmhKbWVrM2ZWekc3S3pMc0NYNGthVDFOSU1JN3M0YXJseFVlWjlhN3hwWHNKUmE4MWV1c3g0dGd2ZGVVZDlsTTdiM0VRZVRUcXBHMUs5NXVHTGJPc2pSX18ybjA4MkwxQnhVTkFtXzFaMHJYbDRGb1JON1NDSUt3NkgzMTdhclBUMkhzV01qVHFyT0xScG01WG9OS2NRY1laS0lELXp4bzNZU1RmeVVzQzQ3NlVEcXdxeDUzdmt3WGt4WUw4UnIxanoxMHZD?oc=5",
+   "source_name": "Free Press Journal",
+   "headline": "India’s Rice Exporters Dodge Immediate Restrictions, Soaring Prices Put Export Policy Under Spotlight - Free Press Journal",
+   "hi": {
+    "title": "भारत के चावल निर्यातकों को तुरंत प्रतिबंधों से राहत",
+    "what": "भारत के चावल निर्यातकों को तुरंत प्रतिबंधों से राहत मिली है, लेकिन बढ़ती कीमतें निर्यात नीति पर सवाल उठा रही हैं",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "चावल की कीमतें बढ़ने से निर्यात पर प्रतिबंध लगने की संभावना है, जिससे किसानों को नुकसान हो सकता है"
+   },
+   "mr": {
+    "title": "भारताच्या भात निर्यातदारांना तात्पुरती निर्बंधांपासून सूट",
+    "what": "भारताच्या भात निर्यातदारांना तात्पुरती निर्बंधांपासून सूट मिळाली आहे, परंतु वाढत्या किमतींमुळे निर्यात धोरणावर प्रश्नचिन्ह निर्माण झाले आहे",
+    "why": "बातमीत कारण नाही सांगितले",
+    "effect": "भाताच्या किमती वाढल्यामुळे निर्यातवर निर्बंध लागू होण्याची शक्यता आहे, ज्यामुळे शेतकऱ्यांना नुकसान होऊ शकते"
+   },
+   "auto": true,
+   "addedAt": "2026-11-25T19:23:04.784Z"
+  },
+  {
+   "id": "a-d76dc5f08825",
+   "date": "2026-11-25",
+   "crops": [
+    "rice"
+   ],
+   "type": "policy",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQTF9DX3kzRlY5X2dfZXBfNlBUdUlJcTJ1cUZZUmhoX05qMk1scDJhQWl6NzNRRnpid2IzQ3hiblluVllWZFppZ01MQVpxb2lDc2phN3JnMkxOc0IzNXJVUG9oeC1ER2U3UDZWUkFNX1dBVEV3eTE5QzhnSmp5TV9WMm1fS21MQXZYZXRXNzVWTTBqakFyRFVwZUs3SWdvTWhPek1GX2RKSm4xUFA3V2ozT1FScGJOM0FZ0gG4AUFVX3lxTFBMX0NfeTNGVjlfZ19lcF82UFR1SUlxMnVxRllSaGhfTmoyTWxwMmFBaXo3M1FGemJ3YjNDeGJuWW5WWVZkWmlnTUxBWnFvaUNzamE3cmcyTE5zQjM1clVQb2h4LURHZTdQNlZSQU1fV0FURXd5MTlDOGdKanlNX1YybV9LbUxBdlhldFc3NVZNMGpqQXJEVXBlSzdJZ29NaE96TUZfZEpKbjFQUDdXajNPUVJwYk4zQVk?oc=5",
+   "source_name": "Deccan Chronicle",
+   "headline": "Export Policy Uncertainty Worries Rice Traders - Deccan Chronicle",
+   "hi": {
+    "title": "निर्यात नीति की अनिश्चितता से चिंतित हैं चावल व्यापारी",
+    "what": "चावल व्यापारी निर्यात नीति की अनिश्चितता से चिंतित हैं।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "चावल के दाम गिर सकते हैं क्योंकि अनिश्चितता से निर्यात कम हो सकता है"
+   },
+   "mr": {
+    "title": "निर्यात धोरणातील अनिश्चितता चावल व्यापार्‍यांना चिंतित करणारी आहे",
+    "what": "चावल व्यापारी निर्यात धोरणातील अनिश्चिततेमुळे चिंतित आहेत.",
+    "why": "बातमीत कारण नाही",
+    "effect": "चावलाच्या भावात घट होऊ शकते कारण अनिश्चिततेमुळे निर्यात कमी होऊ शकतो"
+   },
+   "auto": true,
+   "addedAt": "2026-11-25T19:22:42.535Z"
+  },
+  {
+   "id": "a-9be93884c30b",
+   "date": "2026-11-25",
+   "crops": [
+    "rice"
+   ],
+   "type": "policy",
+   "dir": "neg",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQXzNqZ1lQdThGQWRwQkZpblhySGZfUDhJYklHUU1pWHUtTVpMMDVuTTg1UmpyMFFneHE4WUswMzRzUmdVSFFNWjR2OTFMdE00dTdscWtMc1p3eWl3RzZBRHhOMWJZWTN5eTB0RU9MNGd0R1Nka0J0V2Nud3JWYk1vTGYxQVg3VWR2MENETTdGdmxQUllxRVVUdTE4YlBZZ1pZMklOYXJ0SEYtTzJldnR4SjQ5czJ3UGtlcnBvRGlyOHdGeUlpMnZhd1BDNUduNk1ZWmNMcm5NQQ?oc=5",
+   "source_name": "AgroSpectrum India",
+   "headline": "No immediate rice export curbs expected, but India may revisit duties if prices rise further - AgroSpectrum India",
+   "hi": {
+    "title": "चावल के निर्यात पर तत्काल प्रतिबंध की उम्मीद नहीं है, लेकिन भारत कीमतें और बढ़ने पर शुल्क की समीक्षा कर सकता है",
+    "what": "भारत चावल के निर्यात पर तत्काल प्रतिबंध लगाने की संभावना नहीं है, लेकिन यदि कीमतें और बढ़ती हैं तो शुल्क की समीक्षा कर सकता है",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "चावल की कीमतें बढ़ने से निर्यात पर शुल्क बढ़ सकता है, जिससे किसानों को नुकसान हो सकता है"
+   },
+   "mr": {
+    "title": "तात्काळ तांदूळ निर्यातवर निर्बंध येणार नाहीत, पण भारत किमती वाढल्यास शुल्क पुनर्विचार करू शकतो",
+    "what": "भारत तात्काळ तांदूळ निर्यातवर निर्बंध लागू करण्याची शक्यता नाही, पण किमती वाढल्यास शुल्क पुनर्विचार करू शकतो",
+    "why": "बातमीत कारण नाही",
+    "effect": "तांदूळच्या किमती वाढल्यास निर्यातवर शुल्क वाढू शकते, ज्यामुळे शेतकऱ्यांना नुकसान होऊ शकते"
+   },
+   "auto": true,
+   "addedAt": "2026-11-25T19:22:23.263Z"
+  },
+  {
+   "id": "a-c4f900d5b245",
+   "date": "2026-11-25",
+   "crops": [
+    "sugar"
+   ],
+   "type": "import",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "high",
+   "qty": "till March 31",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQTlZzR2dLUklfWFhkNnB5TEFYTVg5cno5NGdOdDJRTFhlSDlmZmhPYV8yODZNUUp0UldLQXhwRWNUWl9ocXY0WGtUc1hQSjd2cXFHZXRBV2M4b2dsb2dJcm56ZG5qVDVkMnZ5OG9EM2daeGVjaWNSS2RkUXRZckQxVGJIZkNXbWpNNDdKMFpQUnBSWUl0bmR5QnJnVE5PRXZGT0NxdVVVRHlyRHkxeFlyVjhlczlUZ2V2Vmo5a05RejNZSjBrNnU0MWdFVk93TUxLQkZzck9fT29UUy12SlpTYjBCRTg4S0pUb1liWHFxbmVMajQ2Q1BUb0EwWUbSAfYBQVVfeXFMUEN0QTVuLWloX29HM0d6cWstRG1mYTEtbXcxQ1I0b0pPdEhWUjE2dXh0OWFSNmV2dXk3aUU4MWhSNVE5NjNRYnpVYk1rRDNiclhCam5mbmRMM0VNRm9GUTFQLVZhUFdtejJNMHppb3RyNFVDT0RmUThXVHhKLWZxZUw2NXAwMFhCeklyOHZaY3VkSVhEOU5pUFR5TDZLZTYwemVXRVpXLXJPOUxkTGdLenlzSFhudkt6dHFpZy1BTktESFpfTGs3YmpGTHl1YldlN243cHJyRmxXV2dQQUE5bHhUanRfOUs3VG1kTEo3ZEEwakhzODJ3?oc=5",
+   "source_name": "The Economic Times",
+   "headline": "Sugar import window sweetened as govt allows duty-free raw sugar till March 31 - The Economic Times",
+   "hi": {
+    "title": "चीनी आयात के लिए सरकार ने दी राहत, 31 मार्च तक शुल्क-मुक्त कच्ची चीनी की अनुमति",
+    "what": "सरकार ने 31 मार्च तक शुल्क-मुक्त कच्ची चीनी की अनुमति दी है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "इससे देश में चीनी की आपूर्ति बढ़ेगी और किसानों को कम दाम मिल सकते हैं।"
+   },
+   "mr": {
+    "title": "शेतकऱ्यांसाठी चांगली बातमी! 31 मार्चपर्यंत शुल्कविरहित कच्ची साखर आयात करण्याची परवानगी",
+    "what": "शुल्कविरहित कच्ची साखर आयात करण्याची परवानगी 31 मार्चपर्यंत देण्यात आली आहे.",
+    "why": "बातम्यात कारण नाही",
+    "effect": "यामुळे देशात साखरेचा पुरवठा वाढेल आणि शेतकऱ्यांना कमी दर मिळू शकतो."
+   },
+   "auto": true,
+   "addedAt": "2026-11-25T19:22:12.548Z"
+  },
+  {
+   "id": "a-33680cb02e3c",
+   "date": "2026-11-25",
+   "crops": [
+    "sugar"
+   ],
+   "type": "policy",
+   "dir": "pos",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNMXJpczVnX0FwZVA4Nng1b2xLOVB0dHUtWC1qSC1EVERmR3BTQjlWNXdNcTZmdnFIUnhiU0VhbU5YOUZqQVFMc3h3WGVFeTNEbkU3bGh0S3NCTHk3U09LNFg3aFJDRTBYV0tKc2ZBYmtJaElEWGtpalRDQ2s3cVZweXFGT1IyY0stWG9Tem1oMU1kYmdXMkZmeTlWekd3azE4dS1Rbjg4RVVlOUZ6bUpzX2Y5LWUwQl9OVG9EU2VOYkdJRGZrSXJfV0ZoNi1ub3NVc1IwVnpYUnhhQUxPVTE0QXpTSFdCNTVT0gHiAUFVX3lxTE5mMFQ4dWQzS3oxMzNTNkQwMjkyM3JFdXdubFZhQkhoRnU0YzFVLU5Xel8zZWVLZms1clY1WTB3RjlPZTJ5X3BQQVpWSWFmQlhZdVJiT2I0ZEhwZ1dXdm9RZ2E4YnBoOFowUzZEZTJER2xuNVdqbmtQZ0VORjBRMGstMjNWWFJvU09lUnYtU3hEdTdSLUFQX1pWRHZoeHhicWg4bTB6WGJHN2hXMEpBTF9ZcmJGQ1N3eHhUZDFDcWxDMVVUdHhYeWRsOXU1Y1VWVUZUZW1sRGkyWG5WQmtTdDk2bmc?oc=5",
+   "source_name": "The Economic Times",
+   "headline": "India's sugar output seen falling to decade low, says industry body - The Economic Times",
+   "hi": {
+    "title": "भारत में चीनी का उत्पादन एक दशक के निचले स्तर पर पहुंच सकता है",
+    "what": "भारत में चीनी का उत्पादन एक दशक के निचले स्तर पर पहुंच सकता है। उद्योग जगत के अनुसार, यह गिरावट देखी जा रही है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "चीनी का उत्पादन कम होने से इसकी कीमतें बढ़ सकती हैं क्योंकि बाजार में चीनी की कमी होगी"
+   },
+   "mr": {
+    "title": "भारतातील साखरेचे उत्पादन दशकातील निम्न स्तरावर जाऊ शकते",
+    "what": "भारतातील साखरेचे उत्पादन दशकातील निम्न स्तरावर जाऊ शकते. उद्योग संघटनेने असे म्हटले आहे की ही घट दिसत आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "साखरेचे उत्पादन कमी होण्यामुळे त्याच्या किमती वाढू शकतात कारण बाजारात साखरेची कमी असेल"
+   },
+   "auto": true,
+   "addedAt": "2026-11-25T19:22:01.503Z"
+  },
+  {
    "id": "a-5d32a0e01214",
    "date": "2026-11-25",
    "crops": [
@@ -342,6 +528,37 @@
    },
    "auto": true,
    "addedAt": "2026-11-25T07:51:21.137Z"
+  },
+  {
+   "id": "a-e620acede71b",
+   "date": "2026-11-24",
+   "crops": [
+    "rice"
+   ],
+   "type": "export",
+   "dir": "pos",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNbnoxWUZCcDJJdFYzbUFTTElDcDE0eGtld2FkQk1yUFB2MHk5SEcyS2dQdnFFckQzR3kyQVJVLW9TbkNNcjFURzJtUHdmMVM2cEVTa0Y1STVrYk5RdzVXemVfSmRHUmRnejAwbEhhM2p4Vk01Zk9HcEQ0aFp3eVJuTV9wblpzMUVDck5jNmNNUmRtNGNTTko2SkF5cF9Kb2JzRTJ6YllBazBPVTdlQWdZMnpGdmNCR093WWlVbWZ0Wk5lbHNZdmozaWpwWXdTbE0?oc=5",
+   "source_name": "AgroSpectrum India",
+   "headline": "APEDA extends RCAC validity for Non-Basmati rice exports amid geopolitical challenges - AgroSpectrum India",
+   "hi": {
+    "title": "APEDA ने गैर-बासमती चावल निर्यात के लिए RCAC वैधता बढ़ाई",
+    "what": "भू-राजनीतिक चुनौतियों के बीच APEDA ने गैर-बासमती चावल निर्यात के लिए RCAC वैधता बढ़ा दी है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "इसका फायदा चावल किसानों को हो सकता है क्योंकि निर्यात बढ़ने से चावल की कीमतें बढ़ सकती हैं।"
+   },
+   "mr": {
+    "title": "APEDA ने नॉन-बासमती तांदूळ निर्यातसाठी RCAC वैधता वाढवली",
+    "what": "जागतिक राजकीय आव्हानांमध्ये APEDA ने नॉन-बासमती तांदूळ निर्यातसाठी RCAC वैधता वाढवली आहे.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "याचा फायदा तांदूळ शेतकऱ्यांना होऊ शकतो कारण निर्यात वाढल्याने तांदूळच्या किमती वाढू शकतात."
+   },
+   "auto": true,
+   "addedAt": "2026-11-25T19:22:53.998Z"
   },
   {
    "id": "a-4e9b0315d231",
@@ -4170,8 +4387,16 @@
   "a-4ed77348a93a",
   "a-def59b146993",
   "a-87953ffab27a",
-  "a-5d32a0e01214"
+  "a-5d32a0e01214",
+  "a-33680cb02e3c",
+  "a-c4f900d5b245",
+  "a-9be93884c30b",
+  "a-145826c233f5",
+  "a-d76dc5f08825",
+  "a-e620acede71b",
+  "a-84758f251a06",
+  "a-85996808f4a4"
  ],
- "updated": "2026-11-25T13:48:41.132Z",
+ "updated": "2026-11-25T19:23:19.271Z",
  "_about": "AI se apne aap bani cards. official=true sirf sarkari website wali khabar. Baaki ki sarkari pushti baaki."
 }
