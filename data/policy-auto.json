@@ -1,6 +1,192 @@
 {
  "items": [
   {
+   "id": "a-a6f8d1c9ebe3",
+   "date": "2026-11-26",
+   "crops": [
+    "sugar"
+   ],
+   "type": "import",
+   "dir": "neg",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQYzZ3Ql9QQnN4UDU2QTVXMlVWbmtyLUJCNkxmNU1tdl85WkZrcTk1MS1lTkFKdmpmUDBBdlVJZnVDbmVXYVlnUWJMSkJHSFZlQ25RWmdkamRaZ212Um9oNE1ETThCMDZhUVlUbkZSOUNwR245X0E1bjNjcUl5MlBpV2JEamdzSTZDSnA3b0N0TlJ0SHdUc01BUlZQNFhzVkFTQlBldlZNWVJLb0kzUXl2QU4zMVhzREMybjM5cF9MNG12YTk3NFNxR2VQWVUwOTRyMmRndDU3Y3M?oc=5",
+   "source_name": "KNN India",
+   "headline": "DGFT Extends Duty-Free Raw Sugar Import Window to March 2027, Processing Deadline to September - KNN India",
+   "hi": {
+    "title": "DGFT ने मार्च 2027 तक शुल्क-मुक्त कच्ची चीनी आयात की समय सीमा बढ़ाई",
+    "what": "DGFT ने शुल्क-मुक्त कच्ची चीनी आयात की समय सीमा मार्च 2027 तक बढ़ा दी है। इसके अलावा, प्रसंस्करण की समय सीमा सितंबर तक बढ़ा दी गई है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "देश में चीनी की अधिक आयात होने से चीनी के दाम गिरने की संभावना है"
+   },
+   "mr": {
+    "title": "DGFT ने मार्च 2027 पर्यंत शुल्कविहीन कच्ची साखर आयातीची मुदतवाढ केली",
+    "what": "",
+    "why": "",
+    "effect": ""
+   },
+   "auto": true,
+   "addedAt": "2026-11-26T13:47:05.171Z"
+  },
+  {
+   "id": "a-3e4ef11f358c",
+   "date": "2026-11-26",
+   "crops": [
+    "sugar"
+   ],
+   "type": "import",
+   "dir": "neg",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "31 March 2027",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTXdjZmJGaFpncENBbGNiMTBIcGY2dF81c1UwUGV3NlJmamhRR2pkeGxjWDBZbVFQT2FxdV9ubVBIN2k3VjFHakcyV00zRndCTTBYVzFlRG1ET3JwYXV3bzVPM09SSGFLc2ZyUDB1OENHbTBmdFJWQlVHOEQ5SzZTSVVETXlwbWdCQ0dSbVVGTTRIamJuTGc?oc=5",
+   "source_name": "TaxGuru",
+   "headline": "DGFT Extends Duty-Free Raw Sugar Import Deadline to 31 March 2027 - TaxGuru",
+   "hi": {
+    "title": "डीजीएफटी ने शुल्क-मुक्त कच्ची चीनी आयात की समयसीमा 31 मार्च 2027 तक बढ़ा दी",
+    "what": "डीजीएफटी ने शुल्क-मुक्त कच्ची चीनी आयात की समयसीमा 31 मार्च 2027 तक बढ़ा दी है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "इसका मतलब है कि देश में चीनी की अधिक आपूर्ति होगी, जिससे चीनी के दाम गिर सकते हैं।"
+   },
+   "mr": {
+    "title": "DGFT ने 31 मार्च 2027 पर्यंत शुल्कविहीन कच्ची साखर आयात मुदतवाढ दिली",
+    "what": "DGFT ने 31 मार्च 2027 पर्यंत शुल्कविहीन कच्ची साखर आयात मुदतवाढ दिली आहे.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "याचा अर्थ असा की देशात साखरेचा पुरवठा वाढेल, ज्यामुळे साखरेच्या भावात घट होऊ शकते."
+   },
+   "auto": true,
+   "addedAt": "2026-11-26T13:46:56.778Z"
+  },
+  {
+   "id": "a-f69e9443c63c",
+   "date": "2026-11-26",
+   "crops": [
+    "sugar"
+   ],
+   "type": "policy",
+   "dir": "neg",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOMGU3T0RyV0dreDBxTFlhX25LajktdHBoNXUyOUZEWVplckFsSjkzZFA0RlZKV0VBTFh2azQ4cko2TzdXbWlOUklpR1pXcmEyOUxYMjdQUE1CUzAxT3V3LWRpWElKU0FPM3laRmZsSWdPMXlBMDczdWxGN2MydHZvQXNVVkUtdjhUWWp3VVg0SWM0Z0ZlVlBONk9WM3hGRHBnNjVZOGNWejVraWRhalFXY3E5UW8zUjQ5UmFLSDh3dTZMenpWd1FJb0VQQ2Y1Q2Jfc0g2MVB3cm5qMGMyVWhZ?oc=5",
+   "source_name": "A2Z Taxcorp LLP",
+   "headline": "DGFT Extends Timeline for Conversion of Imported Raw Sugar into Refined Sugar and its Domestic Sale till September 30, 2027 - A2Z Taxcorp LLP",
+   "hi": {
+    "title": "DGFT ने कच्ची चीनी को रिफाइन्ड चीनी में परिवर्तित करने और घरेलू बिक्री की समय सीमा 30 सितंबर, 2027 तक बढ़ा दी",
+    "what": "DGFT ने कच्ची चीनी को रिफाइन्ड चीनी में परिवर्तित करने और घरेलू बिक्री की समय सीमा बढ़ा दी है। यह समय सीमा अब 30 सितंबर, 2027 तक है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "इसका मतलब है कि बाजार में चीनी की अधिक मात्रा उपलब्ध होगी, जिससे चीनी के दाम गिर सकते हैं।"
+   },
+   "mr": {
+    "title": "DGFT ने कच्ची साखरेचे रिफाइन्ड साखरेमध्ये रूपांतरित करण्याची आणि देशांतर्गत विक्री करण्याची मुदत ३० सप्टेंबर, २०२७ पर्यंत वाढवली",
+    "what": "DGFT ने कच्ची साखरेचे रिफाइन्ड साखरेमध्ये रूपांतरित करण्याची आणि देशांतर्गत विक्री करण्याची मुदत वाढवली आहे। ही मुदत आता ३० सप्टेंबर, २०२७ पर्यंत आहे.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "याचा अर्थ असा की बाजारात साखरेचे प्रमाण जास्त असेल, ज्यामुळे साखरेच्या भावात घट होऊ शकते."
+   },
+   "auto": true,
+   "addedAt": "2026-11-26T13:46:45.995Z"
+  },
+  {
+   "id": "a-0bb14c147944",
+   "date": "2026-11-26",
+   "crops": [
+    "rice"
+   ],
+   "type": "policy",
+   "dir": "pos",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPUGlHRXktSFlDWnRfNXdjYjRNaklUbGNPeXp2RWhvSEZtdWxGcFBzUEVwLWxTZC11LXY5WUlDX1N6b2Q1aGtmT1F4YjgwNFZONHp6MGpCZHRIdlF2ZTlfYzZRakJxM2dMXzAxaUEzRW5wTzdPQmZfS09YVUFKSEJCYUlHT0Q5dnplT2xHNGUyZUIzaGhLVE5wODctOXJacEx5X25sbkYxVEwyckZyY1p4Q1g2UFhoalFleVczTjBRbFZVRWM1TG1SQkhGX0tzYUFWNkVxSVp0RHRod9IB2gFBVV95cUxPUGlHRXktSFlDWnRfNXdjYjRNaklUbGNPeXp2RWhvSEZtdWxGcFBzUEVwLWxTZC11LXY5WUlDX1N6b2Q1aGtmT1F4YjgwNFZONHp6MGpCZHRIdlF2ZTlfYzZRakJxM2dMXzAxaUEzRW5wTzdPQmZfS09YVUFKSEJCYUlHT0Q5dnplT2xHNGUyZUIzaGhLVE5wODctOXJacEx5X25sbkYxVEwyckZyY1p4Q1g2UFhoalFleVczTjBRbFZVRWM1TG1SQkhGX0tzYUFWNkVxSVp0RHRodw?oc=5",
+   "source_name": "Telegraph India",
+   "headline": "Why are rice prices rising in India? Will export curbs ease pressure on domestic prices? - Telegraph India",
+   "hi": {
+    "title": "चावल की कीमतें क्यों बढ़ रही हैं?",
+    "what": "चावल की कीमतें बढ़ रही हैं और निर्यात पर प्रतिबंध लगाने से घरेलू कीमतों पर दबाव कम हो सकता है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "निर्यात पर प्रतिबंध लगाने से चावल की कीमतें कम हो सकती हैं क्योंकि देश में चावल की मात्रा बढ़ जाएगी।"
+   },
+   "mr": {
+    "title": "तांदूळाच्या किंमती का वाढत आहेत?",
+    "what": "तांदूळाच्या किंमती वाढत आहेत आणि निर्यातवर निर्बंध लागू केल्याने देशांतर्गत किंमतींवरील दबाव कमी होऊ शकतो.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "निर्यातवर निर्बंध लागू केल्याने तांदूळाच्या किंमती कमी होऊ शकतात कारण देशात तांदूळाचे प्रमाण वाढेल।"
+   },
+   "auto": true,
+   "addedAt": "2026-11-26T13:46:19.583Z"
+  },
+  {
+   "id": "a-9164543a2609",
+   "date": "2026-11-26",
+   "crops": [
+    "rice"
+   ],
+   "type": "export",
+   "dir": "neu",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNY095V09ORW02NHctRlB6MThKOXMwSEpFMFF5SGhyWHFsN0VhTzZGY2JVN2Rtc3VObkMwTVgzaWd3Rm1zalJBT2JCeVZ0bU10aUtweFRiZ3NEc2plTGt3WndZM04xVkVOQnVKM3gzWWpqU1YyTFo1Ml9pVDZ5SjRGRGk2UUV6V0YxTmNVSl84NGN5elQzTHpQUlp0MHp6blYtS3Naa3MtdGt6ZnRLYjJESUd6b3hSeG9wOHhnYllfTS00NkNfWTU3R2ZGaVAxUEMtOHplcUV0TVVtX1l5Y1ptMEZub1V6MXlkeHdobi1B0gH0AUFVX3lxTE04MFcxR01sMXdzMmdOWDlDNlNuRzMtdGhYeF9vQkU0SC1nXzZfcGF1QlFIVXR4dkdFc3owYkZqVFVRX1FvZl9Ta01Yb0NPOGJQNFozQkFNRlR3X2J2Ni1MUS1SWVNGNTl5MzZuREliT2dSLW5BT3AzQUEzYnJlOEM5cV85elFoUXoySVlJN3B5XzlfUWFjSTRxTS1sa0hWZWFkT29GYU9od0pBUm1OLXVXSTItcEIxbFluaDBjLUxJaWdleC1tYWZHdTN6aVdRYkJqS1ZjaUxJZlFLZTY5Q1lXVkVuLTF6QUhMN25GZHA5UjFaX3I?oc=5",
+   "source_name": "The Hindu",
+   "headline": "IREF say non-basmati rice export bans are unlikely, but urges exporters to remain cautious - The Hindu",
+   "hi": {
+    "title": "नॉन-बासमती चावल निर्यात पर प्रतिबंध लगने की संभावना नहीं",
+    "what": "इंडियन राइस एक्सपोर्टर्स फेडरेशन (आईआरईएफ) ने कहा है कि नॉन-बासमती चावल निर्यात पर प्रतिबंध लगने की संभावना नहीं है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "निर्यात पर प्रतिबंध न लगने से चावल किसानों को कोई विशेष लाभ या नुकसान नहीं होगा क्योंकि यह फैसला अभी तक नहीं हुआ है और निर्यात पर प्रतिबंध लगने से चावल की कीमतें बढ़ सकती थीं लेकिन अब ऐसा नहीं होगा"
+   },
+   "mr": {
+    "title": "नॉन-बासमती तांदूळ निर्यातवर बंदी येण्याची शक्यता नाही",
+    "what": "भारतीय तांदूळ निर्यातदार संघटना (IRFA) ने म्हटले आहे की नॉन-बासमती तांदूळ निर्यातवर बंदी येण्याची शक्यता नाही.",
+    "why": "बातमीत कारण नाही सांगितले",
+    "effect": "निर्यातवर बंदी न लागल्याने तांदूळ शेतकऱ्यांना विशेष फायदा किंवा नुकसान होणार नाही कारण हा निर्णय अजून घेतला गेला नाही आणि निर्यातवर बंदी लागल्यास तांदूळच्या किमती वाढू शकत होत्या पण आता असे होणार नाही"
+   },
+   "auto": true,
+   "addedAt": "2026-11-26T13:46:08.497Z"
+  },
+  {
+   "id": "a-1c6789e55325",
+   "date": "2026-11-26",
+   "crops": [
+    "soybean"
+   ],
+   "type": "intl",
+   "dir": "neg",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "8.5%",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOdkJuUnpHa3VOdmlRU3d3TzhudTlEVEF5TzlaSndUTzZFdlhTclFZYzhNdmZ4dTM1T1BKNmNQZThiQ0ozeGFMbC1TQTV5X1kxTXRyM1JQUzJLMU9XZ0JOcFVfaTFDdElRbHlzSVZHamxqeE9PUDlrMzBVMnRiZ25qM3U0Mk5uVVFILVAybGlGSmVPajZpWFE?oc=5",
+   "source_name": "УкрАгроКонсалт",
+   "headline": "Brazil increased soybean meal exports by 8.5% in October - УкрАгроКонсалт",
+   "hi": {
+    "title": "ब्राजील ने अक्टूबर में सोयाबीन भोजन का निर्यात 8.5% बढ़ाया",
+    "what": "ब्राजील ने अक्टूबर में सोयाबीन भोजन का निर्यात 8.5% बढ़ाया है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "इसका भारतीय किसानों के लिए नकारात्मक प्रभाव पड़ सकता है क्योंकि दुनिया में सोयाबीन की अधिक आपूर्ति होने से इसकी कीमतें कम हो सकती हैं।"
+   },
+   "mr": {
+    "title": "ब्राझीलने ऑक्टोबरमध्ये सोयाबीन भोजनाचा निर्यात ८.५% वाढवला",
+    "what": "ब्राझीलने ऑक्टोबरमध्ये सोयाबीन भोजनाचा निर्यात ८.५% वाढवला आहे.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "याचा भारतीय शेतकऱ्यांवर नकारात्मक परिणाम होऊ शकतो कारण जगात सोयाबीनचा पुरवठा वाढल्याने त्याच्या किमती कमी होऊ शकतात."
+   },
+   "auto": true,
+   "addedAt": "2026-11-26T13:45:56.758Z"
+  },
+  {
    "id": "a-ada9b98ecf62",
    "date": "2026-11-26",
    "crops": [
@@ -62,6 +248,37 @@
    },
    "auto": true,
    "addedAt": "2026-11-26T07:49:44.215Z"
+  },
+  {
+   "id": "a-79e886691f5b",
+   "date": "2026-11-25",
+   "crops": [
+    "other"
+   ],
+   "type": "export",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "20%",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMi9AJBVV95cUxPRkdLWldXTWpla0hXMC1lREpJeTd6R2JPNnIyNWpQU2dqdi1oTWR2Ml8zTUYxYlJodUxkTEIyVnhub0VnbENXQUlJcmJiUDNxVmViUVNkQmRhNlJhWHl3a3pFZmg4Y2Jnd1V3V0Y2WDVGZGE4d09sUTQxTEJWeXJBUmgyTHJoN3YzTENqRWpUU1BfSkdYdkRGSTV2SEFrbkR1cm40TTNmcHRabkpkbU5VQy1TYjBhN0ktNjBaWlpyVkVaWkhDMXIwZVhKWEVBZWFVTUFNOE91NEljdjk5eE1LNUZJWjE0Vjh3Zzc5MFNQalRUUHpZNVllVlhYZDJGbERWeUFHNnlwWFU2Q3ZuYTVYcUozb3pZaU9YaHpaYW9SbnBUMDk1dl9FNWp4cEdsd3hkTU9HS1BvTWNzbl94M0Z6SnhnZ1dlNnh0SHdvbVNrWUM5WmhuLTZhYmpTOVJJODVEUUtzbzhrQjE0UWtNM2ZyZ3JzZDLSAfoCQVVfeXFMTkF2VHEyR1ZJZ09PVkUyWXJkemJmVUEwekdDdzhqbGdFakVvVGh0Qlg0UmV4WklJc19vSDJQQUdXUS03YzE1Q3A3R1RTYnZXX1d0Qk1YaHlEZFBZRVdQOXp5XzNiVkE3Nk9QZlUwaUcyNkFyRkx0R1RWZURSUERFOVprOU9TMWxIWHg3LS15RWJ3Y3hnSzJwbGI0Y0dxZFFORGRNVmx4SmJjUzdzMG1scC1ia0hQUHpaYTVhNUctSE9vQ1NHZG16RWg3MVhnWXdMTmh0ZHBHZmZhX0FGSzI0aFAyYktpX0huNHhiYXdPQ0d0QjVOMDg1dWVLeUlNM0NsQzJsTkFoNjZmUE5jYXl0dUo2REYzaVlYbTVoenhmM2YwbEEwTHpjRnJ0U1puYWR2Y0FpM2RMdXNudkxOT2EzTHV3ay12a2xQazJOTHg4dk82bTdLalZHTjZoRmR6eDgweS1zWW9IU0tFajZMRGFUOEFyamNUenNnZUt3?oc=5",
+   "source_name": "The Times of India",
+   "headline": "Egg prices fall as much as 20% in just 8-10 days as bird flu stalls exports from Tamil Nadu, which accoun - The Times of India",
+   "hi": {
+    "title": "अंडे की कीमतें 8-10 दिनों में 20% तक गिरी",
+    "what": "तमिलनाडु से निर्यात पर प्रतिबंध के कारण अंडे की कीमतें गिर गई हैं",
+    "why": "पक्षी फ्लू के कारण निर्यात पर प्रतिबंध लगाया गया है",
+    "effect": "निर्यात पर प्रतिबंध के कारण देश में अंडे की मात्रा बढ़ जाती है, जिससे कीमतें गिरती हैं"
+   },
+   "mr": {
+    "title": "अंड्याच्या किमती ८-१० दिवसांत २०% ने खाली",
+    "what": "तमिळनाडूवरून निर्यात थांबवल्यामुळे अंड्याच्या किमती खाली आल्या आहेत",
+    "why": "पक्षी फ्लूमुळे निर्यातवर बंदी आहे",
+    "effect": "निर्यातवर बंदी असल्यामुळे देशात अंड्याचे प्रमाण वाढते, ज्यामुळे किमती खाली येतात"
+   },
+   "auto": true,
+   "addedAt": "2026-11-26T13:45:46.128Z"
   },
   {
    "id": "a-802deb23813c",
@@ -4447,223 +4664,6 @@
    },
    "auto": true,
    "addedAt": "2026-11-21T11:20:16.457Z"
-  },
-  {
-   "id": "a-3a8b1f899cdb",
-   "date": "2026-11-18",
-   "crops": [
-    "rice"
-   ],
-   "type": "policy",
-   "dir": "neg",
-   "when": "short",
-   "conf": "medium",
-   "priority": "normal",
-   "qty": null,
-   "official": false,
-   "source": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPQnh5YXlJRU1TWkZqMkZkajhYSV9DMDJTTjdtSlU2U1ZkQVNfb2t0V1FlT3gxekhMNDJpTmpxMmIxSlo3RGZBdHNTejdYWlBadWdBUDlpNno0NnFvWGZwVXUyZ1BWLU05bk9xd21tQW1OVVFUOGY3SVRqMlA3RVdaRHlJeHhWWWxaN3NSek1XdjR4MklueTdNdFV2XzAxTms?oc=5",
-   "source_name": "Urban Acres",
-   "headline": "India’s Rice Surplus Puts Storage Under Pressure - Urban Acres",
-   "hi": {
-    "title": "भारत के चावल के अधिशेष ने भंडारण पर दबाव डाला",
-    "what": "भारत में चावल का अधिशेष होने से भंडारण पर दबाव बढ़ गया है।",
-    "why": "ख़बर में कारण नहीं बताया गया",
-    "effect": "चावल की अधिकता के कारण इसकी कीमतें गिर सकती हैं क्योंकि देश में माल ज्यादा होने से इसकी कीमतों पर दबाव पड़ता है।"
-   },
-   "mr": {
-    "title": "भारताच्या तांदूळ अधिशेषामुळे साठवणीवर दबाव",
-    "what": "भारतात तांदूळ अधिशेषामुळे साठवणीवर दबाव वाढला आहे.",
-    "why": "बातमीमध्ये कारण नाही",
-    "effect": "तांदूळाच्या अधिकतेमुळे त्याच्या किमती कमी होऊ शकतात कारण देशात माल जास्त असल्याने त्याच्या किमतींवर दबाव येतो."
-   },
-   "auto": true,
-   "addedAt": "2026-11-21T10:29:22.922Z"
-  },
-  {
-   "id": "a-bf784384a8d4",
-   "date": "2026-11-18",
-   "crops": [
-    "onion"
-   ],
-   "type": "policy",
-   "dir": "neg",
-   "when": "short",
-   "conf": "medium",
-   "priority": "normal",
-   "qty": null,
-   "official": false,
-   "source": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQeFZBWXhqT0RkN1JhMzBXT19fdmlrTGNjUzRwY1RuNmJYUFlUT2RQTnk0V0xQLXZfQVhEeHRuOXhkMEtHRzEtRS0zNFBfeVo5THpJcndVX2ZEaU9yRXpkZ1NmNEQwVklaU0NZWUZuQ0xPVEg3SmdyWEtqdXowcm11cWJ5WmtacS1xMkxaWlBPOTZITlZWQkVVVmx5d1JJRkQtOFMwbTJDZFZXbk1lSkk4Q1NhOE9sNXB5dDFCVzBkM2FCQ2ZrTkx6eWgxWjJPdHgzcm1Z0gHYAUFVX3lxTFBDZHFURWRvV1VWdHZTajl4T3FvZHFqaDdhbFBnbjJJdHhLcHgwa0RiT2xTZ0ZJeGZXVFhSbDVzVnVOenI3U3hWZ3VkX1RZWFdjVWEzeURiV2ZsV1ZJVlZONkRGMFFfTE1odndBelNXX2tLZjNxR1lmdlo1WGt1U0J3NTI2cl9DekdtcGgtUy1kNHRvaVRqR1M4RFplU3VDZTI0eUltMnk4Qm5mXy1EUFVuSWViVUY2SU1FamRBanRQYUZ6U24zNWRBUzdwa2Z0S3RfUTJLVEwwOQ?oc=5",
-   "source_name": "Telegraph India",
-   "headline": "With onion output likely to outstrip demand, Maharashtra farmers seek Rs 3,000 per quintal - Telegraph India",
-   "hi": {
-    "title": "महाराष्ट्र के किसानों ने प्याज के लिए 3000 रुपये प्रति क्विंटल की मांग की",
-    "what": "महाराष्ट्र के किसान प्याज के लिए 3000 रुपये प्रति क्विंटल की मांग कर रहे हैं क्योंकि उत्पादन मांग से अधिक होने की संभावना है।",
-    "why": "ख़बर में कारण नहीं बताया गया",
-    "effect": "प्याज की कीमतें गिर सकती हैं क्योंकि उत्पादन मांग से अधिक होने से बाजार में प्याज की अधिकता होगी।"
-   },
-   "mr": {
-    "title": "महाराष्ट्रातील शेतकऱ्यांनी कांद्यासाठी ३००० रुपये प्रति क्विंटलची मागणी केली",
-    "what": "महाराष्ट्रातील शेतकऱ्यांनी कांद्यासाठी ३००० रुपये प्रति क्विंटलची मागणी केली आहे कारण उत्पादन मागणीपेक्षा जास्त होण्याची शक्यता आहे.",
-    "why": "बातमीत कारण नाही",
-    "effect": "कांद्याच्या किमती कमी होऊ शकतात कारण उत्पादन मागणीपेक्षा जास्त असल्याने बाजारात कांद्याची अधिकता होईल।"
-   },
-   "auto": true,
-   "addedAt": "2026-11-21T10:28:23.445Z"
-  },
-  {
-   "id": "a-3a46c3a8cba9",
-   "date": "2026-11-18",
-   "crops": [
-    "sugar"
-   ],
-   "type": "import",
-   "dir": "neg",
-   "when": "short",
-   "conf": "medium",
-   "priority": "high",
-   "qty": "2.15 LMT",
-   "official": false,
-   "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPQ3JQNUozUUdNWWc2T1I2akRSSlVPZWxQRmdpeEFhRXRPcGJraE8tUzBoSmdqdzFkeEFaNDRhaW41dmlfTnVKOXRNMVN4R1ppWHBGel9yUWNZalpQbXA2SmVvOE9YRlU1Yzk0ZUxwMGg0SzU4X3pUSzVSN3dPSmRZQ3gyNElWcnlkRV9IUU9ScExXT2dOMHRreTZDYVYwSGtmWHBpag?oc=5",
-   "source_name": "ChiniMandi",
-   "headline": "DGFT opens fresh window for allocating 2.15 LMT raw sugar import under TRQ - ChiniMandi",
-   "hi": {
-    "title": "डीजीएफटी ने टीआरक्यू के तहत 2.15 एलएमटी कच्ची चीनी आयात के लिए नई खिड़की खोली",
-    "what": "डीजीएफटी ने टीआरक्यू के तहत 2.15 एलएमटी कच्ची चीनी आयात के लिए नई खिड़की खोली है।",
-    "why": "ख़बर में कारण नहीं बताया गया",
-    "effect": "इससे देश में चीनी की उपलब्धता बढ़ेगी, जिससे चीनी के दाम गिर सकते हैं।"
-   },
-   "mr": {
-    "title": "डीजीएफटीने टीआरक्यू अंतर्गत २.१५ एलएमटी कच्ची साखर आयातसाठी नवीन वाटप मार्ग खुला केला",
-    "what": "डीजीएफटीने टीआरक्यू अंतर्गत २.१५ एलएमटी कच्ची साखर आयातसाठी नवीन वाटप मार्ग खुला केला आहे.",
-    "why": "बातमीत कारण नाही सांगितले आहे",
-    "effect": "यामुळे देशात साखरेची उपलब्धता वाढेल, ज्यामुळे साखरेच्या भावात घट होऊ शकते."
-   },
-   "auto": true,
-   "addedAt": "2026-11-21T09:00:40.782Z"
-  },
-  {
-   "id": "a-92f1a534efec",
-   "date": "2026-11-18",
-   "crops": [
-    "sugar"
-   ],
-   "type": "intl",
-   "dir": "pos",
-   "when": "medium",
-   "conf": "medium",
-   "priority": "normal",
-   "qty": null,
-   "official": false,
-   "source": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQd2NTQUR5cVNpTjcxbEpyeV9sRlFLRHlRNTRyMHViZkdIcnRFLTRVZFJmZmg4b3JCT0ZxR2RoQVN5UFFEbUZtZ0xuU04tM2VnYmhkc3BiX1NBTXFueVluYmt0MGxkd0FBM3VNYk1CY0dHV0hYSGw4aEdacTBjTFdVM2xNSHlqcnoxbmlwN1pjSFRCLVI2WUdPdHJVcw?oc=5",
-   "source_name": "CMB News",
-   "headline": "Pakistan sugar export approval and crushing delays – market impact - CMB News",
-   "hi": {
-    "title": "पाकिस्तान में चीनी निर्यात की मंजूरी और पीसने में देरी - बाजार पर प्रभाव",
-    "what": "पाकिस्तान में चीनी निर्यात की मंजूरी मिली है और पीसने में देरी हो रही है।",
-    "why": "ख़बर में कारण नहीं बताया गया",
-    "effect": "इसका बाजार पर सकारात्मक प्रभाव पड़ सकता है क्योंकि पाकिस्तान से चीनी निर्यात में देरी से दुनिया में चीनी की कमी हो सकती है और इसके परिणामस्वरूप कीमतें बढ़ सकती हैं।"
-   },
-   "mr": {
-    "title": "पाकिस्तानात चीनी निर्यात मान्यता आणि देरी - बाजार वर परिणाम",
-    "what": "पाकिस्तानात चीनी निर्यात मान्यता मिळाली आहे आणि देरी होत आहे.",
-    "why": "बातमीत कारण नाही",
-    "effect": "याचा बाजार वर सकारात्मक परिणाम होऊ शकतो कारण पाकिस्तानातून चीनी निर्यातीत देरी झाल्याने जगात चीनी ची कमी होऊ शकते आणि त्यामुळे किंमती वाढू शकतात."
-   },
-   "auto": true,
-   "addedAt": "2026-11-21T08:53:24.094Z"
-  },
-  {
-   "id": "a-8d47d20fc467",
-   "date": "2026-11-18",
-   "crops": [
-    "sugar"
-   ],
-   "type": "import",
-   "dir": "neg",
-   "when": "short",
-   "conf": "medium",
-   "priority": "normal",
-   "qty": "2.15 lakh tonnes",
-   "official": false,
-   "source": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNZmN2QTljdHVfZ0IxSG5xUk51LXI3S05vSFZsVW9PYVpqZXFMTjh0VmcyNUROTHNoaGE5OGNBbVhJUnRwNjZWaXFDX0thOVZDT0JiWTJfbWlpRlFnX0dtVDhYRUl6Y2JDVGlHTHo5YmNyaXdNY0ZlX3hXdklqR3VTREZaemVCTzVkNC1NNkkwbTRIa2M1RmNrYlU0aEM0VVdNa1JWUzgzRXNiNEg1N1NlUjVKQ0JHalhkSjBHQVg1bXVsWTBCVWs5ZHFHLVdLbVd4LTU2MzloTDc2WkpUVXRuWTRxODE3SFnSAewBQVVfeXFMT1k1SG9LRHlKcDdaZkQtYXJSd0JVYTRZeGJlU0UtMzFtWmJBMU0tQW5kMHIxVzNUaUZ2bTR6TVFVVEIwQTVGRU1LeFdEaTlJUGpQU1kxVVZGdGtxMlhCMmdSdXd4ZG1PR19MNWNsVWFQd1FhZ0ZMRDBoZ1RYcnBGNkdoUGhaTHNDeEJTOWlhRi1TaWxqYzBEWG5mdjYtSXdnTklhSHltS1VPVkd0eTFGNk5jTHpBVUlwM2NINl9sTzN5YkE1WE9RX0ZzNTdqODlRN1hfWk9WWDRXRFZjeGpRdEtVNFFiRFE1TzhBLU0?oc=5",
-   "source_name": "The Economic Times",
-   "headline": "Govt opens fresh window for 2.15 lakh tonnes of unallocated sugar import quota - The Economic Times",
-   "hi": {
-    "title": "सरकार ने 2.15 लाख टन चीनी आयात कोटा के लिए ताजा खिड़की खोली",
-    "what": "सरकार ने 2.15 लाख टन चीनी आयात कोटा के लिए ताजा खिड़की खोली है। यह कोटा पहले अलॉट नहीं किया गया था।",
-    "why": "ख़बर में कारण नहीं बताया गया",
-    "effect": "चीनी की आयात बढ़ने से देश में चीनी की कीमतें गिर सकती हैं।"
-   },
-   "mr": {
-    "title": "शासनाने २.१५ लाख टन साखर आयात कोट्यासाठी नवीन वाट पहिली",
-    "what": "शासनाने २.१५ लाख टन साखर आयात कोट्यासाठी नवीन वाट पहिली आहे.",
-    "why": "बातमीमध्ये कारण नाही",
-    "effect": "साखर आयात वाढल्याने देशातील साखरच्या किमती कमी होऊ शकतात."
-   },
-   "auto": true,
-   "addedAt": "2026-11-21T08:53:04.527Z"
-  },
-  {
-   "id": "a-2c14bc8ca6ea",
-   "date": "2026-11-18",
-   "crops": [
-    "soybean"
-   ],
-   "type": "export",
-   "dir": "neg",
-   "when": "medium",
-   "conf": "medium",
-   "priority": "normal",
-   "qty": "28.5%",
-   "official": false,
-   "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSzlOdFl0Y1NFNFhZVTliYjFEbGRtMHNuaFpRaFJiN0x6THJkcF85OERoQUpvQmtnYzJHS2RzX0NkaHVTZ2xhTk5iMTRzdy1XV3ZHclhRWU9Pd2VYeGlHeVZSRXdkemlDdDNmLUNEZmJjZXd3RXNwVTRYUks2aXJvbXRqOXU3dXpwUkh3MXlpVUdjQXRJbVdkQnYxbFBtVW5pcmtLemZQM2RTTTg?oc=5",
-   "source_name": "Milling Middle East & Africa",
-   "headline": "India’s oilmeal exports fall 28.5% as soybean meal loses global price competitiveness - Milling Middle East & Africa",
-   "hi": {
-    "title": "भारत के तेलबीज निर्यात में 28.5% की गिरावट",
-    "what": "भारत के तेलबीज निर्यात में 28.5% की गिरावट हुई है। यह गिरावट इसलिए हुई है क्योंकि सोयाबीन का तेल विश्व स्तर पर अपनी कीमत प्रतिस्पर्धा खो रहा है।",
-    "why": "सोयाबीन का तेल विश्व स्तर पर अपनी कीमत प्रतिस्पर्धा खो रहा है।",
-    "effect": "इसलिए सोयाबीन किसानों को कम भाव मिलेगा क्योंकि निर्यात में गिरावट से देश में तेलबीज की मात्रा बढ़ जाएगी।"
-   },
-   "mr": {
-    "title": "भारताच्या तेलबियाणे निर्यातीत २८.५% ची घट",
-    "what": "भारताच्या तेलबियाणे निर्यातीत २८.५% ची घट झाली आहे. ही घट झाली आहे कारण सोयाबीन तेल जागतिक स्तरावर किंमत प्रतिस्पर्धा गमावत आहे.",
-    "why": "सोयाबीन तेल जागतिक स्तरावर किंमत प्रतिस्पर्धा गमावत आहे.",
-    "effect": "म्हणून सोयाबीन शेतकऱ्यांना कमी भाव मिळेल कारण निर्यातीत घट झाल्याने देशात तेलबियाणे ची मात्रा वाढेल."
-   },
-   "auto": true,
-   "addedAt": "2026-11-21T08:48:48.648Z"
-  },
-  {
-   "id": "a-fad8fd2ca976",
-   "date": "2026-11-18",
-   "crops": [
-    "onion"
-   ],
-   "type": "export",
-   "dir": "neg",
-   "when": "medium",
-   "conf": "medium",
-   "priority": "normal",
-   "qty": "quadrupled",
-   "official": false,
-   "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPQ1M3R1B0NXl6QlY1cFVKb05FUW1EUDRsM09HS0hTQnNVMFpIOVR2NTVodXN3TkZjOUY4cUdZbWRMT0dQWEJwRUlDaGVJaHZFNXFYQ1ZJamU4QjhxTnpUb0p4eUhuY2VoTExmbUFOcEhQMWU2ek4wR1N3ckdhMWxGb1o1bmhOUEtsM1BJVGhWVld6MWR6OU55NEVzU29DMUh3VE9YdUlmcTZLNnplaEFwdtIBqgFBVV95cUxOVnBIZUVoVlpRRjlYVTFweFhHUGZHLWxfbU80eWdJbUMtMDF6RTFVVmRkaFZxZFp4a2daelZVR0l6RWZjX1JvWWRyTUhWTzhaYWRGQjV6VXdsOXkySVctWEh6RW9Pd091UEdnUnYybmdFelNsOWdIOEFEMTJQaGt0REY2N2hzM1M5RHJZMnhMR1NOOXB6b0dsTy10SThEWG1vbGdsbDkwRkhKZw?oc=5",
-   "source_name": "The New Voice of Ukraine",
-   "headline": "Ukraine quadruples onion exports to EU, overtaking Turkey and India - The New Voice of Ukraine",
-   "hi": {
-    "title": "यूक्रेन ने यूरोपीय संघ में प्याज का निर्यात चार गुना बढ़ाया",
-    "what": "यूक्रेन ने यूरोपीय संघ में प्याज का निर्यात चार गुना बढ़ा दिया है, जिससे वह तुर्की और भारत से आगे निकल गया है।",
-    "why": "ख़बर में कारण नहीं बताया गया",
-    "effect": "भारतीय प्याज किसानों के लिए प्याज का भाव गिरने की संभावना है क्योंकि यूरोपीय संघ में प्याज की आपूर्ति बढ़ गई है।"
-   },
-   "mr": {
-    "title": "युक्रेनने युरोपीय संघात प्याज निर्यात चौपट केले",
-    "what": "युक्रेनने युरोपीय संघात प्याज निर्यात चौपट केले आहे, ज्यामुळे ते तुर्कस्तान आणि भारतापेक्षा पुढे गेले आहे.",
-    "why": "बातमीत कारण नाही",
-    "effect": "युरोपीय संघात प्याजाचा पुरवठा वाढल्यामुळे भारतीय प्याज शेतकऱ्यांसाठी प्याजाची किंमत कमी होण्याची शक्यता आहे."
-   },
-   "auto": true,
-   "addedAt": "2026-11-21T08:47:49.575Z"
   }
  ],
  "seen": [
@@ -4848,8 +4848,16 @@
   "a-ada9b98ecf62",
   "a-ce6c4a5625d0",
   "a-1eceee2ee01c",
-  "a-802deb23813c"
+  "a-802deb23813c",
+  "a-79e886691f5b",
+  "a-1c6789e55325",
+  "a-9164543a2609",
+  "a-0bb14c147944",
+  "a-a7c5216d1305",
+  "a-f69e9443c63c",
+  "a-3e4ef11f358c",
+  "a-a6f8d1c9ebe3"
  ],
- "updated": "2026-11-26T07:50:31.184Z",
+ "updated": "2026-11-26T13:47:09.180Z",
  "_about": "AI se apne aap bani cards. official=true sirf sarkari website wali khabar. Baaki ki sarkari pushti baaki."
 }
