@@ -1,6 +1,162 @@
 {
  "items": [
   {
+   "id": "a-411161d27692",
+   "date": "2026-11-26",
+   "crops": [
+    "sugar"
+   ],
+   "type": "import",
+   "dir": "neg",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "10 Lakh MT",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQTWdnQkNLM0wwV2F6Q0xzMjR1enpMM1pIY0FnUUVxWHg2a0ZnWl9CS3VsUDVITWNneFZScUFYRGF5TnJRd2xhVkg0ckoyeUQ2allmUlllekpkQzRSM2dBV1o5cDFnc2JpVTlVMWkwd1NXRmVTaGhwSkxMUDUxLV9TWGkzT2FBQWZUSnFRcWtqRl9vRjVINDhxYWVabFdJdWhXVDhoRVVoWGczLTVNenJFRlhFM3hzOFQtaVpFN3lQWXdkeWR3WVVlQjJlUS1KX0dCZk9nSWpCOA?oc=5",
+   "source_name": "A2Z Taxcorp LLP",
+   "headline": "DGFT Extends Deadline for Duty-Free Import of 10 Lakh MT of Raw Sugar under Tariff Rate Quota (TRQ) till March 31, 2027 - A2Z Taxcorp LLP",
+   "hi": {
+    "title": "डीजीएफटी ने टैरिफ रेट कोटा (टीआरक्यू) के तहत 10 लाख एमटी कच्ची चीनी के शुल्क-मुक्त आयात की समय सीमा 31 मार्च, 2027 तक बढ़ा दी",
+    "what": "डीजीएफटी ने कच्ची चीनी के आयात की समय सीमा बढ़ा दी है। अब 10 लाख एमटी कच्ची चीनी 31 मार्च, 2027 तक शुल्क-मुक्त आयात की जा सकती है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "देश में चीनी की अधिक आयात होने से चीनी के दाम गिर सकते हैं"
+   },
+   "mr": {
+    "title": "डीजीएफटीने टॅरिफ रेट कोटा (टीआरक्यू) अंतर्गत १० लाख एमटी कच्ची साखर शुल्कविरहित आयात करण्याची मुदत ३१ मार्च, २०२७ पर्यंत वाढवली",
+    "what": "डीजीएफटीने कच्ची साखर आयात करण्याची मुदत वाढवली आहे. आता १० लाख एमटी कच्ची साखर ३१ मार्च, २०२७ पर्यंत शुल्कविरहित आयात केली जाऊ शकते.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "देशात साखरेचा अधिक आयात होण्याने साखरेच्या भावात घट होऊ शकते"
+   },
+   "auto": true,
+   "addedAt": "2026-11-26T19:28:47.817Z"
+  },
+  {
+   "id": "a-78ab5cc93d20",
+   "date": "2026-11-26",
+   "crops": [
+    "rice",
+    "other"
+   ],
+   "type": "intl",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOV29BWXNzNFFoUlc2SFkxLVJ5cENHNmwtUW9sSDg2Y25FdHhKX0JlTVNLX2xLSnhHcmV2akliY19XTGZpNUZEMTNWUEpId01sVUx4VkZDSGRYMXB6N0dISWNsWGd0UFM2RkF5cTZtb3BCOFZ3QzB5c3NLTFRNVFVrdkd6VWx4Wk9hMFp4b1VZVjFpZzllNFVMQWJTZ1hSYVNIbXlBckVOTlFRNnBXc1BNdVBlU2lXYW1iTjQxR0UyLXRhT1BYM05lcU04emo3SE40SUFJeGZ30gHbAUFVX3lxTE9CNlRTZ1p4NHNNUHhDNVVCUTJ2WDFZRTJBSUFuTTRGNkN4MmlsX1pIRTkwcnFfbHUwYmp5ZXVYM1BfRHEyOFRKN21nUTUyeWVDdXVpRy0wUnUtelR6bXh2Q1ZTSDBFMWJvVmNPRHBkSGZ1MGxjODBoVnhuS253UTAxdm44Y2NyQVl1b2NLeGEySG45VkF2MXVYTm5Ba2k0Rk9STTA4Y3NrNnBIX3h3YmZVcEpON09hQ1dtMjhfZmtGYWxucUkyT1ZsXzBwdHd0MkxYT3NZWFdpVHdmMA?oc=5",
+   "source_name": "Business Standard",
+   "headline": "Trump's fresh tariff threats: Seafood exports in a squeeze, rice unscathed - Business Standard",
+   "hi": {
+    "title": "ट्रंप की ताज़ा टैरिफ धमकी: समुद्री भोजन निर्यात पर दबाव, चावल पर कोई असर नहीं",
+    "what": "अमेरिकी राष्ट्रपति डोनाल्ड ट्रंप ने ताज़ा टैरिफ धमकी दी है, जिससे समुद्री भोजन निर्यात पर दबाव पड़ सकता है। हालांकि, चावल की कीमतों पर इसका कोई असर नहीं पड़ेगा।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "समुद्री भोजन निर्यात पर दबाव बढ़ेगा, जिससे इसकी कीमतें गिर सकती हैं। चावल की कीमतों पर कोई असर नहीं पड़ेगा।"
+   },
+   "mr": {
+    "title": "ट्रंपच्या नवीन टॅरिफ धमकीचा फायदा : समुद्री अन्न निर्यातवर दाब, तांदूळ वाचला",
+    "what": "अमेरिकेचे राष्ट्राध्यक्ष डोनाल्ड ट्रंप यांनी नवीन टॅरिफ धमकी दिली आहे, ज्यामुळे समुद्री अन्न निर्यातवर दाब येईल. मात्र, तांदूळच्या किमतीवर त्याचा कोणताही परिणाम होणार नाही.",
+    "why": "बातमीत कारण नाही",
+    "effect": "समुद्री अन्न निर्यातवर दाब वाढेल, ज्यामुळे त्याच्या किमती खाली येतील. तांदूळच्या किमतीवर कोणताही परिणाम होणार नाही."
+   },
+   "auto": true,
+   "addedAt": "2026-11-26T19:28:15.562Z"
+  },
+  {
+   "id": "a-655e91e0501a",
+   "date": "2026-11-26",
+   "crops": [
+    "wheat"
+   ],
+   "type": "import",
+   "dir": "neg",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "500,000-tonne",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxObGpNN3pKbVJmVmstWHZmNjF4RXlqeEZzc0VMU1RBT1BvQUlJMmtPQzd3aTg1bTBBeVdBYzFhMk1qbDV4Nld3cTJudWplWXg2NEF0RjlnOU54TWZwSTNaOXpjYlNxbUM3RUhncUlaVU1lbVpPRTRyaUZtMFc4UFpuOU14Q2xmZVZBY3VmWG1JTGVBU3pwYldhb2RR?oc=5",
+   "source_name": "UrduPoint",
+   "headline": "Pakistan weighs additional 500,000-tonne wheat import for 2026–27 - UrduPoint",
+   "hi": {
+    "title": "पाकिस्तान 2026-27 के लिए अतिरिक्त 500,000 टन गेहूं आयात पर विचार कर रहा है",
+    "what": "पाकिस्तान 2026-27 के लिए अतिरिक्त 500,000 टन गेहूं आयात पर विचार कर रहा है। यह निर्णय देश में गेहूं की कमी को पूरा करने के लिए किया जा रहा है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "भारतीय किसानों के लिए गेहूं का भाव गिर सकता है, क्योंकि पाकिस्तान की अतिरिक्त आयात से विश्व बाजार में गेहूं की अधिकता हो सकती है।"
+   },
+   "mr": {
+    "title": "पाकिस्तान २०२६-२७ साठी अतिरिक्त ५००,००० टन गव्हाचा आयात करण्याबद्दल विचार करीत आहे",
+    "what": "पाकिस्तान २०२६-२७ साठी अतिरिक्त ५००,००० टन गव्हाचा आयात करण्याबद्दल विचार करीत आहे. हा निर्णय देशातील गव्हाच्या कमतरतेची पूर्तता करण्यासाठी घेतला जात आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "भारतीय शेतकऱ्यांसाठी गव्हाची किंमत कमी होऊ शकते, कारण पाकिस्तानच्या अतिरिक्त आयातमुळे जागतिक बाजारपेठेत गव्हाची अधिकता होऊ शकते."
+   },
+   "auto": true,
+   "addedAt": "2026-11-26T19:28:03.648Z"
+  },
+  {
+   "id": "a-b885fd554b74",
+   "date": "2026-11-26",
+   "crops": [
+    "wheat"
+   ],
+   "type": "policy",
+   "dir": "pos",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "high",
+   "qty": "26 years",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPMjBGV25FX0hmamFmdXB3N0ljTWwydmJOUmhiOEZjc1FFZW9RQ25qMHA5T05pRUxfR0lEYU5CT0Q0cTJsd01mT0twV2JraUIwMlRtb2g0aVl0OGxfamlmRUc2Tmg0V1RXel9iNEVqYTFyUzRXMFdSZld4Vmp1UVJZaXBzQVBPWml2cm14a1hmZGxxeWFWenZ3dFFNNGh4Y1Mz?oc=5",
+   "source_name": "The Scottish Farmer",
+   "headline": "India's wheat plantings set for biggest fall in 26 years after weak monsoon - The Scottish Farmer",
+   "hi": {
+    "title": "भारत में गेहूं की बुवाई 26 साल में सबसे बड़ी गिरावट की ओर",
+    "what": "भारत में गेहूं की बुवाई में 26 साल में सबसे बड़ी गिरावट आने की संभावना है। इसका कारण कमजोर मानसून है।",
+    "why": "कमजोर मानसून के कारण",
+    "effect": "गेहूं की कीमतें बढ़ सकती हैं क्योंकि देश में गेहूं की कमी होगी"
+   },
+   "mr": {
+    "title": "भारतात गव्हाच्या लागवडीत २६ वर्षांत सर्वात मोठी घट",
+    "what": "भारतात गव्हाच्या लागवडीत २६ वर्षांत सर्वात मोठी घट होण्याची शक्यता आहे. याचे कारण कमजोर मान्सून आहे.",
+    "why": "कमजोर मान्सून मुळे",
+    "effect": "गव्हाच्या किमती वाढू शकतात कारण देशात गव्हाची कमी होईल"
+   },
+   "auto": true,
+   "addedAt": "2026-11-26T19:27:52.184Z"
+  },
+  {
+   "id": "a-c644624933b2",
+   "date": "2026-11-26",
+   "crops": [
+    "cotton"
+   ],
+   "type": "intl",
+   "dir": "neg",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "high",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQUUpqdEg1MlpiN29QNWhwX2R5MUxBQ29DVE53NTR1WWZZeEVOejJ4ai1zYXRjZTBVUlRYR2EyUEp2dGdKai1DUnZEa3p3UWRLWHpSUVg1YjUzTC0tU1VkWS1RNGkxdjJZTmU5Z3VJSWdIMXo1N0pXSHFrem9HVzc5a2haZmlxc3ZkeHNiOWtXZnQ1bjVKY3NJeW1zb1Q?oc=5",
+   "source_name": "The Business Standard",
+   "headline": "Boeings, more cotton imports, nothing could stop US tariff - The Business Standard",
+   "hi": {
+    "title": "US ने कपास पर टैरिफ लगाया",
+    "what": "US ने कपास पर टैरिफ लगाया है। इससे भारतीय कपास किसानों को नुकसान हो सकता है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "कपास का भाव गिर सकता है क्योंकि US में कपास की आयात बढ़ सकती है और भारतीय कपास की मांग कम हो सकती है।"
+   },
+   "mr": {
+    "title": "यूएसने कापूसवर टॅरिफ लागू केला",
+    "what": "यूएसने कापूसवर टॅरिफ लागू केला आहे. यामुळे भारतीय कापूस उत्पादक शेतकऱ्यांना नुकसान होऊ शकतो.",
+    "why": "बातमीत कारण नाही सांगितले",
+    "effect": "कापूसची किंमत कमी होऊ शकते कारण यूएसमध्ये कापूस आयात वाढू शकते आणि भारतीय कापूसची मागणी कमी होऊ शकते."
+   },
+   "auto": true,
+   "addedAt": "2026-11-26T19:27:39.791Z"
+  },
+  {
    "id": "a-a6f8d1c9ebe3",
    "date": "2026-11-26",
    "crops": [
@@ -248,6 +404,38 @@
    },
    "auto": true,
    "addedAt": "2026-11-26T07:49:44.215Z"
+  },
+  {
+   "id": "a-150d63142c97",
+   "date": "2026-11-25",
+   "crops": [
+    "wheat",
+    "other"
+   ],
+   "type": "intl",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMimgJBVV95cUxNMVBVeW9YUVBwV25HWmpaM3RING03ZUo2NWcwZUQzZ3ZxS2NuajBPdTVQdXd3blQySkRUQUlmSzFSU0E2OERJTUhOSXhObkpPdUxFN2U2SUxiQnpsSVZyMzNBUkNaVHM5VUlvZmVKY0RFd2R5TWkzbnVsanI3U1JSR0FFaHBVY1lneXpsdGFBMVoxY0l0M3RxZEc2TXBPRzVFc1oxYUllLVFzX0Q4VjBUUm5EalgzYWdoWlNWNGQ1VlVCaUQwVHk1UkVUbmh4QlYzaGpxMmJIR1ZZU1hUczB5VzBTX0swZC1LSHJLVzVvRUhKMkp1c2dXSmZsbjhQWEl5blk5MzdzenI5ekwwTjI3aHJIQWNyRjdIQlE?oc=5",
+   "source_name": "The Globe and Mail",
+   "headline": "Grains Into Thanksgiving: Wheat Slips, Soybeans Tag Their Target on China Trade Talk, Corn Exports Lag - The Globe and Mail",
+   "hi": {
+    "title": "धान्य बाजार में उतार-चढ़ाव: गेहूं की कीमतें गिरीं, सोयाबीन की कीमतें चीन के व्यापार वार्ता से प्रभावित",
+    "what": "गेहूं की कीमतें गिर गईं, सोयाबीन की कीमतें चीन के व्यापार वार्ता से प्रभावित हुईं और मक्का के निर्यात में कमी आई।",
+    "why": "चीन के व्यापार वार्ता के कारण सोयाबीन की कीमतें प्रभावित हुईं।",
+    "effect": "भारतीय किसानों के लिए गेहूं और मक्का की कीमतें गिरने से नकारात्मक प्रभाव पड़ेगा, जबकि सोयाबीन की कीमतें में उतार-चढ़ाव के कारण मिला-जुला प्रभाव पड़ेगा।"
+   },
+   "mr": {
+    "title": "धान्य बाजारातील उतार-चढाव: गव्हाच्या किमती घटल्या, सोयाबीनच्या किमती चीनशी व्यापारी वाटाघाटींवर अवलंबून",
+    "what": "गव्हाच्या किमती घटल्या, सोयाबीनच्या किमती चीनशी व्यापारी वाटाघाटींवर अवलंबून आहेत आणि मक्याच्या निर्यातीत घट झाली आहे.",
+    "why": "चीनशी व्यापारी वाटाघाटींमुळे सोयाबीनच्या किमती अवलंबून आहेत.",
+    "effect": "भारतीय शेतकऱ्यांसाठी गव्ह आणि मक्याच्या किमती घटल्यामुळे नकारात्मक परिणाम होईल, तर सोयाबीनच्या किमतीतील उतार-चढावामुळे मिश्र परिणाम होईल."
+   },
+   "auto": true,
+   "addedAt": "2026-11-26T19:27:30.100Z"
   },
   {
    "id": "a-79e886691f5b",
@@ -1743,6 +1931,37 @@
    },
    "auto": true,
    "addedAt": "2026-11-24T07:47:24.293Z"
+  },
+  {
+   "id": "a-4e01ca4a7fe4",
+   "date": "2026-11-23",
+   "crops": [
+    "rice"
+   ],
+   "type": "policy",
+   "dir": "pos",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPNnYyMVFFZnIwaWxSRGJ1X1J4WmYtcWtBQTAwQ0RlUS15T3czR3FBMGttbU90eHpEVE1XZEwwbkFjcjhscEdiMU9PSzV2cnJ1bmdkQVlzQ0ZHYTlCN2Z6YVNqS3pjckRrNXZ2Zngzc1BlT3Bwc2RzS01CY0w0OEN1UGNIcXF6QzliQTVUamdsNjZfMU4xbFNreHhocTAwcGfSAVZBVV95cUxONGNUWVpzTnpRbW9uODVoUC13bHpqZWdSbHVPalUzV1lpa2Y0UlVreDhYeW52S2diR0RiQ0U3eUhySFN3dnZIRDdENnpPaEJtZm1COHY4Zw?oc=5",
+   "source_name": "Business Recorder",
+   "headline": "India considers rice export duties as domestic prices rise - Business Recorder",
+   "hi": {
+    "title": "भारत चावल निर्यात शुल्क पर विचार कर रहा है क्योंकि घरेलू कीमतें बढ़ रही हैं",
+    "what": "भारत चावल निर्यात शुल्क पर विचार कर रहा है। घरेलू कीमतें बढ़ रही हैं",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "चावल की कीमतें बढ़ सकती हैं क्योंकि निर्यात शुल्क लगने से देश में चावल की मात्रा बढ़ जाएगी"
+   },
+   "mr": {
+    "title": "भारत चावल निर्यात कर आकारणी करण्याचा विचार करत आहे कारण देशांतर्गत किंमती वाढत आहेत",
+    "what": "भारत चावल निर्यात कर आकारणी करण्याचा विचार करत आहे. देशांतर्गत किंमती वाढत आहेत",
+    "why": "बातमीत कारण नाही सांगितले",
+    "effect": "चावलाच्या किंमती वाढू शकतात कारण निर्यात कर आकारणी झाल्याने देशात चावलाचे प्रमाण वाढेल"
+   },
+   "auto": true,
+   "addedAt": "2026-11-26T19:28:33.883Z"
   },
   {
    "id": "a-cc63b2ea72e0",
@@ -4446,224 +4665,6 @@
    },
    "auto": true,
    "addedAt": "2026-11-21T09:02:26.483Z"
-  },
-  {
-   "id": "a-8eba422aac8a",
-   "date": "2026-11-19",
-   "crops": [
-    "tur"
-   ],
-   "type": "policy",
-   "dir": "pos",
-   "when": "short",
-   "conf": "medium",
-   "priority": "high",
-   "qty": "10 lakh tonnes",
-   "official": false,
-   "source": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOVHRTUmI2VVlINUo1dENvOGRrNzhZakNWTENvcTNvbC1YNzMyc0Q1WVVyXzd0T0drR3dYYkdrMjFDX0ZvR2FiNnhpY0taSmt1MlJzdWJVTGNIRDRTVHRpYklUOHBPUEc5ZmFGWE5sbkZtS1IxN2hON2stYmIyMGFOYUpqOXVYUjZGZmFJbi1MMTM1aVdRUUZodDJaRGZPLTFab2lKeU1NclJVaFNtUTFhTUp6TWxMX05PaUxETkgzeUpvOFA2U2hwbWpTMGNtOXVsTGRxV1RKdjRzU0Rpd011bmc3SlF5VFVCeG5CWjdiNnpydFJ4QTNXenF2b9IBgAJBVV95cUxQNlJnYUxQTUJGRUxpOWVua25rUHJ3RDBaUEVFZzY2aF9ZVUtBV2tXZ2l2eTR5cldVLUUxSGRnUE4zcWt4MVFoV0VEdEQ4X3lvRTZySVlGQjJaeVB4UVFQb2dYODVWcWJpS1RaWjBheTdpSW1yNUVQb211RzFuMThzNGI5TkotRW4xOUtld1BkN1RRVjhFUUllaFdkRXU5M0oxZTE5TVdaU0VSSk5SbS1SOWF1MTU5UG9sN043c2o1RkhtSlNHZFBrNTdyY1FLQmRwanktR05TVFVYNlpZbDVVM0t2UkxGcnZiTzJsNmlySmRhcHl6Yk5PZ0VjbVQwYlN5?oc=5",
-   "source_name": "The Economic Times",
-   "headline": "High pulse rate: Nearly 10 lakh tonnes of tur in buffer stocks, yet prices keep rising. Why? - The Economic Times",
-   "hi": {
-    "title": "तूर की कीमतें बढ़ रही हैं",
-    "what": "देश में तूर का 10 लाख टन बफर स्टॉक होने के बावजूद कीमतें बढ़ रही हैं",
-    "why": "ख़बर में कारण नहीं बताया गया",
-    "effect": "तूर की कीमतें बढ़ रही हैं क्योंकि बफर स्टॉक के बावजूद मांग अधिक हो सकती है"
-   },
-   "mr": {
-    "title": "तूरच्या किमती वाढत आहेत",
-    "what": "देशात तूरचा 10 लाख टन बफर स्टॉक असला तरी किमती वाढत आहेत",
-    "why": "बातमीत कारण नाही सांगितले",
-    "effect": "तूरच्या किमती वाढत आहेत कारण बफर स्टॉक असूनही मागणी जास्त असू शकते"
-   },
-   "auto": true,
-   "addedAt": "2026-11-21T08:50:43.580Z"
-  },
-  {
-   "id": "a-566601603971",
-   "date": "2026-11-19",
-   "crops": [
-    "soybean",
-    "oilseed"
-   ],
-   "type": "intl",
-   "dir": "pos",
-   "when": "medium",
-   "conf": "medium",
-   "priority": "normal",
-   "qty": null,
-   "official": false,
-   "source": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQMmVubS1xMEkyMmlHWHFfMC1laHNHaFFaMUw0aUZ1cW9weFVHOWNBa1BVOFNDZEstNUUyNEZlTnBSSE9DYWctSWp5QmNFUXlpbzhRbU1mdDdaVFhvekdmdjVfcS1FYS1wU0pRbnpmVFR1UHRvdXRDTFNiOE1hQ2tBMTFiS1JManRpRnpjQi1uVlJNaDd6VHNXcVVjUy1SSFRjcjMzWnl2WEh0WmJYWXhjRkxjREU?oc=5",
-   "source_name": "УкрАгроКонсалт",
-   "headline": "Soybean oil strengthens its position in India as sunflower oil imports decline - УкрАгроКонсалт",
-   "hi": {
-    "title": "भारत में सोयाबीन तेल की स्थिति मजबूत होती है क्योंकि सूरजमुखी तेल के आयात में कमी आती है",
-    "what": "सूरजमुखी तेल के आयात में कमी के कारण सोयाबीन तेल की स्थिति भारत में मजबूत हो रही है।",
-    "why": "ख़बर में कारण नहीं बताया गया",
-    "effect": "सोयाबीन तेल की कीमतें बढ़ सकती हैं क्योंकि इसकी मांग बढ़ रही है और सूरजमुखी तेल के आयात में कमी आ रही है।"
-   },
-   "mr": {
-    "title": "भारतात सोयाबीन तेलाची स्थिती बळकट होत आहे कारण सूर्यफूल तेल आयात कमी होत आहे",
-    "what": "सूर्यफूल तेल आयात कमी होत असल्याने सोयाबीन तेलाची स्थिती भारतात बळकट होत आहे.",
-    "why": "बातमीत कारण नाही",
-    "effect": "सोयाबीन तेलाच्या किमती वाढू शकतात कारण त्याची मागणी वाढत आहे आणि सूर्यफूल तेल आयात कमी होत आहे."
-   },
-   "auto": true,
-   "addedAt": "2026-11-21T08:50:00.705Z"
-  },
-  {
-   "id": "a-78c16f64fb17",
-   "date": "2026-11-19",
-   "crops": [
-    "oilseed"
-   ],
-   "type": "import",
-   "dir": "neg",
-   "when": "short",
-   "conf": "medium",
-   "priority": "normal",
-   "qty": null,
-   "official": false,
-   "source": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQWl9idU96VC1JY19OdmxsOGVKNjlsLXNBbVVQNHBRNzJJcExRNkhOcmVTSWdVTXV5LUFCaEI0OW9nU0c4V3Mwbnk3RHZzTlQ3X0VIVExheWRGV3hPQzZqeGFDSWRBa0R6Znp2MTJoRV84RU10SVBkVnZrVmljYmx1NkdSYU5aUEF1SzRSMm13enJxZWd3bklEZnFzN21NbVpiaWk2NEdZVXM?oc=5",
-   "source_name": "CMB News",
-   "headline": "India sunflower oil imports surge as prices stay premium — CMB News - CMB News",
-   "hi": {
-    "title": "भारत में सूरजमुखी तेल का आयात बढ़ा",
-    "what": "भारत में सूरजमुखी तेल का आयात बढ़ गया है क्योंकि इसकी कीमतें अभी भी प्रीमियम पर हैं।",
-    "why": "ख़बर में कारण नहीं बताया गया",
-    "effect": "सूरजमुखी तेल के आयात में वृद्धि से सूरजमुखी किसानों को कम भाव मिल सकता है क्योंकि देश में तेल की अधिकता होगी"
-   },
-   "mr": {
-    "title": "भारतात सूर्यफूल तेल आयात वाढला",
-    "what": "भारतात सूर्यफूल तेल आयात वाढला आहे कारण की त्याच्या किमती अजूनही प्रीमियम वर आहेत.",
-    "why": "बातमीत कारण नाही सांगितले",
-    "effect": "सूर्यफूल तेल आयातात वाढ होण्यामुळे सूर्यफूल शेतकऱ्यांना कमी भाव मिळू शकतो कारण देशात तेलाची अधिकता होईल"
-   },
-   "auto": true,
-   "addedAt": "2026-11-21T08:48:28.971Z"
-  },
-  {
-   "id": "a-f926b1f903d2",
-   "date": "2026-11-19",
-   "crops": [
-    "onion"
-   ],
-   "type": "policy",
-   "dir": "neg",
-   "when": "medium",
-   "conf": "medium",
-   "priority": "normal",
-   "qty": "288.96 Lakh Tonnes",
-   "official": false,
-   "source": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOZFFnRVc2Q1JFVXdOMlB1bk1sc0tfdl9NNXNab1drNThhYTBlTHJlVDZ4a3RZS3BMSFZCcExpR01pTUpSUlV6dERxQWZGX0JyVDNVRnRLdVpvUGZfckdjYkNIQXM3NWlIbUtjR2lCS2dJZkV6MXcxVmtwU0FUMDBmalZWWVFpU3BoZmFteVZwdzM1R0xGUTdFSHBDdU9tX1FoYzJnaklUbEM4RmxRV3fSAbMBQVVfeXFMTnhhalpTV1VvV2ZpOFY0NVg5SXRVRHpwQmxMS2R4aEZuNjZXRkgzeHFQendzbHdFWE5jSFBKMVpGOTZsOWxqektmcjFvOFBOcmN1QlpzWXFVQWdMd1BpVEQ3ZUVqQ2FkZmtfd1RNR0d1bjN0OWc3ZlIwS0ptX0JSeVctQ09HQ3dadTFkd0k5M0Z3VlhjOFk0ZXNZWG5SenVURzkxS092ajIxRDRIbEt0cjhaODA?oc=5",
-   "source_name": "Free Press Journal",
-   "headline": "Nashik: India’s Onion Production Estimated At 288.96 Lakh Tonnes In 2025-26 - Free Press Journal",
-   "hi": {
-    "title": "नासिक: 2025-26 में भारत का प्याज उत्पादन 288.96 लाख टन अनुमानित",
-    "what": "भारत का प्याज उत्पादन 2025-26 में 288.96 लाख टन अनुमानित है।",
-    "why": "ख़बर में कारण नहीं बताया गया",
-    "effect": "प्याज का उत्पादन बढ़ने से इसकी कीमतें गिर सकती हैं क्योंकि बाजार में प्याज की अधिकता होगी।"
-   },
-   "mr": {
-    "title": "नाशिक: २०२५-२६ मध्ये भारताचे कांद्याचे उत्पादन २८८.९६ लाख मेट्रिक टन असल्याचा अंदाज",
-    "what": "२०२५-२६ मध्ये भारताचे कांद्याचे उत्पादन २८८.९६ लाख मेट्रिक टन असल्याचा अंदाज आहे.",
-    "why": "बातमीत कारण नाही",
-    "effect": "कांद्याचे उत्पादन वाढल्याने त्याच्या किमती कमी होऊ शकतात कारण बाजारात कांद्याची अधिकता असेल।"
-   },
-   "auto": true,
-   "addedAt": "2026-11-21T08:47:59.382Z"
-  },
-  {
-   "id": "a-81829a7f9b37",
-   "date": "2026-11-19",
-   "crops": [
-    "onion"
-   ],
-   "type": "policy",
-   "dir": "pos",
-   "when": "medium",
-   "conf": "medium",
-   "priority": "normal",
-   "qty": "6%",
-   "official": false,
-   "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbmxXYzBpOXNGbmFyN09LZDdCWFl1ODFVRXc0TFpjZFFFSV93X3lvTEF4YXBya3N5cmJLRjBlVnQ2MklxMUZabDMxekM3X2Q1N0JoeEhhd1hjbVJxQ0t0QjhFWHBmMW53ZkUyaFljWXFtUmlKY2dGazBfYVhKanNTYUw1NmhEYzIxZXpnZ21kOTNvREtsQkE3cG5jUThGdVFPVXFkNy1CT0Y3Nm95UjdrMg?oc=5",
-   "source_name": "УкрАгроКонсалт",
-   "headline": "India’s onion production to decline by 6% but export potential remains strong - УкрАгроКонсалт",
-   "hi": {
-    "title": "भारत में प्याज का उत्पादन 6% घटेगा, लेकिन निर्यात की संभावना मजबूत है",
-    "what": "भारत में प्याज का उत्पादन 6% घटेगा। निर्यात की संभावना मजबूत है",
-    "why": "ख़बर में कारण नहीं बताया गया",
-    "effect": "प्याज का भाव बढ़ सकता है क्योंकि देश में प्याज की कमी होगी"
-   },
-   "mr": {
-    "title": "भारतात प्याज उत्पादन ६% घटेल, पण निर्यातीची शक्यता मजबूत आहे",
-    "what": "भारतात प्याज उत्पादन ६% घटेल. निर्यातीची शक्यता मजबूत आहे",
-    "why": "बातमीत कारण नाही",
-    "effect": "प्याजची किंमत वाढू शकते कारण देशात प्याजची कमी होईल"
-   },
-   "auto": true,
-   "addedAt": "2026-11-21T08:47:39.301Z"
-  },
-  {
-   "id": "a-0abac81fd4d2",
-   "date": "2026-11-18",
-   "crops": [
-    "onion"
-   ],
-   "type": "intl",
-   "dir": "neg",
-   "when": "medium",
-   "conf": "medium",
-   "priority": "normal",
-   "qty": "fourfold",
-   "official": false,
-   "source": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQVW5SNzk2Tmx1WEZJSGRvZzV6NGkwTWlBOUZGWFJnejZwT3VTdXo5TU1tRlg5WFkwTzZQSzdHWTYzRnZDbnJENUZoWkxNb3BDeS02YUdUWVRkMVU4dE0zNlptSTNjc0lycV9CYmZBVW9aTFh0RFM5cUk2UWVUMnQxVnZXOUg0UVVLUXZGaFVR?oc=5",
-   "source_name": "UA.NEWS",
-   "headline": "Ukraine has increased its onion exports to the EU more than fourfold - UA.NEWS",
-   "hi": {
-    "title": "यूक्रेन ने यूरोपीय संघ में अपने प्याज निर्यात में चार गुना से अधिक वृद्धि की",
-    "what": "यूक्रेन ने यूरोपीय संघ में अपने प्याज निर्यात में चार गुना से अधिक वृद्धि की है।",
-    "why": "ख़बर में कारण नहीं बताया गया",
-    "effect": "भारतीय प्याज किसानों के लिए प्याज की कीमतें गिर सकती हैं क्योंकि यूरोपीय संघ में प्याज की आपूर्ति बढ़ रही है।"
-   },
-   "mr": {
-    "title": "युक्रेनने युरोपीय संघात प्याज निर्यात चारपटीने वाढवले",
-    "what": "युक्रेनने युरोपीय संघात प्याज निर्यात चारपटीने वाढवले आहे.",
-    "why": "बातमीत कारण नाही सांगितले",
-    "effect": "युरोपीय संघात प्याजाचा पुरवठा वाढत असल्याने भारतीय प्याज शेतकऱ्यांसाठी प्याजाच्या किमती कमी होऊ शकतात."
-   },
-   "auto": true,
-   "addedAt": "2026-11-21T11:24:54.727Z"
-  },
-  {
-   "id": "a-7f610566d948",
-   "date": "2026-11-18",
-   "crops": [
-    "maize"
-   ],
-   "type": "intl",
-   "dir": "neg",
-   "when": "medium",
-   "conf": "medium",
-   "priority": "normal",
-   "qty": null,
-   "official": false,
-   "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQU2pxUk9RTzNScUhoWXlNd2U5bm13VTctSmlaWjFVOVluVWlfUTVvOGJseG9ORkhmR3dGVjk3czQtUWRaeVU2bXhPa1J5N2xxSGMxYl9ZOHNCazJoekdqbUNaRmlIMDA4TEZIQjRQVUhmRnVsZHlmN0VTMEhaLWNpZEVHZ0c2UzVycjJaV0VWM2Q4c3NHcmVNYUNIS1V0Rk9BWnhJc1NIbVRWVElPejFTZk13d296Zw?oc=5",
-   "source_name": "AgroLatam",
-   "headline": "Brazil's Corn Boom Faces a New Challenge, Opening Opportunities for U.S. Exporters - AgroLatam",
-   "hi": {
-    "title": "ब्राजील के मक्का उत्पादन में नई चुनौती",
-    "what": "ब्राजील में मक्का उत्पादन में नई चुनौती आई है, जिससे अमेरिकी निर्यातकों के लिए अवसर खुल गए हैं।",
-    "why": "ख़बर में कारण नहीं बताया गया",
-    "effect": "भारतीय किसानों के लिए मक्का का भाव गिर सकता है, क्योंकि दुनिया में मक्का की अधिक आपूर्ति होगी"
-   },
-   "mr": {
-    "title": "ब्राझीलच्या मक्याच्या उत्पादनाला नवीन आव्हान",
-    "what": "ब्राझीलमध्ये मक्याच्या उत्पादनाला नवीन आव्हान आले आहे, ज्यामुळे अमेरिकन निर्यातदारांसाठी अवसर निर्माण झाले आहेत.",
-    "why": "बातमीमध्ये कारण नाही",
-    "effect": "भारतीय शेतकऱ्यांसाठी मक्याची किंमत कमी होऊ शकते, कारण जगात मक्याची अधिक पुरवठा होईल"
-   },
-   "auto": true,
-   "addedAt": "2026-11-21T11:20:16.457Z"
   }
  ],
  "seen": [
@@ -4856,8 +4857,16 @@
   "a-a7c5216d1305",
   "a-f69e9443c63c",
   "a-3e4ef11f358c",
-  "a-a6f8d1c9ebe3"
+  "a-a6f8d1c9ebe3",
+  "a-150d63142c97",
+  "a-c644624933b2",
+  "a-b885fd554b74",
+  "a-655e91e0501a",
+  "a-78ab5cc93d20",
+  "a-ca8518db0ed7",
+  "a-4e01ca4a7fe4",
+  "a-411161d27692"
  ],
- "updated": "2026-11-26T13:47:09.180Z",
+ "updated": "2026-11-26T19:28:51.825Z",
  "_about": "AI se apne aap bani cards. official=true sirf sarkari website wali khabar. Baaki ki sarkari pushti baaki."
 }
