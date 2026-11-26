@@ -1,6 +1,193 @@
 {
  "items": [
   {
+   "id": "a-a35f0f4edfed",
+   "date": "2026-11-25",
+   "crops": [
+    "maize",
+    "other"
+   ],
+   "type": "policy",
+   "dir": "pos",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMijAJBVV95cUxQbFpseWlPY2F4ejF4VUN0cktPNmlBV1J0SXVBMGNRYVF6eUVkSVo2d2txNkV4eU53NFRhUmdEN095dUJNZUtqSEVmOHl1QXdacVJmY3RhbjRtZFJ4M2dZLWRHcU14YzZqc214d1lVTzdJNi1tb1ZzV19WeDhuWml0TDhFMTljOEFPTUg1cjRhVld1LUQzLUs4YmdEQlJvUlpwNDR5RkFsUmYxNlpYSUhEQUFqSjhmTzVyMnJ3UGVYckM2Vmp6cUNRTWdhMXlDX1hFM3R3T0YzdmVaY3VhbUNQVXE0Z3VPdnY0dlE3TkYzMmMzYkItR1JiS051M3h4RHhWbk5MWFoxSEU3WGZ00gGGAkFVX3lxTE1HWXlSVlpsTG1fN2szX2dBYTJpUm4zNXhKaXBKZ0dTYm1ocE1VZnFPazJDc1RlNVJPX2VFMXhmLXg2QW1UNU9zUnZ6aDNxQzNtZjIwa1R5RzlEZll3NHExNXFYX0hGbzNzd2xGaW5XdFZMcXZSTksyUVNQa3oyaEZpZnpsdlRUUWpodW4zVjNpLVJ1ZTBWR1dnVC0yM25zX2RHalRRZHd4S1RVSEhXSHItQ2dhb0VFZjU0YXNpX1k2RnV1bjJnTzVtcGpobk1lbjJ2ZHNIXzQ5a3A0LTMwUG9BV1RxRVhhQThxTWVUNHZrdlVBQUJ6N3hvS1BsR05kdG13bWFQS2c?oc=5",
+   "source_name": "The Economic Times",
+   "headline": "Poultry body seeks stock limits on maize, soyabean; warns of Rs 40-50/kg rise in chicken price - The Economic Times",
+   "hi": {
+    "title": "पोल्ट्री उद्योग संगठन ने मक्का और सोयाबीन पर स्टॉक सीमा लगाने की मांग की",
+    "what": "पोल्ट्री उद्योग संगठन ने मक्का और सोयाबीन पर स्टॉक सीमा लगाने की मांग की है। उन्होंने चेतावनी दी है कि अगर ऐसा नहीं किया गया तो चिकन की कीमत 40-50 रुपये प्रति किलोग्राम तक बढ़ सकती है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "मक्का और सोयाबीन की कीमतें बढ़ने से चिकन की कीमतें भी बढ़ सकती हैं क्योंकि मक्का और सोयाबीन चिकन के उत्पादन में उपयोग होते हैं।"
+   },
+   "mr": {
+    "title": "पोल्ट्री संस्था मका आणि सोयाबीनवर साठा मर्यादा घालण्याची मागणी करते",
+    "what": "पोल्ट्री संस्थेने मका आणि सोयाबीनवर साठा मर्यादा घालण्याची मागणी केली आहे। त्यांनी इशारा दिला आहे की असे न केल्यास कोंबडीची किंमत ४०-५० रुपये प्रति किलोग्रामपर्यंत वाढू शकते।",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "मका आणि सोयाबीनच्या किमती वाढल्याने कोंबडीच्या किमतीही वाढू शकतात कारण मका आणि सोयाबीन कोंबडी उत्पादनात वापरले जातात"
+   },
+   "auto": true,
+   "addedAt": "2026-11-26T01:47:40.129Z"
+  },
+  {
+   "id": "a-e7ca03e937a0",
+   "date": "2026-11-25",
+   "crops": [
+    "sugar"
+   ],
+   "type": "import",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "high",
+   "qty": "10 lakh tonnes",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQU0YzZ0V5emEza2tzWGZTNHJVdGZpZ1BqY1UxaTlPYUFNR281SHFNZ0VKaVlRU3FNdDRyOXB0cU1ybXlvZDMwYzk3MmhhT05SMDBpWHVaaURuLWdzcDRlUWlsQ1lVZnZWaTVlWUxnQjRvblloSF9uRTB1SWs1ejlMMkRXYmRrUHFLUnVlZEc1MGpTbEYzcUpKaElGYTQyc1AyUWNSMUVtaEs2YmJscWg2bEgtR043TkJkSXFaMjVtVFJyeUVhVjV4blFjZXU?oc=5",
+   "source_name": "Big News Network.com",
+   "headline": "Centre extends duty-free import window for 10 lakh tonnes of raw sugar till March 2027 - Big News Network.com",
+   "hi": {
+    "title": "केंद्र सरकार ने 10 लाख टन कच्ची चीनी के लिए ड्यूटी-फ्री आयात की समय सीमा मार्च 2027 तक बढ़ा दी",
+    "what": "केंद्र सरकार ने 10 लाख टन कच्ची चीनी के लिए ड्यूटी-फ्री आयात की समय सीमा मार्च 2027 तक बढ़ा दी है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "इसका मतलब है कि देश में चीनी की अधिक आपूर्ति होगी, जिससे चीनी के दाम गिर सकते हैं।"
+   },
+   "mr": {
+    "title": "केंद्र सरकारने १० लाख टन कच्च्या साखरेच्या ड्यूटी-फ्री आयातची मुदत मार्च २०२७ पर्यंत वाढवली",
+    "what": "केंद्र सरकारने १० लाख टन कच्च्या साखरेच्या ड्यूटी-फ्री आयातची मुदत मार्च २०२७ पर्यंत वाढवली आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "याचा अर्थ असा की देशात साखरेची अधिक पुरवठा होईल, ज्यामुळे साखरेच्या भावात घट होऊ शकते."
+   },
+   "auto": true,
+   "addedAt": "2026-11-26T01:47:27.457Z"
+  },
+  {
+   "id": "a-bb2e7f4950ea",
+   "date": "2026-11-25",
+   "crops": [
+    "sugar"
+   ],
+   "type": "import",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "high",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQNHU5LUlzOGdiRmxJdW0tNjJnRF96eG1wSkxBN1Y5UVVpd05ITlRkcWg5dTdZMmhGbUltX2xlbnVkWGxmaEl3UjBnTWVWNUlPcTJrYk92TjJMNEFXNS11XzMtYXpWNWhsWC1qeWoxU09IU1luZS1sUXIwS3l4TnlrbW42ZkFzMGdEVFFpZTVYOXRwU2JZOWNSbWx0VERaN0JaeEliLWNQTEVMVTRuLV9odmVDc0hzZWVMdTM3VmthWWw?oc=5",
+   "source_name": "ChiniMandi",
+   "headline": "DGFT gives duty-free raw sugar importers three more months, TRQ deadline pushed to March 31, 2027 - ChiniMandi",
+   "hi": {
+    "title": "डीजीएफटी ने कच्ची चीनी के आयातकों को तीन महीने का और समय दिया",
+    "what": "डीजीएफटी ने कच्ची चीनी के आयातकों को तीन महीने का और समय दिया है। टीआरक्यू की समय सीमा 31 मार्च, 2027 तक बढ़ा दी गई है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "कच्ची चीनी के आयातकों को तीन महीने का और समय मिलने से चीनी की कीमतें गिर सकती हैं क्योंकि देश में चीनी की उपलब्धता बढ़ जाएगी।"
+   },
+   "mr": {
+    "title": "डीजीएफटीने कच्च्या साखरेच्या आयातदारांना तीन महिने अधिक कालावधी दिली",
+    "what": "डीजीएफटीने कच्च्या साखरेच्या आयातदारांना तीन महिने अधिक कालावधी दिली आहे. टीआरक्यूची मुदत 31 मार्च, 2027 पर्यंत वाढविण्यात आली आहे.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "कच्च्या साखरेच्या आयातदारांना तीन महिने अधिक कालावधी मिळाल्याने साखरेच्या किमती कमी होऊ शकतात कारण देशात साखरेची उपलब्धता वाढेल।"
+   },
+   "auto": true,
+   "addedAt": "2026-11-26T01:47:17.318Z"
+  },
+  {
+   "id": "a-0711343fa32b",
+   "date": "2026-11-25",
+   "crops": [
+    "sugar"
+   ],
+   "type": "policy",
+   "dir": "neg",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOMzI3Mk1XaE9lNUJvbVR0eWt0M2JnQnFJVUFaanVDNzRGZkJmaE1ualRPSmlWR0VlUVpRTGs0TDl4ZkIxN3h4dU8tb2ZKdU1iUHdyWDhXSWo3WjN2cDhodUVJUmZZLXl6c1pqU1h3UHY0ZGRJVW9hZjNadzNfSUcxcXpjRjBOM045OUpKSmljR09xZXFlUndBVlQxYkI3dEhVajZTYjZKYWJEWG5sRFpkNjhaTENLSlBZZXRZeV8xYkhkdjN5TlE?oc=5",
+   "source_name": "ChiniMandi",
+   "headline": "DGFT extends deadline for conversion and domestic sale of imported raw sugar till September 30, 2027 - ChiniMandi",
+   "hi": {
+    "title": "DGFT ने आयातित कच्ची चीनी के रूपांतरण और घरेलू बिक्री की समय सीमा 30 सितंबर, 2027 तक बढ़ा दी",
+    "what": "DGFT ने आयातित कच्ची चीनी के रूपांतरण और घरेलू बिक्री की समय सीमा 30 सितंबर, 2027 तक बढ़ा दी है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "इसका मतलब है कि आयातित चीनी की उपलब्धता बढ़ेगी, जिससे घरेलू चीनी के दाम पर दबाव पड़ सकता है और किसानों को कम दाम मिल सकता है।"
+   },
+   "mr": {
+    "title": "DGFT ने आयातित कच्ची चीनी के रूपांतरण व देशांतर्गत विक्री करण्याची मुदत ३० सप्टेंबर, २०२७ पर्यंत वाढवली",
+    "what": "DGFT ने आयातित कच्ची चीनी के रूपांतरण व देशांतर्गत विक्री करण्याची मुदत ३० सप्टेंबर, २०२७ पर्यंत वाढवली आहे.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "याचा अर्थ आयातित चीनी उपलब्धता वाढेल, ज्यामुळे देशांतर्गत चीनी दरांवर दबाव येईल आणि शेतकऱ्यांना कमी दर मिळू शकतो."
+   },
+   "auto": true,
+   "addedAt": "2026-11-26T01:47:05.538Z"
+  },
+  {
+   "id": "a-bd1d6631485c",
+   "date": "2026-11-25",
+   "crops": [
+    "sugar"
+   ],
+   "type": "import",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "high",
+   "qty": "10 lakh tonnes",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPWHFjNkI2X0VOejN1NVZiYlV2MkhKelBfNEY3VnVnczAxamc5ZjdhN2RrZDBfaDg2bXAxWUhweV9XUHRwNWMzdE1FUWRRNnJrb29zZ1JSeF9xWC01VFNGNjdDTnF3Wll0d2ZWdmZadDFNc0tJVTZIMGVLNDN2UTZmVUxpUVFNZWVaelVFT2pGYTd2bDhJM2g5UGNTeEF6ZlRDc3JGS25JMW1wWEQ2V2ZMZWdNcnJGSXNsTjVyY2x3MVZNTWc5QjQxcy1hNF9rdTRoOFZIVlBn0gHWAUFVX3lxTE9YcWM2QjZfRU56M3U1VmJiVXYySEp6UF80RjdWdWdzMDFqZzlmN2E3ZGtkMF9oODZtcDFZSHB5X1dQdHA1YzN0TUVRZFE2cmtvb3NnUlJ4X3FYLTVUU0Y2N0NOcXdaWXR3ZlZ2Zlp0MU1zS0lVNkgwZUs0M3ZRNmZVTGlRUU1lZVp6VUVPakZhN3ZsOEkzaDlQY1N4QXpmVENzckZLbkkxbXBYRDZXZkxlZ01yckZJc2xONXJjbHcxVk1NZzlCNDFzLWE0X2t1NGg4VkhWUGc?oc=5",
+   "source_name": "The Hindu",
+   "headline": "Duty-free raw sugar imports up to 10 lakh tonnes allowed till March 2027 - The Hindu",
+   "hi": {
+    "title": "ड्यूटी-मुक्त कच्ची चीनी के आयात की अनुमति मार्च 2027 तक 10 लाख टन तक",
+    "what": "सरकार ने मार्च 2027 तक 10 लाख टन कच्ची चीनी के ड्यूटी-मुक्त आयात की अनुमति दी है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "इसका चीनी किसानों के लिए नकारात्मक प्रभाव पड़ेगा क्योंकि आयात बढ़ने से घरेलू बाजार में चीनी की कीमतें गिर सकती हैं।"
+   },
+   "mr": {
+    "title": "मार्च 2027 पर्यंत 10 लाख टन साखर आयात करण्यास परवानगी",
+    "what": "मार्च 2027 पर्यंत 10 लाख टन कच्ची साखर आयात करण्यास परवानगी देण्यात आली आहे.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "यामुळे साखर उत्पादक शेतकऱ्यांवर नकारात्मक परिणाम होऊ शकतो कारण आयात वाढल्याने देशांतर्गत बाजारात साखरच्या किमती कमी होऊ शकतात."
+   },
+   "auto": true,
+   "addedAt": "2026-11-26T01:46:51.582Z"
+  },
+  {
+   "id": "a-5b855fddab67",
+   "date": "2026-11-25",
+   "crops": [
+    "soybean"
+   ],
+   "type": "intl",
+   "dir": "neg",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPUThKUkZRQzV0MEVKV1E5SUNrVWt0aFRvMjdXMFQ5R0FlTXF0MzBMek5TQ0trT0RZNjV0TGVWb1dxeUhGMDhtOTZiMTJCQkt6N2l6dlNxQVpWSVdxR25ZdHJBWmJMbXBsQWpBbThrUW9ZalR0WThZNGcwMVRKZXkyYlV0T3BKek1oa3Q0VzdEZVlOZndkNmRWaUZXM0c3WWs?oc=5",
+   "source_name": "Czapp",
+   "headline": "Slowing Chinese Soybean Demand Growth Challenges Exporters - Czapp",
+   "hi": {
+    "title": "चीन में सोयाबीन की मांग में कमी से निर्यातकों को चुनौती",
+    "what": "चीन में सोयाबीन की मांग की वृद्धि दर में कमी आ रही है, जिससे निर्यातकों को चुनौती का सामना करना पड़ रहा है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "भारतीय सोयाबीन किसानों के लिए सोयाबीन का भाव गिर सकता है, क्योंकि दुनिया में सोयाबीन की मांग में कमी से भाव पर दबाव पड़ता है।"
+   },
+   "mr": {
+    "title": "चीनमध्ये सोयाबीनची मागणी कमी होण्याने निर्यातदारांना आव्हान",
+    "what": "चीनमध्ये सोयाबीनची मागणी वाढत्या दरात कमी होत आहे, ज्यामुळे निर्यातदारांना आव्हान सामोरे जावे लागत आहे.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "भारतीय सोयाबीन शेतकऱ्यांसाठी सोयाबीनची किंमत कमी होऊ शकते, कारण जगात सोयाबीनची मागणी कमी होण्याने किंमतीवर दाब पडतो."
+   },
+   "auto": true,
+   "addedAt": "2026-11-26T01:46:18.057Z"
+  },
+  {
    "id": "a-85996808f4a4",
    "date": "2026-11-25",
    "crops": [
@@ -528,6 +715,37 @@
    },
    "auto": true,
    "addedAt": "2026-11-25T07:51:21.137Z"
+  },
+  {
+   "id": "a-c9c0ce86f969",
+   "date": "2026-11-24",
+   "crops": [
+    "rice"
+   ],
+   "type": "export",
+   "dir": "pos",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "$360 per tonne",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOUk1id2k2TU9KcHBIeHZyVlVaaXdJcTJMcno5TVNhdFB3RXlncFdrMnFfbXE4aTN2NWItNHpfOFlFOXladUwtV0pSay00ejRNN0dwVVNhWVphZDJtTGlPak5zZDNmQWp3alpWTUd3ZHZLVnJBS0tnY1BremIxb3QtcGRZRkJSQlA1aUtsbktDM01BZV9SZ1I1Ym84TUNQS0ZJMFpXUUpObDEwTlVJSDZaeDlGY0trOHBad2NXYnljLTBmdy1hU3hGal93dFd2M3c?oc=5",
+   "source_name": "AgroSpectrum India",
+   "headline": "India may reimpose broken rice export restrictions as prices cross $360 per tonne: IREF - AgroSpectrum India",
+   "hi": {
+    "title": "भारत तोड़े हुए चावल के निर्यात पर प्रतिबंध फिर से लगा सकता है",
+    "what": "भारत तोड़े हुए चावल के निर्यात पर प्रतिबंध फिर से लगा सकता है क्योंकि इसकी कीमतें $360 प्रति टन से अधिक हो गई हैं",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "भारत में चावल की कीमतें बढ़ सकती हैं क्योंकि निर्यात पर प्रतिबंध से घरेलू बाजार में चावल की उपलब्धता बढ़ जाएगी"
+   },
+   "mr": {
+    "title": "भारत तुटलेल्या तांदूळाच्या निर्यातवर प्रतिबंध परत आणू शकतो",
+    "what": "भारत तुटलेल्या तांदूळाच्या निर्यातवर प्रतिबंध परत आणू शकतो कारण त्याच्या किमती $360 प्रति टन पेक्षा जास्त झाल्या आहेत",
+    "why": "बातमीत कारण नाही सांगितले",
+    "effect": "भारतात तांदूळाच्या किमती वाढू शकतात कारण निर्यातवर प्रतिबंधामुळे देशांतर्गत बाजारात तांदूळाची उपलब्धता वाढेल"
+   },
+   "auto": true,
+   "addedAt": "2026-11-26T01:46:28.483Z"
   },
   {
    "id": "a-e620acede71b",
@@ -1089,6 +1307,37 @@
    },
    "auto": true,
    "addedAt": "2026-11-24T07:47:24.293Z"
+  },
+  {
+   "id": "a-cc63b2ea72e0",
+   "date": "2026-11-23",
+   "crops": [
+    "rice"
+   ],
+   "type": "policy",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNUklUeVpOR2dhT0NIaElOYmttMVhWVzBGYjlXR0xWSG1FWHB0dWNUMnBvUEdrVGM1YlJxeGdaaC1ZR203eUdTZ2xCX0JBUUxSTGc5RzByUmFFaE9IOFdtQThNMFhHMFlMb1hrRlJZY1NMTjg4UGU2Q0ZzTmRzTnJNR3pSdTBlUjhoVTdqcnJUdktEdXJsUWFCZjFqdWN3MjBiblBSRFRCTQ?oc=5",
+   "source_name": "BigMint",
+   "headline": "India weighs export duty and MEP on non-basmati white rice - BigMint",
+   "hi": {
+    "title": "भारत नॉन-बासमती सफेद चावल पर निर्यात शुल्क और एमईपी पर विचार कर रहा है",
+    "what": "भारत नॉन-बासमती सफेद चावल पर निर्यात शुल्क और एमईपी लगाने पर विचार कर रहा है। यह फैसला अभी तक नहीं हुआ है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "अगर यह फैसला होता है, तो निर्यात पर शुल्क और एमईपी लगने से चावल का निर्यात कम हो सकता है, जिससे देश में चावल की अधिकता हो सकती है और इसका दाम गिर सकता है।"
+   },
+   "mr": {
+    "title": "भारत नॉन-बासमती पांढरे तांदूळावर निर्यात कर आणि एमईपी वर विचार करीत आहे",
+    "what": "भारत नॉन-बासमती पांढरे तांदूळावर निर्यात कर आणि एमईपी लागू करण्याबद्दल विचार करीत आहे. हा निर्णय अद्याप घेतलेला नाही.",
+    "why": "बातमीत कारण नाही",
+    "effect": "जर हा निर्णय होतो, तर निर्यातीवर कर आणि एमईपी लागू होण्यामुळे तांदूळाचा निर्यात कमी होऊ शकतो, ज्यामुळे देशात तांदूळाची अधिकता होऊ शकते आणि त्याची किंमत कमी होऊ शकते."
+   },
+   "auto": true,
+   "addedAt": "2026-11-26T01:46:39.818Z"
   },
   {
    "id": "a-3e7a9610d1eb",
@@ -4395,8 +4644,16 @@
   "a-d76dc5f08825",
   "a-e620acede71b",
   "a-84758f251a06",
-  "a-85996808f4a4"
+  "a-85996808f4a4",
+  "a-5b855fddab67",
+  "a-c9c0ce86f969",
+  "a-cc63b2ea72e0",
+  "a-bd1d6631485c",
+  "a-0711343fa32b",
+  "a-bb2e7f4950ea",
+  "a-e7ca03e937a0",
+  "a-a35f0f4edfed"
  ],
- "updated": "2026-11-25T19:23:19.271Z",
+ "updated": "2026-11-26T01:47:44.137Z",
  "_about": "AI se apne aap bani cards. official=true sirf sarkari website wali khabar. Baaki ki sarkari pushti baaki."
 }
