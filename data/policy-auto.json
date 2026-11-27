@@ -1,6 +1,192 @@
 {
  "items": [
   {
+   "id": "a-aa5be79263d8",
+   "date": "2026-11-27",
+   "crops": [
+    "wheat"
+   ],
+   "type": "import",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "high",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQS2djTzhLVHphQTN4YkpaNG83VTQtQ0hONU12dFdsLTRGRXREYW1uQlRRRWU0TGpLUXlUdE1HcEtlZkp3TUtkbWRubVVldzJkTzA2VTZHSFhDT2JUeWVFT3ZEbXdXUHlOM2NZdldsbFVqSmhCaW5lMFZ4MkpJaEVYRVJ2eEQ5V1RlTzVUSjZn?oc=5",
+   "source_name": "The Financial Express",
+   "headline": "Wheat imports surge as domestic output dives - The Financial Express",
+   "hi": {
+    "title": "गेहूं के आयात में वृद्धि क्योंकि घरेलू उत्पादन गिरता है",
+    "what": "भारत में गेहूं का आयात बढ़ गया है क्योंकि घरेलू उत्पादन कम हो गया है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "गेहूं के दाम गिर सकते हैं क्योंकि देश में गेहूं की अधिक आपूर्ति हो रही है।"
+   },
+   "mr": {
+    "title": "गव्हाचा आयात वाढला कारण देशांतर्गत उत्पादन खाली गेले",
+    "what": "भारतात गव्हाचा आयात वाढला आहे कारण देशांतर्गत उत्पादन कमी झाले आहे.",
+    "why": "बातमीत कारण नाही सांगितले",
+    "effect": "गव्हाच्या भावात घट होऊ शकते कारण देशात गव्हाची अधिक पुरवठा होत आहे."
+   },
+   "auto": true,
+   "addedAt": "2026-11-27T19:25:13.835Z"
+  },
+  {
+   "id": "a-d57b95d693fd",
+   "date": "2026-11-27",
+   "crops": [
+    "wheat"
+   ],
+   "type": "import",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "high",
+   "qty": "500,000 tonnes",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNZVJBMFlkblR5ZUlQaEhHY0lJVF9rdEk3dEdXZzVaU0ZVaGVmUjRvWUtLazFZbEJQNGFjTnZ1R3R3bGN1d2RudFR5VUNkYm5oSldheVJZb3kwRmxPMDhDWWUxak5tUmY0SzR4NEZTTG01bU4yMk0yeVh3N29wVWo2RjJjSkJQM0YySENISnMtYVd3d2VWdWFXUVV3OERfeFVRZThQWg?oc=5",
+   "source_name": "Investify",
+   "headline": "Govt considers importing additional 500,000 tonnes of wheat - Investify",
+   "hi": {
+    "title": "सरकार 5 लाख टन गेहूं के अतिरिक्त आयात पर विचार कर रही है",
+    "what": "सरकार गेहूं की अतिरिक्त 5 लाख टन आयात पर विचार कर रही है। यह आयात गेहूं की घरेलू कमी को पूरा करने के लिए किया जा सकता है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "गेहूं की अतिरिक्त आयात से घरेलू बाजार में गेहूं की उपलब्धता बढ़ेगी, जिससे किसानों को गेहूं का दाम गिर सकता है।"
+   },
+   "mr": {
+    "title": "शासन ५ लाख टन गव्हाच्या अतिरिक्त आयातवर विचार करू इच्छिते आहे",
+    "what": "शासन गव्हाच्या अतिरिक्त ५ लाख टन आयातवर विचार करू इच्छिते आहे. ही आयात गव्हाच्या देशांतर्गत कमतरता पूर्ण करण्यासाठी केली जाऊ शकते.",
+    "why": "बातमीत कारण नाही सांगितले",
+    "effect": "गव्हाच्या अतिरिक्त आयातमुळे देशांतर्गत बाजारात गव्हाची उपलब्धता वाढेल, ज्यामुळे शेतकऱ्यांना गव्हाची किंमत कमी होऊ शकते."
+   },
+   "auto": true,
+   "addedAt": "2026-11-27T19:25:04.711Z"
+  },
+  {
+   "id": "a-b580c42efa1d",
+   "date": "2026-11-27",
+   "crops": [
+    "wheat"
+   ],
+   "type": "policy",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "high",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNWWVmODdHNFJvMVlDbVQ5MzZxWVBIa0ZZWWVTeUIwYU1sRkR1cmhsOHhPVnlJUTEwa3loVm9xLWEtWEJhM1k2X3puSG91ZUNtSWEybGlVYTEySFdYaDFRNWpSeUMwT3p6YmZOZEs2X3g1MkN5M2ZKUW0yQ3FJcDdXaVhndTJqWVFOeVVPeTc1ZkNlSjhBc21DVw?oc=5",
+   "source_name": "Dawn",
+   "headline": "Govt increases wheat import ceiling to curb price increases - Dawn",
+   "hi": {
+    "title": "सरकार ने गेहूं की कीमतों में वृद्धि को रोकने के लिए आयात सीमा बढ़ाई",
+    "what": "सरकार ने गेहूं की कीमतों में वृद्धि को रोकने के लिए आयात सीमा बढ़ा दी है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "गेहूं की कीमतें गिर सकती हैं क्योंकि देश में गेहूं की अधिक आपूर्ति होगी"
+   },
+   "mr": {
+    "title": "शासनाने गव्हाच्या आयातीची मर्यादा वाढवली",
+    "what": "शासनाने गव्हाच्या किमती वाढ रोकण्यासाठी आयातीची मर्यादा वाढवली आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "गव्हाच्या किमती कमी होऊ शकतात कारण देशात गव्हाची अधिक पुरवठा होईल"
+   },
+   "auto": true,
+   "addedAt": "2026-11-27T19:24:53.613Z"
+  },
+  {
+   "id": "a-19bd5a255eb4",
+   "date": "2026-11-27",
+   "crops": [
+    "cotton"
+   ],
+   "type": "policy",
+   "dir": "pos",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOTjJScEF2QmJlRkZCaTU5SC1sdFV6VDlfTHlMMnQyU2JMUmpNSTBXU1dZQWRwaV8zMVRkanpEazZZTXVsTWlfWTlWdDVNbU5TcDE2TVJPV2JLSmtVVlJuQ0hEbTJUNVRRb3BjeWxGM0pOcTJ4dk1GOWJlOUJaV1pXVmNuNVFJN21XeTl6ZHAwYUJuX3VTR21sOXY1b2JrNjNkYS14NklPRm1PdHFqVlFiZVFmTUtlZnRm0gG_AUFVX3lxTE91TWJ5RkREbzhYMDh5RkZFb2g5VUtTcEZEYWJYNmkwN0xaa2RNS3FGVWxuY0lOeWlYU2Z1SG5tZlRPbEdFMXU2N3BGTnp2WVBEUlBLWnZSSmpBMmdvYUtmWEZFN3Z5ZVpndUlrZnl0TGMwVHI2bzZTb25KbFNwdGdHaVR3UGRhUFJMNUdXWW9DNmdERjdWaFlJdnJCdWtyM3VmcU94YjBRUnFaOE1WVVZmaEpKdXdlN0NNU3NFZFo0?oc=5",
+   "source_name": "The Hindu",
+   "headline": "Cotton output shortfall: SIMA seeks five-year import duty waiver - The Hindu",
+   "hi": {
+    "title": "कपास उत्पादन में कमी: SIMA ने पांच साल के आयात शुल्क माफी की मांग की",
+    "what": "कपास का उत्पादन कम होने के कारण कपास उद्योग संघ (SIMA) ने सरकार से पांच साल के लिए आयात शुल्क माफी की मांग की है।",
+    "why": "कपास का उत्पादन कम होने से घरेलू बाजार में कपास की कमी हो सकती है।",
+    "effect": "अगर आयात शुल्क माफी दी जाती है, तो कपास की कीमतें बढ़ सकती हैं क्योंकि आयात आसान हो जाएगी और घरेलू उत्पादकों को अपनी कपास बेचने का मौका मिलेगा।"
+   },
+   "mr": {
+    "title": "कापूस उत्पादनात कमी: एसआईएमएने पाच वर्षांची आयात कर माफी मागितली",
+    "what": "कापूस उत्पादनात कमी झाल्यामुळे कापूस उद्योग संघटनेने (एसआईएमए) सरकारकडे पाच वर्षांची आयात कर माफी मागितली आहे.",
+    "why": "कापूस उत्पादनात कमी झाल्यामुळे देशांतर्गत बाजारपेठेत कापूसची कमी होऊ शकते.",
+    "effect": "आयात कर माफी दिल्यास कापूसच्या किंमती वाढू शकतात कारण आयात सोपी होईल आणि देशांतर्गत उत्पादकांना त्यांचा कापूस विकण्याची संधी मिळेल।"
+   },
+   "auto": true,
+   "addedAt": "2026-11-27T19:24:44.411Z"
+  },
+  {
+   "id": "a-da18b456da0c",
+   "date": "2026-11-27",
+   "crops": [
+    "soybean"
+   ],
+   "type": "intl",
+   "dir": "neg",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMingFBVV95cUxNNUV0a0p1dUJraTJnYkRKNWJnNzJaRDlqZlRWVmQ5aWkzaEhoSFJUUjVucnRMcENFR1ZlQjZBQnJWNUxmWFNYQlNYdjByclhyRmhGSF8zWHIwTkFjelBFYkIxNVJsZG90ak1VMUtyaURWNEFBYzVvb1BuSV8ya0drS2k4OUQ5MzhGc2NMbVdaSEE0Uk1qNk94aF9JRTVkUQ?oc=5",
+   "source_name": "IndexBox",
+   "headline": "US Tariffs on China Could Hit Soybean, Beef Trade: Platts - News and Statistics - IndexBox",
+   "hi": {
+    "title": "US पर चीन पर लगाए टैरिफ से सोयाबीन व्यापार पर असर",
+    "what": "अमेरिका ने चीन पर टैरिफ लगाए हैं, जिससे सोयाबीन व्यापार पर असर पड़ सकता है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "सोयाबीन का भाव गिर सकता है क्योंकि अमेरिका में चीन पर लगाए टैरिफ से सोयाबीन का निर्यात कम हो सकता है।"
+   },
+   "mr": {
+    "title": "यूएसने चीनवर टारिफ लादल्यामुळे सोयाबीन व्यापारावर परिणाम होण्याची शक्यता",
+    "what": "यूएसने चीनवर टारिफ लादले आहेत, ज्यामुळे सोयाबीन व्यापारावर परिणाम होण्याची शक्यता आहे.",
+    "why": "बातमीमध्ये कारण नमूद केलेले नाही",
+    "effect": "सोयाबीनची किंमत कमी होण्याची शक्यता आहे कारण यूएसने चीनवर लादलेल्या टारिफमुळे सोयाबीनचा निर्यात कमी होण्याची शक्यता आहे."
+   },
+   "auto": true,
+   "addedAt": "2026-11-27T19:24:32.395Z"
+  },
+  {
+   "id": "a-893bcb092b59",
+   "date": "2026-11-27",
+   "crops": [
+    "soybean"
+   ],
+   "type": "intl",
+   "dir": "neg",
+   "when": "long",
+   "conf": "medium",
+   "priority": "high",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOOE1UaG54T3dmRmJMaW83ZUgxODBMUzRCUjZONm5HYk1pVWxIM1BCNkZhRTcycmRqeUNYWXJJR0ctenhzNDZjRDk3aU1iZzZjUHBBN28zUExqZlN6UGxrWDV4XzhucWp4TEMzei1EaElEZk9fNnlUS25DRkZEMXAtdXJKTVFBYUVSc2RvZUxVMGJWZ2R1cllEZXZyTUpqSnZVYS1KRS1FMlotT3I1QTQ4ejJ6ODF3NzlTdzBGTjUxTVJOV0RKb0hwbnE5bUs?oc=5",
+   "source_name": "електронна зернова біржа України",
+   "headline": "China plans to drastically reduce soybean imports and change the structure of livestock farming and the feed market by 2030 - електронна зернова біржа України",
+   "hi": {
+    "title": "चीन 2030 तक सोयाबीन आयात में बड़ी कटौती करने की योजना बना रहा है",
+    "what": "चीन 2030 तक सोयाबीन आयात में बड़ी कटौती करने की योजना बना रहा है। यह फैसला पशुपालन और फीड बाजार की संरचना को बदलने के लिए किया जा रहा है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "चीन की सोयाबीन आयात में कमी से दुनिया भर में सोयाबीन की कीमतें कम हो सकती हैं, जिससे भारतीय किसानों को नुकसान हो सकता है।"
+   },
+   "mr": {
+    "title": "चीन 2030 पर्यंत सोयाबीन आयातात जोरदार कपात करण्याची योजना करत आहे",
+    "what": "चीन 2030 पर्यंत सोयाबीन आयातात जोरदार कपात करण्याची योजना करत आहे. हा निर्णय पashupalan आणि फीड बाजारपेठेची रचना बदलण्यासाठी घेतला जात आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "चीनच्या सोयाबीन आयातीत घटामुळे जगभरातील सोयाबीनच्या किमती कमी होऊ शकतात, ज्यामुळे भारतीय शेतकऱ्यांना नुकसान होऊ शकते."
+   },
+   "auto": true,
+   "addedAt": "2026-11-27T19:24:22.151Z"
+  },
+  {
    "id": "a-93888dcee557",
    "date": "2026-11-27",
    "crops": [
@@ -747,6 +933,37 @@
    },
    "auto": true,
    "addedAt": "2026-11-26T07:49:44.215Z"
+  },
+  {
+   "id": "a-253f5f0774ed",
+   "date": "2026-11-25",
+   "crops": [
+    "soybean"
+   ],
+   "type": "intl",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFAybEVQWEtsVGJTNGlHYlFzWC0wRUNNb0cwWGVzN1RHUmpFaVIzVjBJekV1cjJxVklzNUV6UzZnWmk4NW5CdVBYVGE1V0lnZGx6S2V2Yk9hR2U3VmRSS01v?oc=5",
+   "source_name": "Farm Progress",
+   "headline": "USDA Exports: China buys soybeans - Farm Progress",
+   "hi": {
+    "title": "USDA निर्यात: चीन ने सोयाबीन खरीदे",
+    "what": "चीन ने सोयाबीन खरीदे हैं। यह खबर अमेरिकी कृषि विभाग (USDA) द्वारा दी गई है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "चीन द्वारा सोयाबीन की खरीद से दुनिया में सोयाबीन की कीमतें कम हो सकती हैं, जिससे भारतीय किसानों को नुकसान हो सकता है।"
+   },
+   "mr": {
+    "title": "यूएसडीए निर्यात: चीनने सोयाबीन खरेदी केले",
+    "what": "चीनने सोयाबीन खरेदी केले आहेत. ही बात अमेरिकन कृषी विभाग (यूएसडीए) ने सांगितली आहे.",
+    "why": "बातमीमध्ये कारण नाही सांगितले",
+    "effect": "चीनने सोयाबीनची खरेदी केल्यामुळे जगभरातील सोयाबीनच्या किमती कमी होऊ शकतात, ज्यामुळे भारतीय शेतकऱ्यांना नुकसान होऊ शकते."
+   },
+   "auto": true,
+   "addedAt": "2026-11-27T19:24:11.476Z"
   },
   {
    "id": "a-e7b9b46e6a54",
@@ -4449,223 +4666,6 @@
    },
    "auto": true,
    "addedAt": "2026-11-21T09:02:14.969Z"
-  },
-  {
-   "id": "a-43ab9749d4f3",
-   "date": "2026-11-20",
-   "crops": [
-    "rice"
-   ],
-   "type": "intl",
-   "dir": "pos",
-   "when": "short",
-   "conf": "medium",
-   "priority": "high",
-   "qty": null,
-   "official": false,
-   "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOS3ZWSlBWTHpyR2tLZXRuc3dzYmlEaGtHUUdCU0UwSHluaHRfV3NvZUdkaWZVejF4TlN3S0FpQ1A2Y3ZCdE5YV0l2VWpnLVJ1SFRSZ1NoWW5UeE9xd0xQbUpFLVZ3R1Z5cVNBaDAtelp3UmpyT0pTTXc1cC1XcFNCWjZySDczbGdEMi0ybm9wTHV3ZFlDREZaaWxn?oc=5",
-   "source_name": "CMB News",
-   "headline": "Indian Rice Export Prices at 19-Month High on African Demand and Strong Rupee — CMB News - CMB News",
-   "hi": {
-    "title": "भारतीय चावल के निर्यात मूल्य 19 महीने के उच्चतम स्तर पर",
-    "what": "भारतीय चावल के निर्यात मूल्य 19 महीने के उच्चतम स्तर पर पहुंच गए हैं। इसका कारण अफ्रीकी मांग और मजबूत रुपया है।",
-    "why": "ख़बर में कारण नहीं बताया गया",
-    "effect": "चावल के किसानों को अच्छी कीमत मिलेगी क्योंकि निर्यात मूल्य बढ़ गया है"
-   },
-   "mr": {
-    "title": "भारतीय तांदूळ निर्यात किंमती १९ महिन्यांच्या उच्चतम स्तरावर",
-    "what": "भारतीय तांदूळ निर्यात किंमती १९ महिन्यांच्या उच्चतम स्तरावर पोहोचल्या आहेत. याचे कारण आफ्रिकेतील मागणी आणि मजबूत रुपया आहे.",
-    "why": "बातमीत कारण नाही",
-    "effect": "तांदूळ उत्पादक शेतकऱ्यांना चांगली किंमत मिळेल कारण निर्यात किंमती वाढल्या आहेत"
-   },
-   "auto": true,
-   "addedAt": "2026-11-21T09:01:59.709Z"
-  },
-  {
-   "id": "a-331291f57929",
-   "date": "2026-11-20",
-   "crops": [
-    "rice"
-   ],
-   "type": "export",
-   "dir": "pos",
-   "when": "short",
-   "conf": "medium",
-   "priority": "high",
-   "qty": null,
-   "official": false,
-   "source": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQS21SWmV5U2M0ZEkzd013NlhDRUhsMEl1c0dwbERScWRqNTcwYmhzMnAxa2ZKS0RmcTBiR0V5RFVGNk1iLXdjOVBORWxaaDlBTUtUbHdnVkNhWlNmcTk0VTBkbUdFS3h2NXFrckpvS2VfZ2dENUh3ZzN4U3lKVkVzek5ZczhkdlZsVmNHbkJFUmxfaThDc3JES2tJWDNNcGRMQlFBVklRX2N3MWxJdDVCMzhVUjAwdzIxSElXWnZ0Wlh5S04yM3pXRkpwUTl3SlRnWTdMdFA5NkNHbDk3QmxGMUo4N1RxR0xqWm1wMG83LW1sSzU4WFlz0gH-AUFVX3lxTFBnZ2QwUmppTjdRN3FuamFaOXBMd1lMWGF2Q3ZHVGJzTjZrMjZmR1Z1SFhQa09LLUNveVJ2ekMzbzZCeVRGUks0eGJuODJsei0xWTB3RnZ1dmRVVWpWSzVBZGF6YnlUSEF1aDBISzB3eF9mWjFyOGhaZ1ZnenVXaFdmRlpYQVdadWN6cC1hVzJueXEwLVVuT1pWUERhUnVQOHUwLVZBM2N0Xzk5U05IMkVXU254cHZuYzM1OVB0NkJ5ajVzQVdYLTdPa3lFVHUyd3k5RW5YM2JlMUdfbV9lVHJtQ29PNzJreXdvZnItUE9ESDVJM0dvQjRKcTlKOUFR?oc=5",
-   "source_name": "BusinessLine",
-   "headline": "Indian rice export prices hit 19-month high on rupee gains, African demand - BusinessLine",
-   "hi": {
-    "title": "भारतीय चावल निर्यात मूल्य 19 महीने के उच्चतम स्तर पर",
-    "what": "भारतीय चावल निर्यात मूल्य 19 महीने के उच्चतम स्तर पर पहुंच गया है। इसका कारण रुपये की वृद्धि और अफ्रीकी मांग है।",
-    "why": "रुपये की वृद्धि और अफ्रीकी मांग के कारण",
-    "effect": "चावल किसानों को अच्छी कीमत मिलेगी क्योंकि निर्यात मूल्य बढ़ गया है"
-   },
-   "mr": {
-    "title": "भारतीय चावल निर्यात किंमत १९ महिन्यांच्या उच्चतम स्तरावर",
-    "what": "भारतीय चावल निर्यात किंमत १९ महिन्यांच्या उच्चतम स्तरावर पोहोचली आहे. याचे कारण रुपयाची वाढ आणि आफ्रिकेतील मागणी आहे.",
-    "why": "रुपयाची वाढ आणि आफ्रिकेतील मागणी मुळे",
-    "effect": "चावल शेतकऱ्यांना चांगली किंमत मिळेल कारण निर्यात किंमत वाढली आहे"
-   },
-   "auto": true,
-   "addedAt": "2026-11-21T09:01:49.549Z"
-  },
-  {
-   "id": "a-a6b56cda3ffe",
-   "date": "2026-11-20",
-   "crops": [
-    "rice"
-   ],
-   "type": "export",
-   "dir": "pos",
-   "when": "short",
-   "conf": "medium",
-   "priority": "normal",
-   "qty": null,
-   "official": false,
-   "source": "https://news.google.com/rss/articles/CBMie0FVX3lxTE84YS1QWHRSV084U0FCakRva2o1Mzk4NUtIZWh1TmlNXzQtSjJ5TXdkQ19GOFhsREotaTltUU1kd1FQQ0NzcDI2QmVtTG5xbU9teVJpMnVLRDFveEJuTnp0Y1V5N0R4aTNRT1ZnR2JaWDM1Z1NManN3WmRjNA?oc=5",
-   "source_name": "Indian Rice Exporters Federation",
-   "headline": "Top Rice News: Export Prices Rise & Chennai Port Sets Record - Indian Rice Exporters Federation",
-   "hi": {
-    "title": "चावल की खबर: निर्यात मूल्य बढ़ा और चेन्नई बंदरगाह ने रिकॉर्ड बनाया",
-    "what": "चावल के निर्यात मूल्य में वृद्धि हुई है और चेन्नई बंदरगाह ने रिकॉर्ड बनाया है।",
-    "why": "ख़बर में कारण नहीं बताया गया",
-    "effect": "चावल के निर्यात मूल्य में वृद्धि से किसानों को फायदा होगा क्योंकि देश से चावल का निर्यात बढ़ रहा है।"
-   },
-   "mr": {
-    "title": "तांदूळाच्या बातम्या: निर्यात किंमत वाढली आणि चेन्नई बंदरगाहाने विक्रम प्रस्थापित केला",
-    "what": "तांदूळाच्या निर्यात किंमतीत वाढ झाली आहे आणि चेन्नई बंदरगाहाने विक्रम प्रस्थापित केला आहे.",
-    "why": "बातम्यात कारण नाही",
-    "effect": "तांदूळाच्या निर्यात किंमतीत वाढ झाल्याने शेतकऱ्यांना फायदा होईल कारण देशातून तांदूळाचा निर्यात वाढत आहे."
-   },
-   "auto": true,
-   "addedAt": "2026-11-21T09:01:30.165Z"
-  },
-  {
-   "id": "a-2db47c00a093",
-   "date": "2026-11-20",
-   "crops": [
-    "sugar"
-   ],
-   "type": "import",
-   "dir": "neg",
-   "when": "short",
-   "conf": "medium",
-   "priority": "high",
-   "qty": null,
-   "official": false,
-   "source": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQaFptT3ZhQ3VVb20zbUcxTks0LUMtTTRtRHYzclc4N1FEdWdUR1BvVXhja0VBdV9tUkJNYWdWTy1tS0R5blRGNm9LRWlUUXVMMGgtOHRoUnBYWUotYWxMeHc2VHpOcWxNSWVqTDRtQVotTmlnTXU4ZFpIaUxxc1B5b3hkeG8wc05pRjJiWno2RUNFekNYS2g5ZzNuOA?oc=5",
-   "source_name": "Food Business Middle East & Africa",
-   "headline": "India opens fresh applications for duty-free raw sugar imports - Food Business Middle East & Africa",
-   "hi": {
-    "title": "भारत ने शुल्क-मुक्त कच्ची चीनी आयात के लिए ताजा आवेदन खोले",
-    "what": "भारत ने शुल्क-मुक्त कच्ची चीनी आयात के लिए ताजा आवेदन खोले हैं। इससे देश में चीनी की आपूर्ति बढ़ सकती है।",
-    "why": "ख़बर में कारण नहीं बताया गया",
-    "effect": "इससे चीनी का भाव गिर सकता है क्योंकि देश में चीनी की आपूर्ति बढ़ जाएगी।"
-   },
-   "mr": {
-    "title": "भारताने शुल्कविहीन कच्ची साखर आयातासाठी नवीन अर्ज खोले",
-    "what": "भारताने शुल्कविहीन कच्ची साखर आयातासाठी नवीन अर्ज खोले आहेत. यामुळे देशात साखरेचा पुरवठा वाढू शकतो.",
-    "why": "बातमीत कारण नाही",
-    "effect": "यामुळे साखरेची किंमत कमी होऊ शकते कारण देशात साखरेचा पुरवठा वाढेल."
-   },
-   "auto": true,
-   "addedAt": "2026-11-21T08:53:35.240Z"
-  },
-  {
-   "id": "a-58dafc8138e8",
-   "date": "2026-11-20",
-   "crops": [
-    "sugar"
-   ],
-   "type": "import",
-   "dir": "neg",
-   "when": "short",
-   "conf": "medium",
-   "priority": "high",
-   "qty": "2.15 lakh tonnes",
-   "official": false,
-   "source": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNNU1wRm5zUFFQbzl4dVVfdG5ScmhUc2pKLUoxQTRCNWxtQURRNmswaFU1dmVvZnNKUEYwdjNzQXhTTGxES3M0aTNycy1TajhrWVMtbndUVGloUzJQb2NTV3hoNnNJLVZ1RWl1WjRpc3NIT0VmTGRxVXZFS2JJanBPb1RIeHoybHdOY0dqUW1LR3hfMTA0VnVqWnRmS3ZqanRDZ2NFVXB0MkRTeU4yYzZ4ZElIVWk1bW9feEppbWdVcWdZU010?oc=5",
-   "source_name": "India Shipping News",
-   "headline": "India invites fresh applications for duty-free import of 2.15 lakh tonnes of raw sugar - India Shipping News",
-   "hi": {
-    "title": "भारत ने 2.15 लाख टन कच्ची चीनी के शुल्क-मुक्त आयात के लिए ताजा आवेदन आमंत्रित किए",
-    "what": "भारत ने 2.15 लाख टन कच्ची चीनी के शुल्क-मुक्त आयात के लिए ताजा आवेदन आमंत्रित किए हैं।",
-    "why": "ख़बर में कारण नहीं बताया गया",
-    "effect": "इसके कारण देश में चीनी की अधिक आपूर्ति होगी, जिससे चीनी के दाम गिर सकते हैं।"
-   },
-   "mr": {
-    "title": "भारताने २.१५ लाख टन कच्च्या साखरेच्या शुल्कविरहित आयातीसाठी नवीन अर्ज मागवले आहेत",
-    "what": "भारताने २.१५ लाख टन कच्च्या साखरेच्या शुल्कविरहित आयातीसाठी नवीन अर्ज मागवले आहेत.",
-    "why": "बातमीत कारण नाही",
-    "effect": "यामुळे देशात साखरेचा पुरवठा वाढेल, ज्यामुळे साखरेच्या भावात घट होऊ शकते."
-   },
-   "auto": true,
-   "addedAt": "2026-11-21T08:53:13.879Z"
-  },
-  {
-   "id": "a-6be085c2408f",
-   "date": "2026-11-20",
-   "crops": [
-    "sugar"
-   ],
-   "type": "policy",
-   "dir": "neg",
-   "when": "short",
-   "conf": "medium",
-   "priority": "normal",
-   "qty": "2.15 Lakh MT",
-   "official": false,
-   "source": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZE9jbkl3d3g1Z1NXNUlqWmVrV0tnRkJteTN5ZEE3dWdfaURoc1BNMTZITDNfWGNlLVJMdXVYZDAwZk5jTnIzemtyZWZyX2hIeXR3dlVtTU1TdGFqalNNMXpHaGFGSlFoTDNXX01YZHc4dVIxdDVzZ2VyUnZCRElHRXV4cVVPS01KWC1FejNnSHZNMkxjZzRWajNfTmE1QTZEd1libnpBZUdLa0FINmJ0UkZ0bWFWeG9TcVo4?oc=5",
-   "source_name": "AgroSpectrum India",
-   "headline": "Sugar mills get fresh opportunity to access 2.15 Lakh MT import quota - AgroSpectrum India",
-   "hi": {
-    "title": "चीनी मिलों को 2.15 लाख मीट्रिक टन आयात कोटा तक पहुंचने का ताजा अवसर मिला",
-    "what": "चीनी मिलों को 2.15 लाख मीट्रिक टन आयात कोटा तक पहुंचने का अवसर मिला है। यह आयात कोटा ताजा है और चीनी मिलों को इसका लाभ उठाने का मौका मिला है।",
-    "why": "ख़बर में कारण नहीं बताया गया",
-    "effect": "चीनी की आयात बढ़ने से देश में चीनी की उपलब्धता बढ़ेगी और इसके दाम गिर सकते हैं।"
-   },
-   "mr": {
-    "title": "साखर कारखान्यांना २.१५ लाख मेट्रिक टन आयात कोटा गाठण्याची नवीन संधी मिळाली",
-    "what": "साखर कारखान्यांना २.१५ लाख मेट्रिक टन आयात कोटा गाठण्याची नवीन संधी मिळाली आहे. ही आयात कोटा नवीन आहे आणि साखर कारखान्यांना त्याचा लाभ घेण्याची संधी मिळाली आहे.",
-    "why": "बातमीत कारण नाही",
-    "effect": "साखरच्या आयातीत वाढ होण्याने देशात साखरची उपलब्धता वाढेल आणि त्याच्या किमती कमी होऊ शकतात."
-   },
-   "auto": true,
-   "addedAt": "2026-11-21T08:52:55.650Z"
-  },
-  {
-   "id": "a-ebeffcfe71a0",
-   "date": "2026-11-20",
-   "crops": [
-    "sugar"
-   ],
-   "type": "import",
-   "dir": "neg",
-   "when": "short",
-   "conf": "medium",
-   "priority": "normal",
-   "qty": "215,044 tonnes",
-   "official": false,
-   "source": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPd0YxNjI2ZmdaZmJ4ZUlmMGhJVWRRTzJTQ1dEU1RydlZCMW04UENzNlpqLWtWXzVCVU5VbzlYVVVZVDJtRlRtMVlkV19Yci12bEp5MWcyNU5WNUNwZ2hQaGxlTWdCblM4eVVpS18zak9UdHNTbDhyOXhTcjRCblZoeVU0cHdyMEUzN2lUMldMX3F2YmZ2Q2owVE50YjBuZ0xmbzBOSFFrNERKcGM3b0tyVmQ0WUUwQU9aQ0pSdzN3?oc=5",
-   "source_name": "Maritime Gateway",
-   "headline": "India reopens duty-free raw sugar quota for 215,044 tonnes; applications close 27 November - Maritime Gateway",
-   "hi": {
-    "title": "भारत ने 2,15,044 टन के लिए शुल्क-मुक्त कच्ची चीनी कोटा फिर से खोला; 27 नवंबर को आवेदन बंद",
-    "what": "भारत ने 2,15,044 टन के लिए शुल्क-मुक्त कच्ची चीनी कोटा फिर से खोला है। आवेदन 27 नवंबर को बंद होंगे।",
-    "why": "ख़बर में कारण नहीं बताया गया",
-    "effect": "इससे देश में चीनी की उपलब्धता बढ़ेगी, जिससे चीनी के दाम गिर सकते हैं।"
-   },
-   "mr": {
-    "title": "भारताने २,१५,०४४ टनसाठी शुल्कविहीन कच्ची साखर कोटा पुन्हा उघडले; २७ नोव्हेंबरला अर्ज बंद",
-    "what": "भारताने २,१५,०४४ टनसाठी शुल्कविहीन कच्ची साखर कोटा पुन्हा उघडले आहे. अर्ज २७ नोव्हेंबरला बंद होतील.",
-    "why": "बातमीत कारण नाही",
-    "effect": "यामुळे देशात साखरेची उपलब्धता वाढेल, ज्यामुळे साखरेच्या भावात घट होऊ शकते."
-   },
-   "auto": true,
-   "addedAt": "2026-11-21T08:52:44.438Z"
   }
  ],
  "seen": [
@@ -4884,8 +4884,16 @@
   "a-44500f0a8626",
   "a-40c3e6652f59",
   "a-93888dcee557",
-  "a-a662c8252989"
+  "a-a662c8252989",
+  "a-e8083b0db84d",
+  "a-253f5f0774ed",
+  "a-893bcb092b59",
+  "a-da18b456da0c",
+  "a-19bd5a255eb4",
+  "a-b580c42efa1d",
+  "a-d57b95d693fd",
+  "a-aa5be79263d8"
  ],
- "updated": "2026-11-27T13:44:02.266Z",
+ "updated": "2026-11-27T19:25:17.843Z",
  "_about": "AI se apne aap bani cards. official=true sirf sarkari website wali khabar. Baaki ki sarkari pushti baaki."
 }
