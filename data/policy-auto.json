@@ -1,6 +1,37 @@
 {
  "items": [
   {
+   "id": "a-4f4512aac1c5",
+   "date": "2026-11-27",
+   "crops": [
+    "rice"
+   ],
+   "type": "export",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "high",
+   "qty": "30%",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNN2N1RTRLQkJYa2I1bE9NdlE1M2xCNHF2ZktnazVqN3NvM1NQUGFrYVJreWFGd19uZ0JRSFdjMVVTdEpBNnNsQmtnN3pMTnc3Z3dJaVUxdGFnQ2x5VFkxaGh5MHVkZ1hYRWV2UGhqc05MM3ZKdkw5SmsyOUtPdEdLeVgxZnpYVVpJMjlXaURMQUpXYnh1N25rQ0h3cw?oc=5",
+   "source_name": "Trak.in",
+   "headline": "India Plans Up To 30% Export Duty On Non-Basmati Rice To Control Prices - Trak.in",
+   "hi": {
+    "title": "भारत गैर-बासमती चावल पर 30% तक निर्यात शुल्क लगाने की योजना बना रहा है",
+    "what": "भारत गैर-बासमती चावल पर 30% तक निर्यात शुल्क लगाने की योजना बना रहा है। यह कदम कीमतों को नियंत्रित करने के लिए उठाया जा रहा है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "इस निर्णय से गैर-बासमती चावल का निर्यात कम हो सकता है, जिससे देश में इसकी उपलब्धता बढ़ेगी और कीमतें नियंत्रित हो सकती हैं। इससे किसानों को कम भाव मिल सकता है।"
+   },
+   "mr": {
+    "title": "भारत गैर-बासमती तांदूळावर 30% पर्यंत निर्यात कर आकारणार आहे",
+    "what": "भारत गैर-बासमती तांदूळावर 30% पर्यंत निर्यात कर आकारणार आहे. हा पावित्रा किंमती नियंत्रित करण्यासाठी घेतला जात आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "या निर्णयामुळे गैर-बासमती तांदूळचा निर्यात कमी होऊ शकतो, ज्यामुळे देशात त्याची उपलब्धता वाढेल आणि किंमती नियंत्रित होऊ शकते. यामुळे शेतकऱ्यांना कमी भाव मिळू शकतो."
+   },
+   "auto": true,
+   "addedAt": "2026-11-27T07:47:53.312Z"
+  },
+  {
    "id": "a-f150937af27a",
    "date": "2026-11-27",
    "crops": [
@@ -1495,6 +1526,37 @@
    },
    "auto": true,
    "addedAt": "2026-11-25T07:51:21.137Z"
+  },
+  {
+   "id": "a-0f8b41c4a255",
+   "date": "2026-11-24",
+   "crops": [
+    "onion"
+   ],
+   "type": "policy",
+   "dir": "neg",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "140,000",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNVkZWNjJ0MWFsM3Mxa2VUZUNXU0hFMDNpUDljM211MzNaNlhkZ1VVaWVZRUlkWGFuLUlXZTZlaUNOZ3U5VmVjQjVSY014c3hqaHJCdWtXekRsOWpkeWRmRmdTSVo1X1ozWXdqZUpYYTM3ZFJVQW9UcVdBeTczUHdNWG9DMnAzeFJDUUpRT3ljdnFmclBKU29vSHRwMEwybDB0d3RXQi1QOUdTNURO?oc=5",
+   "source_name": "FreshPlaza",
+   "headline": "Bangladesh targets 140,000 tons of Murikata onions in Pabna - FreshPlaza",
+   "hi": {
+    "title": "बांग्लादेश में 1.4 लाख टन मुरिकाता प्याज का उत्पादन लक्ष्य",
+    "what": "बांग्लादेश के पाबना में 1.4 लाख टन मुरिकाता प्याज का उत्पादन लक्ष्य रखा गया है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "भारतीय प्याज किसानों के लिए बांग्लादेश में प्याज का अधिक उत्पादन होने से भाव गिरने का दबाव हो सकता है।"
+   },
+   "mr": {
+    "title": "बांग्लादेशमध्ये १.४ लाख टन मुरिकाता कांद्याचे उत्पादन लक्ष्य",
+    "what": "बांग्लादेशच्या पाबना येथे १.४ लाख टन मुरिकाता कांद्याचे उत्पादन लक्ष्य ठेवण्यात आले आहे.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "बांग्लादेशमध्ये कांद्याचे जास्त उत्पादन होण्यामुळे भारतीय कांदा शेतकऱ्यांसाठी भाव कमी होण्याचा दबाव असू शकतो."
+   },
+   "auto": true,
+   "addedAt": "2026-11-27T07:48:09.345Z"
   },
   {
    "id": "a-8aff93350990",
@@ -4602,68 +4664,6 @@
    },
    "auto": true,
    "addedAt": "2026-11-21T11:39:10.024Z"
-  },
-  {
-   "id": "a-07519a545c17",
-   "date": "2026-11-19",
-   "crops": [
-    "onion"
-   ],
-   "type": "msp",
-   "dir": "pos",
-   "when": "short",
-   "conf": "medium",
-   "priority": "normal",
-   "qty": "₹1,580",
-   "official": false,
-   "source": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOdV9zWVcxdmthMGxFZXBDQlZrc2F4M2RtQllrLXg1QmR1UW05VGhIY3FqNGhKYll3eHBNUzRpVGhYNklPNjJvMldOV1M2YlJDMUc1TW1VLUNHTGRhbVQxdXBUS2lpMHNiRUEwel92UXlKVDJ4V2Rab2s4QUg4UUxYTWR0cHhWSmpKUmMzdXBmOWNpUQ?oc=5",
-   "source_name": "GK Today",
-   "headline": "Centre Sets Nashik Rabi Onion Procurement Price at ₹1,580 - GK Today",
-   "hi": {
-    "title": "केंद्र ने नासिक रबी प्याज की खरीद मूल्य ₹1,580 निर्धारित की",
-    "what": "केंद्र सरकार ने नासिक रबी प्याज की खरीद मूल्य ₹1,580 निर्धारित की है। यह निर्णय प्याज किसानों के लिए लाभकारी हो सकता है।",
-    "why": "ख़बर में कारण नहीं बताया गया",
-    "effect": "प्याज किसानों को अच्छा मूल्य मिलने की संभावना है, जिससे उनकी आय बढ़ सकती है।"
-   },
-   "mr": {
-    "title": "केंद्र सरकारने नाशिक रबी कांद्याची खरीद दर १,५८० रुपये ठरवली",
-    "what": "केंद्र सरकारने नाशिक रबी कांद्याची खरीद दर १,५८० रुपये ठरवली आहे. हा निर्णय कांद्या शेतकऱ्यांसाठी फायदेशीर ठरू शकतो.",
-    "why": "बातमीत कारण नाही",
-    "effect": "कांद्या शेतकऱ्यांना चांगला भाव मिळण्याची शक्यता आहे, ज्यामुळे त्यांची उत्पन्न वाढू शकते."
-   },
-   "auto": true,
-   "addedAt": "2026-11-21T11:25:05.325Z"
-  },
-  {
-   "id": "a-94827356cde3",
-   "date": "2026-11-19",
-   "crops": [
-    "tomato"
-   ],
-   "type": "intl",
-   "dir": "neg",
-   "when": "short",
-   "conf": "medium",
-   "priority": "normal",
-   "qty": null,
-   "official": false,
-   "source": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNX3FQU09PSzRFYTRNNmxxRWVkVDU5Vk45TThHX2NjcWZQdmQ1bmZreHpCaWlmY2hJSWk4MU13czJza1RDZnRocTQwRlJHblJXaHUzelBBMjExTFAxajhzZ2UtRGNTSDhnajhfX1JRMU01ZVh2ckVPZHZ6eWd1UUFzREF0U2tFTzZGVmowdmhuOUZyLWZ3cUFHdVpNR29RMWgxQWp4ajdrR2p3d0VBekp5ZUVyd3RhaHpfMVJvd0N5SXQ4dw?oc=5",
-   "source_name": "FreshPlaza",
-   "headline": "Iranian tomato export suspension threatens winter supplies in Tajikistan - FreshPlaza",
-   "hi": {
-    "title": "इरानी टमाटर निर्यात निलंबन से ताजिकिस्तान में सर्दियों की आपूर्ति खतरे में",
-    "what": "इरान ने टमाटर निर्यात पर रोक लगा दी है, जिससे ताजिकिस्तान में सर्दियों की आपूर्ति खतरे में पड़ गई है।",
-    "why": "ख़बर में कारण नहीं बताया गया",
-    "effect": "इरान से टमाटर की आपूर्ति कम होने से ताजिकिस्तान में टमाटर की कीमतें बढ़ सकती हैं।"
-   },
-   "mr": {
-    "title": "इराणच्या टोमॅटो निर्यात विलंबाने ताजिकिस्तानच्या शीतकालीन पुरवठ्यांना धोका",
-    "what": "इराणने टोमॅटो निर्यात वर रोक लागू केली आहे, ज्यामुळे ताजिकिस्तानच्या शीतकालीन पुरवठ्यांना धोका निर्माण झाला आहे.",
-    "why": "बातमीमध्ये कारण नमूद केलेले नाही",
-    "effect": "इराणकडून टोमॅटो पुरवठा कमी होण्याने ताजिकिस्तानात टोमॅटो च्या किमती वाढू शकतात."
-   },
-   "auto": true,
-   "addedAt": "2026-11-21T11:24:40.362Z"
   }
  ],
  "seen": [
@@ -4872,8 +4872,10 @@
   "a-2fac2f533a1b",
   "a-d859ece0d3b7",
   "a-f8ab5f224e46",
-  "a-8aff93350990"
+  "a-8aff93350990",
+  "a-4f4512aac1c5",
+  "a-0f8b41c4a255"
  ],
- "updated": "2026-11-27T01:48:47.794Z",
+ "updated": "2026-11-27T07:48:13.355Z",
  "_about": "AI se apne aap bani cards. official=true sirf sarkari website wali khabar. Baaki ki sarkari pushti baaki."
 }
