@@ -1,6 +1,130 @@
 {
  "items": [
   {
+   "id": "a-f150937af27a",
+   "date": "2026-11-27",
+   "crops": [
+    "wheat"
+   ],
+   "type": "import",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "high",
+   "qty": "500k-tonne",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9LRDhZNkNrT3NuNHBTMXc1UU9LWldDLXQ5V2xrR0w0Szlqa2hFOXFjdDdVUktlaE9xQ3Z2SG5kNWVlM2JLbm9KLVhIT0F3REVxajlhOU5ZVzVNSTJkQWZGU0sxMjRpOU1lS3V4Y3djeXAxby1YMXR1a2lQa9IBgwFBVV95cUxOSUpGc3h6aDR2eDdVTFNoTFlKSFJaUGJUNzVXelh5b19NT05kSHFneFVaaXUzbXQybWhlU2hrWGt1dFNjbmxzUHlKTXdpNkRKWFBEaklma1VmaS0xUDR4bTlST05XTjBtNUFubTBoYkdJWHNxM05lM1pRajZMRnliVURrVQ?oc=5",
+   "source_name": "The Express Tribune",
+   "headline": "Govt mulls 500k-tonne wheat import - The Express Tribune",
+   "hi": {
+    "title": "सरकार 5 लाख टन गेहूं आयात पर विचार कर रही है",
+    "what": "पाकिस्तान सरकार 5 लाख टन गेहूं आयात करने पर विचार कर रही है। यह आयात देश में गेहूं की कमी को पूरा करने के लिए किया जा रहा है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "गेहूं की आयात से देश में गेहूं की कीमतें गिर सकती हैं क्योंकि बाजार में गेहूं की अधिकता होगी।"
+   },
+   "mr": {
+    "title": "सरकार ५ लाख टन गव्हाचा आयात करण्याबद्दल विचार करीत आहे",
+    "what": "पाकिस्तान सरकार ५ लाख टन गव्हाचा आयात करण्याबद्दल विचार करीत आहे. हा आयात देशातील गव्हाच्या कमतरतेची पूर्तता करण्यासाठी केला जात आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "गव्हाच्या आयातमुळे देशातील गव्हाच्या किमती कमी होऊ शकतात कारण बाजारात गव्हाचे प्रमाण वाढेल."
+   },
+   "auto": true,
+   "addedAt": "2026-11-27T01:47:41.119Z"
+  },
+  {
+   "id": "a-f8ab5f224e46",
+   "date": "2026-11-26",
+   "crops": [
+    "other"
+   ],
+   "type": "intl",
+   "dir": "neg",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "high",
+   "qty": "double",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQd0hiOHc1Wm1KdFA4b3Y4THRCVm0ycTlWQUhMRGNYeGdnTzRSUFpCS1V3MEsxekJSdVVEUndyOUFLZlhIbC0yemh4OVdBelVNcF9ENVkyOEVpOFpqY3k1bmc4aFMyQlE1eXdhR3A2bUhBa2xIcG9hb1VsMVgyVnVrYW1TcnJiY3hRU19PallnZGJBS2w4Tm1kMzNn?oc=5",
+   "source_name": "електронна зернова біржа України",
+   "headline": "China to double corn imports in 2026 - електронна зернова біржа України",
+   "hi": {
+    "title": "चीन 2026 में मक्का का आयात दोगुना करेगा",
+    "what": "चीन 2026 में मक्का का आयात दोगुना करने जा रहा है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "इसका भारतीय किसानों के लिए नकारात्मक प्रभाव पड़ सकता है क्योंकि दुनिया में मक्का की अधिक मांग से दाम कम हो सकते हैं।"
+   },
+   "mr": {
+    "title": "चीन २०२६ मध्ये मक्याचा आयात दुप्पट करणार",
+    "what": "चीन २०२६ मध्ये मक्याचा आयात दुप्पट करणार आहे.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "याचा भारतीय शेतकऱ्यांवर नकारात्मक परिणाम होऊ शकतो कारण जगात मक्याची मागणी वाढल्याने किंमत कमी होऊ शकते."
+   },
+   "auto": true,
+   "addedAt": "2026-11-27T01:48:33.076Z"
+  },
+  {
+   "id": "a-de0e243d6df8",
+   "date": "2026-11-26",
+   "crops": [
+    "wheat"
+   ],
+   "type": "import",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "0.5MT",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNU0dOZ3JxMmJxLU9LWGoxd3Vnell1UjJHcF9tYjNNTEJ0ak9LU25udWNuY01sQ000WFNYcWI1dnVaWW4wU0RLcUIycXIxTW1CUWhpLWpybXllNmIwaGVwRGxfUVRoS1dmb29VcFdyeHYtSWpGaVE2NXZUXzktZkdvYlVvRkJZZlQyQ2fSAVZBVV95cUxNbTdFVGNBRzk4MENfSTRqbEZINExTVnM1V3ZlWC1PdnIyaDNrLXJIOVJ0bk9ENzJ1MVFlTGlXUGhtNUZER01CTWxDSnpqRkFVcDBFNGZaZw?oc=5",
+   "source_name": "Business Recorder",
+   "headline": "Govt mulls additional 0.5MT of wheat import - Business Recorder",
+   "hi": {
+    "title": "सरकार 0.5 एमटी गेहूं के अतिरिक्त आयात पर विचार कर रही है",
+    "what": "सरकार गेहूं के अतिरिक्त आयात पर विचार कर रही है। यह आयात 0.5 एमटी हो सकती है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "गेहूं की कीमतें गिर सकती हैं क्योंकि देश में गेहूं की अधिक उपलब्धता होगी"
+   },
+   "mr": {
+    "title": "शासन ०.५ एमटी गव्हाच्या अतिरिक्त आयातवर विचार करू इच्छिते आहे",
+    "what": "शासन गव्हाच्या अतिरिक्त आयातवर विचार करू इच्छिते आहे. ही आयात ०.५ एमटी असू शकते.",
+    "why": "बातमीत कारण नाही सांगितले",
+    "effect": "गव्हाच्या किमती कमी होऊ शकतात कारण देशात गव्हाची अधिक उपलब्धता होईल"
+   },
+   "auto": true,
+   "addedAt": "2026-11-27T01:47:50.687Z"
+  },
+  {
+   "id": "a-f11913a9de13",
+   "date": "2026-11-26",
+   "crops": [
+    "soybean"
+   ],
+   "type": "intl",
+   "dir": "neg",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNeHJiSjVlMUt2VnRYSzZPZzh6bnU2dzRsWWhSVUY1dUFIX19Bdml2ZzhodEN2WDBVNjRyQXAxZ0dKZ2hHZ0VBLXo3ZG5wcHlLaHVLcEQwbGpHcW1Zam0xOHVJbWUtN3phWmtudmNkQW1Lc2VvM0F1bmpEY0d3dkY2V2Fya2wzVi1pS25LVnFjTXFBWEtOSnFFQ21LQk1aaG92WkdqV2d1VHZmUUc4MkdaVQ?oc=5",
+   "source_name": "Hoosier Ag Today",
+   "headline": "Soybean Producers Raise Concerns as New Trump Tariffs Could Threaten Export Markets and Raise Farm Costs - Hoosier Ag Today",
+   "hi": {
+    "title": "सोयाबीन उत्पादकों को चिंता है कि नए ट्रंप टैरिफ निर्यात बाजारों को खतरा पहुंचा सकते हैं और खेती की लागत बढ़ा सकते हैं",
+    "what": "सोयाबीन उत्पादकों ने नए ट्रंप टैरिफ के बारे में चिंता व्यक्त की है जो निर्यात बाजारों को खतरा पहुंचा सकते हैं और खेती की लागत बढ़ा सकते हैं",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "सोयाबीन के निर्यात पर टैरिफ लगने से देश में सोयाबीन की मांग कम हो सकती है और इसका दाम गिर सकता है"
+   },
+   "mr": {
+    "title": "सोयाबीन उत्पादकांना चिंता आहे की नवीन ट्रंप टॅरिफ निर्यात बाजारपेठांना धोका निर्माण करू शकतो आणि शेती खर्च वाढवू शकतो",
+    "what": "सोयाबीन उत्पादकांनी नवीन ट्रंप टॅरिफ बद्दल चिंता व्यक्त केली आहे ज्यामुळे निर्यात बाजारपेठांना धोका निर्माण होऊ शकतो आणि शेती खर्च वाढू शकतो",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "सोयाबीनच्या निर्यातवर टॅरिफ लागल्याने देशात सोयाबीनची मागणी कमी होऊ शकते आणि त्याची किंमत घटू शकते"
+   },
+   "auto": true,
+   "addedAt": "2026-11-27T01:47:30.457Z"
+  },
+  {
    "id": "a-411161d27692",
    "date": "2026-11-26",
    "crops": [
@@ -404,6 +528,38 @@
    },
    "auto": true,
    "addedAt": "2026-11-26T07:49:44.215Z"
+  },
+  {
+   "id": "a-e7b9b46e6a54",
+   "date": "2026-11-25",
+   "crops": [
+    "soybean",
+    "wheat"
+   ],
+   "type": "intl",
+   "dir": "pos",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOYmdYaXktbFFKMl9VTzJQdWpuN3VIM29PMUU5aVBkeEFkOEVHR0R1Z1V4V0pudGkxT0xPbEpkbVJlRXNOVlNWYXlLSHNERDBWLWRPcS1vWXZNbFZDdTNPOXcySENiVjg5Q3ROWmdFV2VTT3QyeVlXQzQ2VEhqQkdRbDVxMjJIZkJGUzlYa3RudDVHbTR6RzVRUjh2YzBEVHBMVEZadzZaamJFTHNXc0N4U2xZLW5veF9KOHZkUnln?oc=5",
+   "source_name": "Investing.com",
+   "headline": "Soybean futures rise on meal demand, wheat slips on crop data - Investing.com",
+   "hi": {
+    "title": "सोयाबीन फ्यूचर्स में तेजी, गेहूं में गिरावट",
+    "what": "सोयाबीन फ्यूचर्स में तेजी आई है, जबकि गेहूं में गिरावट आई है।",
+    "why": "सोयाबीन फ्यूचर्स में तेजी का कारण मील की मांग है, जबकि गेहूं में गिरावट का कारण फसल के आंकड़े हैं।",
+    "effect": "सोयाबीन किसानों के लिए भाव बढ़ने की संभावना है, जबकि गेहूं किसानों के लिए भाव गिरने की संभावना है।"
+   },
+   "mr": {
+    "title": "सोयाबीन फ्यूचर्समध्ये वाढ, गव्हाच्या पिकांच्या आकडेवरील घट",
+    "what": "सोयाबीन फ्यूचर्समध्ये वाढ झाली आहे, तर गव्हाच्या पिकांच्या आकडेवरील घट झाली आहे.",
+    "why": "सोयाबीन फ्यूचर्समध्ये वाढीचे कारण मीलची मागणी आहे, तर गव्हाच्या पिकांच्या आकडेवरील घटीचे कारण पिकांचे आकडे आहेत.",
+    "effect": "सोयाबीन उत्पादक शेतकऱ्यांसाठी भाव वाढण्याची शक्यता आहे, तर गव्हा उत्पादक शेतकऱ्यांसाठी भाव घटण्याची शक्यता आहे।"
+   },
+   "auto": true,
+   "addedAt": "2026-11-27T01:48:02.440Z"
   },
   {
    "id": "a-150d63142c97",
@@ -1339,6 +1495,68 @@
    },
    "auto": true,
    "addedAt": "2026-11-25T07:51:21.137Z"
+  },
+  {
+   "id": "a-8aff93350990",
+   "date": "2026-11-24",
+   "crops": [
+    "oilseed"
+   ],
+   "type": "intl",
+   "dir": "neg",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "84%",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPZTRaUWNPWDZqOUI3d1JvVzY5RkpvMDQzdkRBVVZFUDE3TnQwWlRmdWNqblg2MHZ3cUFuZ2pQSTRqSi1JeU8xTy1NY2pWZGUwWi1LRm92OGRZMTBSNkFIYmdLMUpleGlIYkE4S2FfS3JVME1QalVXOVZaYTgyYVo1QzNVUWhVbGc4YlJ3WDQxRjhvQ2tzclVrTVMtODhNN0Q4a3EyOU1QTnFTUHBQOThn?oc=5",
+   "source_name": "УкрАгроКонсалт",
+   "headline": "China increases palm oil imports by 84% but begins cancelling new purchases - УкрАгроКонсалт",
+   "hi": {
+    "title": "चीन ने पाम ऑयल के आयात में 84% की वृद्धि की लेकिन नए खरीदारी को रद्द करना शुरू कर दिया",
+    "what": "चीन ने पाम ऑयल के आयात में 84% की वृद्धि की है, लेकिन अब नए खरीदारी को रद्द करना शुरू कर दिया है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "इसका भारतीय तिलहन उत्पादकों के लिए नकारात्मक प्रभाव पड़ सकता है, क्योंकि पाम ऑयल के आयात में वृद्धि से तिलहन की मांग कम हो सकती है।"
+   },
+   "mr": {
+    "title": "चीनने पाम ऑयल आयात ८४% वाढवले पण नवीन खरेदी रद्द करण्यास सुरुवात केली",
+    "what": "चीनने पाम ऑयल आयात ८४% वाढवले आहे, पण आता नवीन खरेदी रद्द करण्यास सुरुवात केली आहे.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "याचा भारतीय तेलबिया उत्पादकांवर नकारात्मक परिणाम होऊ शकतो, कारण पाम ऑयल आयात वाढल्याने तेलबियांची मागणी कमी होऊ शकते."
+   },
+   "auto": true,
+   "addedAt": "2026-11-27T01:48:43.786Z"
+  },
+  {
+   "id": "a-d859ece0d3b7",
+   "date": "2026-11-24",
+   "crops": [
+    "soybean"
+   ],
+   "type": "intl",
+   "dir": "neg",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "7 mln tons",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPaFJxU1NvX0dXQTVleWc1Q19JMEJCc0dmZERBbUc2MnE5RUpNOVg5SHA1S0ZYVDdkWHNlZzZtUmdpY1Z2aWtlNFdhbXQ1cnZ2VVRITVA1U2k4dGM0Y2p3UURMR0d3bHpTSWczRTNyUmsyTWdhQVMtR3YzakxvSzduUzhfdHk2cWdwSEduYko0U2VZamZTMlFGc3RXaVdjNTZodkZrcFdtVXN0WHpUcFNpOFB3?oc=5",
+   "source_name": "УкрАгроКонсалт",
+   "headline": "Argentina could export another 7 mln tons of soybean meal by the end of 2026 - УкрАгроКонсалт",
+   "hi": {
+    "title": "अर्जेंटीना 2026 के अंत तक 7 मिलियन टन और सोयाबीन भोजन निर्यात कर सकता है",
+    "what": "अर्जेंटीना 2026 के अंत तक 7 मिलियन टन और सोयाबीन भोजन निर्यात कर सकता है। यह जानकारी उक्राग्रोकंसल्ट से मिली है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "दुनिया में सोयाबीन की अधिक आपूर्ति होने से इसकी कीमतें गिर सकती हैं, जिससे भारतीय किसानों को नुकसान हो सकता है।"
+   },
+   "mr": {
+    "title": "अर्जेंटिना 2026 च्या अखेरपर्यंत 7 दशलक्ष टन अधिक सोयाबीन भोजन निर्यात करू शकते",
+    "what": "अर्जेंटिना 2026 च्या अखेरपर्यंत 7 दशलक्ष टन अधिक सोयाबीन भोजन निर्यात करू शकते, असे उक्राग्रोकंसल्टने म्हटले आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "जगात सोयाबीनच्या पुरवठ्यात वाढ होण्याने त्याच्या किमती कमी होऊ शकतात, ज्यामुळे भारतीय शेतकऱ्यांना नुकसान होऊ शकते."
+   },
+   "auto": true,
+   "addedAt": "2026-11-27T01:48:23.114Z"
   },
   {
    "id": "a-c9c0ce86f969",
@@ -4446,225 +4664,6 @@
    },
    "auto": true,
    "addedAt": "2026-11-21T11:24:40.362Z"
-  },
-  {
-   "id": "a-cbffd9681829",
-   "date": "2026-11-19",
-   "crops": [
-    "tomato",
-    "other",
-    "onion"
-   ],
-   "type": "export",
-   "dir": "pos",
-   "when": "short",
-   "conf": "medium",
-   "priority": "normal",
-   "qty": null,
-   "official": false,
-   "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNRTB6Ry1GUjlubExyS2lBM3VvUUdOalZNb0pGYm9hYnNndDg2VXV3aUlkdktGRjcxNFhjczFKR0JaRV9YemgydHVFc2JqakFGX1c0TkZSUUl3d1l5dUFoTjYxY1pXdHo5OWs2ZlBjYlI0OHFaT0VwOTlmaG16UGNCVVBYd25EVlZGd3BUa0ttemIybURjb2YwX0lmanM2dXc5VkxSSFU5dnBqZ0VMZTZJ?oc=5",
-   "source_name": "Азия-Плюс",
-   "headline": "Iran bans tomato, potato and onion exports: What does this mean for Tajikistan? - Азия-Плюс",
-   "hi": {
-    "title": "इरान ने टमाटर, आलू और प्याज के निर्यात पर प्रतिबंध लगाया",
-    "what": "इरान ने टमाटर, आलू और प्याज के निर्यात पर प्रतिबंध लगाया है। यह फैसला ताजिकिस्तान के लिए क्या मतलब रखता है?",
-    "why": "ख़बर में कारण नहीं बताया गया",
-    "effect": "इरान से इन सब्जियों का निर्यात कम होने से ताजिकिस्तान में इनकी कीमतें बढ़ सकती हैं क्योंकि इरान की आपूर्ति कम हो जाएगी।"
-   },
-   "mr": {
-    "title": "इरानने टोमॅटो, बटाट्या आणि कांद्याच्या निर्यातवर बंदी आणली",
-    "what": "इरानने टोमॅटो, बटाट्या आणि कांद्याच्या निर्यातवर बंदी आणली आहे. हा निर्णय ताजिकिस्तानसाठी काय अर्थ आहे?",
-    "why": "बातमीमध्ये कारण नाही",
-    "effect": "इराणकडून या भाज्यांचा निर्यात कमी होण्यामुळे ताजिकिस्तानात त्यांच्या किमती वाढू शकतात कारण इराणचा पुरवठा कमी होईल।"
-   },
-   "auto": true,
-   "addedAt": "2026-11-21T11:24:29.946Z"
-  },
-  {
-   "id": "a-d9f00ac61e5f",
-   "date": "2026-11-19",
-   "crops": [
-    "maize"
-   ],
-   "type": "intl",
-   "dir": "pos",
-   "when": "medium",
-   "conf": "medium",
-   "priority": "normal",
-   "qty": null,
-   "official": false,
-   "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNaEwwSEc5cjBWNERjZldQaHNxZEJiTXFPbnhUbFpfdVdSVE9pU3BrUjN2NWtJeG5hMk1Ub1RRMXNJdXM4bmFScEFmMkYwUVl0THhwX0RMX3ZCd0FmY1dGd3pXbVpLa05oTm9wR0dzUWF4cUZHenYzRzlGY0pHZzFwaU1QWTAtM25hM1dNaG9fbVE2a2l0djJVdE94RFRySGswU0FJ?oc=5",
-   "source_name": "AgUpdate",
-   "headline": "November WASDE report friendly to corn - AgUpdate",
-   "hi": {
-    "title": "नवंबर WASDE रिपोर्ट मक्का के लिए अनुकूल",
-    "what": "नवंबर WASDE रिपोर्ट मक्का के लिए अनुकूल है।",
-    "why": "ख़बर में कारण नहीं बताया गया",
-    "effect": "दुनिया में मक्का का उत्पादन बढ़ने से भारतीय किसानों को मक्का का भाव कम मिल सकता है क्योंकि दुनिया का भाव नीचे आ जाएगा।"
-   },
-   "mr": {
-    "title": "नोव्हेंबर WASDE अहवाल मक्याच्या पूरक",
-    "what": "नोव्हेंबर WASDE अहवाल मक्याच्या पूरक आहे.",
-    "why": "बातमीत कारण नाही",
-    "effect": "जगातील मक्याच्या उत्पादनात वाढीमुळे भारतीय शेतकऱ्यांना मक्याच्या किमती कमी मिळू शकतात कारण जगाच्या किमती खाली येतील।"
-   },
-   "auto": true,
-   "addedAt": "2026-11-21T11:21:22.023Z"
-  },
-  {
-   "id": "a-016fe4fbee03",
-   "date": "2026-11-19",
-   "crops": [
-    "soybean"
-   ],
-   "type": "intl",
-   "dir": "pos",
-   "when": "medium",
-   "conf": "medium",
-   "priority": "normal",
-   "qty": null,
-   "official": false,
-   "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPdlJOQXdBckxoYWhXQ2loZXI0T0ZWREdvV2hzR29nRDA5RjdzMkVBSTlFN3JEbzIwLVBueHhuSzlVRHVocVExNm8zc3phd05UZHE1Ymlyb0Z4T3h6a2ozdTlFUHhfWC15cmhqLWd2d2dNNkZyTHlLVDAzdmhING9hSEdSVUNVMkZON21nMEZaYjViRFBJWTFiLUhVbXJwYTlENDkxYUVTUk9GNlo4?oc=5",
-   "source_name": "УкрАгроКонсалт",
-   "headline": "China delays soybean imports at ports amid excess stocks and weak demand - УкрАгроКонсалт",
-   "hi": {
-    "title": "चीन ने बंदरगाहों पर सोयाबीन आयात में देरी की",
-    "what": "चीन ने बंदरगाहों पर सोयाबीन आयात में देरी की है। इसका कारण अतिरिक्त स्टॉक और कमजोर मांग है।",
-    "why": "ख़बर में कारण नहीं बताया गया",
-    "effect": "भारतीय सोयाबीन किसानों के लिए इसका सकारात्मक प्रभाव हो सकता है, क्योंकि दुनिया में सोयाबीन की कमी होने से भाव बढ़ सकता है।"
-   },
-   "mr": {
-    "title": "चीनने बंदरगाहांवर सोयाबीन आयात विलंबित केले",
-    "what": "चीनने बंदरगाहांवर सोयाबीन आयात विलंबित केले आहे. याचे कारण अतिरिक्त स्टॉक आणि कमजोर मागणी आहे.",
-    "why": "बातमीत कारण नाही",
-    "effect": "भारतीय सोयाबीन शेतकऱ्यांसाठी ह्याचा सकारात्मक परिणाम होऊ शकतो, कारण जगात सोयाबीनची कमी होण्याने भाव वाढू शकतो."
-   },
-   "auto": true,
-   "addedAt": "2026-11-21T11:20:27.543Z"
-  },
-  {
-   "id": "a-926626e36dda",
-   "date": "2026-11-19",
-   "crops": [
-    "soybean"
-   ],
-   "type": "intl",
-   "dir": "neg",
-   "when": "medium",
-   "conf": "medium",
-   "priority": "normal",
-   "qty": null,
-   "official": false,
-   "source": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNZmxtQmRERFV1anM5bEVqaEFONmt6anBxWTR5VEkyVTRtZk40dnhlMW5La21jNjhqVU1pVDlWclhoR3RLMEVmR1BPelZES0NEWm5WVW9rN1licm1DaVE2cExxVjNiNzduWVhqRkp3QXhRcldUZHMwYWNOdHJBLUhJRTA4UVUxYW44N0FQM0Z3VWdaSG5oMnhRNzlfSENITzA?oc=5",
-   "source_name": "Oklahoma Farm Report",
-   "headline": "Bigger Crop, Thinner Wallets: Brazil’s Soybean Paradox - Oklahoma Farm Report",
-   "hi": {
-    "title": "ब्राज़ील में बड़ी फसल, पतली जेबें: सोयाबीन का विरोधाभास",
-    "what": "ब्राज़ील में सोयाबीन की फसल बड़ी हो रही है, लेकिन किसानों की जेबें पतली हो रही हैं।",
-    "why": "ख़बर में कारण नहीं बताया गया",
-    "effect": "ब्राज़ील में सोयाबीन की बड़ी फसल के कारण दुनिया में सोयाबीन की कीमतें कम हो सकती हैं, जिससे भारतीय किसानों को नुकसान हो सकता है।"
-   },
-   "mr": {
-    "title": "ब्राझिलमध्ये मोठी पीक, पातळ बटुए: सोयाबीनची विरोधाभास",
-    "what": "ब्राझिलमध्ये सोयाबीनची पीक मोठी होत आहे, पण शेतकऱ्यांचे बटुए पातळ होत आहेत.",
-    "why": "बातमीमध्ये कारण नाही",
-    "effect": "ब्राझिलमध्ये सोयाबीनच्या मोठ्या पिकामुळे जगभरात सोयाबीनच्या किमती कमी होऊ शकतात, ज्यामुळे भारतीय शेतकऱ्यांना नुकसान होऊ शकते."
-   },
-   "auto": true,
-   "addedAt": "2026-11-21T11:19:54.630Z"
-  },
-  {
-   "id": "a-64c4f2be84f6",
-   "date": "2026-11-19",
-   "crops": [
-    "maize"
-   ],
-   "type": "policy",
-   "dir": "pos",
-   "when": "short",
-   "conf": "medium",
-   "priority": "normal",
-   "qty": "50%",
-   "official": false,
-   "source": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPc1hDTXpqVG1XQW1WVmZSSUxidUNwN3l4V3ZPV2pSVHQ0emhtVjlVNF9zbDVRY2I4ckhtS0hUQUdVcmhjdi1wekR5QllYM0tNd1lWVnZGTUxMQ3ZZQTdKNDk4RjRHcmcyVW5ZVXUxOHBBY29oaTJjQ3hIZkExRFBweXV0RHpCTVdycXRXNlFkd2RRN0g5RF9z?oc=5",
-   "source_name": "Sahi",
-   "headline": "Sukhjit Starch Seeks Duty Waivers as Maize Prices Increase Over 50% - Sahi",
-   "hi": {
-    "title": "सुखजीत स्टार्च ने मक्का की कीमतों में 50% से अधिक वृद्धि के बीच शुल्क छूट की मांग की",
-    "what": "सुखजीत स्टार्च ने मक्का की कीमतों में 50% से अधिक वृद्धि के बीच शुल्क छूट की मांग की है।",
-    "why": "ख़बर में कारण नहीं बताया गया",
-    "effect": "अगर शुल्क छूट मिल जाती है, तो मक्का की कीमतें गिर सकती हैं क्योंकि आयात सस्ता हो जाएगा।"
-   },
-   "mr": {
-    "title": "सुखजीत स्टार्चने मक्याच्या किमती 50% पेक्षा जास्त वाढल्यामुळे सूट मागितली",
-    "what": "सुखजीत स्टार्चने मक्याच्या किमती 50% पेक्षा जास्त वाढल्यामुळे सूट मागितली आहे.",
-    "why": "बातमीमध्ये कारण नाही",
-    "effect": "जर सूट मिळाली तर मक्याच्या किमती कमी होऊ शकतात कारण आयात स्वस्त होईल"
-   },
-   "auto": true,
-   "addedAt": "2026-11-21T10:29:32.159Z"
-  },
-  {
-   "id": "a-1142bd935c24",
-   "date": "2026-11-19",
-   "crops": [
-    "rice"
-   ],
-   "type": "intl",
-   "dir": "neg",
-   "when": "medium",
-   "conf": "medium",
-   "priority": "normal",
-   "qty": null,
-   "official": false,
-   "source": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPemlfNDRUSXBHN2FFekJWdjVXeVhhX0g3bmJwc2RWQm5paVMtbUpPckoxTlpFQUVsb2lRZjM1UFBuR0lOSVo2a0FPcjVaTTdWZmJobGtXcFBJaS05Q2FRcXNWZnZXQ1JBM0lqNTNpMnBlSENnNWtaMDh4REZBNjdzZkY0Z2VXZw?oc=5",
-   "source_name": "CMB News",
-   "headline": "India’s Rice Glut and Its Impact on Thai & Vietnamese Rice Exports — CMB News - CMB News",
-   "hi": {
-    "title": "भारत में चावल की अधिकता और इसका थाई और वियतनामी चावल निर्यात पर प्रभाव",
-    "what": "भारत में चावल की अधिकता होने से थाई और वियतनामी चावल निर्यात पर प्रभाव पड़ सकता है।",
-    "why": "ख़बर में कारण नहीं बताया गया",
-    "effect": "भारत में चावल की अधिकता से चावल का भाव गिर सकता है, क्योंकि देश में चावल की अधिकता होने से निर्यातक देशों को अपने चावल की कीमतें कम करनी पड़ सकती हैं।"
-   },
-   "mr": {
-    "title": "भारतातील तांदूळाची अधिकता आणि त्याचा थाई आणि व्हिएतनामी तांदूळ निर्यातवर परिणाम",
-    "what": "भारतातील तांदूळाची अधिकता थाई आणि व्हिएतनामी तांदूळ निर्यातवर परिणाम करू शकते.",
-    "why": "बातमीत कारण नाही",
-    "effect": "भारतातील तांदूळाची अधिकता तांदूळाच्या भावात घट होऊ शकते, कारण देशात तांदूळाची अधिकता असल्याने निर्यातदार देशांना त्यांच्या तांदूळाच्या किमती कमी कराव्या लागतील."
-   },
-   "auto": true,
-   "addedAt": "2026-11-21T10:28:44.968Z"
-  },
-  {
-   "id": "a-a720c7e5d78b",
-   "date": "2026-11-19",
-   "crops": [
-    "rice"
-   ],
-   "type": "policy",
-   "dir": "neu",
-   "when": "medium",
-   "conf": "medium",
-   "priority": "normal",
-   "qty": null,
-   "official": false,
-   "source": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNZlFoelNZc1dHM2NtQUZmZk1FQ1RWOGxialNUSmZUNUEtWHZGeV96Tmw3OTBib3pYT0U2THFEaUp6VGxiMVliQUlQRzMxQ245aDd6ZDVxV01CcmhVWlpYTVZKcEtmRm10RmxnOU1lV29ZblJIekdhOWpMOTFYdkVvSDlueWVmcUt0RmtsNTFOSU1tZXVvSWJwQXlmLWszcl9CQmlMS2tkbHhFS1RkYUYzT2xsUWZnN05Na25xNS15UDVEUFJnYnJveDZjZw?oc=5",
-   "source_name": "BigMint",
-   "headline": "India: Rice sector sees policy changes, procurement pressure and export diversification - BigMint",
-   "hi": {
-    "title": "भारत: चावल क्षेत्र में नीति परिवर्तन, क्रय दबाव और निर्यात विविधीकरण",
-    "what": "भारत में चावल क्षेत्र में नीति परिवर्तन हो रहे हैं और निर्यात विविधीकरण हो रहा है।",
-    "why": "ख़बर में कारण नहीं बताया गया",
-    "effect": "चावल के दाम पर कुछ खास असर नहीं पड़ेगा क्योंकि यह नीति परिवर्तन की शुरुआती चरण में है और इसके परिणाम आने में समय लगेगा।"
-   },
-   "mr": {
-    "title": "भारत: तांदूळ क्षेत्रात धोरणात्मक बदल, खरेदी दबाव आणि निर्यात वैविध्यीकरण",
-    "what": "भारतात तांदूळ क्षेत्रात धोरणात्मक बदल होत आहेत आणि निर्यात वैविध्यीकरण होत आहे.",
-    "why": "बातमीत कारण नाही सांगितले",
-    "effect": "तांदूळच्या भावावर खास परिणाम होणार नाही कारण ही धोरणात्मक बदलांची सुरुवातीची टप्पा आहे आणि त्याचे परिणाम येण्यास वेळ लागेल."
-   },
-   "auto": true,
-   "addedAt": "2026-11-21T09:02:26.483Z"
   }
  ],
  "seen": [
@@ -4865,8 +4864,16 @@
   "a-78ab5cc93d20",
   "a-ca8518db0ed7",
   "a-4e01ca4a7fe4",
-  "a-411161d27692"
+  "a-411161d27692",
+  "a-f11913a9de13",
+  "a-f150937af27a",
+  "a-de0e243d6df8",
+  "a-e7b9b46e6a54",
+  "a-2fac2f533a1b",
+  "a-d859ece0d3b7",
+  "a-f8ab5f224e46",
+  "a-8aff93350990"
  ],
- "updated": "2026-11-26T19:28:51.825Z",
+ "updated": "2026-11-27T01:48:47.794Z",
  "_about": "AI se apne aap bani cards. official=true sirf sarkari website wali khabar. Baaki ki sarkari pushti baaki."
 }
