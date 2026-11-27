@@ -1,6 +1,194 @@
 {
  "items": [
   {
+   "id": "a-93888dcee557",
+   "date": "2026-11-27",
+   "crops": [
+    "maize"
+   ],
+   "type": "intl",
+   "dir": "pos",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "2.3M tonnes",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOXzc5MW0tcFV6aDNVaHY5NUxyaFI2NDNINkV1OXh6c2tRNC1WR1dXUTNadDlNTUdZbjlWOXVOUG5Cc0ZDU0xpMHdGckt0NXZGTldnMVg5YzdRWlFaZEhfQzI1UUNuRTNEbVpYV0lfaV9wMW14RlkzZHFWajd6SXNkdExVbnNzeHZKNDk4U3N0d3ZZVjBTTzB5ZkozVFQ?oc=5",
+   "source_name": "Milling Middle East & Africa",
+   "headline": "Kenya faces 2.3M tonnes maize import requirement amid production deficit - Milling Middle East & Africa",
+   "hi": {
+    "title": "केन्या को 2.3 मिलियन टन मक्का आयात की आवश्यकता",
+    "what": "केन्या में मक्का का उत्पादन कम होने के कारण 2.3 मिलियन टन मक्का आयात करने की आवश्यकता है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "केन्या में मक्का की कमी के कारण भाव बढ़ने की संभावना है क्योंकि आयात बढ़ेगी और मांग पूरी करने के लिए अधिक मक्का खरीदना होगा।"
+   },
+   "mr": {
+    "title": "केन्याला २.३ मिलियन टन मक्याची आयात आवश्यकता",
+    "what": "केन्यामध्ये मक्याचे उत्पादन कमी झाल्यामुळे २.३ मिलियन टन मक्याची आयात करण्याची गरज आहे.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "केन्यामध्ये मक्याच्या कमतरतेमुळे किंमत वाढण्याची शक्यता आहे कारण आयात वाढेल आणि मागणी पूर्ण करण्यासाठी अधिक मक्याची खरेदी करावी लागेल."
+   },
+   "auto": true,
+   "addedAt": "2026-11-27T13:43:52.870Z"
+  },
+  {
+   "id": "a-44500f0a8626",
+   "date": "2026-11-27",
+   "crops": [
+    "rice"
+   ],
+   "type": "export",
+   "dir": "pos",
+   "when": "short",
+   "conf": "medium",
+   "priority": "high",
+   "qty": "30%",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOdF9XbDBnVVJvbW1KeDJOTTNVU2hPSmM3WFRNdk1yMHhvZWQzNjIyQlY3YkxaWFM2dUVqdHRXdjc4LTYtMkZ2N2Vhdnc5dmdHcHR2QVY5U3NRTm5sYWd4blNqbk9sWmhyMGd0cjhzMjdHbHNnZm92Nzl4dWlaLVJ0R2I4eFBwei1jN2xqUXZBd2NFcEY5ZGd3d09wd194Qm8?oc=5",
+   "source_name": "Inshorts",
+   "headline": "India plans to reduce upto 30% non-basmati rice exports - Inshorts",
+   "hi": {
+    "title": "भारत 30% तक गैर-बासमती चावल निर्यात कम करने की योजना बना रहा है",
+    "what": "भारत गैर-बासमती चावल के निर्यात को 30% तक कम करने की योजना बना रहा है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "देश में चावल की कमी होने से इसकी कीमतें बढ़ सकती हैं क्योंकि निर्यात कम होने से घरेलू बाजार में चावल की उपलब्धता बढ़ जाएगी।"
+   },
+   "mr": {
+    "title": "भारत ३०% पर्यंत नॉन-बासमती तांदूळ निर्यात कम करण्याची योजना करत आहे",
+    "what": "भारत नॉन-बासमती तांदूळ निर्यात ३०% पर्यंत कम करण्याची योजना करत आहे.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "देशात तांदूळाची कमी होण्यामुळे त्याच्या किमती वाढू शकतात कारण निर्यात कमी होण्यामुळे देशांतर्गत बाजारपेठेत तांदूळाचा पुरवठा वाढेल."
+   },
+   "auto": true,
+   "addedAt": "2026-11-27T13:43:31.880Z"
+  },
+  {
+   "id": "a-7ccf711f9a80",
+   "date": "2026-11-27",
+   "crops": [
+    "rice"
+   ],
+   "type": "policy",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPUkJyb0p4VWRZczNXX0dtV20zQmZZTVBzZ1JMaXI3SjZONTFkWTFGS1A4b2lkUEI4eEtPNHFEZzhkLTVlWFptUm5fN2RlX0RZWDR0UEhfTWJ4RS1BV1AybS00MWZnSmticnMwT2FGZm1DTnJPbjhkenJhbFNiTUs2MzhWZGhOSFhaVWdyaUlOUUFjZVdxYnNyS3BuUXBTUWxv?oc=5",
+   "source_name": "CMB News",
+   "headline": "Rice Price India, 27 Nov 2026: Export Duty Risk Clouds Outlook — CMB News - CMB News",
+   "hi": {
+    "title": "चावल की कीमतें: निर्यात शुल्क का खतरा",
+    "what": "भारत में चावल की कीमतों पर निर्यात शुल्क का खतरा मंडरा रहा है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "चावल की कीमतें गिर सकती हैं क्योंकि निर्यात शुल्क लगने से देश में चावल की मात्रा बढ़ जाएगी।"
+   },
+   "mr": {
+    "title": "तांदूळाच्या किमती: निर्यात कराचा धोका",
+    "what": "भारतात तांदूळाच्या किमतींवर निर्यात कराचा धोका मंडळत आहे.",
+    "why": "बातमीत कारण नाही सांगितले",
+    "effect": "तांदूळाच्या किमती खाली येऊ शकतात कारण निर्यात कर लागल्याने देशात तांदूळाचे प्रमाण वाढेल."
+   },
+   "auto": true,
+   "addedAt": "2026-11-27T13:43:21.241Z"
+  },
+  {
+   "id": "a-3f5dd46f8a8d",
+   "date": "2026-11-27",
+   "crops": [
+    "wheat"
+   ],
+   "type": "import",
+   "dir": "neg",
+   "when": "short",
+   "conf": "medium",
+   "priority": "high",
+   "qty": "500,000 tonnes",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNZ2xLT3BXN2FaaFg5M0EwcjVMTHJVUEdWSTExcnhoX3JRSHk4R0x1LXdQUDgwY0R5ZHdTVnppOHRneGVlUlIyV0JSMWFSb1Z5cFBPbWFyWXRnaW9SSU5aQ09mVC1yOEFXeXdKNVZsZWlBYnVlaXlJdmxaV1k0NkhRWEMyNF9xbEYzVjJNWEp0T0V3ZEZ0eE1MSXhiMUVrWnBMZE0tZ0Z0dFJDamszSEYyZ1FKMURvUm4wQ1BrWWlPQmhjb2o3aHNjUnZRcXE4UQ?oc=5",
+   "source_name": "Investify",
+   "headline": "Govt considers additional 500,000 tonnes of wheat imports, taking total to 1.85 million tonnes - Investify",
+   "hi": {
+    "title": "सरकार 1.85 मिलियन टन तक गेहूं के आयात की संख्या बढ़ाने पर विचार कर रही है",
+    "what": "सरकार गेहूं के आयात की संख्या बढ़ाने पर विचार कर रही है। इसके तहत 500,000 टन अतिरिक्त गेहूं आयात किया जा सकता है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "देश में गेहूं की अधिक उपलब्धता के कारण इसकी कीमतें गिर सकती हैं"
+   },
+   "mr": {
+    "title": "शासन 1.85 दशलक्ष टनपर्यंत गव्हाच्या आयातीची संख्या वाढवण्याबद्दल विचार करीत आहे",
+    "what": "शासन गव्हाच्या आयातीची संख्या वाढवण्याबद्दल विचार करीत आहे. यामध्ये 500,000 टन अतिरिक्त गव्हाची आयात केली जाऊ शकते.",
+    "why": "बातमीमध्ये कारण नाही",
+    "effect": "देशात गव्हाच्या अधिक उपलब्धतेमुळे त्याच्या किमती कमी होऊ शकतात"
+   },
+   "auto": true,
+   "addedAt": "2026-11-27T13:43:09.078Z"
+  },
+  {
+   "id": "a-6da3a80c0d79",
+   "date": "2026-11-27",
+   "crops": [
+    "oilseed",
+    "other"
+   ],
+   "type": "import",
+   "dir": "neg",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": "18.5 mln tons",
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNTGtKMjdDYzFsa3JoMjdfc05HWXRYSVBsbUtHRkU0QUFtV1YzcHpqbEEwWWpYNWkzMmlETjdjY2h6S3dqUjNwbTZncHNTcDVHdlhnbktLczZCeWFmaHFfcVlQUjRZNjRUTmpWQmlaNGxid1A4UXFfaDROTkpiNjZSR0tLRkM2SmhIN2N0a0U0a0JSR0lZWTg3bjhrSXp2Y1R6V2M3cA?oc=5",
+   "source_name": "УкрАгроКонсалт",
+   "headline": "India could increase imports of major edible oils to 18.5 mln tons - УкрАгроКонсалт",
+   "hi": {
+    "title": "भारत में खाद्य तेलों का आयात 18.5 मिलियन टन तक बढ़ सकता है",
+    "what": "भारत में खाद्य तेलों का आयात बढ़ सकता है। यह आयात 18.5 मिलियन टन तक पहुंच सकता है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "भारत में तेल की कीमतें गिर सकती हैं क्योंकि आयात बढ़ने से बाजार में तेल की अधिकता होगी"
+   },
+   "mr": {
+    "title": "भारतात खाद्य तेलांचा आयात १८.५ मिलियन टन पर्यंत वाढू शकतो",
+    "what": "भारतात खाद्य तेलांचा आयात वाढू शकतो. हा आयात १८.५ मिलियन टन पर्यंत पोहोचू शकतो.",
+    "why": "बातमीत कारण नाही सांगितले",
+    "effect": "भारतात तेलाच्या किमती कमी होऊ शकतात कारण आयात वाढल्याने बाजारात तेलाची अधिकता होईल"
+   },
+   "auto": true,
+   "addedAt": "2026-11-27T13:42:58.157Z"
+  },
+  {
+   "id": "a-07fb1780317a",
+   "date": "2026-11-27",
+   "crops": [
+    "soybean",
+    "oilseed"
+   ],
+   "type": "intl",
+   "dir": "pos",
+   "when": "medium",
+   "conf": "medium",
+   "priority": "normal",
+   "qty": null,
+   "official": false,
+   "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNcHY0N0NCX0YzYTRNLUZNVm5PODF6ck8xdjRLVFIxd1BZQ3EzckkxRFRKbHhqMFZiMENXRm9pcklhZjFHcEI1QVRyX1p4ZXNaeW1MeVNhcEctbkdDT3ZLUEJxeWdLMUJsWmJHVFpRSGpJdEJkVzNFNkdHVTlnTC1jckxvSTdHUWJMSTZ5UzRJRWIxR1lHaWc?oc=5",
+   "source_name": "https://streamlinefeed.co.ke/",
+   "headline": "India's palm switch stalls China's soybean oil export surge - https://streamlinefeed.co.ke/",
+   "hi": {
+    "title": "भारत के पाम तेल पर स्विच करने से चीन के सोयाबीन तेल निर्यात में वृद्धि रुकी",
+    "what": "भारत ने पाम तेल पर स्विच किया है, जिससे चीन के सोयाबीन तेल निर्यात में वृद्धि रुक गई है।",
+    "why": "ख़बर में कारण नहीं बताया गया",
+    "effect": "भारतीय सोयाबीन किसानों के लिए सोयाबीन की कीमतें बढ़ सकती हैं क्योंकि पाम तेल की आयात कम होने से सोयाबीन तेल की मांग बढ़ सकती है।"
+   },
+   "mr": {
+    "title": "भारताच्या पाम तेलावर स्विच केल्याने चीनच्या सोयाबीन तेल निर्यात वाढ थांबली",
+    "what": "भारताने पाम तेलावर स्विच केले आहे, ज्यामुळे चीनच्या सोयाबीन तेल निर्यात वाढ थांबली आहे.",
+    "why": "बातमीत कारण नाही",
+    "effect": "भारतीय सोयाबीन शेतकऱ्यांसाठी सोयाबीनच्या किमती वाढू शकतात कारण पाम तेल आयात कमी होण्याने सोयाबीन तेलची मागणी वाढू शकते."
+   },
+   "auto": true,
+   "addedAt": "2026-11-27T13:42:48.797Z"
+  },
+  {
    "id": "a-4f4512aac1c5",
    "date": "2026-11-27",
    "crops": [
@@ -4478,192 +4666,6 @@
    },
    "auto": true,
    "addedAt": "2026-11-21T08:52:44.438Z"
-  },
-  {
-   "id": "a-c9dc9dbd0f70",
-   "date": "2026-11-20",
-   "crops": [
-    "sugar"
-   ],
-   "type": "policy",
-   "dir": "neg",
-   "when": "short",
-   "conf": "high",
-   "priority": "high",
-   "qty": "20%",
-   "official": true,
-   "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQSV9RQXlMN3JHX1ZxTHJEMXRNVDVfNmZtdm16THhWMFNHZmdCY0lVWFlvQ2cwRGE1V0N4aTdZRHZFVUhRMWlTa0RySjk5SVVVZVNfTk9jLTlad0drb25heWdIcS1kTjhyWlMyVEwtOGNLQ0oyLVAwUjZMUXVpbHpWYlN1Y0lLNEZsTHNjZGtDeVV6OUpxakZ0WjV4dWNjc2puYi00MlNkWXAzNDFjcm1qUXZB?oc=5",
-   "source_name": "DD News",
-   "headline": "Sugar prices fall 20% as Centre tightens supply monitoring, introduces fortnightly quota - DD News",
-   "hi": {
-    "title": "केंद्र की सख्ती से चीनी की कीमतें 20% गिरीं",
-    "what": "केंद्र सरकार ने चीनी की आपूर्ति पर नजर रखने के लिए सख्ती बढ़ा दी है और पाक्षिक कोटा प्रणाली शुरू की है। इसके परिणामस्वरूप चीनी की कीमतें 20% गिर गई हैं।",
-    "why": "केंद्र सरकार ने चीनी की आपूर्ति पर नजर रखने के लिए सख्ती बढ़ा दी है और पाक्षिक कोटा प्रणाली शुरू की है।",
-    "effect": "चीनी की कीमतें गिरने से किसानों को नुकसान हो सकता है, क्योंकि इसका मतलब है कि उनकी फसल की कीमत कम हो गई है।"
-   },
-   "mr": {
-    "title": "केंद्राच्या सख्तीने साखरेच्या किमती २०% खाली आल्या",
-    "what": "केंद्र सरकारने साखरेच्या पुरवठ्यावर नियंत्रण करण्यासाठी सख्ती वाढवली आहे आणि पाक्षिक कोटा प्रणाली सुरू केली आहे. यामुळे साखरेच्या किमती २०% खाली आल्या आहेत.",
-    "why": "केंद्र सरकारने साखरेच्या पुरवठ्यावर नियंत्रण करण्यासाठी सख्ती वाढवली आहे आणि पाक्षिक कोटा प्रणाली सुरू केली आहे.",
-    "effect": "साखरेच्या किमती खाली येण्यामुळे शेतकऱ्यांना नुकसान होऊ शकते, कारण त्याचा अर्थ असा आहे की त्यांच्या पिकाची कीमत कमी झाली आहे."
-   },
-   "auto": true,
-   "addedAt": "2026-11-21T08:52:17.199Z"
-  },
-  {
-   "id": "a-422914875316",
-   "date": "2026-11-20",
-   "crops": [
-    "wheat"
-   ],
-   "type": "policy",
-   "dir": "pos",
-   "when": "medium",
-   "conf": "medium",
-   "priority": "high",
-   "qty": "26 years",
-   "official": false,
-   "source": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOa2o1UU9tRU9zcmFpc1RtTjRCS3k5X1d3YWFfWFh5SnMxNDRJS0RjOXVLU2VfdUp5cGhUb2RRQnJ6RjlYc0Q5U3FJZjdlYzZ5bGJzeW9IdFZVaTJyNjFqT3IwSGc4SlZSYmJkcmZMMFBsUTZWd0lnR25qUlA1TGZnc0U4OVl2ZVFhNUJGY1JfdU1xbWdZNlVNMmhPYkt3cmdONm1rYm5yWUxIR3ZwWmZ5a01wVGQ1VXpGYmVKMjZ3?oc=5",
-   "source_name": "Reuters",
-   "headline": "India's wheat area set for biggest drop in 26 years as farmers switch crops - Reuters",
-   "hi": {
-    "title": "भारत में गेहूं का क्षेत्रफल 26 साल में सबसे बड़ी गिरावट की ओर",
-    "what": "भारत में गेहूं का क्षेत्रफल 26 साल में सबसे बड़ी गिरावट की ओर है क्योंकि किसान अन्य फसलों की ओर रुख कर रहे हैं।",
-    "why": "किसान अन्य फसलों की ओर रुख कर रहे हैं",
-    "effect": "गेहूं का दाम बढ़ सकता है क्योंकि देश में गेहूं की कमी होगी"
-   },
-   "mr": {
-    "title": "भारतात गहू उत्पादनाचे क्षेत्र २६ वर्षांत सर्वात मोठे घट",
-    "what": "भारतात गहू उत्पादनाचे क्षेत्र २६ वर्षांत सर्वात मोठे घट होणार आहे कारण शेतकरी इतर पिकांकडे वळत आहेत",
-    "why": "शेतकरी इतर पिकांकडे वळत आहेत",
-    "effect": "गहू ची किंमत वाढू शकते कारण देशात गहू ची कमी होईल"
-   },
-   "auto": true,
-   "addedAt": "2026-11-21T08:50:53.665Z"
-  },
-  {
-   "id": "a-86169eab5b11",
-   "date": "2026-11-20",
-   "crops": [
-    "rice"
-   ],
-   "type": "export",
-   "dir": "pos",
-   "when": "short",
-   "conf": "medium",
-   "priority": "high",
-   "qty": null,
-   "official": false,
-   "source": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQWHJMYWdEc0gxNmI4NW54SDVtbm52T2pZODhCT2FsYmNudU5PQ3N4YkVnY3JxcjNsUG9pX2ZIOW13UXNOZlEtbWktOHlnN2c0bi0zb0JMZXR6bVZiU2VhU1dnLUgtQV9JSEZiT2JDQ1FXSlhzZkNDeVQ5MWt6Wlh5N1FvWWU?oc=5",
-   "source_name": "Wisevoter",
-   "headline": "Indian Rice Export Prices Hit 19-Month High - Wisevoter",
-   "hi": {
-    "title": "भारतीय चावल के निर्यात मूल्य 19 महीने के उच्चतम स्तर पर",
-    "what": "भारतीय चावल के निर्यात मूल्य 19 महीने के उच्चतम स्तर पर पहुंच गए हैं।",
-    "why": "ख़बर में कारण नहीं बताया गया",
-    "effect": "चावल के किसानों को इसका फायदा हो सकता है क्योंकि निर्यात मूल्य बढ़ने से उनकी आय बढ़ सकती है।"
-   },
-   "mr": {
-    "title": "भारतीय तांदूळ निर्यात किंमती १९ महिन्यांच्या उच्चतम स्तरावर",
-    "what": "भारतीय तांदूळ निर्यात किंमती १९ महिन्यांच्या उच्चतम स्तरावर पोहोचल्या आहेत.",
-    "why": "बातमीमध्ये कारण नाही",
-    "effect": "तांदूळ उत्पादक शेतकऱ्यांना याचा फायदा होऊ शकतो कारण निर्यात किंमती वाढल्यामुळे त्यांची उत्पन्न वाढू शकते."
-   },
-   "auto": true,
-   "addedAt": "2026-11-21T08:50:11.659Z"
-  },
-  {
-   "id": "a-1f5ee4693449",
-   "date": "2026-11-19",
-   "crops": [
-    "maize"
-   ],
-   "type": "intl",
-   "dir": "neg",
-   "when": "medium",
-   "conf": "medium",
-   "priority": "normal",
-   "qty": null,
-   "official": false,
-   "source": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPU3lXdWtCSC1NZEtIQWs5WklwcmlqYTFUWm50ZnQzTkMta0JHS25Qc0dhMDh2Q1hwdmJtTUp2N28zdF83VExIZWU0MVVuTHZPckxMUUhtVGM3MHpjUzlkQUwyY3RBM0ptcG9IeEtWd2x3M2lxV0MxbkhwZlZMc01Xc0NEODd0SV9KMGRrV2tLMzY?oc=5",
-   "source_name": "CMB News",
-   "headline": "Corn Market: CBOT Low, Slow Ukraine Harvest, Firm EU Prices — CMB News - CMB News",
-   "hi": {
-    "title": "मक्का बाजार: CBOT निम्न, यूक्रेन में धीमी कटाई, यूरोपीय संघ में मजबूत कीमतें",
-    "what": "यूक्रेन में मक्का की कटाई धीमी है, जिससे मक्का की कीमतें प्रभावित हो रही हैं।",
-    "why": "यूक्रेन में धीमी कटाई और यूरोपीय संघ में मजबूत कीमतें के कारण मक्का की कीमतें प्रभावित हो रही हैं।",
-    "effect": "मक्का की कीमतें गिर सकती हैं क्योंकि दुनिया में मक्का की अधिक उपलब्धता है।"
-   },
-   "mr": {
-    "title": "मक्का बाजार: सीबीओटी कम, युक्रेनमध्ये हळू पीक, युरोपीयन युनियनमध्ये मजबूत किंमती",
-    "what": "युक्रेनमध्ये मक्का पीक हळू आहे, ज्यामुळे मक्का किंमती प्रभावित होत आहे.",
-    "why": "युक्रेनमध्ये हळू पीक आणि युरोपीयन युनियनमध्ये मजबूत किंमती मुळे मक्का किंमती प्रभावित होत आहे.",
-    "effect": "मक्का किंमती कमी होऊ शकते कारण जगभरात मक्का ची अधिक उपलब्धता आहे."
-   },
-   "auto": true,
-   "addedAt": "2026-11-21T12:15:00.689Z"
-  },
-  {
-   "id": "a-87e3e39aa3d3",
-   "date": "2026-11-19",
-   "crops": [
-    "maize"
-   ],
-   "type": "policy",
-   "dir": "pos",
-   "when": "short",
-   "conf": "medium",
-   "priority": "normal",
-   "qty": null,
-   "official": false,
-   "source": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPZmpBQzh0QkxGZm9SQkRzRnNLV01XVXU3dk16ZnVFZ2I0ekVVaGRrOFl6bjhMaG1rYl9lN1o4Z0lIYW91ZVBHOHhfOUxWN0xKbGtwQnBURG9HMU1lc1VSeGRuYUJ6QUJ4UHdHcEJHaXg1ZlNGaUE3ZUxQaGNZdmlrZU9mNVE4V0RqalhuWlFwdm9NMjF1aE5TcWhGazZoR21CaFlBVkU3SnFkaWpLRm1JR3JwRWQtYnZpdTJR?oc=5",
-   "source_name": "ChiniMandi",
-   "headline": "Poultry feed prices surge in Kerala amid concerns over maize use for E20 ethanol production - ChiniMandi",
-   "hi": {
-    "title": "केरल में पोल्ट्री फीड की कीमतें बढ़ीं",
-    "what": "केरल में पोल्ट्री फीड की कीमतें बढ़ गई हैं क्योंकि ई20 इथेनॉल उत्पादन के लिए मक्का के उपयोग को लेकर चिंताएं हैं",
-    "why": "ई20 इथेनॉल उत्पादन के लिए मक्का के उपयोग को लेकर चिंताएं",
-    "effect": "मक्का की कीमतें बढ़ने की संभावना है क्योंकि इसका उपयोग ई20 इथेनॉल उत्पादन में किया जा रहा है"
-   },
-   "mr": {
-    "title": "केरळमध्ये पोल्ट्री फीडच्या किमती वाढल्या",
-    "what": "केरळमध्ये पोल्ट्री फीडच्या किमती वाढल्या आहेत कारण ई२० इथेनॉल उत्पादनासाठी मक्याचा वापर करण्याबद्दल चिंता आहे",
-    "why": "ई२० इथेनॉल उत्पादनासाठी मक्याचा वापर करण्याबद्दल चिंता",
-    "effect": "मक्याच्या किमती वाढण्याची शक्यता आहे कारण त्याचा वापर ई२० इथेनॉल उत्पादनासाठी केला जात आहे"
-   },
-   "auto": true,
-   "addedAt": "2026-11-21T12:14:40.249Z"
-  },
-  {
-   "id": "a-b23fe94c254d",
-   "date": "2026-11-19",
-   "crops": [
-    "onion"
-   ],
-   "type": "export",
-   "dir": "neg",
-   "when": "medium",
-   "conf": "medium",
-   "priority": "normal",
-   "qty": "4.3 times",
-   "official": false,
-   "source": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNb0hzQUtpZ1k1VFVILXJwS19Ecm1weS03UXV3MHpCNzYtaDdwWmx0SHpQbGJKaDZzMTc5SU9xd1M5M3htVF8yeTNCUXBEU0VuUlA4RWNJM3VNT2JRX3Zhd2NyWWNraTFGUksydVlHX2l0R0ZfVVNTSkxtaGUzYTdfeA?oc=5",
-   "source_name": "Комерсант Український",
-   "headline": "Ukraine has increased its onion exports to the EU by 4.3 times - Комерсант Український",
-   "hi": {
-    "title": "यूक्रेन ने यूरोपीय संघ में प्याज का निर्यात 4.3 गुना बढ़ाया",
-    "what": "यूक्रेन ने यूरोपीय संघ में प्याज का निर्यात 4.3 गुना बढ़ा दिया है।",
-    "why": "ख़बर में कारण नहीं बताया गया",
-    "effect": "यूरोपीय संघ में प्याज की अधिक आपूर्ति के कारण भाव गिर सकता है"
-   },
-   "mr": {
-    "title": "युक्रेनने युरोपीय संघात प्याज निर्यात ४.३ पटीने वाढवला",
-    "what": "युक्रेनने युरोपीय संघात प्याज निर्यात ४.३ पटीने वाढवला आहे.",
-    "why": "बातमीमध्ये कारण नाही",
-    "effect": "युरोपीय संघात प्याजचा पुरवठा वाढल्याने किंमत कमी होऊ शकते"
-   },
-   "auto": true,
-   "addedAt": "2026-11-21T11:39:10.024Z"
   }
  ],
  "seen": [
@@ -4874,8 +4876,16 @@
   "a-f8ab5f224e46",
   "a-8aff93350990",
   "a-4f4512aac1c5",
-  "a-0f8b41c4a255"
+  "a-0f8b41c4a255",
+  "a-07fb1780317a",
+  "a-6da3a80c0d79",
+  "a-3f5dd46f8a8d",
+  "a-7ccf711f9a80",
+  "a-44500f0a8626",
+  "a-40c3e6652f59",
+  "a-93888dcee557",
+  "a-a662c8252989"
  ],
- "updated": "2026-11-27T07:48:13.355Z",
+ "updated": "2026-11-27T13:44:02.266Z",
  "_about": "AI se apne aap bani cards. official=true sirf sarkari website wali khabar. Baaki ki sarkari pushti baaki."
 }
